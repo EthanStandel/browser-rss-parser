@@ -26,7 +26,7 @@ const Application = Object.freeze({
         if (a.date && b.date) {
           const aTime = a.date.toJSDate().getTime();
           const bTime = b.date.toJSDate().getTime();
-          return aTime - bTime;
+          return bTime - aTime;
         } else {
           // Sorts all undated items to the bottom of the list
           return -1;
