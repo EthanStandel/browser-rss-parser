@@ -1,9 +1,15 @@
 import XmlParser from "fast-xml-parser";
 import { DateTime } from "luxon";
 
+interface Feed {
+  url: string;
+  name: string;
+  count: number;
+}
+
 // This is bad but the whole point of this is to not stand up a server
 const openCorsProxy = "https://api.codetabs.com/v1/proxy?quest=";
-const rssFeeds = (window as any)["rssFeeds"] as Array<{ url: string; name: string; }>;
+const rssFeeds = (window as any)["rssFeeds"] as Array<Feed>;
 
 const Application = Object.freeze({
   main: async () => {
@@ -21,7 +27,11 @@ const Application = Object.freeze({
           date: item.pubDate ? DateTime.fromRFC2822(item.pubDate) : undefined 
         }))
       )
-      .reduce((all, curr) => all.concat(curr), [])
+      .reduce((all, curr, index) => all.concat(
+        typeof rssFeeds[index].count === "undefined"
+          ? curr
+          : curr.slice(0, rssFeeds[index].count)
+      ), [])
       .sort((a, b) => {
         if (a.date && b.date) {
           const aTime = a.date.toJSDate().getTime();
