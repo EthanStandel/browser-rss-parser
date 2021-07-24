@@ -53,10 +53,16 @@ const Application = Object.freeze({
       const listItemEl = document.createElement("li");
       // WARNING: Some of these items contain HTML
       // If they ever contain a script, it's not being filtered out
+      const imgHref = 
+        item.image 
+        ?? item["media:content"]?.url
+        ?? item.enclosure?.type === "image/jpeg" ? item.enclosure.type
+        : source.defaultImg;
+      debugger;
       listItemEl.innerHTML = `
+        <img src="${imgHref}">
         <div class="source-name">${source.name}</div>
         <div class="item-title">${item.title}</div>
-        <div class="item-description">${item.description}</div>
         <div class="item-publish-date">${date?.setLocale("fr").toFormat("yyyy LLL dd")}</div>
         <a class="item-link" href="${item.link}">Lire la suite...</a>
       `;
