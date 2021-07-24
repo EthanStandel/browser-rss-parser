@@ -58,7 +58,7 @@ const Application = Object.freeze({
         ?? item["media:content"]?.url
         ?? item.enclosure?.type === "image/jpeg" ? item.enclosure.type
         : source.defaultImg;
-      debugger;
+
       listItemEl.innerHTML = `
         <img src="${imgHref}">
         <div class="source-name">${source.name}</div>
