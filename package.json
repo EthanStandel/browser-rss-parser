@@ -1,6 +1,7 @@
 {
   "name": "rss-parser-bundler",
   "version": "0.1.0",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@react-hookz/web": "^6.0.1",
