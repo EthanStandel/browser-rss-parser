@@ -1,32 +1,26 @@
 {
   "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "jsx": "preserve",
-    "lib": ["dom", "es2020"],
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "esModuleInterop": true,
-    "noEmit": true,
-    "noUnusedLocals": false,
     "resolveJsonModule": true,
-    "preserveConstEnums": true,
-    "removeComments": false,
-    "skipLibCheck": true,
-    "sourceMap": true,
-    "strict": false,
-    "target": "esnext",
-    "baseUrl": ".",
-    "typeRoots": ["./node_modules/@types", "./types"],
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": false,
-    "paths": {
-      "@public/*": ["./public/*"],
-      "@server/*": ["./server/*"],
-      "@test/*": ["./test/*"],
-      "@/*": ["./src/*"]
-    }
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", ".next", "server/**/*.*", "out", "dist", "next.config.js"]
+  "include": [
+    "src"
+  ]
 }
