@@ -85,7 +85,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
               : source.defaultImg;
 
             return (
-              <li>
+              <li key={item.link}>
                 <a className="item-link" href={item.link}>
                   {imgHref && <img src={imgHref} alt={item.title} />}
                   <div className="source-name">{source.name}</div>

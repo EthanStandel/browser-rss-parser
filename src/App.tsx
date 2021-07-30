@@ -1,10 +1,12 @@
-import './App.scss';
-import RssContent from './components/RssContent';
-import rssFeeds from "./resources/rss_feeds.json";
+import Menu from './components/Menu';
+import Routing from './components/Routing';
 
 const App = () => (
-  <div className="App">
-    <RssContent {...{ rssFeeds }} />
+  <div>
+    <Menu />
+    <main>
+      <Routing />
+    </main>
   </div>
 );
 
