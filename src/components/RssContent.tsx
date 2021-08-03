@@ -86,11 +86,15 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
 
             return (
               <li>
-                <a className="item-link" href={item.link}>
-                  {imgHref && <img src={imgHref} alt={item.title} />}
-                  <div className="source-name">{source.name}</div>
+                <a className="item-link" href={item.link} target="_blank">
+                <div className="media">
+                <div className="image">{imgHref && <img src={imgHref} alt={item.title} />}</div>
+                <div className="item-container">
+                  <div className="item-F-line">
+                    <div className="source-name">{source.name}</div><div className="item-publish-date">{date?.setLocale("fr").toFormat("HH:mm")}</div></div>
                   <div className="item-title">{item.title}</div>
-                  <div className="item-publish-date">{date?.setLocale("fr").toFormat("yyyy LLL dd")}</div>
+                    
+                  </div></div>
                 </a>
               </li>
             );

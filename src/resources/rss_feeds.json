@@ -2,31 +2,37 @@
   {
     "url": "https://www.lemonde.fr/rss/une.xml",
     "name": "LE MONDE",
+    "count":2,
     "defaultImg": "https://fullgrown.co.uk/wp-content/uploads/2019/05/le-monde-logotype.png"
   },
   {
     "url": "https://www.francetvinfo.fr/titres.rss",
     "name": "FRANCEINFO",
+    "count":2,
     "defaultImg": "https://media.info/i/lf/0/1504210656/6883.png"
   },
   {
     "url": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
     "name": "LE FIGARO",
+    "count":2,
     "defaultImg": "https://assets.website-files.com/561662eb2509cf7c547824f5/5e6b70c62589642e08241140_FIG%20QUOT%20_FILET%20BLANC.jpg"
   },
   {
     "url": "https://www.bfmtv.com/rss/news-24-7/",
     "name": "BFM TV",
+    "count":2,
     "defaultImg": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Logo_BFM_TV_%282019%29.png"
   },
   {
     "url": "https://www.france24.com/fr/rss",
     "name": "France 24",
+    "count":2,
     "defaultImg": "https://upload.wikimedia.org/wikipedia/en/thumb/6/65/FRANCE_24_logo.svg/1200px-FRANCE_24_logo.svg.png"
   },
   {
     "url": "http://www.20minutes.fr/rss/une.xml",
     "name": "20 MINUTES",
+    "count":2,
     "defaultImg": "https://upload.wikimedia.org/wikipedia/commons/8/8f/20_minutes.png"
   }
 ]
