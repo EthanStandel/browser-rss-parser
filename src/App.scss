@@ -29,19 +29,6 @@ body {
   }
 }
 
-p {
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 22px;
-}
-
-/*/Large title/*/
-h1 {
-  font-size: 34px;
-  font-weight: 700;
-  line-height: 41px;
-}
-
 .webpage-title {
   background: #FF2C56;
   background: -webkit-linear-gradient(to right, #623DAE 15%, #FF2C56 85%);
@@ -52,20 +39,11 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-/*/Title 1/*/
-h2 {
-font-size: 28px;
-font-weight: 700;
-line-height: 34px;
-}
-
-/*/Title 2/*/
-h3 {
-  font-size: 22px;
+/*/headline/*/
+h6, .item-title {
+  font-size: 17px;
   font-weight: 600;
-  line-height: 28px;
-  word-break: word;
-  text-align: left;
+  line-height: 22px;
 }
 
 li:first-of-type .item-title {
@@ -77,25 +55,7 @@ li:first-of-type .item-title {
    -webkit-box-orient: vertical;
 }
 
-/*/Title 3/*/
-h4 {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 25px;
-}
-
-/*/headline/*/
-h5, .item-title {
-  font-size: 17px;
-  font-weight: 600;
-  line-height: 22px;
-}
-
-.item-title {
-  letter-spacing: -0.3px;
-}
-
-.item-title:not(li:first-of-type .item-title) {
+li:not(li:first-of-type) .item-title {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;

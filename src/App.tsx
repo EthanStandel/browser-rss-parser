@@ -4,7 +4,7 @@ import rssFeeds from "./resources/rss_feeds.json";
 
 const App = () => (
   <div className="App">
-    <h1 className="webpage-title">À la une</h1>
+    <h2 className="webpage-title">À la une</h2>
     <RssContent {...{ rssFeeds }} />
   </div>
 );
