@@ -14,7 +14,7 @@ body {
     --text-main-color: #000000;
     --text-ios-gray-color: #8e8e93;
     --text-date-color: rgba(60, 60, 67, 0.6);
-    --element-bg-blur-color: rgba(245, 245, 245, 0.7);
+    --element-bg-blur-color: rgba(242, 242, 242, 0.8);
   }
 }
 
@@ -25,7 +25,7 @@ body {
     --text-main-color: #f1f1f1;
     --text-ios-gray-color: #8e8e93;
     --text-date-color: rgba(235, 235, 245, 0.6);
-    --element-bg-blur-color: rgba(24, 24, 24, 0.7);
+    --element-bg-blur-color: rgba(30, 30, 30, 0.75);
   }
 }
 
@@ -37,13 +37,8 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-/*/headline/*/
-h6, .item-title {
-  font-size: 17px;
-  font-weight: 600;
-  line-height: 22px;
+  display: inline-block;
+  margin: 0.83em 15px  !important;
 }
 
 li:first-of-type .item-title {
@@ -63,41 +58,10 @@ li:not(li:first-of-type) .item-title {
   -webkit-box-orient: vertical;
 }
 
-li:first-of-type .item-title {
-  font-weight: 700;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4; /* number of lines to show */
-  -webkit-box-orient: vertical;
-}
-
-/*/subheadline/*/
-h6, .source-name {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 20px;
-}
-
 .source-name {
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: 900 !important;
   color: var(--text-ios-gray-color);
   float: left;
-}
-
-/*/callout/*/
-.h7 {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 21px;
-}
-
-/*/footnote/*/
-.h8, .item-publish-date {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 18px;
 }
 
 .item-publish-date {
@@ -105,25 +69,11 @@ h6, .source-name {
   color: var(--text-date-color);
 }
 
-/*/caption 1/*/
-.h9 {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-}
-
-/*/caption 2/*/
-.h10 {
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 13px;
-}
-
 /*/Big container for the list/*/
 ul {
   list-style-type: none;
   padding: 0;
-  max-width: 900px;
+  max-width: 850px;
   margin: auto;
 }
 
@@ -143,7 +93,7 @@ li:first-of-type .item-container  {
   bottom: 0;
   width: calc(100% - 30px);
   background: var(--element-bg-blur-color);
-  backdrop-filter: blur(80px);
+  backdrop-filter: blur(50px);
   border-radius: 0 0 10px 10px;
 }
 
