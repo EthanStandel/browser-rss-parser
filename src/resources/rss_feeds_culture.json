@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://www.lemonde.fr/culture/rss_full.xml",
+    "name": "Le Monde",
+    "count":2,
+    "defaultImg": "https://play-lh.googleusercontent.com/aN_UGrgEUuShQGFMU1Kuhwy2cCU6CL9spKqAyP4MREEPzJuqrxvKQGPqPAyrshjmZM0"
+  },
+  {
+    "url": "https://www.francetvinfo.fr/culture.rss",
+    "name": "Franceinfo",
+    "count":2,
+    "defaultImg": "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/02/00/39/0200391c-030e-057f-ceed-8ede64029dc6/source/256x256bb.jpg"
+  },
+  {
+    "url": "https://www.lefigaro.fr/rss/figaro_culture.xml",
+    "name": "Le Figaro",
+    "count":2,
+    "defaultImg": "https://play-lh.googleusercontent.com/ewfK14__OxZy9AWtiZbOzNsFRearYGof7vFUhB3cjuZLlToEnPnkuuyDWt9ADybf2zfL"
+  },
+  {
+    "url": "https://www.lexpress.fr/rss/culture.xml",
+    "name": "L'Express",
+    "count":2,
+    "defaultImg": "https://is3-ssl.mzstatic.com/image/thumb/Purple115/v4/11/a2/79/11a279bf-cd9b-1bf3-460a-1ab0a2eac3c8/source/256x256bb.jpg"
+  },
+  {
+    "url": "https://feeds.leparisien.fr/leparisien/rss/culture-loisirs",
+    "name": "Le Parisien",
+    "count":2,
+    "defaultImg": "https://dlpure.com/wp-content/uploads/2020/09/1600525950-2.png"
+  },
+  {
+    "url": "https://www.nouvelobs.com/culture/rss.xml",
+    "name": "L'Obs",
+    "count":2,
+    "defaultImg": "https://play-lh.googleusercontent.com/jJJQPOTQUHxjSD986eAHj6DwbMNmqFbElXvEel_jkDuHgpI8HEu4teqZ1bFQjwvKuuc"
+  }
+]

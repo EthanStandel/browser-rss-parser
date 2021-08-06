@@ -1,0 +1,339 @@
+:root {
+    --font-family-ui: system-ui;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+      --background-color: #f2f2f7;
+      --element-background-color: #ffffff;
+      --text-main-color: #000000;
+      --text-ios-gray-color: #8e8e93;
+      --text-date-color: rgba(60, 60, 67, 0.6);
+      --element-bg-blur-color: rgba(245, 245, 245, 0.7);
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #000000;
+      --element-background-color: #1C1C1E;
+      --text-main-color: #f1f1f1;
+      --text-ios-gray-color: #8e8e93;
+      --text-date-color: rgba(235, 235, 245, 0.6);
+      --element-bg-blur-color: rgba(24, 24, 24, 0.7);
+    }
+  }
+
+/* Huge Title */
+h1 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.25px;
+}
+
+/* Bold style for Huge Title */
+h1.bold {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.25px;
+}
+
+/* Large Title */
+h2 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.37px;
+}
+
+/* Bold style for Large Title */
+h2 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.37px;
+}
+
+/* Title 1 */
+h3 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.36px;
+}
+
+/* Bold style for Title 1 */
+h3.bold {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.36px;
+}
+
+/* Title 2 */
+h4 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+}
+
+/* Bold style for Title 2 */
+h4 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+}
+
+/* Title 3 */
+h5 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.38px;
+}
+
+/* Bold style for Title 3 */
+h5 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.38px;
+}
+
+/* Headline */
+h6 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.41px;
+}
+
+/* Callout */
+.h7 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.32px;
+}
+
+/* Bold style for Callout */
+.h7 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.32px;
+}
+
+/* Subheadline */
+.h8 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+}
+
+/* Bold style for Subheadline */
+.h8.bold {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+}
+
+/* Body */
+p {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.41px;
+}
+
+/* Bold style for Body */
+p.bold {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.41px;
+}
+
+/* Footnote */
+.footnote {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.08px;
+}
+
+/* Bold style for Footnote */
+.footnote.bold {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.08px;
+}
+
+/* Caption 1 */
+.c1 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* Bold Style for Caption 1 */
+.c1.bold {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* Caption 2 */
+.c2 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: 0.07px;
+}
+
+/* Bold style for Caption 2 */
+.c2.bold {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: 0.07px;
+}
+
+/* Caption 3 */
+.c3 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.07px;
+}
+
+/* Rubric 1 */
+.r1 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.21px;
+    text-transform: uppercase;
+}
+
+/* Bold style for Rubric 1 */
+.r1.bold  {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.21px;
+    text-transform: uppercase;
+}
+
+/* Rubric 2 */
+.r2 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.13px;
+    text-transform: uppercase;
+}
+
+/* Bold style for Rubric 1 */
+.r2.bold {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.13px;
+    text-transform: uppercase;
+}
+
+/* Rubric 3 */
+.r3 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.41px;
+    text-transform: uppercase;
+}
+
+/* Rubric 4 */
+.r4 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: -0.41px;
+    text-transform: uppercase;
+}
+
+/* Rubric 5 */
+.r5 {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 22px;
+    text-transform: uppercase;
+}

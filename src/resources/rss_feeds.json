@@ -1,19 +1,19 @@
 [
   {
     "url": "https://www.lemonde.fr/rss/une.xml",
-    "name": "LE MONDE",
+    "name": "Le Monde",
     "count":2,
     "defaultImg": "https://play-lh.googleusercontent.com/aN_UGrgEUuShQGFMU1Kuhwy2cCU6CL9spKqAyP4MREEPzJuqrxvKQGPqPAyrshjmZM0"
   },
   {
     "url": "https://www.francetvinfo.fr/titres.rss",
-    "name": "FRANCEINFO",
+    "name": "Franceinfo",
     "count":2,
     "defaultImg": "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/02/00/39/0200391c-030e-057f-ceed-8ede64029dc6/source/256x256bb.jpg"
   },
   {
     "url": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
-    "name": "LE FIGARO",
+    "name": "Le Figaro",
     "count":2,
     "defaultImg": "https://play-lh.googleusercontent.com/ewfK14__OxZy9AWtiZbOzNsFRearYGof7vFUhB3cjuZLlToEnPnkuuyDWt9ADybf2zfL"
   },
@@ -31,7 +31,7 @@
   },
   {
     "url": "http://www.20minutes.fr/rss/une.xml",
-    "name": "20 MINUTES",
+    "name": "20 Minutes",
     "count":2,
     "defaultImg": "https://play-lh.googleusercontent.com/Cim5qg6u3aCnSX2UxxhVj6Pc3jwdPOgxDuNPikrnCMwYMSfDuaBkjAZQCIcIvB_Ozw"
   }
