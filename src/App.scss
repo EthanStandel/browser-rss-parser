@@ -4,7 +4,15 @@ body {
   font-family: system-ui;
   background-color: var(--background-color);
   color: var(--text-main-color);
-  margin: 0 15px;
+}
+
+.body-container {
+  padding: 0 20px;
+  max-width: 850px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  padding-top: 80px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -15,6 +23,8 @@ body {
     --text-ios-gray-color: #8e8e93;
     --text-date-color: rgba(60, 60, 67, 0.6);
     --element-bg-blur-color: rgba(242, 242, 242, 0.8);
+    --header-bg-color: rgba(252, 252, 253, 0.8);
+    /*--header-bg-color: #fafafc;*/ 
   }
 }
 
@@ -26,6 +36,8 @@ body {
     --text-ios-gray-color: #8e8e93;
     --text-date-color: rgba(235, 235, 245, 0.6);
     --element-bg-blur-color: rgba(30, 30, 30, 0.75);
+    --header-bg-color: rgba(50, 50, 51, 0.8)
+    /*--header-bg-color: #282829;*/
   }
 }
 
@@ -38,7 +50,6 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  margin: 0.83em 15px  !important;
 }
 
 li:first-of-type .item-title {
@@ -73,8 +84,6 @@ li:not(li:first-of-type) .item-title {
 ul {
   list-style-type: none;
   padding: 0;
-  max-width: 850px;
-  margin: auto;
 }
 
 li {margin-bottom: 30px;
@@ -93,7 +102,8 @@ li:first-of-type .item-container  {
   bottom: 0;
   width: calc(100% - 30px);
   background: var(--element-bg-blur-color);
-  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter:saturate(180%) blur(50px);
+  backdrop-filter: saturate(180%) blur(50px);
   border-radius: 0 0 10px 10px;
 }
 
@@ -116,7 +126,6 @@ img:not(li:first-of-type img) {
   height: 40px;
   object-fit: cover;
   border-radius: 10px;
-  margin-right: 10px;
 }
 
 .image:not(li:first-of-type .image)  {
@@ -124,6 +133,7 @@ img:not(li:first-of-type img) {
   display: block;
   align-self: center;
   height: 40px;
+  margin-right: 10px;
 }
 
 .media:not(li:first-of-type .media) {
@@ -145,4 +155,23 @@ li:first-of-type .media {
 .item-F-line {
   display: inline-block;
   width: 100%;
+}
+
+header { /* var(--header-bg-color) */
+  background-color: var(--header-bg-color);
+  padding: 10px 0px;
+  position: fixed;
+  display: block;
+  z-index: 2;
+  width: 100%;
+  -webkit-backdrop-filter:saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.logo-text {
+  font-family: 'Bodoni Moda', serif !important;
+  text-align: center;
+  font-weight: 800 !important;
+  opacity: 0.75;
+  padding: 0 20px ;
 }
