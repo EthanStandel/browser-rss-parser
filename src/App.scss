@@ -9,12 +9,13 @@ body {
 
 .body-container {
   padding: 0 25px;
-  max-width: 700px;
+  max-width: 620px;
   min-width: 210px;
   margin: auto;
   position: relative;
   z-index: 1;
   padding-top: 85px;
+  min-height: 100vh;
 }
 
 @media (prefers-color-scheme: light) {
@@ -165,7 +166,7 @@ header { /* var(--header-bg-color) */
   -webkit-backdrop-filter:saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   max-height: 44px;
-  border-bottom: 1px solid var(--header-border-color);
+  border-bottom: 1px solid var(--separator);
 }
 
 .logo-text {
@@ -174,4 +175,26 @@ header { /* var(--header-bg-color) */
   font-weight: 800 !important;
   opacity: 0.75;
   padding: 0 20px ;
+}
+
+.footer-container h5.logo-text {
+  text-align: left !important;
+  padding: 0 !important;
+}
+footer {
+  background-color: var(--systemGray5);
+  padding: 20px 0px 40px;
+  border-top: 1px solid var(--separator);
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 700px;
+  min-width: 250px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.footer-container .footnote {
+  color: var(--secondaryLabel);
 }
