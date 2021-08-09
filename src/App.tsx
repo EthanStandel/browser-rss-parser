@@ -8,11 +8,11 @@ const App = () => (
       <h4 className="logo-text">nuntium</h4>   
     </header>
     <div className="body-container">
-    <h3 className="bold webpage-title">À la une</h3>
+    <h3 className="bold webpage-title"><i className="f7-icons">today_fill</i>À la une</h3>
     <RssContent {...{ rssFeeds }} />
     </div>
     <footer> <div className="footer-container">
-    <h5 className="logo-text">nuntium</h5>   <div className="footnote">nuntium est le lecteur d'actualités le plus simple. Les actualités sont organisées par thème et les plus récentes sont mises en avant. Suivre les nouvelles en France et dans le monde entier n'a jamais été ausi facile.</div></div></footer>
+    <h5 className="logo-text">nuntium</h5>   <div className="footnote">Dans nuntium, les actualités sont organisées par thème et les plus récentes sont mises en avant. Suivre les nouvelles en France et dans le monde n'a jamais été ausi facile.</div></div></footer>
   </div>
 );
 

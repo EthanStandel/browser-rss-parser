@@ -1,6 +1,7 @@
-:root {
-    --font-family-ui: system-ui;
-}
+/* Color values from https://noahgilmore.com/blog/dark-mode-uicolor-compatibility/
+   Explanations for use of the colors in https://github.com/cocoacontrols/SemanticUI */
+
+/* HTML5 color-names allowed for use in Titles (News App). List: https://www.w3schools.com/colors/colors_names.asp */
 
 @media (prefers-color-scheme: light) {
     :root {
@@ -58,9 +59,6 @@
       /*Non-Adaptable Colors*/
       --lightText: rgba(255.0, 255.0, 255.0, 0.6);
       --darkText: rgba(0.0, 0.0, 0.0, 1.0);
-
-
-      --element-bg-blur-color: rgba(245, 245, 245, 0.7);
     }
   }
   
@@ -120,8 +118,5 @@
       /*Non-Adaptable Colors*/
       --lightText: rgba(255.0, 255.0, 255.0, 0.6);
       --darkText: rgba(0.0, 0.0, 0.0, 1.0);
-      
-      
-
     }
   }
