@@ -20,7 +20,7 @@ body {
 
 @media (prefers-color-scheme: light) {
   :root {
-    --element-bg-blur-color: rgba(242, 242, 242, 0.6);
+    --element-bg-blur-color: rgba(242, 242, 242, 0.7);
     --header-bg-color: rgba(252, 252, 253, 0.8);
     /*--header-bg-color: #fafafc;*/
     --header-border-color: rgba(0,0,0,0.16);
@@ -30,7 +30,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --header-bg-color: rgba(50, 50, 51, 0.6);
+    --header-bg-color: rgba(50, 50, 51, 0.7);
     /*--header-bg-color: #282829;*/
     --header-border-color: rgba(255,255,255,0.24);
     --header-logo-color: rgb(245,245,247);
