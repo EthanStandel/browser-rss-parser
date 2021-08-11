@@ -9,7 +9,7 @@ body {
 
 .body-container {
   padding: 0 25px;
-  max-width: 620px;
+  max-width: 600px;
   min-width: 210px;
   margin: auto;
   position: relative;
@@ -20,7 +20,7 @@ body {
 
 @media (prefers-color-scheme: light) {
   :root {
-    --element-bg-blur-color: rgba(242, 242, 242, 0.8);
+    --element-bg-blur-color: rgba(242, 242, 242, 0.6);
     --header-bg-color: rgba(252, 252, 253, 0.8);
     /*--header-bg-color: #fafafc;*/
     --header-border-color: rgba(0,0,0,0.16);
@@ -30,7 +30,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --header-bg-color: rgba(50, 50, 51, 0.8);
+    --header-bg-color: rgba(50, 50, 51, 0.6);
     /*--header-bg-color: #282829;*/
     --header-border-color: rgba(255,255,255,0.24);
     --header-logo-color: rgb(245,245,247);
@@ -101,8 +101,8 @@ li:first-of-type .item-container  {
   bottom: 0;
   width: calc(100% - 30px);
   background: var(--element-bg-blur-color);
-  -webkit-backdrop-filter:saturate(180%) blur(50px);
-  backdrop-filter: saturate(180%) blur(50px);
+  -webkit-backdrop-filter:saturate(180%) blur(80px);
+  backdrop-filter: saturate(180%) blur(80px);
   border-radius: 0 0 10px 10px;
 }
 
