@@ -1,6 +1,5 @@
 @import "ios/ios-HIG.scss";
 @import "ios/ios-semantic_colors.scss";
-@import "../node_modules/framework7-icons/css/framework7-icons.css";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
@@ -198,24 +197,4 @@ footer {
 
 .footer-container .footnote {
   color: var(--secondaryLabel);
-}
-
-.f7-icons,
-.framework7-icons {
-  font-family: 'Framework7 Icons' !important;
-  margin: 0 5px;
-  vertical-align:baseline;
-}
-
-.size-14 {
-  font-size: 14px;
-}
-.size-28 {
-  font-size: 28px;
-}
-.size-32 {
-  font-size: 32px;
-}
-.size-56 {
-  font-size: 56px;
 }
