@@ -7,6 +7,13 @@ body {
   color: var(--label);
 }
 
+header {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .body-container {
   padding: 0 25px;
   max-width: 600px;
@@ -222,15 +229,19 @@ footer {
   color: var(--systemPink)
 }
 
-.color-link:hover {
+.footnote-link {
+  color: var(--secondaryLabel);
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.color-link:hover, .footnote-link:hover {
   text-decoration: underline;
 }
 
 .inline {
   display: inline-block;
   padding-right: 30px;
-}
-
-.footnote-link {
-  color: var(--secondaryLabel);
 }

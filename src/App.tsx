@@ -19,7 +19,7 @@ const App = () => (
         <div className="footnote inline">Créé par <a className="color-link" href="https://www.reddit.com/user/iKL3W" target="_blank" rel="noreferrer">u/iKL3W</a>, avec <a className="color-link" href="https://www.reddit.com/user/besthelloworld" target="_blank" rel="noreferrer">u/besthelloworld</a>.</div>
         <div className="footnote"></div>
         <div className="footnote inline h-separator"><b><a className="footnote-link" href="mailto:clement.krajecki@gmail.com?subject=nuntium&body=Bonjour!">Contact</a></b></div>
-        <div className="footnote inline"><b><a className="footnote-link" href="https://github.com/EthanStandel/browser-rss-parser">Github</a></b></div>
+        <div className="footnote inline"><b><a className="footnote-link" href="https://github.com/EthanStandel/browser-rss-parser" target="_blank" rel="noreferrer">Github</a></b></div>
       </div>
     </footer>
   </div>
