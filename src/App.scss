@@ -202,19 +202,20 @@ footer {
 
 .footer-container .footnote {
   color: var(--secondaryLabel);
+  margin-top: 5px !important;
 }
 
 .v-separator {
   border-bottom: 1px solid var(--separator);
   padding-bottom: 8px !important;
   margin-bottom: 7px !important;
-  margin-top: 5px !important;
 }
 
 .h-separator {
   border-right: 1px solid var(--separator);
   padding-right: 10px !important;
   margin-right: 10px !important;
+  width: fit-content;
 }
 
 .color-link {
