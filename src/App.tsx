@@ -14,7 +14,10 @@ const App = () => (
     <footer> 
       <div className="footer-container">
         <h5 className="logo-text">nuntium</h5>
-        <div className="footnote">Dans nuntium, les actualités sont organisées par thème et les plus récentes sont mises en avant. Suivre les nouvelles en France et dans le monde n'a jamais été ausi facile.</div>
+        <div className="footnote v-separator">Version bêta du projet nuntium, pour un résumé des actualités intuitif, organisé de manière efficace en thèmes.</div>
+        <div className="footnote inline">2021 - France</div>
+        <div className="footnote inline h-separator">Créé par <a className="color-link" href="https://www.reddit.com/user/iKL3W" target="_blank" rel="noreferrer">u/iKL3W</a>, avec l'aide de <a className="color-link" href="https://www.reddit.com/user/besthelloworld" target="_blank" rel="noreferrer">u/besthelloworld</a>.</div>
+        <div className="footnote inline"><b><a className="footnote-link" href="mailto:clement.krajecki@gmail.com?subject=nuntium&body=Bonjour!">Contact</a></b></div>
       </div>
     </footer>
   </div>
