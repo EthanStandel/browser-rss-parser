@@ -14,19 +14,11 @@ h1 {
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 0.25px;
-
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
 }
 
 /* Bold style for Huge Title */
 h1.bold {
-    font-family: --font-ui;
-    font-style: normal;
     font-weight: 700;
-    font-size: 60px;
-    line-height: 70px;
-    letter-spacing: 0.25px;
 }
 
 /* Large Title */
@@ -41,12 +33,7 @@ h2 {
 
 /* Bold style for Large Title */
 h2.bold {
-    font-family: --font-ui;
-    font-style: normal;
     font-weight: 700;
-    font-size: 34px;
-    line-height: 41px;
-    letter-spacing: 0.37px;
 }
 
 /* Title 1 */
@@ -62,13 +49,7 @@ h3 {
 
 /* Bold style for Title 1 */
 h3.bold {
-    font-family: --font-ui;
-    font-style: normal;
     font-weight: 700;
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: 0.36px;
-    margin-bottom: 16px !important;
 }
 
 /* Title 2 */
@@ -83,12 +64,7 @@ h4 {
 
 /* Bold style for Title 2 */
 h4.bold {
-    font-family: --font-ui;
-    font-style: normal;
     font-weight: 700;
-    font-size: 22px;
-    line-height: 28px;
-    letter-spacing: 0.35px;
 }
 
 /* Title 3 */
@@ -103,12 +79,7 @@ h5 {
 
 /* Bold style for Title 3 */
 h5.bold {
-    font-family: --font-ui;
-    font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.38px;
 }
 
 /* Headline */
@@ -133,12 +104,7 @@ h6 {
 
 /* Bold style for Callout */
 .h7.bold {
-    font-family: --font-ui;
-    font-style: normal;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 21px;
-    letter-spacing: -0.32px;
 }
 
 /* Subheadline */
@@ -153,12 +119,7 @@ h6 {
 
 /* Bold style for Subheadline */
 .h8.bold {
-    font-family: --font-ui;
-    font-style: normal;
     font-weight: 600;
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: -0.24px;
 }
 
 /* Body */
@@ -173,12 +134,7 @@ p {
 
 /* Bold style for Body */
 p.bold {
-    font-family: --font-ui;
-    font-style: normal;
     font-weight: 600;
-    font-size: 17px;
-    line-height: 22px;
-    letter-spacing: -0.41px;
 }
 
 /* Footnote */
@@ -193,12 +149,7 @@ p.bold {
 
 /* Bold style for Footnote */
 .footnote.bold {
-    font-family: --font-ui;
-    font-style: normal;
     font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-    letter-spacing: -0.08px;
 }
 
 /* Caption 1 */
@@ -212,11 +163,7 @@ p.bold {
 
 /* Bold Style for Caption 1 */
 .c1.bold {
-    font-family: --font-ui;
-    font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
 }
 
 /* Caption 2 */
@@ -231,12 +178,7 @@ p.bold {
 
 /* Bold style for Caption 2 */
 .c2.bold {
-    font-family: --font-ui;
-    font-style: normal;
     font-weight: 600;
-    font-size: 11px;
-    line-height: 12px;
-    letter-spacing: 0.07px;
 }
 
 /* Caption 3 */
@@ -262,13 +204,7 @@ p.bold {
 
 /* Bold style for Rubric 1 */
 .r1.bold  {
-    font-family: --font-ui;
-    font-style: normal;
     font-weight: 600;
-    font-size: 15px;
-    line-height: 22px;
-    letter-spacing: -0.21px;
-    text-transform: uppercase;
 }
 
 /* Rubric 2 */
@@ -284,13 +220,7 @@ p.bold {
 
 /* Bold style for Rubric 1 */
 .r2.bold {
-    font-family: --font-ui;
-    font-style: normal;
     font-weight: 600;
-    font-size: 13px;
-    line-height: 18px;
-    letter-spacing: -0.13px;
-    text-transform: uppercase;
 }
 
 /* Rubric 3 */
