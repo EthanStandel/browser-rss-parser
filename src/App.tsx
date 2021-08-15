@@ -4,6 +4,7 @@ import rssFeeds from "./resources/rss_feeds.json";
 
 const App = () => (
   <div className="App">
+    <h4 className="header-mobile logo-text">nuntium</h4>
     <header>
       <div className="header-l1">
       <h4 className="logo-text">nuntium</h4>
