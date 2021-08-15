@@ -75,8 +75,8 @@ header {
 
 ul.topics-navbar {
   display: block;
-  overflow: auto;
-  height: 27.6px;
+  overflow-x: auto;
+  overscroll-behavior-y: none;
   white-space: nowrap;
 }
 
@@ -100,13 +100,16 @@ ul.topics-navbar li:hover {
   transition: 1s;
 }
 
-.header-mobile.logo-text {
+.header-mobile {
   display: none !important;
+  background-color: var(--header-bg-rgb-color) !important;
+}
+
+.header-mobile .logo-text {
   text-align: center;
   width: 100% !important;
   padding: 5px 0 !important;
   line-height: 28px;
-  background-color: var(--header-bg-rgb-color);
 }
 
 @media only screen and (max-width: 767px) {
@@ -118,7 +121,7 @@ ul.topics-navbar li:hover {
     display: none;
   }
 
-  .header-mobile.logo-text {
+  .header-mobile {
     display: block !important;
   }
 }
