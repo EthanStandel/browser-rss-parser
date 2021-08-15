@@ -19,13 +19,12 @@ header, .body-container {
 }
 
 .body-container {
-  padding: 0 25px;
+  padding: 35px 25px 0;
   min-width: 210px;
   max-width: 600px;
   margin: auto;
   position: relative;
   z-index: 1;
-  padding-top: 85px;
   min-height: 100vh;
 }
 
@@ -54,10 +53,79 @@ a {
   color: inherit;
 }
 
+header { /* var(--header-bg-color) */
+  background-color: var(--header-bg-color);
+  padding: 10px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  -webkit-backdrop-filter:saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--separator);
+}
+
 /*/Big container for the list/*/
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+ul.topics-navbar {
+  display: block;
+  overflow: auto;
+  height: 25.6px;
+  white-space: nowrap;
+}
+
+ul.topics-navbar::-webkit-scrollbar {
+  display: none;
+}
+
+ul.topics-navbar li {
+  display: inline-block;
+  padding: 2px 15px;
+  margin: 0px 5px;
+  color: var(--systemPink);
+  border-radius: 15px;
+  border: 2px solid var(--systemPink);
+  overflow: hidden;
+}
+
+ul.topics-navbar li:hover {
+  background-color: var(--systemPink);
+  color: white;
+  transition: 1s;
+}
+.header-l1 {
+
+}
+@media only screen and (max-width: 767px) {
+  ul.topics-navbar {
+    clear: both;
+  }
+
+  header .logo-text {
+    width: 100%;
+    padding: 0 !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+.logo-text {
+  font-family: 'Bodoni Moda' !important;
+  font-weight: 800 !important;
+  opacity: 0.75;
+  padding: 0 20px;
+  width: fit-content;
+}
+
+header .logo-text {
+  display: block;
+  text-align: center;
+  float: left;
+  line-height: 25.6px;
+  padding: 0 40px 0 20px;
 }
 
 /* List element */
@@ -175,26 +243,6 @@ img:not(.rss li:first-of-type img) {
   display: inline-block;
   width: 100%;
   max-height: 22px;
-}
-
-header { /* var(--header-bg-color) */
-  background-color: var(--header-bg-color);
-  padding: 10px 0px;
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-  -webkit-backdrop-filter:saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-  max-height: 44px;
-  border-bottom: 1px solid var(--separator);
-}
-
-.logo-text {
-  font-family: 'Bodoni Moda' !important;
-  text-align: center;
-  font-weight: 800 !important;
-  opacity: 0.75;
-  padding: 0 20px;
 }
 
 .footer-header-app h5.logo-text {
