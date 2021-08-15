@@ -13,14 +13,18 @@ const App = () => (
     </div>
     <footer> 
       <div className="footer-container">
-        <h5 className="logo-text">nuntium</h5>
-        <div className="footnote v-separator">Version bêta du projet nuntium, pour un résumé des actualités intuitif, organisé de manière efficace en thèmes.</div>
-        <div className="footnote inline">2021 - France</div>
-        <div className="footnote inline p-break">Créé par <a className="color" href="https://www.reddit.com/user/iKL3W" target="_blank" rel="noreferrer">u/iKL3W</a>, avec <a className="color" href="https://www.reddit.com/user/besthelloworld" target="_blank" rel="noreferrer">u/besthelloworld</a>.</div>
-        <ul className="footer-table-link inline">
-          <li><a className="footnote bold" href="mailto:clement.krajecki@gmail.com?subject=nuntium&body=Bonjour!">Contact</a></li>
-          <li><a className="footnote bold" href="https://github.com/EthanStandel/browser-rss-parser" target="_blank" rel="noreferrer">Github</a></li>
-        </ul>
+        <div className="footer-header-app">
+          <h5 className="logo-text">nuntium</h5>
+          <div className="footnote">Version bêta du projet nuntium, pour un résumé des actualités intuitif, organisé de manière efficace en thèmes.</div>
+        </div>
+        <div className="footer-legal">
+          <div className="footnote inline">2021 - France</div>
+          <div className="footnote inline marginless">Créé par <a className="color" href="https://www.reddit.com/user/iKL3W" target="_blank" rel="noreferrer">u/iKL3W</a>, avec <a className="color" href="https://www.reddit.com/user/besthelloworld" target="_blank" rel="noreferrer">u/besthelloworld</a>.</div>
+          <div className="mini-links inline footnote bold">
+            <a href="mailto:clement.krajecki@gmail.com?subject=nuntium&body=Bonjour!">Contact</a>
+            <a href="https://github.com/EthanStandel/browser-rss-parser" target="_blank" rel="noreferrer">Github</a>
+          </div>
+        </div>
       </div>
     </footer>
   </div>

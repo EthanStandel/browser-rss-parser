@@ -7,6 +7,10 @@ body {
   color: var(--label);
 }
 
+.color {
+  color: var(--systemPink);
+}
+
 header, .body-container {
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -45,15 +49,20 @@ header, .body-container {
   }
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /*/Big container for the list/*/
 ul {
   list-style-type: none;
   padding: 0;
-
 }
 
 /* List element */
-.rss li {margin-bottom: 30px;
+.rss li {
+  margin-bottom: 25px;
   background-color: var(--secondarySystemGroupedBackground);
   border-radius: 10px;
 }
@@ -95,13 +104,13 @@ ul {
 .item-title:hover {
   text-decoration: underline;
   text-decoration-color: var(--systemPink) !important;
-  transition: 1.5s;
+  transition: 1s;
 }
 
 .source-name {
+  float: left;
   font-weight: 900 !important;
   color: var(--systemGray);
-  float: left;
 }
 
 .item-publish-date {
@@ -126,13 +135,8 @@ ul {
   background-color: var(--tertiarySystemGroupedBackground);
   width: 100%;
   object-fit: cover;
-  height: 320px;
+  height: 330px;
   border-radius: 10px;
-}
-
-a {
-  text-decoration: none;
-  color: var(--label);
 }
 
 img:not(.rss li:first-of-type img) {
@@ -170,6 +174,7 @@ img:not(.rss li:first-of-type img) {
 .item-F-line {
   display: inline-block;
   width: 100%;
+  max-height: 22px;
 }
 
 header { /* var(--header-bg-color) */
@@ -185,21 +190,21 @@ header { /* var(--header-bg-color) */
 }
 
 .logo-text {
-  font-family: 'Bodoni Moda', serif !important;
+  font-family: 'Bodoni Moda' !important;
   text-align: center;
   font-weight: 800 !important;
   opacity: 0.75;
-  padding: 0 20px ;
+  padding: 0 20px;
 }
 
-.footer-container h5.logo-text {
+.footer-header-app h5.logo-text {
   text-align: left !important;
   padding: 0 !important;
 }
 
 footer {
   background-color: var(--systemGray5);
-  padding: 20px 0px 40px;
+  padding: 5px 0px 40px;
   border-top: 1px solid var(--separator);
   width: 100%;
 }
@@ -209,50 +214,49 @@ footer {
   min-width: 250px;
   margin: auto;
   padding: 0 30px;
-}
-
-.footer-container .footnote, ul.footer-table-link {
-  color: var(--secondaryLabel);
-  margin-top: 5px !important;
   font-size: 13px;
 }
 
-.v-separator {
-  border-bottom: 1px solid var(--separator);
-  padding-bottom: 8px !important;
-  margin-bottom: 7px !important;
+.footer-container .footnote, .footer-legal .mini-links {
+  margin-top: 5px;
+  color: var(--secondaryLabel);
 }
 
-.color {
-  color: var(--systemPink);
-}
-
-.inline {
+.footnote.inline {
   display: inline-block;
   padding-right: 30px ;
 }
 
-a.color:hover, .footer-table-link li:hover {
+a.color:hover, .footer-legal .mini-links a:hover {
   text-decoration: underline;
 }
 
-.footer-table-link li {
+.footer-legal .mini-links a {
   width: fit-content;
   display: inline-block;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
+  margin-top: 5px;
 }
 
-.footer-table-link li:not(:last-child) {
+.footnote.inline.marginless {
+  margin-top: 0px !important;
+}
+
+.footer-legal .mini-links a:not(:last-child) {
   border-right: 1px solid var(--separator);
   padding-right: 10px !important;
   margin-right: 10px !important;
 }
 
-/* adds a space after a paragraph */
-.p-break {
-  margin-bottom: 10px;
+.footer-container > * {
+  padding-top: 10px;
+}
+
+.footer-container > *:not(.footer-container > *:last-child) {
+  border-bottom: 1px solid var(--separator);
+  padding-bottom: 10px !important;
+  margin-bottom: 7px !important;
 }
