@@ -10,7 +10,6 @@
     /*--header-bg-color: #fafafc;*/
     --header-border-color: rgba(0,0,0,0.16);
     --header-logo-color: #000000;
-    --footer-bg: white;
   }
 }
 
@@ -22,7 +21,6 @@
     --header-border-color: rgba(255,255,255,0.24);
     --header-logo-color: rgb(245,245,247);
     --element-bg-blur-color: rgba(24, 24, 24, 0.7);
-    --footer-bg: rgba(44.0, 44.0, 46.0, 1.0);
   }
 }
 
@@ -217,7 +215,7 @@ header .logo-text {
   background-color: var(--tertiarySystemGroupedBackground);
   width: 100%;
   object-fit: cover;
-  height: 330px;
+  height: 280px;
   border-radius: 10px;
 }
 
@@ -265,7 +263,7 @@ img:not(.rss li:first-of-type img) {
 }
 
 footer {
-  background-color: var(--footer-bg);
+  background-color: var(--tertiarySystemBackground);
   width: 100%;
 }
 
