@@ -8,10 +8,10 @@ const App = () => (
     <h4 className="logo-text">nuntium</h4>
     </div>
     <header>
-      <div className="header-l1">
+      <div className="headerTitle">
       <h4 className="logo-text">nuntium</h4>
       </div>
-      <div className="header-l2">
+      <div className="headerTopics">
       <ul className="topics-navbar r2 bold">
         <li className="sports">Sports</li>
         <li className="culture">Culture</li>
@@ -26,7 +26,7 @@ const App = () => (
       </div>
     </header>
     <div className="body-container">
-      <h3 className="bold webpage-title">À la une</h3>
+      <h3 className="bold">À la une</h3>
       <RssContent {...{ rssFeeds }} />
     </div>
     <footer> 
@@ -38,7 +38,7 @@ const App = () => (
         <div className="footer-legal">
           <div className="footnote inline">2021 - France</div>
           <div className="footnote inline marginless">Créé par <a className="color" href="https://www.reddit.com/user/iKL3W" target="_blank" rel="noreferrer">u/iKL3W</a>, avec <a className="color" href="https://www.reddit.com/user/besthelloworld" target="_blank" rel="noreferrer">u/besthelloworld</a>.</div>
-          <div className="mini-links inline footnote">
+          <div className="mini-links footnote">
             <a href="mailto:clement.krajecki@gmail.com?subject=nuntium&body=Bonjour!">Contact</a>
             <a href="https://github.com/EthanStandel/browser-rss-parser" target="_blank" rel="noreferrer">Github</a>
           </div>

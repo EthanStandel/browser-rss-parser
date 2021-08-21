@@ -2,6 +2,16 @@
 @import "ios/ios-semantic_colors.scss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
+:root {
+  --colorTheme: var(--systemPink);
+}
+
+/* color focus */
+.color {
+  color: var(--colorTheme);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --element-bg-blur-color: rgba(242, 242, 242, 0.7);
@@ -29,12 +39,7 @@ body {
   color: var(--label);
 }
 
-/* color focus */
-.color {
-  color: var(--systemPink);
-}
-
-header, .body-container {
+header, .body-container, .mini-links a {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -76,7 +81,7 @@ header {
   width: 100%;
   -webkit-backdrop-filter:saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(15px);
-  border-bottom: 1px solid var(--separator);
+  border-bottom: 0.8px solid var(--separator);
 }
 
 ul.topics-navbar {
@@ -148,6 +153,10 @@ header .logo-text {
   padding: 0 30px;
 }
 
+/*/ use later for the big container of a subtopic list) /*/
+ul.rss {
+  margin-bottom: 24px;
+}
 /* List element */
 .rss li {
   margin-bottom: 20px;
@@ -172,7 +181,6 @@ header .logo-text {
 
 .item-title {
   text-decoration-color: darkmagenta;
-
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -182,7 +190,7 @@ header .logo-text {
 
 .rss li:first-of-type .item-title {
   font-weight: 700;
-   -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-line-clamp: 4; /* number of lines to show */
 }
 
 .rss li:not(:first-of-type) .item-title {
@@ -266,20 +274,24 @@ img:not(.rss li:first-of-type img) {
   padding: 0 !important;
 }
 
+
+/*/
+FOOTER
+/*/
+
 footer {
   background-color: var(--secondarySystemGroupedBackground);
-  width: 100%;
 }
 
 .footer-container {
-  max-width: 750px;
+  max-width: 700px;
   min-width: 250px;
   margin: auto;
-  padding: 18px 40px;
+  padding: 20px 40px;
   font-size: 13px;
 }
 
-.footer-container .footnote:not(.footer-legal .mini-links) {
+.footer-container .footnote:not(.mini-links) {
   margin-top: 5px;
   color: var(--secondaryLabel);
 }
@@ -289,36 +301,39 @@ footer {
   padding-right: 30px ;
 }
 
-a.color:hover, .footer-legal .mini-links a:hover {
+.footnote a.color:hover, .mini-links a:hover {
   text-decoration: underline;
 }
 
-.footer-legal .mini-links a {
-  width: fit-content;
-  display: inline-block;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  margin-top: 5px;
+.mini-links {
+  margin-top: 10px;
 }
 
+.mini-links a {
+  width: fit-content;
+  display: inline-block;
+  margin-top: 5px;
+  padding-right: 10px;
+}
+
+.mini-links a:not(:last-child) {
+  border-right: 1px solid var(--tertiaryLabel);
+  margin-right: 7px !important;
+}
+
+/*/ Used to display footnote elements as paragrpah on small devices/*/
 .footnote.inline.marginless {
   margin-top: 0px !important;
 }
 
-.footer-legal .mini-links a:not(:last-child) {
-  border-right: 1px solid var(--quaternaryLabel);
-  padding-right: 10px !important;
-  margin-right: 7px !important;
-}
-
-.footer-container > * {
+/*/ padding to footer-container elements /*/
+.footer-container > *:not(.footer-container > *:first-child) {
   padding-top: 10px;
 }
 
+/*/ Bottom border to separate footer-container elements /*/
 .footer-container > *:not(.footer-container > *:last-child) {
-  border-bottom: 1px solid var(--separator);
+  border-bottom: 0.8px solid var(--separator);
   padding-bottom: 10px !important;
   margin-bottom: 7px !important;
 }
