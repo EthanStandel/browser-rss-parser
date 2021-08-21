@@ -57,9 +57,18 @@
       --secondarySystemGroupedBackground: rgba(255.0, 255.0, 255.0, 1.0);
       --tertiarySystemGroupedBackground: rgba(242.0, 242.0, 247.0, 1.0);
 
-      /*Non-Adaptable Colors*/
+      /* Non-Adaptable Colors */
       --lightText: rgba(255.0, 255.0, 255.0, 0.6);
       --darkText: rgba(0.0, 0.0, 0.0, 1.0);
+
+      /*/ Materials (Blur effects) /*/
+      --systemUltrathinMaterial: rgba(246, 246, 246, 0.36);
+      --systemThinMaterial: rgba(246, 246, 246, 0.48);
+      --systemMediumMaterial: rgba(246, 246, 246, 0.6);
+      --systemThickMaterial: rgba(246, 246, 246, 0.72);
+      --systemUltrathickMaterial: rgba(246, 246, 246, 0.84);
+      --systemHeaderMaterial: rgba(255, 255, 255, 0.8);
+      --systemTitlebarMaterial: rgba(253, 253, 253, 0.8);
     }
   }
   
@@ -120,5 +129,14 @@
       /*Non-Adaptable Colors*/
       --lightText: rgba(255.0, 255.0, 255.0, 0.6);
       --darkText: rgba(0.0, 0.0, 0.0, 1.0);
+
+      /*/ Materials (Blur effects) /*/
+      --systemUltrathinMaterial: rgba(40, 40, 40, 0.4);
+      --systemThinMaterial: rgba(40, 40, 40, 0.5);
+      --systemMediumMaterial: rgba(40, 40, 40, 0.6);
+      --systemThickMaterial: rgba(40, 40, 40, 0.7);
+      --systemUltrathickMaterial: rgba(40, 40, 40, 0.8);
+      --systemHeaderMaterial: rgba(30, 30, 30, 0.8);
+      --systemTitlebarMaterial: rgba(60, 60, 60, 0.8);
     }
   }
