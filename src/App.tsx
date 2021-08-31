@@ -42,6 +42,7 @@ const App = () => {
       </header>
       <div className="body-container">
         <h3 className="bold">À la une</h3>
+        {topicFilter !== "noTopic" && <h3>{topicFilter}</h3>}
         <RssContent {...{ rssFeeds: topics[topicFilter] }} />
       </div>
       <footer> 

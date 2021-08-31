@@ -3,12 +3,13 @@ import XmlParser from "fast-xml-parser";
 import { DateTime } from "luxon";
 import axios from "axios";
 import { useAsync } from "@react-hookz/web";
+import { Spinner } from "./Spinner";
 
 export interface RssFeedSource {
   url: string;
   name?: string;
   count?: number;
-  defaultImg?: string;
+  iconImg?: string;
   encodedTitles?: boolean;
 }
 
@@ -70,7 +71,11 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
   ), [rssFeeds]);
 
   if (status !== "success") {
-    return null;
+    return (
+      <div className="spinner-container">
+        <Spinner />
+      </div>
+    );
   } else {
     return (
       <ul className="rss">
@@ -83,7 +88,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
               item.image 
               ?? item["media:content"]?.url
               ?? item.enclosure?.type === "image/jpeg" ? item?.enclosure?.type
-              : source.defaultImg;
+              : source.iconImg;
 
             return (
               <li>
