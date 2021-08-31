@@ -33,8 +33,8 @@ const App = () => {
         <div className="headerTopics">
         <ul className="topics-navbar r2 bold">
           {selectableTopics.map(name => (
-            <li key={name}>
-              <button className={name === topicFilter ? "selected" : ""} onClick={() => setTopicFilter(name)}>{name}</button>
+            <li key={name} className={name}>
+              <button className={name === topicFilter ? `selected ${name}` : name} onClick={() => setTopicFilter(name)}>{name}</button>
             </li>
           ))}
         </ul> 
