@@ -102,7 +102,7 @@ ul.topics-navbar li {
   > button {
     border-radius: 10px;
     padding: 2px 15px;
-    color: var(--systemPink);
+    color: var(--systemPink) !important;
     border-radius: 15px;
     border: 2px solid var(--systemPink);
     overflow: hidden;
@@ -116,7 +116,7 @@ ul.topics-navbar li {
 
     &:hover, &.selected {
       background-color: var(--systemPink);
-      color: white;
+      color: white !important;
     }
   }
 }
@@ -189,13 +189,22 @@ ul.rss {
   display: inline-block;
 }
 
-.item-title {
+.item-title, .item-description {
   text-decoration-color: darkmagenta;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   /* number of lines */
   -webkit-box-orient: vertical;
+}
+
+.rss:not(.rss li:first-of-type) .item-description {
+  display: none;
+}
+
+.rss li:first-of-type .item-description {
+  display: block !important;
+  -webkit-line-clamp: 3;
 }
 
 .rss li:first-of-type .item-title {
