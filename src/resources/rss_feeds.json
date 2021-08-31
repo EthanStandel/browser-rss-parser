@@ -1,6 +1,6 @@
 {
   "topics": {
-    "unfiltered": [
+    "noTopic": [
       {
         "url": "https://www.lemonde.fr/rss/une.xml",
         "name": "Le Monde",
@@ -60,6 +60,7 @@
       {
         "url": "https://www.lexpress.fr/rss/culture.xml",
         "name": "L'Express",
+        "encodedTitles": true,
         "count":2,
         "defaultImg": "https://is3-ssl.mzstatic.com/image/thumb/Purple115/v4/11/a2/79/11a279bf-cd9b-1bf3-460a-1ab0a2eac3c8/source/256x256bb.jpg"
       },
@@ -98,6 +99,7 @@
       {
         "url": "https://www.lexpress.fr/rss/sport.xml",
         "name": "L'Express",
+        "encodedTitles": true,
         "count":2,
         "defaultImg": "https://is3-ssl.mzstatic.com/image/thumb/Purple115/v4/11/a2/79/11a279bf-cd9b-1bf3-460a-1ab0a2eac3c8/source/256x256bb.jpg"
       },

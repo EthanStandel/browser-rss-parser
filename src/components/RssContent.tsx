@@ -9,6 +9,7 @@ export interface RssFeedSource {
   name?: string;
   count?: number;
   defaultImg?: string;
+  encodedTitles?: boolean;
 }
 
 interface ParsedRssItem {
@@ -92,8 +93,12 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                 <div className="item-container">
                   <div className="item-F-line">
                     <div className="r1 bold source-name">{source.name}</div><div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("HH:mm")}</div></div>
-                  <h6 className="item-title">{item.title}</h6>
-                  {item.description && <p className="item-description">{item.description}</p>}
+                  {source.encodedTitles ? 
+                    (<h6 className="item-title" dangerouslySetInnerHTML={{ __html: item.title ?? "" }} />)
+                    : (<h6 className="item-title">{item.title}</h6>)
+                  }
+                  {item.description && 
+                    <p className="item-description" dangerouslySetInnerHTML={{ __html: item.description }} />}
                     
                   </div></div>
                 </a>
