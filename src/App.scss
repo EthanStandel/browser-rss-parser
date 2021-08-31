@@ -96,19 +96,29 @@ ul.topics-navbar::-webkit-scrollbar {
 }
 
 ul.topics-navbar li {
-  display: inline-block;
-  padding: 2px 15px;
   margin: 1px 5px;
-  color: var(--systemPink);
-  border-radius: 15px;
-  border: 2px solid var(--systemPink);
-  overflow: hidden;
-}
+  display: inline-block;
 
-ul.topics-navbar li:hover {
-  background-color: var(--systemPink);
-  color: white;
-  transition: 1s;
+  > button {
+    border-radius: 10px;
+    padding: 2px 15px;
+    color: var(--systemPink);
+    border-radius: 15px;
+    border: 2px solid var(--systemPink);
+    overflow: hidden;
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover, &.selected {
+      background-color: var(--systemPink);
+      color: white;
+    }
+  }
 }
 
 .header-mobile {
