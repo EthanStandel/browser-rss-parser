@@ -93,6 +93,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                   <div className="item-F-line">
                     <div className="r1 bold source-name">{source.name}</div><div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("HH:mm")}</div></div>
                   <h6 className="item-title">{item.title}</h6>
+                  {item.description && <p className="item-description">{item.description}</p>}
                     
                   </div></div>
                 </a>
