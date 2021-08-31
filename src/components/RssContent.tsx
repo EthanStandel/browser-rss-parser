@@ -11,6 +11,7 @@ export interface RssFeedSource {
   count?: number;
   iconImg?: string;
   encodedTitles?: boolean;
+  subtopic?: string;
 }
 
 interface ParsedRssItem {
@@ -68,6 +69,15 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
         return -1;
       }
     })
+    .sort((a, b) => {
+      if (!a.source.subtopic) {
+        return -1;
+      } else if (!b.source.subtopic) {
+        return 1;
+      } else {
+        return a.source.subtopic.localeCompare(b.source.subtopic);
+      }
+    })
   ), [rssFeeds]);
 
   if (status !== "success") {
@@ -93,7 +103,12 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                 <div className="image">{imgHref && <img src={imgHref} alt={item.title} />}</div>
                 <div className="item-container">
                   <div className="item-F-line">
-                    <div className="r1 bold source-name">{source.name}</div><div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("HH:mm")}</div></div>
+                    <div className="r1 bold source-name">
+                      {source.name}
+                      {source.subtopic && ` - ${source.subtopic}`}
+                    </div>
+                    <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("HH:mm")}</div>
+                  </div>
                   {source.encodedTitles ? 
                     (<h6 className="item-title" dangerouslySetInnerHTML={{ __html: item.title ?? "" }} />)
                     : (<h6 className="item-title">{item.title}</h6>)

@@ -16,6 +16,7 @@
       {
         "url": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
         "name": "Le Figaro",
+        "encodedTitles": true,
         "count":2,
         "iconImg": "./lefigaro.png"
       },
@@ -54,6 +55,7 @@
       {
         "url": "https://www.lefigaro.fr/rss/figaro_culture.xml",
         "name": "Le Figaro",
+        "encodedTitles": true,
         "count":2,
         "iconImg": "./lefigaro.png"
       },
@@ -93,6 +95,7 @@
       {
         "url": "https://www.lefigaro.fr/rss/figaro_sport.xml",
         "name": "Le Figaro",
+        "encodedTitles": true,
         "count":2,
         "iconImg": "./lefigaro.png"
       },
@@ -106,6 +109,7 @@
       {
         "url": "https://feeds.leparisien.fr/leparisien/rss/sports",
         "name": "Le Parisien",
+        "subtopic": "Football",
         "count":2,
         "iconImg": "./leparisien.png"
       },
