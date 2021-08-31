@@ -5,9 +5,9 @@ import rssFeeds from "./resources/rss_feeds.json";
 
 const { topics } = rssFeeds;
 const initialTopicFilter = (new URLSearchParams(document.location.search)
-  .get("topic") ?? "unfiltered") as keyof typeof topics;
+  .get("topic") ?? "noTopic") as keyof typeof topics;
 const selectableTopics = Object.entries(rssFeeds.topics)
-  .filter(([key]) => key !== "unfiltered")
+  .filter(([key]) => key !== "noTopic")
   .map(([key]) => key) as Array<keyof typeof topics>;
 
 const App = () => {
@@ -18,7 +18,7 @@ const App = () => {
     // eslint-disable-next-line no-restricted-globals
     const path = `${location.protocol}//${location.host}${location.pathname}${query}`;
     window.history.pushState({ path }, "", path);
-    _setTopicFilter(shouldUnfilter ? "unfiltered": newTopicFilter);
+    _setTopicFilter(shouldUnfilter ? "noTopic": newTopicFilter);
   }
 
   return (
