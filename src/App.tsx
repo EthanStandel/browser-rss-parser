@@ -5,20 +5,21 @@ import rssFeeds from "./resources/rss_feeds.json";
 
 const { topics } = rssFeeds;
 const initialTopicFilter = (new URLSearchParams(document.location.search)
-  .get("topic") ?? "noTopic") as keyof typeof topics;
+  .get("topic") ?? "General") as keyof typeof topics;
 const selectableTopics = Object.entries(rssFeeds.topics)
-  .filter(([key]) => key !== "noTopic")
   .map(([key]) => key) as Array<keyof typeof topics>;
 
 const App = () => {
+  const [ subtopicFilter, setSubtopicFilter ] = useState<string | undefined>(undefined);
   const [ topicFilter, _setTopicFilter ] = useState<keyof typeof topics>(initialTopicFilter);
   const setTopicFilter = (newTopicFilter: keyof typeof topics) => {
+    setSubtopicFilter(undefined);
     const shouldUnfilter = newTopicFilter === topicFilter;
     const query = shouldUnfilter ? "" : `?topic=${encodeURIComponent(newTopicFilter)}`;
     // eslint-disable-next-line no-restricted-globals
     const path = `${location.protocol}//${location.host}${location.pathname}${query}`;
     window.history.pushState({ path }, "", path);
-    _setTopicFilter(shouldUnfilter ? "noTopic": newTopicFilter);
+    _setTopicFilter(shouldUnfilter ? "General": newTopicFilter);
   }
 
   return (
@@ -37,14 +38,46 @@ const App = () => {
               <button className={name === topicFilter ? `selected ${name}` : name} onClick={() => setTopicFilter(name)}>{name}</button>
             </li>
           ))}
-        </ul> 
+        </ul>
+        {Object.keys(topics[topicFilter].subtopics).length > 1 &&
+          <div className="subtopic-selection">
+            <div className="subtopic-label">Subtopics</div>
+            <ul className="topics-navbar r2 bold">
+              <li className="all-subtopic">
+                <button className={!subtopicFilter ? "selected" : ""} onClick={() => setSubtopicFilter(undefined)}>
+                  All
+                </button>
+              </li>
+              {Object.keys(topics[topicFilter].subtopics)
+                .filter(key => key !== "noSubtopic")
+                .map(key => (
+                  <li key={key} className={`${key}-subtopic`}>
+                    <button className={subtopicFilter === key ? `selected ${key}` : ""} onClick={() => setSubtopicFilter(key)}>
+                      {key}
+                    </button>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        }
         </div>
       </header>
       <div className="body-container">
         <h3 className="bold">À la une</h3>
         <div className={topicFilter}>
-          {topicFilter !== "noTopic" && <h3>{topicFilter}</h3>}
-          <RssContent {...{ rssFeeds: topics[topicFilter] }} />
+          {topicFilter !== "General" && <h3>{topicFilter}</h3>}
+          {Object.entries(topics[topicFilter].subtopics)
+            .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)
+            .filter(([ key ]) => !subtopicFilter ? true : subtopicFilter === key)
+            .map(([key, feeds]) => (
+              <div key={key} className={`${key} section`}>
+                <div className="external-script-mount-element" />
+                {key !== "noSubtopic" && <h4>{key}</h4>}
+                <RssContent rssFeeds={feeds} />
+              </div>
+            ))
+          }
         </div>
       </div>
       <footer> 

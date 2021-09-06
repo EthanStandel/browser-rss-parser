@@ -1,124 +1,155 @@
 {
   "topics": {
-    "noTopic": [
-      {
-        "url": "https://www.lemonde.fr/rss/une.xml",
-        "name": "Le Monde",
-        "count":2,
-        "iconImg": "./lemonde.png"
-      },
-      {
-        "url": "https://www.francetvinfo.fr/titres.rss",
-        "name": "Franceinfo",
-        "count":2,
-        "iconImg": "./franceinfo.jpeg"
-      },
-      {
-        "url": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
-        "name": "Le Figaro",
-        "encodedTitles": true,
-        "count":2,
-        "iconImg": "./lefigaro.png"
-      },
-      {
-        "url": "https://www.bfmtv.com/rss/news-24-7/",
-        "name": "BFM TV",
-        "count":2,
-        "iconImg": "./bfmtv.png"
-      },
-      {
-        "url": "https://www.france24.com/fr/rss",
-        "name": "France 24",
-        "count":2,
-        "iconImg": "./france24.jpg"
-      },
-      {
-        "url": "http://www.20minutes.fr/rss/une.xml",
-        "name": "20 Minutes",
-        "count":2,
-        "iconImg": "./20minutes.png"
+    "General": {
+      "subtopics": {
+        "noSubtopic": [
+          {
+            "url": "https://www.lemonde.fr/rss/une.xml",
+            "name": "Le Monde",
+            "count": 2,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde.png"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/titres.rss",
+            "name": "Franceinfo",
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo.jpeg"
+          },
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro.png"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/news-24-7/",
+            "name": "BFM TV",
+            "count": 2,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv.png"
+          },
+          {
+            "url": "https://www.france24.com/fr/rss",
+            "name": "France 24",
+            "count": 2,
+            "iconImg": "./france24.jpg",
+            "backgroundImg": "./france24.jpg"
+          },
+          {
+            "url": "http://www.20minutes.fr/rss/une.xml",
+            "name": "20 Minutes",
+            "count": 2,
+            "iconImg": "./20minutes.png",
+            "backgroundImg": "./20minutes.png"
+          }
+        ]
       }
-    ],
-    "Culture": [
-      {
-        "url": "https://www.lemonde.fr/culture/rss_full.xml",
-        "name": "Le Monde",
-        "count":2,
-        "iconImg": "./lemonde.png"
-      },
-      {
-        "url": "https://www.francetvinfo.fr/culture.rss",
-        "name": "Franceinfo",
-        "count":2,
-        "iconImg": "./france24.jpg"
-      },
-      {
-        "url": "https://www.lefigaro.fr/rss/figaro_culture.xml",
-        "name": "Le Figaro",
-        "encodedTitles": true,
-        "count":2,
-        "iconImg": "./lefigaro.png"
-      },
-      {
-        "url": "https://www.lexpress.fr/rss/culture.xml",
-        "name": "L'Express",
-        "encodedTitles": true,
-        "count":2,
-        "iconImg": "./lexpress.jpeg"
-      },
-      {
-        "url": "https://feeds.leparisien.fr/leparisien/rss/culture-loisirs",
-        "name": "Le Parisien",
-        "count":2,
-        "iconImg": "./leparisien.png"
-      },
-      {
-        "url": "https://www.nouvelobs.com/culture/rss.xml",
-        "name": "L'Obs",
-        "count":2,
-        "iconImg": "./lobs.png"
+    },
+    "Culture": {
+      "subtopics": {
+        "noSubtopic": [
+          {
+            "url": "https://www.lemonde.fr/culture/rss_full.xml",
+            "name": "Le Monde",
+            "count": 2,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde.png"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture.rss",
+            "name": "Franceinfo",
+            "count": 2,
+            "iconImg": "./france24.jpg",
+            "backgroundImg": "./france24.jpg"
+          },
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_culture.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro.png"
+          },
+          {
+            "url": "https://www.lexpress.fr/rss/culture.xml",
+            "name": "L'Express",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lexpress.jpeg",
+            "backgroundImg": "./lexpress.jpeg"
+          },
+          {
+            "url": "https://feeds.leparisien.fr/leparisien/rss/culture-loisirs",
+            "name": "Le Parisien",
+            "count": 2,
+            "iconImg": "./leparisien.png",
+            "backgroundImg": "./leparisien.png"
+          },
+          {
+            "url": "https://www.nouvelobs.com/culture/rss.xml",
+            "name": "L'Obs",
+            "count": 2,
+            "iconImg": "./lobs.png",
+            "backgroundImg": "./lobs.png"
+          }
+        ]
       }
-    ],
-    "Sports": [
-      {
-        "url": "https://www.lemonde.fr/sport/rss_full.xml",
-        "name": "Le Monde",
-        "count":2,
-        "iconImg": "./lemonde.png"
-      },
-      {
-        "url": "https://rmcsport.bfmtv.com/rss/fil-sport/",
-        "name": "RMC Sport",
-        "count":2,
-        "iconImg": "./rmcsport.jpeg"
-      },
-      {
-        "url": "https://www.lefigaro.fr/rss/figaro_sport.xml",
-        "name": "Le Figaro",
-        "encodedTitles": true,
-        "count":2,
-        "iconImg": "./lefigaro.png"
-      },
-      {
-        "url": "https://www.lexpress.fr/rss/sport.xml",
-        "name": "L'Express",
-        "encodedTitles": true,
-        "count":2,
-        "iconImg": "./lexpress.jpeg"
-      },
-      {
-        "url": "https://feeds.leparisien.fr/leparisien/rss/sports",
-        "name": "Le Parisien",
-        "subtopic": "Football",
-        "count":2,
-        "iconImg": "./leparisien.png"
-      },
-      {
-        "url": "https://www.nouvelobs.com/sport/rss.xml",
-        "name": "L'Obs",
-        "count":2,
-        "iconImg": "./lobs.png"
+    },
+    "Sports": {
+      "subtopics": {
+        "Football": [
+          {
+            "url": "https://feeds.leparisien.fr/leparisien/rss/sports",
+            "name": "Le Parisien",
+            "count": 2,
+            "iconImg": "./leparisien.png",
+            "backgroundImg": "./leparisien.png"
+          }
+        ],
+        "noSubtopic": [
+          {
+            "url": "https://www.lemonde.fr/sport/rss_full.xml",
+            "name": "Le Monde",
+            "count": 2,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde.png"
+          },
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/fil-sport/",
+            "name": "RMC Sport",
+            "count": 2,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport.jpeg"
+          },
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_sport.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro.png"
+          },
+          {
+            "url": "https://www.lexpress.fr/rss/sport.xml",
+            "name": "L'Express",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lexpress.jpeg",
+            "backgroundImg": "./lexpress.jpeg"
+          },
+          {
+            "url": "https://www.nouvelobs.com/sport/rss.xml",
+            "name": "L'Obs",
+            "count": 2,
+            "iconImg": "./lobs.png",
+            "backgroundImg": "./lobs.png"
+          }
+        ]
       }
-    ]
+    }
   }
 }

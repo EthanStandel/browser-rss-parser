@@ -10,6 +10,7 @@ export interface RssFeedSource {
   name?: string;
   count?: number;
   iconImg?: string;
+  backgroundImg?: string;
   encodedTitles?: boolean;
   subtopic?: string;
 }
@@ -94,13 +95,12 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             // WARNING: Some of these items contain HTML
             // If they ever contain a script, it's not being filtered out
 
-            const imgHref = source.iconImg;
-
             return (
               <li>
                 <a href={item.link} target="_blank" rel="noreferrer">
                 <div className="media">
-                <div className="image">{imgHref && <img src={imgHref} alt={item.title} />}</div>
+                <div className="icon-image">{source.iconImg && <img src={source.iconImg} alt={item.title} />}</div>
+                <div className="background-image">{source.backgroundImg && <img src={source.backgroundImg} alt={item.title} />}</div>
                 <div className="item-container">
                   <div className="item-F-line">
                     <div className="r1 bold source-name">
