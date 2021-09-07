@@ -5,7 +5,7 @@ import rssFeeds from "./resources/rss_feeds.json";
 
 const { topics } = rssFeeds;
 const initialTopicFilter = (new URLSearchParams(document.location.search)
-  .get("topic") ?? "General") as keyof typeof topics;
+  .get("topic") ?? "À la une") as keyof typeof topics;
 const selectableTopics = Object.entries(rssFeeds.topics)
   .map(([key]) => key) as Array<keyof typeof topics>;
 
@@ -19,7 +19,7 @@ const App = () => {
     // eslint-disable-next-line no-restricted-globals
     const path = `${location.protocol}//${location.host}${location.pathname}${query}`;
     window.history.pushState({ path }, "", path);
-    _setTopicFilter(shouldUnfilter ? "General": newTopicFilter);
+    _setTopicFilter(shouldUnfilter ? "À la une": newTopicFilter);
   }
 
   return (
@@ -64,9 +64,8 @@ const App = () => {
         </div>
       </header>
       <div className="body-container">
-        <h3 className="bold">À la une</h3>
         <div className={topicFilter}>
-          {topicFilter !== "General" && <h3>{topicFilter}</h3>}
+          {<h3 className={"bold " + topicFilter}>{topicFilter}</h3>}
           {Object.entries(topics[topicFilter].subtopics)
             .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)
             .filter(([ key ]) => !subtopicFilter ? true : subtopicFilter === key)

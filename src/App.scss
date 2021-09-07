@@ -294,9 +294,9 @@ img:not(.rss li:first-of-type img) {
 }
 
 .rss li:first-of-type .icon-image img {
-  height: 35px;
+  height: 30px;
   object-fit: cover;
-  width: 35px;
+  width: 30px;
   position: absolute;
   top: 10px;
   left: 10px;
@@ -330,6 +330,13 @@ img:not(.rss li:first-of-type img) {
   padding: 0 !important;
 }
 
+.bold.Culture {
+  color: var(--cultureColorTheme);
+}
+
+.bold.Sports {
+  color: var(--sportsColorTheme)
+}
 
 /*/
 FOOTER
