@@ -8,14 +8,14 @@
             "name": "Le Monde",
             "count": 2,
             "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde.png"
+            "backgroundImg": "./lemonde_bgIMG.jpg"
           },
           {
             "url": "https://www.francetvinfo.fr/titres.rss",
             "name": "Franceinfo",
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo.jpeg"
+            "backgroundImg": "./franceinfo_bgIMG.jpeg"
           },
           {
             "url": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
@@ -23,28 +23,28 @@
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro.png"
+            "backgroundImg": "./lefigaro_bgIMG.png"
           },
           {
             "url": "https://www.bfmtv.com/rss/news-24-7/",
             "name": "BFM TV",
             "count": 2,
             "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv.png"
+            "backgroundImg": "./bfmtv_bgIMG.png"
           },
           {
             "url": "https://www.france24.com/fr/rss",
             "name": "France 24",
             "count": 2,
             "iconImg": "./france24.jpg",
-            "backgroundImg": "./france24.jpg"
+            "backgroundImg": "./france24_bgIMG.jpg"
           },
           {
             "url": "http://www.20minutes.fr/rss/une.xml",
             "name": "20 Minutes",
             "count": 2,
             "iconImg": "./20minutes.png",
-            "backgroundImg": "./20minutes.png"
+            "backgroundImg": "./20minutes_bgIMG.png"
           }
         ]
       }
@@ -94,7 +94,7 @@
             "name": "L'Obs",
             "count": 2,
             "iconImg": "./lobs.png",
-            "backgroundImg": "./lobs.png"
+            "backgroundImg": "./lobs_bgIMG.jpg"
           }
         ]
       }
@@ -146,7 +146,7 @@
             "name": "L'Obs",
             "count": 2,
             "iconImg": "./lobs.png",
-            "backgroundImg": "./lobs.png"
+            "backgroundImg": "./lobs_bgIMG.jpg"
           }
         ]
       }
