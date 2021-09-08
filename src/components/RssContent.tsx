@@ -61,22 +61,21 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
         : curr.slice(0, rssFeeds[index].count)
     ), [])
     .sort((a, b) => {
-      if (a.date && b.date) {
+      // Sort items with subtopics at the bottom
+      if (!a.source.subtopic && b.source.subtopic) {
+        return -1;
+      } else if (!b.source.subtopic && a.source.subtopic) {
+        return 1;
+      } else if (a.source.subtopic && b.source.subtopic && a.source.subtopic !== b.source.subtopic) {
+        return a.source.subtopic.localeCompare(b.source.subtopic);
+      // If they both have no subtopic or the same subtopic, sort by date
+      } else if (a.date && b.date) {
         const aTime = a.date.toJSDate().getTime();
         const bTime = b.date.toJSDate().getTime();
         return bTime - aTime;
       } else {
         // Sorts all undated items to the bottom of the list
         return -1;
-      }
-    })
-    .sort((a, b) => {
-      if (!a.source.subtopic) {
-        return -1;
-      } else if (!b.source.subtopic) {
-        return 1;
-      } else {
-        return a.source.subtopic.localeCompare(b.source.subtopic);
       }
     })
   ), [rssFeeds]);
