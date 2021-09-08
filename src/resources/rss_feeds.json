@@ -15,7 +15,7 @@
             "name": "Franceinfo",
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpeg"
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
           {
             "url": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
@@ -45,6 +45,42 @@
             "count": 2,
             "iconImg": "./20minutes.png",
             "backgroundImg": "./20minutes_bgIMG.png"
+          }
+        ]
+      }
+    },
+    "Économie": {
+      "subtopics": {
+        "En anglais": [
+          {
+            "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
+            "name": "The Wall Street Journal",
+            "count": 2,
+            "iconImg": "./default.png",
+            "backgroundImg": "./default.png"
+          },
+          {
+            "url": "https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml",
+            "name": "The Wall Street Journal",
+            "count": 1,
+            "iconImg": "./default.png",
+            "backgroundImg": "./default.png"
+          },
+          {
+            "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
+            "name": "The New York Times",
+            "count": 2,
+            "iconImg": "./default.png",
+            "backgroundImg": "./default.png"
+          }
+        ],
+        "United States": [
+          {
+            "url": "https://www.washingtontimes.com/rss/headlines/news/national/",
+            "name": "Washington Times",
+            "count": 2,
+            "iconImg": "./default.png",
+            "backgroundImg": "./default.png"
           }
         ]
       }
@@ -147,6 +183,84 @@
             "count": 2,
             "iconImg": "./lobs.png",
             "backgroundImg": "./lobs_bgIMG.jpg"
+          }
+        ]
+      }
+    },
+    "Presse étrangère": {
+      "subtopics": {
+        "Deutschland": [
+          {
+            "url": "https://www.tagesschau.de/xml/rss2",
+            "name": "Tagesschau.de",
+            "count": 2,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde.png"
+          }
+        ],
+        "United States": [
+          {
+            "url": "https://www.washingtontimes.com/rss/headlines/news/national/",
+            "name": "Washington Times",
+            "count": 1,
+            "iconImg": "./default.png",
+            "backgroundImg": "./default.png"
+          },
+          {
+            "url": "https://www.cbsnews.com/latest/rss/main",
+            "name": "CBS News",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./default.png",
+            "backgroundImg": "./default.png"
+          },
+          {
+            "url": "https://www.latimes.com/world-nation/rss2.0.xml",
+            "name": "Los Angeles Times",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./default.png",
+            "backgroundImg": "./default.png"
+          },
+          {
+            "url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml",
+            "name": "The New York Times",
+            "count": 1,
+            "iconImg": "./default.png",
+            "backgroundImg": "./default.png"
+          },
+          {
+            "url": "https://lasvegassun.com/feeds/headlines/all",
+            "name": "Las Vegas Sun",
+            "count": 1,
+            "iconImg": "./default.png",
+            "backgroundImg": "./default.png"
+          }
+        ]
+      }
+    },
+    "Curiosité": {
+      "subtopics": {
+        "En anglais": [
+          {
+            "url": "https://www.newyorker.com/feed/everything",
+            "name": "The New Yorker",
+            "count": 2,
+            "iconImg": "./default.png",
+            "backgroundImg": "./default.png"
+          }
+        ]
+      }
+    },
+    "Monde": {
+      "subtopics": {
+        "En anglais": [
+          {
+            "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+            "name": "The New York Times",
+            "count": 3,
+            "iconImg": "./default.png",
+            "backgroundImg": "./default.png"
           }
         ]
       }

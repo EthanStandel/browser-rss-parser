@@ -72,7 +72,7 @@ const App = () => {
             .map(([key, feeds]) => (
               <div key={key} className={`${key} section`}>
                 <div className="external-script-mount-element" />
-                {key !== "noSubtopic" && <h4>{key}</h4>}
+                {key !== "noSubtopic" && <h4 className="subtopic">{key}</h4>}
                 <RssContent rssFeeds={feeds} />
               </div>
             ))

@@ -99,8 +99,8 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
               <li>
                 <a href={item.link} target="_blank" rel="noreferrer">
                 <div className="media">
-                <div className="icon-image">{source.iconImg && <img src={source.iconImg} alt={item.title} />}</div>
-                <div className="background-image">{source.backgroundImg && <img src={source.backgroundImg} alt={item.title} />}</div>
+                <div className="icon-image">{source.iconImg && <img src={source.iconImg}/>}</div>
+                <div className="background-image">{source.backgroundImg && <img src={source.backgroundImg} alt={source.name} />}</div>
                 <div className="item-container">
                   <div className="item-F-line">
                     <div className="r1 bold source-name">
