@@ -73,15 +73,6 @@
             "iconImg": "./default.png",
             "backgroundImg": "./default.png"
           }
-        ],
-        "United States": [
-          {
-            "url": "https://www.washingtontimes.com/rss/headlines/news/national/",
-            "name": "Washington Times",
-            "count": 2,
-            "iconImg": "./default.png",
-            "backgroundImg": "./default.png"
-          }
         ]
       }
     },
@@ -200,13 +191,6 @@
         ],
         "United States": [
           {
-            "url": "https://www.washingtontimes.com/rss/headlines/news/national/",
-            "name": "Washington Times",
-            "count": 1,
-            "iconImg": "./default.png",
-            "backgroundImg": "./default.png"
-          },
-          {
             "url": "https://www.cbsnews.com/latest/rss/main",
             "name": "CBS News",
             "encodedTitles": true,
@@ -225,13 +209,6 @@
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml",
             "name": "The New York Times",
-            "count": 1,
-            "iconImg": "./default.png",
-            "backgroundImg": "./default.png"
-          },
-          {
-            "url": "https://lasvegassun.com/feeds/headlines/all",
-            "name": "Las Vegas Sun",
             "count": 1,
             "iconImg": "./default.png",
             "backgroundImg": "./default.png"
@@ -258,6 +235,13 @@
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
             "name": "The New York Times",
+            "count": 3,
+            "iconImg": "./default.png",
+            "backgroundImg": "./default.png"
+          },
+          {
+            "url": "http://feeds.bbci.co.uk/news/video_and_audio/world/rss.xml",
+            "name": "BBC News",
             "count": 3,
             "iconImg": "./default.png",
             "backgroundImg": "./default.png"

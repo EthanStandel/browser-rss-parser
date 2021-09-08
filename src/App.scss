@@ -8,6 +8,7 @@
   --cultureColorTheme: burlywood;
   --sportsColorTheme: yellowgreen;
   --ecoColorTheme: goldenrod;
+  --mondeColorTheme: royalblue;
 }
 
 /* color focus */
@@ -117,6 +118,11 @@ ul.topics-navbar li {
     color: var(--ecoColorTheme);
   }
 
+  > button.Monde {
+    border: 2px solid var(--mondeColorTheme);
+    color: var(--mondeColorTheme);
+  }
+
   > button {
     border-radius: 10px;
     border: 2px solid var(--systemPink);
@@ -146,6 +152,10 @@ ul.topics-navbar li {
 
     &:hover.Économie, &.selected.Économie {
       background-color: var(--ecoColorTheme);
+    }
+
+    &:hover.Monde, &.selected.Monde {
+      background-color: var(--mondeColorTheme);
     }
   }
 }
@@ -263,6 +273,12 @@ ul.rss {
   float: left;
   font-weight: 900 !important;
   color: var(--systemGray);
+  -webkit-line-clamp: 1 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 75% !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical;
 }
 
 .item-publish-date {
@@ -337,6 +353,10 @@ img:not(.rss li:first-of-type img) {
   max-height: 22px;
 }
 
+.rss li:first-child .item-F-line {
+  width: calc(100% + 6px);
+}
+
 .footer-header-app h5.logo-text {
   text-align: left !important;
   padding: 0 !important;
@@ -352,6 +372,10 @@ h3.bold.Sports {
 
 h3.bold.Économie {
   color: var(--ecoColorTheme);
+}
+
+h3.bold.Monde {
+  color: var(--mondeColorTheme);
 }
 
 h3.bold {
