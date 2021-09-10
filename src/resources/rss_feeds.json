@@ -30,7 +30,7 @@
             "name": "BFM TV",
             "count": 2,
             "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.png"
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
           },
           {
             "url": "https://www.france24.com/fr/rss",
@@ -51,6 +51,30 @@
     },
     "Économie": {
       "subtopics": {
+        "noSubtopic": [
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_economie.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://syndication.lesechos.fr/rss/rss_france.xml",
+            "name": "Les Échos",
+            "count": 2,
+            "iconImg": "./lesechos.png",
+            "backgroundImg": "./lesechos_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/economie/rss_full.xml",
+            "name": "Le Monde",
+            "count": 2,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          }
+        ],
         "En anglais": [
           {
             "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
@@ -114,7 +138,7 @@
             "name": "Le Parisien",
             "count": 2,
             "iconImg": "./leparisien.png",
-            "backgroundImg": "./leparisien.png"
+            "backgroundImg": "./leparisien_bgIMG.jpg"
           },
           {
             "url": "https://www.nouvelobs.com/culture/rss.xml",
@@ -134,7 +158,7 @@
             "name": "Le Parisien",
             "count": 2,
             "iconImg": "./leparisien.png",
-            "backgroundImg": "./leparisien.png"
+            "backgroundImg": "./leparisien_bgIMG.jpg"
           }
         ],
         "noSubtopic": [
@@ -143,7 +167,7 @@
             "name": "Le Monde",
             "count": 2,
             "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde.png"
+            "backgroundImg": "./lemonde_bgIMG.png"
           },
           {
             "url": "https://rmcsport.bfmtv.com/rss/fil-sport/",
@@ -158,7 +182,7 @@
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro.png"
+            "backgroundImg": "./lefigaro_bgIMG.png"
           },
           {
             "url": "https://www.lexpress.fr/rss/sport.xml",
@@ -195,23 +219,24 @@
             "name": "CBS News",
             "encodedTitles": true,
             "count": 2,
-            "iconImg": "./default.png",
-            "backgroundImg": "./default.png"
+            "iconImg": "./cbsnews.png",
+            "backgroundImg": "./cbsnews_bgIMG.jpg"
           },
           {
             "url": "https://www.latimes.com/world-nation/rss2.0.xml",
             "name": "Los Angeles Times",
             "encodedTitles": true,
             "count": 2,
-            "iconImg": "./default.png",
-            "backgroundImg": "./default.png"
+            "iconImg": "./latimes.png",
+            "backgroundImg": "./latimes_bgIMG.jpg"
           },
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml",
             "name": "The New York Times",
+            "encodedTitles": true,
             "count": 1,
-            "iconImg": "./default.png",
-            "backgroundImg": "./default.png"
+            "iconImg": "./thenytimes.png",
+            "backgroundImg": "./thenytimes_bgIMG.jpg"
           }
         ]
       }
@@ -223,8 +248,8 @@
             "url": "https://www.newyorker.com/feed/everything",
             "name": "The New Yorker",
             "count": 2,
-            "iconImg": "./default.png",
-            "backgroundImg": "./default.png"
+            "iconImg": "./thenewyorker.png",
+            "backgroundImg": "./thenewyorker_bgIMG.jpg"
           }
         ]
       }
@@ -236,15 +261,24 @@
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
             "name": "The New York Times",
             "count": 3,
-            "iconImg": "./default.png",
-            "backgroundImg": "./default.png"
+            "iconImg": "./thenytimes.png",
+            "backgroundImg": "./thenytimes_bgIMG.jpg"
           },
           {
             "url": "http://feeds.bbci.co.uk/news/video_and_audio/world/rss.xml",
             "name": "BBC News",
             "count": 3,
-            "iconImg": "./default.png",
-            "backgroundImg": "./default.png"
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
+          }
+        ],
+        "noSubtopic": [
+          {
+            "url": "https://www.france24.com/fr/rss",
+            "name": "France 24",
+            "count": 2,
+            "iconImg": "./france24.jpg",
+            "backgroundImg": "./france24_bgIMG.jpg"
           }
         ]
       }
