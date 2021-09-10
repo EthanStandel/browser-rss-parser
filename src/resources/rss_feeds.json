@@ -174,7 +174,7 @@
             "name": "RMC Sport",
             "count": 2,
             "iconImg": "./rmcsport.jpeg",
-            "backgroundImg": "./rmcsport.jpeg"
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
           },
           {
             "url": "https://www.lefigaro.fr/rss/figaro_sport.xml",
