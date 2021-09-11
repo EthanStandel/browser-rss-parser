@@ -3,12 +3,16 @@ import XmlParser from "fast-xml-parser";
 import { DateTime } from "luxon";
 import axios from "axios";
 import { useAsync } from "@react-hookz/web";
+import { Spinner } from "./Spinner";
 
 export interface RssFeedSource {
   url: string;
   name?: string;
   count?: number;
-  defaultImg?: string;
+  iconImg?: string;
+  backgroundImg?: string;
+  encodedTitles?: boolean;
+  subtopic?: string;
 }
 
 interface ParsedRssItem {
@@ -57,7 +61,15 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
         : curr.slice(0, rssFeeds[index].count)
     ), [])
     .sort((a, b) => {
-      if (a.date && b.date) {
+      // Sort items with subtopics at the bottom
+      if (!a.source.subtopic && b.source.subtopic) {
+        return -1;
+      } else if (!b.source.subtopic && a.source.subtopic) {
+        return 1;
+      } else if (a.source.subtopic && b.source.subtopic && a.source.subtopic !== b.source.subtopic) {
+        return a.source.subtopic.localeCompare(b.source.subtopic);
+      // If they both have no subtopic or the same subtopic, sort by date
+      } else if (a.date && b.date) {
         const aTime = a.date.toJSDate().getTime();
         const bTime = b.date.toJSDate().getTime();
         return bTime - aTime;
@@ -69,28 +81,41 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
   ), [rssFeeds]);
 
   if (status !== "success") {
-    return null;
+    return (
+      <div className="spinner-container">
+        <Spinner />
+      </div>
+    );
   } else {
     return (
-      <ul className="mount-rss-feed">
+      <ul className="rss">
         {
           result!.map(({ item, source, date }) => {
             // WARNING: Some of these items contain HTML
             // If they ever contain a script, it's not being filtered out
 
-            const imgHref = 
-              item.image 
-              ?? item["media:content"]?.url
-              ?? item.enclosure?.type === "image/jpeg" ? item?.enclosure?.type
-              : source.defaultImg;
-
             return (
               <li>
-                <a className="item-link" href={item.link}>
-                  {imgHref && <img src={imgHref} alt={item.title} />}
-                  <div className="source-name">{source.name}</div>
-                  <div className="item-title">{item.title}</div>
-                  <div className="item-publish-date">{date?.setLocale("fr").toFormat("yyyy LLL dd")}</div>
+                <a href={item.link} target="_blank" rel="noreferrer">
+                <div className="media">
+                <div className="icon-image">{source.iconImg && <img src={source.iconImg}/>}</div>
+                <div className="background-image">{source.backgroundImg && <img src={source.backgroundImg} alt={source.name} />}</div>
+                <div className="item-container">
+                  <div className="item-F-line">
+                    <div className="r1 bold source-name">
+                      {source.name}
+                      {source.subtopic && ` - ${source.subtopic}`}
+                    </div>
+                    <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("HH:mm")}</div>
+                  </div>
+                  {source.encodedTitles ? 
+                    (<h6 className="item-title" dangerouslySetInnerHTML={{ __html: item.title ?? "" }} />)
+                    : (<h6 className="item-title">{item.title}</h6>)
+                  }
+                  {item.description && 
+                    <div className="h7 item-description" dangerouslySetInnerHTML={{ __html: item.description }} />}
+                    
+                  </div></div>
                 </a>
               </li>
             );

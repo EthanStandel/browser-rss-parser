@@ -1,0 +1,142 @@
+/* Color values from https://noahgilmore.com/blog/dark-mode-uicolor-compatibility/
+   Explanations for use of the colors in https://github.com/cocoacontrols/SemanticUI */
+
+/* HTML5 color-names allowed for use in Titles (News App). List: https://www.w3schools.com/colors/colors_names.asp */
+
+@media (prefers-color-scheme: light) {
+    :root {
+      /* Adaptable Colors */
+      --systemBlue: rgba(0.0, 122.0, 255.0, 1.0);
+      --systemGreen: rgba(52.0, 199.0, 89.0, 1.0);
+      --systemIndigo: rgba(88.0, 86.0, 214.0, 1.0);
+      --systemOrange: rgba(255.0, 149.0, 0.0, 1.0);
+      --systemPink: rgba(255.0, 45.0, 85.0, 1.0);
+      --systemPurple: rgba(175.0, 82.0, 222.0, 1.0);
+      --systemRed: rgba(255.0, 59.0, 48.0, 1.0);
+      --systemTeal: rgba(90.0, 200.0, 250.0, 1.0);
+      --systemYellow: rgba(255.0, 204.0, 0.0, 1.0);
+      --systemBrown: rgba(162.0, 132.0, 94.0, 1.0);
+
+      /* Adaptable Grays */
+      --systemGray: rgba(142.0, 142.0, 147.0, 1.0);
+      --systemGray2: rgba(174.0, 174.0, 178.0, 1.0);
+      --systemGray3: rgba(199.0, 199.0, 204.0, 1.0);
+      --systemGray4: rgba(209.0, 209.0, 214.0, 1.0);
+      --systemGray5: rgba(229.0, 229.0, 234.0, 1.0);
+      --systemGray6: rgba(242.0, 242.0, 247.0, 1.0);
+      
+      /* Labels Colors */
+      --label: rgba(0.0, 0.0, 0.0, 1.0);
+      --secondaryLabel: rgba(60.0, 60.0, 67.0, 0.6);
+      --tertiaryLabel: rgba(60.0, 60.0, 67.0, 0.3);
+      --quaternaryLabel: rgba(60.0, 60.0, 67.0, 0.18);
+      
+      /* Text Colors */
+      --placeholderText: rgba(60.0, 60.0, 67.0, 0.3);
+
+      /* Link Color */
+      --link: rgba(0.0, 122.0, 255.0, 1.0);
+
+      /* Separators */
+      --separator: rgba(60.0, 60.0, 67.0, 0.29);
+      --opaqueSeparator: rgba(198.0, 198.0, 200.0, 1.0);
+
+      /* Fill Colors */
+      --systemFill: rgba(120.0, 120.0, 128.0, 0.2);
+      --secondarySystemFill: rgba(120.0, 120.0, 128.0, 0.16);
+      --tertiarySystemFill: rgba(118.0, 118.0, 128.0, 0.12);
+      --quaternarySystemFill: rgba(116.0, 116.0, 128.0, 0.08);
+
+      /* Background Colors */
+      --systemBackground: rgba(255.0, 255.0, 255.0, 1.0);
+      --secondarySystemBackground: rgba(242.0, 242.0, 247.0, 1.0);
+      --tertiarySystemBackground: rgba(255.0, 255.0, 255.0, 1.0);
+
+      /* Grouped Background Colors */
+      --systemGroupedBackground: rgba(242.0, 242.0, 247.0, 1.0);
+      --secondarySystemGroupedBackground: rgba(255.0, 255.0, 255.0, 1.0);
+      --tertiarySystemGroupedBackground: rgba(242.0, 242.0, 247.0, 1.0);
+
+      /* Non-Adaptable Colors */
+      --lightText: rgba(255.0, 255.0, 255.0, 0.6);
+      --darkText: rgba(0.0, 0.0, 0.0, 1.0);
+
+      /*/ Materials (Blur effects) /*/
+      --systemUltrathinMaterial: rgba(246, 246, 246, 0.36);
+      --systemThinMaterial: rgba(246, 246, 246, 0.48);
+      --systemMediumMaterial: rgba(246, 246, 246, 0.6);
+      --systemThickMaterial: rgba(246, 246, 246, 0.72);
+      --systemUltrathickMaterial: rgba(246, 246, 246, 0.84);
+      --systemHeaderMaterial: rgba(255, 255, 255, 0.8);
+      --systemTitlebarMaterial: rgba(253, 253, 253, 0.8);
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      /* Adaptable Colors */
+      --systemBlue: rgba(10.0, 132.0, 255.0, 1.0);
+      --systemGreen: rgba(48.0, 209.0, 88.0, 1.0);
+      --systemIndigo: rgba(94.0, 92.0, 230.0, 1.0);
+      --systemOrange: rgba(255.0, 159.0, 10.0, 1.0);
+      --systemPink: rgba(255.0, 55.0, 95.0, 1.0);
+      --systemPurple: rgba(191.0, 90.0, 242.0, 1.0);
+      --systemRed: rgba(255.0, 69.0, 58.0, 1.0);
+      --systemTeal: rgba(100.0, 210.0, 255.0, 1.0);
+      --systemYellow: rgba(255.0, 214.0, 10.0, 1.0);
+      --systemBrown: rgba(172.0, 142.0, 104.0, 1.0);
+
+      /* Adaptable Grays */
+      --systemGray: rgba(142.0, 142.0, 147.0, 1.0);
+      --systemGray2: rgba(99.0, 99.0, 102.0, 1.0);
+      --systemGray3: rgba(72.0, 72.0, 74.0, 1.0);
+      --systemGray4: rgba(58.0, 58.0, 60.0, 1.0);
+      --systemGray5: rgba(44.0, 44.0, 46.0, 1.0);
+      --systemGray6: rgba(28.0, 28.0, 30.0, 1.0);
+      
+      /* Labels Colors */
+      --label: rgba(255.0, 255.0, 255.0, 1.0);
+      --secondaryLabel: rgba(235.0, 235.0, 245.0, 0.6);
+      --tertiaryLabel: rgba(235.0, 235.0, 245.0, 0.3);
+      --quaternaryLabel: rgba(235.0, 235.0, 245.0, 0.18);
+      
+      /* Text Colors */
+      --placeholderText: rgba(235.0, 235.0, 245.0, 0.3);
+
+      /* Link Color */
+      --link: rgba(9.0, 132.0, 255.0, 1.0);
+
+      /* Separators */
+      --separator: rgba(84.0, 84.0, 88.0, 0.6);
+      --opaqueSeparator: rgba(56.0, 56.0, 58.0, 1.0);
+
+      /* Fill Colors */
+      --systemFill: rgba(120.0, 120.0, 128.0, 0.36);
+      --secondarySystemFill: rgba(120.0, 120.0, 128.0, 0.32);
+      --tertiarySystemFill: rgba(118.0, 118.0, 128.0, 0.24);
+      --quaternarySystemFill: rgba(118.0, 118.0, 128.0, 0.18);
+
+      /* Background Colors */
+      --systemBackground: rgba(0.0, 0.0, 0.0, 1.0);
+      --secondarySystemBackground: rgba(28.0, 28.0, 30.0, 1.0);
+      --tertiarySystemBackground: rgba(44.0, 44.0, 46.0, 1.0);
+
+      /* Grouped Background Colors */
+      --systemGroupedBackground: rgba(0.0, 0.0, 0.0, 1.0);
+      --secondarySystemGroupedBackground: rgba(28.0, 28.0, 30.0, 1.0);
+      --tertiarySystemGroupedBackground: rgba(44.0, 44.0, 46.0, 1.0);
+
+      /*Non-Adaptable Colors*/
+      --lightText: rgba(255.0, 255.0, 255.0, 0.6);
+      --darkText: rgba(0.0, 0.0, 0.0, 1.0);
+
+      /*/ Materials (Blur effects) /*/
+      --systemUltrathinMaterial: rgba(40, 40, 40, 0.4);
+      --systemThinMaterial: rgba(40, 40, 40, 0.5);
+      --systemMediumMaterial: rgba(40, 40, 40, 0.6);
+      --systemThickMaterial: rgba(40, 40, 40, 0.7);
+      --systemUltrathickMaterial: rgba(40, 40, 40, 0.8);
+      --systemHeaderMaterial: rgba(30, 30, 30, 0.8);
+      --systemTitlebarMaterial: rgba(60, 60, 60, 0.8);
+    }
+  }
