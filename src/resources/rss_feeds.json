@@ -75,6 +75,8 @@
             "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
+        "Bourse & Finances": [
+        ],
         "En anglais": [
           {
             "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
@@ -147,20 +149,25 @@
             "iconImg": "./lobs.png",
             "backgroundImg": "./lobs_bgIMG.jpg"
           }
+        ],
+        "Littérature": [
+        ],
+        "Arts visuels & graphiques": [
+        ],
+        "Arts de la scène": [
+        ],
+        "Films & séries": [
+        ],
+        "Jeux vidéos": [
+        ],
+        "Architecture & Patrimoine": [
+        ],
+        "Artistes": [
         ]
       }
     },
     "Sports": {
       "subtopics": {
-        "Football": [
-          {
-            "url": "https://feeds.leparisien.fr/leparisien/rss/sports",
-            "name": "Le Parisien",
-            "count": 2,
-            "iconImg": "./leparisien.png",
-            "backgroundImg": "./leparisien_bgIMG.jpg"
-          }
-        ],
         "noSubtopic": [
           {
             "url": "https://www.lemonde.fr/sport/rss_full.xml",
@@ -199,6 +206,76 @@
             "iconImg": "./lobs.png",
             "backgroundImg": "./lobs_bgIMG.jpg"
           }
+        ],
+        "Football": [
+          {
+            "url": "https://feeds.leparisien.fr/leparisien/rss/sports",
+            "name": "Le Parisien",
+            "count": 2,
+            "iconImg": "./leparisien.png",
+            "backgroundImg": "./leparisien_bgIMG.jpg"
+          }
+        ],
+        "Tennis & Ping-Pong": [
+        ],
+        "Basketball": [
+        ],
+        "Rugby": [
+        ],
+        "Sports aquatiques & marins": [
+        ],
+        "Golf": [
+        ],
+        "Pétanque": [
+        ],
+        "E-Sports": [
+        ],
+        "Sports d'esprit": [
+        ]
+      }
+    },
+    "Europe": {
+      "subtopics": {
+        "noSubtopic": [
+          
+        ],
+        "-": [
+          
+        ]
+      }
+    },
+    "Monde": {
+      "subtopics": {
+        "noSubtopic": [
+          {
+            "url": "https://www.france24.com/fr/rss",
+            "name": "France 24",
+            "count": 2,
+            "iconImg": "./france24.jpg",
+            "backgroundImg": "./france24_bgIMG.jpg"
+          }
+        ],
+        "Afrique": [
+        ],
+        "Amérique": [
+        ],
+        "Asie & Océanie": [
+        ],
+        "En anglais": [
+          {
+            "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+            "name": "The New York Times",
+            "count": 3,
+            "iconImg": "./thenytimes.png",
+            "backgroundImg": "./thenytimes_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.bbci.co.uk/news/video_and_audio/world/rss.xml",
+            "name": "BBC News",
+            "count": 3,
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
+          }
         ]
       }
     },
@@ -213,7 +290,7 @@
             "backgroundImg": "./lemonde.png"
           }
         ],
-        "United States": [
+        "United States & Canada": [
           {
             "url": "https://www.cbsnews.com/latest/rss/main",
             "name": "CBS News",
@@ -238,12 +315,19 @@
             "iconImg": "./thenytimes.png",
             "backgroundImg": "./thenytimes_bgIMG.jpg"
           }
+        ],
+        "Australia & NZ": [
+        ],
+        "United Kindgom": [
         ]
       }
     },
-    "Curiosité": {
+    "Art de vivre": {
       "subtopics": {
-        "En anglais": [
+        "noSubtopic": [
+
+        ],
+        "Presse étrangère": [
           {
             "url": "https://www.newyorker.com/feed/everything",
             "name": "The New Yorker",
@@ -251,35 +335,52 @@
             "iconImg": "./thenewyorker.png",
             "backgroundImg": "./thenewyorker_bgIMG.jpg"
           }
+        ],
+        "Voyages": [
         ]
       }
     },
-    "Monde": {
+    "Politique": {
       "subtopics": {
-        "En anglais": [
-          {
-            "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
-            "name": "The New York Times",
-            "count": 3,
-            "iconImg": "./thenytimes.png",
-            "backgroundImg": "./thenytimes_bgIMG.jpg"
-          },
-          {
-            "url": "http://feeds.bbci.co.uk/news/video_and_audio/world/rss.xml",
-            "name": "BBC News",
-            "count": 3,
-            "iconImg": "./bbcnews.png",
-            "backgroundImg": "./bbcnews_bgIMG.jpg"
-          }
+        "Nationale": [
+          
         ],
+        "Locale": [
+          
+        ],
+        "Européene": [
+          
+        ],
+        "Mondiale": [
+          
+        ]
+      }
+    },
+    "Sciences": {
+      "subtopics": {
         "noSubtopic": [
-          {
-            "url": "https://www.france24.com/fr/rss",
-            "name": "France 24",
-            "count": 2,
-            "iconImg": "./france24.jpg",
-            "backgroundImg": "./france24_bgIMG.jpg"
-          }
+          
+        ],
+        "Environnement & nature": [
+        ],
+        "Espace & Astronomie": [
+        ],
+        "Technologie & informatique": [
+        ],
+        "Physique-chimie & biologie": [
+        ],
+        "Transports": [
+        ],
+        "Médecine": [
+        ]
+      }
+    },
+    "Société": {
+      "subtopics": {
+        "noSubtopic": [
+          
+        ],
+        "-": [
         ]
       }
     }

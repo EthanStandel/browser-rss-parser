@@ -44,7 +44,7 @@ const App = () => {
             <ul className={"topics-navbar r2 " + topicFilter}>
               <li className="all-subtopic">
                 <button className={!subtopicFilter ? "selected" : ""} onClick={() => setSubtopicFilter(undefined)}>
-                  Tous 
+                  Tout 
                 </button>
               </li>
               {Object.keys(topics[topicFilter].subtopics)
