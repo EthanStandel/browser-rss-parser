@@ -94,8 +94,8 @@
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
             "name": "The New York Times",
             "count": 2,
-            "iconImg": "./default.png",
-            "backgroundImg": "./default.png"
+            "iconImg": "./thenytimes.png",
+            "backgroundImg": "./thenytimes_bgIMG.jpg"
           }
         ]
       }
@@ -108,14 +108,14 @@
             "name": "Le Monde",
             "count": 2,
             "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde.png"
+            "backgroundImg": "./lemonde_bgIMG.jpg"
           },
           {
             "url": "https://www.francetvinfo.fr/culture.rss",
             "name": "Franceinfo",
             "count": 2,
             "iconImg": "./france24.jpg",
-            "backgroundImg": "./france24.jpg"
+            "backgroundImg": "./france24_bgIMG.jpg"
           },
           {
             "url": "https://www.lefigaro.fr/rss/figaro_culture.xml",
@@ -123,7 +123,7 @@
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro.png"
+            "backgroundImg": "./lefigaro_bgIMG.png"
           },
           {
             "url": "https://www.lexpress.fr/rss/culture.xml",
@@ -131,7 +131,7 @@
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lexpress.jpeg",
-            "backgroundImg": "./lexpress.jpeg"
+            "backgroundImg": "./lexpress_bgIMG.jpg"
           },
           {
             "url": "https://feeds.leparisien.fr/leparisien/rss/culture-loisirs",
