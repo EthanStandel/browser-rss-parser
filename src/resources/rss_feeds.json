@@ -18,7 +18,7 @@
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
           {
-            "url": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
+            "url": "https://www.lefigaro.fr/rss/figaro_flash-actu.xml",
             "name": "Le Figaro",
             "encodedTitles": true,
             "count": 2,
@@ -53,10 +53,17 @@
       "subtopics": {
         "noSubtopic": [
           {
-            "url": "https://www.lefigaro.fr/rss/figaro_economie.xml",
+            "url": "https://www.francetvinfo.fr/economie.rss",
+            "name": "Franceinfo",
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_flash-eco.xml",
             "name": "Le Figaro",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
           },
@@ -73,9 +80,92 @@
             "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/economie/rendez-vous-eco/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
           }
         ],
-        "Bourse & Finances": [
+        "Marchés": [
+          {
+            "url": "https://www.francetvinfo.fr/marches.rss",
+            "name": "Franceinfo",
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_bourse.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_societes.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          }
+        ],
+        "Entreprises": [
+          {
+            "url": "https://www.francetvinfo.fr/entreprises.rss",
+            "name": "Franceinfo",
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/economie/entreprise/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
+        ],
+        "Immobilier": [
+          {
+            "url": "https://www.francetvinfo.fr/immobilier.rss",
+            "name": "Franceinfo",
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_immobilier.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.ladepeche.fr/economie/immobilier/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
+        ],
+        "Banques & Finance": [
+          {
+            "url": "https://www.ladepeche.fr/economie/banque-finances/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
         ],
         "En anglais": [
           {
@@ -116,8 +206,8 @@
             "url": "https://www.francetvinfo.fr/culture.rss",
             "name": "Franceinfo",
             "count": 2,
-            "iconImg": "./france24.jpg",
-            "backgroundImg": "./france24_bgIMG.jpg"
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
           {
             "url": "https://www.lefigaro.fr/rss/figaro_culture.xml",
@@ -131,7 +221,7 @@
             "url": "https://www.lexpress.fr/rss/culture.xml",
             "name": "L'Express",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./lexpress.jpeg",
             "backgroundImg": "./lexpress_bgIMG.jpg"
           },
@@ -151,18 +241,91 @@
           }
         ],
         "Littérature": [
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_livres.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          }
         ],
         "Arts visuels & graphiques": [
         ],
-        "Arts de la scène": [
+        "Spectacles & expositions": [
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_theatre.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_arts-expositions.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.ladepeche.fr/culture-et-loisirs/spectacles/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
         ],
         "Films & séries": [
+          {
+            "url": "https://www.francetvinfo.fr/cinema.rss",
+            "name": "Franceinfo",
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_cinema.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          }
         ],
         "Jeux vidéos": [
+          {
+            "url": "https://www.ladepeche.fr/economie/innovation-high-tech/jeux-consoles/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
         ],
-        "Architecture & Patrimoine": [
+        "Patrimoine & Architecture": [
+          {
+            "url": "https://www.ladepeche.fr/culture-et-loisirs/patrimoine/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
         ],
         "Artistes": [
+        ],
+        "Histoire": [
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_histoire.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          }
         ]
       }
     },
@@ -211,36 +374,258 @@
           {
             "url": "https://feeds.leparisien.fr/leparisien/rss/sports",
             "name": "Le Parisien",
-            "count": 2,
+            "count": 1,
             "iconImg": "./leparisien.png",
             "backgroundImg": "./leparisien_bgIMG.jpg"
+          },
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/football/",
+            "name": "RMC Sport",
+            "count": 2,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sport/football/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
           }
         ],
-        "Tennis & Ping-Pong": [
+        "Sports de raquettes": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/tennis/",
+            "name": "RMC Sport",
+            "count": 1,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sport/tennis/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sport/tennis-de-table/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
         ],
         "Basketball": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/basket/",
+            "name": "RMC Sport",
+            "count": 2,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sport/basket-ball/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
         ],
         "Rugby": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/rugby/",
+            "name": "RMC Sport",
+            "count": 2,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          }
         ],
-        "Sports aquatiques & marins": [
+        "Handball & volleyball": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/handball/",
+            "name": "RMC Sport",
+            "count": 1,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/volley/",
+            "name": "RMC Sport",
+            "count": 2,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sport/handball/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
+        ],
+        "Sports nautiques & plongée": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/voile/",
+            "name": "RMC Sport",
+            "count": 1,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sport/nautisme/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
         ],
         "Golf": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/golf/",
+            "name": "RMC Sport",
+            "count": 2,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sport/golf/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
+        ],
+        "Cyclisme": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/cyclisme/",
+            "name": "RMC Sport",
+            "count": 2,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sport/cyclisme/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
+        ],
+        "Athlétisme": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/athletisme/",
+            "name": "RMC Sport",
+            "count": 2,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sport/athletisme/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
+        ],
+        "Auto Moto": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/auto-moto/",
+            "name": "RMC Sport",
+            "count": 2,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sport/auto-moto/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
+        ],
+        "Sports de combat": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/sports-de-combat/",
+            "name": "RMC Sport",
+            "count": 2,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sport/sports-de-combat/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
         ],
         "Pétanque": [
+          {
+            "url": "https://www.ladepeche.fr/sport/petanque/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
         ],
-        "E-Sports": [
+        "Sports d'hiver": [
+          {
+            "url": "https://www.ladepeche.fr/sport/sports-d-hiver/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/sports-d-hiver/",
+            "name": "RMC Sport",
+            "count": 2,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          }
         ],
-        "Sports d'esprit": [
+        "E-Sports & sports d'esprit": [
         ]
       }
     },
     "Europe": {
       "subtopics": {
         "noSubtopic": [
-          
-        ],
-        "-": [
-          
+          {
+            "url": "https://www.france24.com/fr/europe/rss",
+            "name": "France 24",
+            "count": 2,
+            "iconImg": "./france24.jpg",
+            "backgroundImg": "./france24_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/europe/rss_full.xml",
+            "name": "Le Monde",
+            "count": 2,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/monde/europe.rss",
+            "name": "Franceinfo",
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
         ]
       }
     },
@@ -253,13 +638,59 @@
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_international.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.ladepeche.fr/actu/international/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
           }
         ],
         "Afrique": [
+          {
+            "url": "https://www.france24.com/fr/afrique/rss",
+            "name": "France 24",
+            "count": 2,
+            "iconImg": "./france24.jpg",
+            "backgroundImg": "./france24_bgIMG.jpg"
+          }
         ],
         "Amérique": [
+          {
+            "url": "https://www.france24.com/fr/amériques/rss",
+            "name": "France 24",
+            "count": 2,
+            "iconImg": "./france24.jpg",
+            "backgroundImg": "./france24_bgIMG.jpg"
+          }
         ],
-        "Asie & Océanie": [
+        "Asie Pacifique": [
+          {
+            "url": "https://www.france24.com/fr/asie-pacifique/rss",
+            "name": "France 24",
+            "count": 2,
+            "iconImg": "./france24.jpg",
+            "backgroundImg": "./france24_bgIMG.jpg"
+          }
+        ],
+        "Moyen-Orient": [
+          {
+            "url": "https://www.france24.com/fr/moyen-orient/rss",
+            "name": "France 24",
+            "count": 2,
+            "iconImg": "./france24.jpg",
+            "backgroundImg": "./france24_bgIMG.jpg"
+          }
         ],
         "En anglais": [
           {
@@ -322,10 +753,126 @@
         ]
       }
     },
+    "Sciences": {
+      "subtopics": {
+        "noSubtopic": [
+          {
+            "url": "https://www.francetvinfo.fr/sciences.rss",
+            "name": "Franceinfo",
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Nature & environnement": [
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_sciences.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.ladepeche.fr/actu/environnement/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
+        ],
+        "Espace & astronomie": [
+          {
+            "url": "https://www.ladepeche.fr/actu/sciences-et-techniques/espace/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
+        ],
+        "Technologie & informatique": [
+          {
+            "url": "https://www.ladepeche.fr/economie/innovation-high-tech/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
+        ],
+        "Physique-chimie & biologie": [
+        ],
+        "Médecine & santé": [
+          {
+            "url": "https://www.francetvinfo.fr/sante.rss",
+            "name": "Franceinfo",
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sante/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
+        ]
+      }
+    },
     "Art de vivre": {
       "subtopics": {
         "noSubtopic": [
-
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_lifestyle.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          }
+        ],
+        "Voyages": [
+        ],
+        "Loisirs": [
+          {
+            "url": "https://www.ladepeche.fr/culture-et-loisirs/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
+        ],
+        "Gastronomie & terroir": [
+          {
+            "url": "https://www.ladepeche.fr/culture-et-loisirs/gastronomie-et-terroir/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
+        ],
+        "Insolite & découvertes": [
+          {
+            "url": "https://www.francetvinfo.fr/decouverte/bizarre.rss",
+            "name": "Franceinfo",
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/insolite/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
         ],
         "Presse étrangère": [
           {
@@ -335,15 +882,28 @@
             "iconImg": "./thenewyorker.png",
             "backgroundImg": "./thenewyorker_bgIMG.jpg"
           }
-        ],
-        "Voyages": [
         ]
       }
     },
     "Politique": {
       "subtopics": {
         "Nationale": [
-          
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_politique_le-scan.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.ladepeche.fr/actu/politique/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
         ],
         "Locale": [
           
@@ -356,29 +916,29 @@
         ]
       }
     },
-    "Sciences": {
-      "subtopics": {
-        "noSubtopic": [
-          
-        ],
-        "Nature & environnement": [
-        ],
-        "Espace & astronomie": [
-        ],
-        "Technologie & informatique": [
-        ],
-        "Physique-chimie & biologie": [
-        ],
-        "Médecine & santé": [
-        ]
-      }
-    },
     "Société": {
       "subtopics": {
         "noSubtopic": [
-          
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_actualite-france.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.ladepeche.fr/societe/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          }
         ],
-        "-": [
+        "Religion": [
+        ],
+        "Demographie": [
         ]
       }
     }

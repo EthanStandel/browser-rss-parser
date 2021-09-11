@@ -8,9 +8,10 @@
   --cultureColorTheme: burlywood;
   --sportsColorTheme: yellowgreen;
   --ecoColorTheme: goldenrod;
-  --mondeColorTheme: royalblue;
-  --presseinterColorTheme: dodgerblue;
+  --mondeColorTheme: dodgerblue;
+  --presseinterColorTheme: crimson;
   --sciencesColorTheme: mediumseagreen;
+  --europeColorTheme: royalblue;
 }
 
 /* color focus */
@@ -133,6 +134,10 @@ ul.topics-navbar {
     color: var(--sciencesColorTheme) !important;
   }
 
+  &.Europe li > *  {
+    color: var(--europeColorTheme) !important;
+  }
+
   li {
     margin-top: 10px;
   
@@ -191,6 +196,11 @@ ul.topics-navbar li {
     color: var(--sciencesColorTheme);
   }
 
+  .Europe {
+    border: 2px solid var(--europeColorTheme);
+    color: var(--europeColorTheme);
+  }
+
   > button {
     border: 2px solid var(--systemPink);
     color: var(--systemPink);
@@ -233,9 +243,51 @@ ul.topics-navbar li {
         &.Sciences {
           background-color: var(--sciencesColorTheme);
         }
+        
+        &.Europe {
+          background-color: var(--europeColorTheme);
+        }
       }
     }
   }
+}
+
+/*/ Titles for topics /*/
+h3.bold {
+  color: var(--systemPink);
+
+  &.Culture {
+    color: var(--cultureColorTheme);
+  }
+
+  &.Sports {
+    color: var(--sportsColorTheme);
+  }
+
+  &.Économie {
+    color: var(--ecoColorTheme);
+  }
+
+  &.Monde {
+    color: var(--mondeColorTheme);
+  }
+
+  &.Presse {
+    color: var(--presseinterColorTheme);
+  }
+
+  &.Sciences {
+    color: var(--sciencesColorTheme);
+  }
+  
+  &.Europe {
+    color: var(--europeColorTheme);
+  }
+}
+
+/*/ Titles for subtopics /*/
+h4.subtopic {
+  font-weight: 600;
 }
 
 .header-mobile {
@@ -425,40 +477,6 @@ ul.rss {
 .footer-header-app h5.logo-text {
   text-align: left !important;
   padding: 0 !important;
-}
-
-/*/ Titles for topics /*/
-h3.bold {
-  color: var(--systemPink);
-
-  &.Culture {
-    color: var(--cultureColorTheme);
-  }
-
-  &.Sports {
-    color: var(--sportsColorTheme);
-  }
-
-  &.Économie {
-    color: var(--ecoColorTheme);
-  }
-
-  &.Monde {
-    color: var(--mondeColorTheme);
-  }
-
-  &.Presse {
-    color: var(--presseinterColorTheme);
-  }
-
-  &.Sciences {
-    color: var(--sciencesColorTheme);
-  }
-}
-
-/*/ Titles for subtopics /*/
-h4.subtopic {
-  font-weight: 600;
 }
 
 /*/
