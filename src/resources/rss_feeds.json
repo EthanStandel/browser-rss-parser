@@ -167,11 +167,11 @@
             "backgroundImg": "./ladepeche_bgIMG.jpg"
           }
         ],
-        "En anglais": [
+        "Presse étrangère": [
           {
             "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
             "name": "The Wall Street Journal",
-            "count": 2,
+            "count": 1,
             "iconImg": "./default.png",
             "backgroundImg": "./default.png"
           },
@@ -188,7 +188,22 @@
             "count": 2,
             "iconImg": "./thenytimes.png",
             "backgroundImg": "./thenytimes_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "http://feeds.washingtonpost.com/rss/business",
+            "name": "The Washington Post",
+            "count": 1,
+            "iconImg": "./wpost.png",
+            "backgroundImg": "./wpost_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.telegraph.co.uk/business/rss.xml",
+            "name": "The Telegraph",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./thetelegrah.png",
+            "backgroundImg": "./thetelegraph_bgIMG.jpg"
+          }    
         ]
       }
     },
@@ -325,6 +340,31 @@
             "count": 1,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
+          }
+        ],
+        "Presse étrangère": [
+          {
+            "url": "https://www.telegraph.co.uk/art/rss.xml",
+            "name": "The Telegraph",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./thetelegrah.png",
+            "backgroundImg": "./thetelegraph_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.theguardian.com/uk/culture/rss",
+            "name": "The Guardian",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./theguardian.png",
+            "backgroundImg": "./theguardian_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bbc.com/culture/feed.rss",
+            "name": "BBC News",
+            "count": 1,
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
           }
         ]
       }
@@ -599,6 +639,36 @@
           }
         ],
         "E-Sports & sports d'esprit": [
+        ],
+        "Presse étrangère": [
+          {
+            "url": "http://feeds.foxnews.com/foxnews/sports?format=xml",
+            "name": "FOX news",
+            "count": 1,
+            "iconImg": "./foxnews.png",
+            "backgroundImg": "./foxnews_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.bbci.co.uk/sport/rss.xml",
+            "name": "BBC News",
+            "count": 1,
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
+          },
+          {
+            "url": "http://www.independent.co.uk/sport/rss",
+            "name": "The Independent",
+            "count": 1,
+            "iconImg": "./theindependent.png",
+            "backgroundImg": "./theindependent_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.washingtonpost.com/rss/sports",
+            "name": "The Washington Post",
+            "count": 1,
+            "iconImg": "./wpost.png",
+            "backgroundImg": "./wpost_bgIMG.jpg"
+          }
         ]
       }
     },
@@ -626,6 +696,43 @@
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
+        ],
+        "Presse étrangère": [
+          {
+            "url": "http://feeds.washingtonpost.com/rss/world/europe",
+            "name": "The Washington Post",
+            "count": 1,
+            "iconImg": "./wpost.png",
+            "backgroundImg": "./wpost_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.economist.com/feeds/print-sections/75/europe.xml",
+            "name": "The Economist",
+            "count": 2,
+            "iconImg": "./theeconomist.png",
+            "backgroundImg": "./theeconomist_bgIMG.jpg"
+          },
+          {
+            "url": "https://rss.nytimes.com/services/xml/rss/nyt/Europe.xml",
+            "name": "The New York Times",
+            "count": 1,
+            "iconImg": "./thenytimes.png",
+            "backgroundImg": "./thenytimes_bgIMG.jpg"
+          },
+          {
+            "url": "http://rss.cnn.com/rss/edition_europe.rss",
+            "name": "CNN",
+            "count": 1,
+            "iconImg": "./cnn.png",
+            "backgroundImg": "./cnn_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.bbci.co.uk/news/world/europe/rss.xml?edition=int",
+            "name": "BBC News",
+            "count": 1,
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
+          }    
         ]
       }
     },
@@ -692,20 +799,43 @@
             "backgroundImg": "./france24_bgIMG.jpg"
           }
         ],
-        "En anglais": [
+        "Presse étrangère": [
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
             "name": "The New York Times",
-            "count": 3,
+            "count": 1,
             "iconImg": "./thenytimes.png",
             "backgroundImg": "./thenytimes_bgIMG.jpg"
           },
           {
             "url": "http://feeds.bbci.co.uk/news/video_and_audio/world/rss.xml",
             "name": "BBC News",
-            "count": 3,
+            "count": 2,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.theguardian.com/world/rss",
+            "name": "The Guardian",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./theguardian.png",
+            "backgroundImg": "./theguardian_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.foxnews.com/foxnews/world?format=xml",
+            "name": "FOX news",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./foxnews.png",
+            "backgroundImg": "./foxnews_bgIMG.jpg"
+          },
+          {
+            "url": "http://rss.cnn.com/rss/edition_world.rss",
+            "name": "CNN",
+            "count": 1,
+            "iconImg": "./cnn.png",
+            "backgroundImg": "./cnn_bgIMG.jpg"
           }
         ]
       }
@@ -745,11 +875,33 @@
             "count": 1,
             "iconImg": "./thenytimes.png",
             "backgroundImg": "./thenytimes_bgIMG.jpg"
+          },
+          {
+            "url": "http://rss.cnn.com/rss/edition.rss",
+            "name": "CNN",
+            "count": 1,
+            "iconImg": "./cnn.png",
+            "backgroundImg": "./cnn_bgIMG.jpg"
           }
         ],
         "Australia & NZ": [
         ],
         "United Kindgom": [
+          {
+            "url": "https://www.theguardian.com/uk-news/rss",
+            "name": "The Guardian",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./theguardian.png",
+            "backgroundImg": "./theguardian_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.bbci.co.uk/news/uk/rss.xml",
+            "name": "BBC News",
+            "count": 2,
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
+          }
         ]
       }
     },
@@ -820,6 +972,59 @@
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
           }
+        ],
+        "Presse étrangère": [
+          {
+            "url": "https://www.telegraph.co.uk/science/rss.xml",
+            "name": "The Telegraph",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./thetelegrah.png",
+            "backgroundImg": "./thetelegraph_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.techrepublic.com/rssfeeds/articles/?feedType=rssfeeds&sort=latest",
+            "name": "TechRepublic",
+            "count": 1,
+            "iconImg": "./techrep.png",
+            "backgroundImg": "./techrep_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.theguardian.com/science/rss",
+            "name": "The Guardian",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./theguardian.png",
+            "backgroundImg": "./theguardian_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.foxnews.com/foxnews/science?format=xml",
+            "name": "FOX news",
+            "count": 1,
+            "iconImg": "./foxnews.png",
+            "backgroundImg": "./foxnews_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.forbes.com/science/feed2/",
+            "name": "Forbes",
+            "count": 1,
+            "iconImg": "./forbes.png",
+            "backgroundImg": "./forbes_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+            "name": "BBC News",
+            "count": 1,
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.wired.com/feed/science/rss",
+            "name": "Wired",
+            "count": 1,
+            "iconImg": "./wired.png",
+            "backgroundImg": "./wired_bgIMG.jpg"
+          } 
         ]
       }
     },
@@ -881,6 +1086,28 @@
             "count": 2,
             "iconImg": "./thenewyorker.png",
             "backgroundImg": "./thenewyorker_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.washingtonpost.com/rss/lifestyle",
+            "name": "The Washington Post",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./wpost.png",
+            "backgroundImg": "./wpost_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.foxnews.com/foxnews/section/lifestyle?format=xml",
+            "name": "FOX news",
+            "count": 1,
+            "iconImg": "./foxnews.png",
+            "backgroundImg": "./foxnews_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.forbes.com/lifestyle/feed2/",
+            "name": "Forbes",
+            "count": 1,
+            "iconImg": "./forbes.png",
+            "backgroundImg": "./forbes_bgIMG.jpg"
           }
         ]
       }
@@ -911,8 +1138,36 @@
         "Européene": [
           
         ],
-        "Mondiale": [
-          
+        "Presse étrangère": [
+          {
+            "url": "https://www.telegraph.co.uk/politics/rss.xml",
+            "name": "The Telegraph",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./thetelegrah.png",
+            "backgroundImg": "./thetelegraph_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/politics/rss.xml",
+            "name": "The New York Times",
+            "count": 1,
+            "iconImg": "./thenytimes.png",
+            "backgroundImg": "./thenytimes_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.foxnews.com/foxnews/politics?format=xml",
+            "name": "FOX news",
+            "count": 1,
+            "iconImg": "./foxnews.png",
+            "backgroundImg": "./foxnews_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.bbci.co.uk/news/politics/rss.xml",
+            "name": "BBC News",
+            "count": 1,
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
+          }   
         ]
       }
     },
