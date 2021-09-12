@@ -1183,7 +1183,7 @@
             "backgroundImg": "./lefigaro_bgIMG.png"
           },
           {
-            "url": "https://www.ladepeche.fr/societe/rss.xml",
+            "url": "https://www.ladepeche.fr/actu/societe/rss.xml",
             "name": "La Dépêche",
             "encodedTitles": true,
             "count": 2,
