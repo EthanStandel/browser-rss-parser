@@ -68,10 +68,7 @@ header, .body-container, .mini-links a {
   position: relative;
   z-index: 1;
   min-height: 100vh;
-
-  * {
   text-decoration-color: var(--systemPink);
-  }
 
   .Sciences * {
     text-decoration-color: var(--sciencesColorTheme);
@@ -91,13 +88,14 @@ header, .body-container, .mini-links a {
   
   .Culture * {
     text-decoration-color: var(--cultureColorTheme);
+    color: red;
   }
   
   .Europe * {
     text-decoration-color: var(--europeColorTheme);
   }
   
-  .Presse * {
+  .étrangère:not(.section) .section ul li > * > * > * {
     text-decoration-color: var(--presseinterColorTheme);
   }
 }
@@ -222,7 +220,6 @@ ul.topics-navbar li {
   .Monde {
     border: 2px solid var(--mondeColorTheme);
     color: var(--mondeColorTheme);
-    text-decoration-color: var(--mondeColorTheme);
   }
 
   .Sciences {
@@ -389,7 +386,7 @@ ul.rss {
       .item-title {
         text-decoration: underline;
         text-decoration-color: inherit;
-        transition: 0.8s;
+        transition: text-decoration-color 0.8s !important;
       }
     }
 
