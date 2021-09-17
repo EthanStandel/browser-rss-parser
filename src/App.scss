@@ -68,6 +68,38 @@ header, .body-container, .mini-links a {
   position: relative;
   z-index: 1;
   min-height: 100vh;
+
+  * {
+  text-decoration-color: var(--systemPink);
+  }
+
+  .Sciences * {
+    text-decoration-color: var(--sciencesColorTheme);
+  }
+
+  .Monde * {
+    text-decoration-color: var(--mondeColorTheme);
+  }
+  
+  .Sports * {
+    text-decoration-color: var(--sportsColorTheme);
+  }
+  
+  .Économie * {
+    text-decoration-color: var(--ecoColorTheme);
+  }
+  
+  .Culture * {
+    text-decoration-color: var(--cultureColorTheme);
+  }
+  
+  .Europe * {
+    text-decoration-color: var(--europeColorTheme);
+  }
+  
+  .Presse * {
+    text-decoration-color: var(--presseinterColorTheme);
+  }
 }
 
 @media only screen and (max-width: 734px) {
@@ -190,6 +222,7 @@ ul.topics-navbar li {
   .Monde {
     border: 2px solid var(--mondeColorTheme);
     color: var(--mondeColorTheme);
+    text-decoration-color: var(--mondeColorTheme);
   }
 
   .Sciences {
@@ -333,6 +366,7 @@ header .logo-text {
   padding: 0 30px !important;
 }
 
+
 /*/ use later for the big container of a subtopic list) /*/
 ul.rss {
   margin-bottom: 24px;
@@ -341,6 +375,23 @@ ul.rss {
     margin-bottom: 20px;
     background-color: var(--secondarySystemGroupedBackground);
     border-radius: 10px;
+
+    .item-title, .item-description {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      /* number of lines */
+      -webkit-box-orient: vertical;
+      text-decoration-color: rgba(0,0,0,0);
+    }
+    
+    &:hover {
+      .item-title {
+        text-decoration: underline;
+        text-decoration-color: inherit;
+        transition: 0.8s;
+      }
+    }
 
     &:not(:first-of-type) {
       padding: 10px;
@@ -433,21 +484,6 @@ ul.rss {
         width: calc(100% + 6px);
       }
     }
-  }
-}
-
-.item-title, .item-description {
-  text-decoration-color: darkmagenta;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  /* number of lines */
-  -webkit-box-orient: vertical;
-
-  &:hover:not(.item-description) {
-    text-decoration: underline;
-    text-decoration-color: var(--systemPink) !important;
-    transition: 1s;
   }
 }
 
