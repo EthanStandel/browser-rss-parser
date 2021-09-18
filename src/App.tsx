@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.scss';
 import RssContent from './components/RssContent';
 import rssFeeds from "./resources/rss_feeds.json";
+import { BrowserUtils } from './utils/BrowserUtils';
 
 const { topics } = rssFeeds;
 const initialTopicFilter = (new URLSearchParams(document.location.search)
@@ -10,9 +11,14 @@ const selectableTopics = Object.entries(rssFeeds.topics)
   .map(([key]) => key) as Array<keyof typeof topics>;
 
 const App = () => {
-  const [ subtopicFilter, setSubtopicFilter ] = useState<string | undefined>(undefined);
+  const [ subtopicFilter, _setSubtopicFilter ] = useState<string | undefined>(undefined);
+  const setSubtopicFilter = (subtopicFilter: string | undefined) => {
+    BrowserUtils.scrollToTop();
+    _setSubtopicFilter(subtopicFilter);
+  }
   const [ topicFilter, _setTopicFilter ] = useState<keyof typeof topics>(initialTopicFilter);
   const setTopicFilter = (newTopicFilter: keyof typeof topics) => {
+    BrowserUtils.scrollToTop();
     setSubtopicFilter(undefined);
     const shouldUnfilter = newTopicFilter === topicFilter;
     const query = shouldUnfilter ? "" : `?topic=${encodeURIComponent(newTopicFilter)}`;
