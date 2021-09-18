@@ -96,6 +96,13 @@
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/economie/rss.xml",
+            "name": "Le Point",
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
           }
         ],
         "Marchés": [
@@ -160,9 +167,23 @@
             "url": "https://www.ladepeche.fr/economie/immobilier/rss.xml",
             "name": "La Dépêche",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.leprogres.fr/magazine-immobilier/rss",
+            "name": "Le Progrès",
+            "count": 1,
+            "iconImg": "./leprogres.png",
+            "backgroundImg": "./leprogres_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/immobilier/rss.xml",
+            "name": "Le Point",
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
           }
         ],
         "Banques & Finance": [
@@ -220,13 +241,6 @@
       "subtopics": {
         "noSubtopic": [
           {
-            "url": "https://www.lemonde.fr/culture/rss_full.xml",
-            "name": "Le Monde",
-            "count": 2,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
             "url": "https://www.lefigaro.fr/rss/figaro_culture.xml",
             "name": "Le Figaro",
             "encodedTitles": true,
@@ -271,6 +285,13 @@
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/pop-culture/rss.xml",
+            "name": "Le Point",
+            "count": 2,
+            "iconImg": "./lepointpop.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
           }
         ],
         "Littérature": [
@@ -319,6 +340,13 @@
             "count": 1,
             "iconImg": "./lesechos.png",
             "backgroundImg": "./lesechos_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/livres/rss.xml",
+            "name": "Le Point",
+            "count": 1,
+            "iconImg": "./lepointpop.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
           }
         ],
         "Films & séries": [
@@ -382,6 +410,13 @@
             "count": 2,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/arts/rss.xml",
+            "name": "Le Point",
+            "count": 2,
+            "iconImg": "./lepointpop.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
           }
         ],
         "Spectacles & expositions": [
@@ -472,7 +507,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/musique/?outputType=xml",
             "name": "Libération",
-            "count": 2,
+            "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
           },
@@ -480,9 +515,16 @@
             "url": "https://www.lesinrocks.com/musique/feed/",
             "name": "Les Inrocks",
             "encodedTitles": true,
-            "count": 1,
+            "count": 2,
             "iconImg": "./lesinrocks.png",
             "backgroundImg": "./lesinrocks_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/musique/rss.xml",
+            "name": "Le Point",
+            "count": 1,
+            "iconImg": "./lepointpop.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
           }
         ],
         "Histoire": [
@@ -691,7 +733,7 @@
             "url": "https://www.ladepeche.fr/sport/golf/rss.xml",
             "name": "La Dépêche",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
           }
@@ -945,6 +987,13 @@
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/afrique/rss.xml",
+            "name": "Le Point",
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
           }
         ],
         "Amérique": [
@@ -1111,6 +1160,13 @@
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/sciences/rss.xml",
+            "name": "Le Point",
+            "count": 2,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
           }
         ],
         "Nature & environnement": [
@@ -1136,6 +1192,13 @@
             "count": 2,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.leprogres.fr/environnement/rss",
+            "name": "Le Progrès",
+            "count": 1,
+            "iconImg": "./leprogres.png",
+            "backgroundImg": "./leprogres_bgIMG.jpg"
           }
         ],
         "Astronomie & espace": [
@@ -1160,6 +1223,13 @@
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/astronomie/rss.xml",
+            "name": "Le Point",
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
           }
         ],
         "Technologie & informatique": [
@@ -1201,6 +1271,20 @@
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.leprogres.fr/magazine-sante/rss",
+            "name": "Le Progrès",
+            "count": 1,
+            "iconImg": "./leprogres.png",
+            "backgroundImg": "./leprogres_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/sante/rss.xml",
+            "name": "Le Point",
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
           }
         ],
         "Sciences physiques": [
@@ -1282,7 +1366,7 @@
             "url": "https://ici.radio-canada.ca/rss/4163",
             "name": "Radio Canada",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./radiocanada.png",
             "backgroundImg": "./radiocanada_bgIMG.png"
           },
@@ -1308,15 +1392,36 @@
             "count": 1,
             "iconImg": "./lesinrocks.png",
             "backgroundImg": "./lesinrocks_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/art-de-vivre/rss.xml",
+            "name": "Le Point",
+            "count": 2,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
           }
         ],
-        "Voyages": [
+        "Tourisme & voyages": [
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/voyages/?outputType=xml",
             "name": "Libération",
             "count": 2,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.leprogres.fr/magazine-tourisme-et-patrimoine/rss",
+            "name": "Le Progrès",
+            "count": 1,
+            "iconImg": "./leprogres.png",
+            "backgroundImg": "./leprogres_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/voyages/rss.xml",
+            "name": "Le Point",
+            "count": 2,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
           }
         ],
         "Loisirs": [
@@ -1351,6 +1456,13 @@
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/gastronomie/rss.xml",
+            "name": "Le Point",
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
           }
         ],
         "Insolite & découvertes": [
@@ -1368,6 +1480,13 @@
             "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.leprogres.fr/insolite/rss",
+            "name": "Le Progrès",
+            "count": 1,
+            "iconImg": "./leprogres.png",
+            "backgroundImg": "./leprogres_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -1428,6 +1547,13 @@
             "count": 2,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/politique/rss.xml",
+            "name": "Le Point",
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
           }
         ],
         "Locale": [
