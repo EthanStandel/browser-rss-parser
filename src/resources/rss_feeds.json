@@ -70,6 +70,7 @@
           {
             "url": "https://syndication.lesechos.fr/rss/rss_france.xml",
             "name": "Les Échos",
+            "encodedTitles": true,
             "count": 2,
             "iconImg": "./lesechos.png",
             "backgroundImg": "./lesechos_bgIMG.jpg"
@@ -77,7 +78,7 @@
           {
             "url": "https://www.lemonde.fr/economie/rss_full.xml",
             "name": "Le Monde",
-            "count": 2,
+            "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
           },
@@ -88,6 +89,13 @@
             "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/economie/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
           }
         ],
         "Marchés": [
@@ -185,6 +193,7 @@
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
             "name": "The New York Times",
+            "encodedTitles": true,
             "count": 2,
             "iconImg": "./thenytimes.png",
             "backgroundImg": "./thenytimes_bgIMG.jpg"
@@ -201,7 +210,7 @@
             "name": "The Telegraph",
             "encodedTitles": true,
             "count": 1,
-            "iconImg": "./thetelegrah.png",
+            "iconImg": "./thetelegraph.png",
             "backgroundImg": "./thetelegraph_bgIMG.jpg"
           }    
         ]
@@ -216,13 +225,6 @@
             "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.francetvinfo.fr/culture.rss",
-            "name": "Franceinfo",
-            "count": 2,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
           {
             "url": "https://www.lefigaro.fr/rss/figaro_culture.xml",
@@ -248,11 +250,27 @@
             "backgroundImg": "./leparisien_bgIMG.jpg"
           },
           {
-            "url": "https://www.nouvelobs.com/culture/rss.xml",
-            "name": "L'Obs",
+            "url": "https://5minutes.rtl.lu/rss/culture",
+            "name": "RTL",
+            "encodedTitles": true,
             "count": 2,
-            "iconImg": "./lobs.png",
-            "backgroundImg": "./lobs_bgIMG.jpg"
+            "iconImg": "./rtl.png",
+            "backgroundImg": "./rtl_bgIMG.png"
+          },
+          {
+            "url": "https://ici.radio-canada.ca/rss/4167",
+            "name": "Radio Canada",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./radiocanada.png",
+            "backgroundImg": "./radiocanada_bgIMG.png"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
           }
         ],
         "Littérature": [
@@ -263,9 +281,108 @@
             "count": 1,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.telerama.fr/rss/livre.xml",
+            "name": "Télérama",
+            "count": 2,
+            "iconImg": "./telerama.png",
+            "backgroundImg": "./telerama_bgIMG.jpg"
+          },
+          {
+            "url": "https://ici.radio-canada.ca/rss/1000083",
+            "name": "Radio Canada",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./radiocanada.png",
+            "backgroundImg": "./radiocanada_bgIMG.png"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/livres/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/livres/feed/",
+            "name": "Les Inrocks",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
+          },
+          {
+            "url": "http://lesechospedia.lesechos.fr/litterature.xml",
+            "name": "Les Échos",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lesechos.png",
+            "backgroundImg": "./lesechos_bgIMG.jpg"
+          }
+        ],
+        "Films & séries": [
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_cinema.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.telerama.fr/rss/series-tv.xml",
+            "name": "Télérama",
+            "count": 1,
+            "iconImg": "./telerama.png",
+            "backgroundImg": "./telerama_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.telerama.fr/rss/cinema.xml",
+            "name": "Télérama",
+            "count": 2,
+            "iconImg": "./telerama.png",
+            "backgroundImg": "./telerama_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.premiere.fr/rss/actu-cinema",
+            "name": "Première",
+            "count": 2,
+            "iconImg": "./premiere.png",
+            "backgroundImg": "./premiere_bgIMG.png"
+          },
+          {
+            "url": "https://www.presse-citron.net/category/lifestyle/series/feed/",
+            "name": "Presse citron",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./pressecitron.png",
+            "backgroundImg": "./pressecitron_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.melty.fr/cinema-2.rss",
+            "name": "Melty",
+            "count": 1,
+            "iconImg": "./melty.png",
+            "backgroundImg": "./melty_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/cinema/feed/",
+            "name": "Les Inrocks",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
           }
         ],
         "Arts visuels & graphiques": [
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/arts/?outputType=xml",
+            "name": "Libération",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          }
         ],
         "Spectacles & expositions": [
           {
@@ -291,26 +408,24 @@
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
-          }
-        ],
-        "Films & séries": [
-          {
-            "url": "https://www.francetvinfo.fr/cinema.rss",
-            "name": "Franceinfo",
-            "count": 2,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
           {
-            "url": "https://www.lefigaro.fr/rss/figaro_cinema.xml",
-            "name": "Le Figaro",
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/scenes/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/arts-et-scenes/feed/",
+            "name": "Les Inrocks",
             "encodedTitles": true,
             "count": 1,
-            "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro_bgIMG.png"
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
           }
         ],
-        "Jeux vidéos": [
+        "Jeux vidéo": [
           {
             "url": "https://www.ladepeche.fr/economie/innovation-high-tech/jeux-consoles/rss.xml",
             "name": "La Dépêche",
@@ -318,9 +433,32 @@
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.presse-citron.net/category/lifestyle/jeu-video/feed",
+            "name": "Presse citron",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./pressecitron.png",
+            "backgroundImg": "./pressecitron_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/jeux-video/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/jeux-video/feed/",
+            "name": "Les Inrocks",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
           }
         ],
-        "Patrimoine & Architecture": [
+        "Patrimoine & architecture": [
           {
             "url": "https://www.ladepeche.fr/culture-et-loisirs/patrimoine/rss.xml",
             "name": "La Dépêche",
@@ -330,7 +468,22 @@
             "backgroundImg": "./ladepeche_bgIMG.jpg"
           }
         ],
-        "Artistes": [
+        "Musique": [
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/musique/?outputType=xml",
+            "name": "Libération",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/musique/feed/",
+            "name": "Les Inrocks",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
+          }
         ],
         "Histoire": [
           {
@@ -348,7 +501,7 @@
             "name": "The Telegraph",
             "encodedTitles": true,
             "count": 1,
-            "iconImg": "./thetelegrah.png",
+            "iconImg": "./thetelegraph.png",
             "backgroundImg": "./thetelegraph_bgIMG.jpg"
           },
           {
@@ -403,11 +556,11 @@
             "backgroundImg": "./lexpress.jpeg"
           },
           {
-            "url": "https://www.nouvelobs.com/sport/rss.xml",
-            "name": "L'Obs",
-            "count": 2,
-            "iconImg": "./lobs.png",
-            "backgroundImg": "./lobs_bgIMG.jpg"
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sports/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
           }
         ],
         "Football": [
@@ -695,6 +848,13 @@
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/europe/?outputType=xml",
+            "name": "Libération",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -715,6 +875,7 @@
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/Europe.xml",
             "name": "The New York Times",
+            "encodedTitles": true,
             "count": 1,
             "iconImg": "./thenytimes.png",
             "backgroundImg": "./thenytimes_bgIMG.jpg"
@@ -761,6 +922,13 @@
             "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
           }
         ],
         "Afrique": [
@@ -770,6 +938,13 @@
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/afrique/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
           }
         ],
         "Amérique": [
@@ -779,6 +954,13 @@
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/amerique/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
           }
         ],
         "Asie Pacifique": [
@@ -788,6 +970,13 @@
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/asie-pacifique/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
           }
         ],
         "Moyen-Orient": [
@@ -797,12 +986,20 @@
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/moyen-orient/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
             "name": "The New York Times",
+            "encodedTitles": true,
             "count": 1,
             "iconImg": "./thenytimes.png",
             "backgroundImg": "./thenytimes_bgIMG.jpg"
@@ -847,8 +1044,8 @@
             "url": "https://www.tagesschau.de/xml/rss2",
             "name": "Tagesschau.de",
             "count": 2,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde.png"
+            "iconImg": "./tagesschau.png",
+            "backgroundImg": "./tagesschau_bgIMG.png"
           }
         ],
         "United States & Canada": [
@@ -877,7 +1074,7 @@
             "backgroundImg": "./thenytimes_bgIMG.jpg"
           },
           {
-            "url": "http://rss.cnn.com/rss/edition.rss",
+            "url": "http://rss.cnn.com/rss/edition_us.rss",
             "name": "CNN",
             "count": 1,
             "iconImg": "./cnn.png",
@@ -932,9 +1129,16 @@
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/environnement/?outputType=xml",
+            "name": "Libération",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
           }
         ],
-        "Espace & astronomie": [
+        "Astronomie & espace": [
           {
             "url": "https://www.ladepeche.fr/actu/sciences-et-techniques/espace/rss.xml",
             "name": "La Dépêche",
@@ -942,6 +1146,20 @@
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sciences/astronomie/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sciences/espace/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
           }
         ],
         "Technologie & informatique": [
@@ -952,9 +1170,14 @@
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/hightech/?outputType=xml",
+            "name": "Libération",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
           }
-        ],
-        "Physique-chimie & biologie": [
         ],
         "Médecine & santé": [
           {
@@ -971,6 +1194,22 @@
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sciences/biologie/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          }
+        ],
+        "Sciences physiques": [
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sciences/physique/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -979,7 +1218,7 @@
             "name": "The Telegraph",
             "encodedTitles": true,
             "count": 1,
-            "iconImg": "./thetelegrah.png",
+            "iconImg": "./thetelegraph.png",
             "backgroundImg": "./thetelegraph_bgIMG.jpg"
           },
           {
@@ -1038,9 +1277,47 @@
             "count": 2,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://ici.radio-canada.ca/rss/4163",
+            "name": "Radio Canada",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./radiocanada.png",
+            "backgroundImg": "./radiocanada_bgIMG.png"
+          },
+          {
+            "url": "https://cdn1-parismatch.lanmedia.fr/var/exports/rss/rss-vivre.xml",
+            "name": "Paris Match",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./parismatch.png",
+            "backgroundImg": "./parismatch_bgIMG.png"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/?outputType=xml",
+            "name": "Libération",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/actu/feed/",
+            "name": "Les Inrocks",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
           }
         ],
         "Voyages": [
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/voyages/?outputType=xml",
+            "name": "Libération",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          }
         ],
         "Loisirs": [
           {
@@ -1050,6 +1327,13 @@
             "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://feeds.leparisien.fr/leparisien/rss/culture-loisirs",
+            "name": "Le Parisien",
+            "count": 2,
+            "iconImg": "./leparisien.png",
+            "backgroundImg": "./leparisien_bgIMG.jpg"
           }
         ],
         "Gastronomie & terroir": [
@@ -1057,9 +1341,16 @@
             "url": "https://www.ladepeche.fr/culture-et-loisirs/gastronomie-et-terroir/rss.xml",
             "name": "La Dépêche",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/gastronomie/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
           }
         ],
         "Insolite & découvertes": [
@@ -1130,6 +1421,13 @@
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/politique/?outputType=xml",
+            "name": "Libération",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
           }
         ],
         "Locale": [
@@ -1144,12 +1442,13 @@
             "name": "The Telegraph",
             "encodedTitles": true,
             "count": 1,
-            "iconImg": "./thetelegrah.png",
+            "iconImg": "./thetelegraph.png",
             "backgroundImg": "./thetelegraph_bgIMG.jpg"
           },
           {
             "url": "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/politics/rss.xml",
             "name": "The New York Times",
+            "encodedTitles": true,
             "count": 1,
             "iconImg": "./thenytimes.png",
             "backgroundImg": "./thenytimes_bgIMG.jpg"
@@ -1189,11 +1488,18 @@
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/societe/?outputType=xml",
+            "name": "Libération",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
           }
         ],
-        "Religion": [
+        "Religions": [
         ],
-        "Demographie": [
+        "Éducation": [
         ]
       }
     }
