@@ -70,7 +70,7 @@ const App = () => {
       </header>
       <div className="body-container">
         <div className={topicFilter}>
-          {<h3 className={"bold " + topicFilter}>{topicFilter}</h3>}
+          {<h3 className={"bold " + topicFilter} id={"#title"}>{topicFilter}</h3>}
           {Object.entries(topics[topicFilter].subtopics)
             .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)
             .filter(([ key ]) => !subtopicFilter ? true : subtopicFilter === key)
