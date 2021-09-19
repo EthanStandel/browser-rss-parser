@@ -70,7 +70,7 @@ const App = () => {
       </header>
       <div className="body-container">
         <div className={topicFilter}>
-          {<h3 className={"bold " + topicFilter} id={"#title"}>{topicFilter}</h3>}
+          {<h3 className={"bold " + topicFilter}>{topicFilter}</h3>}
           {Object.entries(topics[topicFilter].subtopics)
             .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)
             .filter(([ key ]) => !subtopicFilter ? true : subtopicFilter === key)
@@ -88,7 +88,7 @@ const App = () => {
         <div className="footer-container">
           <div className="footer-header-app">
             <h5 className="logo-text">nuntium</h5>
-            <div className="footnote">Version bêta du projet nuntium, pour un résumé des actualités intuitif, organisé de manière efficace en thèmes.</div>
+            <div className="footnote">Version bêta du projet nuntium, résumé des dernières actualités en France et dans le monde.</div>
           </div>
           <div className="footer-legal">
             <div className="footnote inline">2021 - France</div>
