@@ -41,6 +41,12 @@ export interface RssContentProps {
   rssFeeds: Array<RssFeedSource>;
 };
 
+var dd = String(new Date().getDate()).padStart(2, '0');
+const monthNames = ["jan.", "feb.", "mar.", "apr.", "may", "jun.",
+  "jul.", "aug.", "sept.", "oct.", "nov.", "dec."];
+
+const today = dd + ' ' + monthNames[new Date().getMonth()] ;
+
 // This is bad but the whole point of this is to not stand up a server
 const openCorsProxy = "https://api.codetabs.com/v1/proxy?quest=";
 
@@ -98,15 +104,16 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
               <li>
                 <a href={item.link} target="_blank" rel="noreferrer">
                 <div className="media">
+                <div className="icon-image"><img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/></div>
                 <div className="icon-image">{source.iconImg && <img src={source.iconImg}/>}</div>
-                <div className="background-image">{source.backgroundImg && <img src={source.backgroundImg} alt={source.name} />}</div>
+                <div className="background-image">{source.backgroundImg && <img src={source.backgroundImg}/>}</div>
                 <div className="item-container">
                   <div className="item-F-line">
                     <div className="r1 bold source-name">
                       {source.name}
                       {source.subtopic && ` - ${source.subtopic}`}
                     </div>
-                    <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("HH:mm")}</div>
+                    <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd MMM à HH:mm").replace('Invalid DateTime', '').replace(today + " à", '')}</div>
                   </div>
                   {source.encodedTitles ? 
                     (<h6 className="item-title" dangerouslySetInnerHTML={{ __html: item.title ?? "" }} />)

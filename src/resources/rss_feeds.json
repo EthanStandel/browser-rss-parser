@@ -201,15 +201,15 @@
             "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
             "name": "The Wall Street Journal",
             "count": 1,
-            "iconImg": "./default.png",
-            "backgroundImg": "./default.png"
+            "iconImg": "./wsjournal.png",
+            "backgroundImg": "./wsjournal_bgIMG.jpg"
           },
           {
             "url": "https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml",
             "name": "The Wall Street Journal",
             "count": 1,
-            "iconImg": "./default.png",
-            "backgroundImg": "./default.png"
+            "iconImg": "./wsjournal.png",
+            "backgroundImg": "./wsjournal_bgIMG.jpg"
           },
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
@@ -375,6 +375,7 @@
           {
             "url": "https://www.premiere.fr/rss/actu-cinema",
             "name": "Première",
+            "encodedTitles": true,
             "count": 2,
             "iconImg": "./premiere.png",
             "backgroundImg": "./premiere_bgIMG.png"
@@ -1308,6 +1309,7 @@
           {
             "url": "https://www.techrepublic.com/rssfeeds/articles/?feedType=rssfeeds&sort=latest",
             "name": "TechRepublic",
+            "encodedTitles": true,
             "count": 1,
             "iconImg": "./techrep.png",
             "backgroundImg": "./techrep_bgIMG.jpg"
