@@ -736,7 +736,7 @@
             "url": "https://www.lefigaro.fr/rss/figaro_sport.xml",
             "name": "Le Figaro",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
           },
@@ -761,6 +761,13 @@
             "count": 1,
             "iconImg": "./letelegramme.png",
             "backgroundImg": "./letelegramme_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "Football": [
@@ -792,6 +799,13 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Football.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "Sports de raquettes": [
@@ -824,6 +838,13 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Tennis.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "Basketball": [
@@ -848,6 +869,13 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Basket.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "Rugby": [
@@ -864,6 +892,13 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Rugby.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "Handball & volleyball": [
@@ -877,7 +912,7 @@
           {
             "url": "https://rmcsport.bfmtv.com/rss/volley/",
             "name": "RMC Sport",
-            "count": 2,
+            "count": 1,
             "iconImg": "./rmcsport.jpeg",
             "backgroundImg": "./rmcsport_bgIMG.jpg"
           },
@@ -892,9 +927,23 @@
           {
             "url": "https://www.lemonde.fr/handball/rss_full.xml",
             "name": "Le Monde",
-            "count": 2,
+            "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Volley.xml",
+            "name": "L'Équipe",
+            "count": 1,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Hand.xml",
+            "name": "L'Équipe",
+            "count": 1,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "Sports nautiques & plongée": [
@@ -909,9 +958,16 @@
             "url": "https://www.ladepeche.fr/sport/nautisme/rss.xml",
             "name": "La Dépêche",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Natation.xml",
+            "name": "L'Équipe",
+            "count": 1,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "Golf": [
@@ -933,9 +989,16 @@
           {
             "url": "https://www.lemonde.fr/golf/rss_full.xml",
             "name": "Le Monde",
-            "count": 2,
+            "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Golf.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "Cyclisme": [
@@ -950,7 +1013,7 @@
             "url": "https://www.ladepeche.fr/sport/cyclisme/rss.xml",
             "name": "La Dépêche",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
           },
@@ -960,6 +1023,13 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Cyclisme.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "Athlétisme": [
@@ -974,16 +1044,23 @@
             "url": "https://www.ladepeche.fr/sport/athletisme/rss.xml",
             "name": "La Dépêche",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
           },
           {
             "url": "https://www.lemonde.fr/athletisme/rss_full.xml",
             "name": "Le Monde",
-            "count": 2,
+            "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Athletisme.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "Sports mécaniques": [
@@ -998,16 +1075,37 @@
             "url": "https://www.ladepeche.fr/sport/auto-moto/rss.xml",
             "name": "La Dépêche",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
           },
           {
             "url": "https://www.lemonde.fr/sports-mecaniques/rss_full.xml",
             "name": "Le Monde",
-            "count": 2,
+            "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_F1.xml",
+            "name": "L'Équipe",
+            "count": 1,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Moto.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Rallye.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "Sports de combat": [
@@ -1025,6 +1123,13 @@
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Judo.xml",
+            "name": "L'Équipe",
+            "count": 1,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "Pétanque": [
@@ -1052,9 +1157,38 @@
             "count": 2,
             "iconImg": "./rmcsport.jpeg",
             "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Ski.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "E-sports & sports d'esprit": [
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_esport.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://plus.lefigaro.fr/tag/esport/rss.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.lemonde.fr/e-sport/rss_full.xml",
+            "name": "Le Monde",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          }
         ],
         "Presse étrangère": [
           {
