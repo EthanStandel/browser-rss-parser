@@ -134,7 +134,7 @@
             "url": "https://www.francetvinfo.fr/marches.rss",
             "name": "Franceinfo",
             "encodedTitles": true,
-            "count": 1,
+            "count": 2,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
@@ -142,22 +142,14 @@
             "url": "https://www.lefigaro.fr/rss/figaro_bourse.xml",
             "name": "Le Figaro",
             "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro_bgIMG.png"
-          },
-          {
-            "url": "https://www.lefigaro.fr/rss/figaro_societes.xml",
-            "name": "Le Figaro",
-            "encodedTitles": true,
-            "count": 1,
+            "count": 2,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
           },
           {
             "url": "https://www.tradingsat.com/rssbourse.xml",
             "name": "BFM TV",
-            "count": 2,
+            "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
           },
@@ -506,6 +498,7 @@
           {
             "url": "https://www.journaldugeek.com/category/cinema/feed/",
             "name": "Le journal du geek",
+            "encodedTitles": true,
             "count": 1,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
@@ -513,6 +506,7 @@
           {
             "url": "https://www.journaldugeek.com/tag/series/feed/",
             "name": "Le journal du geek",
+            "encodedTitles": true,
             "count": 1,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
@@ -616,6 +610,7 @@
           {
             "url": "https://www.journaldugeek.com/category/jeux-video/feed/",
             "name": "Le journal du geek",
+            "encodedTitles": true,
             "count": 2,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
@@ -1589,13 +1584,6 @@
             "backgroundImg": "./bfmtv_bgIMG.jpg"
           },
           {
-            "url": "https://www.lemonde.fr/sciences/rss_full.xml",
-            "name": "Le Monde",
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
             "url": "https://www.sciencesetavenir.fr/rss.xml",
             "name": "Sciences et Avenir",
             "count": 2,
@@ -1605,6 +1593,7 @@
           {
             "url": "https://www.journaldugeek.com/tag/science/feed/",
             "name": "Le journal du geek",
+            "encodedTitles": true,
             "count": 2,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
@@ -1671,21 +1660,6 @@
           }
         ],
         "Astronomie & espace": [
-          {
-            "url": "https://www.ladepeche.fr/actu/sciences-et-techniques/espace/rss.xml",
-            "name": "La Dépêche",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sciences/astronomie/?outputType=xml",
-            "name": "Libération",
-            "count": 1,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          },
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sciences/espace/?outputType=xml",
             "name": "Libération",
@@ -1762,6 +1736,7 @@
           {
             "url": "https://www.journaldugeek.com/tag/high-tech/feed/",
             "name": "Le journal du geek",
+            "encodedTitles": true,
             "count": 2,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
@@ -2181,9 +2156,9 @@
         ],
         "Religions": [
           {
-            "url": "https://charliehebdo.fr/themes/religions/feed/",
+            "url": "https://www.lemonde.fr/religions/rss_full.xml",
             "name": "Le Monde",
-            "count": 1,
+            "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
           }
