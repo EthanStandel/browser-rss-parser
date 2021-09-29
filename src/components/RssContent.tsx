@@ -124,7 +124,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                       {source.name}
                       {source.subtopic && ` - ${source.subtopic}`}
                     </div>
-                    <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd MMM à HH:mm").replace('Invalid DateTime', '').replace(todayFormat + " à", '').replace(yesterdayFormat, 'hier').replace(lastweekFormat, 'il y a une semaine')}</div>
+                    <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd MMM HH:mm").replace('Invalid DateTime', '').replace(todayFormat, '').replace(yesterdayFormat, 'hier').replace(lastweekFormat, 'il y a une semaine')}</div>
                   </div>
                   {source.encodedTitles ? 
                     (<h6 className="item-title" dangerouslySetInnerHTML={{ __html: item.title ?? "" }} />)

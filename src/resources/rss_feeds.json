@@ -510,6 +510,13 @@
             "count": 1,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.numerama.com/pop-culture/cinema/feed/",
+            "name": "Numerama",
+            "count": 2,
+            "iconImg": "./numerama.png",
+            "backgroundImg": "./numerama_bgIMG.jpg"
           }
         ],
         "Arts visuels & graphiques": [
@@ -666,9 +673,17 @@
           {
             "url": "https://www.lemonde.fr/musiques/rss_full.xml",
             "name": "Le Monde",
-            "count": 2,
+            "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.melty.fr/musique-4.rss",
+            "name": "Melty",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./melty.png",
+            "backgroundImg": "./melty_bgIMG.jpg"
           }
         ],
         "Histoire": [
@@ -686,6 +701,14 @@
             "count": 1,
             "iconImg": "./letelegramme.png",
             "backgroundImg": "./letelegramme_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/culture/histoire/rss",
+            "name": "France 3",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -1352,6 +1375,14 @@
             "count": 2,
             "iconImg": "./lesechos.png",
             "backgroundImg": "./lesechos_bgIMG.jpg"
+          },
+          {
+            "url": "https://information.tv5monde.com/afprss/francais--journal--mon",
+            "name": "TV5 Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./tv5monde.png",
+            "backgroundImg": "./tv5monde_bgIMG.jpg"
           }
         ],
         "Afrique": [
@@ -1743,14 +1774,6 @@
             "backgroundImg": "./lefigaro_bgIMG.png"
           },
           {
-            "url": "https://www.ladepeche.fr/actu/environnement/rss.xml",
-            "name": "La Dépêche",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          },
-          {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/environnement/?outputType=xml",
             "name": "Libération",
             "count": 1,
@@ -1791,6 +1814,13 @@
             "count": 2,
             "iconImg": "./futura.png",
             "backgroundImg": "./futura_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.numerama.com/sciences/feed/",
+            "name": "Numerama",
+            "count": 2,
+            "iconImg": "./numerama.png",
+            "backgroundImg": "./numerama_bgIMG.jpg"
           }
         ],
         "Astronomie & espace": [
@@ -1874,6 +1904,13 @@
             "count": 2,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.numerama.com/tech/feed/",
+            "name": "Numerama",
+            "count": 2,
+            "iconImg": "./numerama.png",
+            "backgroundImg": "./numerama_bgIMG.jpg"
           }
         ],
         "Médecine & santé": [
@@ -2084,6 +2121,14 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://information.tv5monde.com/afprss/francais--journal--clt",
+            "name": "TV5 Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./tv5monde.png",
+            "backgroundImg": "./tv5monde_bgIMG.jpg"
           }
         ],
         "Tourisme & voyages": [
@@ -2169,6 +2214,14 @@
             "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/culture/gastronomie/rss",
+            "name": "France 3",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
           }
         ],
         "Insolite & découvertes": [
@@ -2194,6 +2247,14 @@
             "count": 1,
             "iconImg": "./leprogres.png",
             "backgroundImg": "./leprogres_bgIMG.jpg"
+          },
+          {
+            "url": "https://information.tv5monde.com/afprss/francais--journal--ins",
+            "name": "TV5 Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./tv5monde.png",
+            "backgroundImg": "./tv5monde_bgIMG.jpg"
           }
         ],
         "Culture web":[
@@ -2286,6 +2347,14 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://information.tv5monde.com/afprss/francais--journal--societe",
+            "name": "TV5 Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./tv5monde.png",
+            "backgroundImg": "./tv5monde_bgIMG.jpg"
           }
         ],
         "Religions": [
