@@ -42,10 +42,21 @@ export interface RssContentProps {
 };
 
 var dd = String(new Date().getDate()).padStart(2, '0');
-const monthNames = ["jan.", "feb.", "mar.", "apr.", "may", "jun.",
-  "jul.", "aug.", "sept.", "oct.", "nov.", "dec."];
+var yesterdayDate = new Date();
+yesterdayDate.setDate(yesterdayDate.getDate()-1);
+var ddyesterday = String(yesterdayDate.getDate()).padStart(2, '0');
 
-const today = dd + ' ' + monthNames[new Date().getMonth()] ;
+var lastweekDate = new Date();
+lastweekDate.setDate(lastweekDate.getDate()-7);
+var ddlastweek = String(lastweekDate.getDate()).padStart(2, '0');
+
+
+const monthNames = ["jan.", "feb.", "mar.", "apr.", "may", "jun.",
+  "jul.", "août.", "sept.", "oct.", "nov.", "dec."];
+
+const todayFormat = dd + ' ' + monthNames[new Date().getMonth()] ;
+const yesterdayFormat = ddyesterday + ' ' + monthNames[yesterdayDate.getMonth()] ;
+const lastweekFormat = ddlastweek + ' ' + monthNames[lastweekDate.getMonth()] ;
 
 // This is bad but the whole point of this is to not stand up a server
 const openCorsProxy = "https://api.codetabs.com/v1/proxy?quest=";
@@ -113,7 +124,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                       {source.name}
                       {source.subtopic && ` - ${source.subtopic}`}
                     </div>
-                    <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd MMM à HH:mm").replace('Invalid DateTime', '').replace(today + " à", '')}</div>
+                    <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd MMM à HH:mm").replace('Invalid DateTime', '').replace(todayFormat + " à", '').replace(yesterdayFormat, 'hier').replace(lastweekFormat, 'il y a une semaine')}</div>
                   </div>
                   {source.encodedTitles ? 
                     (<h6 className="item-title" dangerouslySetInnerHTML={{ __html: item.title ?? "" }} />)

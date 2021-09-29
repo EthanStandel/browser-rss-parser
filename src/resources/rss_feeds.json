@@ -114,14 +114,22 @@
             "backgroundImg": "./bfmtv_bgIMG.jpg"
           },
           {
-            "url": "https://www.lemonde.fr/economie/rss_full.xml",
-            "name": "Le Monde",
+            "url": "https://www.letelegramme.fr/economie/rss.xml",
+            "name": "Le Télégramme",
             "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
+            "iconImg": "./letelegramme.png",
+            "backgroundImg": "./letelegramme_bgIMG.jpg"
+          },
+          {
+            "url": "https://business.lesechos.fr/rss/rss_une.xml",
+            "name": "Les Échos",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lesechos.png",
+            "backgroundImg": "./lesechos_bgIMG.jpg"
           }
         ],
-        "Marchés": [
+        "Marchés & bourse": [
           {
             "url": "https://www.francetvinfo.fr/marches.rss",
             "name": "Franceinfo",
@@ -152,6 +160,14 @@
             "count": 2,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://investir.lesechos.fr/RSS/info-marches-investir-bourse-les-echos.xml",
+            "name": "Les Échos",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lesechos.png",
+            "backgroundImg": "./lesechos_bgIMG.jpg"
           }
         ],
         "Entreprises": [
@@ -240,7 +256,7 @@
             "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
-        "Banques & Finance": [
+        "Banques & finance": [
           {
             "url": "https://www.ladepeche.fr/economie/banque-finances/rss.xml",
             "name": "La Dépêche",
@@ -416,6 +432,13 @@
             "count": 1,
             "iconImg": "./lepointpop.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/livres/rss_full.xml",
+            "name": "Le Monde",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
         "Films & séries": [
@@ -474,11 +497,25 @@
             "backgroundImg": "./lesinrocks_bgIMG.jpg"
           },
           {
-            "url": "https://www.bfmtv.com/rss/people/cinema/",
-            "name": "BFM TV",
+            "url": "http://rss.allocine.fr/ac/actualites/cine",
+            "name": "Allociné",
             "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
+            "iconImg": "./allocine.png",
+            "backgroundImg": ".allocine_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/category/cinema/feed/",
+            "name": "Le journal du geek",
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/series/feed/",
+            "name": "Le journal du geek",
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
           }
         ],
         "Arts visuels & graphiques": [
@@ -536,17 +573,16 @@
             "count": 1,
             "iconImg": "./lesinrocks.png",
             "backgroundImg": "./lesinrocks_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/scenes/rss_full.xml",
+            "name": "Le Monde",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
         "Jeux vidéo": [
-          {
-            "url": "https://www.ladepeche.fr/economie/innovation-high-tech/jeux-consoles/rss.xml",
-            "name": "La Dépêche",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          },
           {
             "url": "https://www.presse-citron.net/category/lifestyle/jeu-video/feed",
             "name": "Presse citron",
@@ -576,6 +612,13 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/category/jeux-video/feed/",
+            "name": "Le journal du geek",
+            "count": 2,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
           }
         ],
         "Patrimoine & architecture": [
@@ -586,6 +629,13 @@
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/architecture/rss_full.xml",
+            "name": "Le Monde",
+            "count": 2,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
         "Musique": [
@@ -617,6 +667,13 @@
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/musiques/rss_full.xml",
+            "name": "Le Monde",
+            "count": 2,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
         "Histoire": [
@@ -627,6 +684,13 @@
             "count": 1,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.letelegramme.fr/histoire/rss.xml",
+            "name": "Le Télégramme",
+            "count": 1,
+            "iconImg": "./letelegramme.png",
+            "backgroundImg": "./letelegramme_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -697,11 +761,11 @@
             "backgroundImg": "./liberation_bgIMG.jpg"
           },
           {
-            "url": "https://www.lemonde.fr/sport/rss_full.xml",
-            "name": "Le Monde",
+            "url": "https://www.letelegramme.fr/sports/rss.xml",
+            "name": "Le Télégramme",
             "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
+            "iconImg": "./letelegramme.png",
+            "backgroundImg": "./letelegramme_bgIMG.jpg"
           }
         ],
         "Football": [
@@ -829,6 +893,13 @@
             "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/handball/rss_full.xml",
+            "name": "Le Monde",
+            "count": 2,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
         "Sports nautiques & plongée": [
@@ -863,6 +934,13 @@
             "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/golf/rss_full.xml",
+            "name": "Le Monde",
+            "count": 2,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
         "Cyclisme": [
@@ -904,9 +982,16 @@
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/athletisme/rss_full.xml",
+            "name": "Le Monde",
+            "count": 2,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
-        "Auto Moto": [
+        "Sports mécaniques": [
           {
             "url": "https://rmcsport.bfmtv.com/rss/auto-moto/",
             "name": "RMC Sport",
@@ -921,6 +1006,13 @@
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/sports-mecaniques/rss_full.xml",
+            "name": "Le Monde",
+            "count": 2,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
         "Sports de combat": [
@@ -967,7 +1059,7 @@
             "backgroundImg": "./rmcsport_bgIMG.jpg"
           }
         ],
-        "E-Sports & sports d'esprit": [
+        "E-sports & sports d'esprit": [
         ],
         "Presse étrangère": [
           {
@@ -1123,6 +1215,14 @@
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://syndication.lesechos.fr/rss/Echos_monde.xml",
+            "name": "Les Échos",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lesechos.png",
+            "backgroundImg": "./lesechos_bgIMG.jpg"
           }
         ],
         "Afrique": [
@@ -1309,6 +1409,94 @@
         ]
       }
     },
+    "Politique": {
+      "subtopics": {
+        "France": [
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_politique_le-scan.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.ladepeche.fr/actu/politique/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/politique/?outputType=xml",
+            "name": "Libération",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/politique/rss.xml",
+            "name": "Le Point",
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/politique/",
+            "name": "BFM TV",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/politique/rss_full.xml",
+            "name": "Le Monde",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          }
+        ],
+        "Europe": [
+          
+        ],
+        "Monde": [
+          
+        ],
+        "Presse étrangère": [
+          {
+            "url": "https://www.telegraph.co.uk/politics/rss.xml",
+            "name": "The Telegraph",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./thetelegraph.png",
+            "backgroundImg": "./thetelegraph_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/politics/rss.xml",
+            "name": "The New York Times",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./thenytimes.png",
+            "backgroundImg": "./thenytimes_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.foxnews.com/foxnews/politics?format=xml",
+            "name": "FOX news",
+            "count": 1,
+            "iconImg": "./foxnews.png",
+            "backgroundImg": "./foxnews_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.bbci.co.uk/news/politics/rss.xml",
+            "name": "BBC News",
+            "count": 1,
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
+          }   
+        ]
+      }
+    },
     "Presse étrangère": {
       "subtopics": {
         "Deutschland": [
@@ -1413,6 +1601,13 @@
             "count": 2,
             "iconImg": "./sciencesetavenir.png",
             "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/science/feed/",
+            "name": "Le journal du geek",
+            "count": 2,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
           }
         ],
         "Nature & environnement": [
@@ -1563,6 +1758,13 @@
             "count": 2,
             "iconImg": "./futura.png",
             "backgroundImg": "./futura_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/high-tech/feed/",
+            "name": "Le journal du geek",
+            "count": 2,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
           }
         ],
         "Médecine & santé": [
@@ -1853,9 +2055,9 @@
             "backgroundImg": "./bfmtv_bgIMG.jpg"
           },
           {
-            "url": "https://www.lemonde.fr/gastronomie/rss_full.xml",
+            "url": "https://www.lemonde.fr/le-monde-passe-a-table/rss_full.xml",
             "name": "Le Monde",
-            "count": 1,
+            "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
           }
@@ -1894,6 +2096,15 @@
             "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
+        "Bien-être":[
+          {
+            "url": "https://www.letelegramme.fr/mieux-vivre/rss.xml",
+            "name": "Le Télégramme",
+            "count": 2,
+            "iconImg": "./letelegramme.png",
+            "backgroundImg": "./letelegramme_bgIMG.jpg"
+          }
+        ],
         "Presse étrangère": [
           {
             "url": "https://www.newyorker.com/feed/everything",
@@ -1924,94 +2135,6 @@
             "iconImg": "./forbes.png",
             "backgroundImg": "./forbes_bgIMG.jpg"
           }
-        ]
-      }
-    },
-    "Politique": {
-      "subtopics": {
-        "France": [
-          {
-            "url": "https://www.lefigaro.fr/rss/figaro_politique_le-scan.xml",
-            "name": "Le Figaro",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro_bgIMG.png"
-          },
-          {
-            "url": "https://www.ladepeche.fr/actu/politique/rss.xml",
-            "name": "La Dépêche",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/politique/?outputType=xml",
-            "name": "Libération",
-            "count": 2,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lepoint.fr/politique/rss.xml",
-            "name": "Le Point",
-            "count": 1,
-            "iconImg": "./lepoint.png",
-            "backgroundImg": "./lepoint_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/politique/",
-            "name": "BFM TV",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/politique/rss_full.xml",
-            "name": "Le Monde",
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          }
-        ],
-        "Europe": [
-          
-        ],
-        "Monde": [
-          
-        ],
-        "Presse étrangère": [
-          {
-            "url": "https://www.telegraph.co.uk/politics/rss.xml",
-            "name": "The Telegraph",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./thetelegraph.png",
-            "backgroundImg": "./thetelegraph_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/politics/rss.xml",
-            "name": "The New York Times",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./thenytimes.png",
-            "backgroundImg": "./thenytimes_bgIMG.jpg"
-          },
-          {
-            "url": "http://feeds.foxnews.com/foxnews/politics?format=xml",
-            "name": "FOX news",
-            "count": 1,
-            "iconImg": "./foxnews.png",
-            "backgroundImg": "./foxnews_bgIMG.jpg"
-          },
-          {
-            "url": "http://feeds.bbci.co.uk/news/politics/rss.xml",
-            "name": "BBC News",
-            "count": 1,
-            "iconImg": "./bbcnews.png",
-            "backgroundImg": "./bbcnews_bgIMG.jpg"
-          }   
         ]
       }
     },
@@ -2057,6 +2180,13 @@
           }
         ],
         "Religions": [
+          {
+            "url": "https://charliehebdo.fr/themes/religions/feed/",
+            "name": "Le Monde",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          }
         ],
         "Éducation": [
           {

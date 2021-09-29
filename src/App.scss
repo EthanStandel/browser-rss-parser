@@ -23,7 +23,8 @@
 /*/ loading Spinner /*/
 .spinner-container > div {
   margin: auto;
-  margin-top: 10rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 @media (prefers-color-scheme: light) {
@@ -95,6 +96,10 @@ header, .body-container, .mini-links a {
   
   .Europe * {
     text-decoration-color: var(--europeColorTheme);
+  }
+
+  .Politique * {
+    text-decoration-color: var(--polColorTheme);
   }
   
   .étrangère:not(.section) .section ul li > * > * > * {
@@ -176,6 +181,10 @@ ul.topics-navbar {
     color: var(--europeColorTheme) !important;
   }
 
+  &.Politique li > *  {
+    color: var(--polColorTheme) !important;
+  }
+
   li {
     margin-top: 10px;
   
@@ -239,6 +248,11 @@ ul.topics-navbar li {
     color: var(--europeColorTheme);
   }
 
+  .Politique {
+    border: 2px solid var(--polColorTheme);
+    color: var(--polColorTheme);
+  }
+
   > button {
     border: 2px solid var(--systemPink);
     color: var(--systemPink);
@@ -285,6 +299,10 @@ ul.topics-navbar li {
         &.Europe {
           background-color: var(--europeColorTheme);
         }
+
+        &.Politique {
+          background-color: var(--polColorTheme);
+        }
       }
     }
   }
@@ -320,6 +338,10 @@ h3.bold {
   
   &.Europe {
     color: var(--europeColorTheme);
+  }
+
+  &.Politique {
+    color: var(--polColorTheme);
   }
 }
 
