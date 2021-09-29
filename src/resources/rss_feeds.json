@@ -164,10 +164,10 @@
         ],
         "Entreprises": [
           {
-            "url": "https://www.francetvinfo.fr/entreprises.rss",
+            "url": "https://www.francetvinfo.fr/economie/entreprises.rss",
             "name": "Franceinfo",
             "encodedTitles": true,
-            "count": 1,
+            "count": 2,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
@@ -411,14 +411,6 @@
             "backgroundImg": "./lesinrocks_bgIMG.jpg"
           },
           {
-            "url": "http://lesechospedia.lesechos.fr/litterature.xml",
-            "name": "Les Échos",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./lesechos.png",
-            "backgroundImg": "./lesechos_bgIMG.jpg"
-          },
-          {
             "url": "https://www.lepoint.fr/livres/rss.xml",
             "name": "Le Point",
             "count": 1,
@@ -431,6 +423,14 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/livres.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
         "Films & séries": [
@@ -465,14 +465,6 @@
             "backgroundImg": "./premiere_bgIMG.png"
           },
           {
-            "url": "https://www.presse-citron.net/category/lifestyle/series/feed/",
-            "name": "Presse citron",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./pressecitron.png",
-            "backgroundImg": "./pressecitron_bgIMG.jpg"
-          },
-          {
             "url": "https://www.melty.fr/cinema-2.rss",
             "name": "Melty",
             "encodedTitles": true,
@@ -491,7 +483,7 @@
           {
             "url": "http://rss.allocine.fr/ac/actualites/cine",
             "name": "Allociné",
-            "count": 1,
+            "count": 2,
             "iconImg": "./allocine.png",
             "backgroundImg": ".allocine_bgIMG.jpg"
           },
@@ -517,6 +509,22 @@
             "count": 2,
             "iconImg": "./numerama.png",
             "backgroundImg": "./numerama_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/cinema.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.tomsguide.fr/tag/cinema/feed/",
+            "name": "Tom's guide",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./tomsguide.png",
+            "backgroundImg": "./tomsguide_bgIMG.jpg"
           }
         ],
         "Arts visuels & graphiques": [
@@ -533,6 +541,14 @@
             "count": 2,
             "iconImg": "./lepointpop.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/arts-expos/design.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
         "Spectacles & expositions": [
@@ -581,6 +597,14 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/arts-expos.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
         "Jeux vidéo": [
@@ -621,6 +645,22 @@
             "count": 2,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/jeux-video.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.tomsguide.fr/tag/jeux-video/feed/",
+            "name": "Tom's guide",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./tomsguide.png",
+            "backgroundImg": "./tomsguide_bgIMG.jpg"
           }
         ],
         "Patrimoine & architecture": [
@@ -638,6 +678,14 @@
             "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/arts-expos/architecture.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
         "Musique": [
@@ -684,6 +732,14 @@
             "count": 2,
             "iconImg": "./melty.png",
             "backgroundImg": "./melty_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/culture/musique/rss",
+            "name": "France 3",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
           }
         ],
         "Histoire": [
@@ -709,6 +765,13 @@
             "count": 2,
             "iconImg": "./france3.png",
             "backgroundImg": "./france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.courrierinternational.com/feed/category/6679/rss.xml",
+            "name": "Courrier International",
+            "count": 2,
+            "iconImg": "./courrierinter.png",
+            "backgroundImg": "./courrierinter_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -865,9 +928,25 @@
           {
             "url": "https://www6.lequipe.fr/rss/actu_rss_Tennis.xml",
             "name": "L'Équipe",
-            "count": 2,
+            "count": 1,
             "iconImg": "./lequipe.png",
             "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/tennis-de-table.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/badminton.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
         "Basketball": [
@@ -924,106 +1003,6 @@
             "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
-        "Handball & volleyball": [
-          {
-            "url": "https://rmcsport.bfmtv.com/rss/handball/",
-            "name": "RMC Sport",
-            "count": 1,
-            "iconImg": "./rmcsport.jpeg",
-            "backgroundImg": "./rmcsport_bgIMG.jpg"
-          },
-          {
-            "url": "https://rmcsport.bfmtv.com/rss/volley/",
-            "name": "RMC Sport",
-            "count": 1,
-            "iconImg": "./rmcsport.jpeg",
-            "backgroundImg": "./rmcsport_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.ladepeche.fr/sport/handball/rss.xml",
-            "name": "La Dépêche",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/handball/rss_full.xml",
-            "name": "Le Monde",
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www6.lequipe.fr/rss/actu_rss_Volley.xml",
-            "name": "L'Équipe",
-            "count": 1,
-            "iconImg": "./lequipe.png",
-            "backgroundImg": "./lequipe_bgIMG.jpg"
-          },
-          {
-            "url": "https://www6.lequipe.fr/rss/actu_rss_Hand.xml",
-            "name": "L'Équipe",
-            "count": 1,
-            "iconImg": "./lequipe.png",
-            "backgroundImg": "./lequipe_bgIMG.jpg"
-          }
-        ],
-        "Sports nautiques & plongée": [
-          {
-            "url": "https://rmcsport.bfmtv.com/rss/voile/",
-            "name": "RMC Sport",
-            "count": 1,
-            "iconImg": "./rmcsport.jpeg",
-            "backgroundImg": "./rmcsport_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.ladepeche.fr/sport/nautisme/rss.xml",
-            "name": "La Dépêche",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          },
-          {
-            "url": "https://www6.lequipe.fr/rss/actu_rss_Natation.xml",
-            "name": "L'Équipe",
-            "count": 1,
-            "iconImg": "./lequipe.png",
-            "backgroundImg": "./lequipe_bgIMG.jpg"
-          }
-        ],
-        "Golf": [
-          {
-            "url": "https://rmcsport.bfmtv.com/rss/golf/",
-            "name": "RMC Sport",
-            "count": 2,
-            "iconImg": "./rmcsport.jpeg",
-            "backgroundImg": "./rmcsport_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.ladepeche.fr/sport/golf/rss.xml",
-            "name": "La Dépêche",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/golf/rss_full.xml",
-            "name": "Le Monde",
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www6.lequipe.fr/rss/actu_rss_Golf.xml",
-            "name": "L'Équipe",
-            "count": 2,
-            "iconImg": "./lequipe.png",
-            "backgroundImg": "./lequipe_bgIMG.jpg"
-          }
-        ],
         "Cyclisme": [
           {
             "url": "https://rmcsport.bfmtv.com/rss/cyclisme/",
@@ -1049,37 +1028,6 @@
           },
           {
             "url": "https://www6.lequipe.fr/rss/actu_rss_Cyclisme.xml",
-            "name": "L'Équipe",
-            "count": 2,
-            "iconImg": "./lequipe.png",
-            "backgroundImg": "./lequipe_bgIMG.jpg"
-          }
-        ],
-        "Athlétisme": [
-          {
-            "url": "https://rmcsport.bfmtv.com/rss/athletisme/",
-            "name": "RMC Sport",
-            "count": 2,
-            "iconImg": "./rmcsport.jpeg",
-            "backgroundImg": "./rmcsport_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.ladepeche.fr/sport/athletisme/rss.xml",
-            "name": "La Dépêche",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/athletisme/rss_full.xml",
-            "name": "Le Monde",
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www6.lequipe.fr/rss/actu_rss_Athletisme.xml",
             "name": "L'Équipe",
             "count": 2,
             "iconImg": "./lequipe.png",
@@ -1129,6 +1077,169 @@
             "count": 2,
             "iconImg": "./lequipe.png",
             "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/auto-moto.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Athlétisme": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/athletisme/",
+            "name": "RMC Sport",
+            "count": 2,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sport/athletisme/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/athletisme/rss_full.xml",
+            "name": "Le Monde",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Athletisme.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          }
+        ],
+        "Handball & volleyball": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/handball/",
+            "name": "RMC Sport",
+            "count": 1,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/volley/",
+            "name": "RMC Sport",
+            "count": 1,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/handball/rss_full.xml",
+            "name": "Le Monde",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Volley.xml",
+            "name": "L'Équipe",
+            "count": 1,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Hand.xml",
+            "name": "L'Équipe",
+            "count": 1,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          }
+        ],
+        "Sports nautiques": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/voile/",
+            "name": "RMC Sport",
+            "count": 1,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sport/nautisme/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Natation.xml",
+            "name": "L'Équipe",
+            "count": 1,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/water-polo.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/voile.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/canoe-kayak.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/aviron.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Golf": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/golf/",
+            "name": "RMC Sport",
+            "count": 2,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sport/golf/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/golf/rss_full.xml",
+            "name": "Le Monde",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Golf.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "Sports de combat": [
@@ -1153,6 +1264,14 @@
             "count": 1,
             "iconImg": "./lequipe.png",
             "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/boxe.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
         "Pétanque": [
@@ -1163,6 +1282,14 @@
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/petanque.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
         "Sports d'hiver": [
@@ -1170,7 +1297,7 @@
             "url": "https://www.ladepeche.fr/sport/sports-d-hiver/rss.xml",
             "name": "La Dépêche",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
           },
@@ -1187,6 +1314,14 @@
             "count": 2,
             "iconImg": "./lequipe.png",
             "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/sports-d-hiver.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
         "E-sports & sports d'esprit": [
@@ -1211,6 +1346,24 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/esport.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Handisports": [
+          {
+            "url": "https://www.francetvinfo.fr/sports/handisport.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -1615,6 +1768,22 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/politique.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/politique/rss",
+            "name": "France 3",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
           }
         ],
         "Europe": [
@@ -2096,7 +2265,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/?outputType=xml",
             "name": "Libération",
-            "count": 2,
+            "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
           },
@@ -2129,13 +2298,20 @@
             "count": 1,
             "iconImg": "./tv5monde.png",
             "backgroundImg": "./tv5monde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.courrierinternational.com/feed/category/7426/rss.xml",
+            "name": "Courrier International",
+            "count": 2,
+            "iconImg": "./courrierinter.png",
+            "backgroundImg": "./courrierinter_bgIMG.jpg"
           }
         ],
         "Tourisme & voyages": [
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/voyages/?outputType=xml",
             "name": "Libération",
-            "count": 2,
+            "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
           },
@@ -2149,7 +2325,7 @@
           {
             "url": "https://www.lepoint.fr/voyages/rss.xml",
             "name": "Le Point",
-            "count": 2,
+            "count": 1,
             "iconImg": "./lepoint.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
           },
@@ -2159,6 +2335,21 @@
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/sorties-loisirs/vacances/rss",
+            "name": "France 3",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.courrierinternational.com/feed/category/6271/rss.xml",
+            "name": "Courrier International",
+            "count": 2,
+            "iconImg": "./courrierinter.png",
+            "backgroundImg": "./courrierinter_bgIMG.jpg"
           }
         ],
         "Loisirs": [
@@ -2373,6 +2564,22 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/societe/education.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/societe/education/rss",
+            "name": "France 3",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
           }
         ],
         "Police & justice":[
@@ -2389,6 +2596,22 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/faits-divers/justice-proces.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/societe/justice/rss",
+            "name": "France 3",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
           }
         ]
       }
