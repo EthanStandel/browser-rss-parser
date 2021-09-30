@@ -1,7 +1,3 @@
-/*/ Topic "monde" with subtopic "dossiers"/*/
-/*/ Banner "ARTE" to display just above the head title (here "monde" and above the first item of subtopic title) /*/
-
-<script>
 var dateJOURNAL = new Date(new Date().setHours(19, 45));
 
 //To calcute time before the ARTE JOURNAL
@@ -35,6 +31,4 @@ if (hours >= 18) {
 }
 arteNotif();
 }
-
 /*/ add line <div id="ArteBanner"></div> under the h3 element for main title of topic (subtopic title will be h4)/*/
-</script>
