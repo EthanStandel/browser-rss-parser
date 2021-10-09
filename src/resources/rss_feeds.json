@@ -182,6 +182,7 @@
           {
             "url": "https://www.bfmtv.com/rss/economie/entreprises/",
             "name": "BFM TV",
+            "specification": "lego",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -1726,7 +1727,7 @@
       "subtopics": {
         "France": [
           {
-            "url": "https://www.lefigaro.fr/rss/figaro_politique_le-scan.xml",
+            "url": "https://www.lefigaro.fr/rss/figaro_politique.xml",
             "name": "Le Figaro",
             "encodedTitles": true,
             "count": 2,

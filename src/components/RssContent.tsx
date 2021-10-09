@@ -12,6 +12,7 @@ export interface RssFeedSource {
   iconImg?: string;
   backgroundImg?: string;
   encodedTitles?: boolean;
+  specification?: string;
   subtopic?: string;
 }
 
@@ -112,7 +113,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             // If they ever contain a script, it's not being filtered out
 
             return (
-              <li>
+              <li className={source.specification}>
                 <a href={item.link} target="_blank" rel="noreferrer">
                 <div className="media">
                 <div className="icon-image"><img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/></div>
@@ -130,8 +131,8 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                     (<h6 className="item-title" dangerouslySetInnerHTML={{ __html: item.title ?? "" }} />)
                     : (<h6 className="item-title">{item.title}</h6>)
                   }
-                  {item.description && 
-                    <div className="h7 item-description" dangerouslySetInnerHTML={{ __html: item.description }} />}
+                  {item.description &&
+                    <div className="h7 item-description" dangerouslySetInnerHTML={{ __html: item.description.replace('p', "")}} />}
                     
                   </div></div>
                 </a>
