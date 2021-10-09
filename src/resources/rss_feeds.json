@@ -2390,6 +2390,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/voyages/?outputType=xml",
             "name": "Libération",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -2397,6 +2398,7 @@
           {
             "url": "https://www.leprogres.fr/magazine-tourisme-et-patrimoine/rss",
             "name": "Le Progrès",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./leprogres.png",
             "backgroundImg": "./leprogres_bgIMG.jpg"
@@ -2404,6 +2406,7 @@
           {
             "url": "https://www.lepoint.fr/voyages/rss.xml",
             "name": "Le Point",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./lepoint.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -2411,6 +2414,7 @@
           {
             "url": "https://www.bfmtv.com/rss/voyage/",
             "name": "BFM TV",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -2418,6 +2422,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/sorties-loisirs/vacances/rss",
             "name": "France 3",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./france3.png",
@@ -2426,6 +2431,7 @@
           {
             "url": "https://www.courrierinternational.com/feed/category/6271/rss.xml",
             "name": "Courrier International",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./courrierinter.png",
             "backgroundImg": "./courrierinter_bgIMG.jpg"
@@ -2435,6 +2441,7 @@
           {
             "url": "https://www.ladepeche.fr/culture-et-loisirs/rss.xml",
             "name": "La Dépêche",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./ladepeche.png",
@@ -2443,6 +2450,7 @@
           {
             "url": "https://feeds.leparisien.fr/leparisien/rss/culture-loisirs",
             "name": "Le Parisien",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./leparisien.png",
             "backgroundImg": "./leparisien_bgIMG.jpg"
