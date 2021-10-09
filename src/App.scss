@@ -426,7 +426,7 @@ ul.rss {
       }
     }
 
-    &:not(:first-of-type):not(li.news-headline), &.news-liste:first-child {
+    &:not(:first-of-type):not(li.news-headline), &.news-list:first-child {
       
       .item-description, .background-image {
         display: none;
@@ -481,7 +481,7 @@ ul.rss {
       }
     }
 
-    &:first-of-type:not(.news-liste):not(.news-headline) {
+    &:first-of-type:not(.news-list):not(.news-headline) {
   
       .item-description {
         display: block;
@@ -526,6 +526,7 @@ ul.rss {
         object-fit: cover;
         width: 30px;
         position: absolute;
+        border-radius: 9px;
         top: 10px;
         left: 10px;
         border-radius: 8px;
@@ -630,7 +631,7 @@ ul.rss {
         position: absolute;
         top: 10px;
         left: 10px;
-        border-radius: 8px;
+        border-radius: 9px;
         background-image: url("https://support.apple.com/library/content/dam/edam/applecare/images/en_US/ios/News/ios12-2-news-todays-topic-icon.png");
         background-size: 20px;
         background-position: center;
@@ -651,16 +652,21 @@ ul.rss {
       }
     }
 
-    &.marginrightFIX {
-      .item-container {
-        width: calc(100% - 50px) !important;
-      }
-    }
-
-    &.news-liste {
+    /*/ LIST STYLE FOR ITEMS/*/
+    &.news-list {
       margin-bottom: 0 !important;
       border-radius: 0;
-      padding: 0 10px;
+      padding: 0;
+
+      .media {
+        padding: 0 10px !important;
+      }
+
+      &.marginrightFIX {
+        .item-container {
+          width: calc(100% - 50px) !important;
+        }
+      }
 
       &:first-child {
         border-radius: 10px 10px 0 0  !important;
@@ -672,17 +678,23 @@ ul.rss {
 
       .item-description {
         display: block !important;
-        -webkit-line-clamp: 2 !important;
+        -webkit-line-clamp: 1 !important;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box !important;
         -webkit-box-orient: vertical;
 
-        img {display: block !important;}
+        img {
+          display: none !important;
+        }
       }
 
-      .item-publish-date {
-        display: none;
+      .item-title {
+        -webkit-line-clamp: 2 !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box !important;
+        -webkit-box-orient: vertical;
       }
 
       .item-container {

@@ -270,6 +270,7 @@
           {
             "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
             "name": "The Wall Street Journal",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./wsjournal.png",
             "backgroundImg": "./wsjournal_bgIMG.jpg"
@@ -277,6 +278,7 @@
           {
             "url": "https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml",
             "name": "The Wall Street Journal",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./wsjournal.png",
             "backgroundImg": "./wsjournal_bgIMG.jpg"
@@ -284,6 +286,7 @@
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
             "name": "The New York Times",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./thenytimes.png",
@@ -292,6 +295,7 @@
           {
             "url": "http://feeds.washingtonpost.com/rss/business",
             "name": "The Washington Post",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./wpost.png",
@@ -300,6 +304,7 @@
           {
             "url": "https://www.telegraph.co.uk/business/rss.xml",
             "name": "The Telegraph",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./thetelegraph.png",
@@ -556,6 +561,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_theatre.xml",
             "name": "Le Figaro",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
@@ -564,6 +570,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_arts-expositions.xml",
             "name": "Le Figaro",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
@@ -572,6 +579,7 @@
           {
             "url": "https://www.ladepeche.fr/culture-et-loisirs/spectacles/rss.xml",
             "name": "La Dépêche",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./ladepeche.png",
@@ -580,6 +588,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/scenes/?outputType=xml",
             "name": "Libération",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -587,6 +596,7 @@
           {
             "url": "https://www.lesinrocks.com/arts-et-scenes/feed/",
             "name": "Les Inrocks",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lesinrocks.png",
@@ -595,6 +605,7 @@
           {
             "url": "https://www.lemonde.fr/scenes/rss_full.xml",
             "name": "Le Monde",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -602,6 +613,7 @@
           {
             "url": "https://www.francetvinfo.fr/culture/arts-expos.rss",
             "name": "Franceinfo",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
@@ -668,6 +680,7 @@
           {
             "url": "https://www.ladepeche.fr/culture-et-loisirs/patrimoine/rss.xml",
             "name": "La Dépêche",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./ladepeche.png",
@@ -676,6 +689,7 @@
           {
             "url": "https://www.lemonde.fr/architecture/rss_full.xml",
             "name": "Le Monde",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -683,6 +697,7 @@
           {
             "url": "https://www.francetvinfo.fr/culture/arts-expos/architecture.rss",
             "name": "Franceinfo",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
@@ -747,6 +762,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_histoire.xml",
             "name": "Le Figaro",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
@@ -755,6 +771,7 @@
           {
             "url": "https://www.letelegramme.fr/histoire/rss.xml",
             "name": "Le Télégramme",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./letelegramme.png",
             "backgroundImg": "./letelegramme_bgIMG.jpg"
@@ -762,6 +779,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/culture/histoire/rss",
             "name": "France 3",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./france3.png",
@@ -770,6 +788,7 @@
           {
             "url": "https://www.courrierinternational.com/feed/category/6679/rss.xml",
             "name": "Courrier International",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./courrierinter.png",
             "backgroundImg": "./courrierinter_bgIMG.jpg"
@@ -779,6 +798,7 @@
           {
             "url": "https://www.telegraph.co.uk/art/rss.xml",
             "name": "The Telegraph",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./thetelegraph.png",
@@ -787,6 +807,7 @@
           {
             "url": "https://www.theguardian.com/uk/culture/rss",
             "name": "The Guardian",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./theguardian.png",
@@ -795,6 +816,7 @@
           {
             "url": "https://www.bbc.com/culture/feed.rss",
             "name": "BBC News",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
@@ -1160,6 +1182,7 @@
           {
             "url": "https://rmcsport.bfmtv.com/rss/voile/",
             "name": "RMC Sport",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./rmcsport.jpeg",
             "backgroundImg": "./rmcsport_bgIMG.jpg"
@@ -1167,6 +1190,7 @@
           {
             "url": "https://www.ladepeche.fr/sport/nautisme/rss.xml",
             "name": "La Dépêche",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./ladepeche.png",
@@ -1175,6 +1199,7 @@
           {
             "url": "https://www6.lequipe.fr/rss/actu_rss_Natation.xml",
             "name": "L'Équipe",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./lequipe.png",
             "backgroundImg": "./lequipe_bgIMG.jpg"
@@ -1182,6 +1207,7 @@
           {
             "url": "https://www.francetvinfo.fr/sports/water-polo.rss",
             "name": "Franceinfo",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
@@ -1190,6 +1216,7 @@
           {
             "url": "https://www.francetvinfo.fr/sports/voile.rss",
             "name": "Franceinfo",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
@@ -1198,6 +1225,7 @@
           {
             "url": "https://www.francetvinfo.fr/sports/canoe-kayak.rss",
             "name": "Franceinfo",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
@@ -1206,6 +1234,7 @@
           {
             "url": "https://www.francetvinfo.fr/sports/aviron.rss",
             "name": "Franceinfo",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
@@ -1216,6 +1245,7 @@
           {
             "url": "https://rmcsport.bfmtv.com/rss/golf/",
             "name": "RMC Sport",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./rmcsport.jpeg",
             "backgroundImg": "./rmcsport_bgIMG.jpg"
@@ -1223,6 +1253,7 @@
           {
             "url": "https://www.ladepeche.fr/sport/golf/rss.xml",
             "name": "La Dépêche",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./ladepeche.png",
@@ -1231,6 +1262,7 @@
           {
             "url": "https://www.lemonde.fr/golf/rss_full.xml",
             "name": "Le Monde",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -1238,6 +1270,7 @@
           {
             "url": "https://www6.lequipe.fr/rss/actu_rss_Golf.xml",
             "name": "L'Équipe",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./lequipe.png",
             "backgroundImg": "./lequipe_bgIMG.jpg"
@@ -1247,6 +1280,7 @@
           {
             "url": "https://rmcsport.bfmtv.com/rss/sports-de-combat/",
             "name": "RMC Sport",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./rmcsport.jpeg",
             "backgroundImg": "./rmcsport_bgIMG.jpg"
@@ -1254,6 +1288,7 @@
           {
             "url": "https://www.ladepeche.fr/sport/sports-de-combat/rss.xml",
             "name": "La Dépêche",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./ladepeche.png",
@@ -1262,6 +1297,7 @@
           {
             "url": "https://www6.lequipe.fr/rss/actu_rss_Judo.xml",
             "name": "L'Équipe",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./lequipe.png",
             "backgroundImg": "./lequipe_bgIMG.jpg"
@@ -1269,6 +1305,7 @@
           {
             "url": "https://www.francetvinfo.fr/sports/boxe.rss",
             "name": "Franceinfo",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
@@ -1279,6 +1316,7 @@
           {
             "url": "https://www.ladepeche.fr/sport/petanque/rss.xml",
             "name": "La Dépêche",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./ladepeche.png",
@@ -1287,6 +1325,7 @@
           {
             "url": "https://www.francetvinfo.fr/sports/petanque.rss",
             "name": "Franceinfo",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
@@ -1297,6 +1336,7 @@
           {
             "url": "https://www.ladepeche.fr/sport/sports-d-hiver/rss.xml",
             "name": "La Dépêche",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./ladepeche.png",
@@ -1305,6 +1345,7 @@
           {
             "url": "https://rmcsport.bfmtv.com/rss/sports-d-hiver/",
             "name": "RMC Sport",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./rmcsport.jpeg",
             "backgroundImg": "./rmcsport_bgIMG.jpg"
@@ -1312,6 +1353,7 @@
           {
             "url": "https://www6.lequipe.fr/rss/actu_rss_Ski.xml",
             "name": "L'Équipe",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./lequipe.png",
             "backgroundImg": "./lequipe_bgIMG.jpg"
@@ -1319,6 +1361,7 @@
           {
             "url": "https://www.francetvinfo.fr/sports/sports-d-hiver.rss",
             "name": "Franceinfo",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
@@ -1329,6 +1372,7 @@
           {
             "url": "https://www6.lequipe.fr/rss/actu_rss_esport.xml",
             "name": "L'Équipe",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./lequipe.png",
             "backgroundImg": "./lequipe_bgIMG.jpg"
@@ -1336,6 +1380,7 @@
           {
             "url": "https://plus.lefigaro.fr/tag/esport/rss.xml",
             "name": "Le Figaro",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
@@ -1344,6 +1389,7 @@
           {
             "url": "https://www.lemonde.fr/e-sport/rss_full.xml",
             "name": "Le Monde",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -1351,6 +1397,7 @@
           {
             "url": "https://www.francetvinfo.fr/sports/esport.rss",
             "name": "Franceinfo",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
@@ -1361,6 +1408,7 @@
           {
             "url": "https://www.francetvinfo.fr/sports/handisport.rss",
             "name": "Franceinfo",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
@@ -1371,6 +1419,7 @@
           {
             "url": "http://feeds.foxnews.com/foxnews/sports?format=xml",
             "name": "FOX news",
+            "specification": "news-list marginrightFIX",
             "count": 1,
             "iconImg": "./foxnews.png",
             "backgroundImg": "./foxnews_bgIMG.jpg"
@@ -1378,6 +1427,7 @@
           {
             "url": "http://feeds.bbci.co.uk/sport/rss.xml",
             "name": "BBC News",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
@@ -1385,6 +1435,7 @@
           {
             "url": "http://www.independent.co.uk/sport/rss",
             "name": "The Independent",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./theindependent.png",
             "backgroundImg": "./theindependent_bgIMG.jpg"
@@ -1392,6 +1443,7 @@
           {
             "url": "http://feeds.washingtonpost.com/rss/sports",
             "name": "The Washington Post",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./wpost.png",
@@ -1444,6 +1496,7 @@
           {
             "url": "http://feeds.washingtonpost.com/rss/world/europe",
             "name": "The Washington Post",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./wpost.png",
@@ -1452,6 +1505,7 @@
           {
             "url": "https://www.economist.com/feeds/print-sections/75/europe.xml",
             "name": "The Economist",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./theeconomist.png",
             "backgroundImg": "./theeconomist_bgIMG.jpg"
@@ -1459,6 +1513,7 @@
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/Europe.xml",
             "name": "The New York Times",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./thenytimes.png",
@@ -1467,6 +1522,7 @@
           {
             "url": "http://rss.cnn.com/rss/edition_europe.rss",
             "name": "CNN",
+            "specification": "news-list marginrightFIX",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./cnn.png",
@@ -1475,6 +1531,7 @@
           {
             "url": "http://feeds.bbci.co.uk/news/world/europe/rss.xml?edition=int",
             "name": "BBC News",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
@@ -1684,6 +1741,7 @@
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
             "name": "The New York Times",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./thenytimes.png",
@@ -1692,6 +1750,7 @@
           {
             "url": "http://feeds.bbci.co.uk/news/video_and_audio/world/rss.xml",
             "name": "BBC News",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
@@ -1699,6 +1758,7 @@
           {
             "url": "https://www.theguardian.com/world/rss",
             "name": "The Guardian",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./theguardian.png",
@@ -1707,6 +1767,7 @@
           {
             "url": "http://feeds.foxnews.com/foxnews/world?format=xml",
             "name": "FOX news",
+            "specification": "news-list marginrightFIX",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./foxnews.png",
@@ -1715,6 +1776,7 @@
           {
             "url": "http://rss.cnn.com/rss/edition_world.rss",
             "name": "CNN",
+            "specification": "news-list marginrightFIX",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./cnn.png",
@@ -1797,6 +1859,7 @@
           {
             "url": "https://www.telegraph.co.uk/politics/rss.xml",
             "name": "The Telegraph",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./thetelegraph.png",
@@ -1805,6 +1868,7 @@
           {
             "url": "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/politics/rss.xml",
             "name": "The New York Times",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./thenytimes.png",
@@ -1813,6 +1877,7 @@
           {
             "url": "http://feeds.foxnews.com/foxnews/politics?format=xml",
             "name": "FOX news",
+            "specification": "news-list marginrightFIX",
             "count": 1,
             "iconImg": "./foxnews.png",
             "backgroundImg": "./foxnews_bgIMG.jpg"
@@ -1820,6 +1885,7 @@
           {
             "url": "http://feeds.bbci.co.uk/news/politics/rss.xml",
             "name": "BBC News",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
@@ -1986,7 +2052,7 @@
             "backgroundImg": "./futura_bgIMG.jpg"
           },
           {
-            "url": "https://www.numerama.com/sciences/feed/",
+            "url": "https://www.numerama.com/sciences/environnementfeed/",
             "name": "Numerama",
             "count": 2,
             "iconImg": "./numerama.png",
@@ -1997,6 +2063,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sciences/espace/?outputType=xml",
             "name": "Libération",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -2004,6 +2071,7 @@
           {
             "url": "https://www.lepoint.fr/astronomie/rss.xml",
             "name": "Le Point",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./lepoint.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -2011,6 +2079,7 @@
           {
             "url": "https://www.lemonde.fr/espace/rss_full.xml",
             "name": "Le Monde",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -2018,6 +2087,7 @@
           {
             "url": "https://www.sciencesetavenir.fr/espace/rss.xml",
             "name": "Sciences et Avenir",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./sciencesetavenir.png",
             "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
@@ -2025,6 +2095,7 @@
           {
             "url": "https://www.futura-sciences.com/rss/espace/actualites.xml",
             "name": "Futura Sciences",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./futura.png",
             "backgroundImg": "./futura_bgIMG.jpg"
@@ -2184,6 +2255,7 @@
           {
             "url": "https://www.telegraph.co.uk/science/rss.xml",
             "name": "The Telegraph",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./thetelegraph.png",
@@ -2192,6 +2264,7 @@
           {
             "url": "https://www.techrepublic.com/rssfeeds/articles/?feedType=rssfeeds&sort=latest",
             "name": "TechRepublic",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./techrep.png",
@@ -2200,6 +2273,7 @@
           {
             "url": "https://www.theguardian.com/science/rss",
             "name": "The Guardian",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./theguardian.png",
@@ -2208,6 +2282,7 @@
           {
             "url": "http://feeds.foxnews.com/foxnews/science?format=xml",
             "name": "FOX news",
+            "specification": "news-list marginrightFIX",
             "count": 1,
             "iconImg": "./foxnews.png",
             "backgroundImg": "./foxnews_bgIMG.jpg"
@@ -2215,6 +2290,7 @@
           {
             "url": "https://www.forbes.com/science/feed2/",
             "name": "Forbes",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./forbes.png",
             "backgroundImg": "./forbes_bgIMG.jpg"
@@ -2222,6 +2298,7 @@
           {
             "url": "http://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
             "name": "BBC News",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
@@ -2229,6 +2306,7 @@
           {
             "url": "https://www.wired.com/feed/science/rss",
             "name": "Wired",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./wired.png",
             "backgroundImg": "./wired_bgIMG.jpg"
@@ -2374,6 +2452,7 @@
           {
             "url": "https://www.ladepeche.fr/culture-et-loisirs/gastronomie-et-terroir/rss.xml",
             "name": "La Dépêche",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./ladepeche.png",
@@ -2382,6 +2461,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/gastronomie/?outputType=xml",
             "name": "Libération",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -2389,6 +2469,7 @@
           {
             "url": "https://www.lepoint.fr/gastronomie/rss.xml",
             "name": "Le Point",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./lepoint.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -2396,6 +2477,7 @@
           {
             "url": "https://www.bfmtv.com/rss/cuisine/",
             "name": "BFM TV",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -2403,6 +2485,7 @@
           {
             "url": "https://www.lemonde.fr/le-monde-passe-a-table/rss_full.xml",
             "name": "Le Monde",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -2410,6 +2493,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/culture/gastronomie/rss",
             "name": "France 3",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./france3.png",
@@ -2420,6 +2504,7 @@
           {
             "url": "https://www.francetvinfo.fr/decouverte/bizarre.rss",
             "name": "Franceinfo",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
@@ -2428,6 +2513,7 @@
           {
             "url": "https://www.ladepeche.fr/insolite/rss.xml",
             "name": "La Dépêche",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./ladepeche.png",
@@ -2436,6 +2522,7 @@
           {
             "url": "https://www.leprogres.fr/insolite/rss",
             "name": "Le Progrès",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./leprogres.png",
             "backgroundImg": "./leprogres_bgIMG.jpg"
@@ -2443,6 +2530,7 @@
           {
             "url": "https://information.tv5monde.com/afprss/francais--journal--ins",
             "name": "TV5 Monde",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./tv5monde.png",
@@ -2453,6 +2541,7 @@
           {
             "url": "https://www.lemonde.fr/cultures-web/rss_full.xml",
             "name": "Le Monde",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -2462,6 +2551,7 @@
           {
             "url": "https://www.letelegramme.fr/mieux-vivre/rss.xml",
             "name": "Le Télégramme",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./letelegramme.png",
             "backgroundImg": "./letelegramme_bgIMG.jpg"
@@ -2471,6 +2561,7 @@
           {
             "url": "https://www.newyorker.com/feed/everything",
             "name": "The New Yorker",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./thenewyorker.png",
             "backgroundImg": "./thenewyorker_bgIMG.jpg"
@@ -2478,6 +2569,7 @@
           {
             "url": "http://feeds.washingtonpost.com/rss/lifestyle",
             "name": "The Washington Post",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./wpost.png",
@@ -2486,6 +2578,7 @@
           {
             "url": "http://feeds.foxnews.com/foxnews/section/lifestyle?format=xml",
             "name": "FOX news",
+            "specification": "news-list marginrightFIX",
             "count": 1,
             "iconImg": "./foxnews.png",
             "backgroundImg": "./foxnews_bgIMG.jpg"
@@ -2493,6 +2586,7 @@
           {
             "url": "https://www.forbes.com/lifestyle/feed2/",
             "name": "Forbes",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./forbes.png",
             "backgroundImg": "./forbes_bgIMG.jpg"
@@ -2553,6 +2647,7 @@
           {
             "url": "https://www.lemonde.fr/religions/rss_full.xml",
             "name": "Le Monde",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -2562,6 +2657,7 @@
           {
             "url": "https://www.lemonde.fr/education/rss_full.xml",
             "name": "Le Monde",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -2569,6 +2665,7 @@
           {
             "url": "https://www.francetvinfo.fr/societe/education.rss",
             "name": "Franceinfo",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
@@ -2577,6 +2674,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/societe/education/rss",
             "name": "France 3",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./france3.png",
