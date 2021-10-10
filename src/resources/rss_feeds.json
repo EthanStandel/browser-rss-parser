@@ -1787,7 +1787,7 @@
     },
     "Politique": {
       "subtopics": {
-        "France": [
+        "noSubtopic": [
           {
             "url": "https://www.lefigaro.fr/rss/figaro_politique.xml",
             "name": "Le Figaro",
@@ -1849,10 +1849,7 @@
             "backgroundImg": "./france3_bgIMG.jpg"
           }
         ],
-        "Europe": [
-          
-        ],
-        "Monde": [
+        "Élections": [
           
         ],
         "Presse étrangère": [
@@ -2314,6 +2311,19 @@
         ]
       }
     },
+    "Technologie & innovation": {
+
+    },
+    "Actualités régionales": {
+      "subtopics": {
+        "Grand Est": [
+
+        ],
+        "Autres régions": [
+
+        ]
+      }
+    },
     "Art de vivre": {
       "subtopics": {
         "noSubtopic": [
@@ -2688,6 +2698,12 @@
             "iconImg": "./france3.png",
             "backgroundImg": "./france3_bgIMG.jpg"
           }
+        ],
+        "Discriminations": [
+
+        ],
+        "Immigration": [
+
         ],
         "Police & justice":[
           {
