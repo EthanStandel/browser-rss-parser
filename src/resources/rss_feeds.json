@@ -2312,14 +2312,54 @@
       }
     },
     "Technologie & innovation": {
+      "subtopics": {
+        "noSubtopic": [
 
+        ]
+      }
     },
     "Actualités régionales": {
       "subtopics": {
+        "Auvergne-Rhône-Alpes": [
+
+        ],
+        "Bourgogne-Franche-Comté": [
+
+        ],
+        "Bretagne": [
+
+        ],
+        "Centre-Val de Loire": [
+
+        ],
+        "Corse": [
+
+        ],
         "Grand Est": [
 
         ],
-        "Autres régions": [
+        "Hauts-de-France": [
+
+        ],
+        "Ile-de-France": [
+
+        ],
+        "Normandie": [
+
+        ],
+        "Nouvelle-Aquitaine": [
+
+        ],
+        "Occitanie": [
+
+        ],
+        "Pays de la Loire": [
+
+        ],
+        "Provence-Alpes-Côte d’Azur": [
+
+        ],
+        "Outre-mer": [
 
         ]
       }
