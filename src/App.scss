@@ -13,6 +13,9 @@
   --sciencesColorTheme: mediumseagreen;
   --europeColorTheme: royalblue;
   --polColorTheme: rebeccapurple;
+  --societeColorTheme: mediumaquamarine;
+  --techColorTheme: coral;
+  --regionsColorTheme: skyblue;
 }
 
 /* color focus */
@@ -101,6 +104,18 @@ header, .body-container, .mini-links a {
   .Politique * {
     text-decoration-color: var(--polColorTheme);
   }
+
+  .Société * {
+    text-decoration-color: var(--societeColorTheme);
+  }
+
+  .Technologie * {
+    text-decoration-color: var(--techColorTheme);
+  }
+
+  .Régions * {
+    text-decoration-color: var(--regionsColorTheme);
+  }
   
   .étrangère:not(.section) .section ul li > * > * > * {
     text-decoration-color: var(--presseinterColorTheme);
@@ -185,6 +200,18 @@ ul.topics-navbar {
     color: var(--polColorTheme) !important;
   }
 
+  &.Société li > *  {
+    color: var(--societeColorTheme) !important;
+  }
+
+  &.Technologie li > *  {
+    color: var(--techColorTheme) !important;
+  }
+
+  &.Régions li > *  {
+    color: var(--regionsColorTheme) !important;
+  }
+
   li {
     margin-top: 10px;
   
@@ -253,6 +280,21 @@ ul.topics-navbar li {
     color: var(--polColorTheme);
   }
 
+  .Société {
+    border: 2px solid var(--societeColorTheme);
+    color: var(--societeColorTheme);
+  }
+
+  .Technologie {
+    border: 2px solid var(--techColorTheme);
+    color: var(--techColorTheme);
+  }
+
+  .Régions {
+    border: 2px solid var(--regionsColorTheme);
+    color: var(--regionsColorTheme);
+  }
+
   > button {
     border: 2px solid var(--systemPink);
     color: var(--systemPink);
@@ -303,6 +345,18 @@ ul.topics-navbar li {
         &.Politique {
           background-color: var(--polColorTheme);
         }
+
+        &.Société {
+          background-color: var(--societeColorTheme);
+        }
+
+        &.Technologie {
+          background-color: var(--techColorTheme);
+        }
+        
+        &.Régions {
+          background-color: var(--regionsColorTheme);
+        }
       }
     }
   }
@@ -342,6 +396,18 @@ h3.bold {
 
   &.Politique {
     color: var(--polColorTheme);
+  }
+
+  &.Société {
+    color: var(--societeColorTheme);
+  }
+
+  &.Technologie {
+    color: var(--techColorTheme);
+  }
+
+  &.Régions {
+    color: var(--regionsColorTheme);
   }
 }
 
@@ -700,7 +766,6 @@ ul.rss {
       .item-container {
         border-bottom: 0.8px solid var(--separator);
         padding: 10px 0;
-
       }
 
       &:last-child {
@@ -809,6 +874,12 @@ footer {
   margin-bottom: 7px !important;
 }
 
-li.À.la.une button.selected {
-  margin-bottom: 32.6px;
+li {
+
+  &.À.la.une button, &.Auto button {
+
+    &.selected {
+      margin-bottom: 32.6px;
+    }
+  }
 }
