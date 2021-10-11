@@ -1508,19 +1508,48 @@
           }
         ],
         "Allemagne": [
-
+          {
+            "url": "https://www.francetvinfo.fr/monde/europe/allemagne.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 4,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
         ],
         "Royaume-Uni": [
-
+          {
+            "url": "https://www.francetvinfo.fr/monde/royaume-uni.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 4,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
         ],
         "Italie": [
-
+          {
+            "url": "https://www.francetvinfo.fr/monde/italie.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 4,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
         ],
-        "Pays du Nord": [
-
-        ],
-        "Balkans": [
-
+        "Russie": [
+          {
+            "url": "https://www.francetvinfo.fr/monde/russie.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 4,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
         ],
         "Presse étrangère": [
           {
@@ -1814,118 +1843,6 @@
         ]
       }
     },
-    "Politique": {
-      "subtopics": {
-        "noSubtopic": [
-          {
-            "url": "https://www.lefigaro.fr/rss/figaro_politique.xml",
-            "name": "Le Figaro",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro_bgIMG.png"
-          },
-          {
-            "url": "https://www.ladepeche.fr/actu/politique/rss.xml",
-            "name": "La Dépêche",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/politique/?outputType=xml",
-            "name": "Libération",
-            "count": 2,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lepoint.fr/politique/rss.xml",
-            "name": "Le Point",
-            "count": 1,
-            "iconImg": "./lepoint.png",
-            "backgroundImg": "./lepoint_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/politique/",
-            "name": "BFM TV",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/politique/rss_full.xml",
-            "name": "Le Monde",
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.francetvinfo.fr/politique.rss",
-            "name": "Franceinfo",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          },
-          {
-            "url": "https://france3-regions.francetvinfo.fr/politique/rss",
-            "name": "France 3",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./france3.png",
-            "backgroundImg": "./france3_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.challenges.fr/politique/rss.xml",
-            "name": "Challenges",
-            "count": 2,
-            "iconImg": "./challenges.png",
-            "backgroundImg": "./challenges_bgIMG.jpg"
-          }
-        ],
-        "Élections": [
-          
-        ],
-        "Presse étrangère": [
-          {
-            "url": "https://www.telegraph.co.uk/politics/rss.xml",
-            "name": "The Telegraph",
-            "specification": "news-list",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./thetelegraph.png",
-            "backgroundImg": "./thetelegraph_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/politics/rss.xml",
-            "name": "The New York Times",
-            "specification": "news-list",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./thenytimes.png",
-            "backgroundImg": "./thenytimes_bgIMG.jpg"
-          },
-          {
-            "url": "http://feeds.foxnews.com/foxnews/politics?format=xml",
-            "name": "FOX news",
-            "specification": "news-list marginrightFIX",
-            "count": 1,
-            "iconImg": "./foxnews.png",
-            "backgroundImg": "./foxnews_bgIMG.jpg"
-          },
-          {
-            "url": "http://feeds.bbci.co.uk/news/politics/rss.xml",
-            "name": "BBC News",
-            "specification": "news-list",
-            "count": 1,
-            "iconImg": "./bbcnews.png",
-            "backgroundImg": "./bbcnews_bgIMG.jpg"
-          }   
-        ]
-      }
-    },
     "Presse étrangère": {
       "subtopics": {
         "Deutschland": [
@@ -2031,9 +1948,7 @@
             "count": 2,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
-          }
-        ],
-        "Nature & environnement": [
+          },
           {
             "url": "https://www.lefigaro.fr/rss/figaro_sciences.xml",
             "name": "Le Figaro",
@@ -2041,56 +1956,6 @@
             "count": 2,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
-          },
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/environnement/?outputType=xml",
-            "name": "Libération",
-            "count": 1,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.leprogres.fr/environnement/rss",
-            "name": "Le Progrès",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./leprogres.png",
-            "backgroundImg": "./leprogres_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/environnement/",
-            "name": "BFM TV",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/planete/rss_full.xml",
-            "name": "Le Monde",
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.sciencesetavenir.fr/nature-environnement/rss.xml",
-            "name": "Sciences et Avenir",
-            "count": 2,
-            "iconImg": "./sciencesetavenir.png",
-            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.futura-sciences.com/rss/environnement/actualites.xml",
-            "name": "Futura Sciences",
-            "count": 2,
-            "iconImg": "./futura.png",
-            "backgroundImg": "./futura_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.numerama.com/sciences/environnementfeed/",
-            "name": "Numerama",
-            "count": 2,
-            "iconImg": "./numerama.png",
-            "backgroundImg": "./numerama_bgIMG.jpg"
           }
         ],
         "Astronomie & espace": [
@@ -2448,6 +2313,379 @@
             "iconImg": "./sciencesetavenir.png",
             "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
           }
+        ]
+      }
+    },
+    "Politique": {
+      "subtopics": {
+        "noSubtopic": [
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_politique.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.ladepeche.fr/actu/politique/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/politique/?outputType=xml",
+            "name": "Libération",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/politique/rss.xml",
+            "name": "Le Point",
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/politique/",
+            "name": "BFM TV",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/politique/rss_full.xml",
+            "name": "Le Monde",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/politique.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/politique/rss",
+            "name": "France 3",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.challenges.fr/politique/rss.xml",
+            "name": "Challenges",
+            "count": 2,
+            "iconImg": "./challenges.png",
+            "backgroundImg": "./challenges_bgIMG.jpg"
+          }
+        ],
+        "Élections": [
+          
+        ],
+        "Presse étrangère": [
+          {
+            "url": "https://www.telegraph.co.uk/politics/rss.xml",
+            "name": "The Telegraph",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./thetelegraph.png",
+            "backgroundImg": "./thetelegraph_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/politics/rss.xml",
+            "name": "The New York Times",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./thenytimes.png",
+            "backgroundImg": "./thenytimes_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.foxnews.com/foxnews/politics?format=xml",
+            "name": "FOX news",
+            "specification": "news-list marginrightFIX",
+            "count": 1,
+            "iconImg": "./foxnews.png",
+            "backgroundImg": "./foxnews_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.bbci.co.uk/news/politics/rss.xml",
+            "name": "BBC News",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
+          }   
+        ]
+      }
+    },
+    "Régions & outre-mer": {
+      "subtopics": {
+        "noSubtopic": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/actu/rss",
+            "name": "France 3",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Auvergne-Rhône-Alpes": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/auvergne-rhone-alpes/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Bourgogne-Franche-Comté": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Bretagne": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/bretagne/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Centre-Val de Loire": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/centre-val-de-loire/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Corse": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/corse/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Grand Est": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/grand-est/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Guadeloupe": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/guadeloupe/actu/rss",
+            "name": "La 1ère",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./la1ere.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
+          }
+        ],
+        "Guyane": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/guyane/actu/rss",
+            "name": "La 1ère",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./la1ere.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
+          }
+        ],
+        "Hauts-de-France": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/hauts-de-france/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+
+        ],
+        "Ile-de-France": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/paris-ile-de-france/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Martinique": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/martinique/actu/rss",
+            "name": "La 1ère",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./la1ere.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
+          }
+        ],
+        "Mayotte": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/mayotte/actu/rss",
+            "name": "La 1ère",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./la1ere.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
+          }
+        ],
+        "Normandie": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/normandie/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Nouvelle-Aquitaine": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/nouvelle-aquitaine/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Nouvelle-Calédonie": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/nouvellecaledonie/actu/rss",
+            "name": "La 1ère",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./la1ere.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
+          }
+        ],
+        "Occitanie": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/occitanie/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Pays de la Loire": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/pays-de-la-loire/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Polynésie": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/polynesie/actu/rss",
+            "name": "La 1ère",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./la1ere.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
+          }
+
+        ],
+        "Provence-Alpes-Côte d’Azur": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/provence-alpes-cote-d-azur/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+
+        ],
+        "Réunion": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/reunion/actu/rss",
+            "name": "La 1ère",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./la1ere.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
+          }
+
+        ],
+        "Saint-Pierre-et-Miquelon": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/saintpierremiquelon/actu/rss",
+            "name": "La 1ère",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./la1ere.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
+          }
+
+        ],
+        "Wallis-et-Futuna": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/wallisfutuna/actu/rss",
+            "name": "La 1ère",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 5,
+            "iconImg": "./la1ere.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
+          }
 
         ]
       }
@@ -2579,72 +2817,71 @@
         ]
       }
     },
-    "Régions & outre-mer": {
+    "Nature & climat": {
       "subtopics": {
-        "Auvergne-Rhône-Alpes": [
+        "noSubtopic": [
 
         ],
-        "Bourgogne-Franche-Comté": [
+        "Environnement & développement durable": [
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/environnement/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.leprogres.fr/environnement/rss",
+            "name": "Le Progrès",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./leprogres.png",
+            "backgroundImg": "./leprogres_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/environnement/",
+            "name": "BFM TV",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/planete/rss_full.xml",
+            "name": "Le Monde",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.sciencesetavenir.fr/nature-environnement/rss.xml",
+            "name": "Sciences et Avenir",
+            "count": 2,
+            "iconImg": "./sciencesetavenir.png",
+            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.futura-sciences.com/rss/environnement/actualites.xml",
+            "name": "Futura Sciences",
+            "count": 2,
+            "iconImg": "./futura.png",
+            "backgroundImg": "./futura_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.numerama.com/sciences/environnementfeed/",
+            "name": "Numerama",
+            "count": 2,
+            "iconImg": "./numerama.png",
+            "backgroundImg": "./numerama_bgIMG.jpg"
+          }
 
         ],
-        "Bretagne": [
+        "Météo": [
 
         ],
-        "Centre-Val de Loire": [
+        "Animaux": [
 
         ],
-        "Corse": [
-
-        ],
-        "Grand Est": [
-
-        ],
-        "Guadeloupe": [
-
-        ],
-        "Guyane": [
-
-        ],
-        "Hauts-de-France": [
-
-        ],
-        "Ile-de-France": [
-
-        ],
-        "Martinique": [
-
-        ],
-        "Mayotte": [
-
-        ],
-        "Normandie": [
-
-        ],
-        "Nouvelle-Aquitaine": [
-
-        ],
-        "Nouvelle-Calédonie": [
-
-        ],
-        "Occitanie": [
-
-        ],
-        "Pays de la Loire": [
-
-        ],
-        "Polynésie": [
-
-        ],
-        "Provence-Alpes-Côte d’Azur": [
-
-        ],
-        "Réunion": [
-
-        ],
-        "Saint-Pierre-et-Miquelon": [
-
-        ],
-        "Wallis-et-Futuna": [
+        "Agriculture": [
 
         ]
       }

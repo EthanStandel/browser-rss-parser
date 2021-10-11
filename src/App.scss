@@ -6,16 +6,17 @@
 :root {
   --colorTheme: var(--systemPink);
   --cultureColorTheme: burlywood;
-  --sportsColorTheme: yellowgreen;
+  --sportsColorTheme: limegreen;
   --ecoColorTheme: goldenrod;
   --mondeColorTheme: dodgerblue;
   --presseinterColorTheme: crimson;
   --sciencesColorTheme: mediumseagreen;
-  --europeColorTheme: royalblue;
-  --polColorTheme: rebeccapurple;
+  --europeColorTheme: slateblue;
+  --polColorTheme: darkviolet;
   --societeColorTheme: mediumaquamarine;
-  --techColorTheme: coral;
-  --regionsColorTheme: skyblue;
+  --techColorTheme: chocolate;
+  --regionsColorTheme: cornflowerblue;
+  --natureColorTheme: salmon;
 }
 
 /* color focus */
@@ -116,6 +117,10 @@ header, .body-container, .mini-links a {
   .Régions * {
     text-decoration-color: var(--regionsColorTheme);
   }
+
+  .Nature * {
+    text-decoration-color: var(--natureColorTheme);
+  }
   
   .étrangère:not(.section) .section ul li > * > * > * {
     text-decoration-color: var(--presseinterColorTheme);
@@ -212,6 +217,10 @@ ul.topics-navbar {
     color: var(--regionsColorTheme) !important;
   }
 
+  &.Nature li > *  {
+    color: var(--natureColorTheme) !important;
+  }
+
   li {
     margin-top: 10px;
   
@@ -295,6 +304,11 @@ ul.topics-navbar li {
     color: var(--regionsColorTheme);
   }
 
+  .Nature {
+    border: 2px solid var(--natureColorTheme);
+    color: var(--natureColorTheme);
+  }
+
   > button {
     border: 2px solid var(--systemPink);
     color: var(--systemPink);
@@ -357,6 +371,10 @@ ul.topics-navbar li {
         &.Régions {
           background-color: var(--regionsColorTheme);
         }
+
+        &.Nature {
+          background-color: var(--natureColorTheme);
+        }
       }
     }
   }
@@ -408,6 +426,10 @@ h3.bold {
 
   &.Régions {
     color: var(--regionsColorTheme);
+  }
+
+  &.Nature {
+    color: var(--natureColorTheme);
   }
 }
 
