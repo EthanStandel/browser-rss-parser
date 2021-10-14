@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
+/*/ color focus for the entire webpage /*/
+.color {
+  color: var(--colorTheme);
+}
+
 :root {
   --colorTheme: var(--systemPink);
   --cultureColorTheme: burlywood;
@@ -17,11 +22,16 @@
   --techColorTheme: chocolate;
   --regionsColorTheme: cornflowerblue;
   --natureColorTheme: salmon;
-}
 
-/* color focus */
-.color {
-  color: var(--colorTheme);
+  /*/
+  colorTheme must be specified,
+    1- for underlining style (57)
+    2- for subtopics navbar li color (160)
+    3- for topics navbar li color scheme (237)
+    4- for topics navbar li hover effect (320)
+    5- for topics titles in body-container (377)
+    
+  /*/
 }
 
 /*/ loading Spinner /*/
@@ -29,28 +39,6 @@
   margin: auto;
   margin-top: 4rem;
   margin-bottom: 4rem;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --element-bg-blur-color: rgba(242, 242, 242, 0.7);
-    --header-bg-color: rgba(252, 252, 254, 0.7);    ;
-    --header-bg-rgb-color: rgb(249, 249, 252);
-    /*--header-bg-color: #fafafc;*/
-    --header-border-color: rgba(0,0,0,0.16);
-    --header-logo-color: #000000;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --header-bg-color: rgba(57, 57, 58, 0.7);
-    --header-bg-rgb-color: rgb(40, 40, 41);
-    /*--header-bg-color: #282829;*/
-    --header-border-color: rgba(255,255,255,0.24);
-    --header-logo-color: rgb(245,245,247);
-    --element-bg-blur-color: rgba(24, 24, 24, 0.7);
-  }
 }
 
 body {
@@ -73,6 +61,8 @@ header, .body-container, .mini-links a {
   position: relative;
   z-index: 1;
   min-height: 100vh;
+  
+  /*/ underlining item-title color when hovering li /*/
   
   * {
     text-decoration-color: var(--systemPink);
@@ -122,6 +112,7 @@ header, .body-container, .mini-links a {
     text-decoration-color: var(--natureColorTheme);
   }
   
+  /*/ special case since étrangère can be found as subtopic /*/
   .étrangère:not(.section) .section ul li > * > * > * {
     text-decoration-color: var(--presseinterColorTheme);
   }
@@ -129,6 +120,7 @@ header, .body-container, .mini-links a {
 
 @media only screen and (max-width: 734px) {
   .body-container {
+    /*/ smaller vertical padding for small devices /*/
     padding: 24px 25px !important; 
   }
 }
@@ -136,11 +128,6 @@ header, .body-container, .mini-links a {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
 }
 
 header {
@@ -155,14 +142,19 @@ header {
   border-bottom: 0.8px solid var(--separator);
 }
 
-ul.topics-navbar {
-  display: block;
-  overflow-x: auto;
-  overscroll-behavior-y: none;
-  white-space: nowrap;
+ul {
+  list-style-type: none;
+  padding: 0;
 
-  &::-webkit-scrollbar {
-    display: none;
+  &.topics-navbar {
+    display: block;
+    overflow-x: auto;
+    overscroll-behavior-y: none;
+    white-space: nowrap;
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
 
@@ -170,9 +162,10 @@ ul.topics-navbar {
   padding-left: 15px;
 
   @media only screen and (max-width: 734px) {
-      padding-left: 0px !important; 
+    padding-left: 0px !important; 
   }
   
+  /*/ color for subtopic navbar li /*/
   &.Économie li > *  {
     color: var(--ecoColorTheme) !important;
   }
@@ -249,63 +242,64 @@ ul.topics-navbar li {
   margin: 1px 5px;
   display: inline-block;
 
+  /*/ color styles for topics navbar -border and color /*/
   .Sports {
-    border: 2px solid var(--sportsColorTheme);
+    border-color: var(--sportsColorTheme);
     color: var(--sportsColorTheme);
   }
   
   .Culture {
-    border: 2px solid var(--cultureColorTheme);
+    border-color: var(--cultureColorTheme);
     color: var(--cultureColorTheme);
   }
 
   .Économie {
-    border: 2px solid var(--ecoColorTheme);
+    border-color: var(--ecoColorTheme);
     color: var(--ecoColorTheme);
   }
 
   .Presse {
-    border: 2px solid var(--presseinterColorTheme);
+    border-color: var(--presseinterColorTheme);
     color: var(--presseinterColorTheme);
   }
 
   .Monde {
-    border: 2px solid var(--mondeColorTheme);
+    border-color: var(--mondeColorTheme);
     color: var(--mondeColorTheme);
   }
 
   .Sciences {
-    border: 2px solid var(--sciencesColorTheme);
+    border-color: var(--sciencesColorTheme);
     color: var(--sciencesColorTheme);
   }
 
   .Europe {
-    border: 2px solid var(--europeColorTheme);
+    border-color: var(--europeColorTheme);
     color: var(--europeColorTheme);
   }
 
   .Politique {
-    border: 2px solid var(--polColorTheme);
+    border-color: var(--polColorTheme);
     color: var(--polColorTheme);
   }
 
   .Société {
-    border: 2px solid var(--societeColorTheme);
+    border-color: var(--societeColorTheme);
     color: var(--societeColorTheme);
   }
 
   .Technologie {
-    border: 2px solid var(--techColorTheme);
+    border-color: var(--techColorTheme);
     color: var(--techColorTheme);
   }
 
   .Régions {
-    border: 2px solid var(--regionsColorTheme);
+    border-color: var(--regionsColorTheme);
     color: var(--regionsColorTheme);
   }
 
   .Nature {
-    border: 2px solid var(--natureColorTheme);
+    border-color: var(--natureColorTheme);
     color: var(--natureColorTheme);
   }
 
@@ -326,8 +320,9 @@ ul.topics-navbar li {
       background-color: var(--systemPink);
       color: white;
 
+      /*/ background color on hover for topics navbar /*/
       &:not(.subtopic-selection) {
-
+        
         &.Économie {
           background-color: var(--ecoColorTheme);
         }
@@ -380,7 +375,18 @@ ul.topics-navbar li {
   }
 }
 
-/*/ Titles for topics /*/
+/*/ adds a padding to topics navbar which don't have any associated subtopics navbar/*/
+li {
+
+  &.À.la.une button, &.Auto button {
+
+    &.selected {
+      margin-bottom: 32.6px;
+    }
+  }
+}
+
+/*/ Titles for topics in body-container /*/
 h3.bold {
   color: var(--systemPink);
 
@@ -433,11 +439,13 @@ h3.bold {
   }
 }
 
-/*/ Titles for subtopics /*/
+/*/ Titles for subtopics in body-container /*/
 h4.subtopic {
   font-weight: 600;
 }
 
+
+/*/ higher version of header for mobile devices /*/
 .header-mobile {
   display: none !important;
   background-color: var(--systemHeaderMaterial) !important;
@@ -483,7 +491,7 @@ header .logo-text {
 
 /*/ list containing a whole subtopic /*/
 ul.rss {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 
   /*/ subtopic list element /*/
   li {
@@ -567,17 +575,26 @@ ul.rss {
       }
     }
     
+
+    /*/ LIST STYLE FOR LI ITEMS - big title + big image + small desc /*/
     &.news-focus, &.firstFocus:first-child {
       background-color: rgba(0, 0, 0, 0);
-  
+      transition-duration: 0.4s;
+
+      @media only screen and (min-width: 734px) {
+        &:hover {
+          transform: scale(1.01);
+        }
+      }
+     
       .item-descriptionWrapper {
         position: absolute;
+        bottom: 0;
         width: calc(100% - 30px);
         display: block;
         -webkit-backdrop-filter:saturate(180%) blur(20px);
         backdrop-filter: saturate(180%) blur(20px);
         background-color: var(--systemThickMaterial);
-        bottom: 0;
         border-radius: 0 0 10px 10px;
         padding: 15px !important;
       }
@@ -606,6 +623,9 @@ ul.rss {
         letter-spacing: 0.37px;
         text-shadow: 0 0 5px black;
         margin: 14px 16px;
+        color: white;
+        position: absolute;
+        top: 30px;
 
         -webkit-line-clamp: 3 !important;
         overflow: hidden;
@@ -619,30 +639,40 @@ ul.rss {
         padding: 0 !important;
         width: 100% !important;
         position: absolute;
+        top: 0;
         background-color: rgba(0, 0, 0, 0) !important;
-        top: 30px;
-        height: calc(250px - 30px);
+        height: 250px;
         z-index: 2;
       }
 
       .item-F-line {
-        display: none;
+        display: table;
+        position: absolute;
+        top: 15px;
+        left: 50px;
+        width: calc(100% - 60px);
+        
+        .item-publish-date {
+          color: white;
+          opacity: 0.8;
+        }
+        
+        .source-name {
+          display: none !important;
+        }
       }
     
       .background-image {
-          
         display: block !important;
         width: 100% !important;
+        height: 250px !important;
 
         img {
           background-image: url("https://tapsmart-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/ipadnews2-750x400.jpg");
           background-size: 100%;
-          min-width: 100%;
-          max-width: 100%;
+          width: 100%;
           object-fit: cover;
-          background-repeat: no-repeat;
-          height: 250px !important;
-          min-height: 250px !important; 
+          height: 100% !important;
           border-radius: 10px !important;
         }
       }
@@ -664,12 +694,12 @@ ul.rss {
           background-repeat: no-repeat;
           background-color: white;
         }
+
+        &:nth-child(1) {
+          display: none !important;
+        }
       }
 
-      .icon-image:nth-child(1) {
-        display: none !important;
-      }
-    
       .media {
         position: relative;
         padding: 0;
@@ -677,15 +707,13 @@ ul.rss {
         display: block !important;
         width: 100% !important;
       }
-    
-      .item-F-line {
-        width: calc(100% + 6px);
-      }
     }
 
     /*/ LIST STYLE FOR ITEMS - list without item-description + based on Apple notification system /*/
     &.news-notif {
       
+
+      /*/ get big image for first-item /*/
       &.bigHeadline:first-child {
         
         .item-description, .background-image, .media, .item-container, .background-image img {
@@ -715,8 +743,7 @@ ul.rss {
         .background-image img {
           background-image: url("https://tapsmart-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/ipadnews2-750x400.jpg");
           background-size: 100%;
-          min-width: 100%;
-          max-width: 100%;
+          width: 100%;
           object-fit: cover;
           z-index: -1;
           background-repeat: no-repeat;
@@ -730,19 +757,18 @@ ul.rss {
 
           img {
             height: 30px;
-          object-fit: cover;
-          width: 30px;
-          z-index: 2;
-          position: absolute;
-          border-radius: 9px;
-          top: 10px;
-          left: 10px;
-          border-radius: 8px;
-          background-image: url("https://support.apple.com/library/content/dam/edam/applecare/images/en_US/ios/News/ios12-2-news-todays-topic-icon.png");
-          background-size: 20px;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-color: white;
+            object-fit: cover;
+            width: 30px;
+            z-index: 2;
+            position: absolute;
+            border-radius: 9px;
+            top: 10px;
+            left: 10px;
+            background-image: url("https://support.apple.com/library/content/dam/edam/applecare/images/en_US/ios/News/ios12-2-news-todays-topic-icon.png");
+            background-size: 20px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: white;
           }
 
           &:nth-child(1) {
@@ -913,14 +939,4 @@ footer {
   border-bottom: 0.8px solid var(--separator);
   padding-bottom: 10px !important;
   margin-bottom: 7px !important;
-}
-
-li {
-
-  &.À.la.une button, &.Auto button {
-
-    &.selected {
-      margin-bottom: 32.6px;
-    }
-  }
 }

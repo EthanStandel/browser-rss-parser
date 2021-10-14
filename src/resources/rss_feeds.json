@@ -368,7 +368,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_culture.xml",
             "name": "Le Figaro",
-            "specification": "news-notif firstFocus",
+            "specification": "news-notif bigHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lefigaro.png",
@@ -377,7 +377,7 @@
           {
             "url": "https://www.lexpress.fr/rss/culture.xml",
             "name": "L'Express",
-            "specification": "news-notif firstFocus",
+            "specification": "news-notif bigHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lexpress.jpeg",
@@ -405,7 +405,7 @@
             "name": "Radio Canada",
             "specification": "news-notif bigHeadline",
             "encodedTitles": true,
-            "count": 1,
+            "count": 2,
             "iconImg": "./radiocanada.png",
             "backgroundImg": "./radiocanada_bgIMG.png"
           },
