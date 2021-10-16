@@ -142,6 +142,15 @@
             "count": 2,
             "iconImg": "./challenges.png",
             "backgroundImg": "./challenges_bgIMG.jpg"
+          },
+          {
+            "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=economie",
+            "name": "Business Insider",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./binsider.png",
+            "backgroundImg": "./binsider_bgIMG.jpg"
           }
         ],
         "Marchés & bourse": [
@@ -351,14 +360,31 @@
             "backgroundImg": "./wpost_bgIMG.jpg"
           },
           {
-            "url": "https://www.telegraph.co.uk/business/rss.xml",
-            "name": "The Telegraph",
-            "specification": "news-list",
+            "url": "https://markets.businessinsider.com/rss/news",
+            "name": "Markets Insider",
+            "specification": "news-list marginrightFIX",
             "encodedTitles": true,
             "count": 1,
-            "iconImg": "./thetelegraph.png",
-            "backgroundImg": "./thetelegraph_bgIMG.jpg"
-          }    
+            "iconImg": "./minsider.png",
+            "backgroundImg": "./minsider_bgIMG.jpg"
+          },
+          {
+            "url": "https://rss.dw.com/xml/rss-de-eco",
+            "name": "Deutsche Welle",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./dw.png",
+            "backgroundImg": "./dw_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.businessinsider.de/wirtschaft/feed/",
+            "name": "Business Insider",
+            "specification": "news-list ",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./binsider.png",
+            "backgroundImg": "./binsider_bgIMG.jpg"
+          }   
         ]
       }
     },
@@ -889,6 +915,22 @@
             "count": 1,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
+          },
+          {
+            "url": "https://rss.dw.com/xml/rss-de-cul",
+            "name": "Deutsche Welle",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./dw.png",
+            "backgroundImg": "./dw_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.newyorker.com/feed/culture",
+            "name": "The New Yorker",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./thenewyorker.png",
+            "backgroundImg": "./thenewyorker_bgIMG.jpg"
           }
         ]
       }
@@ -1517,6 +1559,22 @@
             "count": 1,
             "iconImg": "./wpost.png",
             "backgroundImg": "./wpost_bgIMG.jpg"
+          },
+          {
+            "url": "https://rss.dw.com/xml/rss-de-sport",
+            "name": "Deutsche Welle",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./dw.png",
+            "backgroundImg": "./dw_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.newyorker.com/feed/news/sporting-scene",
+            "name": "The New Yorker",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./thenewyorker.png",
+            "backgroundImg": "./thenewyorker_bgIMG.jpg"
           }
         ]
       }
@@ -1906,6 +1964,13 @@
             "count": 2,
             "iconImg": "./tagesschau.png",
             "backgroundImg": "./tagesschau_bgIMG.png"
+          },
+          {
+            "url": "https://rss.dw.com/xml/rss-de-top",
+            "name": "Deutsche Welle",
+            "count": 2,
+            "iconImg": "./dw.png",
+            "backgroundImg": "./dw_bgIMG.jpg"
           }
         ],
         "United States & Canada": [
@@ -1940,11 +2005,19 @@
             "count": 1,
             "iconImg": "./cnn.png",
             "backgroundImg": "./cnn_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.newyorker.com/feed/news",
+            "name": "The New Yorker",
+            "specification": "news-focus",
+            "count": 1,
+            "iconImg": "./thenewyorker.png",
+            "backgroundImg": "./thenewyorker_bgIMG.jpg"
           }
         ],
         "Australia & NZ": [
         ],
-        "United Kindgom": [
+        "United Kingdom": [
           {
             "url": "https://www.theguardian.com/uk-news/rss",
             "name": "The Guardian",
@@ -2010,6 +2083,21 @@
             "count": 2,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://information.tv5monde.com/afprss/francais--journal--sci",
+            "name": "TV5 Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./tv5monde.png",
+            "backgroundImg": "./tv5monde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.01net.com/rss/actualites/science-recherche/",
+            "name": "01NET",
+            "count": 2,
+            "iconImg": "./01net.png",
+            "backgroundImg": ".01net_bgIMG.jpg"
           }
         ],
         "Astronomie & espace": [
@@ -2072,13 +2160,6 @@
             "backgroundImg": "./ladepeche_bgIMG.jpg"
           },
           {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sciences/biologie/?outputType=xml",
-            "name": "Libération",
-            "count": 1,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          },
-          {
             "url": "https://www.leprogres.fr/magazine-sante/rss",
             "name": "Le Progrès",
             "encodedTitles": true,
@@ -2120,6 +2201,14 @@
             "count": 2,
             "iconImg": "./futura.png",
             "backgroundImg": "./futura_bgIMG.jpg"
+          },
+          {
+            "url": "https://information.tv5monde.com/afprss/francais--journal--medecine",
+            "name": "TV5 Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./tv5monde.png",
+            "backgroundImg": "./tv5monde_bgIMG.jpg"
           }
         ],
         "Sciences physiques & mathématiques": [
@@ -2181,14 +2270,6 @@
             "backgroundImg": "./theguardian_bgIMG.jpg"
           },
           {
-            "url": "http://feeds.foxnews.com/foxnews/science?format=xml",
-            "name": "FOX news",
-            "specification": "news-list marginrightFIX",
-            "count": 1,
-            "iconImg": "./foxnews.png",
-            "backgroundImg": "./foxnews_bgIMG.jpg"
-          },
-          {
             "url": "https://www.forbes.com/science/feed2/",
             "name": "Forbes",
             "specification": "news-list",
@@ -2211,7 +2292,15 @@
             "count": 1,
             "iconImg": "./wired.png",
             "backgroundImg": "./wired_bgIMG.jpg"
-          } 
+          },
+          {
+            "url": "https://rss.dw.com/xml/rss-de-wissenschaft",
+            "name": "Deutsche Welle",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./dw.png",
+            "backgroundImg": "./dw_bgIMG.jpg"
+          }
         ]
       }
     },
@@ -2225,13 +2314,6 @@
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/hightech/?outputType=xml",
-            "name": "Libération",
-            "count": 2,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
           },
           {
             "url": "https://www.bfmtv.com/rss/tech/",
@@ -2268,6 +2350,21 @@
             "count": 2,
             "iconImg": "./numerama.png",
             "backgroundImg": "./numerama_bgIMG.jpg"
+          },
+          {
+            "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=tech",
+            "name": "Tech Insider",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./tinsider.png",
+            "backgroundImg": "./tinsider_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.01net.com/rss/actualites/technos/",
+            "name": "01NET",
+            "count": 2,
+            "iconImg": "./01net.png",
+            "backgroundImg": ".01net_bgIMG.jpg"
           }
         ],
         "Smartphones": [
@@ -2278,6 +2375,13 @@
             "count": 1,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.01net.com/rss/smartphones/",
+            "name": "01NET",
+            "count": 2,
+            "iconImg": "./01net.png",
+            "backgroundImg": ".01net_bgIMG.jpg"
           }
 
         ],
@@ -2356,8 +2460,14 @@
             "count": 1,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.01net.com/rss/actualites/securite/",
+            "name": "01NET",
+            "count": 2,
+            "iconImg": "./01net.png",
+            "backgroundImg": ".01net_bgIMG.jpg"
           }
-
         ],
         "Web": [
           {
@@ -2366,6 +2476,32 @@
             "count": 2,
             "iconImg": "./sciencesetavenir.png",
             "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          }
+        ],
+        "Presse étrangère": [
+          {
+            "url": "https://www.businessinsider.de/tech/feed/",
+            "name": "Tech Insider",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./tinsider.png",
+            "backgroundImg": "./tinsider_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.newyorker.com/feed/tech",
+            "name": "The New Yorker",
+            "specification": "news-focus",
+            "count": 2,
+            "iconImg": "./thenewyorker.png",
+            "backgroundImg": "./thenewyorker_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.newyorker.com/feed/tech/elements",
+            "name": "The New Yorker",
+            "specification": "news-focus",
+            "count": 2,
+            "iconImg": "./thenewyorker.png",
+            "backgroundImg": "./thenewyorker_bgIMG.jpg"
           }
         ]
       }
@@ -2385,7 +2521,7 @@
             "url": "https://www.ladepeche.fr/actu/politique/rss.xml",
             "name": "La Dépêche",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
           },
@@ -2439,6 +2575,14 @@
             "count": 2,
             "iconImg": "./challenges.png",
             "backgroundImg": "./challenges_bgIMG.jpg"
+          },
+          {
+            "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=politique",
+            "name": "Insider",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./insider.png",
+            "backgroundImg": "./insider_bgIMG.jpg"
           }
         ],
         "Élections": [
@@ -2478,7 +2622,24 @@
             "count": 1,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
-          }   
+          },
+          {
+            "url": "https://rss.dw.com/xml/rss-de-politik",
+            "name": "Deutsche Welle",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./dw.png",
+            "backgroundImg": "./dw_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.businessinsider.de/politik/feed/",
+            "name": "Insider",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./insider.png",
+            "backgroundImg": "./insider_bgIMG.jpg"
+          }
+          
         ]
       }
     },
@@ -2926,6 +3087,14 @@
             "count": 2,
             "iconImg": "./numerama.png",
             "backgroundImg": "./numerama_bgIMG.jpg"
+          },
+          {
+            "url": "https://information.tv5monde.com/afprss/francais--journal--environnement",
+            "name": "TV5 Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./tv5monde.png",
+            "backgroundImg": "./tv5monde_bgIMG.jpg"
           }
 
         ],
@@ -3010,6 +3179,14 @@
             "count": 2,
             "iconImg": "./courrierinter.png",
             "backgroundImg": "./courrierinter_bgIMG.jpg"
+          },
+          {
+            "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=lifestyle",
+            "name": "Insider",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./insider.png",
+            "backgroundImg": "./insider_bgIMG.jpg"
           }
         ],
         "Tourisme & voyages": [
@@ -3183,7 +3360,7 @@
             "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
-        "Bien-être":[
+        "Bien-être & productivité":[
           {
             "url": "https://www.letelegramme.fr/mieux-vivre/rss.xml",
             "name": "Le Télégramme",
@@ -3191,6 +3368,15 @@
             "count": 2,
             "iconImg": "./letelegramme.png",
             "backgroundImg": "./letelegramme_bgIMG.jpg"
+          },
+          {
+            "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=strategie",
+            "name": "Insider",
+            "specification": "news-list marginrightFIX",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./insider.png",
+            "backgroundImg": "./insider_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -3226,6 +3412,23 @@
             "count": 1,
             "iconImg": "./forbes.png",
             "backgroundImg": "./forbes_bgIMG.jpg"
+          },
+          {
+            "url": "https://rss.dw.com/xml/rss-de-deutschlandentdecken",
+            "name": "Deutsche Welle",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./dw.png",
+            "backgroundImg": "./dw_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.businessinsider.de/leben/feed/",
+            "name": "Insider",
+            "specification": "news-list marginrightFIX",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./insider.png",
+            "backgroundImg": "./insider_bgIMG.jpg"
           }
         ]
       }
