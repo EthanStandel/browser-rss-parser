@@ -27,6 +27,7 @@ interface ParsedRssItem {
   }
   enclosure?: {
     type?: string;
+    url?: string;
   }
 }
 
@@ -70,7 +71,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
       .map(item => ({
         source: rssFeeds[index],
         item,
-        date: item.pubDate ? DateTime.fromRFC2822(item.pubDate) : undefined 
+        date: item.pubDate ? DateTime.fromRFC2822(item.pubDate) : undefined
       }))
     )
     .reduce((all, curr, index) => all.concat(
@@ -113,10 +114,9 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             // If they ever contain a script, it's not being filtered out
 
             const imgHref = 
-              item.image 
-              ?? item["media:content"]?.url
-              ?? item.enclosure?.type === "image/jpeg" ? item?.enclosure?.type
-              : source.backgroundImg;
+            item.image
+            ?? item.enclosure?.url ??
+            source.backgroundImg;
 
             return (
               <li className={source.specification}>
@@ -124,7 +124,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                 <div className="media">
                 <div className="icon-image"><img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/></div>
                 <div className="icon-image">{source.iconImg && <img src={source.iconImg}/>}</div>
-                <div className="background-image">{source.backgroundImg && <img src={source.backgroundImg}/>}</div>
+                <div className="background-image">{imgHref && <img src={imgHref}/>}</div>
                 <div className="item-container">
                   <div className="item-F-line">
                     <div className="r1 bold source-name">
@@ -138,9 +138,9 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                     : (<h6 className="item-title">{item.title}</h6>)
                   }
                   <div className="item-descriptionWrapper">
-                  {item.description &&
-                    <div className="h7 item-description" dangerouslySetInnerHTML={{ __html: item.description.replace('Read more', "")}} />
-                  }
+                    {item.description &&
+                      <div className="h7 item-description" dangerouslySetInnerHTML={{ __html: item.description.replace('Read more', "")}} />
+                    }
                   </div>
                     
                   </div></div>
