@@ -112,6 +112,12 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             // WARNING: Some of these items contain HTML
             // If they ever contain a script, it's not being filtered out
 
+            const imgHref = 
+              item.image 
+              ?? item["media:content"]?.url
+              ?? item.enclosure?.type === "image/jpeg" ? item?.enclosure?.type
+              : source.backgroundImg;
+
             return (
               <li className={source.specification}>
                 <a href={item.link} target="_blank" rel="noreferrer">
