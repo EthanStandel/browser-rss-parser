@@ -346,7 +346,7 @@
             "name": "The New York Times",
             "specification": "news-list",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./thenytimes.png",
             "backgroundImg": "./thenytimes_bgIMG.jpg"
           },
@@ -384,6 +384,13 @@
             "count": 2,
             "iconImg": "./binsider.png",
             "backgroundImg": "./binsider_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/die-nachrichten.353.de.rss",
+            "name": "Deutschlandfunk",
+            "count": 1,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
           }   
         ]
       }
@@ -1971,6 +1978,13 @@
             "count": 2,
             "iconImg": "./dw.png",
             "backgroundImg": "./dw_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/die-nachrichten.353.de.rss",
+            "name": "Deutschlandfunk",
+            "count": 2,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
           }
         ],
         "United States & Canada": [
@@ -2627,7 +2641,7 @@
             "url": "https://rss.dw.com/xml/rss-de-politik",
             "name": "Deutsche Welle",
             "specification": "news-list",
-            "count": 2,
+            "count": 1,
             "iconImg": "./dw.png",
             "backgroundImg": "./dw_bgIMG.jpg"
           },
@@ -2638,7 +2652,14 @@
             "count": 1,
             "iconImg": "./insider.png",
             "backgroundImg": "./insider_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/politik.1499.de.rss",
+            "name": "Deutschlandfunk",
+            "count": 1,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
+          } 
           
         ]
       }
