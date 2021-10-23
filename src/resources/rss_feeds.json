@@ -6,7 +6,7 @@
           {
             "url": "https://www.lemonde.fr/rss/une.xml",
             "name": "Le Monde",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -14,7 +14,7 @@
           {
             "url": "https://www.francetvinfo.fr/titres.rss",
             "name": "Franceinfo",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif bigHeadline smallDesc",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
@@ -23,7 +23,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_flash-actu.xml",
             "name": "Le Figaro",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif bigHeadline smallDesc",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lefigaro.png",
@@ -32,7 +32,7 @@
           {
             "url": "https://www.bfmtv.com/rss/news-24-7/",
             "name": "BFM TV",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -40,7 +40,7 @@
           {
             "url": "https://www.france24.com/fr/rss",
             "name": "France 24",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
@@ -48,7 +48,7 @@
           {
             "url": "http://www.20minutes.fr/rss/une.xml",
             "name": "20 Minutes",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./20minutes.png",
             "backgroundImg": "./20minutes_bgIMG.png"
@@ -175,7 +175,8 @@
           {
             "url": "https://www.tradingsat.com/rssbourse.xml",
             "name": "BFM TV",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif bigHeadline nodesc",
+            "encodedTitles": true,
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"

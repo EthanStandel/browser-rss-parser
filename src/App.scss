@@ -575,6 +575,18 @@ ul.rss {
       }
     }
     
+    /*/ LIST STYLE FOR LI ITEMS - display item-description /*/
+    &.smallDesc {
+
+      .item-description {
+        display: block !important;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+      }
+    }
 
     /*/ LIST STYLE FOR LI ITEMS - big title + big image + small desc /*/
     &.news-focus, &.firstFocus:first-child {
@@ -709,9 +721,16 @@ ul.rss {
       }
     }
 
+    /*/ LIST STYLE FOR ITEMS hide item-description for items with weird descriptions /*/
+
+    &.nodesc {
+      .item-container, .item-descriptionWrapper {
+        display: none !important;
+      }
+    }
+
     /*/ LIST STYLE FOR ITEMS - list without item-description + based on Apple notification system /*/
     &.news-notif {
-      
 
       /*/ get big image for first-item /*/
       &.bigHeadline:first-child {
