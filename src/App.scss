@@ -578,12 +578,20 @@ ul.rss {
     /*/ LIST STYLE FOR LI ITEMS - display item-description /*/
     &.smallDesc {
 
-      .item-description {
-        display: block !important;
-        -webkit-line-clamp: 2;
+      .item-title {
+        -webkit-line-clamp: 4 !important;
         overflow: hidden;
         text-overflow: ellipsis;
-        display: -webkit-box;
+        display: -webkit-box !important;
+        -webkit-box-orient: vertical;
+
+      }
+
+      .item-description {
+        -webkit-line-clamp: 2 !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box !important;
         -webkit-box-orient: vertical;
       }
     }

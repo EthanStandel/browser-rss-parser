@@ -389,6 +389,7 @@
           {
             "url": "https://www.deutschlandfunk.de/die-nachrichten.353.de.rss",
             "name": "Deutschlandfunk",
+            "specification": "news-list ",
             "count": 1,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
