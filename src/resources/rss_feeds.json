@@ -155,15 +155,6 @@
         ],
         "Marchés & bourse": [
           {
-            "url": "https://www.francetvinfo.fr/marches.rss",
-            "name": "Franceinfo",
-            "specification": "news-notif bigHeadline",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          },
-          {
             "url": "https://www.lefigaro.fr/rss/figaro_bourse.xml",
             "name": "Le Figaro",
             "specification": "news-notif bigHeadline",
