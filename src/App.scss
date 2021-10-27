@@ -501,8 +501,10 @@ ul.rss {
 
     .item-description {
       
-      p img, img, br {
+      p img, img, br, a {
         display: none;
+        width: 100%;
+        height: auto;
       }
     }
 
@@ -515,11 +517,13 @@ ul.rss {
       text-decoration-color: rgba(0,0,0,0);
     }
     
-    &:hover {
-      .item-title {
-        text-decoration: underline;
-        text-decoration-color: inherit;
-        transition: text-decoration-color 0.8s !important;
+    @media only screen and (min-width: 734px) {
+      &:hover {
+        .item-title {
+          text-decoration: underline;
+          text-decoration-color: inherit;
+          transition: text-decoration-color 0.8s !important;
+        }
       }
     }
 
@@ -646,12 +650,10 @@ ul.rss {
           display: none;
         }
       }
-
-      &:not(:first-of-type) {
       .item-infos2 {
         display: block !important;
       }
-    }
+
     }
 
     /*/ LIST STYLE FOR LI ITEMS - big title + big image + small desc /*/
@@ -895,7 +897,7 @@ ul.rss {
           }
         }
 
-        .item-infos {
+        .item-infos, .item-infos2 {
           
           .item-publish-date {
             display: none;

@@ -1961,6 +1961,7 @@
           {
             "url": "https://www.tagesschau.de/xml/rss2",
             "name": "Tagesschau.de",
+            "specification": "news-notif smallDesc bigHeadline",
             "count": 2,
             "iconImg": "./tagesschau.png",
             "backgroundImg": "./tagesschau_bgIMG.png"
@@ -1968,6 +1969,7 @@
           {
             "url": "https://rss.dw.com/xml/rss-de-top",
             "name": "Deutsche Welle",
+            "specification": "news-notif smallDesc bigHeadline",
             "count": 2,
             "iconImg": "./dw.png",
             "backgroundImg": "./dw_bgIMG.jpg"
@@ -1975,6 +1977,7 @@
           {
             "url": "https://www.deutschlandfunk.de/die-nachrichten.353.de.rss",
             "name": "Deutschlandfunk",
+            "specification": "news-notif smallDesc bigHeadline",
             "count": 2,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
@@ -1984,6 +1987,7 @@
           {
             "url": "https://www.cbsnews.com/latest/rss/main",
             "name": "CBS News",
+            "specification": "news-notif smallDesc bigHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./cbsnews.png",
@@ -1992,6 +1996,7 @@
           {
             "url": "https://www.latimes.com/world-nation/rss2.0.xml",
             "name": "Los Angeles Times",
+            "specification": "news-notif smallDesc bigHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./latimes.png",
@@ -2000,6 +2005,7 @@
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml",
             "name": "The New York Times",
+            "specification": "news-notif smallDesc bigHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./thenytimes.png",
@@ -2008,6 +2014,7 @@
           {
             "url": "http://rss.cnn.com/rss/edition_us.rss",
             "name": "CNN",
+            "specification": "news-notif smallDesc bigHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./cnn.png",
@@ -2028,6 +2035,7 @@
           {
             "url": "https://www.theguardian.com/uk-news/rss",
             "name": "The Guardian",
+            "specification": "news-notif smallDesc bigHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./theguardian.png",
@@ -2036,6 +2044,7 @@
           {
             "url": "http://feeds.bbci.co.uk/news/uk/rss.xml",
             "name": "BBC News",
+            "specification": "news-notif smallDesc bigHeadline",
             "count": 2,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
