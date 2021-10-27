@@ -574,6 +574,51 @@ ul.rss {
         }
       }
     }
+
+    .source-name {
+      font-weight: 900 !important;
+      color: var(--systemGray);
+      -webkit-line-clamp: 1 !important;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      text-align: left;
+      word-break: break-all;
+      width: 100%;
+      line-height: 22px;
+      display:  -webkit-box !important;
+    }
+    
+    .item-publish-date {
+      text-align: right;
+      display: table-cell;
+      color: var(--secondaryLabel);
+      line-height: 22px;
+      width: max-content;
+      white-space: nowrap;
+      padding-left: 15px;
+    }
+    
+    .item-F-line {
+      display: none;
+      width: 100%;
+    }
+
+    .item-infos, .item-infos2 {
+      display: table;
+      width: 100%;
+
+      .item-publish-date {
+        padding-left: 0;
+        line-height: 16px !important;
+        text-align: left;
+        padding-right: 5px;
+      }
+    }
+
+    .item-infos2 {
+      display: none !important;
+    }
     
     /*/ LIST STYLE FOR LI ITEMS - display item-description /*/
     &.smallDesc {
@@ -594,6 +639,19 @@ ul.rss {
         display: -webkit-box !important;
         -webkit-box-orient: vertical;
       }
+
+      .item-infos {
+
+        .item-publish-date {
+          display: none;
+        }
+      }
+
+      &:not(:first-of-type) {
+      .item-infos2 {
+        display: block !important;
+      }
+    }
     }
 
     /*/ LIST STYLE FOR LI ITEMS - big title + big image + small desc /*/
@@ -607,7 +665,7 @@ ul.rss {
         }
       }
      
-      .item-descriptionWrapper {
+      .item-infos {
         position: absolute;
         bottom: 0;
         width: calc(100% - 30px);
@@ -617,6 +675,10 @@ ul.rss {
         background-color: var(--systemThickMaterial);
         border-radius: 0 0 10px 10px;
         padding: 15px !important;
+
+        .item-publish-date {
+          display: none;
+        }
       }
 
       .item-description {
@@ -734,7 +796,7 @@ ul.rss {
     /*/ LIST STYLE FOR ITEMS hide item-description for items with weird descriptions /*/
 
     &.nodesc {
-      .item-container, .item-descriptionWrapper {
+      .item-container, .item-infos {
         display: none !important;
       }
     }
@@ -816,6 +878,7 @@ ul.rss {
         }
       
         .item-F-line {
+          display: table !important;
           width: calc(100% - 16px - 10px);
           position: absolute;
           top: 15px;
@@ -829,6 +892,13 @@ ul.rss {
 
           .source-name {
             display: none !important;
+          }
+        }
+
+        .item-infos {
+          
+          .item-publish-date {
+            display: none;
           }
         }
       }
@@ -867,9 +937,26 @@ ul.rss {
         text-overflow: ellipsis;
         display: -webkit-box !important;
         -webkit-box-orient: vertical;
+      }
 
-        img {
-          display: none !important;
+      @media only screen and (max-width: 734px) {
+        .item-infos {
+
+          .item-publish-date {
+            display: none;
+          }
+        }
+
+        .item-infos2 {
+          display: block !important;
+        }
+
+        .item-description {
+          -webkit-line-clamp: 2 !important;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box !important;
+          -webkit-box-orient: vertical;
         }
       }
 
@@ -886,37 +973,12 @@ ul.rss {
           border-bottom: 0 solid red;
         }
       }
+
+      .item-F-line {
+        display: none;
+      }
     }
   }
-}
-
-.source-name {
-  font-weight: 900 !important;
-  color: var(--systemGray);
-  -webkit-line-clamp: 1 !important;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  text-align: left;
-  word-break: break-all;
-  width: 100%;
-  line-height: 22px;
-  display:  -webkit-box !important;
-}
-
-.item-publish-date {
-  text-align: right;
-  display: table-cell;
-  color: var(--secondaryLabel);
-  line-height: 22px;
-  width: max-content;
-  white-space: nowrap;
-  padding-left: 15px;
-}
-
-.item-F-line {
-  display: table;
-  width: 100%;
 }
 
 .footer-header-app h5.logo-text {

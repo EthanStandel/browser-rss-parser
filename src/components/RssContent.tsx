@@ -132,16 +132,23 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                           {source.name}
                           {source.subtopic && ` - ${source.subtopic}`}
                         </div>
-                        <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd MMM HH:mm").replace('Invalid DateTime', '').replace(todayFormat, '').replace(yesterdayFormat, 'hier').replace(lastweekFormat, 'il y a une semaine')}</div>
+                        <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd MMM HH:mm").replace('Invalid DateTime', '').replace(todayFormat, '').replace(yesterdayFormat, 'hier')}</div>
                       </div>
                       {source.encodedTitles ? 
                         (<h6 className="item-title" dangerouslySetInnerHTML={{ __html: item.title ?? "" }} />)
                         : (<h6 className="item-title">{item.title}</h6>)
                       }
-                      <div className="item-descriptionWrapper">
-                        {item.description &&
-                          <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: item.description.replace('Read more', "")}} />
-                        }
+                      <div className="item-infos">
+                        <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd MMM HH:mm").replace('Invalid DateTime', '').replace(todayFormat, '').replace(yesterdayFormat, 'hier')}</div>
+                        
+                        <div className="item-descriptionWrapper">
+                          {item.description &&
+                            <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: item.description.replace('Read more', "")}} />
+                          }
+                        </div>
+                      </div>
+                      <div className="item-infos2">
+                        <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd MMM HH:mm").replace('Invalid DateTime', '').replace(todayFormat, '').replace(yesterdayFormat, 'hier')}</div>
                       </div>
                     </div>
                   </div>
