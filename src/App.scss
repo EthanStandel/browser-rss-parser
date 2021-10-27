@@ -933,7 +933,6 @@ ul.rss {
       }
 
       .item-description {
-        display: block !important;
         -webkit-line-clamp: 1 !important;
         overflow: hidden;
         text-overflow: ellipsis;
