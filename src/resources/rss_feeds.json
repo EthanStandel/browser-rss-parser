@@ -946,7 +946,15 @@
             "count": 2,
             "iconImg": "./thenewyorker.png",
             "backgroundImg": "./thenewyorker_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/kultur.1495.de.rss",
+            "name": "Deutschlandfunk",
+            "specification": "news-list ",
+            "count": 2,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
+          }  
         ]
       }
     },
@@ -1590,7 +1598,15 @@
             "count": 2,
             "iconImg": "./thenewyorker.png",
             "backgroundImg": "./thenewyorker_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/sport.1494.de.rss",
+            "name": "Deutschlandfunk",
+            "specification": "news-notif smallDesc bigHeadline",
+            "count": 2,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
+          } 
         ]
       }
     },
@@ -1726,6 +1742,14 @@
             "count": 1,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/europa.1863.de.rss",
+            "name": "Deutschlandfunk",
+            "specification": "news-notif smallDesc bigHeadline",
+            "count": 2,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
           }    
         ]
       }
@@ -1978,7 +2002,15 @@
             "count": 1,
             "iconImg": "./cnn.png",
             "backgroundImg": "./cnn_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/eine-welt.798.de.rss",
+            "name": "Deutschlandfunk",
+            "specification": "news-list",
+            "count": 3,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
+          }   
         ]
       }
     },
@@ -2343,21 +2375,21 @@
             "count": 2,
             "iconImg": "./dw.png",
             "backgroundImg": "./dw_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/forschung-aktuell.675.de.rss",
+            "name": "Deutschlandfunk",
+            "specification": "news-list ",
+            "count": 2,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
+          }   
         ]
       }
     },
     "Technologie & informatique": {
       "subtopics": {
         "noSubtopic": [
-          {
-            "url": "https://www.ladepeche.fr/economie/innovation-high-tech/rss.xml",
-            "name": "La Dépêche",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          },
           {
             "url": "https://www.bfmtv.com/rss/tech/",
             "name": "BFM TV",
@@ -2443,8 +2475,14 @@
             "count": 1,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldunet.com/intelligence-artificielle/rss",
+            "name": "Journal du Net",
+            "count": 2,
+            "iconImg": "./jdn.png",
+            "backgroundImg": ".jdn_bgIMG.jpg"
           }
-
         ],
         "Développeurs": [
 
@@ -2510,6 +2548,13 @@
             "count": 2,
             "iconImg": "./01net.png",
             "backgroundImg": ".01net_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldunet.com/solutions/analytics/big-data/rss/",
+            "name": "Journal du Net",
+            "count": 2,
+            "iconImg": "./jdn.png",
+            "backgroundImg": ".jdn_bgIMG.jpg"
           }
         ],
         "Web": [
@@ -2534,7 +2579,7 @@
             "url": "https://www.newyorker.com/feed/tech",
             "name": "The New Yorker",
             "specification": "news-focus",
-            "count": 2,
+            "count": 1,
             "iconImg": "./thenewyorker.png",
             "backgroundImg": "./thenewyorker_bgIMG.jpg"
           },
@@ -2542,7 +2587,7 @@
             "url": "https://www.newyorker.com/feed/tech/elements",
             "name": "The New Yorker",
             "specification": "news-focus",
-            "count": 2,
+            "count": 1,
             "iconImg": "./thenewyorker.png",
             "backgroundImg": "./thenewyorker_bgIMG.jpg"
           }
@@ -3079,6 +3124,16 @@
             "count": 1,
             "iconImg": "./france3.png",
             "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Presse étrangère": [
+          {
+            "url": "https://www.deutschlandfunk.de/gesellschaft.1574.de.rss",
+            "name": "Deutschlandfunk",
+            "specification": "news-notif smallDesc bigHeadline",
+            "count": 2,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
           }
         ]
       }
