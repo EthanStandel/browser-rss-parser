@@ -464,6 +464,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_livres.xml",
             "name": "Le Figaro",
+            "specification": "firstFocus",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
@@ -472,6 +473,7 @@
           {
             "url": "https://www.telerama.fr/rss/livre.xml",
             "name": "Télérama",
+            "specification": "firstFocus",
             "count": 2,
             "iconImg": "./telerama.png",
             "backgroundImg": "./telerama_bgIMG.jpg"
@@ -479,6 +481,7 @@
           {
             "url": "https://ici.radio-canada.ca/rss/1000083",
             "name": "Radio Canada",
+            "specification": "firstFocus",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./radiocanada.png",
@@ -487,6 +490,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/livres/?outputType=xml",
             "name": "Libération",
+            "specification": "firstFocus",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -494,6 +498,7 @@
           {
             "url": "https://www.lesinrocks.com/livres/feed/",
             "name": "Les Inrocks",
+            "specification": "firstFocus",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lesinrocks.png",
@@ -502,6 +507,7 @@
           {
             "url": "https://www.lepoint.fr/livres/rss.xml",
             "name": "Le Point",
+            "specification": "firstFocus",
             "count": 1,
             "iconImg": "./lepointpop.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -509,6 +515,7 @@
           {
             "url": "https://www.lemonde.fr/livres/rss_full.xml",
             "name": "Le Monde",
+            "specification": "firstFocus",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -516,6 +523,7 @@
           {
             "url": "https://www.francetvinfo.fr/culture/livres.rss",
             "name": "Franceinfo",
+            "specification": "firstFocus",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
@@ -803,6 +811,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/musique/?outputType=xml",
             "name": "Libération",
+            "specification": "firstFocus",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -810,6 +819,7 @@
           {
             "url": "https://www.lesinrocks.com/musique/feed/",
             "name": "Les Inrocks",
+            "specification": "firstFocus",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lesinrocks.png",
@@ -818,6 +828,7 @@
           {
             "url": "https://www.lepoint.fr/musique/rss.xml",
             "name": "Le Point",
+            "specification": "firstFocus",
             "count": 1,
             "iconImg": "./lepointpop.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -825,6 +836,7 @@
           {
             "url": "https://www.bfmtv.com/rss/people/musique/",
             "name": "BFM TV",
+            "specification": "firstFocus",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -832,6 +844,7 @@
           {
             "url": "https://www.lemonde.fr/musiques/rss_full.xml",
             "name": "Le Monde",
+            "specification": "firstFocus",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -839,6 +852,7 @@
           {
             "url": "https://www.melty.fr/musique-4.rss",
             "name": "Melty",
+            "specification": "firstFocus",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./melty.png",
@@ -847,6 +861,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/culture/musique/rss",
             "name": "France 3",
+            "specification": "firstFocus",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./france3.png",
@@ -1585,6 +1600,7 @@
           {
             "url": "https://www.france24.com/fr/europe/rss",
             "name": "France 24",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
@@ -1592,6 +1608,7 @@
           {
             "url": "https://www.lemonde.fr/europe/rss_full.xml",
             "name": "Le Monde",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -1599,6 +1616,7 @@
           {
             "url": "https://www.francetvinfo.fr/monde/europe.rss",
             "name": "Franceinfo",
+            "specification": "news-notif bigHeadline smallDesc",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
@@ -1607,6 +1625,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/europe/?outputType=xml",
             "name": "Libération",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -1614,6 +1633,7 @@
           {
             "url": "https://www.bfmtv.com/rss/international/europe/",
             "name": "BFM TV",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -1716,6 +1736,7 @@
           {
             "url": "https://www.france24.com/fr/rss",
             "name": "France 24",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
@@ -1723,6 +1744,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_international.xml",
             "name": "Le Figaro",
+            "specification": "news-notif bigHeadline smallDesc",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
@@ -1731,6 +1753,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/?outputType=xml",
             "name": "Libération",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -1738,6 +1761,7 @@
           {
             "url": "https://www.bfmtv.com/rss/international/",
             "name": "BFM TV",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -1745,6 +1769,7 @@
           {
             "url": "https://syndication.lesechos.fr/rss/Echos_monde.xml",
             "name": "Les Échos",
+            "specification": "news-notif bigHeadline smallDesc",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lesechos.png",
@@ -1753,6 +1778,7 @@
           {
             "url": "https://information.tv5monde.com/afprss/francais--journal--mon",
             "name": "TV5 Monde",
+            "specification": "news-notif bigHeadline smallDesc",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./tv5monde.png",
@@ -1761,6 +1787,7 @@
           {
             "url": "https://www.challenges.fr/monde/rss.xml",
             "name": "Challenges",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./challenges.png",
             "backgroundImg": "./challenges_bgIMG.jpg"
@@ -2014,7 +2041,7 @@
           {
             "url": "http://rss.cnn.com/rss/edition_us.rss",
             "name": "CNN",
-            "specification": "news-notif smallDesc bigHeadline",
+            "specification": "news-notif smallDesc bigHeadline marginrightFIX",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./cnn.png",
@@ -2672,8 +2699,9 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/actu/rss",
             "name": "France 3",
+            "specification": "news-notif bigHeadline",
             "encodedTitles": true,
-            "count": 6,
+            "count": 8,
             "iconImg": "./france3.png",
             "backgroundImg": "./france3_bgIMG.jpg"
           }
@@ -3138,6 +3166,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_lifestyle.xml",
             "name": "Le Figaro",
+            "specification": "firstFocus",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
@@ -3146,6 +3175,7 @@
           {
             "url": "https://ici.radio-canada.ca/rss/4163",
             "name": "Radio Canada",
+            "specification": "firstFocus",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./radiocanada.png",
@@ -3154,6 +3184,7 @@
           {
             "url": "https://cdn1-parismatch.lanmedia.fr/var/exports/rss/rss-vivre.xml",
             "name": "Paris Match",
+            "specification": "firstFocus",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./parismatch.png",
@@ -3162,6 +3193,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/?outputType=xml",
             "name": "Libération",
+            "specification": "firstFocus",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -3169,6 +3201,7 @@
           {
             "url": "https://www.lesinrocks.com/actu/feed/",
             "name": "Les Inrocks",
+            "specification": "news-notif bigHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lesinrocks.png",
@@ -3177,6 +3210,7 @@
           {
             "url": "https://www.lepoint.fr/art-de-vivre/rss.xml",
             "name": "Le Point",
+            "specification": "firstFocus",
             "count": 2,
             "iconImg": "./lepoint.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -3184,6 +3218,7 @@
           {
             "url": "https://www.lemonde.fr/m-styles/rss_full.xml",
             "name": "Le Monde",
+            "specification": "firstFocus",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -3191,6 +3226,7 @@
           {
             "url": "https://information.tv5monde.com/afprss/francais--journal--clt",
             "name": "TV5 Monde",
+            "specification": "firstFocus",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./tv5monde.png",
@@ -3199,6 +3235,7 @@
           {
             "url": "https://www.courrierinternational.com/feed/category/7426/rss.xml",
             "name": "Courrier International",
+            "specification": "news-notif bigHeadline",
             "count": 2,
             "iconImg": "./courrierinter.png",
             "backgroundImg": "./courrierinter_bgIMG.jpg"
@@ -3206,6 +3243,7 @@
           {
             "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=lifestyle",
             "name": "Insider",
+            "specification": "news-notif firstFocus",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./insider.png",

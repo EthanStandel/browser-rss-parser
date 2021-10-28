@@ -531,6 +531,17 @@ ul.rss {
       display: none;
     }
 
+    .background-image img {
+      
+      background-image: url("https://tapsmart-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/ipadnews2-750x400.jpg");
+      object-fit: cover;
+      background-size: cover !important;
+      height: 100%;
+      width: 100%;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
     .item-title {
       -webkit-line-clamp: 5; /* number of lines to show */
     }
@@ -558,13 +569,14 @@ ul.rss {
       margin-right: 10px;
 
       img {
+        object-fit: cover;
+        background-image: url("https://support.apple.com/library/content/dam/edam/applecare/images/en_US/ios/News/ios12-2-news-todays-topic-icon.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+        background-size: calc(100% - 10px);
         height: 40px;
         width: 40px;
-        background-image: url("https://support.apple.com/library/content/dam/edam/applecare/images/en_US/ios/News/ios12-2-news-todays-topic-icon.png");
-        background-color: white;
-        background-size: 30px;
-        background-repeat: no-repeat;
-        background-position: center;
         border-radius: 9px;
       }
 
@@ -657,7 +669,7 @@ ul.rss {
     }
 
     /*/ LIST STYLE FOR LI ITEMS - big title + big image + small desc /*/
-    &.news-focus, &.firstFocus:first-child {
+    &.news-focus, &.firstFocus:first-of-type {
       background-color: rgba(0, 0, 0, 0);
       transition-duration: 0.4s;
 
@@ -709,13 +721,23 @@ ul.rss {
         margin: 14px 16px;
         color: white;
         position: absolute;
-        top: 30px;
+        top: 35px;
 
         -webkit-line-clamp: 3 !important;
         overflow: hidden;
         text-overflow: ellipsis !important;
         display: -webkit-box;
         -webkit-box-orient: vertical;
+      }
+
+      @media only screen and (max-width: 734px) {
+        .item-title {
+          -webkit-line-clamp: 4 !important;
+        overflow: hidden;
+        text-overflow: ellipsis !important;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        }
       }
     
       .item-container  {
@@ -732,7 +754,7 @@ ul.rss {
       .item-F-line {
         display: table;
         position: absolute;
-        top: 15px;
+        top: 17px;
         left: 50px;
         width: calc(100% - 60px);
         
@@ -749,16 +771,10 @@ ul.rss {
     
       .background-image {
         display: block !important;
-        width: 100% !important;
         height: 300px !important;
 
         img {
-          background-image: url("https://tapsmart-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/ipadnews2-750x400.jpg");
-          background-size: 100%;
-          width: 100%;
-          object-fit: cover;
-          height: 100% !important;
-          border-radius: 10px !important;
+          border-radius: 10px;
         }
       }
       
@@ -766,19 +782,13 @@ ul.rss {
         height: 0 !important;
         
         img {
-          height: 30px;
-          object-fit: cover;
-          width: 30px;
+          height: 35px;
+          width: 35px;
           z-index: 2;
           position: absolute;
           border-radius: 9px;
           top: 10px;
           left: 10px;
-          background-image: url("https://support.apple.com/library/content/dam/edam/applecare/images/en_US/ios/News/ios12-2-news-todays-topic-icon.png");
-          background-size: 20px;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-color: white;
         }
 
         &:nth-child(1) {
@@ -798,8 +808,12 @@ ul.rss {
     /*/ LIST STYLE FOR ITEMS hide item-description for items with weird descriptions /*/
 
     &.nodesc {
-      .item-container, .item-infos {
+      .item-infos {
         display: none !important;
+      }
+
+      .item-infos2 {
+        display: block !important;
       }
     }
 
@@ -809,7 +823,7 @@ ul.rss {
       /*/ get big image for first-item /*/
       &.bigHeadline:first-child {
         
-        .item-description, .background-image, .media, .item-container, .background-image img {
+        .item-description, .background-image, .media, .item-container {
           display: block !important;
         }
         
@@ -837,35 +851,30 @@ ul.rss {
           border-radius: 0 0 10px 10px;
         }
       
-        .background-image img {
-          background-image: url("https://tapsmart-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/ipadnews2-750x400.jpg");
-          background-size: 100%;
-          width: 100%;
-          object-fit: cover;
-          z-index: -1;
-          background-repeat: no-repeat;
+        .background-image {
+
           height: 170px;
-          min-height: 170px; 
-          border-radius: 10px 10px 0 0;
+          z-index: -1;
+          
+          img {
+            width: 100%;
+            height: 170px;
+            border-radius: 10px 10px 0 0;
+          }
         }
 
         .icon-image {
           height: 0;
 
           img {
-            height: 30px;
+            height: 35px;
             object-fit: cover;
-            width: 30px;
+            width: 35px;
             z-index: 2;
             position: absolute;
             border-radius: 9px;
             top: 10px;
             left: 10px;
-            background-image: url("https://support.apple.com/library/content/dam/edam/applecare/images/en_US/ios/News/ios12-2-news-todays-topic-icon.png");
-            background-size: 20px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: white;
           }
 
           &:nth-child(1) {
@@ -883,7 +892,7 @@ ul.rss {
           display: table !important;
           width: calc(100% - 16px - 10px);
           position: absolute;
-          top: 15px;
+          top: 17px;
           
           .item-publish-date {
             color: white;
@@ -906,11 +915,75 @@ ul.rss {
       }
     }
 
+    &.marginrightFIX {
+      .item-container, .h8.item-description {
+        width: calc(100% - 50px) !important;
+      }
+    }
+
 
     /*/ LIST STYLE FOR ITEMS - list without bgIMG + small description /*/
     &.news-list {
       margin-bottom: 0;
       border-radius: 0;
+
+      &:first-of-type {
+
+        .icon-image:nth-child(1) {
+          display: none !important;
+        }
+
+        .icon-image:not(:nth-child(1)) {
+
+            z-index: 2;
+            margin: 0;
+            position: absolute;
+            width: 90px;
+            height: 90px;
+          
+          img {
+            width: 25px;
+            border-radius: 7px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            height: 25px;
+          }
+        }
+
+        .background-image {
+          display: block;
+          float: left;
+          z-index: 0;
+          margin-right: 10px;
+          width: 90px;
+          height: 90px;
+
+          img {
+            width: 90px;
+            border-radius: 10px;
+            height: 90px;
+          }
+        }
+
+        .item-infos {
+          .item-publish-date {
+            display: none;
+          }
+
+          .item-description {
+            -webkit-line-clamp: 2 !important;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box !important;
+            -webkit-box-orient: vertical;
+          }
+        }
+
+        .item-infos2 {
+          display: block !important;
+        }
+      }
 
       .media {
         padding: 10px 0 !important;
@@ -919,7 +992,13 @@ ul.rss {
       }
 
       &.marginrightFIX {
-        .item-container {
+
+        &:first-of-type {
+          .item-container {
+            width: calc(100% - 100px) !important;
+          }
+        }
+        .item-container, .h8.item-description, .item-descriptionWrapper, .item-infos {
           width: calc(100% - 50px) !important;
         }
       }
@@ -1048,4 +1127,17 @@ footer {
   border-bottom: 0.8px solid var(--separator);
   padding-bottom: 10px !important;
   margin-bottom: 7px !important;
+}
+
+.headerTitle:after {
+  background: linear-gradient(90deg, rgba(252,252,254,1) 0%, rgba(252,252,254,0.8) 37%, rgba(252,252,254,0.4) 65%, rgba(252,252,254,0) 100%);
+  content: "";
+  display: block;
+  position: absolute;
+  left: 154.85px;
+  top: 0;
+  width: 80px;
+  opacity: 0 !important;
+  height: 40px;
+  z-index: 2;
 }
