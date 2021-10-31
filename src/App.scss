@@ -62,7 +62,7 @@ header, .body-container, .mini-links a {
   z-index: 1;
   min-height: 100vh;
   
-  /*/ underlining item-title color when hovering li /*/
+  /*/ underlining color depending on topic for li /*/
   
   * {
     text-decoration-color: var(--systemPink);
@@ -477,7 +477,7 @@ h4.subtopic {
   font-weight: 800 !important;
   opacity: 0.75;
   padding: 0 20px;
-  width: fit-content;
+  width: max-content;
 }
 
 header .logo-text {
@@ -1063,14 +1063,14 @@ ul.rss {
   }
 }
 
+/*/
+FOOTER
+/*/
+
 .footer-header-app h5.logo-text {
   text-align: left !important;
   padding: 0 !important;
 }
-
-/*/
-FOOTER
-/*/
 
 footer {
   background-color: var(--secondarySystemGroupedBackground);
