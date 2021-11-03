@@ -508,6 +508,11 @@ ul.rss {
       }
     }
 
+    .item-descriptionWrapper {
+      display: table-cell;
+      width: 100%;
+    }
+
     .item-title, .item-description {
       overflow: hidden;
       text-overflow: ellipsis;
@@ -515,6 +520,7 @@ ul.rss {
       /* number of lines */
       -webkit-box-orient: vertical;
       text-decoration-color: rgba(0,0,0,0);
+      word-break: break-word;
     }
     
     @media only screen and (min-width: 734px) {
@@ -713,15 +719,16 @@ ul.rss {
     
       .item-title {
         font-weight: 700;
-        font-size: 34px;
-        line-height: 41px;
+        font-size: 28px;
+        line-height: 34px;
         display: block;
-        letter-spacing: 0.37px;
+        letter-spacing: 0.36px;
         text-shadow: 0 0 5px black;
         margin: 14px 16px;
         color: white;
         position: absolute;
-        top: 35px;
+        top: 40px;
+        max-height: 200px;
 
         -webkit-line-clamp: 3 !important;
         overflow: hidden;
@@ -915,13 +922,6 @@ ul.rss {
       }
     }
 
-    &.marginrightFIX {
-      .item-container, .h8.item-description {
-        width: calc(100% - 50px) !important;
-      }
-    }
-
-
     /*/ LIST STYLE FOR ITEMS - list without bgIMG + small description /*/
     &.news-list {
       margin-bottom: 0;
@@ -938,13 +938,13 @@ ul.rss {
             z-index: 2;
             margin: 0;
             position: absolute;
-            width: 75px;
-            height: 75px;
+            width: 70px;
+            height: 70px;
           
           img {
-            width: 20px;
-            height: 20px;
-            border-radius: 7px;
+            width: 18px;
+            height: 18px;
+            border-radius: 5px;
             position: absolute;
             top: 5px;
             left: 5px;
@@ -956,13 +956,13 @@ ul.rss {
           float: left;
           z-index: 0;
           margin-right: 10px;
-          width: 75px;
-          height: 75px;
+          width: 70px;
+          height: 70px;
 
           img {
-            width: 75px;
+            width: 70px;
             border-radius: 10px;
-            height: 75px;
+            height: 70px;
           }
         }
 
@@ -989,18 +989,6 @@ ul.rss {
         padding: 10px 0 !important;
         margin: 0 10px;
         border-bottom: 0.8px solid var(--separator);
-      }
-
-      &.marginrightFIX {
-
-        &:first-of-type {
-          .item-container {
-            width: calc(100% - 100px) !important;
-          }
-        }
-        .item-container, .h8.item-description, .item-descriptionWrapper, .item-infos {
-          width: calc(100% - 50px) !important;
-        }
       }
 
       &:first-child {

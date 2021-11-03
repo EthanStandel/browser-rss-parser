@@ -105,6 +105,7 @@
           {
             "url": "https://www.lepoint.fr/economie/rss.xml",
             "name": "Le Point",
+            "encodedTitles": true,
             "specification": "news-notif bigHeadline",
             "count": 1,
             "iconImg": "./lepoint.png",
@@ -266,6 +267,7 @@
           {
             "url": "https://www.lepoint.fr/immobilier/rss.xml",
             "name": "Le Point",
+            "encodedTitles": true,
             "specification": "news-notif bigHeadline",
             "count": 1,
             "iconImg": "./lepoint.png",
@@ -446,6 +448,7 @@
           {
             "url": "https://www.lepoint.fr/pop-culture/rss.xml",
             "name": "Le Point",
+            "encodedTitles": true,
             "specification": "news-notif bigHeadline",
             "count": 2,
             "iconImg": "./lepointpop.png",
@@ -507,6 +510,7 @@
           {
             "url": "https://www.lepoint.fr/livres/rss.xml",
             "name": "Le Point",
+            "encodedTitles": true,
             "specification": "firstFocus",
             "count": 1,
             "iconImg": "./lepointpop.png",
@@ -647,6 +651,7 @@
           {
             "url": "https://www.lepoint.fr/arts/rss.xml",
             "name": "Le Point",
+            "encodedTitles": true,
             "count": 2,
             "iconImg": "./lepointpop.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -828,6 +833,7 @@
           {
             "url": "https://www.lepoint.fr/musique/rss.xml",
             "name": "Le Point",
+            "encodedTitles": true,
             "specification": "firstFocus",
             "count": 1,
             "iconImg": "./lepointpop.png",
@@ -1746,7 +1752,7 @@
           {
             "url": "https://www.deutschlandfunk.de/europa.1863.de.rss",
             "name": "Deutschlandfunk",
-            "specification": "news-notif smallDesc bigHeadline",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
@@ -1835,6 +1841,7 @@
           {
             "url": "https://www.lepoint.fr/afrique/rss.xml",
             "name": "Le Point",
+            "encodedTitles": true,
             "count": 1,
             "iconImg": "./lepoint.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -2125,6 +2132,7 @@
           {
             "url": "https://www.lepoint.fr/sciences/rss.xml",
             "name": "Le Point",
+            "encodedTitles": true,
             "count": 1,
             "iconImg": "./lepoint.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -2187,6 +2195,7 @@
           {
             "url": "https://www.lepoint.fr/astronomie/rss.xml",
             "name": "Le Point",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 1,
             "iconImg": "./lepoint.png",
@@ -2245,6 +2254,7 @@
           {
             "url": "https://www.lepoint.fr/sante/rss.xml",
             "name": "Le Point",
+            "encodedTitles": true,
             "count": 1,
             "iconImg": "./lepoint.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -2347,6 +2357,7 @@
           {
             "url": "https://www.forbes.com/science/feed2/",
             "name": "Forbes",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 1,
             "iconImg": "./forbes.png",
@@ -2623,6 +2634,7 @@
           {
             "url": "https://www.lepoint.fr/politique/rss.xml",
             "name": "Le Point",
+            "encodedTitles": true,
             "count": 1,
             "iconImg": "./lepoint.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -3265,6 +3277,7 @@
           {
             "url": "https://www.lepoint.fr/art-de-vivre/rss.xml",
             "name": "Le Point",
+            "encodedTitles": true,
             "specification": "firstFocus",
             "count": 2,
             "iconImg": "./lepoint.png",
@@ -3326,6 +3339,7 @@
           {
             "url": "https://www.lepoint.fr/voyages/rss.xml",
             "name": "Le Point",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 1,
             "iconImg": "./lepoint.png",
@@ -3397,6 +3411,7 @@
           {
             "url": "https://www.lepoint.fr/gastronomie/rss.xml",
             "name": "Le Point",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 1,
             "iconImg": "./lepoint.png",
@@ -3524,6 +3539,7 @@
           {
             "url": "https://www.forbes.com/lifestyle/feed2/",
             "name": "Forbes",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 1,
             "iconImg": "./forbes.png",
