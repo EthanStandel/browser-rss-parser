@@ -322,6 +322,7 @@
           {
             "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
             "name": "The Wall Street Journal",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 1,
             "iconImg": "./wsjournal.png",
@@ -330,6 +331,7 @@
           {
             "url": "https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml",
             "name": "The Wall Street Journal",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 1,
             "iconImg": "./wsjournal.png",
