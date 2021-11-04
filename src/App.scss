@@ -511,6 +511,10 @@ ul.rss {
         font-size: 15px !important;
         line-height: 20px !important;
       }
+
+      p:not(:nth-child(1)) {
+        display: none;
+      }
     }
 
     .item-descriptionWrapper {

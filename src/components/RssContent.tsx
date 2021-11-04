@@ -143,7 +143,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                         
                         <div className="item-descriptionWrapper">
                           {item.description &&
-                            <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: item.description.replace('Read more', "")}} />
+                            <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: item.description}} />
                           }
                         </div>
                       </div>

@@ -62,7 +62,7 @@
           {
             "url": "https://www.francetvinfo.fr/economie.rss",
             "name": "Franceinfo",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif bigHeadline smallDesc",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
@@ -71,7 +71,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_flash-eco.xml",
             "name": "Le Figaro",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif bigHeadline smallDesc",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
@@ -80,7 +80,7 @@
           {
             "url": "https://syndication.lesechos.fr/rss/rss_france.xml",
             "name": "Les Échos",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif bigHeadline smallDesc",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lesechos.png",
@@ -89,7 +89,7 @@
           {
             "url": "https://www.lemonde.fr/economie/rss_full.xml",
             "name": "Le Monde",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -97,7 +97,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/economie/?outputType=xml",
             "name": "Libération",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -106,7 +106,7 @@
             "url": "https://www.lepoint.fr/economie/rss.xml",
             "name": "Le Point",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./lepoint.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -114,7 +114,7 @@
           {
             "url": "https://www.bfmtv.com/rss/economie/",
             "name": "BFM TV",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -122,7 +122,7 @@
           {
             "url": "https://www.letelegramme.fr/economie/rss.xml",
             "name": "Le Télégramme",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./letelegramme.png",
             "backgroundImg": "./letelegramme_bgIMG.jpg"
@@ -130,7 +130,7 @@
           {
             "url": "https://business.lesechos.fr/rss/rss_une.xml",
             "name": "Les Échos",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif bigHeadline smallDesc",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lesechos.png",
@@ -139,7 +139,7 @@
           {
             "url": "https://www.challenges.fr/economie/rss.xml",
             "name": "Challenges",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./challenges.png",
             "backgroundImg": "./challenges_bgIMG.jpg"
@@ -147,7 +147,7 @@
           {
             "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=economie",
             "name": "Business Insider",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif bigHeadline smallDesc",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./binsider.png",
@@ -367,6 +367,7 @@
           {
             "url": "https://rss.dw.com/xml/rss-de-eco",
             "name": "Deutsche Welle",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 1,
             "iconImg": "./dw.png",
@@ -398,7 +399,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_culture.xml",
             "name": "Le Figaro",
-            "specification": "news-notif bigHeadline",
+            "specification": "firstFocus",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lefigaro.png",
@@ -407,7 +408,7 @@
           {
             "url": "https://www.lexpress.fr/rss/culture.xml",
             "name": "L'Express",
-            "specification": "news-notif bigHeadline",
+            "specification": "firstFocus",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lexpress.jpeg",
@@ -424,7 +425,7 @@
           {
             "url": "https://5minutes.rtl.lu/rss/culture",
             "name": "RTL",
-            "specification": "news-notif bigHeadline",
+            "specification": "firstFocus",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./rtl.png",
@@ -433,7 +434,7 @@
           {
             "url": "https://ici.radio-canada.ca/rss/4167",
             "name": "Radio Canada",
-            "specification": "news-notif bigHeadline",
+            "specification": "firstFocus",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./radiocanada.png",
@@ -442,7 +443,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/?outputType=xml",
             "name": "Libération",
-            "specification": "news-notif bigHeadline",
+            "specification": "firstFocus",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -451,7 +452,7 @@
             "url": "https://www.lepoint.fr/pop-culture/rss.xml",
             "name": "Le Point",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline",
+            "specification": "firstFocus",
             "count": 2,
             "iconImg": "./lepointpop.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -459,7 +460,7 @@
           {
             "url": "https://www.bfmtv.com/rss/culture/",
             "name": "BFM TV",
-            "specification": "news-notif bigHeadline",
+            "specification": "firstFocus",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -942,6 +943,7 @@
           {
             "url": "https://rss.dw.com/xml/rss-de-cul",
             "name": "Deutsche Welle",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 2,
             "iconImg": "./dw.png",
@@ -1594,6 +1596,7 @@
           {
             "url": "https://rss.dw.com/xml/rss-de-sport",
             "name": "Deutsche Welle",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 2,
             "iconImg": "./dw.png",
@@ -1829,6 +1832,7 @@
           {
             "url": "https://www.france24.com/fr/afrique/rss",
             "name": "France 24",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
@@ -1836,6 +1840,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/afrique/?outputType=xml",
             "name": "Libération",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -1843,6 +1848,7 @@
           {
             "url": "https://www.lepoint.fr/afrique/rss.xml",
             "name": "Le Point",
+            "specification": "news-notif bigHeadline smallDesc",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lepoint.png",
@@ -1851,6 +1857,7 @@
           {
             "url": "https://www.bfmtv.com/rss/international/afrique/",
             "name": "BFM TV",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -1858,6 +1865,7 @@
           {
             "url": "https://www.lemonde.fr/afrique/rss_full.xml",
             "name": "Le Monde",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -1867,6 +1875,7 @@
           {
             "url": "https://www.france24.com/fr/amériques/rss",
             "name": "France 24",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
@@ -1874,6 +1883,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/amerique/?outputType=xml",
             "name": "Libération",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -1881,6 +1891,7 @@
           {
             "url": "https://www.bfmtv.com/rss/international/amerique-nord/",
             "name": "BFM TV",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -1888,6 +1899,7 @@
           {
             "url": "https://www.bfmtv.com/rss/international/amerique-latine/",
             "name": "BFM TV",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -1895,6 +1907,7 @@
           {
             "url": "https://www.lemonde.fr/ameriques/rss_full.xml",
             "name": "Le Monde",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -1904,6 +1917,7 @@
           {
             "url": "https://www.france24.com/fr/asie-pacifique/rss",
             "name": "France 24",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
@@ -1911,6 +1925,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/asie-pacifique/?outputType=xml",
             "name": "Libération",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -1918,6 +1933,7 @@
           {
             "url": "https://www.bfmtv.com/rss/international/asie/",
             "name": "BFM TV",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -1925,6 +1941,7 @@
           {
             "url": "https://www.bfmtv.com/rss/international/oceanie/",
             "name": "BFM TV",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -1932,6 +1949,7 @@
           {
             "url": "https://www.lemonde.fr/asie-pacifique/rss_full.xml",
             "name": "Le Monde",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -1941,6 +1959,7 @@
           {
             "url": "https://www.france24.com/fr/moyen-orient/rss",
             "name": "France 24",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
@@ -1948,6 +1967,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/moyen-orient/?outputType=xml",
             "name": "Libération",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -1955,6 +1975,7 @@
           {
             "url": "https://www.bfmtv.com/rss/international/moyen-orient/",
             "name": "BFM TV",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -1962,6 +1983,7 @@
           {
             "url": "https://www.lemonde.fr/proche-orient/rss_full.xml",
             "name": "Le Monde",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -2037,6 +2059,7 @@
           {
             "url": "https://rss.dw.com/xml/rss-de-top",
             "name": "Deutsche Welle",
+            "encodedTitles": true,
             "specification": "news-notif smallDesc bigHeadline",
             "count": 2,
             "iconImg": "./dw.png",
@@ -2384,6 +2407,7 @@
           {
             "url": "https://rss.dw.com/xml/rss-de-wissenschaft",
             "name": "Deutsche Welle",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 2,
             "iconImg": "./dw.png",
@@ -2728,6 +2752,7 @@
           {
             "url": "https://rss.dw.com/xml/rss-de-politik",
             "name": "Deutsche Welle",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 1,
             "iconImg": "./dw.png",
@@ -3550,6 +3575,7 @@
           {
             "url": "https://rss.dw.com/xml/rss-de-deutschlandentdecken",
             "name": "Deutsche Welle",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 2,
             "iconImg": "./dw.png",
