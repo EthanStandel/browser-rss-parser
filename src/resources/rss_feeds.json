@@ -358,7 +358,7 @@
           {
             "url": "https://markets.businessinsider.com/rss/news",
             "name": "Markets Insider",
-            "specification": "news-list marginrightFIX",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./minsider.png",
@@ -376,7 +376,7 @@
           {
             "url": "https://www.businessinsider.de/wirtschaft/feed/",
             "name": "Business Insider",
-            "specification": "news-list ",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./binsider.png",
@@ -385,7 +385,7 @@
           {
             "url": "https://www.deutschlandfunk.de/die-nachrichten.353.de.rss",
             "name": "Deutschlandfunk",
-            "specification": "news-list ",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
@@ -926,7 +926,7 @@
           {
             "url": "https://www.theguardian.com/uk/culture/rss",
             "name": "The Guardian",
-            "specification": "news-list marginrightFIX",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./theguardian.png",
@@ -1563,7 +1563,7 @@
           {
             "url": "http://feeds.foxnews.com/foxnews/sports?format=xml",
             "name": "FOX news",
-            "specification": "news-list marginrightFIX",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./foxnews.png",
             "backgroundImg": "./foxnews_bgIMG.jpg"
@@ -1613,7 +1613,7 @@
           {
             "url": "https://www.deutschlandfunk.de/sport.1494.de.rss",
             "name": "Deutschlandfunk",
-            "specification": "news-notif smallDesc bigHeadline",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
@@ -1740,7 +1740,7 @@
           {
             "url": "http://rss.cnn.com/rss/edition_europe.rss",
             "name": "CNN",
-            "specification": "news-list marginrightFIX",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./cnn.png",
@@ -2010,7 +2010,7 @@
           {
             "url": "https://www.theguardian.com/world/rss",
             "name": "The Guardian",
-            "specification": "news-list marginrightFIX",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./theguardian.png",
@@ -2019,7 +2019,7 @@
           {
             "url": "http://feeds.foxnews.com/foxnews/world?format=xml",
             "name": "FOX news",
-            "specification": "news-list marginrightFIX",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./foxnews.png",
@@ -2028,7 +2028,7 @@
           {
             "url": "http://rss.cnn.com/rss/edition_world.rss",
             "name": "CNN",
-            "specification": "news-list marginrightFIX",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./cnn.png",
@@ -2105,7 +2105,7 @@
           {
             "url": "http://rss.cnn.com/rss/edition_us.rss",
             "name": "CNN",
-            "specification": "news-notif smallDesc bigHeadline marginrightFIX",
+            "specification": "news-notif smallDesc bigHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./cnn.png",
@@ -2373,7 +2373,7 @@
           {
             "url": "https://www.theguardian.com/science/rss",
             "name": "The Guardian",
-            "specification": "news-list marginrightFIX",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./theguardian.png",
@@ -2736,7 +2736,7 @@
           {
             "url": "http://feeds.foxnews.com/foxnews/politics?format=xml",
             "name": "FOX news",
-            "specification": "news-list marginrightFIX",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./foxnews.png",
             "backgroundImg": "./foxnews_bgIMG.jpg"
@@ -3530,7 +3530,7 @@
           {
             "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=strategie",
             "name": "Insider",
-            "specification": "news-list marginrightFIX",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./insider.png",
@@ -3558,7 +3558,7 @@
           {
             "url": "http://feeds.foxnews.com/foxnews/section/lifestyle?format=xml",
             "name": "FOX news",
-            "specification": "news-list marginrightFIX",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./foxnews.png",
             "backgroundImg": "./foxnews_bgIMG.jpg"
@@ -3584,7 +3584,7 @@
           {
             "url": "https://www.businessinsider.de/leben/feed/",
             "name": "Insider",
-            "specification": "news-list marginrightFIX",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./insider.png",
