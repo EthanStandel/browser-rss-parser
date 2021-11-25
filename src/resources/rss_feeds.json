@@ -385,6 +385,7 @@
           {
             "url": "https://www.deutschlandfunk.de/die-nachrichten.353.de.rss",
             "name": "Deutschlandfunk",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 1,
             "iconImg": "./dfunk.png",
@@ -960,6 +961,7 @@
           {
             "url": "https://www.deutschlandfunk.de/kultur.1495.de.rss",
             "name": "Deutschlandfunk",
+            "encodedTitles": true,
             "specification": "news-list ",
             "count": 2,
             "iconImg": "./dfunk.png",
@@ -1613,6 +1615,7 @@
           {
             "url": "https://www.deutschlandfunk.de/sport.1494.de.rss",
             "name": "Deutschlandfunk",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 2,
             "iconImg": "./dfunk.png",
@@ -1757,6 +1760,7 @@
           {
             "url": "https://www.deutschlandfunk.de/europa.1863.de.rss",
             "name": "Deutschlandfunk",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 2,
             "iconImg": "./dfunk.png",
@@ -2037,6 +2041,7 @@
           {
             "url": "https://www.deutschlandfunk.de/eine-welt.798.de.rss",
             "name": "Deutschlandfunk",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 3,
             "iconImg": "./dfunk.png",
@@ -2068,6 +2073,7 @@
           {
             "url": "https://www.deutschlandfunk.de/die-nachrichten.353.de.rss",
             "name": "Deutschlandfunk",
+            "encodedTitles": true,
             "specification": "news-notif smallDesc bigHeadline",
             "count": 2,
             "iconImg": "./dfunk.png",
@@ -2416,6 +2422,7 @@
           {
             "url": "https://www.deutschlandfunk.de/forschung-aktuell.675.de.rss",
             "name": "Deutschlandfunk",
+            "encodedTitles": true,
             "specification": "news-list ",
             "count": 2,
             "iconImg": "./dfunk.png",
@@ -2769,6 +2776,7 @@
           {
             "url": "https://www.deutschlandfunk.de/politik.1499.de.rss",
             "name": "Deutschlandfunk",
+            "encodedTitles": true,
             "count": 1,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
@@ -3169,6 +3177,7 @@
           {
             "url": "https://www.deutschlandfunk.de/gesellschaft.1574.de.rss",
             "name": "Deutschlandfunk",
+            "encodedTitles": true,
             "specification": "news-notif smallDesc bigHeadline",
             "count": 2,
             "iconImg": "./dfunk.png",
