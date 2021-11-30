@@ -739,6 +739,9 @@
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
+        "Mode" : [
+          
+        ],
         "Jeux vidéo": [
           {
             "url": "https://www.presse-citron.net/category/lifestyle/jeu-video/feed",
