@@ -54,7 +54,7 @@ var ddbeforeYesterday = String(beforeYesterdayDate.getDate()).padStart(2, '0');
 
 
 const monthNames = ["jan.", "feb.", "mar.", "apr.", "may", "jun.",
-  "jul.", "août.", "sept.", "oct.", "nov.", "dec."];
+  "jul.", "août.", "sept.", "oct.", "nov.", "déc."];
 
 const todayFormat = dd + ' ' + monthNames[new Date().getMonth()] ;
 const yesterdayFormat = ddyesterday + ' ' + monthNames[yesterdayDate.getMonth()] ;

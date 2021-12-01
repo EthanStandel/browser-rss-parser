@@ -1738,6 +1738,88 @@
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
+        "Espagne": [
+          {
+            "url": "https://www.francetvinfo.fr/monde/espagne.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 4,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Benelux": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/international/luxembourg/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/international/belgique/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/monde/pays-bas.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Suisse": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/international/suisse/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 4,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Norvège": [
+          {
+            "url": "https://www.francetvinfo.fr/monde/norvege.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 4,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Balkans": [
+          {
+            "url": "https://www.francetvinfo.fr/monde/grece.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/monde/turquie.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
         "Presse étrangère": [
           {
             "url": "http://feeds.washingtonpost.com/rss/world/europe",
