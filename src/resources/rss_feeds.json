@@ -412,6 +412,15 @@
             "backgroundImg": "./lefigaro_bgIMG.png"
           },
           {
+            "url": "https://www.vanityfair.fr/rss.xml",
+            "name": "Vanity Fair",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./vanityfair.png",
+            "backgroundImg": "./vanityfair_bgIMG.jpg"
+          },
+          {
             "url": "https://www.lexpress.fr/rss/culture.xml",
             "name": "L'Express",
             "specification": "firstFocus",
@@ -739,8 +748,42 @@
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
-        "Mode" : [
-          
+        "Mode & célébrités" : [
+          {
+            "url": "https://vl-media.fr/categories/mode/feed/",
+            "name": "Vanity Fair",
+            "specification": "news-focus",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./vanityfair.png",
+            "backgroundImg": "./vanityfair_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/m-mode/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-notif",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/mode.rss",
+            "name": "Franceinfo",
+            "specification": "news-notif",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/people/mode/",
+            "name": "BFM TV",
+            "specification": "news-notif",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          }
         ],
         "Jeux vidéo": [
           {
@@ -828,7 +871,10 @@
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
-        "Musique": [
+        "Arts du spectacle": [
+
+        ],
+         "Musique": [
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/musique/?outputType=xml",
             "name": "Libération",
@@ -1589,6 +1635,7 @@
           {
             "url": "http://feeds.foxnews.com/foxnews/sports?format=xml",
             "name": "FOX news",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 1,
             "iconImg": "./foxnews.png",
@@ -2834,6 +2881,14 @@
           }
         ],
         "Élections": [
+          {
+            "url": "https://feeds.leparisien.fr/leparisien/rss/elections",
+            "name": "Le Parisien",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./leparisien.png",
+            "backgroundImg": "./leparisien_bgIMG.jpg"
+          }
           
         ],
         "Presse étrangère": [
@@ -2858,6 +2913,7 @@
           {
             "url": "http://feeds.foxnews.com/foxnews/politics?format=xml",
             "name": "FOX news",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 1,
             "iconImg": "./foxnews.png",
@@ -3504,14 +3560,6 @@
             "backgroundImg": "./lepoint_bgIMG.jpg"
           },
           {
-            "url": "https://www.bfmtv.com/rss/voyage/",
-            "name": "BFM TV",
-            "specification": "news-list",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          },
-          {
             "url": "https://france3-regions.francetvinfo.fr/sorties-loisirs/vacances/rss",
             "name": "France 3",
             "specification": "news-list",
@@ -3600,6 +3648,16 @@
             "count": 2,
             "iconImg": "./france3.png",
             "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Luxe": [
+          {
+            "url": "https://www.challenges.fr/luxe/rss.xml",
+            "name": "Challenges",
+            "specification": "news-focus",
+            "count": 2,
+            "iconImg": "./challenges.png",
+            "backgroundImg": "./challenges_bgIMG.jpg"
           }
         ],
         "Insolite & découvertes": [
@@ -3691,6 +3749,7 @@
           {
             "url": "http://feeds.foxnews.com/foxnews/section/lifestyle?format=xml",
             "name": "FOX news",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 1,
             "iconImg": "./foxnews.png",
