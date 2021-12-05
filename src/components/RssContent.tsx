@@ -12,6 +12,7 @@ export interface RssFeedSource {
   iconImg?: string;
   backgroundImg?: string;
   encodedTitles?: boolean;
+  specification?: string;
   subtopic?: string;
 }
 
@@ -26,6 +27,7 @@ interface ParsedRssItem {
   }
   enclosure?: {
     type?: string;
+    url?: string;
   }
 }
 
@@ -41,6 +43,23 @@ export interface RssContentProps {
   rssFeeds: Array<RssFeedSource>;
 };
 
+var dd = String(new Date().getDate()).padStart(2, '0');
+var yesterdayDate = new Date();
+yesterdayDate.setDate(yesterdayDate.getDate()-1);
+var ddyesterday = String(yesterdayDate.getDate()).padStart(2, '0');
+
+var beforeYesterdayDate = new Date();
+beforeYesterdayDate.setDate(beforeYesterdayDate.getDate()-2);
+var ddbeforeYesterday = String(beforeYesterdayDate.getDate()).padStart(2, '0');
+
+
+const monthNames = ["jan.", "feb.", "mar.", "apr.", "may", "jun.",
+  "jul.", "août.", "sept.", "oct.", "nov.", "déc."];
+
+const todayFormat = dd + ' ' + monthNames[new Date().getMonth()] ;
+const yesterdayFormat = ddyesterday + ' ' + monthNames[yesterdayDate.getMonth()] ;
+const beforeYesterdayFormat = ddbeforeYesterday + ' ' + monthNames[beforeYesterdayDate.getMonth()] ;
+
 // This is bad but the whole point of this is to not stand up a server
 const openCorsProxy = "https://api.codetabs.com/v1/proxy?quest=";
 
@@ -52,7 +71,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
       .map(item => ({
         source: rssFeeds[index],
         item,
-        date: item.pubDate ? DateTime.fromRFC2822(item.pubDate) : undefined 
+        date: item.pubDate ? DateTime.fromRFC2822(item.pubDate) : undefined
       }))
     )
     .reduce((all, curr, index) => all.concat(
@@ -94,28 +113,45 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             // WARNING: Some of these items contain HTML
             // If they ever contain a script, it's not being filtered out
 
+            const imgHref = 
+            item.image
+            ?? item["media:content"]?.url
+            ?? item.enclosure?.url ? item.enclosure?.url 
+            : source.backgroundImg;
+
             return (
-              <li>
+              <li className={source.specification}>
                 <a href={item.link} target="_blank" rel="noreferrer">
-                <div className="media">
-                <div className="icon-image">{source.iconImg && <img src={source.iconImg}/>}</div>
-                <div className="background-image">{source.backgroundImg && <img src={source.backgroundImg} alt={source.name} />}</div>
-                <div className="item-container">
-                  <div className="item-F-line">
-                    <div className="r1 bold source-name">
-                      {source.name}
-                      {source.subtopic && ` - ${source.subtopic}`}
+                  <div className="media">
+                    <div className="icon-image"><img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/></div>
+                    <div className="icon-image">{source.iconImg && <img src={source.iconImg}/>}</div>
+                    <div className="background-image">{imgHref && <img src={imgHref}/>}</div>
+                    <div className="item-container">
+                      <div className="item-F-line">
+                        <div className="r1 bold source-name">
+                          {source.name}
+                          {source.subtopic && ` - ${source.subtopic}`}
+                        </div>
+                        <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd MMM HH:mm").replace('Invalid DateTime', '').replace(todayFormat, '').replace(yesterdayFormat, 'hier').replace(beforeYesterdayFormat, 'avant-hier')}</div>
+                      </div>
+                      {source.encodedTitles ? 
+                        (<h6 className="item-title" dangerouslySetInnerHTML={{ __html: item.title ?? "" }} />)
+                        : (<h6 className="item-title">{item.title}</h6>)
+                      }
+                      <div className="item-infos">
+                        <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd MMM HH:mm").replace('Invalid DateTime', '').replace(todayFormat, '').replace(yesterdayFormat, 'hier').replace(beforeYesterdayFormat, 'avant-hier')}</div>
+                        
+                        <div className="item-descriptionWrapper">
+                          {item.description &&
+                            <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: item.description}} />
+                          }
+                        </div>
+                      </div>
+                      <div className="item-infos2">
+                        <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd MMM HH:mm").replace('Invalid DateTime', '').replace(todayFormat, '').replace(yesterdayFormat, 'hier').replace(beforeYesterdayFormat, 'avant-hier')}</div>
+                      </div>
                     </div>
-                    <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("HH:mm")}</div>
                   </div>
-                  {source.encodedTitles ? 
-                    (<h6 className="item-title" dangerouslySetInnerHTML={{ __html: item.title ?? "" }} />)
-                    : (<h6 className="item-title">{item.title}</h6>)
-                  }
-                  {item.description && 
-                    <div className="h7 item-description" dangerouslySetInnerHTML={{ __html: item.description }} />}
-                    
-                  </div></div>
                 </a>
               </li>
             );

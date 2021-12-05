@@ -6,6 +6,8 @@
           {
             "url": "https://www.lemonde.fr/rss/une.xml",
             "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -13,6 +15,8 @@
           {
             "url": "https://www.francetvinfo.fr/titres.rss",
             "name": "Franceinfo",
+            "specification": "news-notif bigHeadline smallDesc",
+            "encodedTitles": true,
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
@@ -20,6 +24,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_flash-actu.xml",
             "name": "Le Figaro",
+            "specification": "news-notif bigHeadline smallDesc",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lefigaro.png",
@@ -28,6 +33,7 @@
           {
             "url": "https://www.bfmtv.com/rss/news-24-7/",
             "name": "BFM TV",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -35,6 +41,7 @@
           {
             "url": "https://www.france24.com/fr/rss",
             "name": "France 24",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
@@ -42,6 +49,7 @@
           {
             "url": "http://www.20minutes.fr/rss/une.xml",
             "name": "20 Minutes",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./20minutes.png",
             "backgroundImg": "./20minutes_bgIMG.png"
@@ -55,6 +63,8 @@
           {
             "url": "https://www.francetvinfo.fr/economie.rss",
             "name": "Franceinfo",
+            "specification": "news-notif bigHeadline smallDesc",
+            "encodedTitles": true,
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
@@ -62,6 +72,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_flash-eco.xml",
             "name": "Le Figaro",
+            "specification": "news-notif bigHeadline smallDesc",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
@@ -70,6 +81,8 @@
           {
             "url": "https://syndication.lesechos.fr/rss/rss_france.xml",
             "name": "Les Échos",
+            "specification": "news-notif bigHeadline smallDesc",
+            "encodedTitles": true,
             "count": 2,
             "iconImg": "./lesechos.png",
             "backgroundImg": "./lesechos_bgIMG.jpg"
@@ -77,65 +90,152 @@
           {
             "url": "https://www.lemonde.fr/economie/rss_full.xml",
             "name": "Le Monde",
-            "count": 2,
+            "encodedTitles": true,
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
           },
           {
-            "url": "https://www.ladepeche.fr/economie/rendez-vous-eco/rss.xml",
-            "name": "La Dépêche",
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/economie/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/economie/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/economie/",
+            "name": "BFM TV",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.letelegramme.fr/economie/rss.xml",
+            "name": "Le Télégramme",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./letelegramme.png",
+            "backgroundImg": "./letelegramme_bgIMG.jpg"
+          },
+          {
+            "url": "https://business.lesechos.fr/rss/rss_une.xml",
+            "name": "Les Échos",
+            "specification": "news-notif bigHeadline smallDesc",
             "encodedTitles": true,
             "count": 1,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
+            "iconImg": "./lesechos.png",
+            "backgroundImg": "./lesechos_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.challenges.fr/economie/rss.xml",
+            "name": "Challenges",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 2,
+            "iconImg": "./challenges.png",
+            "backgroundImg": "./challenges_bgIMG.jpg"
+          },
+          {
+            "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=economie",
+            "name": "Business Insider",
+            "specification": "news-notif bigHeadline smallDesc",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./binsider.png",
+            "backgroundImg": "./binsider_bgIMG.jpg"
           }
         ],
-        "Marchés": [
-          {
-            "url": "https://www.francetvinfo.fr/marches.rss",
-            "name": "Franceinfo",
-            "count": 1,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          },
+        "Marchés & bourse": [
           {
             "url": "https://www.lefigaro.fr/rss/figaro_bourse.xml",
             "name": "Le Figaro",
+            "specification": "news-notif bigHeadline",
             "encodedTitles": true,
-            "count": 1,
+            "count": 2,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
           },
           {
-            "url": "https://www.lefigaro.fr/rss/figaro_societes.xml",
-            "name": "Le Figaro",
+            "url": "https://www.tradingsat.com/rssbourse.xml",
+            "name": "BFM TV",
+            "specification": "news-notif bigHeadline nodesc",
             "encodedTitles": true,
             "count": 1,
-            "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro_bgIMG.png"
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://investir.lesechos.fr/RSS/info-marches-investir-bourse-les-echos.xml",
+            "name": "Les Échos",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lesechos.png",
+            "backgroundImg": "./lesechos_bgIMG.jpg"
           }
         ],
         "Entreprises": [
           {
-            "url": "https://www.francetvinfo.fr/entreprises.rss",
+            "url": "https://www.francetvinfo.fr/economie/entreprises.rss",
             "name": "Franceinfo",
-            "count": 1,
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 2,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
           {
             "url": "https://www.ladepeche.fr/economie/entreprise/rss.xml",
             "name": "La Dépêche",
+            "specification": "news-notif bigHeadline",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/economie/entreprises/",
+            "name": "BFM TV",
+            "specification": "news-notif bigHeadline",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/entreprises/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-notif bigHeadline",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.challenges.fr/entreprise/rss.xml",
+            "name": "Challenges",
+            "specification": "news-notif bigHeadline",
+            "count": 2,
+            "iconImg": "./challenges.png",
+            "backgroundImg": "./challenges_bgIMG.jpg"
           }
         ],
-        "Immobilier": [
+        "Patrimoine & immobilier": [
           {
             "url": "https://www.francetvinfo.fr/immobilier.rss",
             "name": "Franceinfo",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
@@ -143,6 +243,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_immobilier.xml",
             "name": "Le Figaro",
+            "specification": "news-notif bigHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
@@ -151,44 +252,150 @@
           {
             "url": "https://www.ladepeche.fr/economie/immobilier/rss.xml",
             "name": "La Dépêche",
+            "specification": "news-notif bigHeadline",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.leprogres.fr/magazine-immobilier/rss",
+            "name": "Le Progrès",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./leprogres.png",
+            "backgroundImg": "./leprogres_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/immobilier/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "specification": "news-notif bigHeadline",
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/immobilier/",
+            "name": "BFM TV",
+            "specification": "news-notif bigHeadline",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/immobilier/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-notif bigHeadline",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.challenges.fr/patrimoine/rss.xml",
+            "name": "Challenges",
+            "specification": "news-notif bigHeadline",
+            "count": 2,
+            "iconImg": "./challenges.png",
+            "backgroundImg": "./challenges_bgIMG.jpg"
           }
         ],
-        "Banques & Finance": [
+        "Banques & finance": [
           {
             "url": "https://www.ladepeche.fr/economie/banque-finances/rss.xml",
             "name": "La Dépêche",
+            "specification": "news-notif bigHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/argent/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-notif bigHeadline",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
-        "En anglais": [
+
+        "Presse étrangère": [
           {
             "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
             "name": "The Wall Street Journal",
-            "count": 2,
-            "iconImg": "./default.png",
-            "backgroundImg": "./default.png"
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./wsjournal.png",
+            "backgroundImg": "./wsjournal_bgIMG.jpg"
           },
           {
             "url": "https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml",
             "name": "The Wall Street Journal",
+            "encodedTitles": true,
+            "specification": "news-list",
             "count": 1,
-            "iconImg": "./default.png",
-            "backgroundImg": "./default.png"
+            "iconImg": "./wsjournal.png",
+            "backgroundImg": "./wsjournal_bgIMG.jpg"
           },
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
             "name": "The New York Times",
-            "count": 2,
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
             "iconImg": "./thenytimes.png",
             "backgroundImg": "./thenytimes_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "http://feeds.washingtonpost.com/rss/business",
+            "name": "The Washington Post",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./wpost.png",
+            "backgroundImg": "./wpost_bgIMG.jpg"
+          },
+          {
+            "url": "https://markets.businessinsider.com/rss/news",
+            "name": "Markets Insider",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./minsider.png",
+            "backgroundImg": "./minsider_bgIMG.jpg"
+          },
+          {
+            "url": "https://rss.dw.com/xml/rss-de-eco",
+            "name": "Deutsche Welle",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./dw.png",
+            "backgroundImg": "./dw_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.businessinsider.de/wirtschaft/feed/",
+            "name": "Business Insider",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./binsider.png",
+            "backgroundImg": "./binsider_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/die-nachrichten.353.de.rss",
+            "name": "Deutschlandfunk",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
+          }   
         ]
       }
     },
@@ -196,30 +403,27 @@
       "subtopics": {
         "noSubtopic": [
           {
-            "url": "https://www.lemonde.fr/culture/rss_full.xml",
-            "name": "Le Monde",
-            "count": 2,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.francetvinfo.fr/culture.rss",
-            "name": "Franceinfo",
-            "count": 2,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          },
-          {
             "url": "https://www.lefigaro.fr/rss/figaro_culture.xml",
             "name": "Le Figaro",
+            "specification": "firstFocus",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
           },
           {
+            "url": "https://www.vanityfair.fr/rss.xml",
+            "name": "Vanity Fair",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./vanityfair.png",
+            "backgroundImg": "./vanityfair_bgIMG.jpg"
+          },
+          {
             "url": "https://www.lexpress.fr/rss/culture.xml",
             "name": "L'Express",
+            "specification": "firstFocus",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lexpress.jpeg",
@@ -228,34 +432,263 @@
           {
             "url": "https://feeds.leparisien.fr/leparisien/rss/culture-loisirs",
             "name": "Le Parisien",
+            "specification": "news-notif bigHeadline",
             "count": 2,
             "iconImg": "./leparisien.png",
             "backgroundImg": "./leparisien_bgIMG.jpg"
           },
           {
-            "url": "https://www.nouvelobs.com/culture/rss.xml",
-            "name": "L'Obs",
+            "url": "https://5minutes.rtl.lu/rss/culture",
+            "name": "RTL",
+            "specification": "firstFocus",
+            "encodedTitles": true,
             "count": 2,
-            "iconImg": "./lobs.png",
-            "backgroundImg": "./lobs_bgIMG.jpg"
+            "iconImg": "./rtl.png",
+            "backgroundImg": "./rtl_bgIMG.png"
+          },
+          {
+            "url": "https://ici.radio-canada.ca/rss/4167",
+            "name": "Radio Canada",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./radiocanada.png",
+            "backgroundImg": "./radiocanada_bgIMG.png"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/?outputType=xml",
+            "name": "Libération",
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/pop-culture/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "specification": "firstFocus",
+            "count": 2,
+            "iconImg": "./lepointpop.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/culture/",
+            "name": "BFM TV",
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
           }
         ],
         "Littérature": [
           {
             "url": "https://www.lefigaro.fr/rss/figaro_livres.xml",
             "name": "Le Figaro",
+            "specification": "firstFocus",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.telerama.fr/rss/livre.xml",
+            "name": "Télérama",
+            "specification": "firstFocus",
+            "count": 2,
+            "iconImg": "./telerama.png",
+            "backgroundImg": "./telerama_bgIMG.jpg"
+          },
+          {
+            "url": "https://ici.radio-canada.ca/rss/1000083",
+            "name": "Radio Canada",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./radiocanada.png",
+            "backgroundImg": "./radiocanada_bgIMG.png"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/livres/?outputType=xml",
+            "name": "Libération",
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/livres/feed/",
+            "name": "Les Inrocks",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/livres/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./lepointpop.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/livres/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/livres.rss",
+            "name": "Franceinfo",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Films & séries": [
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_cinema.xml",
+            "name": "Le Figaro",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.telerama.fr/rss/series-tv.xml",
+            "name": "Télérama",
+            "specification": "news-notif bigHeadline",
+            "count": 1,
+            "iconImg": "./telerama.png",
+            "backgroundImg": "./telerama_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.telerama.fr/rss/cinema.xml",
+            "name": "Télérama",
+            "specification": "news-notif bigHeadline",
+            "count": 2,
+            "iconImg": "./telerama.png",
+            "backgroundImg": "./telerama_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.premiere.fr/rss/actu-cinema",
+            "name": "Première",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./premiere.png",
+            "backgroundImg": "./premiere_bgIMG.png"
+          },
+          {
+            "url": "https://www.melty.fr/cinema-2.rss",
+            "name": "Melty",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./melty.png",
+            "backgroundImg": "./melty_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/cinema/feed/",
+            "name": "Les Inrocks",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
+          },
+          {
+            "url": "http://rss.allocine.fr/ac/actualites/cine",
+            "name": "Allociné",
+            "specification": "news-notif bigHeadline",
+            "count": 2,
+            "iconImg": "./allocine.png",
+            "backgroundImg": ".allocine_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/category/cinema/feed/",
+            "name": "Le journal du geek",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/series/feed/",
+            "name": "Le journal du geek",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.numerama.com/pop-culture/cinema/feed/",
+            "name": "Numerama",
+            "specification": "news-notif bigHeadline",
+            "count": 2,
+            "iconImg": "./numerama.png",
+            "backgroundImg": "./numerama_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/cinema.rss",
+            "name": "Franceinfo",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.tomsguide.fr/tag/cinema/feed/",
+            "name": "Tom's guide",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./tomsguide.png",
+            "backgroundImg": "./tomsguide_bgIMG.jpg"
           }
         ],
         "Arts visuels & graphiques": [
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/arts/?outputType=xml",
+            "name": "Libération",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/arts/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lepointpop.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/arts-expos/design.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
         ],
         "Spectacles & expositions": [
           {
             "url": "https://www.lefigaro.fr/rss/figaro_theatre.xml",
             "name": "Le Figaro",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
@@ -264,6 +697,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_arts-expositions.xml",
             "name": "Le Figaro",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
@@ -272,60 +706,326 @@
           {
             "url": "https://www.ladepeche.fr/culture-et-loisirs/spectacles/rss.xml",
             "name": "La Dépêche",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/scenes/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/arts-et-scenes/feed/",
+            "name": "Les Inrocks",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/scenes/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/arts-expos.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
-        "Films & séries": [
+        "Mode & célébrités" : [
           {
-            "url": "https://www.francetvinfo.fr/cinema.rss",
-            "name": "Franceinfo",
+            "url": "https://vl-media.fr/categories/mode/feed/",
+            "name": "Vanity Fair",
+            "specification": "news-focus",
+            "encodedTitles": true,
             "count": 2,
+            "iconImg": "./vanityfair.png",
+            "backgroundImg": "./vanityfair_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/m-mode/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-notif",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/mode.rss",
+            "name": "Franceinfo",
+            "specification": "news-notif",
+            "encodedTitles": true,
+            "count": 1,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
           {
-            "url": "https://www.lefigaro.fr/rss/figaro_cinema.xml",
-            "name": "Le Figaro",
-            "encodedTitles": true,
+            "url": "https://www.bfmtv.com/rss/people/mode/",
+            "name": "BFM TV",
+            "specification": "news-notif",
             "count": 1,
-            "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro_bgIMG.png"
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
           }
         ],
-        "Jeux vidéos": [
+        "Jeux vidéo": [
           {
-            "url": "https://www.ladepeche.fr/economie/innovation-high-tech/jeux-consoles/rss.xml",
-            "name": "La Dépêche",
+            "url": "https://www.presse-citron.net/category/lifestyle/jeu-video/feed",
+            "name": "Presse citron",
             "encodedTitles": true,
             "count": 2,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
+            "iconImg": "./pressecitron.png",
+            "backgroundImg": "./pressecitron_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/jeux-video/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/jeux-video/feed/",
+            "name": "Les Inrocks",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/jeux-video/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/category/jeux-video/feed/",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/jeux-video.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.tomsguide.fr/tag/jeux-video/feed/",
+            "name": "Tom's guide",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./tomsguide.png",
+            "backgroundImg": "./tomsguide_bgIMG.jpg"
           }
         ],
-        "Patrimoine & Architecture": [
+        "Patrimoine & architecture": [
           {
             "url": "https://www.ladepeche.fr/culture-et-loisirs/patrimoine/rss.xml",
             "name": "La Dépêche",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/architecture/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/arts-expos/architecture.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
-        "Artistes": [
+        "Arts du spectacle": [
+
+        ],
+         "Musique": [
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/musique/?outputType=xml",
+            "name": "Libération",
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/musique/feed/",
+            "name": "Les Inrocks",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/musique/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./lepointpop.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/people/musique/",
+            "name": "BFM TV",
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/musiques/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.melty.fr/musique-4.rss",
+            "name": "Melty",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./melty.png",
+            "backgroundImg": "./melty_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/culture/musique/rss",
+            "name": "France 3",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
         ],
         "Histoire": [
           {
             "url": "https://www.lefigaro.fr/rss/figaro_histoire.xml",
             "name": "Le Figaro",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.letelegramme.fr/histoire/rss.xml",
+            "name": "Le Télégramme",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./letelegramme.png",
+            "backgroundImg": "./letelegramme_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/culture/histoire/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.courrierinternational.com/feed/category/6679/rss.xml",
+            "name": "Courrier International",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./courrierinter.png",
+            "backgroundImg": "./courrierinter_bgIMG.jpg"
           }
+        ],
+        "Presse étrangère": [
+          {
+            "url": "https://www.telegraph.co.uk/art/rss.xml",
+            "name": "The Telegraph",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./thetelegraph.png",
+            "backgroundImg": "./thetelegraph_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.theguardian.com/uk/culture/rss",
+            "name": "The Guardian",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./theguardian.png",
+            "backgroundImg": "./theguardian_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bbc.com/culture/feed.rss",
+            "name": "BBC News",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
+          },
+          {
+            "url": "https://rss.dw.com/xml/rss-de-cul",
+            "name": "Deutsche Welle",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./dw.png",
+            "backgroundImg": "./dw_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.newyorker.com/feed/culture",
+            "name": "The New Yorker",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./thenewyorker.png",
+            "backgroundImg": "./thenewyorker_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/kultur.1495.de.rss",
+            "name": "Deutschlandfunk",
+            "encodedTitles": true,
+            "specification": "news-list ",
+            "count": 2,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
+          }  
         ]
       }
     },
@@ -335,6 +1035,7 @@
           {
             "url": "https://www.lemonde.fr/sport/rss_full.xml",
             "name": "Le Monde",
+            "encodedTitles": true,
             "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.png"
@@ -350,7 +1051,7 @@
             "url": "https://www.lefigaro.fr/rss/figaro_sport.xml",
             "name": "Le Figaro",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
           },
@@ -363,11 +1064,25 @@
             "backgroundImg": "./lexpress.jpeg"
           },
           {
-            "url": "https://www.nouvelobs.com/sport/rss.xml",
-            "name": "L'Obs",
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sports/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.letelegramme.fr/sports/rss.xml",
+            "name": "Le Télégramme",
+            "count": 1,
+            "iconImg": "./letelegramme.png",
+            "backgroundImg": "./letelegramme_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss.xml",
+            "name": "L'Équipe",
             "count": 2,
-            "iconImg": "./lobs.png",
-            "backgroundImg": "./lobs_bgIMG.jpg"
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "Football": [
@@ -392,6 +1107,21 @@
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/football/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Football.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "Sports de raquettes": [
@@ -414,9 +1144,40 @@
             "url": "https://www.ladepeche.fr/sport/tennis-de-table/rss.xml",
             "name": "La Dépêche",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/tennis/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Tennis.xml",
+            "name": "L'Équipe",
+            "count": 1,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/tennis-de-table.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/badminton.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
         "Basketball": [
@@ -434,6 +1195,21 @@
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/basket/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Basket.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "Rugby": [
@@ -443,64 +1219,21 @@
             "count": 2,
             "iconImg": "./rmcsport.jpeg",
             "backgroundImg": "./rmcsport_bgIMG.jpg"
-          }
-        ],
-        "Handball & volleyball": [
-          {
-            "url": "https://rmcsport.bfmtv.com/rss/handball/",
-            "name": "RMC Sport",
-            "count": 1,
-            "iconImg": "./rmcsport.jpeg",
-            "backgroundImg": "./rmcsport_bgIMG.jpg"
           },
           {
-            "url": "https://rmcsport.bfmtv.com/rss/volley/",
-            "name": "RMC Sport",
-            "count": 2,
-            "iconImg": "./rmcsport.jpeg",
-            "backgroundImg": "./rmcsport_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.ladepeche.fr/sport/handball/rss.xml",
-            "name": "La Dépêche",
+            "url": "https://www.lemonde.fr/rugby/rss_full.xml",
+            "name": "Le Monde",
             "encodedTitles": true,
             "count": 1,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          }
-        ],
-        "Sports nautiques & plongée": [
-          {
-            "url": "https://rmcsport.bfmtv.com/rss/voile/",
-            "name": "RMC Sport",
-            "count": 1,
-            "iconImg": "./rmcsport.jpeg",
-            "backgroundImg": "./rmcsport_bgIMG.jpg"
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
           },
           {
-            "url": "https://www.ladepeche.fr/sport/nautisme/rss.xml",
-            "name": "La Dépêche",
-            "encodedTitles": true,
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Rugby.xml",
+            "name": "L'Équipe",
             "count": 2,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          }
-        ],
-        "Golf": [
-          {
-            "url": "https://rmcsport.bfmtv.com/rss/golf/",
-            "name": "RMC Sport",
-            "count": 2,
-            "iconImg": "./rmcsport.jpeg",
-            "backgroundImg": "./rmcsport_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.ladepeche.fr/sport/golf/rss.xml",
-            "name": "La Dépêche",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "Cyclisme": [
@@ -515,9 +1248,78 @@
             "url": "https://www.ladepeche.fr/sport/cyclisme/rss.xml",
             "name": "La Dépêche",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/cyclisme/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Cyclisme.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          }
+        ],
+        "Sports mécaniques": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/auto-moto/",
+            "name": "RMC Sport",
+            "count": 2,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sport/auto-moto/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/sports-mecaniques/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_F1.xml",
+            "name": "L'Équipe",
+            "count": 1,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Moto.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Rallye.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/auto-moto.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
         "Athlétisme": [
@@ -532,32 +1334,168 @@
             "url": "https://www.ladepeche.fr/sport/athletisme/rss.xml",
             "name": "La Dépêche",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/athletisme/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Athletisme.xml",
+            "name": "L'Équipe",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
-        "Auto Moto": [
+        "Handball & volleyball": [
           {
-            "url": "https://rmcsport.bfmtv.com/rss/auto-moto/",
+            "url": "https://rmcsport.bfmtv.com/rss/handball/",
             "name": "RMC Sport",
+            "count": 1,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/volley/",
+            "name": "RMC Sport",
+            "count": 1,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/handball/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Volley.xml",
+            "name": "L'Équipe",
+            "count": 1,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Hand.xml",
+            "name": "L'Équipe",
+            "count": 1,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          }
+        ],
+        "Sports nautiques": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/voile/",
+            "name": "RMC Sport",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sport/nautisme/rss.xml",
+            "name": "La Dépêche",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Natation.xml",
+            "name": "L'Équipe",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/water-polo.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/voile.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/canoe-kayak.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/aviron.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Golf": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/golf/",
+            "name": "RMC Sport",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./rmcsport.jpeg",
             "backgroundImg": "./rmcsport_bgIMG.jpg"
           },
           {
-            "url": "https://www.ladepeche.fr/sport/auto-moto/rss.xml",
+            "url": "https://www.ladepeche.fr/sport/golf/rss.xml",
             "name": "La Dépêche",
+            "specification": "news-list",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/golf/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Golf.xml",
+            "name": "L'Équipe",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
           }
         ],
         "Sports de combat": [
           {
             "url": "https://rmcsport.bfmtv.com/rss/sports-de-combat/",
             "name": "RMC Sport",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./rmcsport.jpeg",
             "backgroundImg": "./rmcsport_bgIMG.jpg"
@@ -565,40 +1503,195 @@
           {
             "url": "https://www.ladepeche.fr/sport/sports-de-combat/rss.xml",
             "name": "La Dépêche",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          }
-        ],
-        "Pétanque": [
-          {
-            "url": "https://www.ladepeche.fr/sport/petanque/rss.xml",
-            "name": "La Dépêche",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          }
-        ],
-        "Sports d'hiver": [
-          {
-            "url": "https://www.ladepeche.fr/sport/sports-d-hiver/rss.xml",
-            "name": "La Dépêche",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
           },
           {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Judo.xml",
+            "name": "L'Équipe",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/boxe.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Pétanque": [
+          {
+            "url": "https://www.ladepeche.fr/sport/petanque/rss.xml",
+            "name": "La Dépêche",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/petanque.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Sports d'hiver": [
+          {
+            "url": "https://www.ladepeche.fr/sport/sports-d-hiver/rss.xml",
+            "name": "La Dépêche",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
             "url": "https://rmcsport.bfmtv.com/rss/sports-d-hiver/",
             "name": "RMC Sport",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./rmcsport.jpeg",
             "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Ski.xml",
+            "name": "L'Équipe",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/sports-d-hiver.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
-        "E-Sports & sports d'esprit": [
+        "E-sports & sports d'esprit": [
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_esport.xml",
+            "name": "L'Équipe",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./lequipe.png",
+            "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://plus.lefigaro.fr/tag/esport/rss.xml",
+            "name": "Le Figaro",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.lemonde.fr/e-sport/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/esport.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Handisports": [
+          {
+            "url": "https://www.francetvinfo.fr/sports/handisport.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Presse étrangère": [
+          {
+            "url": "http://feeds.foxnews.com/foxnews/sports?format=xml",
+            "name": "FOX news",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./foxnews.png",
+            "backgroundImg": "./foxnews_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.bbci.co.uk/sport/rss.xml",
+            "name": "BBC News",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
+          },
+          {
+            "url": "http://www.independent.co.uk/sport/rss",
+            "name": "The Independent",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./theindependent.png",
+            "backgroundImg": "./theindependent_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.washingtonpost.com/rss/sports",
+            "name": "The Washington Post",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./wpost.png",
+            "backgroundImg": "./wpost_bgIMG.jpg"
+          },
+          {
+            "url": "https://rss.dw.com/xml/rss-de-sport",
+            "name": "Deutsche Welle",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./dw.png",
+            "backgroundImg": "./dw_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.newyorker.com/feed/news/sporting-scene",
+            "name": "The New Yorker",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./thenewyorker.png",
+            "backgroundImg": "./thenewyorker_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/sport.1494.de.rss",
+            "name": "Deutschlandfunk",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
+          } 
         ]
       }
     },
@@ -608,6 +1701,7 @@
           {
             "url": "https://www.france24.com/fr/europe/rss",
             "name": "France 24",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
@@ -615,6 +1709,8 @@
           {
             "url": "https://www.lemonde.fr/europe/rss_full.xml",
             "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -622,10 +1718,208 @@
           {
             "url": "https://www.francetvinfo.fr/monde/europe.rss",
             "name": "Franceinfo",
+            "specification": "news-notif bigHeadline smallDesc",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/europe/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/international/europe/",
+            "name": "BFM TV",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          }
+        ],
+        "Allemagne": [
+          {
+            "url": "https://www.francetvinfo.fr/monde/europe/allemagne.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 4,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Royaume-Uni": [
+          {
+            "url": "https://www.francetvinfo.fr/monde/royaume-uni.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 4,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Italie": [
+          {
+            "url": "https://www.francetvinfo.fr/monde/italie.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 4,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Russie": [
+          {
+            "url": "https://www.francetvinfo.fr/monde/russie.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 4,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Espagne": [
+          {
+            "url": "https://www.francetvinfo.fr/monde/espagne.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 4,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Benelux": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/international/luxembourg/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/international/belgique/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/monde/pays-bas.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
+        ],
+        "Suisse": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/international/suisse/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 4,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Norvège": [
+          {
+            "url": "https://www.francetvinfo.fr/monde/norvege.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 4,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Balkans": [
+          {
+            "url": "https://www.francetvinfo.fr/monde/grece.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/monde/turquie.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Presse étrangère": [
+          {
+            "url": "http://feeds.washingtonpost.com/rss/world/europe",
+            "name": "The Washington Post",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./wpost.png",
+            "backgroundImg": "./wpost_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.economist.com/feeds/print-sections/75/europe.xml",
+            "name": "The Economist",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./theeconomist.png",
+            "backgroundImg": "./theeconomist_bgIMG.jpg"
+          },
+          {
+            "url": "https://rss.nytimes.com/services/xml/rss/nyt/Europe.xml",
+            "name": "The New York Times",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./thenytimes.png",
+            "backgroundImg": "./thenytimes_bgIMG.jpg"
+          },
+          {
+            "url": "http://rss.cnn.com/rss/edition_europe.rss",
+            "name": "CNN",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./cnn.png",
+            "backgroundImg": "./cnn_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.bbci.co.uk/news/world/europe/rss.xml?edition=int",
+            "name": "BBC News",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/europa.1863.de.rss",
+            "name": "Deutschlandfunk",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
+          }    
         ]
       }
     },
@@ -635,6 +1929,7 @@
           {
             "url": "https://www.france24.com/fr/rss",
             "name": "France 24",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
@@ -642,71 +1937,274 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_international.xml",
             "name": "Le Figaro",
+            "specification": "news-notif bigHeadline smallDesc",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
           },
           {
-            "url": "https://www.ladepeche.fr/actu/international/rss.xml",
-            "name": "La Dépêche",
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/international/",
+            "name": "BFM TV",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://syndication.lesechos.fr/rss/Echos_monde.xml",
+            "name": "Les Échos",
+            "specification": "news-notif bigHeadline smallDesc",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lesechos.png",
+            "backgroundImg": "./lesechos_bgIMG.jpg"
+          },
+          {
+            "url": "https://information.tv5monde.com/afprss/francais--journal--mon",
+            "name": "TV5 Monde",
+            "specification": "news-notif bigHeadline smallDesc",
             "encodedTitles": true,
             "count": 1,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
+            "iconImg": "./tv5monde.png",
+            "backgroundImg": "./tv5monde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.challenges.fr/monde/rss.xml",
+            "name": "Challenges",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 2,
+            "iconImg": "./challenges.png",
+            "backgroundImg": "./challenges_bgIMG.jpg"
           }
         ],
         "Afrique": [
           {
             "url": "https://www.france24.com/fr/afrique/rss",
             "name": "France 24",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/afrique/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/afrique/rss.xml",
+            "name": "Le Point",
+            "specification": "news-notif bigHeadline smallDesc",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/international/afrique/",
+            "name": "BFM TV",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/afrique/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
         "Amérique": [
           {
             "url": "https://www.france24.com/fr/amériques/rss",
             "name": "France 24",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/amerique/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/international/amerique-nord/",
+            "name": "BFM TV",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/international/amerique-latine/",
+            "name": "BFM TV",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/ameriques/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
         "Asie Pacifique": [
           {
             "url": "https://www.france24.com/fr/asie-pacifique/rss",
             "name": "France 24",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/asie-pacifique/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/international/asie/",
+            "name": "BFM TV",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/international/oceanie/",
+            "name": "BFM TV",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/asie-pacifique/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
         "Moyen-Orient": [
           {
             "url": "https://www.france24.com/fr/moyen-orient/rss",
             "name": "France 24",
+            "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/moyen-orient/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/international/moyen-orient/",
+            "name": "BFM TV",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/proche-orient/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
-        "En anglais": [
+        "Presse étrangère": [
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
             "name": "The New York Times",
-            "count": 3,
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
             "iconImg": "./thenytimes.png",
             "backgroundImg": "./thenytimes_bgIMG.jpg"
           },
           {
             "url": "http://feeds.bbci.co.uk/news/video_and_audio/world/rss.xml",
             "name": "BBC News",
-            "count": 3,
+            "specification": "news-list",
+            "count": 2,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.theguardian.com/world/rss",
+            "name": "The Guardian",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./theguardian.png",
+            "backgroundImg": "./theguardian_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.foxnews.com/foxnews/world?format=xml",
+            "name": "FOX news",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./foxnews.png",
+            "backgroundImg": "./foxnews_bgIMG.jpg"
+          },
+          {
+            "url": "http://rss.cnn.com/rss/edition_world.rss",
+            "name": "CNN",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./cnn.png",
+            "backgroundImg": "./cnn_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/eine-welt.798.de.rss",
+            "name": "Deutschlandfunk",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 3,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
+          }   
         ]
       }
     },
@@ -716,15 +2214,35 @@
           {
             "url": "https://www.tagesschau.de/xml/rss2",
             "name": "Tagesschau.de",
+            "specification": "news-notif smallDesc bigHeadline",
             "count": 2,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde.png"
+            "iconImg": "./tagesschau.png",
+            "backgroundImg": "./tagesschau_bgIMG.png"
+          },
+          {
+            "url": "https://rss.dw.com/xml/rss-de-top",
+            "name": "Deutsche Welle",
+            "encodedTitles": true,
+            "specification": "news-notif smallDesc bigHeadline",
+            "count": 2,
+            "iconImg": "./dw.png",
+            "backgroundImg": "./dw_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/die-nachrichten.353.de.rss",
+            "name": "Deutschlandfunk",
+            "encodedTitles": true,
+            "specification": "news-notif smallDesc bigHeadline",
+            "count": 2,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
           }
         ],
         "United States & Canada": [
           {
             "url": "https://www.cbsnews.com/latest/rss/main",
             "name": "CBS News",
+            "specification": "news-notif smallDesc bigHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./cbsnews.png",
@@ -733,6 +2251,7 @@
           {
             "url": "https://www.latimes.com/world-nation/rss2.0.xml",
             "name": "Los Angeles Times",
+            "specification": "news-notif smallDesc bigHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./latimes.png",
@@ -741,15 +2260,50 @@
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml",
             "name": "The New York Times",
+            "specification": "news-notif smallDesc bigHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./thenytimes.png",
             "backgroundImg": "./thenytimes_bgIMG.jpg"
+          },
+          {
+            "url": "http://rss.cnn.com/rss/edition_us.rss",
+            "name": "CNN",
+            "specification": "news-notif smallDesc bigHeadline",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./cnn.png",
+            "backgroundImg": "./cnn_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.newyorker.com/feed/news",
+            "name": "The New Yorker",
+            "specification": "news-focus",
+            "count": 1,
+            "iconImg": "./thenewyorker.png",
+            "backgroundImg": "./thenewyorker_bgIMG.jpg"
           }
         ],
         "Australia & NZ": [
         ],
-        "United Kindgom": [
+        "United Kingdom": [
+          {
+            "url": "https://www.theguardian.com/uk-news/rss",
+            "name": "The Guardian",
+            "specification": "news-notif smallDesc bigHeadline",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./theguardian.png",
+            "backgroundImg": "./theguardian_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.bbci.co.uk/news/uk/rss.xml",
+            "name": "BBC News",
+            "specification": "news-notif smallDesc bigHeadline",
+            "count": 2,
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
+          }
         ]
       }
     },
@@ -759,12 +2313,41 @@
           {
             "url": "https://www.francetvinfo.fr/sciences.rss",
             "name": "Franceinfo",
-            "count": 2,
+            "encodedTitles": true,
+            "count": 1,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
-          }
-        ],
-        "Nature & environnement": [
+          },
+          {
+            "url": "https://www.lepoint.fr/sciences/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/sciences/",
+            "name": "BFM TV",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.sciencesetavenir.fr/rss.xml",
+            "name": "Sciences et Avenir",
+            "count": 2,
+            "iconImg": "./sciencesetavenir.png",
+            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/science/feed/",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
           {
             "url": "https://www.lefigaro.fr/rss/figaro_sciences.xml",
             "name": "Le Figaro",
@@ -774,40 +2357,70 @@
             "backgroundImg": "./lefigaro_bgIMG.png"
           },
           {
-            "url": "https://www.ladepeche.fr/actu/environnement/rss.xml",
-            "name": "La Dépêche",
+            "url": "https://information.tv5monde.com/afprss/francais--journal--sci",
+            "name": "TV5 Monde",
             "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          }
-        ],
-        "Espace & astronomie": [
+            "count": 1,
+            "iconImg": "./tv5monde.png",
+            "backgroundImg": "./tv5monde_bgIMG.jpg"
+          },
           {
-            "url": "https://www.ladepeche.fr/actu/sciences-et-techniques/espace/rss.xml",
-            "name": "La Dépêche",
-            "encodedTitles": true,
+            "url": "https://www.01net.com/rss/actualites/science-recherche/",
+            "name": "01NET",
             "count": 2,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
+            "iconImg": "./01net.png",
+            "backgroundImg": ".01net_bgIMG.jpg"
           }
         ],
-        "Technologie & informatique": [
+        "Astronomie & espace": [
           {
-            "url": "https://www.ladepeche.fr/economie/innovation-high-tech/rss.xml",
-            "name": "La Dépêche",
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sciences/espace/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/astronomie/rss.xml",
+            "name": "Le Point",
             "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/espace/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.sciencesetavenir.fr/espace/rss.xml",
+            "name": "Sciences et Avenir",
+            "specification": "news-list",
             "count": 2,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
+            "iconImg": "./sciencesetavenir.png",
+            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.futura-sciences.com/rss/espace/actualites.xml",
+            "name": "Futura Sciences",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./futura.png",
+            "backgroundImg": "./futura_bgIMG.jpg"
           }
-        ],
-        "Physique-chimie & biologie": [
         ],
         "Médecine & santé": [
           {
             "url": "https://www.francetvinfo.fr/sante.rss",
             "name": "Franceinfo",
+            "encodedTitles": true,
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
@@ -816,69 +2429,370 @@
             "url": "https://www.ladepeche.fr/sante/rss.xml",
             "name": "La Dépêche",
             "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          }
-        ]
-      }
-    },
-    "Art de vivre": {
-      "subtopics": {
-        "noSubtopic": [
-          {
-            "url": "https://www.lefigaro.fr/rss/figaro_lifestyle.xml",
-            "name": "Le Figaro",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro_bgIMG.png"
-          }
-        ],
-        "Voyages": [
-        ],
-        "Loisirs": [
-          {
-            "url": "https://www.ladepeche.fr/culture-et-loisirs/rss.xml",
-            "name": "La Dépêche",
-            "encodedTitles": true,
             "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
-          }
-        ],
-        "Gastronomie & terroir": [
-          {
-            "url": "https://www.ladepeche.fr/culture-et-loisirs/gastronomie-et-terroir/rss.xml",
-            "name": "La Dépêche",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          }
-        ],
-        "Insolite & découvertes": [
-          {
-            "url": "https://www.francetvinfo.fr/decouverte/bizarre.rss",
-            "name": "Franceinfo",
-            "count": 1,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
           {
-            "url": "https://www.ladepeche.fr/insolite/rss.xml",
-            "name": "La Dépêche",
+            "url": "https://www.leprogres.fr/magazine-sante/rss",
+            "name": "Le Progrès",
             "encodedTitles": true,
             "count": 1,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
+            "iconImg": "./leprogres.png",
+            "backgroundImg": "./leprogres_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/sante/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/sante/",
+            "name": "BFM TV",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/medecine/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.sciencesetavenir.fr/sante/rss.xml",
+            "name": "Sciences et Avenir",
+            "count": 2,
+            "iconImg": "./sciencesetavenir.png",
+            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.futura-sciences.com/rss/sante/actualites.xml",
+            "name": "Futura Sciences",
+            "count": 2,
+            "iconImg": "./futura.png",
+            "backgroundImg": "./futura_bgIMG.jpg"
+          },
+          {
+            "url": "https://information.tv5monde.com/afprss/francais--journal--medecine",
+            "name": "TV5 Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./tv5monde.png",
+            "backgroundImg": "./tv5monde_bgIMG.jpg"
+          }
+        ],
+        "Sciences physiques & mathématiques": [
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sciences/physique/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/physique/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.sciencesetavenir.fr/fondamental/rss.xml",
+            "name": "Sciences et Avenir",
+            "count": 2,
+            "iconImg": "./sciencesetavenir.png",
+            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.futura-sciences.com/rss/mathematiques/actualites.xml",
+            "name": "Futura Sciences",
+            "count": 2,
+            "iconImg": "./futura.png",
+            "backgroundImg": "./futura_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
           {
-            "url": "https://www.newyorker.com/feed/everything",
-            "name": "The New Yorker",
+            "url": "https://www.telegraph.co.uk/science/rss.xml",
+            "name": "The Telegraph",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./thetelegraph.png",
+            "backgroundImg": "./thetelegraph_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.techrepublic.com/rssfeeds/articles/?feedType=rssfeeds&sort=latest",
+            "name": "TechRepublic",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./techrep.png",
+            "backgroundImg": "./techrep_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.theguardian.com/science/rss",
+            "name": "The Guardian",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./theguardian.png",
+            "backgroundImg": "./theguardian_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.forbes.com/science/feed2/",
+            "name": "Forbes",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./forbes.png",
+            "backgroundImg": "./forbes_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+            "name": "BBC News",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.wired.com/feed/science/rss",
+            "name": "Wired",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./wired.png",
+            "backgroundImg": "./wired_bgIMG.jpg"
+          },
+          {
+            "url": "https://rss.dw.com/xml/rss-de-wissenschaft",
+            "name": "Deutsche Welle",
+            "encodedTitles": true,
+            "specification": "news-list",
             "count": 2,
+            "iconImg": "./dw.png",
+            "backgroundImg": "./dw_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/forschung-aktuell.675.de.rss",
+            "name": "Deutschlandfunk",
+            "encodedTitles": true,
+            "specification": "news-list ",
+            "count": 2,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
+          }   
+        ]
+      }
+    },
+    "Technologie & informatique": {
+      "subtopics": {
+        "noSubtopic": [
+          {
+            "url": "https://www.bfmtv.com/rss/tech/",
+            "name": "BFM TV",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.sciencesetavenir.fr/high-tech/rss.xml",
+            "name": "Sciences et Avenir",
+            "count": 2,
+            "iconImg": "./sciencesetavenir.png",
+            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.futura-sciences.com/rss/high-tech/actualites.xml",
+            "name": "Futura Sciences",
+            "count": 2,
+            "iconImg": "./futura.png",
+            "backgroundImg": "./futura_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/high-tech/feed/",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.numerama.com/tech/feed/",
+            "name": "Numerama",
+            "count": 2,
+            "iconImg": "./numerama.png",
+            "backgroundImg": "./numerama_bgIMG.jpg"
+          },
+          {
+            "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=tech",
+            "name": "Tech Insider",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./tinsider.png",
+            "backgroundImg": "./tinsider_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.01net.com/rss/actualites/technos/",
+            "name": "01NET",
+            "count": 2,
+            "iconImg": "./01net.png",
+            "backgroundImg": ".01net_bgIMG.jpg"
+          }
+        ],
+        "Smartphones": [
+          {
+            "url": "https://www.journaldugeek.com/category/smartphone/feed/",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.01net.com/rss/smartphones/",
+            "name": "01NET",
+            "count": 2,
+            "iconImg": "./01net.png",
+            "backgroundImg": ".01net_bgIMG.jpg"
+          }
+
+        ],
+        "Intelligence artificielle": [
+          {
+            "url": "https://www.sciencesetavenir.fr/high-tech/intelligence-artificielle/rss.xml",
+            "name": "Sciences et Avenir",
+            "count": 2,
+            "iconImg": "./sciencesetavenir.png",
+            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/category/intelligence-artificielle/feed/",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldunet.com/intelligence-artificielle/rss",
+            "name": "Journal du Net",
+            "count": 2,
+            "iconImg": "./jdn.png",
+            "backgroundImg": ".jdn_bgIMG.jpg"
+          }
+        ],
+        "Développeurs": [
+
+        ],
+        "Réalité virtuelle": [
+
+        ],
+        "GAFAM": [
+          {
+            "url": "https://www.journaldugeek.com/tag/gafam/feed",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/apple/feed",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/microsoft/feed",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/facebook/feed",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/google/feed",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          }
+
+        ],
+        "Big data & sécurité": [
+          {
+            "url": "https://www.journaldugeek.com/category/securite/feed/",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.01net.com/rss/actualites/securite/",
+            "name": "01NET",
+            "count": 2,
+            "iconImg": "./01net.png",
+            "backgroundImg": ".01net_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldunet.com/solutions/analytics/big-data/rss/",
+            "name": "Journal du Net",
+            "count": 2,
+            "iconImg": "./jdn.png",
+            "backgroundImg": ".jdn_bgIMG.jpg"
+          }
+        ],
+        "Web": [
+          {
+            "url": "https://www.sciencesetavenir.fr/high-tech/web/rss.xml",
+            "name": "Sciences et Avenir",
+            "count": 2,
+            "iconImg": "./sciencesetavenir.png",
+            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          }
+        ],
+        "Presse étrangère": [
+          {
+            "url": "https://www.businessinsider.de/tech/feed/",
+            "name": "Tech Insider",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./tinsider.png",
+            "backgroundImg": "./tinsider_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.newyorker.com/feed/tech",
+            "name": "The New Yorker",
+            "specification": "news-focus",
+            "count": 1,
+            "iconImg": "./thenewyorker.png",
+            "backgroundImg": "./thenewyorker_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.newyorker.com/feed/tech/elements",
+            "name": "The New Yorker",
+            "specification": "news-focus",
+            "count": 1,
             "iconImg": "./thenewyorker.png",
             "backgroundImg": "./thenewyorker_bgIMG.jpg"
           }
@@ -887,9 +2801,9 @@
     },
     "Politique": {
       "subtopics": {
-        "Nationale": [
+        "noSubtopic": [
           {
-            "url": "https://www.lefigaro.fr/rss/figaro_politique_le-scan.xml",
+            "url": "https://www.lefigaro.fr/rss/figaro_politique.xml",
             "name": "Le Figaro",
             "encodedTitles": true,
             "count": 2,
@@ -900,19 +2814,408 @@
             "url": "https://www.ladepeche.fr/actu/politique/rss.xml",
             "name": "La Dépêche",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/politique/?outputType=xml",
+            "name": "Libération",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/politique/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/politique/",
+            "name": "BFM TV",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/politique/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/politique.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/politique/rss",
+            "name": "France 3",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.challenges.fr/politique/rss.xml",
+            "name": "Challenges",
+            "count": 2,
+            "iconImg": "./challenges.png",
+            "backgroundImg": "./challenges_bgIMG.jpg"
+          },
+          {
+            "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=politique",
+            "name": "Insider",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./insider.png",
+            "backgroundImg": "./insider_bgIMG.jpg"
           }
         ],
-        "Locale": [
+        "Élections": [
+          {
+            "url": "https://feeds.leparisien.fr/leparisien/rss/elections",
+            "name": "Le Parisien",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./leparisien.png",
+            "backgroundImg": "./leparisien_bgIMG.jpg"
+          }
           
         ],
-        "Européene": [
+        "Presse étrangère": [
+          {
+            "url": "https://www.telegraph.co.uk/politics/rss.xml",
+            "name": "The Telegraph",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./thetelegraph.png",
+            "backgroundImg": "./thetelegraph_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/politics/rss.xml",
+            "name": "The New York Times",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./thenytimes.png",
+            "backgroundImg": "./thenytimes_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.foxnews.com/foxnews/politics?format=xml",
+            "name": "FOX news",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./foxnews.png",
+            "backgroundImg": "./foxnews_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.bbci.co.uk/news/politics/rss.xml",
+            "name": "BBC News",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
+          },
+          {
+            "url": "https://rss.dw.com/xml/rss-de-politik",
+            "name": "Deutsche Welle",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./dw.png",
+            "backgroundImg": "./dw_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.businessinsider.de/politik/feed/",
+            "name": "Insider",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./insider.png",
+            "backgroundImg": "./insider_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/politik.1499.de.rss",
+            "name": "Deutschlandfunk",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
+          } 
           
+        ]
+      }
+    },
+    "Régions & outre-mer": {
+      "subtopics": {
+        "noSubtopic": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/actu/rss",
+            "name": "France 3",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 8,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
         ],
-        "Mondiale": [
-          
+        "Auvergne-Rhône-Alpes": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/auvergne-rhone-alpes/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Bourgogne-Franche-Comté": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Bretagne": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/bretagne/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Centre-Val de Loire": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/centre-val-de-loire/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Corse": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/corse/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Grand Est": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/grand-est/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Guadeloupe": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/guadeloupe/actu/rss",
+            "name": "La 1ère",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./la1ere.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
+          }
+        ],
+        "Guyane": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/guyane/actu/rss",
+            "name": "La 1ère",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./la1ere.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
+          }
+        ],
+        "Hauts-de-France": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/hauts-de-france/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+
+        ],
+        "Ile-de-France": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/paris-ile-de-france/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Martinique": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/martinique/actu/rss",
+            "name": "La 1ère",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./la1ere.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
+          }
+        ],
+        "Mayotte": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/mayotte/actu/rss",
+            "name": "La 1ère",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./la1ere.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
+          }
+        ],
+        "Normandie": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/normandie/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Nouvelle-Aquitaine": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/nouvelle-aquitaine/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Nouvelle-Calédonie": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/nouvellecaledonie/actu/rss",
+            "name": "La 1ère",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./la1ere.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
+          }
+        ],
+        "Occitanie": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/occitanie/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Pays de la Loire": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/pays-de-la-loire/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Polynésie": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/polynesie/actu/rss",
+            "name": "La 1ère",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./la1ere.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
+          }
+
+        ],
+        "Provence-Alpes-Côte d’Azur": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/provence-alpes-cote-d-azur/actu/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+
+        ],
+        "Réunion": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/reunion/actu/rss",
+            "name": "La 1ère",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./la1ere.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
+          }
+
+        ],
+        "Saint-Pierre-et-Miquelon": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/saintpierremiquelon/actu/rss",
+            "name": "La 1ère",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./la1ere.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
+          }
+
+        ],
+        "Wallis-et-Futuna": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/wallisfutuna/actu/rss",
+            "name": "La 1ère",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 6,
+            "iconImg": "./la1ere.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
+          }
+
         ]
       }
     },
@@ -928,17 +3231,564 @@
             "backgroundImg": "./lefigaro_bgIMG.png"
           },
           {
-            "url": "https://www.ladepeche.fr/societe/rss.xml",
+            "url": "https://www.ladepeche.fr/actu/societe/rss.xml",
             "name": "La Dépêche",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/societe/?outputType=xml",
+            "name": "Libération",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/societe/",
+            "name": "BFM TV",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/societe/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://information.tv5monde.com/afprss/francais--journal--societe",
+            "name": "TV5 Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./tv5monde.png",
+            "backgroundImg": "./tv5monde_bgIMG.jpg"
           }
         ],
-        "Religion": [
+        "Religions": [
+          {
+            "url": "https://www.lemonde.fr/religions/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          }
         ],
-        "Demographie": [
+        "Éducation": [
+          {
+            "url": "https://www.lemonde.fr/education/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/societe/education.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/societe/education/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Discriminations": [
+
+        ],
+        "Immigration": [
+
+        ],
+        "Police & justice":[
+          {
+            "url": "https://www.lemonde.fr/police/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/justice/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/faits-divers/justice-proces.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/societe/justice/rss",
+            "name": "France 3",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Presse étrangère": [
+          {
+            "url": "https://www.deutschlandfunk.de/gesellschaft.1574.de.rss",
+            "name": "Deutschlandfunk",
+            "encodedTitles": true,
+            "specification": "news-notif smallDesc bigHeadline",
+            "count": 2,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
+          }
+        ]
+      }
+    },
+    "Nature & climat": {
+      "subtopics": {
+        "noSubtopic": [
+
+        ],
+        "Environnement & développement durable": [
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/environnement/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.leprogres.fr/environnement/rss",
+            "name": "Le Progrès",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./leprogres.png",
+            "backgroundImg": "./leprogres_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/environnement/",
+            "name": "BFM TV",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/planete/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.sciencesetavenir.fr/nature-environnement/rss.xml",
+            "name": "Sciences et Avenir",
+            "count": 2,
+            "iconImg": "./sciencesetavenir.png",
+            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.futura-sciences.com/rss/environnement/actualites.xml",
+            "name": "Futura Sciences",
+            "count": 2,
+            "iconImg": "./futura.png",
+            "backgroundImg": "./futura_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.numerama.com/sciences/environnementfeed/",
+            "name": "Numerama",
+            "count": 2,
+            "iconImg": "./numerama.png",
+            "backgroundImg": "./numerama_bgIMG.jpg"
+          },
+          {
+            "url": "https://information.tv5monde.com/afprss/francais--journal--environnement",
+            "name": "TV5 Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./tv5monde.png",
+            "backgroundImg": "./tv5monde_bgIMG.jpg"
+          }
+
+        ],
+        "Météo": [
+
+        ],
+        "Animaux": [
+
+        ],
+        "Agriculture": [
+
+        ]
+      }
+    },
+    "Art de vivre": {
+      "subtopics": {
+        "noSubtopic": [
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_lifestyle.xml",
+            "name": "Le Figaro",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://ici.radio-canada.ca/rss/4163",
+            "name": "Radio Canada",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./radiocanada.png",
+            "backgroundImg": "./radiocanada_bgIMG.png"
+          },
+          {
+            "url": "https://cdn1-parismatch.lanmedia.fr/var/exports/rss/rss-vivre.xml",
+            "name": "Paris Match",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./parismatch.png",
+            "backgroundImg": "./parismatch_bgIMG.png"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/?outputType=xml",
+            "name": "Libération",
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/actu/feed/",
+            "name": "Les Inrocks",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/art-de-vivre/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "specification": "firstFocus",
+            "count": 2,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/m-styles/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://information.tv5monde.com/afprss/francais--journal--clt",
+            "name": "TV5 Monde",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./tv5monde.png",
+            "backgroundImg": "./tv5monde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.courrierinternational.com/feed/category/7426/rss.xml",
+            "name": "Courrier International",
+            "specification": "news-notif bigHeadline",
+            "count": 2,
+            "iconImg": "./courrierinter.png",
+            "backgroundImg": "./courrierinter_bgIMG.jpg"
+          },
+          {
+            "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=lifestyle",
+            "name": "Insider",
+            "specification": "news-notif firstFocus",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./insider.png",
+            "backgroundImg": "./insider_bgIMG.jpg"
+          }
+        ],
+        "Tourisme & voyages": [
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/voyages/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.leprogres.fr/magazine-tourisme-et-patrimoine/rss",
+            "name": "Le Progrès",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./leprogres.png",
+            "backgroundImg": "./leprogres_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/voyages/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/sorties-loisirs/vacances/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.courrierinternational.com/feed/category/6271/rss.xml",
+            "name": "Courrier International",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./courrierinter.png",
+            "backgroundImg": "./courrierinter_bgIMG.jpg"
+          }
+        ],
+        "Loisirs": [
+          {
+            "url": "https://www.ladepeche.fr/culture-et-loisirs/rss.xml",
+            "name": "La Dépêche",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://feeds.leparisien.fr/leparisien/rss/culture-loisirs",
+            "name": "Le Parisien",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./leparisien.png",
+            "backgroundImg": "./leparisien_bgIMG.jpg"
+          }
+        ],
+        "Gastronomie & terroir": [
+          {
+            "url": "https://www.ladepeche.fr/culture-et-loisirs/gastronomie-et-terroir/rss.xml",
+            "name": "La Dépêche",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/gastronomie/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/gastronomie/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/cuisine/",
+            "name": "BFM TV",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/le-monde-passe-a-table/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/culture/gastronomie/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Luxe": [
+          {
+            "url": "https://www.challenges.fr/luxe/rss.xml",
+            "name": "Challenges",
+            "specification": "news-focus",
+            "count": 2,
+            "iconImg": "./challenges.png",
+            "backgroundImg": "./challenges_bgIMG.jpg"
+          }
+        ],
+        "Insolite & découvertes": [
+          {
+            "url": "https://www.francetvinfo.fr/decouverte/bizarre.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/insolite/rss.xml",
+            "name": "La Dépêche",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.leprogres.fr/insolite/rss",
+            "name": "Le Progrès",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./leprogres.png",
+            "backgroundImg": "./leprogres_bgIMG.jpg"
+          },
+          {
+            "url": "https://information.tv5monde.com/afprss/francais--journal--ins",
+            "name": "TV5 Monde",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./tv5monde.png",
+            "backgroundImg": "./tv5monde_bgIMG.jpg"
+          }
+        ],
+        "Culture web":[
+          {
+            "url": "https://www.lemonde.fr/cultures-web/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          }
+        ],
+        "Bien-être & productivité":[
+          {
+            "url": "https://www.letelegramme.fr/mieux-vivre/rss.xml",
+            "name": "Le Télégramme",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./letelegramme.png",
+            "backgroundImg": "./letelegramme_bgIMG.jpg"
+          },
+          {
+            "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=strategie",
+            "name": "Insider",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./insider.png",
+            "backgroundImg": "./insider_bgIMG.jpg"
+          }
+        ],
+        "Presse étrangère": [
+          {
+            "url": "https://www.newyorker.com/feed/everything",
+            "name": "The New Yorker",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./thenewyorker.png",
+            "backgroundImg": "./thenewyorker_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.washingtonpost.com/rss/lifestyle",
+            "name": "The Washington Post",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./wpost.png",
+            "backgroundImg": "./wpost_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.foxnews.com/foxnews/section/lifestyle?format=xml",
+            "name": "FOX news",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./foxnews.png",
+            "backgroundImg": "./foxnews_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.forbes.com/lifestyle/feed2/",
+            "name": "Forbes",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./forbes.png",
+            "backgroundImg": "./forbes_bgIMG.jpg"
+          },
+          {
+            "url": "https://rss.dw.com/xml/rss-de-deutschlandentdecken",
+            "name": "Deutsche Welle",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./dw.png",
+            "backgroundImg": "./dw_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.businessinsider.de/leben/feed/",
+            "name": "Insider",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./insider.png",
+            "backgroundImg": "./insider_bgIMG.jpg"
+          }
+        ]
+      }
+    },
+    "Auto": {
+      "subtopics": {
+        "noSubtopic": [
+
         ]
       }
     }

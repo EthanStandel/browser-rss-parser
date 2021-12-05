@@ -1,7 +1,3 @@
-/*/ Topic "monde" with subtopic "dossiers"/*/
-/*/ Banner "ARTE" to display just above the head title (here "monde" and above the first item of subtopic title) /*/
-
-<script>
 var dateJOURNAL = new Date(new Date().setHours(19, 45));
 
 //To calcute time before the ARTE JOURNAL
@@ -35,39 +31,4 @@ if (hours >= 18) {
 }
 arteNotif();
 }
-
 /*/ add line <div id="ArteBanner"></div> under the h3 element for main title of topic (subtopic title will be h4)/*/
-</script>
-
-[
-  {
-    "url": "https://www.lemonde.fr/international/rss_full.xml",
-    "name": "Le Monde",
-    "count":2,
-    "backgroundImg": /*/ use "./images/le_monde_bgIMG.jpg"/*/,
-    "IconImg": /*/ use "./images/le_monde.png"/*/,
-    "subtopic": "Dossiers"
-  },
-  {
-    "url": "https://www.lefigaro.fr/rss/figaro_international.xml",
-    "name": "Le Figaro",
-    "count":2,
-    "backgroundImg": /*/ use "./images/le_figaro_bgIMG.png"/*/,
-    "IconImg": /*/ use "./images/le_figaro.png"/*/
-  },
-  {
-    "url": "https://www.lexpress.fr/rss/monde.xml",
-    "name": "L'Express",
-    "count":2,
-    "backgroundIMG": /*/ use "./images/l'express_bgIMG.jpg"/*/,
-    "IconImg": /*/ use "./images/l'express.png"/*/
-  },
-  {
-    "url": "https://www.nouvelobs.com/monde/rss.xml",
-    "name": "L'Obs",
-    "count":2,
-    "backgroundIMG": /*/ use "./images/l'obs_bgIMG.jpg"/*/,
-    "IconImg": /*/ use "./images/l'obs.png"/*/,
-    "subtopic": "Dossiers"
-  }
-]
