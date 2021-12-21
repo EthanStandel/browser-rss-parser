@@ -49,10 +49,19 @@
           {
             "url": "http://www.20minutes.fr/rss/une.xml",
             "name": "20 Minutes",
+            "encodedTitles": true,
             "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./20minutes.png",
             "backgroundImg": "./20minutes_bgIMG.png"
+          },
+          {
+            "url": "https://www.linternaute.com/actualite/rss/",
+            "name": "L'internaute",
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 1,
+            "iconImg": "./linternaute.png",
+            "backgroundImg": "./linternaute_bgIMG.jpg"
           }
         ]
       }
@@ -657,6 +666,14 @@
             "count": 2,
             "iconImg": "./tomsguide.png",
             "backgroundImg": "./tomsguide_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.linternaute.com/cinema/rss/",
+            "name": "L'internaute",
+            "specification": "news-notif bigHeadline",
+            "count": 2,
+            "iconImg": "./linternaute.png",
+            "backgroundImg": "./linternaute_bgIMG.jpg"
           }
         ],
         "Arts visuels & graphiques": [
@@ -826,20 +843,19 @@
             "backgroundImg": ".jdg_bgIMG.jpg"
           },
           {
-            "url": "https://www.francetvinfo.fr/culture/jeux-video.rss",
-            "name": "Franceinfo",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          },
-          {
             "url": "https://www.tomsguide.fr/tag/jeux-video/feed/",
             "name": "Tom's guide",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./tomsguide.png",
             "backgroundImg": "./tomsguide_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.linternaute.com/hightech/jeux-video/rss/",
+            "name": "L'internaute",
+            "count": 1,
+            "iconImg": "./linternaute.png",
+            "backgroundImg": "./linternaute_bgIMG.jpg"
           }
         ],
         "Patrimoine & architecture": [
@@ -971,6 +987,14 @@
             "count": 2,
             "iconImg": "./courrierinter.png",
             "backgroundImg": "./courrierinter_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lhistoire.fr/rss.xml",
+            "name": "l'Histoire",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./lhistoire.png",
+            "backgroundImg": "./lhistoire_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -1025,6 +1049,14 @@
             "count": 2,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
+          },
+          {
+            "url": "https://taz.de/!p4639;rss/",
+            "name": "Die Tageszeitung",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./taz.png",
+            "backgroundImg": "./taz_bgIMG.png"
           }  
         ]
       }
@@ -1083,6 +1115,13 @@
             "count": 2,
             "iconImg": "./lequipe.png",
             "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.linternaute.com/sport/rss/",
+            "name": "L'internaute",
+            "count": 1,
+            "iconImg": "./linternaute.png",
+            "backgroundImg": "./linternaute_bgIMG.jpg"
           }
         ],
         "Football": [
@@ -1984,6 +2023,15 @@
             "count": 2,
             "iconImg": "./challenges.png",
             "backgroundImg": "./challenges_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.monde-diplomatique.fr/rss/",
+            "name": "Le Monde diplomatique",
+            "encodedTitles": true,
+            "specification": "news-notif bigHeadline smallDesc",
+            "count": 2,
+            "iconImg": "./lemonde-diplo.png",
+            "backgroundImg": "./lemonde-diplo.jpg"
           }
         ],
         "Afrique": [
@@ -2236,6 +2284,14 @@
             "count": 2,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
+          },
+          {
+            "url": "https://taz.de/!p4608;rss/",
+            "name": "Die Tageszeitung",
+            "specification": "news-notif smallDesc bigHeadline",
+            "count": 2,
+            "iconImg": "./taz.png",
+            "backgroundImg": "./taz_bgIMG.png"
           }
         ],
         "United States & Canada": [
@@ -2645,6 +2701,13 @@
             "count": 2,
             "iconImg": "./01net.png",
             "backgroundImg": ".01net_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.linternaute.com/hightech/rss/",
+            "name": "L'internaute",
+            "count": 1,
+            "iconImg": "./linternaute.png",
+            "backgroundImg": "./linternaute_bgIMG.jpg"
           }
         ],
         "Smartphones": [
@@ -2662,8 +2725,24 @@
             "count": 2,
             "iconImg": "./01net.png",
             "backgroundImg": ".01net_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.linternaute.com/hightech/mobile/rss/",
+            "name": "L'internaute",
+            "count": 1,
+            "iconImg": "./linternaute.png",
+            "backgroundImg": "./linternaute_bgIMG.jpg"
           }
-
+        ],
+        "Ordinateurs": [
+          {
+            "url": "https://www.linternaute.com/hightech/micro/rss/",
+            "name": "L'internaute",
+            "specification": "news-list",
+            "count": 3,
+            "iconImg": "./linternaute.png",
+            "backgroundImg": "./linternaute_bgIMG.jpg"
+          }
         ],
         "Intelligence artificielle": [
           {
@@ -2690,6 +2769,9 @@
           }
         ],
         "Développeurs": [
+
+        ],
+        "Infographie": [
 
         ],
         "Réalité virtuelle": [
@@ -3267,6 +3349,13 @@
             "count": 1,
             "iconImg": "./tv5monde.png",
             "backgroundImg": "./tv5monde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.linternaute.com/actualite/societe/rss/",
+            "name": "L'internaute",
+            "count": 1,
+            "iconImg": "./linternaute.png",
+            "backgroundImg": "./linternaute_bgIMG.jpg"
           }
         ],
         "Religions": [
@@ -3358,6 +3447,14 @@
             "count": 2,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
+          },
+          {
+            "url": "https://taz.de/!p4608;rss/",
+            "name": "Die Tageszeitung",
+            "specification": "news-notif smallDesc bigHeadline",
+            "count": 2,
+            "iconImg": "./taz.png",
+            "backgroundImg": "./taz_bgIMG.png"
           }
         ]
       }
@@ -3365,6 +3462,15 @@
     "Nature & climat": {
       "subtopics": {
         "noSubtopic": [
+          {
+            "url": "https://www.20minutes.fr/feeds/rss-planete.xml",
+            "name": "20 Minutes",
+            "encodedTitles": true,
+            "specification": "news-notif bigHeadline",
+            "count": 2,
+            "iconImg": "./20minutes.png",
+            "backgroundImg": "./20minutes_bgIMG.png"
+          }
 
         ],
         "Environnement & développement durable": [
@@ -3437,6 +3543,16 @@
         ],
         "Agriculture": [
 
+        ],
+        "Presse étrangère": [
+          {
+            "url": "https://taz.de/!p4624;rss/",
+            "name": "Die Tageszeitung",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./taz.png",
+            "backgroundImg": "./taz_bgIMG.png"
+          }  
         ]
       }
     },
@@ -3575,6 +3691,14 @@
             "count": 2,
             "iconImg": "./courrierinter.png",
             "backgroundImg": "./courrierinter_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.linternaute.com/voyage/rss/",
+            "name": "L'internaute",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./linternaute.png",
+            "backgroundImg": "./linternaute_bgIMG.jpg"
           }
         ],
         "Loisirs": [
@@ -3594,6 +3718,14 @@
             "count": 2,
             "iconImg": "./leparisien.png",
             "backgroundImg": "./leparisien_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.linternaute.fr/lifestyle/guide-du-lifestyle/jeux-loisirs/rss/",
+            "name": "L'internaute",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./linternaute.png",
+            "backgroundImg": "./linternaute_bgIMG.jpg"
           }
         ],
         "Gastronomie & terroir": [
@@ -3659,6 +3791,18 @@
             "iconImg": "./challenges.png",
             "backgroundImg": "./challenges_bgIMG.jpg"
           }
+        ],
+        "Habitat": [
+          {
+            "url": "https://maison.20minutes.fr/feed/",
+            "name": "20 Minutes",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 4,
+            "iconImg": "./20minutes.png",
+            "backgroundImg": "./20minutesmaison_bgIMG.jpg"
+          }
+
         ],
         "Insolite & découvertes": [
           {
@@ -3785,9 +3929,25 @@
         ]
       }
     },
-    "Auto": {
+    "Auto-moto": {
       "subtopics": {
         "noSubtopic": [
+          {
+            "url": "https://www.linternaute.com/auto/rss/",
+            "name": "L'internaute",
+            "specification": "news-notif bigHeadline",
+            "count": 4,
+            "iconImg": "./linternaute.png",
+            "backgroundImg": "./linternaute_bgIMG.jpg"
+          }
+        ],
+        "Constructeurs": [
+
+        ],
+        "Événements": [
+
+        ],
+        "Tuning": [
 
         ]
       }
