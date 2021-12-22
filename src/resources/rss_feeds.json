@@ -644,6 +644,7 @@
           {
             "url": "https://www.numerama.com/pop-culture/cinema/feed/",
             "name": "Numerama",
+            "encodedTitles": true,
             "specification": "news-notif bigHeadline",
             "count": 2,
             "iconImg": "./numerama.png",
@@ -999,15 +1000,6 @@
         ],
         "Presse étrangère": [
           {
-            "url": "https://www.telegraph.co.uk/art/rss.xml",
-            "name": "The Telegraph",
-            "specification": "news-list",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./thetelegraph.png",
-            "backgroundImg": "./thetelegraph_bgIMG.jpg"
-          },
-          {
             "url": "https://www.theguardian.com/uk/culture/rss",
             "name": "The Guardian",
             "specification": "news-list",
@@ -1029,7 +1021,7 @@
             "name": "Deutsche Welle",
             "encodedTitles": true,
             "specification": "news-list",
-            "count": 2,
+            "count": 1,
             "iconImg": "./dw.png",
             "backgroundImg": "./dw_bgIMG.jpg"
           },
@@ -1046,17 +1038,25 @@
             "name": "Deutschlandfunk",
             "encodedTitles": true,
             "specification": "news-list ",
-            "count": 2,
+            "count": 1,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
           },
           {
-            "url": "https://taz.de/!p4639;rss/",
+            "url": "https://taz.de/feed/!p4639/rss.xml",
             "name": "Die Tageszeitung",
             "specification": "news-list",
             "count": 1,
             "iconImg": "./taz.png",
-            "backgroundImg": "./taz_bgIMG.png"
+            "backgroundImg": "./taz_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=unterhaltung.bild.html",
+            "name": "Bild",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./bild.png",
+            "backgroundImg": "./bild_bgIMG.jpg"
           }  
         ]
       }
@@ -1727,10 +1727,18 @@
             "name": "Deutschlandfunk",
             "encodedTitles": true,
             "specification": "news-list",
-            "count": 2,
+            "count": 1,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
-          } 
+          },
+          {
+            "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=sport.bild.html",
+            "name": "Bild",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./bild.png",
+            "backgroundImg": "./bild_bgIMG.jpg"
+          }   
         ]
       }
     },
@@ -2286,12 +2294,20 @@
             "backgroundImg": "./dfunk_bgIMG.jpg"
           },
           {
-            "url": "https://taz.de/!p4608;rss/",
+            "url": "https://taz.de/feed/!p4608/rss.xml",
             "name": "Die Tageszeitung",
             "specification": "news-notif smallDesc bigHeadline",
             "count": 2,
             "iconImg": "./taz.png",
-            "backgroundImg": "./taz_bgIMG.png"
+            "backgroundImg": "./taz_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=news.bild.html",
+            "name": "Bild",
+            "specification": "news-notif smallDesc bigHeadline",
+            "count": 2,
+            "iconImg": "./bild.png",
+            "backgroundImg": "./bild_bgIMG.jpg"
           }
         ],
         "United States & Canada": [
@@ -2683,6 +2699,7 @@
           {
             "url": "https://www.numerama.com/tech/feed/",
             "name": "Numerama",
+            "encodedTitles": true,
             "count": 2,
             "iconImg": "./numerama.png",
             "backgroundImg": "./numerama_bgIMG.jpg"
@@ -2857,6 +2874,7 @@
           {
             "url": "https://www.businessinsider.de/tech/feed/",
             "name": "Tech Insider",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./tinsider.png",
@@ -2865,7 +2883,7 @@
           {
             "url": "https://www.newyorker.com/feed/tech",
             "name": "The New Yorker",
-            "specification": "news-focus",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./thenewyorker.png",
             "backgroundImg": "./thenewyorker_bgIMG.jpg"
@@ -2873,10 +2891,18 @@
           {
             "url": "https://www.newyorker.com/feed/tech/elements",
             "name": "The New Yorker",
-            "specification": "news-focus",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./thenewyorker.png",
             "backgroundImg": "./thenewyorker_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=digital.bild.html",
+            "name": "Bild",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./bild.png",
+            "backgroundImg": "./bild_bgIMG.jpg"
           }
         ]
       }
@@ -3021,6 +3047,7 @@
           {
             "url": "https://www.businessinsider.de/politik/feed/",
             "name": "Insider",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./insider.png",
@@ -3029,12 +3056,21 @@
           {
             "url": "https://www.deutschlandfunk.de/politik.1499.de.rss",
             "name": "Deutschlandfunk",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
-          } 
-          
+          },
+          {
+            "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=politik.bild.html",
+            "name": "Bild",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./bild.png",
+            "backgroundImg": "./bild_bgIMG.jpg"
+          }
         ]
       }
     },
@@ -3449,12 +3485,12 @@
             "backgroundImg": "./dfunk_bgIMG.jpg"
           },
           {
-            "url": "https://taz.de/!p4608;rss/",
+            "url": "https://taz.de/feed/!p4608/rss.xml",
             "name": "Die Tageszeitung",
             "specification": "news-notif smallDesc bigHeadline",
             "count": 2,
             "iconImg": "./taz.png",
-            "backgroundImg": "./taz_bgIMG.png"
+            "backgroundImg": "./taz_bgIMG.jpg"
           }
         ]
       }
@@ -3521,6 +3557,7 @@
           {
             "url": "https://www.numerama.com/sciences/environnementfeed/",
             "name": "Numerama",
+            "encodedTitles": true,
             "count": 2,
             "iconImg": "./numerama.png",
             "backgroundImg": "./numerama_bgIMG.jpg"
@@ -3546,12 +3583,12 @@
         ],
         "Presse étrangère": [
           {
-            "url": "https://taz.de/!p4624;rss/",
+            "url": "https://taz.de/feed/!p4624/rss.xml",
             "name": "Die Tageszeitung",
             "specification": "news-list",
             "count": 1,
             "iconImg": "./taz.png",
-            "backgroundImg": "./taz_bgIMG.png"
+            "backgroundImg": "./taz_bgIMG.jpg"
           }  
         ]
       }
@@ -3886,7 +3923,7 @@
             "name": "The Washington Post",
             "specification": "news-list",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./wpost.png",
             "backgroundImg": "./wpost_bgIMG.jpg"
           },
@@ -3925,6 +3962,14 @@
             "count": 2,
             "iconImg": "./insider.png",
             "backgroundImg": "./insider_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=lifestyle.bild.html",
+            "name": "Bild",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./bild.png",
+            "backgroundImg": "./bild_bgIMG.jpg"
           }
         ]
       }
@@ -3949,6 +3994,16 @@
         ],
         "Tuning": [
 
+        ],
+        "Presse étrangère": [
+          {
+            "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=auto.bild.html",
+            "name": "Bild",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./bild.png",
+            "backgroundImg": "./bild_bgIMG.jpg"
+          }
         ]
       }
     }
