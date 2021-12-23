@@ -992,6 +992,7 @@
           {
             "url": "https://www.lhistoire.fr/rss.xml",
             "name": "l'Histoire",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 2,
             "iconImg": "./lhistoire.png",
