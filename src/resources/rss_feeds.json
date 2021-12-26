@@ -2040,7 +2040,7 @@
             "specification": "news-notif bigHeadline smallDesc",
             "count": 2,
             "iconImg": "./lemonde-diplo.png",
-            "backgroundImg": "./lemonde-diplo.jpg"
+            "backgroundImg": "./lemonde-diplo_bgIMG.jpg"
           }
         ],
         "Afrique": [
