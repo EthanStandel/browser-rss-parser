@@ -1080,28 +1080,28 @@ footer {
   padding: 20px 40px;
   font-size: 13px;
 
-  .footnote:not(.mini-links) {
+  .c2:not(.mini-links), .c1 {
     margin-top: 5px;
     color: var(--secondaryLabel);
   }
 
-  .footnote.inline {
+  .c2.inline {
     display: inline-block;
     padding-right: 30px;
   
-    /*/ Used to display footnote elements as paragrpah on small devices/*/
+    /*/ Used to display c2 elements as paragrpah on small devices/*/
     &.marginless {
       margin-top: 0px !important;
     }
   }
 }
 
-.footnote a.color:hover, .mini-links a:hover {
+.c2 a.color:hover, .mini-links a:hover {
   text-decoration: underline;
 }
 
 .mini-links {
-  margin-top: 10px;
+  margin-top: 5px;
 
   a {
     width: fit-content;
