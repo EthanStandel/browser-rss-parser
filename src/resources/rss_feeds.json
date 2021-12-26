@@ -1062,7 +1062,7 @@
         ]
       }
     },
-    "Sports": {
+    "Sport": {
       "subtopics": {
         "noSubtopic": [
           {
@@ -2380,534 +2380,6 @@
         ]
       }
     },
-    "Sciences": {
-      "subtopics": {
-        "noSubtopic": [
-          {
-            "url": "https://www.francetvinfo.fr/sciences.rss",
-            "name": "Franceinfo",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lepoint.fr/sciences/rss.xml",
-            "name": "Le Point",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./lepoint.png",
-            "backgroundImg": "./lepoint_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/sciences/",
-            "name": "BFM TV",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.sciencesetavenir.fr/rss.xml",
-            "name": "Sciences et Avenir",
-            "count": 2,
-            "iconImg": "./sciencesetavenir.png",
-            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.journaldugeek.com/tag/science/feed/",
-            "name": "Le journal du geek",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lefigaro.fr/rss/figaro_sciences.xml",
-            "name": "Le Figaro",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro_bgIMG.png"
-          },
-          {
-            "url": "https://information.tv5monde.com/afprss/francais--journal--sci",
-            "name": "TV5 Monde",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./tv5monde.png",
-            "backgroundImg": "./tv5monde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.01net.com/rss/actualites/science-recherche/",
-            "name": "01NET",
-            "count": 2,
-            "iconImg": "./01net.png",
-            "backgroundImg": ".01net_bgIMG.jpg"
-          }
-        ],
-        "Astronomie & espace": [
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sciences/espace/?outputType=xml",
-            "name": "Libération",
-            "specification": "news-list",
-            "count": 1,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lepoint.fr/astronomie/rss.xml",
-            "name": "Le Point",
-            "encodedTitles": true,
-            "specification": "news-list",
-            "count": 1,
-            "iconImg": "./lepoint.png",
-            "backgroundImg": "./lepoint_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/espace/rss_full.xml",
-            "name": "Le Monde",
-            "encodedTitles": true,
-            "specification": "news-list",
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.sciencesetavenir.fr/espace/rss.xml",
-            "name": "Sciences et Avenir",
-            "specification": "news-list",
-            "count": 2,
-            "iconImg": "./sciencesetavenir.png",
-            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.futura-sciences.com/rss/espace/actualites.xml",
-            "name": "Futura Sciences",
-            "specification": "news-list",
-            "count": 2,
-            "iconImg": "./futura.png",
-            "backgroundImg": "./futura_bgIMG.jpg"
-          }
-        ],
-        "Médecine & santé": [
-          {
-            "url": "https://www.francetvinfo.fr/sante.rss",
-            "name": "Franceinfo",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.ladepeche.fr/sante/rss.xml",
-            "name": "La Dépêche",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.leprogres.fr/magazine-sante/rss",
-            "name": "Le Progrès",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./leprogres.png",
-            "backgroundImg": "./leprogres_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lepoint.fr/sante/rss.xml",
-            "name": "Le Point",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./lepoint.png",
-            "backgroundImg": "./lepoint_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/sante/",
-            "name": "BFM TV",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/medecine/rss_full.xml",
-            "name": "Le Monde",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.sciencesetavenir.fr/sante/rss.xml",
-            "name": "Sciences et Avenir",
-            "count": 2,
-            "iconImg": "./sciencesetavenir.png",
-            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.futura-sciences.com/rss/sante/actualites.xml",
-            "name": "Futura Sciences",
-            "count": 2,
-            "iconImg": "./futura.png",
-            "backgroundImg": "./futura_bgIMG.jpg"
-          },
-          {
-            "url": "https://information.tv5monde.com/afprss/francais--journal--medecine",
-            "name": "TV5 Monde",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./tv5monde.png",
-            "backgroundImg": "./tv5monde_bgIMG.jpg"
-          }
-        ],
-        "Sciences physiques & mathématiques": [
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sciences/physique/?outputType=xml",
-            "name": "Libération",
-            "count": 1,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/physique/rss_full.xml",
-            "name": "Le Monde",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.sciencesetavenir.fr/fondamental/rss.xml",
-            "name": "Sciences et Avenir",
-            "count": 2,
-            "iconImg": "./sciencesetavenir.png",
-            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.futura-sciences.com/rss/mathematiques/actualites.xml",
-            "name": "Futura Sciences",
-            "count": 2,
-            "iconImg": "./futura.png",
-            "backgroundImg": "./futura_bgIMG.jpg"
-          }
-        ],
-        "Presse étrangère": [
-          {
-            "url": "https://www.telegraph.co.uk/science/rss.xml",
-            "name": "The Telegraph",
-            "specification": "news-list",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./thetelegraph.png",
-            "backgroundImg": "./thetelegraph_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.techrepublic.com/rssfeeds/articles/?feedType=rssfeeds&sort=latest",
-            "name": "TechRepublic",
-            "specification": "news-list",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./techrep.png",
-            "backgroundImg": "./techrep_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.theguardian.com/science/rss",
-            "name": "The Guardian",
-            "specification": "news-list",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./theguardian.png",
-            "backgroundImg": "./theguardian_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.forbes.com/science/feed2/",
-            "name": "Forbes",
-            "encodedTitles": true,
-            "specification": "news-list",
-            "count": 1,
-            "iconImg": "./forbes.png",
-            "backgroundImg": "./forbes_bgIMG.jpg"
-          },
-          {
-            "url": "http://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
-            "name": "BBC News",
-            "specification": "news-list",
-            "count": 1,
-            "iconImg": "./bbcnews.png",
-            "backgroundImg": "./bbcnews_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.wired.com/feed/science/rss",
-            "name": "Wired",
-            "specification": "news-list",
-            "count": 1,
-            "iconImg": "./wired.png",
-            "backgroundImg": "./wired_bgIMG.jpg"
-          },
-          {
-            "url": "https://rss.dw.com/xml/rss-de-wissenschaft",
-            "name": "Deutsche Welle",
-            "encodedTitles": true,
-            "specification": "news-list",
-            "count": 2,
-            "iconImg": "./dw.png",
-            "backgroundImg": "./dw_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.deutschlandfunk.de/forschung-aktuell.675.de.rss",
-            "name": "Deutschlandfunk",
-            "encodedTitles": true,
-            "specification": "news-list ",
-            "count": 2,
-            "iconImg": "./dfunk.png",
-            "backgroundImg": "./dfunk_bgIMG.jpg"
-          }   
-        ]
-      }
-    },
-    "Technologie & informatique": {
-      "subtopics": {
-        "noSubtopic": [
-          {
-            "url": "https://www.bfmtv.com/rss/tech/",
-            "name": "BFM TV",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.sciencesetavenir.fr/high-tech/rss.xml",
-            "name": "Sciences et Avenir",
-            "count": 2,
-            "iconImg": "./sciencesetavenir.png",
-            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.futura-sciences.com/rss/high-tech/actualites.xml",
-            "name": "Futura Sciences",
-            "count": 2,
-            "iconImg": "./futura.png",
-            "backgroundImg": "./futura_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.journaldugeek.com/tag/high-tech/feed/",
-            "name": "Le journal du geek",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.numerama.com/tech/feed/",
-            "name": "Numerama",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./numerama.png",
-            "backgroundImg": "./numerama_bgIMG.jpg"
-          },
-          {
-            "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=tech",
-            "name": "Tech Insider",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./tinsider.png",
-            "backgroundImg": "./tinsider_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.01net.com/rss/actualites/technos/",
-            "name": "01NET",
-            "count": 2,
-            "iconImg": "./01net.png",
-            "backgroundImg": ".01net_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.linternaute.com/hightech/rss/",
-            "name": "L'internaute",
-            "count": 1,
-            "iconImg": "./linternaute.png",
-            "backgroundImg": "./linternaute_bgIMG.jpg"
-          }
-        ],
-        "Smartphones": [
-          {
-            "url": "https://www.journaldugeek.com/category/smartphone/feed/",
-            "name": "Le journal du geek",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.01net.com/rss/smartphones/",
-            "name": "01NET",
-            "count": 2,
-            "iconImg": "./01net.png",
-            "backgroundImg": ".01net_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.linternaute.com/hightech/mobile/rss/",
-            "name": "L'internaute",
-            "count": 1,
-            "iconImg": "./linternaute.png",
-            "backgroundImg": "./linternaute_bgIMG.jpg"
-          }
-        ],
-        "Ordinateurs": [
-          {
-            "url": "https://www.linternaute.com/hightech/micro/rss/",
-            "name": "L'internaute",
-            "specification": "news-list",
-            "count": 3,
-            "iconImg": "./linternaute.png",
-            "backgroundImg": "./linternaute_bgIMG.jpg"
-          }
-        ],
-        "Intelligence artificielle": [
-          {
-            "url": "https://www.sciencesetavenir.fr/high-tech/intelligence-artificielle/rss.xml",
-            "name": "Sciences et Avenir",
-            "count": 2,
-            "iconImg": "./sciencesetavenir.png",
-            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.journaldugeek.com/category/intelligence-artificielle/feed/",
-            "name": "Le journal du geek",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.journaldunet.com/intelligence-artificielle/rss",
-            "name": "Journal du Net",
-            "count": 2,
-            "iconImg": "./jdn.png",
-            "backgroundImg": ".jdn_bgIMG.jpg"
-          }
-        ],
-        "Développeurs": [
-
-        ],
-        "Infographie": [
-
-        ],
-        "Réalité virtuelle": [
-
-        ],
-        "GAFAM": [
-          {
-            "url": "https://www.journaldugeek.com/tag/gafam/feed",
-            "name": "Le journal du geek",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.journaldugeek.com/tag/apple/feed",
-            "name": "Le journal du geek",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.journaldugeek.com/tag/microsoft/feed",
-            "name": "Le journal du geek",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.journaldugeek.com/tag/facebook/feed",
-            "name": "Le journal du geek",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.journaldugeek.com/tag/google/feed",
-            "name": "Le journal du geek",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
-          }
-
-        ],
-        "Big data & sécurité": [
-          {
-            "url": "https://www.journaldugeek.com/category/securite/feed/",
-            "name": "Le journal du geek",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.01net.com/rss/actualites/securite/",
-            "name": "01NET",
-            "count": 2,
-            "iconImg": "./01net.png",
-            "backgroundImg": ".01net_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.journaldunet.com/solutions/analytics/big-data/rss/",
-            "name": "Journal du Net",
-            "count": 2,
-            "iconImg": "./jdn.png",
-            "backgroundImg": ".jdn_bgIMG.jpg"
-          }
-        ],
-        "Web": [
-          {
-            "url": "https://www.sciencesetavenir.fr/high-tech/web/rss.xml",
-            "name": "Sciences et Avenir",
-            "count": 2,
-            "iconImg": "./sciencesetavenir.png",
-            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
-          }
-        ],
-        "Presse étrangère": [
-          {
-            "url": "https://www.businessinsider.de/tech/feed/",
-            "name": "Tech Insider",
-            "specification": "news-list",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./tinsider.png",
-            "backgroundImg": "./tinsider_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.newyorker.com/feed/tech",
-            "name": "The New Yorker",
-            "specification": "news-list",
-            "count": 1,
-            "iconImg": "./thenewyorker.png",
-            "backgroundImg": "./thenewyorker_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.newyorker.com/feed/tech/elements",
-            "name": "The New Yorker",
-            "specification": "news-list",
-            "count": 1,
-            "iconImg": "./thenewyorker.png",
-            "backgroundImg": "./thenewyorker_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=digital.bild.html",
-            "name": "Bild",
-            "specification": "news-list",
-            "count": 2,
-            "iconImg": "./bild.png",
-            "backgroundImg": "./bild_bgIMG.jpg"
-          }
-        ]
-      }
-    },
     "Politique": {
       "subtopics": {
         "noSubtopic": [
@@ -3496,7 +2968,535 @@
         ]
       }
     },
-    "Nature & climat": {
+    "Sciences": {
+      "subtopics": {
+        "noSubtopic": [
+          {
+            "url": "https://www.francetvinfo.fr/sciences.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/sciences/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/sciences/",
+            "name": "BFM TV",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.sciencesetavenir.fr/rss.xml",
+            "name": "Sciences et Avenir",
+            "count": 2,
+            "iconImg": "./sciencesetavenir.png",
+            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/science/feed/",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_sciences.xml",
+            "name": "Le Figaro",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://information.tv5monde.com/afprss/francais--journal--sci",
+            "name": "TV5 Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./tv5monde.png",
+            "backgroundImg": "./tv5monde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.01net.com/rss/actualites/science-recherche/",
+            "name": "01NET",
+            "count": 2,
+            "iconImg": "./01net.png",
+            "backgroundImg": ".01net_bgIMG.jpg"
+          }
+        ],
+        "Astronomie & espace": [
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sciences/espace/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/astronomie/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/espace/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.sciencesetavenir.fr/espace/rss.xml",
+            "name": "Sciences et Avenir",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./sciencesetavenir.png",
+            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.futura-sciences.com/rss/espace/actualites.xml",
+            "name": "Futura Sciences",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./futura.png",
+            "backgroundImg": "./futura_bgIMG.jpg"
+          }
+        ],
+        "Médecine & santé": [
+          {
+            "url": "https://www.francetvinfo.fr/sante.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sante/rss.xml",
+            "name": "La Dépêche",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.leprogres.fr/magazine-sante/rss",
+            "name": "Le Progrès",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./leprogres.png",
+            "backgroundImg": "./leprogres_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/sante/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/sante/",
+            "name": "BFM TV",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/medecine/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.sciencesetavenir.fr/sante/rss.xml",
+            "name": "Sciences et Avenir",
+            "count": 2,
+            "iconImg": "./sciencesetavenir.png",
+            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.futura-sciences.com/rss/sante/actualites.xml",
+            "name": "Futura Sciences",
+            "count": 2,
+            "iconImg": "./futura.png",
+            "backgroundImg": "./futura_bgIMG.jpg"
+          },
+          {
+            "url": "https://information.tv5monde.com/afprss/francais--journal--medecine",
+            "name": "TV5 Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./tv5monde.png",
+            "backgroundImg": "./tv5monde_bgIMG.jpg"
+          }
+        ],
+        "Sciences physiques & mathématiques": [
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sciences/physique/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/physique/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.sciencesetavenir.fr/fondamental/rss.xml",
+            "name": "Sciences et Avenir",
+            "count": 2,
+            "iconImg": "./sciencesetavenir.png",
+            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.futura-sciences.com/rss/mathematiques/actualites.xml",
+            "name": "Futura Sciences",
+            "count": 2,
+            "iconImg": "./futura.png",
+            "backgroundImg": "./futura_bgIMG.jpg"
+          }
+        ],
+        "Presse étrangère": [
+          {
+            "url": "https://www.telegraph.co.uk/science/rss.xml",
+            "name": "The Telegraph",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./thetelegraph.png",
+            "backgroundImg": "./thetelegraph_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.techrepublic.com/rssfeeds/articles/?feedType=rssfeeds&sort=latest",
+            "name": "TechRepublic",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./techrep.png",
+            "backgroundImg": "./techrep_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.theguardian.com/science/rss",
+            "name": "The Guardian",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./theguardian.png",
+            "backgroundImg": "./theguardian_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.forbes.com/science/feed2/",
+            "name": "Forbes",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./forbes.png",
+            "backgroundImg": "./forbes_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+            "name": "BBC News",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.wired.com/feed/science/rss",
+            "name": "Wired",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./wired.png",
+            "backgroundImg": "./wired_bgIMG.jpg"
+          },
+          {
+            "url": "https://rss.dw.com/xml/rss-de-wissenschaft",
+            "name": "Deutsche Welle",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./dw.png",
+            "backgroundImg": "./dw_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/forschung-aktuell.675.de.rss",
+            "name": "Deutschlandfunk",
+            "encodedTitles": true,
+            "specification": "news-list ",
+            "count": 2,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
+          }   
+        ]
+      }
+    },
+    "Tech": {
+      "subtopics": {
+        "noSubtopic": [
+          {
+            "url": "https://www.bfmtv.com/rss/tech/",
+            "name": "BFM TV",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.sciencesetavenir.fr/high-tech/rss.xml",
+            "name": "Sciences et Avenir",
+            "count": 2,
+            "iconImg": "./sciencesetavenir.png",
+            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.futura-sciences.com/rss/high-tech/actualites.xml",
+            "name": "Futura Sciences",
+            "count": 2,
+            "iconImg": "./futura.png",
+            "backgroundImg": "./futura_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/high-tech/feed/",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.numerama.com/tech/feed/",
+            "name": "Numerama",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./numerama.png",
+            "backgroundImg": "./numerama_bgIMG.jpg"
+          },
+          {
+            "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=tech",
+            "name": "Tech Insider",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./tinsider.png",
+            "backgroundImg": "./tinsider_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.01net.com/rss/actualites/technos/",
+            "name": "01NET",
+            "count": 2,
+            "iconImg": "./01net.png",
+            "backgroundImg": ".01net_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.linternaute.com/hightech/rss/",
+            "name": "L'internaute",
+            "count": 1,
+            "iconImg": "./linternaute.png",
+            "backgroundImg": "./linternaute_bgIMG.jpg"
+          }
+        ],
+        "Smartphones": [
+          {
+            "url": "https://www.journaldugeek.com/category/smartphone/feed/",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.01net.com/rss/smartphones/",
+            "name": "01NET",
+            "count": 2,
+            "iconImg": "./01net.png",
+            "backgroundImg": ".01net_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.linternaute.com/hightech/mobile/rss/",
+            "name": "L'internaute",
+            "count": 1,
+            "iconImg": "./linternaute.png",
+            "backgroundImg": "./linternaute_bgIMG.jpg"
+          }
+        ],
+        "Ordinateurs": [
+          {
+            "url": "https://www.linternaute.com/hightech/micro/rss/",
+            "name": "L'internaute",
+            "specification": "news-list",
+            "count": 3,
+            "iconImg": "./linternaute.png",
+            "backgroundImg": "./linternaute_bgIMG.jpg"
+          }
+        ],
+        "Intelligence artificielle": [
+          {
+            "url": "https://www.sciencesetavenir.fr/high-tech/intelligence-artificielle/rss.xml",
+            "name": "Sciences et Avenir",
+            "count": 2,
+            "iconImg": "./sciencesetavenir.png",
+            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/category/intelligence-artificielle/feed/",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldunet.com/intelligence-artificielle/rss",
+            "name": "Journal du Net",
+            "count": 2,
+            "iconImg": "./jdn.png",
+            "backgroundImg": ".jdn_bgIMG.jpg"
+          }
+        ],
+        "Développeurs": [
+
+        ],
+        "Infographie": [
+
+        ],
+        "Réalité virtuelle": [
+
+        ],
+        "GAFAM": [
+          {
+            "url": "https://www.journaldugeek.com/tag/gafam/feed",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/apple/feed",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/microsoft/feed",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/facebook/feed",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/google/feed",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          }
+
+        ],
+        "Big data & sécurité": [
+          {
+            "url": "https://www.journaldugeek.com/category/securite/feed/",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.01net.com/rss/actualites/securite/",
+            "name": "01NET",
+            "count": 2,
+            "iconImg": "./01net.png",
+            "backgroundImg": ".01net_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldunet.com/solutions/analytics/big-data/rss/",
+            "name": "Journal du Net",
+            "count": 2,
+            "iconImg": "./jdn.png",
+            "backgroundImg": ".jdn_bgIMG.jpg"
+          }
+        ],
+        "Web": [
+          {
+            "url": "https://www.sciencesetavenir.fr/high-tech/web/rss.xml",
+            "name": "Sciences et Avenir",
+            "count": 2,
+            "iconImg": "./sciencesetavenir.png",
+            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          }
+        ],
+        "Presse étrangère": [
+          {
+            "url": "https://www.businessinsider.de/tech/feed/",
+            "name": "Tech Insider",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./tinsider.png",
+            "backgroundImg": "./tinsider_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.newyorker.com/feed/tech",
+            "name": "The New Yorker",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./thenewyorker.png",
+            "backgroundImg": "./thenewyorker_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.newyorker.com/feed/tech/elements",
+            "name": "The New Yorker",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./thenewyorker.png",
+            "backgroundImg": "./thenewyorker_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=digital.bild.html",
+            "name": "Bild",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./bild.png",
+            "backgroundImg": "./bild_bgIMG.jpg"
+          }
+        ]
+      }
+    },
+    "Nature": {
       "subtopics": {
         "noSubtopic": [
           {
@@ -3975,7 +3975,7 @@
         ]
       }
     },
-    "Auto-moto": {
+    "Auto": {
       "subtopics": {
         "noSubtopic": [
           {

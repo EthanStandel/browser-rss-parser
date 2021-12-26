@@ -11,17 +11,19 @@
 :root {
   --colorTheme: var(--systemPink);
   --cultureColorTheme: burlywood;
-  --sportsColorTheme: limegreen;
-  --ecoColorTheme: goldenrod;
+  --sportColorTheme: darkgoldenrod;
+  --ecoColorTheme: orange;
   --mondeColorTheme: dodgerblue;
   --presseinterColorTheme: crimson;
   --sciencesColorTheme: mediumseagreen;
-  --europeColorTheme: slateblue;
+  --europeColorTheme: yellowgreen;
   --polColorTheme: darkviolet;
   --societeColorTheme: mediumaquamarine;
-  --techColorTheme: chocolate;
+  --techColorTheme: teal;
   --regionsColorTheme: cornflowerblue;
-  --natureColorTheme: salmon;
+  --natureColorTheme: limegreen;
+  --lifestyleColorTheme: #6667ab;
+  --autoColorTheme: mediumvioletred;
 
   /*/
   colorTheme must be specified,
@@ -76,8 +78,8 @@ header, .body-container, .mini-links a {
     text-decoration-color: var(--mondeColorTheme);
   }
   
-  .Sports * {
-    text-decoration-color: var(--sportsColorTheme);
+  .Sport * {
+    text-decoration-color: var(--sportColorTheme);
   }
   
   .Économie * {
@@ -100,7 +102,7 @@ header, .body-container, .mini-links a {
     text-decoration-color: var(--societeColorTheme);
   }
 
-  .Technologie * {
+  .Tech * {
     text-decoration-color: var(--techColorTheme);
   }
 
@@ -110,6 +112,13 @@ header, .body-container, .mini-links a {
 
   .Nature * {
     text-decoration-color: var(--natureColorTheme);
+  }
+  .Art * {
+    text-decoration-color: var(--lifestyleColorTheme);
+  }
+
+  .Auto * {
+    text-decoration-color: var(--autoColorTheme);
   }
   
   /*/ special case since étrangère can be found as subtopic /*/
@@ -174,8 +183,8 @@ ul {
     color: var(--mondeColorTheme) !important;
   }
 
-  &.Sports li > *  {
-    color: var(--sportsColorTheme) !important; 
+  &.Sport li > *  {
+    color: var(--sportColorTheme) !important; 
   }
 
   &.Presse li > *  {
@@ -202,7 +211,7 @@ ul {
     color: var(--societeColorTheme) !important;
   }
 
-  &.Technologie li > *  {
+  &.Tech li > *  {
     color: var(--techColorTheme) !important;
   }
 
@@ -212,6 +221,14 @@ ul {
 
   &.Nature li > *  {
     color: var(--natureColorTheme) !important;
+  }
+
+  &.Art li > *  {
+    color: var(--lifestyleColorTheme) !important;
+  }
+
+  &.Auto li > *  {
+    color: var(--autoColorTheme) !important;
   }
 
   li {
@@ -243,9 +260,9 @@ ul.topics-navbar li {
   display: inline-block;
 
   /*/ color styles for topics navbar -border and color /*/
-  .Sports {
-    border-color: var(--sportsColorTheme);
-    color: var(--sportsColorTheme);
+  .Sport {
+    border-color: var(--sportColorTheme);
+    color: var(--sportColorTheme);
   }
   
   .Culture {
@@ -288,7 +305,7 @@ ul.topics-navbar li {
     color: var(--societeColorTheme);
   }
 
-  .Technologie {
+  .Tech {
     border-color: var(--techColorTheme);
     color: var(--techColorTheme);
   }
@@ -301,6 +318,16 @@ ul.topics-navbar li {
   .Nature {
     border-color: var(--natureColorTheme);
     color: var(--natureColorTheme);
+  }
+
+  .Art {
+    border-color: var(--lifestyleColorTheme);
+    color: var(--lifestyleColorTheme);
+  }
+
+  .Auto {
+    border-color: var(--autoColorTheme);
+    color: var(--autoColorTheme);
   }
 
   > button {
@@ -331,8 +358,8 @@ ul.topics-navbar li {
           background-color: var(--cultureColorTheme);
         }
 
-        &.Sports {
-          background-color: var(--sportsColorTheme);
+        &.Sport {
+          background-color: var(--sportColorTheme);
         }
 
         &.Presse {
@@ -359,7 +386,7 @@ ul.topics-navbar li {
           background-color: var(--societeColorTheme);
         }
 
-        &.Technologie {
+        &.Tech {
           background-color: var(--techColorTheme);
         }
         
@@ -370,6 +397,14 @@ ul.topics-navbar li {
         &.Nature {
           background-color: var(--natureColorTheme);
         }
+
+        &.Art {
+          background-color: var(--lifestyleColorTheme);
+        }
+
+        &.Auto {
+          background-color: var(--autoColorTheme);
+        }
       }
     }
   }
@@ -378,7 +413,7 @@ ul.topics-navbar li {
 /*/ adds a padding to topics navbar which don't have any associated subtopics navbar/*/
 li {
 
-  &.À.la.une button, &.Auto button {
+  &.À.la.une button {
 
     &.selected {
       margin-bottom: 32.6px;
@@ -394,8 +429,8 @@ h3.bold {
     color: var(--cultureColorTheme);
   }
 
-  &.Sports {
-    color: var(--sportsColorTheme);
+  &.Sport {
+    color: var(--sportColorTheme);
   }
 
   &.Économie {
@@ -426,7 +461,7 @@ h3.bold {
     color: var(--societeColorTheme);
   }
 
-  &.Technologie {
+  &.Tech {
     color: var(--techColorTheme);
   }
 
@@ -436,6 +471,14 @@ h3.bold {
 
   &.Nature {
     color: var(--natureColorTheme);
+  }
+
+  &.Art {
+    color: var(--lifestyleColorTheme);
+  }
+
+  &.Auto {
+    color: var(--autoColorTheme);
   }
 }
 
