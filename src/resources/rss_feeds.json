@@ -317,7 +317,7 @@
             "name": "La Dépêche",
             "specification": "news-notif bigHeadline",
             "encodedTitles": true,
-            "count": 2,
+            "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
           },
@@ -326,9 +326,17 @@
             "name": "Le Monde",
             "encodedTitles": true,
             "specification": "news-notif bigHeadline",
-            "count": 1,
+            "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.forbes.fr/finance/feed/",
+            "name": "Forbes",
+            "specification": "news-notif bigHeadline",
+            "count": 2,
+            "iconImg": "./forbes.png",
+            "backgroundImg": "./forbes_bgIMG.jpg"
           }
         ],
 
@@ -2453,12 +2461,11 @@
             "backgroundImg": "./challenges_bgIMG.jpg"
           },
           {
-            "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=politique",
-            "name": "Insider",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./insider.png",
-            "backgroundImg": "./insider_bgIMG.jpg"
+            "url": "https://www.forbes.fr/politique/feed/",
+            "name": "Forbes",
+            "count": 1,
+            "iconImg": "./forbes.png",
+            "backgroundImg": "./forbes_bgIMG.jpg"
           }
         ],
         "Élections": [
@@ -3257,13 +3264,6 @@
       "subtopics": {
         "noSubtopic": [
           {
-            "url": "https://www.bfmtv.com/rss/tech/",
-            "name": "BFM TV",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          },
-          {
             "url": "https://www.sciencesetavenir.fr/high-tech/rss.xml",
             "name": "Sciences et Avenir",
             "count": 2,
@@ -3314,6 +3314,13 @@
             "count": 1,
             "iconImg": "./linternaute.png",
             "backgroundImg": "./linternaute_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.forbes.fr/technologie/feed/",
+            "name": "Forbes",
+            "count": 1,
+            "iconImg": "./forbes.png",
+            "backgroundImg": "./forbes_bgIMG.jpg"
           }
         ],
         "Smartphones": [
@@ -3570,8 +3577,14 @@
             "count": 1,
             "iconImg": "./tv5monde.png",
             "backgroundImg": "./tv5monde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.forbes.fr/environnement/feed/",
+            "name": "Forbes",
+            "count": 1,
+            "iconImg": "./forbes.png",
+            "backgroundImg": "./forbes_bgIMG.jpg"
           }
-
         ],
         "Météo": [
 
@@ -3684,6 +3697,14 @@
             "count": 2,
             "iconImg": "./insider.png",
             "backgroundImg": "./insider_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.forbes.fr/lifestyle/feed/",
+            "name": "Forbes",
+            "specification": "news-notif firstFocus",
+            "count": 1,
+            "iconImg": "./forbes.png",
+            "backgroundImg": "./forbes_bgIMG.jpg"
           }
         ],
         "Tourisme & voyages": [
@@ -3901,13 +3922,12 @@
             "backgroundImg": "./letelegramme_bgIMG.jpg"
           },
           {
-            "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=strategie",
-            "name": "Insider",
+            "url": "https://www.forbes.fr/management/feed/",
+            "name": "Forbes",
             "specification": "news-list",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./insider.png",
-            "backgroundImg": "./insider_bgIMG.jpg"
+            "count": 1,
+            "iconImg": "./forbes.png",
+            "backgroundImg": "./forbes_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
