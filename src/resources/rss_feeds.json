@@ -154,15 +154,6 @@
             "count": 2,
             "iconImg": "./challenges.png",
             "backgroundImg": "./challenges_bgIMG.jpg"
-          },
-          {
-            "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=economie",
-            "name": "Business Insider",
-            "specification": "news-notif bigHeadline smallDesc",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./binsider.png",
-            "backgroundImg": "./binsider_bgIMG.jpg"
           }
         ],
         "Marchés & bourse": [
@@ -333,6 +324,7 @@
           {
             "url": "https://www.forbes.fr/finance/feed/",
             "name": "Forbes",
+            "encodedTitles": true,
             "specification": "news-notif bigHeadline",
             "count": 2,
             "iconImg": "./forbes.png",
@@ -345,7 +337,7 @@
             "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
             "name": "The Wall Street Journal",
             "encodedTitles": true,
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./wsjournal.png",
             "backgroundImg": "./wsjournal_bgIMG.jpg"
@@ -354,7 +346,7 @@
             "url": "https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml",
             "name": "The Wall Street Journal",
             "encodedTitles": true,
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./wsjournal.png",
             "backgroundImg": "./wsjournal_bgIMG.jpg"
@@ -362,7 +354,7 @@
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
             "name": "The New York Times",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./thenytimes.png",
@@ -371,7 +363,7 @@
           {
             "url": "http://feeds.washingtonpost.com/rss/business",
             "name": "The Washington Post",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./wpost.png",
@@ -380,7 +372,7 @@
           {
             "url": "https://markets.businessinsider.com/rss/news",
             "name": "Markets Insider",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./minsider.png",
@@ -390,7 +382,7 @@
             "url": "https://rss.dw.com/xml/rss-de-eco",
             "name": "Deutsche Welle",
             "encodedTitles": true,
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./dw.png",
             "backgroundImg": "./dw_bgIMG.jpg"
@@ -398,7 +390,7 @@
           {
             "url": "https://www.businessinsider.de/wirtschaft/feed/",
             "name": "Business Insider",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./binsider.png",
@@ -408,7 +400,7 @@
             "url": "https://www.deutschlandfunk.de/die-nachrichten.353.de.rss",
             "name": "Deutschlandfunk",
             "encodedTitles": true,
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
@@ -1011,7 +1003,7 @@
           {
             "url": "https://www.theguardian.com/uk/culture/rss",
             "name": "The Guardian",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./theguardian.png",
@@ -1020,7 +1012,7 @@
           {
             "url": "https://www.bbc.com/culture/feed.rss",
             "name": "BBC News",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
@@ -1029,7 +1021,7 @@
             "url": "https://rss.dw.com/xml/rss-de-cul",
             "name": "Deutsche Welle",
             "encodedTitles": true,
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./dw.png",
             "backgroundImg": "./dw_bgIMG.jpg"
@@ -1037,7 +1029,7 @@
           {
             "url": "https://www.newyorker.com/feed/culture",
             "name": "The New Yorker",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./thenewyorker.png",
             "backgroundImg": "./thenewyorker_bgIMG.jpg"
@@ -1046,7 +1038,7 @@
             "url": "https://www.deutschlandfunk.de/kultur.1495.de.rss",
             "name": "Deutschlandfunk",
             "encodedTitles": true,
-            "specification": "news-list ",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
@@ -1054,7 +1046,7 @@
           {
             "url": "https://taz.de/feed/!p4639/rss.xml",
             "name": "Die Tageszeitung",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./taz.png",
             "backgroundImg": "./taz_bgIMG.jpg"
@@ -1062,7 +1054,7 @@
           {
             "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=unterhaltung.bild.html",
             "name": "Bild",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./bild.png",
             "backgroundImg": "./bild_bgIMG.jpg"
@@ -1684,7 +1676,7 @@
             "url": "http://feeds.foxnews.com/foxnews/sports?format=xml",
             "name": "FOX news",
             "encodedTitles": true,
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./foxnews.png",
             "backgroundImg": "./foxnews_bgIMG.jpg"
@@ -1692,7 +1684,7 @@
           {
             "url": "http://feeds.bbci.co.uk/sport/rss.xml",
             "name": "BBC News",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
@@ -1700,7 +1692,7 @@
           {
             "url": "http://www.independent.co.uk/sport/rss",
             "name": "The Independent",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./theindependent.png",
             "backgroundImg": "./theindependent_bgIMG.jpg"
@@ -1708,7 +1700,7 @@
           {
             "url": "http://feeds.washingtonpost.com/rss/sports",
             "name": "The Washington Post",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./wpost.png",
@@ -1718,7 +1710,7 @@
             "url": "https://rss.dw.com/xml/rss-de-sport",
             "name": "Deutsche Welle",
             "encodedTitles": true,
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./dw.png",
             "backgroundImg": "./dw_bgIMG.jpg"
@@ -1726,7 +1718,7 @@
           {
             "url": "https://www.newyorker.com/feed/news/sporting-scene",
             "name": "The New Yorker",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./thenewyorker.png",
             "backgroundImg": "./thenewyorker_bgIMG.jpg"
@@ -1735,7 +1727,7 @@
             "url": "https://www.deutschlandfunk.de/sport.1494.de.rss",
             "name": "Deutschlandfunk",
             "encodedTitles": true,
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
@@ -1743,7 +1735,7 @@
           {
             "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=sport.bild.html",
             "name": "Bild",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./bild.png",
             "backgroundImg": "./bild_bgIMG.jpg"
@@ -1927,7 +1919,7 @@
           {
             "url": "http://feeds.washingtonpost.com/rss/world/europe",
             "name": "The Washington Post",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./wpost.png",
@@ -1936,7 +1928,7 @@
           {
             "url": "https://www.economist.com/feeds/print-sections/75/europe.xml",
             "name": "The Economist",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./theeconomist.png",
             "backgroundImg": "./theeconomist_bgIMG.jpg"
@@ -1944,7 +1936,7 @@
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/Europe.xml",
             "name": "The New York Times",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./thenytimes.png",
@@ -1953,7 +1945,7 @@
           {
             "url": "http://rss.cnn.com/rss/edition_europe.rss",
             "name": "CNN",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./cnn.png",
@@ -1962,7 +1954,7 @@
           {
             "url": "http://feeds.bbci.co.uk/news/world/europe/rss.xml?edition=int",
             "name": "BBC News",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
@@ -1971,7 +1963,7 @@
             "url": "https://www.deutschlandfunk.de/europa.1863.de.rss",
             "name": "Deutschlandfunk",
             "encodedTitles": true,
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
@@ -2220,7 +2212,7 @@
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
             "name": "The New York Times",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./thenytimes.png",
@@ -2229,7 +2221,7 @@
           {
             "url": "http://feeds.bbci.co.uk/news/video_and_audio/world/rss.xml",
             "name": "BBC News",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
@@ -2237,7 +2229,7 @@
           {
             "url": "https://www.theguardian.com/world/rss",
             "name": "The Guardian",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./theguardian.png",
@@ -2246,7 +2238,7 @@
           {
             "url": "http://feeds.foxnews.com/foxnews/world?format=xml",
             "name": "FOX news",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./foxnews.png",
@@ -2255,7 +2247,7 @@
           {
             "url": "http://rss.cnn.com/rss/edition_world.rss",
             "name": "CNN",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./cnn.png",
@@ -2265,7 +2257,7 @@
             "url": "https://www.deutschlandfunk.de/eine-welt.798.de.rss",
             "name": "Deutschlandfunk",
             "encodedTitles": true,
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 3,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
@@ -2463,6 +2455,7 @@
           {
             "url": "https://www.forbes.fr/politique/feed/",
             "name": "Forbes",
+            "encodedTitles": true,
             "count": 1,
             "iconImg": "./forbes.png",
             "backgroundImg": "./forbes_bgIMG.jpg"
@@ -2483,7 +2476,7 @@
           {
             "url": "https://www.telegraph.co.uk/politics/rss.xml",
             "name": "The Telegraph",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./thetelegraph.png",
@@ -2492,7 +2485,7 @@
           {
             "url": "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/politics/rss.xml",
             "name": "The New York Times",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./thenytimes.png",
@@ -2502,7 +2495,7 @@
             "url": "http://feeds.foxnews.com/foxnews/politics?format=xml",
             "name": "FOX news",
             "encodedTitles": true,
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./foxnews.png",
             "backgroundImg": "./foxnews_bgIMG.jpg"
@@ -2510,7 +2503,7 @@
           {
             "url": "http://feeds.bbci.co.uk/news/politics/rss.xml",
             "name": "BBC News",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
@@ -2519,7 +2512,7 @@
             "url": "https://rss.dw.com/xml/rss-de-politik",
             "name": "Deutsche Welle",
             "encodedTitles": true,
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./dw.png",
             "backgroundImg": "./dw_bgIMG.jpg"
@@ -2527,7 +2520,7 @@
           {
             "url": "https://www.businessinsider.de/politik/feed/",
             "name": "Insider",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./insider.png",
@@ -2536,7 +2529,7 @@
           {
             "url": "https://www.deutschlandfunk.de/politik.1499.de.rss",
             "name": "Deutschlandfunk",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./dfunk.png",
@@ -2545,7 +2538,7 @@
           {
             "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=politik.bild.html",
             "name": "Bild",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./bild.png",
@@ -2571,7 +2564,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/auvergne-rhone-alpes/actu/rss",
             "name": "France 3",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./france3.png",
@@ -2582,7 +2575,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/actu/rss",
             "name": "France 3",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./france3.png",
@@ -2593,7 +2586,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/bretagne/actu/rss",
             "name": "France 3",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./france3.png",
@@ -2604,7 +2597,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/centre-val-de-loire/actu/rss",
             "name": "France 3",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./france3.png",
@@ -2615,7 +2608,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/corse/actu/rss",
             "name": "France 3",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./france3.png",
@@ -2626,7 +2619,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/grand-est/actu/rss",
             "name": "France 3",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./france3.png",
@@ -2637,7 +2630,7 @@
           {
             "url": "https://la1ere.francetvinfo.fr/guadeloupe/actu/rss",
             "name": "La 1ère",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./la1ere.png",
@@ -2648,7 +2641,7 @@
           {
             "url": "https://la1ere.francetvinfo.fr/guyane/actu/rss",
             "name": "La 1ère",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./la1ere.png",
@@ -2659,7 +2652,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/hauts-de-france/actu/rss",
             "name": "France 3",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./france3.png",
@@ -2671,7 +2664,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/paris-ile-de-france/actu/rss",
             "name": "France 3",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./france3.png",
@@ -2682,7 +2675,7 @@
           {
             "url": "https://la1ere.francetvinfo.fr/martinique/actu/rss",
             "name": "La 1ère",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./la1ere.png",
@@ -2693,7 +2686,7 @@
           {
             "url": "https://la1ere.francetvinfo.fr/mayotte/actu/rss",
             "name": "La 1ère",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./la1ere.png",
@@ -2704,7 +2697,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/normandie/actu/rss",
             "name": "France 3",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./france3.png",
@@ -2715,7 +2708,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/nouvelle-aquitaine/actu/rss",
             "name": "France 3",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./france3.png",
@@ -2726,7 +2719,7 @@
           {
             "url": "https://la1ere.francetvinfo.fr/nouvellecaledonie/actu/rss",
             "name": "La 1ère",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./la1ere.png",
@@ -2737,7 +2730,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/occitanie/actu/rss",
             "name": "France 3",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./france3.png",
@@ -2748,7 +2741,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/pays-de-la-loire/actu/rss",
             "name": "France 3",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./france3.png",
@@ -2759,7 +2752,7 @@
           {
             "url": "https://la1ere.francetvinfo.fr/polynesie/actu/rss",
             "name": "La 1ère",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./la1ere.png",
@@ -2771,7 +2764,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/provence-alpes-cote-d-azur/actu/rss",
             "name": "France 3",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./france3.png",
@@ -2783,7 +2776,7 @@
           {
             "url": "https://la1ere.francetvinfo.fr/reunion/actu/rss",
             "name": "La 1ère",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./la1ere.png",
@@ -2795,7 +2788,7 @@
           {
             "url": "https://la1ere.francetvinfo.fr/saintpierremiquelon/actu/rss",
             "name": "La 1ère",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./la1ere.png",
@@ -2807,7 +2800,7 @@
           {
             "url": "https://la1ere.francetvinfo.fr/wallisfutuna/actu/rss",
             "name": "La 1ère",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./la1ere.png",
@@ -2959,7 +2952,7 @@
             "url": "https://www.deutschlandfunk.de/gesellschaft.1574.de.rss",
             "name": "Deutschlandfunk",
             "encodedTitles": true,
-            "specification": "news-notif smallDesc bigHeadline",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
@@ -2967,7 +2960,7 @@
           {
             "url": "https://taz.de/feed/!p4608/rss.xml",
             "name": "Die Tageszeitung",
-            "specification": "news-notif smallDesc bigHeadline",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./taz.png",
             "backgroundImg": "./taz_bgIMG.jpg"
@@ -3190,7 +3183,7 @@
           {
             "url": "https://www.telegraph.co.uk/science/rss.xml",
             "name": "The Telegraph",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./thetelegraph.png",
@@ -3199,7 +3192,7 @@
           {
             "url": "https://www.techrepublic.com/rssfeeds/articles/?feedType=rssfeeds&sort=latest",
             "name": "TechRepublic",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./techrep.png",
@@ -3208,7 +3201,7 @@
           {
             "url": "https://www.theguardian.com/science/rss",
             "name": "The Guardian",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./theguardian.png",
@@ -3218,7 +3211,7 @@
             "url": "https://www.forbes.com/science/feed2/",
             "name": "Forbes",
             "encodedTitles": true,
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./forbes.png",
             "backgroundImg": "./forbes_bgIMG.jpg"
@@ -3226,7 +3219,7 @@
           {
             "url": "http://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
             "name": "BBC News",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
@@ -3234,7 +3227,7 @@
           {
             "url": "https://www.wired.com/feed/science/rss",
             "name": "Wired",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./wired.png",
             "backgroundImg": "./wired_bgIMG.jpg"
@@ -3243,7 +3236,7 @@
             "url": "https://rss.dw.com/xml/rss-de-wissenschaft",
             "name": "Deutsche Welle",
             "encodedTitles": true,
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./dw.png",
             "backgroundImg": "./dw_bgIMG.jpg"
@@ -3252,7 +3245,7 @@
             "url": "https://www.deutschlandfunk.de/forschung-aktuell.675.de.rss",
             "name": "Deutschlandfunk",
             "encodedTitles": true,
-            "specification": "news-list ",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
@@ -3294,14 +3287,6 @@
             "backgroundImg": "./numerama_bgIMG.jpg"
           },
           {
-            "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=tech",
-            "name": "Tech Insider",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./tinsider.png",
-            "backgroundImg": "./tinsider_bgIMG.jpg"
-          },
-          {
             "url": "https://www.01net.com/rss/actualites/technos/",
             "name": "01NET",
             "count": 2,
@@ -3318,6 +3303,7 @@
           {
             "url": "https://www.forbes.fr/technologie/feed/",
             "name": "Forbes",
+            "encodedTitles": true,
             "count": 1,
             "iconImg": "./forbes.png",
             "backgroundImg": "./forbes_bgIMG.jpg"
@@ -3470,7 +3456,7 @@
           {
             "url": "https://www.businessinsider.de/tech/feed/",
             "name": "Tech Insider",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./tinsider.png",
@@ -3479,7 +3465,7 @@
           {
             "url": "https://www.newyorker.com/feed/tech",
             "name": "The New Yorker",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./thenewyorker.png",
             "backgroundImg": "./thenewyorker_bgIMG.jpg"
@@ -3487,7 +3473,7 @@
           {
             "url": "https://www.newyorker.com/feed/tech/elements",
             "name": "The New Yorker",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./thenewyorker.png",
             "backgroundImg": "./thenewyorker_bgIMG.jpg"
@@ -3495,7 +3481,7 @@
           {
             "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=digital.bild.html",
             "name": "Bild",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./bild.png",
             "backgroundImg": "./bild_bgIMG.jpg"
@@ -3581,6 +3567,7 @@
           {
             "url": "https://www.forbes.fr/environnement/feed/",
             "name": "Forbes",
+            "encodedTitles": true,
             "count": 1,
             "iconImg": "./forbes.png",
             "backgroundImg": "./forbes_bgIMG.jpg"
@@ -3599,7 +3586,7 @@
           {
             "url": "https://taz.de/feed/!p4624/rss.xml",
             "name": "Die Tageszeitung",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./taz.png",
             "backgroundImg": "./taz_bgIMG.jpg"
@@ -3690,17 +3677,9 @@
             "backgroundImg": "./courrierinter_bgIMG.jpg"
           },
           {
-            "url": "http://feed.prismamediadigital.com/v1/bin/rss?categories=lifestyle",
-            "name": "Insider",
-            "specification": "news-notif firstFocus",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./insider.png",
-            "backgroundImg": "./insider_bgIMG.jpg"
-          },
-          {
             "url": "https://www.forbes.fr/lifestyle/feed/",
             "name": "Forbes",
+            "encodedTitles": true,
             "specification": "news-notif firstFocus",
             "count": 1,
             "iconImg": "./forbes.png",
@@ -3845,10 +3824,19 @@
           {
             "url": "https://www.challenges.fr/luxe/rss.xml",
             "name": "Challenges",
-            "specification": "news-focus",
+            "specification": "news-notif firstFocus",
             "count": 2,
             "iconImg": "./challenges.png",
             "backgroundImg": "./challenges_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.forbes.fr/luxe/feed/",
+            "name": "Forbes",
+            "encodedTitles": true,
+            "specification": "news-notif firstFocus",
+            "count": 2,
+            "iconImg": "./forbes.png",
+            "backgroundImg": "./forbes_bgIMG.jpg"
           }
         ],
         "Habitat": [
@@ -3924,6 +3912,7 @@
           {
             "url": "https://www.forbes.fr/management/feed/",
             "name": "Forbes",
+            "encodedTitles": true,
             "specification": "news-list",
             "count": 1,
             "iconImg": "./forbes.png",
@@ -3934,7 +3923,7 @@
           {
             "url": "https://www.newyorker.com/feed/everything",
             "name": "The New Yorker",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline big-list",
             "count": 2,
             "iconImg": "./thenewyorker.png",
             "backgroundImg": "./thenewyorker_bgIMG.jpg"
@@ -3942,7 +3931,7 @@
           {
             "url": "http://feeds.washingtonpost.com/rss/lifestyle",
             "name": "The Washington Post",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./wpost.png",
@@ -3952,7 +3941,7 @@
             "url": "http://feeds.foxnews.com/foxnews/section/lifestyle?format=xml",
             "name": "FOX news",
             "encodedTitles": true,
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./foxnews.png",
             "backgroundImg": "./foxnews_bgIMG.jpg"
@@ -3961,7 +3950,7 @@
             "url": "https://www.forbes.com/lifestyle/feed2/",
             "name": "Forbes",
             "encodedTitles": true,
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./forbes.png",
             "backgroundImg": "./forbes_bgIMG.jpg"
@@ -3970,7 +3959,7 @@
             "url": "https://rss.dw.com/xml/rss-de-deutschlandentdecken",
             "name": "Deutsche Welle",
             "encodedTitles": true,
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./dw.png",
             "backgroundImg": "./dw_bgIMG.jpg"
@@ -3978,7 +3967,7 @@
           {
             "url": "https://www.businessinsider.de/leben/feed/",
             "name": "Insider",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./insider.png",
@@ -3987,7 +3976,7 @@
           {
             "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=lifestyle.bild.html",
             "name": "Bild",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./bild.png",
             "backgroundImg": "./bild_bgIMG.jpg"
@@ -4020,7 +4009,7 @@
           {
             "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=auto.bild.html",
             "name": "Bild",
-            "specification": "news-list",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./bild.png",
             "backgroundImg": "./bild_bgIMG.jpg"

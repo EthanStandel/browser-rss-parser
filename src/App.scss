@@ -949,7 +949,7 @@ ul.rss {
       
         .item-F-line {
           display: table !important;
-          width: calc(100% - 16px - 10px);
+          width: calc(100% - 32px);
           position: absolute;
           top: 17px;
           
@@ -979,14 +979,13 @@ ul.rss {
       margin-bottom: 0;
       border-radius: 0;
 
-      &:first-of-type {
+      &:first-of-type, &.big-list {
 
         .icon-image:nth-child(1) {
           display: none !important;
         }
 
         .icon-image:not(:nth-child(1)) {
-
             z-index: 2;
             margin: 0;
             position: absolute;
@@ -1034,6 +1033,107 @@ ul.rss {
 
         .item-infos2 {
           display: block !important;
+        }
+      }
+
+      &.firstHeadline {
+
+        &:first-child{
+
+          .background-image, .media, .item-container {
+            display: block !important;
+          }
+          
+          .item-description {
+            -webkit-line-clamp: 3 !important;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box !important;
+            -webkit-box-orient: vertical;
+          }
+        
+          .item-title {
+            font-weight: 700;
+            -webkit-line-clamp: 4; /* number of lines to show */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box !important;
+            -webkit-box-orient: vertical;
+            width: 100%;
+          }
+        
+          .item-container  {
+            padding: 14px 16px;
+            width: calc(100% - 32px);
+            background-color: var(--tertiarySystemGroupedBackground);
+            border-radius: 0 0 10px 10px;
+          }
+        
+          .background-image {
+  
+            height: 170px;
+            width: 100%;
+            margin-right: 0;
+            z-index: -1;
+            float: none;
+            
+            img {
+              width: 100%;
+              height: 170px;
+              border-radius: 10px 10px 0 0;
+            }
+          }
+  
+          .icon-image {
+            height: 0;
+  
+            img {
+              height: 35px !important;
+              object-fit: cover;
+              width: 35px !important;
+              z-index: 2;
+              position: absolute;
+              border-radius: 9px !important;
+              top: 10px !important;
+              left: 10px !important;
+            }
+  
+            &:nth-child(1) {
+              display: none !important;
+            }
+          }
+  
+          .media {
+            position: relative !important;
+            width: calc(100% - 20px) ;
+            padding: 10px 0 0 !important;
+            border-bottom: 0 solid red;
+          }
+        
+          .item-F-line {
+            display: table !important;
+            width: calc(100% - 16px - 10px);
+            position: absolute !important;
+            top: calc(17px + 10px) !important;
+            
+            .item-publish-date {
+              color: white;
+              text-shadow: 0 0 8px black;
+              opacity: 0.8;
+              padding-left: 0;
+            }
+  
+            .source-name {
+              display: none !important;
+            }
+          }
+  
+          .item-infos, .item-infos2 {
+            
+            .item-publish-date {
+              display: none;
+            }
+          }
         }
       }
 
