@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.scss';
+import './script_base.js';
 import RssContent from './components/RssContent';
 import rssFeeds from "./resources/rss_feeds.json";
 import { BrowserUtils } from './utils/BrowserUtils';
@@ -76,7 +77,7 @@ const App = () => {
             .filter(([ key ]) => !subtopicFilter ? true : subtopicFilter === key)
             .map(([key, feeds]) => (
               <div key={key} className={`${key} section`}>
-                <div className="external-script-mount-element" />
+                <div id="external-script-element" />
                 {key !== "noSubtopic" && <h4 className="subtopic">{key}</h4>}
                 <RssContent rssFeeds={feeds} />
               </div>
@@ -85,6 +86,7 @@ const App = () => {
         </div>
       </div>
       <footer> 
+      <div id="external-script-element"></div>
         <div className="footer-container">
           <div className="footer-header-app">
             <h5 className="logo-text">nuntium</h5>
