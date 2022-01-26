@@ -404,7 +404,15 @@
             "count": 1,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
-          }   
+          },
+          {
+            "url": "https://www.vox.com/rss/business-and-finance/index.xml",
+            "name": "Vox",
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./vox.png",
+            "backgroundImg": "./vox_bgIMG.jpg"
+          }     
         ]
       }
     },
@@ -1058,6 +1066,14 @@
             "count": 1,
             "iconImg": "./bild.png",
             "backgroundImg": "./bild_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.vox.com/rss/culture/index.xml",
+            "name": "Vox",
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./vox.png",
+            "backgroundImg": "./vox_bgIMG.jpg"
           }  
         ]
       }
@@ -2261,7 +2277,15 @@
             "count": 3,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
-          }   
+          },
+          {
+            "url": "https://www.vox.com/rss/world/index.xml",
+            "name": "Vox",
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./vox.png",
+            "backgroundImg": "./vox_bgIMG.jpg"
+          }
         ]
       }
     },
@@ -2543,7 +2567,15 @@
             "count": 2,
             "iconImg": "./bild.png",
             "backgroundImg": "./bild_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.vox.com/rss/policy-and-politics/index.xml",
+            "name": "Vox",
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./vox.png",
+            "backgroundImg": "./vox_bgIMG.jpg"
+          }   
         ]
       }
     },
@@ -3249,7 +3281,15 @@
             "count": 2,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
-          }   
+          },
+          {
+            "url": "https://www.vox.com/rss/science-and-health/index.xml",
+            "name": "Vox",
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./vox.png",
+            "backgroundImg": "./vox_bgIMG.jpg"
+          }    
         ]
       }
     },
@@ -3485,7 +3525,23 @@
             "count": 2,
             "iconImg": "./bild.png",
             "backgroundImg": "./bild_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.vox.com/rss/technology/index.xml",
+            "name": "Vox",
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./vox.png",
+            "backgroundImg": "./vox_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.vox.com/rss/recode/index.xml",
+            "name": "Vox",
+            "specification": "news-list firstHeadline",
+            "count": 1,
+            "iconImg": "./vox.png",
+            "backgroundImg": "./vox_bgIMG.jpg"
+          } 
         ]
       }
     },
@@ -3587,10 +3643,18 @@
             "url": "https://taz.de/feed/!p4624/rss.xml",
             "name": "Die Tageszeitung",
             "specification": "news-list firstHeadline",
-            "count": 1,
+            "count": 2,
             "iconImg": "./taz.png",
             "backgroundImg": "./taz_bgIMG.jpg"
-          }  
+          },
+          {
+            "url": "https://www.vox.com/rss/energy-and-environment/index.xml",
+            "name": "Vox",
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./vox.png",
+            "backgroundImg": "./vox_bgIMG.jpg"
+          }       
         ]
       }
     },
@@ -3980,6 +4044,22 @@
             "count": 2,
             "iconImg": "./bild.png",
             "backgroundImg": "./bild_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.vox.com/rss/the-highlight/index.xml",
+            "name": "Vox",
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./vox.png",
+            "backgroundImg": "./vox_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.vox.com/rss/the-goods/index.xml",
+            "name": "Vox",
+            "specification": "news-list firstHeadline",
+            "count": 1,
+            "iconImg": "./vox.png",
+            "backgroundImg": "./vox_bgIMG.jpg"
           }
         ]
       }

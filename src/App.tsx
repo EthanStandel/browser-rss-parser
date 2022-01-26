@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './App.scss';
-import './script_base.js';
 import RssContent from './components/RssContent';
 import rssFeeds from "./resources/rss_feeds.json";
 import { BrowserUtils } from './utils/BrowserUtils';
