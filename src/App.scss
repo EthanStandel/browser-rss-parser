@@ -15,7 +15,7 @@
   --ecoColorTheme: orange;
   --mondeColorTheme: dodgerblue;
   --presseinterColorTheme: crimson;
-  --sciencesColorTheme: mediumseagreen;
+  --scienceColorTheme: mediumseagreen;
   --europeColorTheme: yellowgreen;
   --polColorTheme: darkviolet;
   --societeColorTheme: mediumaquamarine;
@@ -49,7 +49,7 @@ body {
   
 }
 
-header, .body-container, .mini-links a {
+.headerTitle, .body-container, .mini-links a {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -71,8 +71,8 @@ header, .body-container, .mini-links a {
     text-decoration-color: var(--colorTheme);
   }
 
-  .Sciences * {
-    text-decoration-color: var(--sciencesColorTheme);
+  .Science * {
+    text-decoration-color: var(--scienceColorTheme);
   }
 
   .Monde * {
@@ -196,8 +196,8 @@ ul {
     color: var(--cultureColorTheme) !important;
   }
 
-  &.Sciences li > *  {
-    color: var(--sciencesColorTheme) !important;
+  &.Science li > *  {
+    color: var(--scienceColorTheme) !important;
   }
 
   &.Europe li > *  {
@@ -286,9 +286,9 @@ ul.topics-navbar li {
     color: var(--mondeColorTheme);
   }
 
-  .Sciences {
-    border-color: var(--sciencesColorTheme);
-    color: var(--sciencesColorTheme);
+  .Science {
+    border-color: var(--scienceColorTheme);
+    color: var(--scienceColorTheme);
   }
 
   .Europe {
@@ -371,8 +371,8 @@ ul.topics-navbar li {
           background-color: var(--mondeColorTheme);
         }
 
-        &.Sciences {
-          background-color: var(--sciencesColorTheme);
+        &.Science {
+          background-color: var(--scienceColorTheme);
         }
         
         &.Europe {
@@ -446,8 +446,8 @@ h3.bold {
     color: var(--presseinterColorTheme);
   }
 
-  &.Sciences {
-    color: var(--sciencesColorTheme);
+  &.Science {
+    color: var(--scienceColorTheme);
   }
   
   &.Europe {
@@ -1270,17 +1270,4 @@ footer {
   border-bottom: 0.8px solid var(--separator);
   padding-bottom: 10px !important;
   margin-bottom: 7px !important;
-}
-
-.headerTitle:after {
-  background: linear-gradient(90deg, rgba(252,252,254,1) 0%, rgba(252,252,254,0.8) 37%, rgba(252,252,254,0.4) 65%, rgba(252,252,254,0) 100%);
-  content: "";
-  display: block;
-  position: absolute;
-  left: 154.85px;
-  top: 0;
-  width: 80px;
-  opacity: 0 !important;
-  height: 40px;
-  z-index: 2;
 }

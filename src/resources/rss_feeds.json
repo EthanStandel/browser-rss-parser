@@ -66,6 +66,121 @@
         ]
       }
     },
+    "Presse étrangère": {
+      "subtopics": {
+        "Deutschland": [
+          {
+            "url": "https://www.tagesschau.de/xml/rss2",
+            "name": "Tagesschau.de",
+            "specification": "news-notif smallDesc bigHeadline",
+            "count": 2,
+            "iconImg": "./tagesschau.png",
+            "backgroundImg": "./tagesschau_bgIMG.png"
+          },
+          {
+            "url": "https://rss.dw.com/xml/rss-de-top",
+            "name": "Deutsche Welle",
+            "encodedTitles": true,
+            "specification": "news-notif smallDesc bigHeadline",
+            "count": 2,
+            "iconImg": "./dw.png",
+            "backgroundImg": "./dw_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/die-nachrichten.353.de.rss",
+            "name": "Deutschlandfunk",
+            "encodedTitles": true,
+            "specification": "news-notif smallDesc bigHeadline",
+            "count": 2,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
+          },
+          {
+            "url": "https://taz.de/feed/!p4608/rss.xml",
+            "name": "Die Tageszeitung",
+            "specification": "news-notif smallDesc bigHeadline",
+            "count": 2,
+            "iconImg": "./taz.png",
+            "backgroundImg": "./taz_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=news.bild.html",
+            "name": "Bild",
+            "specification": "news-notif smallDesc bigHeadline",
+            "count": 2,
+            "iconImg": "./bild.png",
+            "backgroundImg": "./bild_bgIMG.jpg"
+          }
+        ],
+        "United States & Canada": [
+          {
+            "url": "https://www.cbsnews.com/latest/rss/main",
+            "name": "CBS News",
+            "specification": "news-notif smallDesc bigHeadline",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./cbsnews.png",
+            "backgroundImg": "./cbsnews_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.latimes.com/world-nation/rss2.0.xml",
+            "name": "Los Angeles Times",
+            "specification": "news-notif smallDesc bigHeadline",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./latimes.png",
+            "backgroundImg": "./latimes_bgIMG.jpg"
+          },
+          {
+            "url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml",
+            "name": "The New York Times",
+            "specification": "news-notif smallDesc bigHeadline",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./thenytimes.png",
+            "backgroundImg": "./thenytimes_bgIMG.jpg"
+          },
+          {
+            "url": "http://rss.cnn.com/rss/edition_us.rss",
+            "name": "CNN",
+            "specification": "news-notif smallDesc bigHeadline",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./cnn.png",
+            "backgroundImg": "./cnn_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.newyorker.com/feed/news",
+            "name": "The New Yorker",
+            "specification": "news-focus",
+            "count": 1,
+            "iconImg": "./thenewyorker.png",
+            "backgroundImg": "./thenewyorker_bgIMG.jpg"
+          }
+        ],
+        "Australia & NZ": [
+        ],
+        "United Kingdom": [
+          {
+            "url": "https://www.theguardian.com/uk-news/rss",
+            "name": "The Guardian",
+            "specification": "news-notif smallDesc bigHeadline",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./theguardian.png",
+            "backgroundImg": "./theguardian_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.bbci.co.uk/news/uk/rss.xml",
+            "name": "BBC News",
+            "specification": "news-notif smallDesc bigHeadline",
+            "count": 2,
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
+          }
+        ]
+      }
+    },
     "Économie": {
       "subtopics": {
         "noSubtopic": [
@@ -413,668 +528,6 @@
             "iconImg": "./vox.png",
             "backgroundImg": "./vox_bgIMG.jpg"
           }     
-        ]
-      }
-    },
-    "Culture": {
-      "subtopics": {
-        "noSubtopic": [
-          {
-            "url": "https://www.lefigaro.fr/rss/figaro_culture.xml",
-            "name": "Le Figaro",
-            "specification": "firstFocus",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro_bgIMG.png"
-          },
-          {
-            "url": "https://www.vanityfair.fr/rss.xml",
-            "name": "Vanity Fair",
-            "specification": "firstFocus",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./vanityfair.png",
-            "backgroundImg": "./vanityfair_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lexpress.fr/rss/culture.xml",
-            "name": "L'Express",
-            "specification": "firstFocus",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./lexpress.jpeg",
-            "backgroundImg": "./lexpress_bgIMG.jpg"
-          },
-          {
-            "url": "https://feeds.leparisien.fr/leparisien/rss/culture-loisirs",
-            "name": "Le Parisien",
-            "specification": "news-notif bigHeadline",
-            "count": 2,
-            "iconImg": "./leparisien.png",
-            "backgroundImg": "./leparisien_bgIMG.jpg"
-          },
-          {
-            "url": "https://5minutes.rtl.lu/rss/culture",
-            "name": "RTL",
-            "specification": "firstFocus",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./rtl.png",
-            "backgroundImg": "./rtl_bgIMG.png"
-          },
-          {
-            "url": "https://ici.radio-canada.ca/rss/4167",
-            "name": "Radio Canada",
-            "specification": "firstFocus",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./radiocanada.png",
-            "backgroundImg": "./radiocanada_bgIMG.png"
-          },
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/?outputType=xml",
-            "name": "Libération",
-            "specification": "firstFocus",
-            "count": 1,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lepoint.fr/pop-culture/rss.xml",
-            "name": "Le Point",
-            "encodedTitles": true,
-            "specification": "firstFocus",
-            "count": 2,
-            "iconImg": "./lepointpop.png",
-            "backgroundImg": "./lepoint_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/culture/",
-            "name": "BFM TV",
-            "specification": "firstFocus",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          }
-        ],
-        "Littérature": [
-          {
-            "url": "https://www.lefigaro.fr/rss/figaro_livres.xml",
-            "name": "Le Figaro",
-            "specification": "firstFocus",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro_bgIMG.png"
-          },
-          {
-            "url": "https://www.telerama.fr/rss/livre.xml",
-            "name": "Télérama",
-            "specification": "firstFocus",
-            "count": 2,
-            "iconImg": "./telerama.png",
-            "backgroundImg": "./telerama_bgIMG.jpg"
-          },
-          {
-            "url": "https://ici.radio-canada.ca/rss/1000083",
-            "name": "Radio Canada",
-            "specification": "firstFocus",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./radiocanada.png",
-            "backgroundImg": "./radiocanada_bgIMG.png"
-          },
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/livres/?outputType=xml",
-            "name": "Libération",
-            "specification": "firstFocus",
-            "count": 1,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lesinrocks.com/livres/feed/",
-            "name": "Les Inrocks",
-            "specification": "firstFocus",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./lesinrocks.png",
-            "backgroundImg": "./lesinrocks_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lepoint.fr/livres/rss.xml",
-            "name": "Le Point",
-            "encodedTitles": true,
-            "specification": "firstFocus",
-            "count": 1,
-            "iconImg": "./lepointpop.png",
-            "backgroundImg": "./lepoint_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/livres/rss_full.xml",
-            "name": "Le Monde",
-            "encodedTitles": true,
-            "specification": "firstFocus",
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.francetvinfo.fr/culture/livres.rss",
-            "name": "Franceinfo",
-            "specification": "firstFocus",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          }
-        ],
-        "Films & séries": [
-          {
-            "url": "https://www.lefigaro.fr/rss/figaro_cinema.xml",
-            "name": "Le Figaro",
-            "specification": "news-notif bigHeadline",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro_bgIMG.png"
-          },
-          {
-            "url": "https://www.telerama.fr/rss/series-tv.xml",
-            "name": "Télérama",
-            "specification": "news-notif bigHeadline",
-            "count": 1,
-            "iconImg": "./telerama.png",
-            "backgroundImg": "./telerama_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.telerama.fr/rss/cinema.xml",
-            "name": "Télérama",
-            "specification": "news-notif bigHeadline",
-            "count": 2,
-            "iconImg": "./telerama.png",
-            "backgroundImg": "./telerama_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.premiere.fr/rss/actu-cinema",
-            "name": "Première",
-            "specification": "news-notif bigHeadline",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./premiere.png",
-            "backgroundImg": "./premiere_bgIMG.png"
-          },
-          {
-            "url": "https://www.melty.fr/cinema-2.rss",
-            "name": "Melty",
-            "specification": "news-notif bigHeadline",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./melty.png",
-            "backgroundImg": "./melty_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lesinrocks.com/cinema/feed/",
-            "name": "Les Inrocks",
-            "specification": "news-notif bigHeadline",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./lesinrocks.png",
-            "backgroundImg": "./lesinrocks_bgIMG.jpg"
-          },
-          {
-            "url": "http://rss.allocine.fr/ac/actualites/cine",
-            "name": "Allociné",
-            "specification": "news-notif bigHeadline",
-            "count": 2,
-            "iconImg": "./allocine.png",
-            "backgroundImg": ".allocine_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.journaldugeek.com/category/cinema/feed/",
-            "name": "Le journal du geek",
-            "specification": "news-notif bigHeadline",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.journaldugeek.com/tag/series/feed/",
-            "name": "Le journal du geek",
-            "specification": "news-notif bigHeadline",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.numerama.com/pop-culture/cinema/feed/",
-            "name": "Numerama",
-            "encodedTitles": true,
-            "specification": "news-notif bigHeadline",
-            "count": 2,
-            "iconImg": "./numerama.png",
-            "backgroundImg": "./numerama_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.francetvinfo.fr/culture/cinema.rss",
-            "name": "Franceinfo",
-            "specification": "news-notif bigHeadline",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.tomsguide.fr/tag/cinema/feed/",
-            "name": "Tom's guide",
-            "specification": "news-notif bigHeadline",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./tomsguide.png",
-            "backgroundImg": "./tomsguide_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.linternaute.com/cinema/rss/",
-            "name": "L'internaute",
-            "specification": "news-notif bigHeadline",
-            "count": 2,
-            "iconImg": "./linternaute.png",
-            "backgroundImg": "./linternaute_bgIMG.jpg"
-          }
-        ],
-        "Arts visuels & graphiques": [
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/arts/?outputType=xml",
-            "name": "Libération",
-            "count": 2,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lepoint.fr/arts/rss.xml",
-            "name": "Le Point",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./lepointpop.png",
-            "backgroundImg": "./lepoint_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.francetvinfo.fr/culture/arts-expos/design.rss",
-            "name": "Franceinfo",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          }
-        ],
-        "Spectacles & expositions": [
-          {
-            "url": "https://www.lefigaro.fr/rss/figaro_theatre.xml",
-            "name": "Le Figaro",
-            "specification": "news-list",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro_bgIMG.png"
-          },
-          {
-            "url": "https://www.lefigaro.fr/rss/figaro_arts-expositions.xml",
-            "name": "Le Figaro",
-            "specification": "news-list",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro_bgIMG.png"
-          },
-          {
-            "url": "https://www.ladepeche.fr/culture-et-loisirs/spectacles/rss.xml",
-            "name": "La Dépêche",
-            "specification": "news-list",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/scenes/?outputType=xml",
-            "name": "Libération",
-            "specification": "news-list",
-            "count": 1,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lesinrocks.com/arts-et-scenes/feed/",
-            "name": "Les Inrocks",
-            "specification": "news-list",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./lesinrocks.png",
-            "backgroundImg": "./lesinrocks_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/scenes/rss_full.xml",
-            "name": "Le Monde",
-            "encodedTitles": true,
-            "specification": "news-list",
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.francetvinfo.fr/culture/arts-expos.rss",
-            "name": "Franceinfo",
-            "specification": "news-list",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          }
-        ],
-        "Mode & célébrités" : [
-          {
-            "url": "https://vl-media.fr/categories/mode/feed/",
-            "name": "Vanity Fair",
-            "specification": "news-focus",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./vanityfair.png",
-            "backgroundImg": "./vanityfair_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/m-mode/rss_full.xml",
-            "name": "Le Monde",
-            "encodedTitles": true,
-            "specification": "news-notif",
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.francetvinfo.fr/culture/mode.rss",
-            "name": "Franceinfo",
-            "specification": "news-notif",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/people/mode/",
-            "name": "BFM TV",
-            "specification": "news-notif",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          }
-        ],
-        "Jeux vidéo": [
-          {
-            "url": "https://www.presse-citron.net/category/lifestyle/jeu-video/feed",
-            "name": "Presse citron",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./pressecitron.png",
-            "backgroundImg": "./pressecitron_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/jeux-video/?outputType=xml",
-            "name": "Libération",
-            "count": 1,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lesinrocks.com/jeux-video/feed/",
-            "name": "Les Inrocks",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./lesinrocks.png",
-            "backgroundImg": "./lesinrocks_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/jeux-video/rss_full.xml",
-            "name": "Le Monde",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.journaldugeek.com/category/jeux-video/feed/",
-            "name": "Le journal du geek",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.tomsguide.fr/tag/jeux-video/feed/",
-            "name": "Tom's guide",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./tomsguide.png",
-            "backgroundImg": "./tomsguide_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.linternaute.com/hightech/jeux-video/rss/",
-            "name": "L'internaute",
-            "count": 1,
-            "iconImg": "./linternaute.png",
-            "backgroundImg": "./linternaute_bgIMG.jpg"
-          }
-        ],
-        "Patrimoine & architecture": [
-          {
-            "url": "https://www.ladepeche.fr/culture-et-loisirs/patrimoine/rss.xml",
-            "name": "La Dépêche",
-            "specification": "news-list",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/architecture/rss_full.xml",
-            "name": "Le Monde",
-            "encodedTitles": true,
-            "specification": "news-list",
-            "count": 2,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.francetvinfo.fr/culture/arts-expos/architecture.rss",
-            "name": "Franceinfo",
-            "specification": "news-list",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          }
-        ],
-        "Arts du spectacle": [
-
-        ],
-         "Musique": [
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/musique/?outputType=xml",
-            "name": "Libération",
-            "specification": "firstFocus",
-            "count": 1,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lesinrocks.com/musique/feed/",
-            "name": "Les Inrocks",
-            "specification": "firstFocus",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./lesinrocks.png",
-            "backgroundImg": "./lesinrocks_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lepoint.fr/musique/rss.xml",
-            "name": "Le Point",
-            "encodedTitles": true,
-            "specification": "firstFocus",
-            "count": 1,
-            "iconImg": "./lepointpop.png",
-            "backgroundImg": "./lepoint_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/people/musique/",
-            "name": "BFM TV",
-            "specification": "firstFocus",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/musiques/rss_full.xml",
-            "name": "Le Monde",
-            "encodedTitles": true,
-            "specification": "firstFocus",
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.melty.fr/musique-4.rss",
-            "name": "Melty",
-            "specification": "firstFocus",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./melty.png",
-            "backgroundImg": "./melty_bgIMG.jpg"
-          },
-          {
-            "url": "https://france3-regions.francetvinfo.fr/culture/musique/rss",
-            "name": "France 3",
-            "specification": "firstFocus",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./france3.png",
-            "backgroundImg": "./france3_bgIMG.jpg"
-          }
-        ],
-        "Histoire": [
-          {
-            "url": "https://www.lefigaro.fr/rss/figaro_histoire.xml",
-            "name": "Le Figaro",
-            "specification": "news-list",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro_bgIMG.png"
-          },
-          {
-            "url": "https://www.letelegramme.fr/histoire/rss.xml",
-            "name": "Le Télégramme",
-            "specification": "news-list",
-            "count": 1,
-            "iconImg": "./letelegramme.png",
-            "backgroundImg": "./letelegramme_bgIMG.jpg"
-          },
-          {
-            "url": "https://france3-regions.francetvinfo.fr/culture/histoire/rss",
-            "name": "France 3",
-            "specification": "news-list",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./france3.png",
-            "backgroundImg": "./france3_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.courrierinternational.com/feed/category/6679/rss.xml",
-            "name": "Courrier International",
-            "specification": "news-list",
-            "count": 2,
-            "iconImg": "./courrierinter.png",
-            "backgroundImg": "./courrierinter_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lhistoire.fr/rss.xml",
-            "name": "l'Histoire",
-            "encodedTitles": true,
-            "specification": "news-list",
-            "count": 2,
-            "iconImg": "./lhistoire.png",
-            "backgroundImg": "./lhistoire_bgIMG.jpg"
-          }
-        ],
-        "Presse étrangère": [
-          {
-            "url": "https://www.theguardian.com/uk/culture/rss",
-            "name": "The Guardian",
-            "specification": "news-list firstHeadline",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./theguardian.png",
-            "backgroundImg": "./theguardian_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bbc.com/culture/feed.rss",
-            "name": "BBC News",
-            "specification": "news-list firstHeadline",
-            "count": 1,
-            "iconImg": "./bbcnews.png",
-            "backgroundImg": "./bbcnews_bgIMG.jpg"
-          },
-          {
-            "url": "https://rss.dw.com/xml/rss-de-cul",
-            "name": "Deutsche Welle",
-            "encodedTitles": true,
-            "specification": "news-list firstHeadline",
-            "count": 1,
-            "iconImg": "./dw.png",
-            "backgroundImg": "./dw_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.newyorker.com/feed/culture",
-            "name": "The New Yorker",
-            "specification": "news-list firstHeadline",
-            "count": 2,
-            "iconImg": "./thenewyorker.png",
-            "backgroundImg": "./thenewyorker_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.deutschlandfunk.de/kultur.1495.de.rss",
-            "name": "Deutschlandfunk",
-            "encodedTitles": true,
-            "specification": "news-list firstHeadline",
-            "count": 1,
-            "iconImg": "./dfunk.png",
-            "backgroundImg": "./dfunk_bgIMG.jpg"
-          },
-          {
-            "url": "https://taz.de/feed/!p4639/rss.xml",
-            "name": "Die Tageszeitung",
-            "specification": "news-list firstHeadline",
-            "count": 1,
-            "iconImg": "./taz.png",
-            "backgroundImg": "./taz_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=unterhaltung.bild.html",
-            "name": "Bild",
-            "specification": "news-list firstHeadline",
-            "count": 1,
-            "iconImg": "./bild.png",
-            "backgroundImg": "./bild_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.vox.com/rss/culture/index.xml",
-            "name": "Vox",
-            "specification": "news-list firstHeadline",
-            "count": 2,
-            "iconImg": "./vox.png",
-            "backgroundImg": "./vox_bgIMG.jpg"
-          }  
         ]
       }
     },
@@ -1759,6 +1212,668 @@
         ]
       }
     },
+    "Culture": {
+      "subtopics": {
+        "noSubtopic": [
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_culture.xml",
+            "name": "Le Figaro",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.vanityfair.fr/rss.xml",
+            "name": "Vanity Fair",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./vanityfair.png",
+            "backgroundImg": "./vanityfair_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lexpress.fr/rss/culture.xml",
+            "name": "L'Express",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lexpress.jpeg",
+            "backgroundImg": "./lexpress_bgIMG.jpg"
+          },
+          {
+            "url": "https://feeds.leparisien.fr/leparisien/rss/culture-loisirs",
+            "name": "Le Parisien",
+            "specification": "news-notif bigHeadline",
+            "count": 2,
+            "iconImg": "./leparisien.png",
+            "backgroundImg": "./leparisien_bgIMG.jpg"
+          },
+          {
+            "url": "https://5minutes.rtl.lu/rss/culture",
+            "name": "RTL",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./rtl.png",
+            "backgroundImg": "./rtl_bgIMG.png"
+          },
+          {
+            "url": "https://ici.radio-canada.ca/rss/4167",
+            "name": "Radio Canada",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./radiocanada.png",
+            "backgroundImg": "./radiocanada_bgIMG.png"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/?outputType=xml",
+            "name": "Libération",
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/pop-culture/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "specification": "firstFocus",
+            "count": 2,
+            "iconImg": "./lepointpop.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/culture/",
+            "name": "BFM TV",
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          }
+        ],
+        "Littérature": [
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_livres.xml",
+            "name": "Le Figaro",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.telerama.fr/rss/livre.xml",
+            "name": "Télérama",
+            "specification": "firstFocus",
+            "count": 2,
+            "iconImg": "./telerama.png",
+            "backgroundImg": "./telerama_bgIMG.jpg"
+          },
+          {
+            "url": "https://ici.radio-canada.ca/rss/1000083",
+            "name": "Radio Canada",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./radiocanada.png",
+            "backgroundImg": "./radiocanada_bgIMG.png"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/livres/?outputType=xml",
+            "name": "Libération",
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/livres/feed/",
+            "name": "Les Inrocks",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/livres/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./lepointpop.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/livres/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/livres.rss",
+            "name": "Franceinfo",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Films & séries": [
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_cinema.xml",
+            "name": "Le Figaro",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.telerama.fr/rss/series-tv.xml",
+            "name": "Télérama",
+            "specification": "news-notif bigHeadline",
+            "count": 1,
+            "iconImg": "./telerama.png",
+            "backgroundImg": "./telerama_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.telerama.fr/rss/cinema.xml",
+            "name": "Télérama",
+            "specification": "news-notif bigHeadline",
+            "count": 2,
+            "iconImg": "./telerama.png",
+            "backgroundImg": "./telerama_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.premiere.fr/rss/actu-cinema",
+            "name": "Première",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./premiere.png",
+            "backgroundImg": "./premiere_bgIMG.png"
+          },
+          {
+            "url": "https://www.melty.fr/cinema-2.rss",
+            "name": "Melty",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./melty.png",
+            "backgroundImg": "./melty_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/cinema/feed/",
+            "name": "Les Inrocks",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
+          },
+          {
+            "url": "http://rss.allocine.fr/ac/actualites/cine",
+            "name": "Allociné",
+            "specification": "news-notif bigHeadline",
+            "count": 2,
+            "iconImg": "./allocine.png",
+            "backgroundImg": ".allocine_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/category/cinema/feed/",
+            "name": "Le journal du geek",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/series/feed/",
+            "name": "Le journal du geek",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.numerama.com/pop-culture/cinema/feed/",
+            "name": "Numerama",
+            "encodedTitles": true,
+            "specification": "news-notif bigHeadline",
+            "count": 2,
+            "iconImg": "./numerama.png",
+            "backgroundImg": "./numerama_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/cinema.rss",
+            "name": "Franceinfo",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.tomsguide.fr/tag/cinema/feed/",
+            "name": "Tom's guide",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./tomsguide.png",
+            "backgroundImg": "./tomsguide_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.linternaute.com/cinema/rss/",
+            "name": "L'internaute",
+            "specification": "news-notif bigHeadline",
+            "count": 2,
+            "iconImg": "./linternaute.png",
+            "backgroundImg": "./linternaute_bgIMG.jpg"
+          }
+        ],
+        "Arts visuels & graphiques": [
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/arts/?outputType=xml",
+            "name": "Libération",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/arts/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lepointpop.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/arts-expos/design.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Spectacles & expositions": [
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_theatre.xml",
+            "name": "Le Figaro",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_arts-expositions.xml",
+            "name": "Le Figaro",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.ladepeche.fr/culture-et-loisirs/spectacles/rss.xml",
+            "name": "La Dépêche",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/scenes/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/arts-et-scenes/feed/",
+            "name": "Les Inrocks",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/scenes/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/arts-expos.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Mode & célébrités" : [
+          {
+            "url": "https://vl-media.fr/categories/mode/feed/",
+            "name": "Vanity Fair",
+            "specification": "news-focus",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./vanityfair.png",
+            "backgroundImg": "./vanityfair_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/m-mode/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-notif",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/mode.rss",
+            "name": "Franceinfo",
+            "specification": "news-notif",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/people/mode/",
+            "name": "BFM TV",
+            "specification": "news-notif",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          }
+        ],
+        "Jeux vidéo": [
+          {
+            "url": "https://www.presse-citron.net/category/lifestyle/jeu-video/feed",
+            "name": "Presse citron",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./pressecitron.png",
+            "backgroundImg": "./pressecitron_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/jeux-video/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/jeux-video/feed/",
+            "name": "Les Inrocks",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/jeux-video/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/category/jeux-video/feed/",
+            "name": "Le journal du geek",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.tomsguide.fr/tag/jeux-video/feed/",
+            "name": "Tom's guide",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./tomsguide.png",
+            "backgroundImg": "./tomsguide_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.linternaute.com/hightech/jeux-video/rss/",
+            "name": "L'internaute",
+            "count": 1,
+            "iconImg": "./linternaute.png",
+            "backgroundImg": "./linternaute_bgIMG.jpg"
+          }
+        ],
+        "Patrimoine & architecture": [
+          {
+            "url": "https://www.ladepeche.fr/culture-et-loisirs/patrimoine/rss.xml",
+            "name": "La Dépêche",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/architecture/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/arts-expos/architecture.rss",
+            "name": "Franceinfo",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "Arts du spectacle": [
+
+        ],
+         "Musique": [
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/musique/?outputType=xml",
+            "name": "Libération",
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/musique/feed/",
+            "name": "Les Inrocks",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/musique/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./lepointpop.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/people/musique/",
+            "name": "BFM TV",
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/musiques/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "firstFocus",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.melty.fr/musique-4.rss",
+            "name": "Melty",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./melty.png",
+            "backgroundImg": "./melty_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/culture/musique/rss",
+            "name": "France 3",
+            "specification": "firstFocus",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          }
+        ],
+        "Histoire": [
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_histoire.xml",
+            "name": "Le Figaro",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.letelegramme.fr/histoire/rss.xml",
+            "name": "Le Télégramme",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./letelegramme.png",
+            "backgroundImg": "./letelegramme_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/culture/histoire/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.courrierinternational.com/feed/category/6679/rss.xml",
+            "name": "Courrier International",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./courrierinter.png",
+            "backgroundImg": "./courrierinter_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lhistoire.fr/rss.xml",
+            "name": "l'Histoire",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./lhistoire.png",
+            "backgroundImg": "./lhistoire_bgIMG.jpg"
+          }
+        ],
+        "Presse étrangère": [
+          {
+            "url": "https://www.theguardian.com/uk/culture/rss",
+            "name": "The Guardian",
+            "specification": "news-list firstHeadline",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./theguardian.png",
+            "backgroundImg": "./theguardian_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bbc.com/culture/feed.rss",
+            "name": "BBC News",
+            "specification": "news-list firstHeadline",
+            "count": 1,
+            "iconImg": "./bbcnews.png",
+            "backgroundImg": "./bbcnews_bgIMG.jpg"
+          },
+          {
+            "url": "https://rss.dw.com/xml/rss-de-cul",
+            "name": "Deutsche Welle",
+            "encodedTitles": true,
+            "specification": "news-list firstHeadline",
+            "count": 1,
+            "iconImg": "./dw.png",
+            "backgroundImg": "./dw_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.newyorker.com/feed/culture",
+            "name": "The New Yorker",
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./thenewyorker.png",
+            "backgroundImg": "./thenewyorker_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/kultur.1495.de.rss",
+            "name": "Deutschlandfunk",
+            "encodedTitles": true,
+            "specification": "news-list firstHeadline",
+            "count": 1,
+            "iconImg": "./dfunk.png",
+            "backgroundImg": "./dfunk_bgIMG.jpg"
+          },
+          {
+            "url": "https://taz.de/feed/!p4639/rss.xml",
+            "name": "Die Tageszeitung",
+            "specification": "news-list firstHeadline",
+            "count": 1,
+            "iconImg": "./taz.png",
+            "backgroundImg": "./taz_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=unterhaltung.bild.html",
+            "name": "Bild",
+            "specification": "news-list firstHeadline",
+            "count": 1,
+            "iconImg": "./bild.png",
+            "backgroundImg": "./bild_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.vox.com/rss/culture/index.xml",
+            "name": "Vox",
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./vox.png",
+            "backgroundImg": "./vox_bgIMG.jpg"
+          }  
+        ]
+      }
+    },
     "Europe": {
       "subtopics": {
         "noSubtopic": [
@@ -2289,121 +2404,6 @@
         ]
       }
     },
-    "Presse étrangère": {
-      "subtopics": {
-        "Deutschland": [
-          {
-            "url": "https://www.tagesschau.de/xml/rss2",
-            "name": "Tagesschau.de",
-            "specification": "news-notif smallDesc bigHeadline",
-            "count": 2,
-            "iconImg": "./tagesschau.png",
-            "backgroundImg": "./tagesschau_bgIMG.png"
-          },
-          {
-            "url": "https://rss.dw.com/xml/rss-de-top",
-            "name": "Deutsche Welle",
-            "encodedTitles": true,
-            "specification": "news-notif smallDesc bigHeadline",
-            "count": 2,
-            "iconImg": "./dw.png",
-            "backgroundImg": "./dw_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.deutschlandfunk.de/die-nachrichten.353.de.rss",
-            "name": "Deutschlandfunk",
-            "encodedTitles": true,
-            "specification": "news-notif smallDesc bigHeadline",
-            "count": 2,
-            "iconImg": "./dfunk.png",
-            "backgroundImg": "./dfunk_bgIMG.jpg"
-          },
-          {
-            "url": "https://taz.de/feed/!p4608/rss.xml",
-            "name": "Die Tageszeitung",
-            "specification": "news-notif smallDesc bigHeadline",
-            "count": 2,
-            "iconImg": "./taz.png",
-            "backgroundImg": "./taz_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=news.bild.html",
-            "name": "Bild",
-            "specification": "news-notif smallDesc bigHeadline",
-            "count": 2,
-            "iconImg": "./bild.png",
-            "backgroundImg": "./bild_bgIMG.jpg"
-          }
-        ],
-        "United States & Canada": [
-          {
-            "url": "https://www.cbsnews.com/latest/rss/main",
-            "name": "CBS News",
-            "specification": "news-notif smallDesc bigHeadline",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./cbsnews.png",
-            "backgroundImg": "./cbsnews_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.latimes.com/world-nation/rss2.0.xml",
-            "name": "Los Angeles Times",
-            "specification": "news-notif smallDesc bigHeadline",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./latimes.png",
-            "backgroundImg": "./latimes_bgIMG.jpg"
-          },
-          {
-            "url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml",
-            "name": "The New York Times",
-            "specification": "news-notif smallDesc bigHeadline",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./thenytimes.png",
-            "backgroundImg": "./thenytimes_bgIMG.jpg"
-          },
-          {
-            "url": "http://rss.cnn.com/rss/edition_us.rss",
-            "name": "CNN",
-            "specification": "news-notif smallDesc bigHeadline",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./cnn.png",
-            "backgroundImg": "./cnn_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.newyorker.com/feed/news",
-            "name": "The New Yorker",
-            "specification": "news-focus",
-            "count": 1,
-            "iconImg": "./thenewyorker.png",
-            "backgroundImg": "./thenewyorker_bgIMG.jpg"
-          }
-        ],
-        "Australia & NZ": [
-        ],
-        "United Kingdom": [
-          {
-            "url": "https://www.theguardian.com/uk-news/rss",
-            "name": "The Guardian",
-            "specification": "news-notif smallDesc bigHeadline",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./theguardian.png",
-            "backgroundImg": "./theguardian_bgIMG.jpg"
-          },
-          {
-            "url": "http://feeds.bbci.co.uk/news/uk/rss.xml",
-            "name": "BBC News",
-            "specification": "news-notif smallDesc bigHeadline",
-            "count": 2,
-            "iconImg": "./bbcnews.png",
-            "backgroundImg": "./bbcnews_bgIMG.jpg"
-          }
-        ]
-      }
-    },
     "Politique": {
       "subtopics": {
         "noSubtopic": [
@@ -2585,7 +2585,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/actu/rss",
             "name": "France 3",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif smallDesc bigHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./france3.png",
@@ -2594,7 +2594,7 @@
           {
             "url": "https://www.francebleu.fr/rss/vie-quotidienne.xml",
             "name": "France bleu",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif smallDesc bigHeadline",
             "encodedTitles": true,
             "count": 4,
             "iconImg": "./francebleu.png",
@@ -3009,7 +3009,7 @@
         ]
       }
     },
-    "Sciences": {
+    "Science": {
       "subtopics": {
         "noSubtopic": [
           {
@@ -3302,6 +3302,119 @@
         ]
       }
     },
+    "Nature": {
+      "subtopics": {
+        "noSubtopic": [
+          {
+            "url": "https://www.20minutes.fr/feeds/rss-planete.xml",
+            "name": "20 Minutes",
+            "encodedTitles": true,
+            "specification": "news-notif bigHeadline",
+            "count": 2,
+            "iconImg": "./20minutes.png",
+            "backgroundImg": "./20minutes_bgIMG.png"
+          }
+
+        ],
+        "Météo": [
+
+        ],
+        "Environnement": [
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/environnement/?outputType=xml",
+            "name": "Libération",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.leprogres.fr/environnement/rss",
+            "name": "Le Progrès",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./leprogres.png",
+            "backgroundImg": "./leprogres_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/environnement/",
+            "name": "BFM TV",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/planete/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.sciencesetavenir.fr/nature-environnement/rss.xml",
+            "name": "Sciences et Avenir",
+            "count": 2,
+            "iconImg": "./sciencesetavenir.png",
+            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.futura-sciences.com/rss/environnement/actualites.xml",
+            "name": "Futura Sciences",
+            "count": 2,
+            "iconImg": "./futura.png",
+            "backgroundImg": "./futura_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.numerama.com/sciences/environnementfeed/",
+            "name": "Numerama",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./numerama.png",
+            "backgroundImg": "./numerama_bgIMG.jpg"
+          },
+          {
+            "url": "https://information.tv5monde.com/afprss/francais--journal--environnement",
+            "name": "TV5 Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./tv5monde.png",
+            "backgroundImg": "./tv5monde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.forbes.fr/environnement/feed/",
+            "name": "Forbes",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./forbes.png",
+            "backgroundImg": "./forbes_bgIMG.jpg"
+          }
+        ],
+        "Animaux": [
+
+        ],
+        "Agriculture": [
+
+        ],
+        "Presse étrangère": [
+          {
+            "url": "https://taz.de/feed/!p4624/rss.xml",
+            "name": "Die Tageszeitung",
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./taz.png",
+            "backgroundImg": "./taz_bgIMG.jpg"
+          },
+          {
+            "url": "http://www.vox.com/rss/energy-and-environment/index.xml",
+            "name": "Vox",
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./vox.png",
+            "backgroundImg": "./vox_bgIMG.jpg"
+          }       
+        ]
+      }
+    },
     "Tech": {
       "subtopics": {
         "noSubtopic": [
@@ -3392,7 +3505,7 @@
             "backgroundImg": "./linternaute_bgIMG.jpg"
           }
         ],
-        "Intelligence artificielle": [
+        "IA & VR": [
           {
             "url": "https://www.sciencesetavenir.fr/high-tech/intelligence-artificielle/rss.xml",
             "name": "Sciences et Avenir",
@@ -3416,14 +3529,15 @@
             "backgroundImg": ".jdn_bgIMG.jpg"
           }
         ],
-        "Développeurs": [
-
-        ],
-        "Infographie": [
-
-        ],
-        "Réalité virtuelle": [
-
+        "Développement": [
+          {
+            "url": "https://www.vox.com/rss/world/index.xml",
+            "name": "Vox",
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./vox.png",
+            "backgroundImg": "./vox_bgIMG.jpg"
+          }
         ],
         "GAFAM": [
           {
@@ -3497,8 +3611,18 @@
             "url": "https://www.sciencesetavenir.fr/high-tech/web/rss.xml",
             "name": "Sciences et Avenir",
             "count": 2,
+            "specification": "news-list",
             "iconImg": "./sciencesetavenir.png",
             "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/cultures-web/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 3,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -3551,119 +3675,6 @@
             "iconImg": "./vox.png",
             "backgroundImg": "./vox_bgIMG.jpg"
           } 
-        ]
-      }
-    },
-    "Nature": {
-      "subtopics": {
-        "noSubtopic": [
-          {
-            "url": "https://www.20minutes.fr/feeds/rss-planete.xml",
-            "name": "20 Minutes",
-            "encodedTitles": true,
-            "specification": "news-notif bigHeadline",
-            "count": 2,
-            "iconImg": "./20minutes.png",
-            "backgroundImg": "./20minutes_bgIMG.png"
-          }
-
-        ],
-        "Environnement & développement durable": [
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/environnement/?outputType=xml",
-            "name": "Libération",
-            "count": 1,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.leprogres.fr/environnement/rss",
-            "name": "Le Progrès",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./leprogres.png",
-            "backgroundImg": "./leprogres_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/environnement/",
-            "name": "BFM TV",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/planete/rss_full.xml",
-            "name": "Le Monde",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.sciencesetavenir.fr/nature-environnement/rss.xml",
-            "name": "Sciences et Avenir",
-            "count": 2,
-            "iconImg": "./sciencesetavenir.png",
-            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.futura-sciences.com/rss/environnement/actualites.xml",
-            "name": "Futura Sciences",
-            "count": 2,
-            "iconImg": "./futura.png",
-            "backgroundImg": "./futura_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.numerama.com/sciences/environnementfeed/",
-            "name": "Numerama",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./numerama.png",
-            "backgroundImg": "./numerama_bgIMG.jpg"
-          },
-          {
-            "url": "https://information.tv5monde.com/afprss/francais--journal--environnement",
-            "name": "TV5 Monde",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./tv5monde.png",
-            "backgroundImg": "./tv5monde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.forbes.fr/environnement/feed/",
-            "name": "Forbes",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./forbes.png",
-            "backgroundImg": "./forbes_bgIMG.jpg"
-          }
-        ],
-        "Météo": [
-
-        ],
-        "Animaux": [
-
-        ],
-        "Agriculture": [
-
-        ],
-        "Presse étrangère": [
-          {
-            "url": "https://taz.de/feed/!p4624/rss.xml",
-            "name": "Die Tageszeitung",
-            "specification": "news-list firstHeadline",
-            "count": 2,
-            "iconImg": "./taz.png",
-            "backgroundImg": "./taz_bgIMG.jpg"
-          },
-          {
-            "url": "http://www.vox.com/rss/energy-and-environment/index.xml",
-            "name": "Vox",
-            "specification": "news-list firstHeadline",
-            "count": 2,
-            "iconImg": "./vox.png",
-            "backgroundImg": "./vox_bgIMG.jpg"
-          }       
         ]
       }
     },
@@ -3960,17 +3971,6 @@
             "count": 1,
             "iconImg": "./tv5monde.png",
             "backgroundImg": "./tv5monde_bgIMG.jpg"
-          }
-        ],
-        "Culture web":[
-          {
-            "url": "https://www.lemonde.fr/cultures-web/rss_full.xml",
-            "name": "Le Monde",
-            "encodedTitles": true,
-            "specification": "news-list",
-            "count": 2,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
         "Bien-être & productivité":[
