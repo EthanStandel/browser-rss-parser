@@ -2587,9 +2587,18 @@
             "name": "France 3",
             "specification": "news-notif bigHeadline",
             "encodedTitles": true,
-            "count": 8,
+            "count": 6,
             "iconImg": "./france3.png",
             "backgroundImg": "./france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francebleu.fr/rss/vie-quotidienne.xml",
+            "name": "France bleu",
+            "specification": "news-notif bigHeadline",
+            "encodedTitles": true,
+            "count": 4,
+            "iconImg": "./francebleu.png",
+            "backgroundImg": "./francebleu_bgIMG.jpg"
           }
         ],
         "Auvergne-Rhône-Alpes": [
@@ -3648,7 +3657,7 @@
             "backgroundImg": "./taz_bgIMG.jpg"
           },
           {
-            "url": "https://www.vox.com/rss/energy-and-environment/index.xml",
+            "url": "http://www.vox.com/rss/energy-and-environment/index.xml",
             "name": "Vox",
             "specification": "news-list firstHeadline",
             "count": 2,
