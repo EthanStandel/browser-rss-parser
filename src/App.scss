@@ -18,6 +18,7 @@
   --scienceColorTheme: mediumseagreen;
   --europeColorTheme: yellowgreen;
   --polColorTheme: darkviolet;
+  --ideesColorTheme: orchid;
   --societeColorTheme: mediumaquamarine;
   --techColorTheme: teal;
   --regionsColorTheme: cornflowerblue;
@@ -97,6 +98,10 @@ body {
 
   .Politique * {
     text-decoration-color: var(--polColorTheme);
+  }
+
+  .Idées * {
+    text-decoration-color: var(--ideesColorTheme);
   }
 
   .Société * {
@@ -220,6 +225,10 @@ ul {
     color: var(--polColorTheme) !important;
   }
 
+  &.Idées li > *  {
+    color: var(--ideesColorTheme) !important;
+  }
+
   &.Société li > *  {
     color: var(--societeColorTheme) !important;
   }
@@ -313,6 +322,11 @@ ul.topics-navbar li {
     color: var(--polColorTheme);
   }
 
+  .Idées {
+    border-color: var(--ideesColorTheme);
+    color: var(--ideesColorTheme);
+  }
+
   .Société {
     border-color: var(--societeColorTheme);
     color: var(--societeColorTheme);
@@ -395,6 +409,10 @@ ul.topics-navbar li {
           background-color: var(--polColorTheme);
         }
 
+        &.Idées {
+          background-color: var(--ideesColorTheme);
+        }
+
         &.Société {
           background-color: var(--societeColorTheme);
         }
@@ -419,17 +437,6 @@ ul.topics-navbar li {
           background-color: var(--autoColorTheme);
         }
       }
-    }
-  }
-}
-
-/*/ adds a padding to topics navbar which don't have any associated subtopics navbar/*/
-li {
-
-  &.À.la.une button {
-
-    &.selected {
-      margin-bottom: 32.6px;
     }
   }
 }
@@ -468,6 +475,10 @@ h3.bold {
 
   &.Politique {
     color: var(--polColorTheme);
+  }
+
+  &.Idées {
+    color: var(--ideesColorTheme);
   }
 
   &.Société {
@@ -783,6 +794,10 @@ ul.rss {
         text-overflow: ellipsis !important;
         display: -webkit-box;
         -webkit-box-orient: vertical;
+      }
+
+      .item-infos2 {
+        display: none !important;
       }
 
       &:hover {

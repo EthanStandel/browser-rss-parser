@@ -31,41 +31,41 @@ const App = () => {
   return (
     <div className="App">
       <div className="header-mobile">
-      <h4 className="logo-text">nuntium</h4>
+        <h4 className="logo-text">nuntium</h4>
       </div>
       <header>
         <div className="headerTitle">
-        <h4 className="logo-text">nuntium</h4>
+          <h4 className="logo-text">nuntium</h4>
         </div>
         <div className="headerTopics">
-        <ul className="topics-navbar r2 bold">
-          {selectableTopics.map(name => (
-            <li key={name} className={name}>
-              <button className={name === topicFilter ? `selected ${name}` : name} onClick={() => setTopicFilter(name)}>{name}</button>
-            </li>
-          ))}
-        </ul>
-        {Object.keys(topics[topicFilter].subtopics).length > 1 &&
-          <div className="subtopic-selection">
-            <ul className={"topics-navbar r2 " + topicFilter}>
-              <li className="all-subtopic">
-                <button className={!subtopicFilter ? "selected" : ""} onClick={() => setSubtopicFilter(undefined)}>
-                  Tout 
-                </button>
+          <ul className="topics-navbar r2 bold">
+            {selectableTopics.map(name => (
+              <li key={name} className={name}>
+                <button className={name === topicFilter ? `selected ${name}` : name} onClick={() => setTopicFilter(name)}>{name}</button>
               </li>
-              {Object.keys(topics[topicFilter].subtopics)
-                .filter(key => key !== "noSubtopic")
-                .map(key => (
-                  <li key={key} className={`${key}-subtopic`}>
-                    <button className={subtopicFilter === key ? `selected ${key}` : ""} onClick={() => setSubtopicFilter(key)}>
-                      {key}
-                    </button>
-                  </li>
-                ))
-              }
-            </ul>
-          </div>
-        }
+            ))}
+          </ul>
+          {Object.keys(topics[topicFilter].subtopics).length > 1 &&
+            <div className="subtopic-selection">
+              <ul className={"topics-navbar r2 " + topicFilter}>
+                <li className="all-subtopic">
+                  <button className={!subtopicFilter ? "selected" : ""} onClick={() => setSubtopicFilter(undefined)}>
+                    Tout 
+                  </button>
+                </li>
+                {Object.keys(topics[topicFilter].subtopics)
+                  .filter(key => key !== "noSubtopic")
+                  .map(key => (
+                    <li key={key} className={`${key}-subtopic`}>
+                      <button className={subtopicFilter === key ? `selected ${key}` : ""} onClick={() => setSubtopicFilter(key)}>
+                        {key}
+                      </button>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+          }
         </div>
       </header>
       <div className="body-container">
