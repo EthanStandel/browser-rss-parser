@@ -133,6 +133,18 @@ body {
     /*/ smaller vertical padding for small devices /*/
     padding: 24px 25px !important; 
   }
+
+  h6.item-title {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+  }
+
+  .h8.item-description {
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.08px;
+  }
 }
 
 a {
@@ -554,6 +566,16 @@ ul.rss {
       p {
         font-size: 15px !important;
         line-height: 20px !important;
+        letter-spacing: -0.24px !important;
+      }
+
+      @media only screen and (max-width: 734px) {
+      
+        p {
+          font-size: 13px !important;
+          line-height: 16px !important;
+          letter-spacing: -0.08px !important;
+        }
       }
 
       p:not(:nth-child(1)) {

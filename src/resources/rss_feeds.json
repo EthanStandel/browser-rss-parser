@@ -538,6 +538,7 @@
             "url": "https://www.lemonde.fr/sport/rss_full.xml",
             "name": "Le Monde",
             "encodedTitles": true,
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.png"
@@ -545,6 +546,7 @@
           {
             "url": "https://rmcsport.bfmtv.com/rss/fil-sport/",
             "name": "RMC Sport",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./rmcsport.jpeg",
             "backgroundImg": "./rmcsport_bgIMG.jpg"
@@ -553,6 +555,7 @@
             "url": "https://www.lefigaro.fr/rss/figaro_sport.xml",
             "name": "Le Figaro",
             "encodedTitles": true,
+            "specification": "news-notif firstHeadline",
             "count": 1,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
@@ -561,6 +564,7 @@
             "url": "https://www.lexpress.fr/rss/sport.xml",
             "name": "L'Express",
             "encodedTitles": true,
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./lexpress.jpeg",
             "backgroundImg": "./lexpress.jpeg"
@@ -568,6 +572,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sports/?outputType=xml",
             "name": "Libération",
+            "specification": "news-notif firstHeadline",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -575,6 +580,7 @@
           {
             "url": "https://www.letelegramme.fr/sports/rss.xml",
             "name": "Le Télégramme",
+            "specification": "news-notif firstHeadline",
             "count": 1,
             "iconImg": "./letelegramme.png",
             "backgroundImg": "./letelegramme_bgIMG.jpg"
@@ -582,6 +588,7 @@
           {
             "url": "https://www6.lequipe.fr/rss/actu_rss.xml",
             "name": "L'Équipe",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./lequipe.png",
             "backgroundImg": "./lequipe_bgIMG.jpg"
@@ -589,6 +596,7 @@
           {
             "url": "https://www.linternaute.com/sport/rss/",
             "name": "L'internaute",
+            "specification": "news-notif firstHeadline",
             "count": 1,
             "iconImg": "./linternaute.png",
             "backgroundImg": "./linternaute_bgIMG.jpg"
