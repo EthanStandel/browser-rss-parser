@@ -156,6 +156,14 @@
             "count": 1,
             "iconImg": "./thenewyorker.png",
             "backgroundImg": "./thenewyorker_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/actualites/national/rss",
+            "name": "La Presse",
+            "specification": "news-notif smallDesc firstHeadline",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
           }
         ],
         "Australia & NZ": [
@@ -298,6 +306,15 @@
             "count": 2,
             "iconImg": "./lesechos.png",
             "backgroundImg": "./lesechos_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/affaires/marches/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-notif firstHeadline",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
           }
         ],
         "Entreprises": [
@@ -343,6 +360,15 @@
             "count": 2,
             "iconImg": "./challenges.png",
             "backgroundImg": "./challenges_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/affaires/entreprises/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-notif firstHeadline",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
           }
         ],
         "Patrimoine & immobilier": [
@@ -565,7 +591,7 @@
             "name": "L'Express",
             "encodedTitles": true,
             "specification": "news-notif firstHeadline",
-            "count": 2,
+            "count": 1,
             "iconImg": "./lexpress.jpeg",
             "backgroundImg": "./lexpress.jpeg"
           },
@@ -695,6 +721,14 @@
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/sports/tennis/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
           }
         ],
         "Basketball": [
@@ -727,6 +761,14 @@
             "count": 2,
             "iconImg": "./lequipe.png",
             "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/sports/basketball/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
           }
         ],
         "Rugby": [
@@ -783,6 +825,14 @@
             "count": 2,
             "iconImg": "./lequipe.png",
             "backgroundImg": "./lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/sports/cyclisme/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
           }
         ],
         "Sports mécaniques": [
@@ -837,6 +887,14 @@
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/sports/course-automobile/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
           }
         ],
         "Athlétisme": [
@@ -908,6 +966,17 @@
             "iconImg": "./lequipe.png",
             "backgroundImg": "./lequipe_bgIMG.jpg"
           }
+        ],
+        "Baseball": [
+          {
+            "url": "https://www.lapresse.ca/sports/baseball/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 3,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          } 
         ],
         "Sports nautiques": [
           {
@@ -991,22 +1060,22 @@
             "backgroundImg": "./ladepeche_bgIMG.jpg"
           },
           {
-            "url": "https://www.lemonde.fr/golf/rss_full.xml",
-            "name": "Le Monde",
-            "encodedTitles": true,
-            "specification": "news-list",
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
             "url": "https://www6.lequipe.fr/rss/actu_rss_Golf.xml",
             "name": "L'Équipe",
             "specification": "news-list",
             "count": 2,
             "iconImg": "./lequipe.png",
             "backgroundImg": "./lequipe_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.lapresse.ca/sports/golf/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          } 
         ],
         "Sports de combat": [
           {
@@ -1064,6 +1133,18 @@
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
+        "Hockey": [
+          {
+            "url": "https://www.lapresse.ca/sports/hockey/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          } 
+
+        ],
         "Sports d'hiver": [
           {
             "url": "https://www.ladepeche.fr/sport/sports-d-hiver/rss.xml",
@@ -1086,7 +1167,7 @@
             "url": "https://www6.lequipe.fr/rss/actu_rss_Ski.xml",
             "name": "L'Équipe",
             "specification": "news-list",
-            "count": 2,
+            "count": 3,
             "iconImg": "./lequipe.png",
             "backgroundImg": "./lequipe_bgIMG.jpg"
           },
@@ -1098,6 +1179,14 @@
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/sports/sports-dhiver/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
           }
         ],
         "E-sports & sports d'esprit": [
@@ -1372,18 +1461,18 @@
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.lapresse.ca/arts/litterature/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "firstFocus",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          } 
         ],
         "Films & séries": [
-          {
-            "url": "https://www.lefigaro.fr/rss/figaro_cinema.xml",
-            "name": "Le Figaro",
-            "specification": "news-notif firstHeadline",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro_bgIMG.png"
-          },
           {
             "url": "https://www.telerama.fr/rss/series-tv.xml",
             "name": "Télérama",
@@ -1487,12 +1576,22 @@
             "count": 2,
             "iconImg": "./linternaute.png",
             "backgroundImg": "./linternaute_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.lapresse.ca/cinema/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-notif firstHeadline",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          } 
         ],
         "Arts visuels & graphiques": [
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/arts/?outputType=xml",
             "name": "Libération",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -1501,6 +1600,7 @@
             "url": "https://www.lepoint.fr/arts/rss.xml",
             "name": "Le Point",
             "encodedTitles": true,
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./lepointpop.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -1509,10 +1609,20 @@
             "url": "https://www.francetvinfo.fr/culture/arts-expos/design.rss",
             "name": "Franceinfo",
             "encodedTitles": true,
-            "count": 2,
+            "specification": "news-list",
+            "count": 1,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.lapresse.ca/arts/arts-visuels/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          } 
         ],
         "Spectacles & expositions": [
           {
@@ -1578,21 +1688,12 @@
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
-        "Mode & célébrités" : [
-          {
-            "url": "https://vl-media.fr/categories/mode/feed/",
-            "name": "Vanity Fair",
-            "specification": "news-focus",
-            "encodedTitles": true,
-            "count": 2,
-            "iconImg": "./vanityfair.png",
-            "backgroundImg": "./vanityfair_bgIMG.jpg"
-          },
+        "Mode & beauté" : [
           {
             "url": "https://www.lemonde.fr/m-mode/rss_full.xml",
             "name": "Le Monde",
             "encodedTitles": true,
-            "specification": "news-notif",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -1600,7 +1701,7 @@
           {
             "url": "https://www.francetvinfo.fr/culture/mode.rss",
             "name": "Franceinfo",
-            "specification": "news-notif",
+            "specification": "news-list",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
@@ -1609,11 +1710,20 @@
           {
             "url": "https://www.bfmtv.com/rss/people/mode/",
             "name": "BFM TV",
-            "specification": "news-notif",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.lapresse.ca/societe/mode-et-beaute/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          } 
         ],
         "Jeux vidéo": [
           {
@@ -1686,7 +1796,7 @@
             "name": "Le Monde",
             "encodedTitles": true,
             "specification": "news-list",
-            "count": 2,
+            "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
           },
@@ -1698,7 +1808,16 @@
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.lapresse.ca/maison/architecture/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          } 
         ],
         "Arts du spectacle": [
 
@@ -1739,15 +1858,6 @@
             "backgroundImg": "./bfmtv_bgIMG.jpg"
           },
           {
-            "url": "https://www.lemonde.fr/musiques/rss_full.xml",
-            "name": "Le Monde",
-            "encodedTitles": true,
-            "specification": "firstFocus",
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
             "url": "https://www.melty.fr/musique-4.rss",
             "name": "Melty",
             "specification": "firstFocus",
@@ -1764,7 +1874,16 @@
             "count": 1,
             "iconImg": "./france3.png",
             "backgroundImg": "./france3_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.lapresse.ca/arts/musique/",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "firstFocus",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          } 
         ],
         "Histoire": [
           {
@@ -2114,6 +2233,15 @@
             "count": 2,
             "iconImg": "./taz.png",
             "backgroundImg": "./taz_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/international/europe/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
           }    
         ]
       }
@@ -2145,14 +2273,6 @@
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/international/",
-            "name": "BFM TV",
-            "specification": "news-notif firstHeadline smallDesc",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
           },
           {
             "url": "https://syndication.lesechos.fr/rss/Echos_monde.xml",
@@ -2188,7 +2308,16 @@
             "count": 2,
             "iconImg": "./lemonde-diplo.png",
             "backgroundImg": "./lemonde-diplo_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.lapresse.ca/international/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-notif firstHeadline smallDesc",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          }   
         ],
         "Afrique": [
           {
@@ -2232,7 +2361,16 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.lapresse.ca/international/afrique/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-notif firstHeadline smallDesc",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          } 
         ],
         "Amérique": [
           {
@@ -2318,7 +2456,16 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.lapresse.ca/international/asie-et-oceanie/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-notif firstHeadline smallDesc",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          } 
         ],
         "Moyen-Orient": [
           {
@@ -2353,6 +2500,15 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/international/moyen-orient/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-notif firstHeadline smallDesc",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -2601,6 +2757,15 @@
             "count": 2,
             "iconImg": "./vox.png",
             "backgroundImg": "./vox_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/actualites/politique/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
           }   
         ]
       }
@@ -3031,7 +3196,16 @@
             "count": 2,
             "iconImg": "./taz.png",
             "backgroundImg": "./taz_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.lapresse.ca/societe/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          } 
         ]
       }
     },
@@ -3042,6 +3216,7 @@
             "url": "https://www.francetvinfo.fr/sciences.rss",
             "name": "Franceinfo",
             "encodedTitles": true,
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
@@ -3049,6 +3224,7 @@
           {
             "url": "https://www.lepoint.fr/sciences/rss.xml",
             "name": "Le Point",
+            "specification": "news-notif firstHeadline smallDesc",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lepoint.png",
@@ -3057,6 +3233,7 @@
           {
             "url": "https://www.bfmtv.com/rss/sciences/",
             "name": "BFM TV",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -3064,6 +3241,7 @@
           {
             "url": "https://www.sciencesetavenir.fr/rss.xml",
             "name": "Sciences et Avenir",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./sciencesetavenir.png",
             "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
@@ -3072,6 +3250,7 @@
             "url": "https://www.journaldugeek.com/tag/science/feed/",
             "name": "Le journal du geek",
             "encodedTitles": true,
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
@@ -3080,6 +3259,7 @@
             "url": "https://www.lefigaro.fr/rss/figaro_sciences.xml",
             "name": "Le Figaro",
             "encodedTitles": true,
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
@@ -3088,6 +3268,7 @@
             "url": "https://information.tv5monde.com/afprss/francais--journal--sci",
             "name": "TV5 Monde",
             "encodedTitles": true,
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./tv5monde.png",
             "backgroundImg": "./tv5monde_bgIMG.jpg"
@@ -3095,10 +3276,20 @@
           {
             "url": "https://www.01net.com/rss/actualites/science-recherche/",
             "name": "01NET",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./01net.png",
             "backgroundImg": ".01net_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.lapresse.ca/actualites/sciences/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-notif firstHeadline smallDesc",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          } 
         ],
         "Astronomie & espace": [
           {
@@ -3412,12 +3603,96 @@
             "count": 1,
             "iconImg": "./forbes.png",
             "backgroundImg": "./forbes_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/actualites/environnement/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
           }
         ],
         "Animaux": [
-
+          {
+            "url": "https://www.francetvinfo.fr/animaux.rss",
+            "name": "Franceinfo",
+            "encodedTitles": true,
+            "specification":"news-list",
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://france3-regions.francetvinfo.fr/nature/animaux/rss",
+            "name": "France 3",
+            "specification": "news-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/animaux/",
+            "name": "BFM TV",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.l214.com/rss.xml",
+            "name": "L214",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./l214.png",
+            "backgroundImg": "./l214_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/societe/animaux/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          } 
         ],
         "Agriculture": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/economie/agriculture/rss",
+            "name": "France 3",
+            "specification": "news-list firstHeadline",
+            "encodedTitles": true,
+            "count": 4,
+            "iconImg": "./france3.png",
+            "backgroundImg": "./france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://chambres-agriculture.fr/flux-rss/flux-rss-publication/flux.rss",
+            "name": "Chambres d'agriculture France",
+            "specification": "news-list firstHeadline big-list",
+            "encodedTitles": true,
+            "count": 2,
+            "iconImg": "./chambre_agri.png",
+            "backgroundImg": "./chambre_agri_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/environnement/agriculture/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-list firstHeadline",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.terre-net.fr/actualite-agriculture.html",
+            "name": "Terre-net",
+            "specification": "news-list firstHeadline",
+            "count": 4,
+            "iconImg": "./terre-net.png",
+            "backgroundImg": "./terre-net_bgIMG.jpg"
+          }
 
         ],
         "Presse étrangère": [
@@ -3460,15 +3735,6 @@
             "backgroundImg": "./futura_bgIMG.jpg"
           },
           {
-            "url": "https://www.journaldugeek.com/tag/high-tech/feed/",
-            "name": "Le journal du geek",
-            "encodedTitles": true,
-            "specification": "news-notif firstHeadline",
-            "count": 2,
-            "iconImg": "./jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
-          },
-          {
             "url": "https://www.numerama.com/tech/feed/",
             "name": "Numerama",
             "encodedTitles": true,
@@ -3501,6 +3767,15 @@
             "count": 1,
             "iconImg": "./forbes.png",
             "backgroundImg": "./forbes_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/affaires/techno/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-notif firstHeadline",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
           }
         ],
         "Smartphones": [
@@ -3691,7 +3966,7 @@
             "count": 3,
             "iconImg": "./vox.png",
             "backgroundImg": "./vox_bgIMG.jpg"
-          } 
+          }
         ]
       }
     },
@@ -3838,7 +4113,16 @@
             "count": 2,
             "iconImg": "./linternaute.png",
             "backgroundImg": "./linternaute_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.lapresse.ca/voyage/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          } 
         ],
         "Loisirs": [
           {
@@ -3919,7 +4203,16 @@
             "count": 2,
             "iconImg": "./france3.png",
             "backgroundImg": "./france3_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.lapresse.ca/gourmand/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          }  
         ],
         "Luxe": [
           {
@@ -3940,17 +4233,36 @@
             "backgroundImg": "./forbes_bgIMG.jpg"
           }
         ],
-        "Habitat": [
+        "Célébrités": [
+          {
+            "url": "https://www.lapresse.ca/arts/celebrites/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 3,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          } 
+        ],
+        "Maison": [
           {
             "url": "https://maison.20minutes.fr/feed/",
             "name": "20 Minutes",
             "encodedTitles": true,
             "specification": "news-list",
-            "count": 4,
+            "count": 3,
             "iconImg": "./20minutes.png",
             "backgroundImg": "./20minutesmaison_bgIMG.jpg"
-          }
-
+          },
+          {
+            "url": "https://www.lapresse.ca/maison/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 3,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          } 
         ],
         "Insolite & découvertes": [
           {
@@ -3988,6 +4300,15 @@
             "count": 1,
             "iconImg": "./tv5monde.png",
             "backgroundImg": "./tv5monde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/actualites/insolite/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
           }
         ],
         "Bien-être & productivité":[
@@ -4089,12 +4410,55 @@
             "url": "https://www.linternaute.com/auto/rss/",
             "name": "L'internaute",
             "specification": "news-notif firstHeadline",
-            "count": 4,
+            "count": 1,
             "iconImg": "./linternaute.png",
             "backgroundImg": "./linternaute_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lepoint.fr/automobile/rss.xml",
+            "name": "Le Point",
+            "encodedTitles": true,
+            "specification": "news-notif firstHeadline",
+            "count": 3,
+            "iconImg": "./lepoint.png",
+            "backgroundImg": "./lepoint_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_automobile.xml",
+            "name": "Le Figaro",
+            "specification": "news-notif firstHeadline",
+            "encodedTitles": true,
+            "count": 3,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.challenges.fr/automobile/rss.xml",
+            "name": "Challenges",
+            "specification": "news-notif firstHeadline",
+            "count": 3,
+            "iconImg": "./challenges.png",
+            "backgroundImg": "./challenges_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/auto/",
+            "name": "BFM TV",
+            "specification": "news-notif firstHeadline",
+            "count": 3,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
           }
         ],
         "Constructeurs": [
+          {
+            "url": "https://www.lapresse.ca/auto/guide-auto/rss",
+            "name": "La Presse",
+            "encodedTitles": true,
+            "specification": "news-notif smallDesc firstHeadline",
+            "count": 3,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          }
 
         ],
         "Événements": [
