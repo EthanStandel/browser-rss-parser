@@ -7,7 +7,7 @@
             "url": "https://www.lemonde.fr/rss/une.xml",
             "name": "Le Monde",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -15,7 +15,7 @@
           {
             "url": "https://www.francetvinfo.fr/titres.rss",
             "name": "Franceinfo",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
@@ -24,7 +24,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_flash-actu.xml",
             "name": "Le Figaro",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lefigaro.png",
@@ -33,7 +33,7 @@
           {
             "url": "https://www.bfmtv.com/rss/news-24-7/",
             "name": "BFM TV",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -41,7 +41,7 @@
           {
             "url": "https://www.france24.com/fr/rss",
             "name": "France 24",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
@@ -50,7 +50,7 @@
             "url": "http://www.20minutes.fr/rss/une.xml",
             "name": "20 Minutes",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./20minutes.png",
             "backgroundImg": "./20minutes_bgIMG.png"
@@ -58,7 +58,7 @@
           {
             "url": "https://www.linternaute.com/actualite/rss/",
             "name": "L'internaute",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./linternaute.png",
             "backgroundImg": "./linternaute_bgIMG.jpg"
@@ -72,7 +72,7 @@
           {
             "url": "https://www.tagesschau.de/xml/rss2",
             "name": "Tagesschau.de",
-            "specification": "news-notif smallDesc bigHeadline",
+            "specification": "news-notif smallDesc firstHeadline",
             "count": 2,
             "iconImg": "./tagesschau.png",
             "backgroundImg": "./tagesschau_bgIMG.png"
@@ -81,7 +81,7 @@
             "url": "https://rss.dw.com/xml/rss-de-top",
             "name": "Deutsche Welle",
             "encodedTitles": true,
-            "specification": "news-notif smallDesc bigHeadline",
+            "specification": "news-notif smallDesc firstHeadline",
             "count": 2,
             "iconImg": "./dw.png",
             "backgroundImg": "./dw_bgIMG.jpg"
@@ -90,7 +90,7 @@
             "url": "https://www.deutschlandfunk.de/die-nachrichten.353.de.rss",
             "name": "Deutschlandfunk",
             "encodedTitles": true,
-            "specification": "news-notif smallDesc bigHeadline",
+            "specification": "news-notif smallDesc firstHeadline",
             "count": 2,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
@@ -98,7 +98,7 @@
           {
             "url": "https://taz.de/feed/!p4608/rss.xml",
             "name": "Die Tageszeitung",
-            "specification": "news-notif smallDesc bigHeadline",
+            "specification": "news-notif smallDesc firstHeadline",
             "count": 2,
             "iconImg": "./taz.png",
             "backgroundImg": "./taz_bgIMG.jpg"
@@ -106,7 +106,7 @@
           {
             "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=news.bild.html",
             "name": "Bild",
-            "specification": "news-notif smallDesc bigHeadline",
+            "specification": "news-notif smallDesc firstHeadline",
             "count": 2,
             "iconImg": "./bild.png",
             "backgroundImg": "./bild_bgIMG.jpg"
@@ -116,7 +116,7 @@
           {
             "url": "https://www.cbsnews.com/latest/rss/main",
             "name": "CBS News",
-            "specification": "news-notif smallDesc bigHeadline",
+            "specification": "news-notif smallDesc firstHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./cbsnews.png",
@@ -125,7 +125,7 @@
           {
             "url": "https://www.latimes.com/world-nation/rss2.0.xml",
             "name": "Los Angeles Times",
-            "specification": "news-notif smallDesc bigHeadline",
+            "specification": "news-notif smallDesc firstHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./latimes.png",
@@ -134,7 +134,7 @@
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml",
             "name": "The New York Times",
-            "specification": "news-notif smallDesc bigHeadline",
+            "specification": "news-notif smallDesc firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./thenytimes.png",
@@ -143,7 +143,7 @@
           {
             "url": "http://rss.cnn.com/rss/edition_us.rss",
             "name": "CNN",
-            "specification": "news-notif smallDesc bigHeadline",
+            "specification": "news-notif smallDesc firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./cnn.png",
@@ -164,7 +164,7 @@
           {
             "url": "https://www.theguardian.com/uk-news/rss",
             "name": "The Guardian",
-            "specification": "news-notif smallDesc bigHeadline",
+            "specification": "news-notif smallDesc firstHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./theguardian.png",
@@ -173,7 +173,7 @@
           {
             "url": "http://feeds.bbci.co.uk/news/uk/rss.xml",
             "name": "BBC News",
-            "specification": "news-notif smallDesc bigHeadline",
+            "specification": "news-notif smallDesc firstHeadline",
             "count": 2,
             "iconImg": "./bbcnews.png",
             "backgroundImg": "./bbcnews_bgIMG.jpg"
@@ -187,7 +187,7 @@
           {
             "url": "https://www.francetvinfo.fr/economie.rss",
             "name": "Franceinfo",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
@@ -196,7 +196,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_flash-eco.xml",
             "name": "Le Figaro",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
@@ -205,7 +205,7 @@
           {
             "url": "https://syndication.lesechos.fr/rss/rss_france.xml",
             "name": "Les Échos",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lesechos.png",
@@ -215,7 +215,7 @@
             "url": "https://www.lemonde.fr/economie/rss_full.xml",
             "name": "Le Monde",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -223,7 +223,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/economie/?outputType=xml",
             "name": "Libération",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -232,7 +232,7 @@
             "url": "https://www.lepoint.fr/economie/rss.xml",
             "name": "Le Point",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./lepoint.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -240,7 +240,7 @@
           {
             "url": "https://www.bfmtv.com/rss/economie/",
             "name": "BFM TV",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -248,7 +248,7 @@
           {
             "url": "https://www.letelegramme.fr/economie/rss.xml",
             "name": "Le Télégramme",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./letelegramme.png",
             "backgroundImg": "./letelegramme_bgIMG.jpg"
@@ -256,7 +256,7 @@
           {
             "url": "https://business.lesechos.fr/rss/rss_une.xml",
             "name": "Les Échos",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lesechos.png",
@@ -265,7 +265,7 @@
           {
             "url": "https://www.challenges.fr/economie/rss.xml",
             "name": "Challenges",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./challenges.png",
             "backgroundImg": "./challenges_bgIMG.jpg"
@@ -275,7 +275,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_bourse.xml",
             "name": "Le Figaro",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lefigaro.png",
@@ -284,7 +284,7 @@
           {
             "url": "https://www.tradingsat.com/rssbourse.xml",
             "name": "BFM TV",
-            "specification": "news-notif bigHeadline nodesc",
+            "specification": "news-notif firstHeadline nodesc",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./bfmtv.png",
@@ -293,7 +293,7 @@
           {
             "url": "https://investir.lesechos.fr/RSS/info-marches-investir-bourse-les-echos.xml",
             "name": "Les Échos",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lesechos.png",
@@ -304,7 +304,7 @@
           {
             "url": "https://www.francetvinfo.fr/economie/entreprises.rss",
             "name": "Franceinfo",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
@@ -313,7 +313,7 @@
           {
             "url": "https://www.ladepeche.fr/economie/entreprise/rss.xml",
             "name": "La Dépêche",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./ladepeche.png",
@@ -322,7 +322,7 @@
           {
             "url": "https://www.bfmtv.com/rss/economie/entreprises/",
             "name": "BFM TV",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -331,7 +331,7 @@
             "url": "https://www.lemonde.fr/entreprises/rss_full.xml",
             "name": "Le Monde",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -339,7 +339,7 @@
           {
             "url": "https://www.challenges.fr/entreprise/rss.xml",
             "name": "Challenges",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./challenges.png",
             "backgroundImg": "./challenges_bgIMG.jpg"
@@ -349,7 +349,7 @@
           {
             "url": "https://www.francetvinfo.fr/immobilier.rss",
             "name": "Franceinfo",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
@@ -358,7 +358,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_immobilier.xml",
             "name": "Le Figaro",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
@@ -367,7 +367,7 @@
           {
             "url": "https://www.ladepeche.fr/economie/immobilier/rss.xml",
             "name": "La Dépêche",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./ladepeche.png",
@@ -376,7 +376,7 @@
           {
             "url": "https://www.leprogres.fr/magazine-immobilier/rss",
             "name": "Le Progrès",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./leprogres.png",
@@ -386,7 +386,7 @@
             "url": "https://www.lepoint.fr/immobilier/rss.xml",
             "name": "Le Point",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "count": 1,
             "iconImg": "./lepoint.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -394,7 +394,7 @@
           {
             "url": "https://www.bfmtv.com/rss/immobilier/",
             "name": "BFM TV",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -403,7 +403,7 @@
             "url": "https://www.lemonde.fr/immobilier/rss_full.xml",
             "name": "Le Monde",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -411,7 +411,7 @@
           {
             "url": "https://www.challenges.fr/patrimoine/rss.xml",
             "name": "Challenges",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./challenges.png",
             "backgroundImg": "./challenges_bgIMG.jpg"
@@ -421,7 +421,7 @@
           {
             "url": "https://www.ladepeche.fr/economie/banque-finances/rss.xml",
             "name": "La Dépêche",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./ladepeche.png",
@@ -431,7 +431,7 @@
             "url": "https://www.lemonde.fr/argent/rss_full.xml",
             "name": "Le Monde",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -440,7 +440,7 @@
             "url": "https://www.forbes.fr/finance/feed/",
             "name": "Forbes",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./forbes.png",
             "backgroundImg": "./forbes_bgIMG.jpg"
@@ -521,10 +521,10 @@
             "backgroundImg": "./dfunk_bgIMG.jpg"
           },
           {
-            "url": "https://www.vox.com/rss/business-and-finance/index.xml",
-            "name": "Vox",
+            "url": "http://feed.informer.com/digests/US5ONEFA1P/feeder.rss",
+            "name": "Vox Business",
             "specification": "news-list firstHeadline",
-            "count": 2,
+            "count": 1,
             "iconImg": "./vox.png",
             "backgroundImg": "./vox_bgIMG.jpg"
           }     
@@ -1245,7 +1245,7 @@
           {
             "url": "https://feeds.leparisien.fr/leparisien/rss/culture-loisirs",
             "name": "Le Parisien",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./leparisien.png",
             "backgroundImg": "./leparisien_bgIMG.jpg"
@@ -1370,7 +1370,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_cinema.xml",
             "name": "Le Figaro",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
@@ -1379,7 +1379,7 @@
           {
             "url": "https://www.telerama.fr/rss/series-tv.xml",
             "name": "Télérama",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "count": 1,
             "iconImg": "./telerama.png",
             "backgroundImg": "./telerama_bgIMG.jpg"
@@ -1387,7 +1387,7 @@
           {
             "url": "https://www.telerama.fr/rss/cinema.xml",
             "name": "Télérama",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./telerama.png",
             "backgroundImg": "./telerama_bgIMG.jpg"
@@ -1395,7 +1395,7 @@
           {
             "url": "https://www.premiere.fr/rss/actu-cinema",
             "name": "Première",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./premiere.png",
@@ -1404,7 +1404,7 @@
           {
             "url": "https://www.melty.fr/cinema-2.rss",
             "name": "Melty",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./melty.png",
@@ -1413,7 +1413,7 @@
           {
             "url": "https://www.lesinrocks.com/cinema/feed/",
             "name": "Les Inrocks",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lesinrocks.png",
@@ -1422,7 +1422,7 @@
           {
             "url": "http://rss.allocine.fr/ac/actualites/cine",
             "name": "Allociné",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./allocine.png",
             "backgroundImg": ".allocine_bgIMG.jpg"
@@ -1430,7 +1430,7 @@
           {
             "url": "https://www.journaldugeek.com/category/cinema/feed/",
             "name": "Le journal du geek",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./jdg.png",
@@ -1439,7 +1439,7 @@
           {
             "url": "https://www.journaldugeek.com/tag/series/feed/",
             "name": "Le journal du geek",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./jdg.png",
@@ -1449,7 +1449,7 @@
             "url": "https://www.numerama.com/pop-culture/cinema/feed/",
             "name": "Numerama",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./numerama.png",
             "backgroundImg": "./numerama_bgIMG.jpg"
@@ -1457,7 +1457,7 @@
           {
             "url": "https://www.francetvinfo.fr/culture/cinema.rss",
             "name": "Franceinfo",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
@@ -1466,7 +1466,7 @@
           {
             "url": "https://www.tomsguide.fr/tag/cinema/feed/",
             "name": "Tom's guide",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./tomsguide.png",
@@ -1475,7 +1475,7 @@
           {
             "url": "https://www.linternaute.com/cinema/rss/",
             "name": "L'internaute",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./linternaute.png",
             "backgroundImg": "./linternaute_bgIMG.jpg"
@@ -1864,8 +1864,8 @@
             "backgroundImg": "./bild_bgIMG.jpg"
           },
           {
-            "url": "https://www.vox.com/rss/culture/index.xml",
-            "name": "Vox",
+            "url": "http://feed.informer.com/digests/ABZM4GN0OP/feeder.rss",
+            "name": "Vox Culture",
             "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./vox.png",
@@ -1880,7 +1880,7 @@
           {
             "url": "https://www.france24.com/fr/europe/rss",
             "name": "France 24",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
@@ -1889,7 +1889,7 @@
             "url": "https://www.lemonde.fr/europe/rss_full.xml",
             "name": "Le Monde",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -1897,7 +1897,7 @@
           {
             "url": "https://www.francetvinfo.fr/monde/europe.rss",
             "name": "Franceinfo",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
@@ -1906,7 +1906,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/europe/?outputType=xml",
             "name": "Libération",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -1914,7 +1914,7 @@
           {
             "url": "https://www.bfmtv.com/rss/international/europe/",
             "name": "BFM TV",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -2098,6 +2098,14 @@
             "count": 2,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
+          },
+          {
+            "url": "https://taz.de/feed/!p4617/rss.xml",
+            "name": "Die Tageszeitung",
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./taz.png",
+            "backgroundImg": "./taz_bgIMG.jpg"
           }    
         ]
       }
@@ -2108,7 +2116,7 @@
           {
             "url": "https://www.france24.com/fr/rss",
             "name": "France 24",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
@@ -2116,7 +2124,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_international.xml",
             "name": "Le Figaro",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lefigaro.png",
@@ -2125,7 +2133,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/?outputType=xml",
             "name": "Libération",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -2133,7 +2141,7 @@
           {
             "url": "https://www.bfmtv.com/rss/international/",
             "name": "BFM TV",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -2141,7 +2149,7 @@
           {
             "url": "https://syndication.lesechos.fr/rss/Echos_monde.xml",
             "name": "Les Échos",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lesechos.png",
@@ -2150,7 +2158,7 @@
           {
             "url": "https://information.tv5monde.com/afprss/francais--journal--mon",
             "name": "TV5 Monde",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./tv5monde.png",
@@ -2159,7 +2167,7 @@
           {
             "url": "https://www.challenges.fr/monde/rss.xml",
             "name": "Challenges",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./challenges.png",
             "backgroundImg": "./challenges_bgIMG.jpg"
@@ -2168,7 +2176,7 @@
             "url": "https://www.monde-diplomatique.fr/rss/",
             "name": "Le Monde diplomatique",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./lemonde-diplo.png",
             "backgroundImg": "./lemonde-diplo_bgIMG.jpg"
@@ -2178,7 +2186,7 @@
           {
             "url": "https://www.france24.com/fr/afrique/rss",
             "name": "France 24",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
@@ -2186,7 +2194,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/afrique/?outputType=xml",
             "name": "Libération",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -2194,7 +2202,7 @@
           {
             "url": "https://www.lepoint.fr/afrique/rss.xml",
             "name": "Le Point",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./lepoint.png",
@@ -2203,7 +2211,7 @@
           {
             "url": "https://www.bfmtv.com/rss/international/afrique/",
             "name": "BFM TV",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -2212,7 +2220,7 @@
             "url": "https://www.lemonde.fr/afrique/rss_full.xml",
             "name": "Le Monde",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -2222,7 +2230,7 @@
           {
             "url": "https://www.france24.com/fr/amériques/rss",
             "name": "France 24",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
@@ -2230,7 +2238,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/amerique/?outputType=xml",
             "name": "Libération",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -2238,7 +2246,7 @@
           {
             "url": "https://www.bfmtv.com/rss/international/amerique-nord/",
             "name": "BFM TV",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -2246,7 +2254,7 @@
           {
             "url": "https://www.bfmtv.com/rss/international/amerique-latine/",
             "name": "BFM TV",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -2255,7 +2263,7 @@
             "url": "https://www.lemonde.fr/ameriques/rss_full.xml",
             "name": "Le Monde",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -2265,7 +2273,7 @@
           {
             "url": "https://www.france24.com/fr/asie-pacifique/rss",
             "name": "France 24",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
@@ -2273,7 +2281,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/asie-pacifique/?outputType=xml",
             "name": "Libération",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -2281,7 +2289,7 @@
           {
             "url": "https://www.bfmtv.com/rss/international/asie/",
             "name": "BFM TV",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -2289,7 +2297,7 @@
           {
             "url": "https://www.bfmtv.com/rss/international/oceanie/",
             "name": "BFM TV",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -2298,7 +2306,7 @@
             "url": "https://www.lemonde.fr/asie-pacifique/rss_full.xml",
             "name": "Le Monde",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -2308,7 +2316,7 @@
           {
             "url": "https://www.france24.com/fr/moyen-orient/rss",
             "name": "France 24",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"
@@ -2316,7 +2324,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/international/moyen-orient/?outputType=xml",
             "name": "Libération",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -2324,7 +2332,7 @@
           {
             "url": "https://www.bfmtv.com/rss/international/moyen-orient/",
             "name": "BFM TV",
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -2333,7 +2341,7 @@
             "url": "https://www.lemonde.fr/proche-orient/rss_full.xml",
             "name": "Le Monde",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline smallDesc",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -2389,13 +2397,13 @@
             "name": "Deutschlandfunk",
             "encodedTitles": true,
             "specification": "news-list firstHeadline",
-            "count": 3,
+            "count": 1,
             "iconImg": "./dfunk.png",
             "backgroundImg": "./dfunk_bgIMG.jpg"
           },
           {
-            "url": "https://www.vox.com/rss/world/index.xml",
-            "name": "Vox",
+            "url": "http://feed.informer.com/digests/92PSY9Q7MN/feeder.rss",
+            "name": "Vox World",
             "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./vox.png",
@@ -2411,6 +2419,7 @@
             "url": "https://www.lefigaro.fr/rss/figaro_politique.xml",
             "name": "Le Figaro",
             "encodedTitles": true,
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
@@ -2419,6 +2428,7 @@
             "url": "https://www.ladepeche.fr/actu/politique/rss.xml",
             "name": "La Dépêche",
             "encodedTitles": true,
+            "specification": "news-notif firstHeadline",
             "count": 1,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
@@ -2426,6 +2436,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/politique/?outputType=xml",
             "name": "Libération",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -2434,6 +2445,7 @@
             "url": "https://www.lepoint.fr/politique/rss.xml",
             "name": "Le Point",
             "encodedTitles": true,
+            "specification": "news-notif firstHeadline",
             "count": 1,
             "iconImg": "./lepoint.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -2441,6 +2453,7 @@
           {
             "url": "https://www.bfmtv.com/rss/politique/",
             "name": "BFM TV",
+            "specification": "news-notif firstHeadline",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -2449,6 +2462,7 @@
             "url": "https://www.lemonde.fr/politique/rss_full.xml",
             "name": "Le Monde",
             "encodedTitles": true,
+            "specification": "news-notif firstHeadline",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -2457,6 +2471,7 @@
             "url": "https://www.francetvinfo.fr/politique.rss",
             "name": "Franceinfo",
             "encodedTitles": true,
+            "specification": "news-notif firstHeadline",
             "count": 1,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
@@ -2465,6 +2480,7 @@
             "url": "https://france3-regions.francetvinfo.fr/politique/rss",
             "name": "France 3",
             "encodedTitles": true,
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./france3.png",
             "backgroundImg": "./france3_bgIMG.jpg"
@@ -2472,6 +2488,7 @@
           {
             "url": "https://www.challenges.fr/politique/rss.xml",
             "name": "Challenges",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./challenges.png",
             "backgroundImg": "./challenges_bgIMG.jpg"
@@ -2479,6 +2496,7 @@
           {
             "url": "https://www.forbes.fr/politique/feed/",
             "name": "Forbes",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./forbes.png",
@@ -2569,8 +2587,8 @@
             "backgroundImg": "./bild_bgIMG.jpg"
           },
           {
-            "url": "https://www.vox.com/rss/policy-and-politics/index.xml",
-            "name": "Vox",
+            "url": "http://feed.informer.com/digests/7YVBGYLSEJ/feeder.rss",
+            "name": "Vox Politics",
             "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./vox.png",
@@ -2585,7 +2603,7 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/actu/rss",
             "name": "France 3",
-            "specification": "news-notif smallDesc bigHeadline",
+            "specification": "news-notif smallDesc firstHeadline",
             "encodedTitles": true,
             "count": 6,
             "iconImg": "./france3.png",
@@ -2594,7 +2612,7 @@
           {
             "url": "https://www.francebleu.fr/rss/vie-quotidienne.xml",
             "name": "France bleu",
-            "specification": "news-notif smallDesc bigHeadline",
+            "specification": "news-notif smallDesc firstHeadline",
             "encodedTitles": true,
             "count": 4,
             "iconImg": "./francebleu.png",
@@ -3309,12 +3327,19 @@
             "url": "https://www.20minutes.fr/feeds/rss-planete.xml",
             "name": "20 Minutes",
             "encodedTitles": true,
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./20minutes.png",
             "backgroundImg": "./20minutes_bgIMG.png"
+          },
+          {
+            "url": "https://www.lemonde.fr/planete/rss_full.xml",
+            "name": "Le Monde",
+            "encodedTitles": true,
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
           }
-
         ],
         "Météo": [
 
@@ -3341,14 +3366,6 @@
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/planete/rss_full.xml",
-            "name": "Le Monde",
-            "encodedTitles": true,
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
           },
           {
             "url": "https://www.sciencesetavenir.fr/nature-environnement/rss.xml",
@@ -3421,6 +3438,7 @@
           {
             "url": "https://www.sciencesetavenir.fr/high-tech/rss.xml",
             "name": "Sciences et Avenir",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./sciencesetavenir.png",
             "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
@@ -3428,6 +3446,7 @@
           {
             "url": "https://www.futura-sciences.com/rss/high-tech/actualites.xml",
             "name": "Futura Sciences",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./futura.png",
             "backgroundImg": "./futura_bgIMG.jpg"
@@ -3436,6 +3455,7 @@
             "url": "https://www.journaldugeek.com/tag/high-tech/feed/",
             "name": "Le journal du geek",
             "encodedTitles": true,
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
@@ -3444,6 +3464,7 @@
             "url": "https://www.numerama.com/tech/feed/",
             "name": "Numerama",
             "encodedTitles": true,
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./numerama.png",
             "backgroundImg": "./numerama_bgIMG.jpg"
@@ -3451,6 +3472,7 @@
           {
             "url": "https://www.01net.com/rss/actualites/technos/",
             "name": "01NET",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./01net.png",
             "backgroundImg": ".01net_bgIMG.jpg"
@@ -3458,6 +3480,7 @@
           {
             "url": "https://www.linternaute.com/hightech/rss/",
             "name": "L'internaute",
+            "specification": "news-notif firstHeadline",
             "count": 1,
             "iconImg": "./linternaute.png",
             "backgroundImg": "./linternaute_bgIMG.jpg"
@@ -3465,6 +3488,7 @@
           {
             "url": "https://www.forbes.fr/technologie/feed/",
             "name": "Forbes",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 1,
             "iconImg": "./forbes.png",
@@ -3530,14 +3554,7 @@
           }
         ],
         "Développement": [
-          {
-            "url": "https://www.vox.com/rss/world/index.xml",
-            "name": "Vox",
-            "specification": "news-list firstHeadline",
-            "count": 2,
-            "iconImg": "./vox.png",
-            "backgroundImg": "./vox_bgIMG.jpg"
-          }
+  
         ],
         "GAFAM": [
           {
@@ -3660,18 +3677,10 @@
             "backgroundImg": "./bild_bgIMG.jpg"
           },
           {
-            "url": "https://www.vox.com/rss/technology/index.xml",
-            "name": "Vox",
+            "url": "http://feed.informer.com/digests/ZWY0DHB1SW/feeder.rss",
+            "name": "Vox Tech-Mix",
             "specification": "news-list firstHeadline",
-            "count": 2,
-            "iconImg": "./vox.png",
-            "backgroundImg": "./vox_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.vox.com/rss/recode/index.xml",
-            "name": "Vox",
-            "specification": "news-list firstHeadline",
-            "count": 1,
+            "count": 3,
             "iconImg": "./vox.png",
             "backgroundImg": "./vox_bgIMG.jpg"
           } 
@@ -3719,7 +3728,7 @@
           {
             "url": "https://www.lesinrocks.com/actu/feed/",
             "name": "Les Inrocks",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "encodedTitles": true,
             "count": 2,
             "iconImg": "./lesinrocks.png",
@@ -3755,7 +3764,7 @@
           {
             "url": "https://www.courrierinternational.com/feed/category/7426/rss.xml",
             "name": "Courrier International",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./courrierinter.png",
             "backgroundImg": "./courrierinter_bgIMG.jpg"
@@ -3764,7 +3773,7 @@
             "url": "https://www.forbes.fr/lifestyle/feed/",
             "name": "Forbes",
             "encodedTitles": true,
-            "specification": "news-notif firstFocus",
+            "specification": "news-notif firstHeadline",
             "count": 1,
             "iconImg": "./forbes.png",
             "backgroundImg": "./forbes_bgIMG.jpg"
@@ -3917,7 +3926,7 @@
             "url": "https://www.forbes.fr/luxe/feed/",
             "name": "Forbes",
             "encodedTitles": true,
-            "specification": "news-notif firstFocus",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./forbes.png",
             "backgroundImg": "./forbes_bgIMG.jpg"
@@ -4055,18 +4064,10 @@
             "backgroundImg": "./bild_bgIMG.jpg"
           },
           {
-            "url": "https://www.vox.com/rss/the-highlight/index.xml",
+            "url": "http://feed.informer.com/digests/BSROK1KTDS/feeder.rss",
             "name": "Vox",
             "specification": "news-list firstHeadline",
-            "count": 2,
-            "iconImg": "./vox.png",
-            "backgroundImg": "./vox_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.vox.com/rss/the-goods/index.xml",
-            "name": "Vox",
-            "specification": "news-list firstHeadline",
-            "count": 1,
+            "count": 3,
             "iconImg": "./vox.png",
             "backgroundImg": "./vox_bgIMG.jpg"
           }
@@ -4079,7 +4080,7 @@
           {
             "url": "https://www.linternaute.com/auto/rss/",
             "name": "L'internaute",
-            "specification": "news-notif bigHeadline",
+            "specification": "news-notif firstHeadline",
             "count": 4,
             "iconImg": "./linternaute.png",
             "backgroundImg": "./linternaute_bgIMG.jpg"
