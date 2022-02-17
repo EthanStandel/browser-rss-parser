@@ -1021,9 +1021,28 @@
             "backgroundImg": "./lapresse_bgIMG.jpg"
           } 
         ],
-        "Sports nautiques": [
+        "Équitation": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/equitation/",
+            "name": "RMC Sport",
+            "specification": "news-list",
+            "count": 3,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          }
+
+        ],
+        "Nautisme": [
           {
             "url": "https://rmcsport.bfmtv.com/rss/voile/",
+            "name": "RMC Sport",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/natation/",
             "name": "RMC Sport",
             "specification": "news-list",
             "count": 1,
@@ -1156,6 +1175,16 @@
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
+        "Escrime": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/escrime/",
+            "name": "RMC Sport",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
+          }
+        ],
         "Pétanque": [
           {
             "url": "https://www.ladepeche.fr/sport/petanque/rss.xml",
@@ -1278,6 +1307,16 @@
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
+          }
+        ],
+        "US": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/sport-us/",
+            "name": "RMC Sport",
+            "specification": "news-list",
+            "count": 4,
+            "iconImg": "./rmcsport.jpeg",
+            "backgroundImg": "./rmcsport_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
