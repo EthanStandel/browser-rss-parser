@@ -22,9 +22,11 @@ interface ParsedRssItem {
   title?: string;
   pubDate?: string; // RFC2822 date
   description?: string;
+  author?: string;
   "media:content"?: {
     url?: string;
   }
+  "dc:creator"?: string;
   enclosure?: {
     type?: string;
     url?: string;
@@ -112,6 +114,9 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
           result!.map(({ item, source, date }) => {
             // WARNING: Some of these items contain HTML
             // If they ever contain a script, it's not being filtered out
+            
+            const titleSplitTitle = item.title?.split(", says ")[0] ?? item.title?.split(", blasts ")[0] ?? item.title?.split(", warns ")[0];
+            const titleSplit = item.title?.split(", says ")[1] ?? item.title?.split(", blasts ")[1] ?? item.title?.split(", warns ")[1];
 
             const imgHref = 
             item.image
@@ -119,14 +124,29 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             ?? item.enclosure?.url ? item.enclosure?.url 
             : source.backgroundImg;
 
+
+            let author = item.author ?? item["dc:creator"];
+
+            const replaceAuthor = ['Paris Match', 'Minutes Maison', 'Les Inrockuptibles', 'Par', 'By', 'ZEIT ONLINE: Wirtschaft - ', ' (now)', '(earlier)', 'LIBERATION', 'THE NEW YORK TIMES', 'Forbes', 'AFP', 'AFP LIBERATION', 'Challenges Pratique', 'Aperçu', 'mars 2022', ', ', 'FRANCE 24', ', LIBERATION', 'LIBERATION, '];
+            for (let index = 0; index < replaceAuthor.length; index++) {
+              const element = replaceAuthor[index];
+              author = author?.replace(element,'')
+              }
+
             return (
               <li className={source.specification}>
                 <a href={item.link} target="_blank" rel="noreferrer">
                   <div className="media">
                     <div className="icon-image"><img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/></div>
                     <div className="icon-image">{source.iconImg && <img src={source.iconImg}/>}</div>
-                    <div className="background-image">{imgHref && <img src={imgHref}/>}</div>
+                    <div className="background-image">
+                      <img src={imgHref}/>
+                    </div>
                     <div className="item-container">
+                      <div className="author">
+                        <div className="author-line r2">{author?.replace('and ', '&').replace(';',',')}</div>
+                        <div className={"author-line r2 " + source.name}>{titleSplit}</div>
+                      </div>
                       <div className="item-F-line">
                         <div className="r1 bold source-name">
                           {source.name}
@@ -134,10 +154,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                         </div>
                         <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd/M").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier')}</div>
                       </div>
-                      {source.encodedTitles ? 
-                        (<h6 className="item-title" dangerouslySetInnerHTML={{ __html: item.title ?? "" }} />)
-                        : (<h6 className="item-title">{item.title}</h6>)
-                      }
+                      <h6 className="item-title"dangerouslySetInnerHTML={{ __html: item.title ?? "" }} />
                       <div className="item-infos">
                         <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd/M").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier')}</div>
                         

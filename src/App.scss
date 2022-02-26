@@ -1305,3 +1305,14 @@ footer {
   padding-bottom: 10px !important;
   margin-bottom: 7px !important;
 }
+
+.author {
+  display: none;
+}
+.Idées .author, .Idées .author .author-line.Express {
+  display: block !important;
+}
+
+.author-line {
+  color: var(--tertiaryLabel);
+}
