@@ -1868,7 +1868,6 @@
           {
             "url": "https://www.lacremedugaming.fr/feed",
             "name": "La crème du gaming",
-            "specification": "news-list",
             "count": 3,
             "iconImg": "./lacremedugaming.png",
             "backgroundImg": "./lacremedugaming_bgIMG.jpg"
@@ -2438,14 +2437,6 @@
             "count": 1,
             "iconImg": "./thenytimes.png",
             "backgroundImg": "./thenytimes_bgIMG.jpg"
-          },
-          {
-            "url": "http://rss.cnn.com/rss/edition_europe.rss",
-            "name": "CNN",
-            "specification": "news-list firstHeadline",
-            "count": 1,
-            "iconImg": "./cnn.png",
-            "backgroundImg": "./cnn_bgIMG.jpg"
           },
           {
             "url": "http://feeds.bbci.co.uk/news/world/europe/rss.xml?edition=int",
@@ -3070,7 +3061,7 @@
             "url": "https://www.lapresse.ca/international/chroniques/rss",
             "name": "La Presse",
             "specification": "smallDesc firstFocus",
-            "count": 4,
+            "count": 3,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
           } 
@@ -3153,7 +3144,7 @@
             "url": "https://www.lapresse.ca/maison/chroniques/rss",
             "name": "La Presse",
             "specification": "smallDesc firstFocus",
-            "count": 3,
+            "count": 2,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
           }
