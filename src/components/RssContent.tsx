@@ -18,19 +18,14 @@ export interface RssFeedSource {
 
 interface ParsedRssItem {
   link: string;
-  image?: string;
+  image?: {
+    url?: string;
+  }
   title?: string;
   pubDate?: string; // RFC2822 date
   description?: string;
   author?: string;
-  "media:content"?: {
-    url?: string;
-  }
   "dc:creator"?: string;
-  enclosure?: {
-    type?: string;
-    url?: string;
-  }
 }
 
 interface ParsedRssFeed {
@@ -119,19 +114,8 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             const titleSplit = item.title?.split(", says ")[1] ?? item.title?.split(", blasts ")[1] ?? item.title?.split(", warns ")[1];
 
             const imgHref = 
-            item.image
-            ?? item["media:content"]?.url
-            ?? item.enclosure?.url ? item.enclosure?.url 
-            : source.backgroundImg;
-
-
-            let author = item.author ?? item["dc:creator"];
-
-            const replaceAuthor = ['Paris Match', 'Minutes Maison', 'Les Inrockuptibles', 'Par', 'By', 'ZEIT ONLINE: Wirtschaft - ', ' (now)', '(earlier)', 'LIBERATION', 'THE NEW YORK TIMES', 'Forbes', 'AFP', 'AFP LIBERATION', 'Challenges Pratique', 'Aperçu', 'mars 2022', ', ', 'FRANCE 24', ', LIBERATION', 'LIBERATION, '];
-            for (let index = 0; index < replaceAuthor.length; index++) {
-              const element = replaceAuthor[index];
-              author = author?.replace(element,'')
-              }
+            item.image?.url
+            ?? source.backgroundImg;
 
             return (
               <li className={source.specification}>
@@ -144,8 +128,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                     </div>
                     <div className="item-container">
                       <div className="author">
-                        <div className="author-line r2">{author?.replace('and ', '&').replace(';',',')}</div>
-                        <div className={"author-line r2 " + source.name}>{titleSplit}</div>
+             
                       </div>
                       <div className="item-F-line">
                         <div className="r1 bold source-name">

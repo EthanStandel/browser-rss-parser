@@ -576,8 +576,14 @@ ul.rss {
 
       p {
         font-size: 15px !important;
+        font-weight: normal !important;
         line-height: 20px !important;
         letter-spacing: -0.24px !important;
+
+        /*/ for 'Capital' source /*/
+        strong {
+          font-weight: normal !important;
+        }
       }
 
       @media only screen and (max-width: 734px) {
@@ -1304,15 +1310,4 @@ footer {
   border-bottom: 0.8px solid var(--separator);
   padding-bottom: 10px !important;
   margin-bottom: 7px !important;
-}
-
-.author {
-  display: none;
-}
-.Idées .author, .Idées .author .author-line.Express {
-  display: block !important;
-}
-
-.author-line {
-  color: var(--tertiaryLabel);
 }
