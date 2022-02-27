@@ -127,9 +127,6 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                       <img src={imgHref}/>
                     </div>
                     <div className="item-container">
-                      <div className="author">
-             
-                      </div>
                       <div className="item-F-line">
                         <div className="r1 bold source-name">
                           {source.name}
