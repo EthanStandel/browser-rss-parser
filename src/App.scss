@@ -11,17 +11,20 @@
 :root {
   --colorTheme: var(--systemPink);
   --cultureColorTheme: burlywood;
-  --sportsColorTheme: limegreen;
-  --ecoColorTheme: goldenrod;
+  --sportColorTheme: darkgoldenrod;
+  --ecoColorTheme: orange;
   --mondeColorTheme: dodgerblue;
   --presseinterColorTheme: crimson;
-  --sciencesColorTheme: mediumseagreen;
-  --europeColorTheme: slateblue;
+  --scienceColorTheme: mediumseagreen;
+  --europeColorTheme: yellowgreen;
   --polColorTheme: darkviolet;
+  --ideesColorTheme: orchid;
   --societeColorTheme: mediumaquamarine;
-  --techColorTheme: chocolate;
+  --techColorTheme: teal;
   --regionsColorTheme: cornflowerblue;
-  --natureColorTheme: salmon;
+  --natureColorTheme: limegreen;
+  --lifestyleColorTheme: #6667ab;
+  --autoColorTheme: mediumvioletred;
 
   /*/
   colorTheme must be specified,
@@ -44,9 +47,10 @@
 body {
   background-color: var(--systemGroupedBackground);
   color: var(--label);
+  
 }
 
-header, .body-container, .mini-links a {
+.headerTitle, .body-container, .mini-links a {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -55,8 +59,8 @@ header, .body-container, .mini-links a {
 
 .body-container {
   padding: 40px 25px;
-  min-width: 210px;
-  max-width: 520px;
+  min-width: 222px;
+  max-width: 555px;
   margin: auto;
   position: relative;
   z-index: 1;
@@ -65,19 +69,19 @@ header, .body-container, .mini-links a {
   /*/ underlining color depending on topic for li /*/
   
   * {
-    text-decoration-color: var(--systemPink);
+    text-decoration-color: var(--colorTheme);
   }
 
-  .Sciences * {
-    text-decoration-color: var(--sciencesColorTheme);
+  .Science * {
+    text-decoration-color: var(--scienceColorTheme);
   }
 
   .Monde * {
     text-decoration-color: var(--mondeColorTheme);
   }
   
-  .Sports * {
-    text-decoration-color: var(--sportsColorTheme);
+  .Sport * {
+    text-decoration-color: var(--sportColorTheme);
   }
   
   .Économie * {
@@ -96,11 +100,15 @@ header, .body-container, .mini-links a {
     text-decoration-color: var(--polColorTheme);
   }
 
+  .Idées * {
+    text-decoration-color: var(--ideesColorTheme);
+  }
+
   .Société * {
     text-decoration-color: var(--societeColorTheme);
   }
 
-  .Technologie * {
+  .Tech * {
     text-decoration-color: var(--techColorTheme);
   }
 
@@ -110,6 +118,13 @@ header, .body-container, .mini-links a {
 
   .Nature * {
     text-decoration-color: var(--natureColorTheme);
+  }
+  .Art * {
+    text-decoration-color: var(--lifestyleColorTheme);
+  }
+
+  .Auto * {
+    text-decoration-color: var(--autoColorTheme);
   }
   
   /*/ special case since étrangère can be found as subtopic /*/
@@ -122,6 +137,18 @@ header, .body-container, .mini-links a {
   .body-container {
     /*/ smaller vertical padding for small devices /*/
     padding: 24px 25px !important; 
+  }
+
+  h6.item-title {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+  }
+
+  .h8.item-description {
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.08px;
   }
 }
 
@@ -174,8 +201,8 @@ ul {
     color: var(--mondeColorTheme) !important;
   }
 
-  &.Sports li > *  {
-    color: var(--sportsColorTheme) !important; 
+  &.Sport li > *  {
+    color: var(--sportColorTheme) !important; 
   }
 
   &.Presse li > *  {
@@ -186,8 +213,8 @@ ul {
     color: var(--cultureColorTheme) !important;
   }
 
-  &.Sciences li > *  {
-    color: var(--sciencesColorTheme) !important;
+  &.Science li > *  {
+    color: var(--scienceColorTheme) !important;
   }
 
   &.Europe li > *  {
@@ -198,11 +225,15 @@ ul {
     color: var(--polColorTheme) !important;
   }
 
+  &.Idées li > *  {
+    color: var(--ideesColorTheme) !important;
+  }
+
   &.Société li > *  {
     color: var(--societeColorTheme) !important;
   }
 
-  &.Technologie li > *  {
+  &.Tech li > *  {
     color: var(--techColorTheme) !important;
   }
 
@@ -212,6 +243,14 @@ ul {
 
   &.Nature li > *  {
     color: var(--natureColorTheme) !important;
+  }
+
+  &.Art li > *  {
+    color: var(--lifestyleColorTheme) !important;
+  }
+
+  &.Auto li > *  {
+    color: var(--autoColorTheme) !important;
   }
 
   li {
@@ -243,9 +282,9 @@ ul.topics-navbar li {
   display: inline-block;
 
   /*/ color styles for topics navbar -border and color /*/
-  .Sports {
-    border-color: var(--sportsColorTheme);
-    color: var(--sportsColorTheme);
+  .Sport {
+    border-color: var(--sportColorTheme);
+    color: var(--sportColorTheme);
   }
   
   .Culture {
@@ -268,9 +307,9 @@ ul.topics-navbar li {
     color: var(--mondeColorTheme);
   }
 
-  .Sciences {
-    border-color: var(--sciencesColorTheme);
-    color: var(--sciencesColorTheme);
+  .Science {
+    border-color: var(--scienceColorTheme);
+    color: var(--scienceColorTheme);
   }
 
   .Europe {
@@ -283,12 +322,17 @@ ul.topics-navbar li {
     color: var(--polColorTheme);
   }
 
+  .Idées {
+    border-color: var(--ideesColorTheme);
+    color: var(--ideesColorTheme);
+  }
+
   .Société {
     border-color: var(--societeColorTheme);
     color: var(--societeColorTheme);
   }
 
-  .Technologie {
+  .Tech {
     border-color: var(--techColorTheme);
     color: var(--techColorTheme);
   }
@@ -303,9 +347,19 @@ ul.topics-navbar li {
     color: var(--natureColorTheme);
   }
 
+  .Art {
+    border-color: var(--lifestyleColorTheme);
+    color: var(--lifestyleColorTheme);
+  }
+
+  .Auto {
+    border-color: var(--autoColorTheme);
+    color: var(--autoColorTheme);
+  }
+
   > button {
-    border: 2px solid var(--systemPink);
-    color: var(--systemPink);
+    border: 2px solid var(--colorTheme);
+    color: var(--colorTheme);
     padding: 2px 15px;
     border-radius: 15px;
     overflow: hidden;
@@ -317,7 +371,7 @@ ul.topics-navbar li {
     cursor: pointer;
 
     &:hover, &.selected {
-      background-color: var(--systemPink);
+      background-color: var(--colorTheme);
       color: white;
 
       /*/ background color on hover for topics navbar /*/
@@ -331,8 +385,8 @@ ul.topics-navbar li {
           background-color: var(--cultureColorTheme);
         }
 
-        &.Sports {
-          background-color: var(--sportsColorTheme);
+        &.Sport {
+          background-color: var(--sportColorTheme);
         }
 
         &.Presse {
@@ -343,8 +397,8 @@ ul.topics-navbar li {
           background-color: var(--mondeColorTheme);
         }
 
-        &.Sciences {
-          background-color: var(--sciencesColorTheme);
+        &.Science {
+          background-color: var(--scienceColorTheme);
         }
         
         &.Europe {
@@ -355,11 +409,15 @@ ul.topics-navbar li {
           background-color: var(--polColorTheme);
         }
 
+        &.Idées {
+          background-color: var(--ideesColorTheme);
+        }
+
         &.Société {
           background-color: var(--societeColorTheme);
         }
 
-        &.Technologie {
+        &.Tech {
           background-color: var(--techColorTheme);
         }
         
@@ -370,32 +428,29 @@ ul.topics-navbar li {
         &.Nature {
           background-color: var(--natureColorTheme);
         }
+
+        &.Art {
+          background-color: var(--lifestyleColorTheme);
+        }
+
+        &.Auto {
+          background-color: var(--autoColorTheme);
+        }
       }
-    }
-  }
-}
-
-/*/ adds a padding to topics navbar which don't have any associated subtopics navbar/*/
-li {
-
-  &.À.la.une button, &.Auto button {
-
-    &.selected {
-      margin-bottom: 32.6px;
     }
   }
 }
 
 /*/ Titles for topics in body-container /*/
 h3.bold {
-  color: var(--systemPink);
+  color: var(--colorTheme);
 
   &.Culture {
     color: var(--cultureColorTheme);
   }
 
-  &.Sports {
-    color: var(--sportsColorTheme);
+  &.Sport {
+    color: var(--sportColorTheme);
   }
 
   &.Économie {
@@ -410,8 +465,8 @@ h3.bold {
     color: var(--presseinterColorTheme);
   }
 
-  &.Sciences {
-    color: var(--sciencesColorTheme);
+  &.Science {
+    color: var(--scienceColorTheme);
   }
   
   &.Europe {
@@ -422,11 +477,15 @@ h3.bold {
     color: var(--polColorTheme);
   }
 
+  &.Idées {
+    color: var(--ideesColorTheme);
+  }
+
   &.Société {
     color: var(--societeColorTheme);
   }
 
-  &.Technologie {
+  &.Tech {
     color: var(--techColorTheme);
   }
 
@@ -436,6 +495,14 @@ h3.bold {
 
   &.Nature {
     color: var(--natureColorTheme);
+  }
+
+  &.Art {
+    color: var(--lifestyleColorTheme);
+  }
+
+  &.Auto {
+    color: var(--autoColorTheme);
   }
 }
 
@@ -510,6 +577,16 @@ ul.rss {
       p {
         font-size: 15px !important;
         line-height: 20px !important;
+        letter-spacing: -0.24px !important;
+      }
+
+      @media only screen and (max-width: 734px) {
+      
+        p {
+          font-size: 13px !important;
+          line-height: 16px !important;
+          letter-spacing: -0.08px !important;
+        }
       }
 
       p:not(:nth-child(1)) {
@@ -719,6 +796,10 @@ ul.rss {
         -webkit-box-orient: vertical;
       }
 
+      .item-infos2 {
+        display: none !important;
+      }
+
       &:hover {
         .item-title {
           text-decoration-color: rgba(0, 0, 0, 0) !important;
@@ -733,7 +814,7 @@ ul.rss {
         display: block;
         letter-spacing: 0.36px;
         text-shadow: 0 0 5px black;
-        padding: 14px 16px;
+        padding: 14px 16px 0;
         color: white;
         position: absolute;
         top: 40px;
@@ -837,7 +918,7 @@ ul.rss {
     &.news-notif {
 
       /*/ get big image for first-item /*/
-      &.bigHeadline:first-child {
+      &.firstHeadline:first-child {
         
         .item-description, .background-image, .media, .item-container {
           display: block !important;
@@ -906,7 +987,7 @@ ul.rss {
       
         .item-F-line {
           display: table !important;
-          width: calc(100% - 16px - 10px);
+          width: calc(100% - 32px);
           position: absolute;
           top: 17px;
           
@@ -936,14 +1017,13 @@ ul.rss {
       margin-bottom: 0;
       border-radius: 0;
 
-      &:first-of-type {
+      &:first-of-type, &.big-list {
 
         .icon-image:nth-child(1) {
           display: none !important;
         }
 
         .icon-image:not(:nth-child(1)) {
-
             z-index: 2;
             margin: 0;
             position: absolute;
@@ -991,6 +1071,104 @@ ul.rss {
 
         .item-infos2 {
           display: block !important;
+        }
+      }
+
+      &.firstHeadline:first-child{
+
+        .background-image, .media, .item-container {
+          display: block !important;
+        }
+        
+        .item-description {
+          -webkit-line-clamp: 3 !important;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box !important;
+          -webkit-box-orient: vertical;
+        }
+      
+        .item-title {
+          font-weight: 700;
+          -webkit-line-clamp: 4; /* number of lines to show */
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box !important;
+          -webkit-box-orient: vertical;
+          width: 100%;
+        }
+      
+        .item-container  {
+          padding: 14px 16px;
+          width: calc(100% - 32px);
+          background-color: var(--tertiarySystemGroupedBackground);
+          border-radius: 0 0 10px 10px;
+        }
+      
+        .background-image {
+
+          height: 170px;
+          width: 100%;
+          margin-right: 0;
+          z-index: -1;
+          float: none;
+          
+          img {
+            width: 100%;
+            height: 170px;
+            border-radius: 10px 10px 0 0;
+          }
+        }
+
+        .icon-image {
+          height: 0;
+
+          img {
+            height: 35px !important;
+            object-fit: cover;
+            width: 35px !important;
+            z-index: 2;
+            position: absolute;
+            border-radius: 9px !important;
+            top: 10px !important;
+            left: 10px !important;
+          }
+
+          &:nth-child(1) {
+            display: none !important;
+          }
+        }
+
+        .media {
+          position: relative !important;
+          width: calc(100% - 20px) ;
+          padding: 10px 0 0 !important;
+          border-bottom: 0 solid red;
+        }
+      
+        .item-F-line {
+          display: table !important;
+          width: calc(100% - 16px - 10px);
+          position: absolute !important;
+          top: calc(17px + 10px) !important;
+          
+          .item-publish-date {
+            color: white;
+            text-shadow: 0 0 8px black;
+            opacity: 0.8;
+            padding-left: 0;
+          }
+
+          .source-name {
+            display: none !important;
+          }
+        }
+
+        .item-infos, .item-infos2 {
+          
+          .item-publish-date {
+            display: none;
+          }
         }
       }
 
@@ -1080,28 +1258,28 @@ footer {
   padding: 20px 40px;
   font-size: 13px;
 
-  .footnote:not(.mini-links) {
+  .c2:not(.mini-links), .c1 {
     margin-top: 5px;
     color: var(--secondaryLabel);
   }
 
-  .footnote.inline {
+  .c2.inline {
     display: inline-block;
     padding-right: 30px;
   
-    /*/ Used to display footnote elements as paragrpah on small devices/*/
+    /*/ Used to display c2 elements as paragrpah on small devices/*/
     &.marginless {
       margin-top: 0px !important;
     }
   }
 }
 
-.footnote a.color:hover, .mini-links a:hover {
+.c2 a.color:hover, .mini-links a:hover {
   text-decoration: underline;
 }
 
 .mini-links {
-  margin-top: 10px;
+  margin-top: 5px;
 
   a {
     width: fit-content;
@@ -1128,15 +1306,13 @@ footer {
   margin-bottom: 7px !important;
 }
 
-.headerTitle:after {
-  background: linear-gradient(90deg, rgba(252,252,254,1) 0%, rgba(252,252,254,0.8) 37%, rgba(252,252,254,0.4) 65%, rgba(252,252,254,0) 100%);
-  content: "";
-  display: block;
-  position: absolute;
-  left: 154.85px;
-  top: 0;
-  width: 80px;
-  opacity: 0 !important;
-  height: 40px;
-  z-index: 2;
+.author {
+  display: none;
+}
+.Idées .author, .Idées .author .author-line.Express {
+  display: block !important;
+}
+
+.author-line {
+  color: var(--tertiaryLabel);
 }
