@@ -60,6 +60,16 @@
             "backgroundImg": "./linternaute_bgIMG.jpg"
           }
         ],
+        "Éphéméride": [
+          {
+            "url": "https://podcast.bfmbusiness.com/channel214/BFMchannel214.xml",
+            "name": "BFM TV",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          }
+        ],
         "Presse étrangère": [
           {
             "url": "https://www.express.co.uk/latest/france/rss",
@@ -354,6 +364,14 @@
             "count": 2,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/economie/consommation/",
+            "name": "BFM TV",
+            "specification": "news-list firstHeadline",
+            "count": 3,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
           }
         ],
         "Enchères": [
@@ -432,6 +450,14 @@
             "count": 2,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/economie/entreprises/industries/",
+            "name": "BFM TV",
+            "specification": "news-list firstHeadline",
+            "count": 3,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
           }
         ],
         "Patrimoine & immobilier": [
@@ -534,6 +560,16 @@
             "count": 2,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
+          }
+        ],
+        "Retraite": [
+          {
+            "url": "https://www.bfmtv.com/rss/economie/patrimoine/retraite/",
+            "name": "BFM TV",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -1504,15 +1540,7 @@
             "backgroundImg": "./lapresse_bgIMG.jpg"
           } 
         ],
-        "Films & séries": [
-          {
-            "url": "https://www.telerama.fr/rss/series-tv.xml",
-            "name": "Télérama",
-            "specification": "news-notif firstHeadline",
-            "count": 1,
-            "iconImg": "./telerama.png",
-            "backgroundImg": "./telerama_bgIMG.jpg"
-          },
+        "Cinéma": [
           {
             "url": "https://www.telerama.fr/rss/cinema.xml",
             "name": "Télérama",
@@ -1530,7 +1558,7 @@
             "backgroundImg": "./premiere_bgIMG.png"
           },
           {
-            "url": "https://www.melty.fr/cinema-2.rss",
+            "url": "https://www.melty.fr/cinema/feed",
             "name": "Melty",
             "specification": "news-notif firstHeadline",
             "count": 1,
@@ -1555,14 +1583,6 @@
           },
           {
             "url": "https://www.journaldugeek.com/category/cinema/feed/",
-            "name": "Le journal du geek",
-            "specification": "news-notif firstHeadline",
-            "count": 1,
-            "iconImg": "./jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.journaldugeek.com/tag/series/feed/",
             "name": "Le journal du geek",
             "specification": "news-notif firstHeadline",
             "count": 1,
@@ -1617,6 +1637,40 @@
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
           } 
+        ],
+        "Séries & TV": [
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/series/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.telerama.fr/rss/series-tv.xml",
+            "name": "Télérama",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./telerama.png",
+            "backgroundImg": "./telerama_bgIMG.jpg"
+          },
+          {
+            "url": "http://rss.allocine.fr/ac/actualites/series",
+            "name": "Allociné",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./allocine.png",
+            "backgroundImg": ".allocine_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.melty.fr/series/feed",
+            "name": "Melty",
+            "specification": "news-list",
+            "count": 3,
+            "iconImg": "./melty.png",
+            "backgroundImg": "./melty_bgIMG.jpg"
+          }
         ],
         "Arts visuels & graphiques": [
           {
@@ -1750,7 +1804,23 @@
             "count": 2,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
-          } 
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/mode/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/beaute/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          }      
         ],
         "Jeux vidéo": [
           {
@@ -1796,11 +1866,12 @@
             "backgroundImg": "./tomsguide_bgIMG.jpg"
           },
           {
-            "url": "https://www.linternaute.com/hightech/jeux-video/rss/",
-            "name": "L'internaute",
-            "count": 1,
-            "iconImg": "./linternaute.png",
-            "backgroundImg": "./linternaute_bgIMG.jpg"
+            "url": "https://www.lacremedugaming.fr/feed",
+            "name": "La crème du gaming",
+            "specification": "news-list",
+            "count": 3,
+            "iconImg": "./lacremedugaming.png",
+            "backgroundImg": "./lacremedugaming_bgIMG.jpg"
           }
         ],
         "Patrimoine, architecture & urbanisme": [
@@ -1863,8 +1934,63 @@
             "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
-        "BD, comics & manga": [
-
+        "BD, comics & mangas": [
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/bd/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/comics/feed/",
+            "name": "Le journal du geek",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.melty.fr/comics-mangas/feed",
+            "name": "Melty",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./melty.png",
+            "backgroundImg": "./melty_bgIMG.jpg"
+          },
+          {
+            "url": "http://www.9emeart.fr/9emeart.rss",
+            "name": "9eme Art",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./9emeart.png",
+            "backgroundImg": "./9emeart_bgIMG.jpg"
+          },
+          {
+            "url": "https://fr.ign.com/comics-mangas.xml",
+            "name": "IGN France",
+            "specification": "news-list nodesc",
+            "count": 3,
+            "iconImg": "./ign.png",
+            "backgroundImg": "./ign_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_bd.xml",
+            "name": "Le Figaro",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.lemonde.fr/bande-dessinee/rss_full.xml",
+            "name": "Le Monde",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          }
         ],
          "Musique": [
           {
@@ -1892,20 +2018,12 @@
             "backgroundImg": "./lepoint_bgIMG.jpg"
           },
           {
-            "url": "https://www.melty.fr/musique-4.rss",
+            "url": "https://www.melty.fr/musique/feed",
             "name": "Melty",
             "specification": "firstFocus",
             "count": 2,
             "iconImg": "./melty.png",
             "backgroundImg": "./melty_bgIMG.jpg"
-          },
-          {
-            "url": "https://france3-regions.francetvinfo.fr/culture/musique/rss",
-            "name": "France 3",
-            "specification": "firstFocus",
-            "count": 1,
-            "iconImg": "./france3.png",
-            "backgroundImg": "./france3_bgIMG.jpg"
           },
           {
             "url": "https://www.lapresse.ca/arts/musique/",
@@ -2784,7 +2902,15 @@
             "count": 3,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
-          }  
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/politique/elections/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-list firstHeadline",
+            "count": 3,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          }   
         ],
         "Presse étrangère": [
           {
@@ -2929,6 +3055,14 @@
             "count": 3,
             "iconImg": "./courrierinter.png",
             "backgroundImg": "./courrierinter_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/idees-et-debats/?outputType=xml",
+            "name": "Libération",
+            "specification": "smallDesc firstFocus",
+            "count": 3,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
           }   
         ],
         "Monde": [
@@ -3363,6 +3497,14 @@
             "count": 1,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/societe/religions/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
           }
         ],
         "Éducation": [
@@ -3405,7 +3547,15 @@
             "count": 2,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
-          }  
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/societe/education/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          } 
         ],
         "Action sociale": [
           {
@@ -3503,7 +3653,15 @@
             "count": 2,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
-          } 
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/societe/police-justice/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          }  
         ],
         "Presse étrangère": [
           {
@@ -3995,7 +4153,7 @@
           {
             "url": "https://www.l214.com/rss.xml",
             "name": "L214",
-            "specification": "news-list",
+            "specification": "news-list nodesc",
             "count": 2,
             "iconImg": "./l214.png",
             "backgroundImg": "./l214_bgIMG.jpg"
@@ -4037,7 +4195,7 @@
           {
             "url": "https://chambres-agriculture.fr/flux-rss/flux-rss-publication/flux.rss",
             "name": "Chambres d'agriculture France",
-            "specification": "news-list firstHeadline big-list",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./chambre_agri.png",
             "backgroundImg": "./chambre_agri_bgIMG.jpg"
@@ -4053,7 +4211,7 @@
           {
             "url": "https://www.terre-net.fr/actualite-agriculture.html",
             "name": "Terre-net",
-            "specification": "news-list firstHeadline",
+            "specification": "news-list firstHeadline big-list",
             "count": 4,
             "iconImg": "./terre-net.png",
             "backgroundImg": "./terre-net_bgIMG.jpg"
@@ -4291,7 +4449,7 @@
             "backgroundImg": "./capital_bgIMG.jpg"
           } 
         ],
-        "Web": [
+        "Web & geek": [
           {
             "url": "https://www.sciencesetavenir.fr/high-tech/web/rss.xml",
             "name": "Sciences et Avenir",
@@ -4307,6 +4465,14 @@
             "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://podcast.bfmbusiness.com/channel227/BFMchannel227.xml",
+            "name": "BFM TV",
+            "specification": "news-list",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
