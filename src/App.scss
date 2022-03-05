@@ -576,8 +576,14 @@ ul.rss {
 
       p {
         font-size: 15px !important;
+        font-weight: normal !important;
         line-height: 20px !important;
         letter-spacing: -0.24px !important;
+
+        /*/ for 'Capital' source /*/
+        strong {
+          font-weight: normal !important;
+        }
       }
 
       @media only screen and (max-width: 734px) {
