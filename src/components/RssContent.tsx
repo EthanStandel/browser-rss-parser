@@ -4,6 +4,7 @@ import { DateTime } from "luxon";
 import axios from "axios";
 import { useAsync } from "@react-hookz/web";
 import { Spinner } from "./Spinner";
+import _unescape from "lodash/unescape";
 
 export interface RssFeedSource {
   url: string;
@@ -154,13 +155,13 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                         </div>
                         <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd/M").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier')}</div>
                       </div>
-                      <h6 className="item-title"dangerouslySetInnerHTML={{ __html: item.title ?? "" }} />
+                      <h6 className="item-title"dangerouslySetInnerHTML={{ __html: _unescape(item.title ?? "") }} />
                       <div className="item-infos">
                         <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd/M").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier')}</div>
                         
                         <div className="item-descriptionWrapper">
                           {item.description &&
-                            <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: item.description}} />
+                            <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: _unescape(item.description) }} />
                           }
                         </div>
                       </div>
