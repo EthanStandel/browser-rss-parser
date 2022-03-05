@@ -4,6 +4,7 @@ import { DateTime } from "luxon";
 import axios from "axios";
 import { useAsync } from "@react-hookz/web";
 import { Spinner } from "./Spinner";
+import { url } from "inspector";
 
 export interface RssFeedSource {
   url: string;
@@ -26,6 +27,12 @@ interface ParsedRssItem {
   description?: string;
   author?: string;
   "dc:creator"?: string;
+  enclosure?: {
+    url?: string;
+  }
+  "media:thumbnail"?: {
+    url?: string;
+  }
 }
 
 interface ParsedRssFeed {
@@ -115,7 +122,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
 
             const imgHref = 
             item.image?.url
-            ?? source.backgroundImg;
+            ?? item.enclosure?.url ?? source.backgroundImg;
 
             return (
               <li className={source.specification}>
