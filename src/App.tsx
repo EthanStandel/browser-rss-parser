@@ -97,6 +97,7 @@ const App = () => {
             <div className="mini-links c2">
               <a href="mailto:clement.krajecki@gmail.com?subject=nuntium&body=Bonjour!">Contact</a>
               <a href="https://github.com/EthanStandel/browser-rss-parser" target="_blank" rel="noreferrer">Github</a>
+              <a href="http://atlasflux.saynete.net" target="_blank" rel="noreferrer">Atlas des flux</a>
             </div>
           </div>
         </div>

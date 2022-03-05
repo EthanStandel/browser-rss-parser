@@ -68,6 +68,14 @@
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/meteo/",
+            "name": "BFM TV",
+            "specification": "news-notif firstHeadline",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -233,14 +241,6 @@
     "Économie": {
       "subtopics": {
         "noSubtopic": [
-          {
-            "url": "https://www.francetvinfo.fr/economie.rss",
-            "name": "Franceinfo",
-            "specification": "news-notif firstHeadline smallDesc",
-            "count": 1,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          },
           {
             "url": "https://www.lefigaro.fr/rss/figaro_flash-eco.xml",
             "name": "Le Figaro",
@@ -917,13 +917,6 @@
             "backgroundImg": "./rmcsport_bgIMG.jpg"
           },
           {
-            "url": "https://www.ladepeche.fr/sport/auto-moto/rss.xml",
-            "name": "La Dépêche",
-            "count": 1,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          },
-          {
             "url": "https://www.lemonde.fr/sports-mecaniques/rss_full.xml",
             "name": "Le Monde",
             "count": 1,
@@ -1178,14 +1171,6 @@
             "count": 1,
             "iconImg": "./lequipe.png",
             "backgroundImg": "./lequipe_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.francetvinfo.fr/sports/boxe.rss",
-            "name": "Franceinfo",
-            "specification": "news-list",
-            "count": 1,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
           }
         ],
         "Escrime": [
@@ -1280,7 +1265,7 @@
           {
             "url": "https://plus.lefigaro.fr/tag/esport/rss.xml",
             "name": "Le Figaro",
-            "specification": "news-list",
+            "specification": "news-list nodesc",
             "count": 1,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
@@ -1427,19 +1412,11 @@
           },
           {
             "url": "https://5minutes.rtl.lu/rss/culture",
-            "name": "RTL",
+            "name": "RTL.LU",
             "specification": "firstFocus",
             "count": 2,
             "iconImg": "./rtl.png",
             "backgroundImg": "./rtl_bgIMG.png"
-          },
-          {
-            "url": "https://ici.radio-canada.ca/rss/4167",
-            "name": "Radio Canada",
-            "specification": "firstFocus",
-            "count": 2,
-            "iconImg": "./radiocanada.png",
-            "backgroundImg": "./radiocanada_bgIMG.png"
           },
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/?outputType=xml",
@@ -1458,12 +1435,12 @@
             "backgroundImg": "./lepoint_bgIMG.jpg"
           },
           {
-            "url": "https://www.bfmtv.com/rss/culture/",
-            "name": "BFM TV",
+            "url": "https://ici.radio-canada.ca/rss/4167",
+            "name": "Radio Canada",
             "specification": "firstFocus",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
+            "count": 2,
+            "iconImg": "./radiocanada.png",
+            "backgroundImg": "./radiocanada_bgIMG.png"
           }
         ],
         "Littérature": [
@@ -1643,7 +1620,7 @@
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/series/?outputType=xml",
             "name": "Libération",
             "specification": "news-list",
-            "count": 2,
+            "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
           },
@@ -1772,6 +1749,64 @@
             "backgroundImg": "./capital_bgIMG.jpg"
           } 
         ],
+        "Jeux vidéo": [
+          {
+            "url": "https://www.presse-citron.net/category/lifestyle/jeu-video/feed",
+            "name": "Presse citron",
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./pressecitron.png",
+            "backgroundImg": "./pressecitron_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/jeux-video/?outputType=xml",
+            "name": "Libération",
+            "specification": "news-list firstHeadline",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/jeux-video/feed/",
+            "name": "Les Inrocks",
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/jeux-video/rss_full.xml",
+            "name": "Le Monde",
+            "specification": "news-list firstHeadline",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.journaldugeek.com/category/jeux-video/feed/",
+            "name": "Le journal du geek",
+            "specification": "news-list firstHeadline",
+            "count": 2,
+            "iconImg": "./jdg.png",
+            "backgroundImg": ".jdg_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.tomsguide.fr/tag/jeux-video/feed/",
+            "name": "Tom's guide",
+            "specification": "news-list firstHeadline",
+            "count": 1,
+            "iconImg": "./tomsguide.png",
+            "backgroundImg": "./tomsguide_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lacremedugaming.fr/feed",
+            "name": "La crème du gaming",
+            "specification": "news-list firstHeadline big-list",
+            "count": 3,
+            "iconImg": "./lacremedugaming.png",
+            "backgroundImg": "./lacremedugaming_bgIMG.jpg"
+          }
+        ],
         "Mode & beauté" : [
           {
             "url": "https://www.lemonde.fr/m-mode/rss_full.xml",
@@ -1822,57 +1857,6 @@
             "backgroundImg": "./liberation_bgIMG.jpg"
           }      
         ],
-        "Jeux vidéo": [
-          {
-            "url": "https://www.presse-citron.net/category/lifestyle/jeu-video/feed",
-            "name": "Presse citron",
-            "count": 2,
-            "iconImg": "./pressecitron.png",
-            "backgroundImg": "./pressecitron_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/jeux-video/?outputType=xml",
-            "name": "Libération",
-            "count": 1,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lesinrocks.com/jeux-video/feed/",
-            "name": "Les Inrocks",
-            "count": 2,
-            "iconImg": "./lesinrocks.png",
-            "backgroundImg": "./lesinrocks_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/jeux-video/rss_full.xml",
-            "name": "Le Monde",
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.journaldugeek.com/category/jeux-video/feed/",
-            "name": "Le journal du geek",
-            "count": 2,
-            "iconImg": "./jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.tomsguide.fr/tag/jeux-video/feed/",
-            "name": "Tom's guide",
-            "count": 1,
-            "iconImg": "./tomsguide.png",
-            "backgroundImg": "./tomsguide_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lacremedugaming.fr/feed",
-            "name": "La crème du gaming",
-            "count": 3,
-            "iconImg": "./lacremedugaming.png",
-            "backgroundImg": "./lacremedugaming_bgIMG.jpg"
-          }
-        ],
         "Patrimoine, architecture & urbanisme": [
           {
             "url": "https://www.ladepeche.fr/culture-et-loisirs/patrimoine/rss.xml",
@@ -1907,28 +1891,20 @@
             "backgroundImg": "./lapresse_bgIMG.jpg"
           },
           {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=architecture",
+            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=architecture,urbanisme",
             "name": "Capital",
             "specification": "news-list",
-            "count": 1,
+            "count": 2,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
-          },
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=urbanisme",
-            "name": "Capital",
-            "specification": "news-list",
-            "count": 1,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
-          } 
+          }
         ],
         "Arts du spectacle": [
           {
             "url": "https://www.lemonde.fr/scenes/rss_full.xml",
             "name": "Le Monde",
             "specification": "news-list",
-            "count": 3,
+            "count": 5,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
           }
@@ -3149,6 +3125,9 @@
             "backgroundImg": "./lapresse_bgIMG.jpg"
           }
         ],
+        "Philosophie": [
+
+        ],
         "Presse étrangère": [
           {
             "url": "http://feeds.feedburner.com/daily-express-columnists",
@@ -3581,7 +3560,7 @@
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=greve",
             "name": "Capital",
             "specification": "news-list firstHeadline",
-            "count": 2,
+            "count": 1,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
           }
@@ -3617,7 +3596,7 @@
             "url": "https://www.francetvinfo.fr/faits-divers/justice-proces.rss",
             "name": "Franceinfo",
             "specification": "news-list firstHeadline",
-            "count": 2,
+            "count": 1,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
@@ -3997,25 +3976,6 @@
             "backgroundImg": "./lemonde_bgIMG.jpg"
           }
         ],
-        "Météo": [
-          {
-            "url": "https://www.bfmtv.com/rss/meteo/",
-            "name": "BFM TV",
-            "specification": "news-notif firstHeadline",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/temoins/meteo/",
-            "name": "BFM TV",
-            "specification": "news-notif firstHeadline",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          }
-
-        ],
         "Environnement": [
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/environnement/?outputType=xml",
@@ -4051,13 +4011,6 @@
             "count": 2,
             "iconImg": "./futura.png",
             "backgroundImg": "./futura_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.numerama.com/sciences/environnementfeed/",
-            "name": "Numerama",
-            "count": 2,
-            "iconImg": "./numerama.png",
-            "backgroundImg": "./numerama_bgIMG.jpg"
           },
           {
             "url": "https://information.tv5monde.com/afprss/francais--journal--environnement",
@@ -4137,7 +4090,7 @@
             "url": "https://www.bfmtv.com/rss/animaux/",
             "name": "BFM TV",
             "specification": "news-list",
-            "count": 2,
+            "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
           },
@@ -4161,7 +4114,7 @@
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=animaux",
             "name": "Capital",
             "specification": "news-list",
-            "count": 2,
+            "count": 1,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
           } 
@@ -4316,6 +4269,7 @@
           {
             "url": "https://www.journaldugeek.com/category/smartphone/feed/",
             "name": "Le journal du geek",
+            "specification": "news-list",
             "count": 4,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
@@ -4323,16 +4277,18 @@
           {
             "url": "https://www.01net.com/rss/smartphones/",
             "name": "01NET",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./01net.png",
             "backgroundImg": ".01net_bgIMG.jpg"
           },
           {
-            "url": "https://www.linternaute.com/hightech/mobile/rss/",
-            "name": "L'internaute",
-            "count": 1,
-            "iconImg": "./linternaute.png",
-            "backgroundImg": "./linternaute_bgIMG.jpg"
+            "url": "https://www.frandroid.com/produits-android/smartphone/feed",
+            "name": "Frandroid",
+            "specification": "news-list firstHeadline",
+            "count": 4,
+            "iconImg": "./frandroid.png",
+            "backgroundImg": "./frandroid_bgIMG.jpg"
           }
         ],
         "Ordinateurs": [
@@ -4340,15 +4296,24 @@
             "url": "https://www.linternaute.com/hightech/micro/rss/",
             "name": "L'internaute",
             "specification": "news-list",
-            "count": 3,
+            "count": 2,
             "iconImg": "./linternaute.png",
             "backgroundImg": "./linternaute_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.frandroid.com/produits-android/ordinateurs/feed",
+            "name": "Frandroid",
+            "specification": "news-list",
+            "count": 5,
+            "iconImg": "./frandroid.png",
+            "backgroundImg": "./frandroid_bgIMG.jpg"
           }
         ],
         "IA & VR": [
           {
             "url": "https://www.sciencesetavenir.fr/high-tech/intelligence-artificielle/rss.xml",
             "name": "Sciences et Avenir",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./sciencesetavenir.png",
             "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
@@ -4356,6 +4321,7 @@
           {
             "url": "https://www.journaldugeek.com/category/intelligence-artificielle/feed/",
             "name": "Le journal du geek",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
@@ -4363,18 +4329,27 @@
           {
             "url": "https://www.journaldunet.com/intelligence-artificielle/rss",
             "name": "Journal du Net",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./jdn.png",
             "backgroundImg": ".jdn_bgIMG.jpg"
           }
         ],
-        "Développement": [
-  
+        "Développeurs": [
+          {
+            "url": "https://www.journaldunet.com/web-tech/developpeur/rss/",
+            "name": "Journal du Net",
+            "specification": "news-list",
+            "count": 2,
+            "iconImg": "./jdn.png",
+            "backgroundImg": ".jdn_bgIMG.jpg"
+          }
         ],
         "GAFAM": [
           {
             "url": "https://www.journaldugeek.com/tag/gafam/feed",
             "name": "Le journal du geek",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
@@ -4382,6 +4357,7 @@
           {
             "url": "https://www.journaldugeek.com/tag/apple/feed",
             "name": "Le journal du geek",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
@@ -4389,6 +4365,7 @@
           {
             "url": "https://www.journaldugeek.com/tag/microsoft/feed",
             "name": "Le journal du geek",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
@@ -4396,6 +4373,7 @@
           {
             "url": "https://www.journaldugeek.com/tag/facebook/feed",
             "name": "Le journal du geek",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
@@ -4403,16 +4381,17 @@
           {
             "url": "https://www.journaldugeek.com/tag/google/feed",
             "name": "Le journal du geek",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
           }
-
         ],
         "Big data & cybersécurité": [
           {
             "url": "https://www.journaldugeek.com/category/securite/feed/",
             "name": "Le journal du geek",
+            "specification": "news-list",
             "count": 3,
             "iconImg": "./jdg.png",
             "backgroundImg": ".jdg_bgIMG.jpg"
@@ -4420,6 +4399,7 @@
           {
             "url": "https://www.01net.com/rss/actualites/securite/",
             "name": "01NET",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./01net.png",
             "backgroundImg": ".01net_bgIMG.jpg"
@@ -4427,6 +4407,7 @@
           {
             "url": "https://www.journaldunet.com/solutions/analytics/big-data/rss/",
             "name": "Journal du Net",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./jdn.png",
             "backgroundImg": ".jdn_bgIMG.jpg"
@@ -4434,11 +4415,18 @@
           {
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=cybersecurite",
             "name": "Capital",
-            "specification": "news-notif firstHeadline",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
-          } 
+          },
+          {
+            "url": "https://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml",
+            "name": "Le Monde Informatique",
+            "count": 2,
+            "iconImg": "./lemondeinfo.png",
+            "backgroundImg": "./lemondeinfo_bgIMG.jpg"
+          }  
         ],
         "Web & geek": [
           {
@@ -4524,7 +4512,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_lifestyle.xml",
             "name": "Le Figaro",
-            "specification": "firstFocus",
+            "specification": "firstFocus smallDesc",
             "count": 1,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
@@ -4532,7 +4520,7 @@
           {
             "url": "https://ici.radio-canada.ca/rss/4163",
             "name": "Radio Canada",
-            "specification": "firstFocus",
+            "specification": "firstFocus smallDesc",
             "count": 1,
             "iconImg": "./radiocanada.png",
             "backgroundImg": "./radiocanada_bgIMG.png"
@@ -4540,7 +4528,7 @@
           {
             "url": "https://cdn1-parismatch.lanmedia.fr/var/exports/rss/rss-vivre.xml",
             "name": "Paris Match",
-            "specification": "firstFocus",
+            "specification": "firstFocus smallDesc",
             "count": 2,
             "iconImg": "./parismatch.png",
             "backgroundImg": "./parismatch_bgIMG.png"
@@ -4548,7 +4536,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/?outputType=xml",
             "name": "Libération",
-            "specification": "firstFocus",
+            "specification": "firstFocus smallDesc",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -4556,7 +4544,7 @@
           {
             "url": "https://www.lesinrocks.com/actu/feed/",
             "name": "Les Inrocks",
-            "specification": "news-notif firstHeadline",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./lesinrocks.png",
             "backgroundImg": "./lesinrocks_bgIMG.jpg"
@@ -4564,7 +4552,7 @@
           {
             "url": "https://www.lepoint.fr/art-de-vivre/rss.xml",
             "name": "Le Point",
-            "specification": "firstFocus",
+            "specification": "firstFocus smallDesc",
             "count": 2,
             "iconImg": "./lepoint.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -4572,7 +4560,7 @@
           {
             "url": "https://www.lemonde.fr/m-styles/rss_full.xml",
             "name": "Le Monde",
-            "specification": "firstFocus",
+            "specification": "firstFocus smallDesc",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -4580,7 +4568,7 @@
           {
             "url": "https://information.tv5monde.com/afprss/francais--journal--clt",
             "name": "TV5 Monde",
-            "specification": "firstFocus",
+            "specification": "firstFocus smallDesc",
             "count": 1,
             "iconImg": "./tv5monde.png",
             "backgroundImg": "./tv5monde_bgIMG.jpg"
@@ -4588,7 +4576,7 @@
           {
             "url": "https://www.courrierinternational.com/feed/category/7426/rss.xml",
             "name": "Courrier International",
-            "specification": "news-notif firstHeadline",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./courrierinter.png",
             "backgroundImg": "./courrierinter_bgIMG.jpg"
@@ -4596,7 +4584,7 @@
           {
             "url": "https://www.forbes.fr/lifestyle/feed/",
             "name": "Forbes",
-            "specification": "news-notif firstHeadline",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./forbes.png",
             "backgroundImg": "./forbes_bgIMG.jpg"
@@ -4639,7 +4627,7 @@
             "url": "https://www.courrierinternational.com/feed/category/6271/rss.xml",
             "name": "Courrier International",
             "specification": "news-list",
-            "count": 2,
+            "count": 1,
             "iconImg": "./courrierinter.png",
             "backgroundImg": "./courrierinter_bgIMG.jpg"
           },
@@ -4663,7 +4651,7 @@
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=loisirs",
             "name": "Capital",
             "specification": "news-list",
-            "count": 3,
+            "count": 1,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
           }  
@@ -4801,7 +4789,7 @@
             "url": "https://www.francetvinfo.fr/societe/familles-royales.rss",
             "name": "Franceinfo",
             "specification": "news-list",
-            "count": 4,
+            "count": 3,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
@@ -5034,6 +5022,14 @@
             "count": 3,
             "iconImg": "./turbo.png",
             "backgroundImg": "./turbo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.frandroid.com/produits-android/automobile/feed",
+            "name": "Frandroid",
+            "specification": "news-notif firstHeadline",
+            "count": 3,
+            "iconImg": "./frandroid.png",
+            "backgroundImg": "./frandroid_bgIMG.jpg"
           }
         ],
         "Constructeurs & essais": [
