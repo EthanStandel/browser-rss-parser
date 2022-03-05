@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import './App.scss';
 import RssContent from './components/RssContent';
 import rssFeeds from "./resources/rss_feeds.json";
@@ -12,6 +12,7 @@ const selectableTopics = Object.entries(rssFeeds.topics)
 
 const App = () => {
   const [ subtopicFilter, _setSubtopicFilter ] = useState<string | undefined>(undefined);
+  const subtopicNavbarContainer = useRef<HTMLUListElement>(null);
   const setSubtopicFilter = (subtopicFilter: string | undefined) => {
     BrowserUtils.scrollToTop();
     _setSubtopicFilter(subtopicFilter);
@@ -20,6 +21,7 @@ const App = () => {
   const setTopicFilter = (newTopicFilter: keyof typeof topics) => {
     BrowserUtils.scrollToTop();
     setSubtopicFilter(undefined);
+    subtopicNavbarContainer.current?.scroll({ left: 0 });
     const shouldUnfilter = newTopicFilter === topicFilter;
     const query = shouldUnfilter ? "" : `?topic=${encodeURIComponent(newTopicFilter)}`;
     // eslint-disable-next-line no-restricted-globals
@@ -47,7 +49,7 @@ const App = () => {
           </ul>
           {Object.keys(topics[topicFilter].subtopics).length > 1 &&
             <div className="subtopic-selection">
-              <ul className={"topics-navbar r2 " + topicFilter}>
+              <ul ref={subtopicNavbarContainer} className={"topics-navbar r2 " + topicFilter}>
                 <li className="all-subtopic">
                   <button className={!subtopicFilter ? "selected" : ""} onClick={() => setSubtopicFilter(undefined)}>
                     Tout 
