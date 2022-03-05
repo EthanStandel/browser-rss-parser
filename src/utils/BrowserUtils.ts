@@ -1,8 +1,7 @@
 export const BrowserUtils = {
   scrollToTop: () => {
     try {
-      document.querySelector("h3")!.scrollIntoView();
-      document.scrollingElement!.scrollTop -= document.querySelector("header")!.offsetHeight
+      document.documentElement.scrollTo({ top: 0 });
     } catch {
       console.warn("Failed to scroll to top of header, using fallback scrolling method");
 

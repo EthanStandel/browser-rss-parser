@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import './App.scss';
 import RssContent from './components/RssContent';
 import rssFeeds from "./resources/rss_feeds.json";
+import topicComponents from './topic-components/topicComponents';
 import { BrowserUtils } from './utils/BrowserUtils';
 
 const { topics } = rssFeeds;
@@ -29,6 +30,7 @@ const App = () => {
     window.history.pushState({ path }, "", path);
     _setTopicFilter(shouldUnfilter ? "À la une": newTopicFilter);
   }
+  const CustomTopicComponent = topicComponents[topicFilter] ?? "div";
 
   return (
     <div className="App">
@@ -72,6 +74,7 @@ const App = () => {
       </header>
       <div className="body-container">
         <div className={topicFilter}>
+          <CustomTopicComponent />
           {<h3 className={"bold " + topicFilter}>{topicFilter}</h3>}
           {Object.entries(topics[topicFilter].subtopics)
             .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)
