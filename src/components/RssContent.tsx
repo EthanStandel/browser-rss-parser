@@ -143,11 +143,11 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                           {source.name}
                           {source.subtopic && ` - ${source.subtopic}`}
                         </div>
-                        <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd/M").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier')}</div>
+                        <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd/MM").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier')}</div>
                       </div>
                       <h6 className="item-title"dangerouslySetInnerHTML={{ __html: _unescape(item.title ?? "") }} />
                       <div className="item-infos">
-                        <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd/M").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier')}</div>
+                        <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd/MM").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier')}</div>
                         
                         <div className="item-descriptionWrapper">
                           {item.description &&
@@ -156,7 +156,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                         </div>
                       </div>
                       <div className="item-infos2">
-                        <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd/M").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier')}</div>
+                        <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd/MM").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier')}</div>
                       </div>
                     </div>
                   </div>

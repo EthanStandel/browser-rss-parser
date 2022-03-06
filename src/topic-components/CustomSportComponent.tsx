@@ -1,5 +1,5 @@
 const CustomSportComponent = () => {
-  return <div>I only render when you've selected the "Sport" topic!</div>;
+  return <div></div>;
 }
 
 export default CustomSportComponent

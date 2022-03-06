@@ -230,7 +230,7 @@
           {
             "url": "http://feeds.feedburner.com/daily-express-uk-news",
             "name": "Express",
-            "specification": "news-notif firstHeadline nodesc",
+            "specification": "news-notif firstHeadline",
             "count": 2,
             "iconImg": "./express.png",
             "backgroundImg": "./express_bgIMG.jpg"
@@ -326,7 +326,7 @@
           {
             "url": "https://www.tradingsat.com/rssbourse.xml",
             "name": "BFM TV",
-            "specification": "news-notif firstHeadline nodesc",
+            "specification": "news-notif firstHeadline",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -608,7 +608,7 @@
           {
             "url": "https://markets.businessinsider.com/rss/news",
             "name": "Markets Insider",
-            "specification": "news-list firstHeadline nodesc",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./minsider.png",
             "backgroundImg": "./minsider_bgIMG.jpg"
@@ -1265,7 +1265,7 @@
           {
             "url": "https://plus.lefigaro.fr/tag/esport/rss.xml",
             "name": "Le Figaro",
-            "specification": "news-list nodesc",
+            "specification": "news-list",
             "count": 1,
             "iconImg": "./lefigaro.png",
             "backgroundImg": "./lefigaro_bgIMG.png"
@@ -1375,7 +1375,7 @@
           {
             "url": "http://feeds.feedburner.com/daily-express-sport-news",
             "name": "Express",
-            "specification": "news-list firstHeadline nodesc",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./express.png",
             "backgroundImg": "./express_bgIMG.jpg"
@@ -1945,7 +1945,7 @@
           {
             "url": "https://fr.ign.com/comics-mangas.xml",
             "name": "IGN France",
-            "specification": "news-list nodesc",
+            "specification": "news-list",
             "count": 3,
             "iconImg": "./ign.png",
             "backgroundImg": "./ign_bgIMG.jpg"
@@ -2053,7 +2053,7 @@
           {
             "url": "https://www.lhistoire.fr/rss.xml",
             "name": "l'Histoire",
-            "specification": "news-list nodesc",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./lhistoire.png",
             "backgroundImg": "./lhistoire_bgIMG.jpg"
@@ -2955,7 +2955,7 @@
           {
             "url": "http://feeds.feedburner.com/daily-express-politics",
             "name": "Express",
-            "specification": "news-list firstHeadline nodesc",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./express.png",
             "backgroundImg": "./express_bgIMG.jpg"
@@ -3132,7 +3132,7 @@
           {
             "url": "http://feeds.feedburner.com/daily-express-columnists",
             "name": "Express",
-            "specification": "news-notif firstHeadline nodesc",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./express.png",
             "backgroundImg": "./express_bgIMG.jpg"
@@ -3140,7 +3140,7 @@
           {
             "url": "http://feeds.feedburner.com/daily-express-express-comment",
             "name": "Express",
-            "specification": "news-notif firstHeadline nodesc",
+            "specification": "news-list firstHeadline",
             "count": 3,
             "iconImg": "./express.png",
             "backgroundImg": "./express_bgIMG.jpg"
@@ -3565,7 +3565,7 @@
             "backgroundImg": "./capital_bgIMG.jpg"
           }
         ],
-        "Immigration & migration": [
+        "Immigration": [
           {
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=immigration,migrations",
             "name": "Capital",
@@ -3963,7 +3963,7 @@
           {
             "url": "https://www.20minutes.fr/feeds/rss-planete.xml",
             "name": "20 Minutes",
-            "specification": "news-notif firstHeadline",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 2,
             "iconImg": "./20minutes.png",
             "backgroundImg": "./20minutes_bgIMG.png"
@@ -3971,6 +3971,7 @@
           {
             "url": "https://www.lemonde.fr/planete/rss_full.xml",
             "name": "Le Monde",
+            "specification": "news-notif firstHeadline smallDesc",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -3980,6 +3981,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/environnement/?outputType=xml",
             "name": "Libération",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -3987,6 +3989,7 @@
           {
             "url": "https://www.leprogres.fr/environnement/rss",
             "name": "Le Progrès",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./leprogres.png",
             "backgroundImg": "./leprogres_bgIMG.jpg"
@@ -3994,6 +3997,7 @@
           {
             "url": "https://www.bfmtv.com/rss/environnement/",
             "name": "BFM TV",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
@@ -4001,6 +4005,7 @@
           {
             "url": "https://www.sciencesetavenir.fr/nature-environnement/rss.xml",
             "name": "Sciences et Avenir",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./sciencesetavenir.png",
             "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
@@ -4008,6 +4013,7 @@
           {
             "url": "https://www.futura-sciences.com/rss/environnement/actualites.xml",
             "name": "Futura Sciences",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./futura.png",
             "backgroundImg": "./futura_bgIMG.jpg"
@@ -4015,6 +4021,7 @@
           {
             "url": "https://information.tv5monde.com/afprss/francais--journal--environnement",
             "name": "TV5 Monde",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./tv5monde.png",
             "backgroundImg": "./tv5monde_bgIMG.jpg"
@@ -4022,6 +4029,7 @@
           {
             "url": "https://www.forbes.fr/environnement/feed/",
             "name": "Forbes",
+            "specification": "news-list firstHeadline",
             "count": 1,
             "iconImg": "./forbes.png",
             "backgroundImg": "./forbes_bgIMG.jpg"
@@ -4029,6 +4037,7 @@
           {
             "url": "https://www.lapresse.ca/actualites/environnement/rss",
             "name": "La Presse",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
@@ -4036,6 +4045,7 @@
           {
             "url": "https://www.francetvinfo.fr/monde/environnement.rss",
             "name": "Franceinfo",
+            "specification": "news-list firstHeadline",
             "count": 3,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
@@ -4043,8 +4053,8 @@
           {
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=environnement,climat",
             "name": "Capital",
-            "specification": "news-list",
-            "count": 2,
+            "specification": "news-list firstHeadline",
+            "count": 1,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
           } 
@@ -4053,7 +4063,7 @@
           {
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=energie,transport",
             "name": "Capital",
-            "specification": "news-list firstHeadline",
+            "specification": "news-list",
             "count": 4,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
@@ -4063,7 +4073,7 @@
           {
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=alimentation",
             "name": "Capital",
-            "specification": "news-list firstHeadline",
+            "specification": "news-list",
             "count": 3,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
@@ -4097,7 +4107,7 @@
           {
             "url": "https://www.l214.com/rss.xml",
             "name": "L214",
-            "specification": "news-list nodesc",
+            "specification": "news-list",
             "count": 2,
             "iconImg": "./l214.png",
             "backgroundImg": "./l214_bgIMG.jpg"
@@ -4197,7 +4207,7 @@
           {
             "url": "http://feeds.feedburner.com/daily-express-nature",
             "name": "Express",
-            "specification": "news-list firstHeadline nodesc",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./express.png",
             "backgroundImg": "./express_bgIMG.jpg"
@@ -4296,7 +4306,7 @@
             "url": "https://www.linternaute.com/hightech/micro/rss/",
             "name": "L'internaute",
             "specification": "news-list",
-            "count": 2,
+            "count": 1,
             "iconImg": "./linternaute.png",
             "backgroundImg": "./linternaute_bgIMG.jpg"
           },
@@ -4309,12 +4319,12 @@
             "backgroundImg": "./frandroid_bgIMG.jpg"
           }
         ],
-        "IA & VR": [
+        "IA": [
           {
             "url": "https://www.sciencesetavenir.fr/high-tech/intelligence-artificielle/rss.xml",
             "name": "Sciences et Avenir",
             "specification": "news-list",
-            "count": 2,
+            "count": 1,
             "iconImg": "./sciencesetavenir.png",
             "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
           },
@@ -4956,7 +4966,7 @@
           {
             "url": "http://feeds.feedburner.com/daily-express-lifestyle",
             "name": "Express",
-            "specification": "news-list firstHeadline nodesc",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./express.png",
             "backgroundImg": "./express_bgIMG.jpg"
@@ -5073,7 +5083,7 @@
           {
             "url": "http://feeds.feedburner.com/daily-express-cars-news",
             "name": "Express",
-            "specification": "news-list firstHeadline nodesc",
+            "specification": "news-list firstHeadline",
             "count": 2,
             "iconImg": "./express.png",
             "backgroundImg": "./express_bgIMG.jpg"
