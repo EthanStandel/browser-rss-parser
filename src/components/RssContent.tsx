@@ -32,6 +32,7 @@ interface ParsedRssItem {
     type?: string;
     url?: string;
   }
+  "dc:date"?: string;
 }
 
 interface ParsedRssFeed {
@@ -54,10 +55,6 @@ var ddyesterday = String(yesterdayDate.getDate()).padStart(2, '0');
 var beforeYesterdayDate = new Date();
 beforeYesterdayDate.setDate(beforeYesterdayDate.getDate()-2);
 var ddbeforeYesterday = String(beforeYesterdayDate.getDate()).padStart(2, '0');
-
-// Old use to get month from coded month (0 to 11)
-const monthNames = ["jan.", "fév.", "mars", "avr.", "mai", "jun.",
-  "jul.", "août.", "sept.", "oct.", "nov.", "déc."];
 
 const todayFormat = dd + '/' + (new Date().getMonth()+1) ;
 const yesterdayFormat = ddyesterday + '/' + (yesterdayDate.getMonth()+1) ;
@@ -128,7 +125,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
 
             let author = item.author ?? item["dc:creator"];
 
-            let displayedDate = date?.setLocale("fr").toFormat("dd/MM").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier');
+            let displayedDate = date?.setLocale("fr").toFormat("dd/M").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier');
 
             return (
               <li className={source.specification}>
