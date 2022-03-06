@@ -1,6 +1,7 @@
 const CustomÀlauneComponent = () => {
   return (
     <ul className='rss'>
+       <div className="r2">{new Date().toLocaleDateString([], {weekday:'long', day:'numeric', month: 'long'})}</div>
     <li className="TVbanner news-notif">
       <a href="https://www.francetvinfo.fr/replay-jt/france-2/8-heures/" target="_blank" rel="noreferrer">
         <div className="media">
