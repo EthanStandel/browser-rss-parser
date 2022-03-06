@@ -128,6 +128,8 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
 
             let author = item.author ?? item["dc:creator"];
 
+            let displayedDate = date?.setLocale("fr").toFormat("dd/MM").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier');
+
             return (
               <li className={source.specification}>
                 <a href={item.link} target="_blank" rel="noreferrer">
@@ -143,20 +145,20 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                           {source.name}
                           {source.subtopic && ` - ${source.subtopic}`}
                         </div>
-                        <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd/MM").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier')}</div>
+                        <div className="footnote item-publish-date">{displayedDate}</div>
                       </div>
-                      <h6 className="item-title"dangerouslySetInnerHTML={{ __html: _unescape(item.title ?? "") }} />
+                      <h6 className="item-title"dangerouslySetInnerHTML={{ __html: _unescape(item.title ?? "")}} />
                       <div className="item-infos">
-                        <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd/MM").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier')}</div>
+                        <div className="footnote item-publish-date">{displayedDate}</div>
                         
                         <div className="item-descriptionWrapper">
                           {item.description &&
-                            <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: _unescape(item.description) }} />
+                            <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: _unescape(item.description)}} />
                           }
                         </div>
                       </div>
                       <div className="item-infos2">
-                        <div className="footnote item-publish-date">{date?.setLocale("fr").toFormat("dd/MM").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier')}</div>
+                        <div className="footnote item-publish-date">{displayedDate}</div>
                       </div>
                     </div>
                   </div>
