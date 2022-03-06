@@ -97,12 +97,14 @@ const App = () => {
             <div className="c1">Version bêta du projet nuntium, résumé des dernières actualités en France et dans le monde.</div>
           </div>
           <div className="footer-legal">
-            <div className="c2 inline">2021 - France</div>
-            <div className="c2 inline marginless">Créé par <a className="color" href="https://www.reddit.com/user/iKL3W" target="_blank" rel="noreferrer">u/iKL3W</a>, avec <a className="color" href="https://www.reddit.com/user/besthelloworld" target="_blank" rel="noreferrer">u/besthelloworld</a>.</div>
+            <div className="c2 inline">2021-{new Date().toLocaleDateString([], {year:'numeric'})}</div>
+            <div className="c2 inline">France</div>
+            <div className="c2 inline">Créé par <a className="color" href="https://www.reddit.com/user/iKL3W" target="_blank" rel="noreferrer">u/iKL3W</a>, avec <a className="color" href="https://www.reddit.com/user/besthelloworld" target="_blank" rel="noreferrer">u/besthelloworld</a>.</div>
             <div className="mini-links c2">
               <a href="mailto:clement.krajecki@gmail.com?subject=nuntium&body=Bonjour!">Contact</a>
               <a href="https://github.com/EthanStandel/browser-rss-parser" target="_blank" rel="noreferrer">Github</a>
               <a href="http://atlasflux.saynete.net" target="_blank" rel="noreferrer">Atlas des flux</a>
+              <a href="https://www.iptc.org/std/NewsCodes/treeview/mediatopic/mediatopic-fr.html" target="_blank" rel="noreferrer">NewsCodes</a>
             </div>
           </div>
         </div>
