@@ -356,110 +356,6 @@
             "backgroundImg": "./capital_bgIMG.jpg"
           }
         ],
-        "Consommation": [
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=consommation",
-            "name": "Capital",
-            "specification": "nList firstHeadline",
-            "count": 2,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/economie/consommation/",
-            "name": "BFM TV",
-            "specification": "nList firstHeadline",
-            "count": 3,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          }
-        ],
-        "Enchères": [
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=encheres",
-            "name": "Capital",
-            "specification": "nList",
-            "count": 2,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
-          }
-        ],
-        "Entreprises": [
-          {
-            "url": "https://www.francetvinfo.fr/economie/entreprises.rss",
-            "name": "Franceinfo",
-            "specification": "nNotif firstHeadline",
-            "count": 2,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.ladepeche.fr/economie/entreprise/rss.xml",
-            "name": "La Dépêche",
-            "specification": "nNotif firstHeadline",
-            "count": 1,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/economie/entreprises/",
-            "name": "BFM TV",
-            "specification": "nNotif firstHeadline",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/entreprises/rss_full.xml",
-            "name": "Le Monde",
-            "specification": "nNotif firstHeadline",
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.challenges.fr/entreprise/rss.xml",
-            "name": "Challenges",
-            "specification": "nNotif firstHeadline",
-            "count": 2,
-            "iconImg": "./challenges.png",
-            "backgroundImg": "./challenges_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lapresse.ca/affaires/entreprises/rss",
-            "name": "La Presse",
-            "specification": "nNotif firstHeadline",
-            "count": 2,
-            "iconImg": "./lapresse.png",
-            "backgroundImg": "./lapresse_bgIMG.jpg"
-          },
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&categories=entreprises-marches&tags=entreprises",
-            "name": "Capital",
-            "specification": "nNotif firstHeadline",
-            "count": 2,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
-          }
-        ],
-        "Industrie": [
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=industrie",
-            "name": "Capital",
-            "specification": "nList firstHeadline",
-            "count": 2,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/economie/entreprises/industries/",
-            "name": "BFM TV",
-            "specification": "nList firstHeadline",
-            "count": 3,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          }
-        ],
         "Patrimoine & immobilier": [
           {
             "url": "https://www.francetvinfo.fr/immobilier.rss",
@@ -552,6 +448,100 @@
             "backgroundImg": "./forbes_bgIMG.jpg"
           }
         ],
+        "Consommation": [
+          {
+            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=consommation",
+            "name": "Capital",
+            "specification": "nList firstHeadline",
+            "count": 2,
+            "iconImg": "./capital.png",
+            "backgroundImg": "./capital_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/economie/consommation/",
+            "name": "BFM TV",
+            "specification": "nList firstHeadline",
+            "count": 3,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          }
+        ],
+        "Entreprises": [
+          {
+            "url": "https://www.francetvinfo.fr/economie/entreprises.rss",
+            "name": "Franceinfo",
+            "specification": "nNotif firstHeadline",
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/economie/entreprise/rss.xml",
+            "name": "La Dépêche",
+            "specification": "nNotif firstHeadline",
+            "count": 1,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/economie/entreprises/",
+            "name": "BFM TV",
+            "specification": "nNotif firstHeadline",
+            "count": 1,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/entreprises/rss_full.xml",
+            "name": "Le Monde",
+            "specification": "nNotif firstHeadline",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.challenges.fr/entreprise/rss.xml",
+            "name": "Challenges",
+            "specification": "nNotif firstHeadline",
+            "count": 2,
+            "iconImg": "./challenges.png",
+            "backgroundImg": "./challenges_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/affaires/entreprises/rss",
+            "name": "La Presse",
+            "specification": "nNotif firstHeadline",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          },
+          {
+            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&categories=entreprises-marches&tags=entreprises",
+            "name": "Capital",
+            "specification": "nNotif firstHeadline",
+            "count": 1,
+            "iconImg": "./capital.png",
+            "backgroundImg": "./capital_bgIMG.jpg"
+          }
+        ],
+        "Industrie": [
+          {
+            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=industrie",
+            "name": "Capital",
+            "specification": "nList firstHeadline",
+            "count": 1,
+            "iconImg": "./capital.png",
+            "backgroundImg": "./capital_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/economie/entreprises/industries/",
+            "name": "BFM TV",
+            "specification": "nList firstHeadline",
+            "count": 3,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          }
+        ],
         "Cryptomonnaies": [
           {
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&categories=crypto",
@@ -570,6 +560,16 @@
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
+          }
+        ],
+        "Enchères": [
+          {
+            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=encheres",
+            "name": "Capital",
+            "specification": "nList",
+            "count": 2,
+            "iconImg": "./capital.png",
+            "backgroundImg": "./capital_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -608,7 +608,7 @@
           {
             "url": "https://markets.businessinsider.com/rss/news",
             "name": "Markets Insider",
-            "specification": "nList firstHeadline",
+            "specification": "nList firstHeadline nodesc",
             "count": 1,
             "iconImg": "./minsider.png",
             "backgroundImg": "./minsider_bgIMG.jpg"
@@ -2225,7 +2225,7 @@
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=europe,ue",
             "name": "Capital",
             "specification": "nNotif firstHeadline",
-            "count": 2,
+            "count": 1,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
           } 
@@ -2235,7 +2235,7 @@
             "url": "https://www.francetvinfo.fr/monde/europe/allemagne.rss",
             "name": "Franceinfo",
             "specification": "nList",
-            "count": 4,
+            "count": 3,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
@@ -2253,7 +2253,7 @@
             "url": "https://www.francetvinfo.fr/monde/royaume-uni.rss",
             "name": "Franceinfo",
             "specification": "nList",
-            "count": 4,
+            "count": 3,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
@@ -2271,7 +2271,7 @@
             "url": "https://www.francetvinfo.fr/monde/italie.rss",
             "name": "Franceinfo",
             "specification": "nList",
-            "count": 4,
+            "count": 3,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
@@ -2307,7 +2307,7 @@
             "url": "https://www.francetvinfo.fr/monde/espagne.rss",
             "name": "Franceinfo",
             "specification": "nList",
-            "count": 4,
+            "count": 3,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
