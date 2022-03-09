@@ -60,16 +60,6 @@
             "backgroundImg": "./linternaute_bgIMG.jpg"
           }
         ],
-        "Éphéméride": [
-          {
-            "url": "https://podcast.bfmbusiness.com/channel214/BFMchannel214.xml",
-            "name": "BFM TV",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          }
-        ],
         "Presse étrangère": [
           {
             "url": "https://www.express.co.uk/latest/france/rss",
