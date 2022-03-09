@@ -68,21 +68,13 @@
             "count": 1,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/meteo/",
-            "name": "BFM TV",
-            "specification": "nNotif firstHeadline",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
           {
             "url": "https://www.express.co.uk/latest/france/rss",
             "name": "Express",
-            "specification": "nNotif firstHeadline",
+            "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./express.png",
             "backgroundImg": "./express_bgIMG.jpg"
@@ -90,7 +82,7 @@
           {
             "url": "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/topic/destination/france/rss.xml",
             "name": "The New York Times",
-            "specification": "nNotif firstHeadline",
+            "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./thenytimes.png",
             "backgroundImg": "./thenytimes_bgIMG.jpg"
@@ -98,7 +90,7 @@
           {
             "url": "https://www.theguardian.com/world/france/rss",
             "name": "The Guardian",
-            "specification": "nNotif firstHeadline",
+            "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./theguardian.png",
             "backgroundImg": "./theguardian_bgIMG.jpg"
@@ -106,7 +98,7 @@
           {
             "url": "https://www.france24.com/en/france/rss",
             "name": "France 24",
-            "specification": "nNotif firstHeadline",
+            "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./france24.jpg",
             "backgroundImg": "./france24_bgIMG.jpg"

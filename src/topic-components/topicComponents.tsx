@@ -1,7 +1,7 @@
 import { FC } from "react";
 import SportComponent from "./SportComponent";
 import CultureComponent from "./CultureComponent";
-import CustomÀlauneComponent from "./CustomÀlauneComponent";
+import ÀlauneComponent from "./ÀlauneComponent";
 import EuropeComponent from "./EuropeComponent";
 import ArtdevivreComponent from "./ArtdevivreComponent";
 import EcoComponent from "./EcoComponent";
@@ -11,7 +11,7 @@ import MondeComponent from "./MondeComponent";
 
 const topicComponents: Record<string, FC> = {
   "Culture": CultureComponent,
-  "À la une": CustomÀlauneComponent,
+  "À la une": ÀlauneComponent,
   "Europe": EuropeComponent,
   "Art de vivre": ArtdevivreComponent,
   "Économie": EcoComponent,
