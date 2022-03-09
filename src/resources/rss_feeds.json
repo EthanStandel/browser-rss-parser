@@ -1690,6 +1690,14 @@
             "count": 3,
             "iconImg": "./melty.png",
             "backgroundImg": "./melty_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.europe1.fr/rss/medias-tele.xml",
+            "name": "Europe 1",
+            "specification": "nList",
+            "count": 3,
+            "iconImg": "./europe1.png",
+            "backgroundImg": "./europe1_bgIMG.jpg"
           }
         ],
         "Arts visuels & graphiques": [
@@ -2880,12 +2888,12 @@
             "backgroundImg": "./challenges_bgIMG.jpg"
           },
           {
-            "url": "https://www.forbes.fr/politique/feed/",
-            "name": "Forbes",
-            "specification": "nNotif firstHeadline",
-            "count": 2,
-            "iconImg": "./forbes.png",
-            "backgroundImg": "./forbes_bgIMG.jpg"
+            "url": "https://www.europe1.fr/rss/politique.xml",
+            "name": "Europe 1",
+            "specification": "nList",
+            "count": 4,
+            "iconImg": "./europe1.png",
+            "backgroundImg": "./europe1_bgIMG.jpg"
           },
           {
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=politique",
@@ -3492,6 +3500,14 @@
             "count": 1,
             "iconImg": "./linternaute.png",
             "backgroundImg": "./linternaute_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.europe1.fr/rss/societe.xml",
+            "name": "Europe 1",
+            "specification": "nList",
+            "count": 3,
+            "iconImg": "./europe1.png",
+            "backgroundImg": "./europe1_bgIMG.jpg"
           }
         ],
         "Religions": [
@@ -3770,7 +3786,7 @@
             "count": 2,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
-          } 
+          }
         ],
         "Astronomie & espace": [
           {
@@ -4928,6 +4944,14 @@
             "count": 1,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.europe1.fr/rss/insolite.xml",
+            "name": "Europe 1",
+            "specification": "nList",
+            "count": 1,
+            "iconImg": "./europe1.png",
+            "backgroundImg": "./europe1_bgIMG.jpg"
           }
         ],
         "Bien-être, productivité & management":[

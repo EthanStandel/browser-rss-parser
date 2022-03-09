@@ -1,14 +1,24 @@
 import { FC } from "react";
-import CustomSportComponent from "./CustomSportComponent";
-import CustomCultureComponent from "./CustomCultureComponent";
+import SportComponent from "./SportComponent";
+import CultureComponent from "./CultureComponent";
 import CustomÀlauneComponent from "./CustomÀlauneComponent";
 import EuropeComponent from "./EuropeComponent";
+import ArtdevivreComponent from "./ArtdevivreComponent";
+import EcoComponent from "./EcoComponent";
+import IdeesComponent from "./IdeesComponent";
+import ScienceComponent from "./ScienceComponent";
+import MondeComponent from "./MondeComponent";
 
 const topicComponents: Record<string, FC> = {
-  "Sport": CustomSportComponent,
-  "Culture": CustomCultureComponent,
+  "Culture": CultureComponent,
   "À la une": CustomÀlauneComponent,
-  "Europe": EuropeComponent
+  "Europe": EuropeComponent,
+  "Art de vivre": ArtdevivreComponent,
+  "Économie": EcoComponent,
+  "Idées": IdeesComponent,
+  "Science": ScienceComponent,
+  "Monde": MondeComponent,
+  "Sport": SportComponent
 };
 
 export default topicComponents;

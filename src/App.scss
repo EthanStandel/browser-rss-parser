@@ -769,7 +769,7 @@ ul {
           bottom: 0;
           width: calc(100% - 30px);
           display: block;
-          -webkit-backdrop-filter:saturate(180%) blur(20px);
+          -webkit-backdrop-filter: saturate(180%) blur(20px);
           backdrop-filter: saturate(180%) blur(20px);
           background-color: var(--systemThickMaterial);
           border-radius: 0 0 10px 10px;
@@ -910,7 +910,7 @@ ul {
         }
 
         .item-description {
-          -webkit-line-clamp: 2 !important;
+          -webkit-line-clamp: 2;
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box !important;
@@ -1063,7 +1063,7 @@ ul {
         &.TVbanner {
 
           .item-description {
-            -webkit-line-clamp: 2 !important;
+            -webkit-line-clamp: 6 !important;
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box !important;
@@ -1173,6 +1173,10 @@ ul {
         }
 
         .item-F-line {
+          display: none;
+        }
+
+        .item-infos2 {
           display: none;
         }
 
