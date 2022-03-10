@@ -678,6 +678,22 @@ ul {
         width: 40px;
         margin-right: 10px;
 
+        &.double-img {
+
+          img:not(:first-of-type) {
+            position: relative !important;
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            top: 25px;
+            left: 25px;
+          }
+
+          img:first-of-type {
+            position: absolute;
+          }
+        }
+
         img {
           object-fit: cover;
           background-image: url("https://support.apple.com/library/content/dam/edam/applecare/images/en_US/ios/News/ios12-2-news-todays-topic-icon.png");
@@ -688,6 +704,7 @@ ul {
           height: 40px;
           width: 40px;
           border-radius: 9px;
+          position: relative;
         }
 
         &:nth-child(1) {

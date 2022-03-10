@@ -1947,7 +1947,7 @@
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/bd/?outputType=xml",
             "name": "Libération",
             "specification": "nList",
-            "count": 2,
+            "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
           },
@@ -3146,6 +3146,14 @@
             "count": 1,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.courrierinternational.com/feed/category/6994/rss.xml",
+            "name": "Courrier International",
+            "specification": "nNotif firstFocus",
+            "count": 3,
+            "iconImg": "./courrierinter.png",
+            "backgroundImg": "./courrierinter_bgIMG.jpg"
           }
         ],
         "Maison": [
@@ -3492,37 +3500,11 @@
             "backgroundImg": "./europe1_bgIMG.jpg"
           }
         ],
-        "Religions": [
-          {
-            "url": "https://www.lemonde.fr/religions/rss_full.xml",
-            "name": "Le Monde",
-            "specification": "nList",
-            "count": 2,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=religion",
-            "name": "Capital",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/societe/religions/?outputType=xml",
-            "name": "Libération",
-            "specification": "nList",
-            "count": 2,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          }
-        ],
         "Éducation": [
           {
             "url": "https://www.lemonde.fr/education/rss_full.xml",
             "name": "Le Monde",
-            "specification": "nList",
+            "specification": "nNotif firstHeadline",
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
@@ -3530,15 +3512,15 @@
           {
             "url": "https://www.francetvinfo.fr/societe/education.rss",
             "name": "Franceinfo",
-            "specification": "nList",
-            "count": 1,
+            "specification": "nNotif firstHeadline",
+            "count": 2,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
           {
             "url": "https://france3-regions.francetvinfo.fr/societe/education/rss",
             "name": "France 3",
-            "specification": "nList",
+            "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./france3.png",
             "backgroundImg": "./france3_bgIMG.jpg"
@@ -3546,15 +3528,15 @@
           {
             "url": "https://www.courrierinternational.com/feed/category/6997/rss.xml",
             "name": "Courrier International",
-            "specification": "nList",
-            "count": 2,
+            "specification": "nNotif firstHeadline",
+            "count": 3,
             "iconImg": "./courrierinter.png",
             "backgroundImg": "./courrierinter_bgIMG.jpg"
           },
           {
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite&tags=ecole",
             "name": "Capital",
-            "specification": "nList",
+            "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
@@ -3562,59 +3544,11 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/societe/education/?outputType=xml",
             "name": "Libération",
-            "specification": "nList",
+            "specification": "nNotif firstHeadline",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
           } 
-        ],
-        "Action sociale": [
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=social,societe,securite-sociale",
-            "name": "Capital",
-            "specification": "nList",
-            "count": 3,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
-          }
-        ],
-        "Discriminations": [
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=discrimination,harcelement,racisme",
-            "name": "Capital",
-            "specification": "nList",
-            "count": 2,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
-          }
-        ],
-        "Grèves & manifestations": [
-          {
-            "url": "https://www.francetvinfo.fr/economie/greve.rss",
-            "name": "Franceinfo",
-            "specification": "nList firstHeadline",
-            "count": 3,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          },
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=greve",
-            "name": "Capital",
-            "specification": "nList firstHeadline",
-            "count": 1,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
-          }
-        ],
-        "Immigration": [
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=immigration,migrations",
-            "name": "Capital",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
-          }  
         ],
         "Police & justice":[
           {
@@ -3668,10 +3602,84 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/societe/police-justice/?outputType=xml",
             "name": "Libération",
-            "specification": "nList",
+            "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
+          }  
+        ],
+        "Grèves & manifestations": [
+          {
+            "url": "https://www.francetvinfo.fr/economie/greve.rss",
+            "name": "Franceinfo",
+            "specification": "nList firstHeadline",
+            "count": 3,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=greve",
+            "name": "Capital",
+            "specification": "nList firstHeadline",
+            "count": 1,
+            "iconImg": "./capital.png",
+            "backgroundImg": "./capital_bgIMG.jpg"
+          }
+        ],
+        "Religions": [
+          {
+            "url": "https://www.lemonde.fr/religions/rss_full.xml",
+            "name": "Le Monde",
+            "specification": "nList",
+            "count": 2,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=religion",
+            "name": "Capital",
+            "specification": "nList",
+            "count": 1,
+            "iconImg": "./capital.png",
+            "backgroundImg": "./capital_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/societe/religions/?outputType=xml",
+            "name": "Libération",
+            "specification": "nList",
+            "count": 2,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          }
+        ],
+        "Action sociale": [
+          {
+            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=social,societe,securite-sociale",
+            "name": "Capital",
+            "specification": "nList",
+            "count": 3,
+            "iconImg": "./capital.png",
+            "backgroundImg": "./capital_bgIMG.jpg"
+          }
+        ],
+        "Discriminations": [
+          {
+            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=discrimination,harcelement,racisme",
+            "name": "Capital",
+            "specification": "nList",
+            "count": 2,
+            "iconImg": "./capital.png",
+            "backgroundImg": "./capital_bgIMG.jpg"
+          }
+        ],
+        "Immigration": [
+          {
+            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=immigration,migrations",
+            "name": "Capital",
+            "specification": "nList",
+            "count": 1,
+            "iconImg": "./capital.png",
+            "backgroundImg": "./capital_bgIMG.jpg"
           }  
         ],
         "Presse étrangère": [
@@ -4886,15 +4894,7 @@
             "backgroundImg": "./lapresse_bgIMG.jpg"
           } 
         ],
-        "Insolite & découvertes": [
-          {
-            "url": "https://www.francetvinfo.fr/decouverte/bizarre.rss",
-            "name": "Franceinfo",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          },
+        "Insolite & tendances": [
           {
             "url": "https://www.ladepeche.fr/insolite/rss.xml",
             "name": "La Dépêche",
@@ -4934,6 +4934,22 @@
             "count": 1,
             "iconImg": "./europe1.png",
             "backgroundImg": "./europe1_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.courrierinternational.com/feed/category/6282/rss.xml",
+            "name": "Courrier International",
+            "specification": "nList",
+            "count": 1,
+            "iconImg": "./courrierinter.png",
+            "backgroundImg": "./courrierinter_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.courrierinternational.com/feed/category/6680/rss.xml",
+            "name": "Courrier International",
+            "specification": "nList",
+            "count": 1,
+            "iconImg": "./courrierinter.png",
+            "backgroundImg": "./courrierinter_bgIMG.jpg"
           }
         ],
         "Bien-être, productivité & management":[

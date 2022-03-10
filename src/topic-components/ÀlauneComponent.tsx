@@ -3,17 +3,20 @@ const ÀlauneComponent = () => {
     <ul className='rss-podcasts'>
       <div className="intro">
         <div className="r2">{new Date().toLocaleDateString([], {weekday:'long', day:'numeric', month: 'long'})}</div>
-        <h5 className="bold">Émissions & podcasts</h5>
+        <h5 className="bold">Rendez-vous avec l'info</h5>
       </div>
        
     <li className="TVbanner nList">
       <a href="https://www.francetvinfo.fr/replay-jt/france-2/8-heures/" target="_blank" rel="noreferrer">
         <div className="media">
-          <div className="icon-image">
-            <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
-          </div>
-          <div className="icon-image">
-            <img src="./france2.png"/>
+          <div className="icons-container">
+            <div className="icon-image">
+              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
+            </div>
+            <div className="icon-image double-img">
+              <img src="./france2.png"/>
+              <img src="./appletv.png"/>
+            </div>
           </div>
           <div className="item-container">
             <div className="item-F-line">
@@ -32,13 +35,44 @@ const ÀlauneComponent = () => {
       </a>
     </li>
     <li className="TVbanner nList">
+      <a href="https://reveil.courrierinternational.com/#/" target="_blank" rel="noreferrer">
+        <div className="media">
+        <div className="icons-container">
+            <div className="icon-image">
+              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
+            </div>
+            <div className="icon-image double-img">
+              <img src="./courrierinter-reveil.png"/>
+              <img src="./applenews.png"/>
+            </div>
+          </div>
+          <div className="item-container">
+            <div className="item-F-line">
+              <h6 className="item-title">Réveil Courrier</h6>
+              <div className="footnote item-publish-date">▶ 25 min</div>
+            </div>    
+            <div className="item-infos">
+              <div className="item-descriptionWrapper">
+                <div className="h8 item-description">
+                Chaque matin à 6h, une sélection des meilleurs articles de la presse étrangère, un résumé de l’actualité internationale utile pour bien commencer la journée. 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li className="TVbanner nList">
       <a href="https://www.rtl.fr/programmes/la-meteo-a-7-jours" target="_blank" rel="noreferrer">
         <div className="media">
-          <div className="icon-image">
-            <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
-          </div>
-          <div className="icon-image">
-            <img src="./rtl.png"/>
+        <div className="icons-container">
+            <div className="icon-image">
+              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
+            </div>
+            <div className="icon-image double-img">
+              <img src="./rtl.png"/>
+              <img src="./podcast.png"/>
+            </div>
           </div>
           <div className="item-container">
             <div className="item-F-line">

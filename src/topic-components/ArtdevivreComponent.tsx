@@ -1,3 +1,11 @@
+const today = new Date();
+let day = today.getDay()
+
+let weekendDiffusion = ""
+if (day > 5) {
+  weekendDiffusion = "Diffusion du lundi au vendredi"
+}
+
 const ArtdevivreComponent = () => {
   return (
    
@@ -23,8 +31,13 @@ const ArtdevivreComponent = () => {
               <div className="item-descriptionWrapper">
                 <div className="h8 item-description">
                 « Depuis quand, comment et surtout pourquoi a-t-on créé ça ? » Vous ne vous êtes peut-être jamais posé la question. Qu’importe ! Lui a la réponse… À 17:30, David Castello-Lopes remonte aux origines d’un objet de notre quotidien.
+                </div><div className="h8 item-description">
+                
                 </div>
               </div>
+            </div>
+            <div className="item-infos">
+              <div className="r2 item-publish-date">{weekendDiffusion}</div>
             </div>
           </div>
         </div>
@@ -51,6 +64,9 @@ const ArtdevivreComponent = () => {
                 </div>
               </div>
             </div>
+            <div className="item-infos">
+              <div className="r2 item-publish-date">{weekendDiffusion}</div>
+            </div>
           </div>
         </div>
       </a>
@@ -75,6 +91,9 @@ const ArtdevivreComponent = () => {
                 Chaque jour à 11:30, en compagnie de leurs invités, Mélanie Gomez et Julia Vignali, vous livrent leurs meilleurs conseils pour prendre soin de vous au quotidien.
                 </div>
               </div>
+            </div>
+            <div className="item-infos">
+              <div className="r2 item-publish-date">{weekendDiffusion}</div>
             </div>
           </div>
         </div>

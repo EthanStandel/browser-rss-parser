@@ -3,16 +3,19 @@ const EuropeComponent = () => {
    
     <ul className='rss-podcasts'>
       <div className="intro">
-        <h5 className="bold">Émissions & podcasts</h5>
+        <h5 className="bold">Rendez-vous avec l'info</h5>
       </div>
     <li className="nList TVbanner">
       <a href="https://www.arte.tv/fr/videos/RC-014085/arte-journal/" target="_blank" rel="noreferrer">
         <div className="media">
-          <div className="icon-image">
-            <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
-          </div>
-          <div className="icon-image">
-            <img src="./arte.png"/>
+        <div className="icons-container">
+            <div className="icon-image">
+              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
+            </div>
+            <div className="icon-image double-img">
+              <img src="./arte.png"/>
+              <img src="./appletv.png"/>
+            </div>
           </div>
           <div className="item-container">
             <div className="item-F-line">
