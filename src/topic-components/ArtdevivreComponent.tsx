@@ -2,8 +2,8 @@ const today = new Date();
 let day = today.getDay()
 
 let weekendDiffusion = ""
-if (day > 5) {
-  weekendDiffusion = "Diffusion du lundi au vendredi"
+if (day > 5 || day < 1) {
+  weekendDiffusion = "Du lundi au vendredi"
 }
 
 const ArtdevivreComponent = () => {
@@ -11,21 +11,24 @@ const ArtdevivreComponent = () => {
    
     <ul className='rss-podcasts'>
       <div className="intro">
-        <h5 className="bold">Émissions & podcasts</h5>
+        <h5 className="bold">Rendez-vous avec l'art de vivre</h5>
       </div>
     <li className="nList TVbanner">
       <a href="https://www.europe1.fr/emissions/les-origines" target="_blank" rel="noreferrer">
         <div className="media">
-          <div className="icon-image">
-            <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
-          </div>
-          <div className="icon-image">
-            <img src="./europe1.png"/>
+          <div className="icons-container">
+            <div className="icon-image">
+              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
+            </div>
+            <div className="icon-image double-img">
+              <img src="./europe1.png"/>
+              <img src="./applepodcasts.png"/>
+            </div>
           </div>
           <div className="item-container">
             <div className="item-F-line">
               <h6 className="item-title">Les origines – Historiquement vôtre</h6>
-              <div className="icon-footnote-container footnote">▶ 6 min</div>
+              <div className="icon-footnote-container footnote">6 min</div>
             </div>    
             <div className="item-infos">
               <div className="item-descriptionWrapper">
@@ -46,16 +49,19 @@ const ArtdevivreComponent = () => {
     <li className="nList TVbanner">
       <a href="https://www.europe1.fr/emissions/les-tendances" target="_blank" rel="noreferrer">
         <div className="media">
-          <div className="icon-image">
-            <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
-          </div>
-          <div className="icon-image">
-            <img src="./europe1.png"/>
+          <div className="icons-container">
+            <div className="icon-image">
+              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
+            </div>
+            <div className="icon-image double-img">
+              <img src="./europe1.png"/>
+              <img src="./applepodcasts.png"/>
+            </div>
           </div>
           <div className="item-container">
             <div className="item-F-line">
               <h6 className="item-title">Les tendances – Bienfait pour vous</h6>
-              <div className="icon-footnote-container footnote">▶ 10 min</div>
+              <div className="icon-footnote-container footnote">10 min</div>
             </div>    
             <div className="item-infos">
               <div className="item-descriptionWrapper">
@@ -74,16 +80,19 @@ const ArtdevivreComponent = () => {
     <li className="nList TVbanner">
       <a href="https://www.europe1.fr/emissions/vite-fait-tres-bien-fait" target="_blank" rel="noreferrer">
         <div className="media">
-          <div className="icon-image">
-            <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
-          </div>
-          <div className="icon-image">
-            <img src="./europe1.png"/>
+          <div className="icons-container">
+            <div className="icon-image">
+              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
+            </div>
+            <div className="icon-image double-img">
+              <img src="./europe1.png"/>
+              <img src="./applepodcasts.png"/>
+            </div>
           </div>
           <div className="item-container">
             <div className="item-F-line">
               <h6 className="item-title">Le dossier santé du jour – Bienfait pour vous</h6>
-              <div className="icon-footnote-container footnote">▶ 30 min</div>
+              <div className="icon-footnote-container footnote">30 min</div>
             </div>    
             <div className="item-infos">
               <div className="item-descriptionWrapper">

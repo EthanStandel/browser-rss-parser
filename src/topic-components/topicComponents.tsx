@@ -8,6 +8,8 @@ import EcoComponent from "./EcoComponent";
 import IdeesComponent from "./IdeesComponent";
 import ScienceComponent from "./ScienceComponent";
 import MondeComponent from "./MondeComponent";
+import PrInterComponent from "./PrInterComponent";
+import AutoComponent from "./AutoComponent";
 
 const topicComponents: Record<string, FC> = {
   "Culture": CultureComponent,
@@ -18,7 +20,9 @@ const topicComponents: Record<string, FC> = {
   "Idées": IdeesComponent,
   "Science": ScienceComponent,
   "Monde": MondeComponent,
-  "Sport": SportComponent
+  "Sport": SportComponent,
+  "Presse étrangère": PrInterComponent,
+  "Auto": AutoComponent
 };
 
 export default topicComponents;

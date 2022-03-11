@@ -21,7 +21,7 @@ const ÀlauneComponent = () => {
           <div className="item-container">
             <div className="item-F-line">
               <h6 className="item-title">JT de 8h - Télématin</h6>
-              <div className="footnote item-publish-date">▶ 15 min</div>
+              <div className="footnote item-publish-date">15 min</div>
             </div>    
             <div className="item-infos">
               <div className="item-descriptionWrapper">
@@ -37,7 +37,7 @@ const ÀlauneComponent = () => {
     <li className="TVbanner nList">
       <a href="https://reveil.courrierinternational.com/#/" target="_blank" rel="noreferrer">
         <div className="media">
-        <div className="icons-container">
+          <div className="icons-container">
             <div className="icon-image">
               <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
             </div>
@@ -49,7 +49,7 @@ const ÀlauneComponent = () => {
           <div className="item-container">
             <div className="item-F-line">
               <h6 className="item-title">Réveil Courrier</h6>
-              <div className="footnote item-publish-date">▶ 25 min</div>
+              <div className="footnote item-publish-date">25 min</div>
             </div>    
             <div className="item-infos">
               <div className="item-descriptionWrapper">
@@ -71,13 +71,13 @@ const ÀlauneComponent = () => {
             </div>
             <div className="icon-image double-img">
               <img src="./rtl.png"/>
-              <img src="./podcast.png"/>
+              <img src="./applepodcasts.png"/>
             </div>
           </div>
           <div className="item-container">
             <div className="item-F-line">
               <h6 className="item-title">La météo</h6>
-              <div className="footnote item-publish-date">▶ 2 min</div>
+              <div className="footnote item-publish-date">2 min</div>
             </div>    
             <div className="item-infos">
               <div className="item-descriptionWrapper">

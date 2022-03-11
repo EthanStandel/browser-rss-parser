@@ -1,101 +1,87 @@
-const today = new Date();
-let day = today.getDay()
-
-let weekendDiffusion = ""
-if (day > 5) {
-  weekendDiffusion = "Du lundi au vendredi"
-}
-
-const IdeesComponent = () => {
+const PrInterComponent = () => {
   return (
-   
     <ul className='rss-podcasts'>
       <div className="intro">
         <h5 className="bold">Rendez-vous à l'international</h5>
       </div>
-    <li className="nList TVbanner">
-      <a href="https://www.europe1.fr/emissions/La-revue-de-presse-internationale" target="_blank" rel="noreferrer">
+       
+    <li className="TVbanner nList">
+      <a href="https://www.nbcnews.com/nightly-news-full-episodes" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="icons-container">
             <div className="icon-image">
               <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
             </div>
             <div className="icon-image double-img">
-              <img src="./europe1.png"/>
-              <img src="./applepodcasts.png"/>
-            </div>
-          </div>
-          <div className="item-container">
-            <div className="item-F-line">
-              <h6 className="item-title">La revue de presse internationale – Europe Matin</h6>
-              <div className="icon-footnote-container footnote">4 min</div>
-            </div>    
-            <div className="item-infos">
-              <div className="item-descriptionWrapper">
-                <div className="h8 item-description">
-                Chaque matin à 6:53, nos correspondants aux quatre coins du monde répondent à une question simple : Que se passe-t-il chez eux aujourd’hui ?
-                </div>
-              </div>
-            </div>
-            <div className="item-infos">
-                <div className="r2 item-publish-date">{weekendDiffusion}</div>
-              </div>
-          </div>
-        </div>
-      </a>
-    </li>
-    <li className="nList TVbanner">
-      <a href="https://www.europe1.fr/emissions/vincent-hervouet-vous-parle-international" target="_blank" rel="noreferrer">
-        <div className="media">
-          <div className="icons-container">
-            <div className="icon-image">
-              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
-            </div>
-            <div className="icon-image double-img">
-              <img src="./europe1.png"/>
-              <img src="./applepodcasts.png"/>
-            </div>
-          </div>
-          <div className="item-container">
-            <div className="item-F-line">
-              <h6 className="item-title">L'édito international – Europe Matin</h6>
-              <div className="icon-footnote-container footnote">3 min</div>
-            </div>    
-            <div className="item-infos">
-              <div className="item-descriptionWrapper">
-                <div className="h8 item-description">
-                Chaque jour à 7:12, Vincent Hervouët zoome sur un sujet qui fait l'actualité à travers le monde.
-                </div>
-              </div>
-            </div>
-            <div className="item-infos">
-                <div className="r2 item-publish-date">{weekendDiffusion}</div>
-              </div>
-          </div>
-        </div>
-      </a>
-    </li>
-    <li className="nList TVbanner">
-      <a href="https://information.tv5monde.com/les-jt/eco?jt=jt_eco" target="_blank" rel="noreferrer">
-        <div className="media">
-         <div className="icons-container">
-            <div className="icon-image">
-              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
-            </div>
-            <div className="icon-image double-img">
-              <img src="./tv5monde.png"/>
+              <img src="./nbcnews.png"/>
               <img src="./appletv.png"/>
             </div>
           </div>
           <div className="item-container">
             <div className="item-F-line">
-              <h6 className="item-title">Le journal international</h6>
-              <div className="icon-footnote-container footnote">20 min</div>
+              <h6 className="item-title">Nightly News</h6>
+              <div className="footnote item-publish-date">20 min</div>
             </div>    
             <div className="item-infos">
               <div className="item-descriptionWrapper">
                 <div className="h8 item-description">
-                À 12h chaque jour, un tour du monde des dernières informations par la rédaction.
+                Coverage of the latest global and US breaking news stories by Lester Holt at 5:12 am (CET).
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li className="TVbanner nList">
+      <a href="https://www.tagesschau.de/100sekunden/" target="_blank" rel="noreferrer">
+        <div className="media">
+          <div className="icons-container">
+            <div className="icon-image">
+              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
+            </div>
+            <div className="icon-image double-img">
+              <img src="./tagesschau.png"/>
+              <img src="./appletv.png"/>
+            </div>
+          </div>
+          <div className="item-container">
+            <div className="item-F-line">
+              <h6 className="item-title">100 Sekunden</h6>
+              <div className="footnote item-publish-date">2 min</div>
+            </div>    
+            <div className="item-infos">
+              <div className="item-descriptionWrapper">
+                <div className="h8 item-description">
+                Nachrichten schauen auf tagesschau.de - die erste Adresse für Nachrichten und umfassende Berichte zu aktuellen Themen.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li className="TVbanner nList">
+      <a href="https://www.bbc.co.uk/programmes/p02cfn23" target="_blank" rel="noreferrer">
+        <div className="media">
+        <div className="icons-container">
+            <div className="icon-image">
+              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
+            </div>
+            <div className="icon-image double-img">
+              <img src="./bbcnews.png"/>
+              <img src="./appletv.png"/>
+            </div>
+          </div>
+          <div className="item-container">
+            <div className="item-F-line">
+              <h6 className="item-title">One-Minute World News</h6>
+              <div className="footnote item-publish-date">1 min</div>
+            </div>    
+            <div className="item-infos">
+              <div className="item-descriptionWrapper">
+                <div className="h8 item-description">
+                Watch the latest news summary from BBC World News. International news updated 24 hours a day.
                 </div>
               </div>
             </div>
@@ -107,4 +93,4 @@ const IdeesComponent = () => {
   );
 }
 
-export default IdeesComponent
+export default PrInterComponent

@@ -3,7 +3,7 @@ const EuropeComponent = () => {
    
     <ul className='rss-podcasts'>
       <div className="intro">
-        <h5 className="bold">Rendez-vous avec l'info</h5>
+        <h5 className="bold">Rendez-vous avec l'Europe</h5>
       </div>
     <li className="nList TVbanner">
       <a href="https://www.arte.tv/fr/videos/RC-014085/arte-journal/" target="_blank" rel="noreferrer">
@@ -20,7 +20,7 @@ const EuropeComponent = () => {
           <div className="item-container">
             <div className="item-F-line">
               <h6 className="item-title">ARTE Journal</h6>
-              <div className="icon-footnote-container footnote">▶ 25 min</div>
+              <div className="icon-footnote-container footnote">25 min</div>
             </div>    
             <div className="item-infos">
               <div className="item-descriptionWrapper">
