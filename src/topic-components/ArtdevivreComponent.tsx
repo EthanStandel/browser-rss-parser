@@ -1,9 +1,19 @@
 const today = new Date();
 let day = today.getDay()
 
-let weekendDiffusion = ""
-if (day > 5 || day < 1) {
-  weekendDiffusion = "Du lundi au vendredi"
+let LàVdiffusion = ""
+let LàVdisplay =""
+if ((day > 5) || (day = 0)) {
+  LàVdiffusion = "Du lundi au vendredi"
+  LàVdisplay = "NOT"
+}
+
+// test for display only on some days of the week
+let SDdisplay = ""
+let SDdiffusion = ""
+if ((day != 6) || (day = 0)) {
+  SDdisplay = "NOT"
+  SDdiffusion = "Samedi et dimanche"
 }
 
 const ArtdevivreComponent = () => {
@@ -13,7 +23,7 @@ const ArtdevivreComponent = () => {
       <div className="intro">
         <h5 className="bold">Rendez-vous avec l'art de vivre</h5>
       </div>
-    <li className="nList TVbanner">
+    <li className={"nList TVbanner " + LàVdisplay}>
       <a href="https://www.europe1.fr/emissions/les-origines" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="icons-container">
@@ -40,13 +50,13 @@ const ArtdevivreComponent = () => {
               </div>
             </div>
             <div className="item-infos always">
-              <div className="r2 item-publish-date">{weekendDiffusion}</div>
+              <div className="r2 item-publish-date">{LàVdiffusion}</div>
             </div>
           </div>
         </div>
       </a>
     </li>
-    <li className="nList TVbanner">
+    <li className={"nList TVbanner " + LàVdisplay}>
       <a href="https://www.europe1.fr/emissions/les-tendances" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="icons-container">
@@ -71,13 +81,13 @@ const ArtdevivreComponent = () => {
               </div>
             </div>
             <div className="item-infos always">
-              <div className="r2 item-publish-date">{weekendDiffusion}</div>
+              <div className="r2 item-publish-date">{LàVdiffusion}</div>
             </div>
           </div>
         </div>
       </a>
     </li>
-    <li className="nList TVbanner">
+    <li className={"nList TVbanner " + LàVdisplay}>
       <a href="https://www.europe1.fr/emissions/vite-fait-tres-bien-fait" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="icons-container">
@@ -102,7 +112,38 @@ const ArtdevivreComponent = () => {
               </div>
             </div>
             <div className="item-infos always">
-              <div className="r2 item-publish-date">{weekendDiffusion}</div>
+              <div className="r2 item-publish-date">{LàVdiffusion}</div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li className={"nList TVbanner "+ SDdisplay}>
+      <a href="https://www.francetvinfo.fr/replay-radio/a-la-carte/" target="_blank" rel="noreferrer">
+        <div className="media">
+          <div className="icons-container">
+            <div className="icon-image">
+              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
+            </div>
+            <div className="icon-image double-img">
+              <img src="./franceinfo.jpeg"/>
+              <img src="./applepodcasts.png"/>
+            </div>
+          </div>
+          <div className="item-container">
+            <div className="item-F-line">
+              <h6 className="item-title">À la carte</h6>
+              <div className="icon-footnote-container footnote">5 min</div>
+            </div>    
+            <div className="item-infos">
+              <div className="item-descriptionWrapper">
+                <div className="h8 item-description">
+                À la carte vous est le rendez-vous qui vous fait découvrir toutes les week-ends à 14:23 et 16:56 des saveurs et des recettes de cuisine, par le chef Thierry Marx avec Bernard Thomasson. 
+                </div>
+              </div>
+            </div>
+            <div className="item-infos always">
+              <div className="r2 item-publish-date">{SDdiffusion}</div>
             </div>
           </div>
         </div>

@@ -1,9 +1,19 @@
 const today = new Date();
 let day = today.getDay()
 
-let weekendDiffusion = ""
-if (day > 5 || day < 1) {
-  weekendDiffusion = "Du lundi au vendredi"
+let LàVdiffusion = ""
+let LàVdisplay =""
+if ((day > 5) || (day = 0)) {
+  LàVdiffusion = "Du lundi au vendredi"
+  LàVdisplay = "NOT"
+}
+
+// test for display only on some days of the week
+let SDdisplay = ""
+let SDdiffusion = ""
+if ((day != 6) || (day = 0)) {
+  SDdisplay = "NOT"
+  SDdiffusion = "Samedi et dimanche"
 }
 
 const CultureComponent = () => {
@@ -13,7 +23,7 @@ const CultureComponent = () => {
       <div className="intro">
         <h5 className="bold">Rendez-vous avec la culture</h5>
       </div>
-      <li className="nList TVbanner">
+      <li className={"nList TVbanner " + LàVdisplay}>
         <a href="https://www.europe1.fr/emissions/L-invite-culture" target="_blank" rel="noreferrer">
           <div className="media">
             <div className="icons-container">
@@ -38,13 +48,13 @@ const CultureComponent = () => {
                 </div>
               </div>
               <div className="item-infos always">
-                <div className="r2 item-publish-date">{weekendDiffusion}</div>
+                <div className="r2 item-publish-date">{LàVdiffusion}</div>
               </div>
             </div>
           </div>
         </a>
       </li>
-      <li className="nList TVbanner">
+      <li className={"nList TVbanner " + LàVdisplay}>
         <a href="https://www.europe1.fr/emissions/dans-lintimite-de-lhistoire" target="_blank" rel="noreferrer">
           <div className="media">
             <div className="icons-container">
@@ -69,7 +79,7 @@ const CultureComponent = () => {
                 </div>
               </div>
               <div className="item-infos always">
-              <div className="r2 item-publish-date">{weekendDiffusion}</div>
+              <div className="r2 item-publish-date">{LàVdiffusion}</div>
             </div>
             </div>
           </div>

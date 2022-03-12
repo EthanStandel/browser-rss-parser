@@ -1210,6 +1210,19 @@ ul {
           }
 
           background-color:rgba(0, 0, 0, 0);
+
+          &.NOT {
+
+            .item-infos:not(.always) {
+              display: none;
+            }
+
+            .item-F-line {
+              .icon-footnote-container.footnote {
+                display: none;
+              }
+            }
+          }
         }
 
         &:first-of-type:not(.TVbanner), &.bigList {
