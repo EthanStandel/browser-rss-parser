@@ -1316,7 +1316,7 @@ ul {
         }
 
         @media only screen and (max-width: 734px) {
-          .item-infos {
+          .item-infos:not(.always) {
 
             .item-publish-date {
               display: none;

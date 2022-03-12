@@ -122,7 +122,7 @@ const ÀlauneComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="item-infos">
+            <div className="item-infos always">
               <div className="r2 item-publish-date">{weekendDiffusion}</div>
             </div>
           </div>
