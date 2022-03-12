@@ -33,7 +33,7 @@ const ArtdevivreComponent = () => {
             <div className="item-infos">
               <div className="item-descriptionWrapper">
                 <div className="h8 item-description">
-                « Depuis quand, comment et surtout pourquoi a-t-on créé ça ? » Vous ne vous êtes peut-être jamais posé la question. Qu’importe ! Lui a la réponse… À 17:30, David Castello-Lopes remonte aux origines d’un objet de notre quotidien.
+                «&nbsp;Depuis quand, comment et surtout pourquoi a-t-on créé ça&nbsp;?&nbsp;» Vous ne vous êtes peut-être jamais posé la question. Qu’importe&nbsp;! Lui a la réponse… À 17:30, David&nbsp;Castello-Lopes remonte aux origines d’un objet de notre quotidien.
                 </div><div className="h8 item-description">
                 
                 </div>
@@ -66,7 +66,7 @@ const ArtdevivreComponent = () => {
             <div className="item-infos">
               <div className="item-descriptionWrapper">
                 <div className="h8 item-description">
-                Chaque jour à 11:45, Julia Vignali et Mélanie Gomez présentent les tendances santé, bien-être et art de vivre du moment.
+                Chaque jour à 11:45, Julia&nbsp;Vignali et Mélanie&nbsp;Gomez présentent les tendances santé, bien-être et art de vivre du moment.
                 </div>
               </div>
             </div>
@@ -97,7 +97,7 @@ const ArtdevivreComponent = () => {
             <div className="item-infos">
               <div className="item-descriptionWrapper">
                 <div className="h8 item-description">
-                Chaque jour à 11:30, en compagnie de leurs invités, Mélanie Gomez et Julia Vignali, vous livrent leurs meilleurs conseils pour prendre soin de vous au quotidien.
+                Chaque jour à 11:30, en compagnie de leurs invités, Mélanie&nbsp;Gomez et Julia&nbsp;Vignali, vous livrent leurs meilleurs conseils pour prendre soin de vous au quotidien.
                 </div>
               </div>
             </div>

@@ -3,7 +3,7 @@ let day = today.getDay()
 
 let weekendDiffusion = ""
 if (day > 5 || day < 1) {
-  weekendDiffusion = "Diffusion du lundi au vendredi"
+  weekendDiffusion = "Du lundi au vendredi"
 }
 
 const CultureComponent = () => {

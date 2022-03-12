@@ -2,7 +2,7 @@ const today = new Date();
 let day = today.getDay()
 
 let weekendDiffusion = ""
-if (day > 5) {
+if (day > 5 || day < 1) {
   weekendDiffusion = "Du lundi au vendredi"
 }
 

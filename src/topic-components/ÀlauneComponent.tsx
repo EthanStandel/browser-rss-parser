@@ -1,3 +1,11 @@
+const today = new Date();
+let day = today.getDay()
+
+let weekendDiffusion = ""
+if (day > 5 || day < 1) {
+  weekendDiffusion = "Du lundi au vendredi"
+}
+
 const ÀlauneComponent = () => {
   return (
     <ul className='rss-podcasts'>
@@ -85,6 +93,37 @@ const ÀlauneComponent = () => {
                 Tous les jours dès 4:37, retrouvez la météo avec le service météo de RTL.
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li className="nList TVbanner">
+      <a href="https://www.europe1.fr/emissions/le-jour-ou" target="_blank" rel="noreferrer">
+        <div className="media">
+          <div className="icons-container">
+            <div className="icon-image">
+              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
+            </div>
+            <div className="icon-image double-img">
+              <img src="./europe1.png"/>
+              <img src="./applepodcasts.png"/>
+            </div>
+          </div>
+          <div className="item-container">
+            <div className="item-F-line">
+              <h6 className="item-title">Le jour où – Europe Matin</h6>
+              <div className="icon-footnote-container footnote">3 min</div>
+            </div>    
+            <div className="item-infos">
+              <div className="item-descriptionWrapper">
+                <div className="h8 item-description">
+                Dans le jour où, tous les matins à 7:23, le passé éclaire le présent&nbsp;: grâce à ses archives, la rédaction d'Europe 1 fait le récit d'un événement relié à l'actualité.
+                </div>
+              </div>
+            </div>
+            <div className="item-infos">
+              <div className="r2 item-publish-date">{weekendDiffusion}</div>
             </div>
           </div>
         </div>

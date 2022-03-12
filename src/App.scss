@@ -72,64 +72,182 @@ body {
     text-decoration-color: var(--colorTheme);
   }
 
-  .Science * {
-    text-decoration-color: var(--scienceColorTheme);
+  .rss-podcasts .intro {
+    border-bottom-color: var(--colorTheme);
   }
 
-  .Monde * {
-    text-decoration-color: var(--mondeColorTheme);
+  .Science {
+
+    .rss-podcasts * {
+      border-bottom-color: var(--scienceColorTheme);
+    }
+
+    * {
+      text-decoration-color: var(--scienceColorTheme);
+    }
+  }
+
+  .Monde {
+
+    .rss-podcasts * {
+      border-bottom-color: var(--mondeColorTheme);
+    }
+
+    * {
+      text-decoration-color: var(--mondeColorTheme);
+    }
   }
   
-  .Sport * {
-    text-decoration-color: var(--sportColorTheme);
+  .Sport {
+
+    .rss-podcasts * {
+      border-bottom-color: var(--sportColorTheme);
+    }
+
+    * {
+      text-decoration-color: var(--sportColorTheme);
+    }
+  }
+
+
+  .Économie {
+
+    .rss-podcasts * {
+      border-bottom-color: var(--ecoColorTheme);
+    }
+
+    * {
+      text-decoration-color: var(--ecoColorTheme);
+    }
   }
   
-  .Économie * {
-    text-decoration-color: var(--ecoColorTheme);
+  .Culture {
+    .rss-podcasts * {
+      border-bottom-color: var(--cultureColorTheme);
+    }
+
+    * {
+      text-decoration-color: var(--cultureColorTheme);
+    }
   }
   
-  .Culture * {
-    text-decoration-color: var(--cultureColorTheme);
-  }
-  
-  .Europe * {
-    text-decoration-color: var(--europeColorTheme);
+  .Europe {
+    .rss-podcasts * {
+      border-bottom-color: var(--europeColorTheme);
+    }
+
+    * {
+      text-decoration-color: var(--europeColorTheme);
+    }
   }
 
-  .Politique * {
-    text-decoration-color: var(--polColorTheme);
+  .Politique {
+    
+    .rss-podcasts * {
+      border-bottom-color: var(--polColorTheme);
+    }
+
+    * {
+      text-decoration-color: var(--polColorTheme);
+    }
   }
 
-  .Idées * {
-    text-decoration-color: var(--ideesColorTheme);
+  .Idées {
+
+        .rss-podcasts * {
+      border-bottom-color: var(--ideesColorTheme);
+    }
+
+    * {
+      text-decoration-color: var(--ideesColorTheme);
+    }
   }
 
-  .Société * {
-    text-decoration-color: var(--societeColorTheme);
+  .Société {
+    
+    .rss-podcasts * {
+      border-bottom-color: var(--societeColorTheme);
+    }
+
+    * {
+      text-decoration-color: var(--societeColorTheme);
+    }
   }
 
-  .Tech * {
-    text-decoration-color: var(--techColorTheme);
+  .Tech {
+
+    .rss-podcasts * {
+      border-bottom-color: var(--techColorTheme);
+    }
+
+    * {
+      text-decoration-color: var(--techColorTheme);
+    }
   }
 
-  .Régions * {
-    text-decoration-color: var(--regionsColorTheme);
+  .Régions {
+
+    .rss-podcasts * {
+      border-bottom-color: var(--regionsColorTheme);
+    }
+
+    * {
+      text-decoration-color: var(--regionsColorTheme);
+    }
   }
 
-  .Nature * {
-    text-decoration-color: var(--natureColorTheme);
-  }
-  .Art * {
-    text-decoration-color: var(--lifestyleColorTheme);
+  .Nature {
+
+    .rss-podcasts * {
+      border-bottom-color: var(--natureColorTheme);
+    }
+
+    * {
+      text-decoration-color: var(--natureColorTheme);
+    }
   }
 
-  .Auto * {
-    text-decoration-color: var(--autoColorTheme);
+  .Art {
+    
+    .rss-podcasts * {
+      border-bottom-color: var(--lifestyleColorTheme);
+    }
+
+    * {
+      text-decoration-color: var(--lifestyleColorTheme);
+    }
+  }
+
+  .Auto {
+
+    .rss-podcasts * {
+      border-bottom-color: var(--autoColorTheme);
+    }
+
+    * {
+      text-decoration-color: var(--autoColorTheme);
+    }
   }
   
   /*/ special case since étrangère can be found as subtopic /*/
-  .étrangère:not(.section) .section ul li > * > * > * {
-    text-decoration-color: var(--presseinterColorTheme);
+
+
+  .étrangère:not(.section) {
+
+    ul.rss-podcasts {
+
+      .intro {
+        border-bottom-color: var(--presseinterColorTheme);
+      }
+      
+      li > * > * > * > * {
+        text-decoration-color: var(--presseinterColorTheme); 
+      }
+    }
+  
+    * > ul > li > * > * > * {
+      text-decoration-color: var(--presseinterColorTheme);
+    }
   }
 }
 
@@ -565,7 +683,7 @@ ul {
 
     .intro {
       padding: 15px 10px;
-      border-bottom: 0.8px solid var(--separator);
+      border-bottom: 1.6px solid;
     }
   }
 
@@ -580,7 +698,7 @@ ul {
 
       .item-description {
         
-        p img, img, br, a {
+        p img, img, br, a, ul, li {
           display: none;
           width: 100%;
           height: auto;

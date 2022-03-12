@@ -2,7 +2,7 @@ const today = new Date();
 let day = today.getDay()
 
 let weekendDiffusion = ""
-if (day > 5) {
+if (day > 5 || day < 1) {
   weekendDiffusion = "Du lundi au vendredi"
 }
 
@@ -37,12 +37,15 @@ const IdeesComponent = () => {
                 </div>
               </div>
             </div>
+            <div className="item-infos">
+              <div className="r2 item-publish-date">{weekendDiffusion}</div>
+            </div>
           </div>
         </div>
       </a>
     </li>
     <li className="nList TVbanner">
-      <a href="https://www.europe1.fr/emissions/telescopages" target="_blank" rel="noreferrer">
+      <a href="https://www.europe1.fr/emissions/delice-in-extremiste" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="icons-container">
             <div className="icon-image">
@@ -64,6 +67,9 @@ const IdeesComponent = () => {
                 La France est LE pays de la gastronomie, et Olivier Poels vous le prouve tous les jours à 17:45 en vous emmenant à la découverte d'un plat emblématique de l'Hexagone.
                 </div>
               </div>
+            </div>
+            <div className="item-infos">
+              <div className="r2 item-publish-date">{weekendDiffusion}</div>
             </div>
           </div>
         </div>

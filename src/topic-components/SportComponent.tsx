@@ -2,8 +2,8 @@ const today = new Date();
 let day = today.getDay()
 
 let weekendDiffusion = ""
-if (day > 5) {
-  weekendDiffusion = "Diffusion du lundi au vendredi"
+if (day > 5 || day < 1) {
+  weekendDiffusion = "Du lundi au vendredi"
 }
 
 
