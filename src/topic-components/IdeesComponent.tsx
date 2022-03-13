@@ -8,7 +8,7 @@ const IdeesComponent = () => {
         <h5 className="bold">Rendez-vous avec les idées</h5>
       </div>
     <li className={"nList TVbanner " + LàVdisplay}>
-      <a href="https://www.europe1.fr/emissions/delice-in-extremiste" target="_blank" rel="noreferrer">
+      <a href="https://www.europe1.fr/emissions/telescopages" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="icons-container">
             <div className="icon-image">
