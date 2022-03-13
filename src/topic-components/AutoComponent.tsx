@@ -1,11 +1,4 @@
-const today = new Date();
-let day = today.getDay()
-
-let weekendDiffusion = ""
-if (day != 0) {
-  weekendDiffusion = "Chaque dimanche"
-}
-
+import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddisplay } from "./topicVAR";
 
 const AutoComponent = () => {
   return (
@@ -14,7 +7,7 @@ const AutoComponent = () => {
       <div className="intro">
         <h5 className="bold">Rendez-vous sportifs</h5>
       </div>
-    <li className="nList TVbanner">
+    <li className={"nList TVbanner " + Ddisplay}>
       <a href="https://www.6play.fr/turbo-p_884" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="icons-container">
@@ -39,7 +32,7 @@ const AutoComponent = () => {
               </div>
             </div>
             <div className="item-infos always">
-              <div className="r2 item-publish-date">{weekendDiffusion}</div>
+              <div className="r2 item-publish-date">{Ddiffusion}</div>
             </div>
           </div>
         </div>

@@ -1,10 +1,4 @@
-const today = new Date();
-let day = today.getDay()
-
-let weekendDiffusion = ""
-if (day > 5 || day < 1) {
-  weekendDiffusion = "Du lundi au vendredi"
-}
+import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddisplay } from "./topicVAR";
 
 const IdeesComponent = () => {
   return (
@@ -13,7 +7,7 @@ const IdeesComponent = () => {
       <div className="intro">
         <h5 className="bold">Rendez-vous avec les idées</h5>
       </div>
-    <li className="nList TVbanner">
+    <li className={"nList TVbanner " + LàVdisplay}>
       <a href="https://www.europe1.fr/emissions/delice-in-extremiste" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="icons-container">
@@ -38,13 +32,13 @@ const IdeesComponent = () => {
               </div>
             </div>
             <div className="item-infos always">
-              <div className="r2 item-publish-date">{weekendDiffusion}</div>
+              <div className="r2 item-publish-date">{LàVdiffusion}</div>
             </div>
           </div>
         </div>
       </a>
     </li>
-    <li className="nList TVbanner">
+    <li className={"nList TVbanner " + LàVdisplay}>
       <a href="https://www.europe1.fr/emissions/delice-in-extremiste" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="icons-container">
@@ -69,7 +63,7 @@ const IdeesComponent = () => {
               </div>
             </div>
             <div className="item-infos always">
-              <div className="r2 item-publish-date">{weekendDiffusion}</div>
+              <div className="r2 item-publish-date">{LàVdiffusion}</div>
             </div>
           </div>
         </div>

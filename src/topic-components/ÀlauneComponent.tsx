@@ -1,10 +1,4 @@
-const today = new Date();
-let day = today.getDay()
-
-let weekendDiffusion = ""
-if (day > 5 || day < 1) {
-  weekendDiffusion = "Du lundi au vendredi"
-}
+import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddisplay } from "./topicVAR";
 
 const ÀlauneComponent = () => {
   return (
@@ -14,7 +8,7 @@ const ÀlauneComponent = () => {
         <h5 className="bold">Rendez-vous avec l'info</h5>
       </div>
        
-    <li className="TVbanner nList">
+    <li className="nList TVbanner ">
       <a href="https://www.francetvinfo.fr/replay-jt/france-2/8-heures/" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="icons-container">
@@ -98,7 +92,7 @@ const ÀlauneComponent = () => {
         </div>
       </a>
     </li>
-    <li className="nList TVbanner">
+    <li className={"nList TVbanner " + LàVdisplay}>
       <a href="https://www.europe1.fr/emissions/le-jour-ou" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="icons-container">
@@ -123,7 +117,7 @@ const ÀlauneComponent = () => {
               </div>
             </div>
             <div className="item-infos always">
-              <div className="r2 item-publish-date">{weekendDiffusion}</div>
+              <div className="r2 item-publish-date">{LàVdiffusion}</div>
             </div>
           </div>
         </div>

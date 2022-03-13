@@ -1,20 +1,4 @@
-const today = new Date();
-let day = today.getDay()
-
-let LàVdiffusion = ""
-let LàVdisplay =""
-if ((day > 5) || (day = 0)) {
-  LàVdiffusion = "Du lundi au vendredi"
-  LàVdisplay = "NOT"
-}
-
-// test for display only on some days of the week
-let SDdisplay = ""
-let SDdiffusion = ""
-if ((day != 6) || (day = 0)) {
-  SDdisplay = "NOT"
-  SDdiffusion = "Samedi et dimanche"
-}
+import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddisplay } from "./topicVAR";
 
 const EcoComponent = () => {
   return (
