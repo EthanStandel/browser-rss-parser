@@ -128,6 +128,37 @@ const EcoComponent = () => {
         </div>
       </a>
     </li>
+    <li className={"nList TVbanner " + LàVdisplay}>
+      <a href="https://www.franceculture.fr/emissions/le-pourquoi-du-comment-economie-social" target="_blank" rel="noreferrer">
+        <div className="media">
+          <div className="icons-container">
+            <div className="icon-image">
+              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
+            </div>
+            <div className="icon-image double-img">
+              <img src="./franceculture.png"/>
+              <img src="./applepodcasts.png"/>
+            </div>
+          </div>
+          <div className="item-container">
+            <div className="item-F-line">
+              <h6 className="item-title">Le Pourquoi du comment : économie et social</h6>
+              <div className="icon-footnote-container footnote">4 min</div>
+            </div>    
+            <div className="item-infos">
+              <div className="item-descriptionWrapper">
+                <div className="h8 item-description">
+                À 15h, Les chercheuses de l'Institut Veblen abordent avec pédagogie les questions que l’on se pose sur l'économie et le social sans oser les formuler.
+                </div>
+              </div>
+            </div>
+            <div className="item-infos always">
+              <div className="r2 item-publish-date">{LàVdiffusion}</div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
     </ul>
   );
 }

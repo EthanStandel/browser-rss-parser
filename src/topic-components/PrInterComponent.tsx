@@ -1,3 +1,5 @@
+import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddisplay, Sdiffusion, Sdisplay } from "./topicVAR";
+
 const PrInterComponent = () => {
   return (
     <ul className='rss-podcasts'>
@@ -84,6 +86,99 @@ const PrInterComponent = () => {
                 Watch the latest news summary from BBC World News. International news updated 24 hours a day.
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li className={"nList TVbanner " + LàVdisplay}>
+      <a href="https://ici.radio-canada.ca/ohdio/balados/302/nouvelles-info-matin-canada-monde-politique" target="_blank" rel="noreferrer">
+        <div className="media">
+          <div className="icons-container">
+            <div className="icon-image">
+              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
+            </div>
+            <div className="icon-image double-img">
+              <img src="./radiocanada.png"/>
+              <img src="./applepodcasts.png"/>
+            </div>
+          </div>
+          <div className="item-container">
+            <div className="item-F-line">
+              <h6 className="item-title">À la une : Canada, monde et politique</h6>
+              <div className="icon-footnote-container footnote">23 min</div>
+            </div>    
+            <div className="item-infos">
+              <div className="item-descriptionWrapper">
+                <div className="h8 item-description">
+                Mathieu Belhumeur est entouré de ses collaborateurs pour présenter les principales nouvelles d'ici et d'ailleurs. Le tout sur un ton convivial. Un condensé de l'actualité pour bien démarrer la journée.
+                </div>
+              </div>
+            </div>
+            <div className="item-infos always">
+                <div className="r2 item-publish-date">{LàVdiffusion}</div>
+              </div>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li className={"nList TVbanner " + LàVdisplay}>
+      <a href="https://www.franceculture.fr/emissions/revue-de-presse-internationale" target="_blank" rel="noreferrer">
+        <div className="media">
+          <div className="icons-container">
+            <div className="icon-image">
+              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
+            </div>
+            <div className="icon-image double-img">
+              <img src="./franceculture.png"/>
+              <img src="./applepodcasts.png"/>
+            </div>
+          </div>
+          <div className="item-container">
+            <div className="item-F-line">
+              <h6 className="item-title">La Revue de presse internationale</h6>
+              <div className="icon-footnote-container footnote">6 min</div>
+            </div>    
+            <div className="item-infos">
+              <div className="item-descriptionWrapper">
+                <div className="h8 item-description">
+                Panorama de la presse du monde entier autour d'une actualité par Camille Magnard, du lundi au vendredi dans les Matins de France Culture à 7:35.
+                </div>
+              </div>
+            </div>
+            <div className="item-infos always">
+                <div className="r2 item-publish-date">{LàVdiffusion}</div>
+              </div>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li className={"nList TVbanner " + Sdisplay}>
+      <a href="https://www.franceculture.fr/emissions/la-fabrique-mediatique" target="_blank" rel="noreferrer">
+        <div className="media">
+          <div className="icons-container">
+            <div className="icon-image">
+              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
+            </div>
+            <div className="icon-image double-img">
+              <img src="./franceculture.png"/>
+              <img src="./applepodcasts.png"/>
+            </div>
+          </div>
+          <div className="item-container">
+            <div className="item-F-line">
+              <h6 className="item-title">Le rendez-vous de la presse étrangère</h6>
+              <div className="icon-footnote-container footnote">4 min</div>
+            </div>    
+            <div className="item-infos">
+              <div className="item-descriptionWrapper">
+                <div className="h8 item-description">
+                À 7:33, des journalistes correspondants de la presse internationale croisent leurs regards sur un fait d’actualité marquant de la semaine : l’information vue par ceux qui nous l’ont racontée.
+                </div>
+              </div>
+            </div>
+            <div className="item-infos always">
+              <div className="r2 item-publish-date">{Sdiffusion}</div>
             </div>
           </div>
         </div>

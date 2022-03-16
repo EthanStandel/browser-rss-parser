@@ -176,7 +176,7 @@
           {
             "url": "https://www.newyorker.com/feed/news",
             "name": "The New Yorker",
-            "specification": "nNotif news-focus",
+            "specification": "nNotif bigFocus",
             "count": 1,
             "iconImg": "./thenewyorker.png",
             "backgroundImg": "./thenewyorker_bgIMG.jpg"
@@ -188,6 +188,14 @@
             "count": 2,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
+          },
+          {
+            "url": "https://ici.radio-canada.ca/rss/4159",
+            "name": "Radio Canada",
+            "specification": "nNotif firstHeadline",
+            "count": 2,
+            "iconImg": "./radiocanada.png",
+            "backgroundImg": "./radiocanada_bgIMG.png"
           }
         ],
         "Australia & NZ": [
@@ -1463,7 +1471,7 @@
             "url": "https://ici.radio-canada.ca/rss/4167",
             "name": "Radio Canada",
             "specification": "nNotif firstFocus",
-            "count": 2,
+            "count": 4,
             "iconImg": "./radiocanada.png",
             "backgroundImg": "./radiocanada_bgIMG.png"
           }
@@ -1489,7 +1497,7 @@
             "url": "https://ici.radio-canada.ca/rss/1000083",
             "name": "Radio Canada",
             "specification": "nNotif firstFocus",
-            "count": 1,
+            "count": 2,
             "iconImg": "./radiocanada.png",
             "backgroundImg": "./radiocanada_bgIMG.png"
           },
@@ -1537,7 +1545,7 @@
             "url": "https://www.lapresse.ca/arts/litterature/rss",
             "name": "La Presse",
             "specification": "nNotif firstFocus",
-            "count": 2,
+            "count": 1,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
           } 
@@ -1632,13 +1640,13 @@
             "backgroundImg": "./lapresse_bgIMG.jpg"
           },
           {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=cinema,film",
-            "name": "Capital",
-            "specification": "nNotif firstHeadline",
+            "url": "https://ici.radio-canada.ca/rss/1000229",
+            "name": "Radio Canada",
+            "specification": "nNotif firstFocus",
             "count": 2,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
-          } 
+            "iconImg": "./radiocanada.png",
+            "backgroundImg": "./radiocanada_bgIMG.png"
+          }
         ],
         "Séries & TV": [
           {
@@ -1680,6 +1688,14 @@
             "count": 3,
             "iconImg": "./europe1.png",
             "backgroundImg": "./europe1_bgIMG.jpg"
+          },
+          {
+            "url": "https://ici.radio-canada.ca/rss/1000233",
+            "name": "Radio Canada",
+            "specification": "nList",
+            "count": 1,
+            "iconImg": "./radiocanada.png",
+            "backgroundImg": "./radiocanada_bgIMG.png"
           }
         ],
         "Arts visuels & graphiques": [
@@ -1716,7 +1732,7 @@
             "backgroundImg": "./lapresse_bgIMG.jpg"
           } 
         ],
-        "Spectacles & expositions": [
+        "Expositions & événements": [
           {
             "url": "https://www.lefigaro.fr/rss/figaro_theatre.xml",
             "name": "Le Figaro",
@@ -1772,15 +1788,7 @@
             "count": 2,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
-          },
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=musee",
-            "name": "Capital",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
-          } 
+          }
         ],
         "Jeux vidéo": [
           {
@@ -1927,7 +1935,7 @@
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=architecture,urbanisme",
             "name": "Capital",
             "specification": "nList",
-            "count": 2,
+            "count": 1,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
           }
@@ -1979,7 +1987,7 @@
             "url": "https://fr.ign.com/comics-mangas.xml",
             "name": "IGN France",
             "specification": "nList",
-            "count": 3,
+            "count": 2,
             "iconImg": "./ign.png",
             "backgroundImg": "./ign_bgIMG.jpg"
           },
@@ -2004,7 +2012,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/musique/?outputType=xml",
             "name": "Libération",
-            "specification": "nNotif firstFocus",
+            "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -2012,7 +2020,7 @@
           {
             "url": "https://www.lesinrocks.com/musique/feed/",
             "name": "Les Inrocks",
-            "specification": "nNotif firstFocus",
+            "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./lesinrocks.png",
             "backgroundImg": "./lesinrocks_bgIMG.jpg"
@@ -2020,7 +2028,7 @@
           {
             "url": "https://www.lepoint.fr/musique/rss.xml",
             "name": "Le Point",
-            "specification": "nNotif firstFocus",
+            "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./lepointpop.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
@@ -2028,7 +2036,7 @@
           {
             "url": "https://www.melty.fr/musique/feed",
             "name": "Melty",
-            "specification": "nNotif firstFocus",
+            "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./melty.png",
             "backgroundImg": "./melty_bgIMG.jpg"
@@ -2036,19 +2044,19 @@
           {
             "url": "https://www.lapresse.ca/arts/musique/",
             "name": "La Presse",
-            "specification": "nNotif firstFocus",
+            "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
           },
           {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=musique",
-            "name": "Capital",
-            "specification": "nNotif firstHeadline",
-            "count": 1,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
-          }  
+            "url": "https://ici.radio-canada.ca/rss/1000230",
+            "name": "Radio Canada",
+            "specification": "nList firstHeadline",
+            "count": 2,
+            "iconImg": "./radiocanada.png",
+            "backgroundImg": "./radiocanada_bgIMG.png"
+          } 
         ],
         "Histoire": [
           {
@@ -2790,6 +2798,14 @@
             "count": 2,
             "iconImg": "./vox.png",
             "backgroundImg": "./vox_bgIMG.jpg"
+          },
+          {
+            "url": "https://ici.radio-canada.ca/rss/96",
+            "name": "Radio Canada",
+            "specification": "nNotif firstHeadline",
+            "count": 2,
+            "iconImg": "./radiocanada.png",
+            "backgroundImg": "./radiocanada_bgIMG.png"
           }
         ]
       }
@@ -4856,6 +4872,14 @@
             "count": 3,
             "iconImg": "./bfmtv.png",
             "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://ici.radio-canada.ca/rss/1000232",
+            "name": "Radio Canada",
+            "specification": "nList",
+            "count": 1,
+            "iconImg": "./radiocanada.png",
+            "backgroundImg": "./radiocanada_bgIMG.png"
           } 
         ],
         "Royautés": [

@@ -2,12 +2,6 @@
 @import "ios/ios-semantic_colors.scss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
-/*/ color focus for the entire webpage /*/
-.color {
-  color: var(--colorTheme);
-}
-
 :root {
   --colorTheme: var(--systemPink);
   --cultureColorTheme: burlywood;
@@ -37,7 +31,12 @@
   /*/
 }
 
-/*/ loading Spinner /*/
+/*/ color focus for the entire webpage /*/
+.color {
+  color: var(--colorTheme);
+}
+
+/*/ loading Spinner in ul /*/
 .spinner-container > div {
   margin: auto;
   margin-top: 4rem;
@@ -47,9 +46,9 @@
 body {
   background-color: var(--systemGroupedBackground);
   color: var(--label);
-  
 }
 
+/*/ elements to be not selectable /*/
 .headerTitle, .body-container, .mini-links a {
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -62,12 +61,9 @@ body {
   min-width: 222px;
   max-width: 555px;
   margin: auto;
-  position: relative;
-  z-index: 1;
   min-height: 100vh;
   
-  /*/ underlining color depending on topic for li /*/
-  
+  /*/ underlining color depending on topic for li /*/   
   * {
     text-decoration-color: var(--colorTheme);
   }
@@ -108,7 +104,6 @@ body {
       text-decoration-color: var(--sportColorTheme);
     }
   }
-
 
   .Économie {
 
@@ -229,9 +224,7 @@ body {
     }
   }
   
-  /*/ special case since étrangère can be found as subtopic /*/
-
-
+  /*/ special case since Presse étrangère can be found as subtopic /*/
   .étrangère:not(.section) {
 
     ul.rss-podcasts {
@@ -251,37 +244,19 @@ body {
   }
 }
 
-@media only screen and (max-width: 734px) {
-  .body-container {
-    /*/ smaller vertical padding for small devices /*/
-    padding: 24px 25px !important; 
-  }
-
-  h6.item-title {
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: -0.24px;
-  }
-
-  .h8.item-description {
-    font-size: 13px;
-    line-height: 16px;
-    letter-spacing: -0.08px;
-  }
-}
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
 header {
-  background-color: var(--systemHeaderMaterial);
+  
   padding: 8px 0px;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 1;
   width: 100%;
+  background-color: var(--systemHeaderMaterial);
   -webkit-backdrop-filter:saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 0.8px solid var(--separator);
@@ -291,24 +266,187 @@ ul {
   list-style-type: none;
   padding: 0;
 
+  /*/ make the bar scrollable/*/
   &.topics-navbar {
     display: block;
     overflow-x: auto;
     overscroll-behavior-y: none;
     white-space: nowrap;
   
+    /*/ do not display bar to scroll through topics on top of the page/*/
     &::-webkit-scrollbar {
       display: none;
+    }
+
+    li {
+      margin: 1px 5px;
+      display: inline-block;
+    
+      /*/ color styles for topics navbar -border and color /*/
+      .Sport {
+        border-color: var(--sportColorTheme);
+        color: var(--sportColorTheme);
+      }
+      
+      .Culture {
+        border-color: var(--cultureColorTheme);
+        color: var(--cultureColorTheme);
+      }
+    
+      .Économie {
+        border-color: var(--ecoColorTheme);
+        color: var(--ecoColorTheme);
+      }
+    
+      .Presse {
+        border-color: var(--presseinterColorTheme);
+        color: var(--presseinterColorTheme);
+      }
+    
+      .Monde {
+        border-color: var(--mondeColorTheme);
+        color: var(--mondeColorTheme);
+      }
+    
+      .Science {
+        border-color: var(--scienceColorTheme);
+        color: var(--scienceColorTheme);
+      }
+    
+      .Europe {
+        border-color: var(--europeColorTheme);
+        color: var(--europeColorTheme);
+      }
+    
+      .Politique {
+        border-color: var(--polColorTheme);
+        color: var(--polColorTheme);
+      }
+    
+      .Idées {
+        border-color: var(--ideesColorTheme);
+        color: var(--ideesColorTheme);
+      }
+    
+      .Société {
+        border-color: var(--societeColorTheme);
+        color: var(--societeColorTheme);
+      }
+    
+      .Tech {
+        border-color: var(--techColorTheme);
+        color: var(--techColorTheme);
+      }
+    
+      .Régions {
+        border-color: var(--regionsColorTheme);
+        color: var(--regionsColorTheme);
+      }
+    
+      .Nature {
+        border-color: var(--natureColorTheme);
+        color: var(--natureColorTheme);
+      }
+    
+      .Art {
+        border-color: var(--lifestyleColorTheme);
+        color: var(--lifestyleColorTheme);
+      }
+    
+      .Auto {
+        border-color: var(--autoColorTheme);
+        color: var(--autoColorTheme);
+      }
+    
+      > button {
+        border: 2px solid var(--colorTheme);
+        color: var(--colorTheme);
+        padding: 2px 15px;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: color 1s, background-color 1s;
+        width: 100%;
+        height: 100%;
+        font: inherit;
+        background-color: transparent;
+        cursor: pointer;
+    
+        &:hover, &.selected {
+          background-color: var(--colorTheme);
+          color: white;
+    
+          /*/ background color on hover for topics navbar /*/
+          &:not(.subtopic-selection) {
+            
+            &.Économie {
+              background-color: var(--ecoColorTheme);
+            }
+          
+            &.Culture {
+              background-color: var(--cultureColorTheme);
+            }
+    
+            &.Sport {
+              background-color: var(--sportColorTheme);
+            }
+    
+            &.Presse {
+              background-color: var(--presseinterColorTheme);
+            }
+    
+            &.Monde {
+              background-color: var(--mondeColorTheme);
+            }
+    
+            &.Science {
+              background-color: var(--scienceColorTheme);
+            }
+            
+            &.Europe {
+              background-color: var(--europeColorTheme);
+            }
+    
+            &.Politique {
+              background-color: var(--polColorTheme);
+            }
+    
+            &.Idées {
+              background-color: var(--ideesColorTheme);
+            }
+    
+            &.Société {
+              background-color: var(--societeColorTheme);
+            }
+    
+            &.Tech {
+              background-color: var(--techColorTheme);
+            }
+            
+            &.Régions {
+              background-color: var(--regionsColorTheme);
+            }
+    
+            &.Nature {
+              background-color: var(--natureColorTheme);
+            }
+    
+            &.Art {
+              background-color: var(--lifestyleColorTheme);
+            }
+    
+            &.Auto {
+              background-color: var(--autoColorTheme);
+            }
+          }
+        }
+      }
     }
   }
 }
 
+/*/ subtopics menu on top of the page /*/
 .subtopic-selection ul.topics-navbar {
   padding-left: 15px;
-
-  @media only screen and (max-width: 734px) {
-    padding-left: 0px !important; 
-  }
   
   /*/ color for subtopic navbar li /*/
   &.Économie li > *  {
@@ -395,171 +533,7 @@ ul {
   }
 }
 
-ul.topics-navbar li {
-  margin: 1px 5px;
-  display: inline-block;
-
-  /*/ color styles for topics navbar -border and color /*/
-  .Sport {
-    border-color: var(--sportColorTheme);
-    color: var(--sportColorTheme);
-  }
-  
-  .Culture {
-    border-color: var(--cultureColorTheme);
-    color: var(--cultureColorTheme);
-  }
-
-  .Économie {
-    border-color: var(--ecoColorTheme);
-    color: var(--ecoColorTheme);
-  }
-
-  .Presse {
-    border-color: var(--presseinterColorTheme);
-    color: var(--presseinterColorTheme);
-  }
-
-  .Monde {
-    border-color: var(--mondeColorTheme);
-    color: var(--mondeColorTheme);
-  }
-
-  .Science {
-    border-color: var(--scienceColorTheme);
-    color: var(--scienceColorTheme);
-  }
-
-  .Europe {
-    border-color: var(--europeColorTheme);
-    color: var(--europeColorTheme);
-  }
-
-  .Politique {
-    border-color: var(--polColorTheme);
-    color: var(--polColorTheme);
-  }
-
-  .Idées {
-    border-color: var(--ideesColorTheme);
-    color: var(--ideesColorTheme);
-  }
-
-  .Société {
-    border-color: var(--societeColorTheme);
-    color: var(--societeColorTheme);
-  }
-
-  .Tech {
-    border-color: var(--techColorTheme);
-    color: var(--techColorTheme);
-  }
-
-  .Régions {
-    border-color: var(--regionsColorTheme);
-    color: var(--regionsColorTheme);
-  }
-
-  .Nature {
-    border-color: var(--natureColorTheme);
-    color: var(--natureColorTheme);
-  }
-
-  .Art {
-    border-color: var(--lifestyleColorTheme);
-    color: var(--lifestyleColorTheme);
-  }
-
-  .Auto {
-    border-color: var(--autoColorTheme);
-    color: var(--autoColorTheme);
-  }
-
-  > button {
-    border: 2px solid var(--colorTheme);
-    color: var(--colorTheme);
-    padding: 2px 15px;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: color 1s, background-color 1s;
-    width: 100%;
-    height: 100%;
-    font: inherit;
-    background-color: transparent;
-    cursor: pointer;
-
-    &:hover, &.selected {
-      background-color: var(--colorTheme);
-      color: white;
-
-      /*/ background color on hover for topics navbar /*/
-      &:not(.subtopic-selection) {
-        
-        &.Économie {
-          background-color: var(--ecoColorTheme);
-        }
-      
-        &.Culture {
-          background-color: var(--cultureColorTheme);
-        }
-
-        &.Sport {
-          background-color: var(--sportColorTheme);
-        }
-
-        &.Presse {
-          background-color: var(--presseinterColorTheme);
-        }
-
-        &.Monde {
-          background-color: var(--mondeColorTheme);
-        }
-
-        &.Science {
-          background-color: var(--scienceColorTheme);
-        }
-        
-        &.Europe {
-          background-color: var(--europeColorTheme);
-        }
-
-        &.Politique {
-          background-color: var(--polColorTheme);
-        }
-
-        &.Idées {
-          background-color: var(--ideesColorTheme);
-        }
-
-        &.Société {
-          background-color: var(--societeColorTheme);
-        }
-
-        &.Tech {
-          background-color: var(--techColorTheme);
-        }
-        
-        &.Régions {
-          background-color: var(--regionsColorTheme);
-        }
-
-        &.Nature {
-          background-color: var(--natureColorTheme);
-        }
-
-        &.Art {
-          background-color: var(--lifestyleColorTheme);
-        }
-
-        &.Auto {
-          background-color: var(--autoColorTheme);
-        }
-      }
-    }
-  }
-}
-
-/*/ Titles for topics in body-container /*/
+/*/ Title colors for topics /*/
 h3.bold {
   color: var(--colorTheme);
 
@@ -643,20 +617,6 @@ h4.subtopic {
   }
 }
 
-@media only screen and (max-width: 734px) {
-  ul.topics-navbar {
-    clear: both;
-  }
-
-  .headerTitle {
-    display: none;
-  }
-
-  .header-mobile {
-    display: block !important;
-  }
-}
-
 .logo-text {
   font-family: 'Bodoni Moda' !important;
   font-weight: 800 !important;
@@ -719,6 +679,7 @@ ul {
         @media only screen and (max-width: 734px) {
         
           p {
+            /*/ smaller font-size on small devices/*/
             font-size: 13px !important;
             line-height: 16px !important;
             letter-spacing: -0.08px !important;
@@ -827,6 +788,7 @@ ul {
 
         &:nth-child(1) {
           position: absolute;
+          z-index: 1;
           
           img {
             background-image: none;
@@ -889,15 +851,9 @@ ul {
       }
 
       /*/ LIST STYLE FOR LI ITEMS - big title + big image + small desc /*/
-      &.news-focus, &.firstFocus:first-of-type {
+      &.bigFocus, &.firstFocus:first-of-type {
         background-color: rgba(0, 0, 0, 0);
         transition-duration: 0.4s;
-
-        @media only screen and (min-width: 734px) {
-          &:hover {
-            transform: scale(1.01);
-          }
-        }
       
         .item-infos {
           position: absolute;
@@ -924,15 +880,12 @@ ul {
           -webkit-box-orient: vertical;
         }
 
-        .item-infos2 {
-          display: none !important;
+        .item-F-line {
+          display: table !important;
         }
 
-        &:hover {
-          .item-title {
-            text-decoration-color: rgba(0, 0, 0, 0) !important;
-            text-decoration: none !important;
-          }
+        .item-infos2 {
+          display: none !important;
         }
       
         .item-title {
@@ -958,10 +911,10 @@ ul {
         @media only screen and (max-width: 734px) {
           .item-title {
             -webkit-line-clamp: 4 !important;
-          overflow: hidden;
-          text-overflow: ellipsis !important;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis !important;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
           }
         }
       
@@ -977,6 +930,7 @@ ul {
         }
 
         .item-F-line {
+          display: table;
           position: absolute;
           top: 17px;
           left: 50px;
@@ -1432,12 +1386,52 @@ footer {
   white-space: nowrap;
   padding-left: 15px;
 
-  
-
   .icon-footnote {
 
     span {
       display: inline-block;
     }
+  }
+}
+
+
+@media only screen and (max-width: 734px) {
+  .body-container {
+    /*/ smaller vertical padding for small devices /*/
+    padding: 24px 25px !important; 
+  }
+
+  h6.item-title {
+    /*/ smaller font-size for small devices /*/
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+  }
+
+  .h8.item-description {
+    /*/ smaller font-size for small devices /*/
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.08px;
+  }
+
+  .subtopic-selection ul.topics-navbar {
+     /*/ smaller padding for small devices /*/
+    padding-left: 0px !important; 
+  }
+
+  ul.topics-navbar {
+    clear: both;
+  }
+
+  .headerTitle {
+     /*/ hide big headerTitle 'nuntium' for small devices /*/
+    display: none;
+  }
+
+  .header-mobile {
+
+     /*/ replace headerTitle with smaller header /*/
+    display: block !important;
   }
 }
