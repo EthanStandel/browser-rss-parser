@@ -2026,14 +2026,6 @@
             "backgroundImg": "./lesinrocks_bgIMG.jpg"
           },
           {
-            "url": "https://www.lepoint.fr/musique/rss.xml",
-            "name": "Le Point",
-            "specification": "nList firstHeadline",
-            "count": 1,
-            "iconImg": "./lepointpop.png",
-            "backgroundImg": "./lepoint_bgIMG.jpg"
-          },
-          {
             "url": "https://www.melty.fr/musique/feed",
             "name": "Melty",
             "specification": "nList firstHeadline",
@@ -2056,6 +2048,14 @@
             "count": 2,
             "iconImg": "./radiocanada.png",
             "backgroundImg": "./radiocanada_bgIMG.png"
+          },
+          {
+            "url": "https://www.fip.fr/rss.xml",
+            "name": "FIP",
+            "specification": "nList firstHeadline",
+            "count": 3,
+            "iconImg": "./fip.png",
+            "backgroundImg": "./fip_bgIMG.jpg"
           } 
         ],
         "Histoire": [

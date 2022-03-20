@@ -25,7 +25,7 @@ if (day != 0) {
 
 var Sdisplay = ""
 var Sdiffusion = ""
-if (day != 0) {
+if (day != 6) {
   var Sdisplay = "NOT"
   var Sdiffusion = "Chaque samedi"
 }
@@ -34,4 +34,4 @@ if (day != 0) {
 export { SDdisplay, SDdiffusion }
 export { Ddisplay, Ddiffusion }
 export { Sdisplay, Sdiffusion }
-export {LàVdiffusion, LàVdisplay }
+export { LàVdiffusion, LàVdisplay }
