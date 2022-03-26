@@ -97,9 +97,9 @@ const App = () => {
           </div>
           <div className="footer-legal">
               <div className="websiteInfo">
-              <div className="c1 inline">© 2021-{new Date().toLocaleDateString([], {year:'numeric'})} — France.</div>
-              <div className="c1 inline">Créé par <a className="color" href="https://www.reddit.com/user/iKL3W" target="_blank" rel="noreferrer">u/iKL3W</a>, avec <a className="color" href="https://www.reddit.com/user/besthelloworld" target="_blank" rel="noreferrer">u/besthelloworld</a>.</div>
-              <div className="c1 inline">Ce site web n'est pas affilié à Apple.</div>
+              <div className="footnote inline">© 2021-{new Date().toLocaleDateString([], {year:'numeric'})} — France.</div>
+              <div className="footnote inline">Créé par <a className="color" href="https://www.reddit.com/user/iKL3W" target="_blank" rel="noreferrer">u/iKL3W</a>, avec <a className="color" href="https://www.reddit.com/user/besthelloworld" target="_blank" rel="noreferrer">u/besthelloworld</a>.</div>
+              <div className="footnote inline">Ce site web n'est pas affilié à Apple.</div>
             </div>
             <div className="mini-links footnote">
               <a href="mailto:clement.krajecki@gmail.com?subject=nuntium&body=Bonjour!">Contact</a>
