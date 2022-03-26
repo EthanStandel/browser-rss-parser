@@ -656,6 +656,18 @@ ul {
       background-color: var(--secondarySystemGroupedBackground);
       border-radius: 10px;
 
+
+      .footnote.icon-footnote-container {
+  
+        text-align: right;
+        display: table-cell;
+        color: var(--secondaryLabel);
+        line-height: 22px;
+        width: max-content;
+        white-space: nowrap;
+        padding-left: 15px;
+      }
+
       .item-description {
         
         p img, img, br, a, ul, li {
@@ -1312,89 +1324,71 @@ ul {
 FOOTER
 /*/
 
-.footer-header-app h5.logo-text {
-  text-align: left !important;
-  padding: 0 !important;
-}
-
 footer {
   background-color: var(--secondarySystemGroupedBackground);
+  padding: 0 4.5rem;
+  min-width: 250px;
 }
 
 .footer-container {
-  max-width: 700px;
-  min-width: 250px;
   margin: auto;
-  padding: 20px 40px;
-  font-size: 13px;
+  padding: 3rem 0 8rem;
+  max-width: 1200px;
 
-  .c2:not(.mini-links), .c1 {
-    margin-top: 5px;
-    color: var(--secondaryLabel);
+  .websiteInfo {
+    margin-bottom: 15px;
+
+    &> * {
+      color: var(--secondaryLabel);
+      display: inline-block;
+      padding-right: 30px;
+    }
+  }
+  
+  a.color:hover, .mini-links a:hover {
+    text-decoration: underline;
   }
 
-  .c2.inline {
-    display: inline-block;
-    padding-right: 30px;
+  .footer-header-app .logo-text {
+    text-align: left !important;
+    padding: 0 0 15px 0;
+    background: #653DAC;
+    background: -webkit-linear-gradient(to right, #653DAC, #fe2c57);
+    background: -moz-linear-gradient(to right, #653DAC, #fe2c57);
+    background: linear-gradient(to right, #653DAC, #fe2c57);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+  }
 
-        /*/ Used to display c2 elements as paragrpah on small devices/*/
-    &:not(:first-of-type) {
-
-      margin-top: 0px !important;
+  .footer-legal .mini-links {
+    margin-top: 5px;
+  
+    a {
+      width: fit-content;
+      display: inline-block;
+      margin-top: 5px;
+      padding-right: 10px;
+    }
+  
+    a:not(:last-child) {
+      border-right: 1.6px solid var(--tertiaryLabel);
+      margin-right: 7px !important;
     }
   }
 }
 
-.c2 a.color:hover, .mini-links a:hover {
-  text-decoration: underline;
-}
-
-.mini-links {
-  margin-top: 5px;
-
-  a {
-    width: fit-content;
-    display: inline-block;
-    margin-top: 5px;
-    padding-right: 10px;
-  }
-
-  a:not(:last-child) {
-    border-right: 1px solid var(--tertiaryLabel);
-    margin-right: 7px !important;
-  }
-}
-
-/*/ padding to footer-container elements /*/
-.footer-container > *:not(.footer-container > *:first-child) {
-  padding-top: 10px;
-}
-
-/*/ Bottom border to separate footer-container elements /*/
+/*/ Bottom border to separate footer-container elements (but not last element in footer-container) /*/
 .footer-container > *:not(.footer-container > *:last-child) {
   border-bottom: 0.8px solid var(--separator);
-  padding-bottom: 10px !important;
-  margin-bottom: 7px !important;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-.footnote.icon-footnote-container {
-  
-  text-align: right;
-  display: table-cell;
-  color: var(--secondaryLabel);
-  line-height: 22px;
-  width: max-content;
-  white-space: nowrap;
-  padding-left: 15px;
-
-  .icon-footnote {
-
-    span {
-      display: inline-block;
-    }
-  }
-}
-
+/*/
+Adapted for small devices 
+/*/
 
 @media only screen and (max-width: 734px) {
   .body-container {
@@ -1435,4 +1429,26 @@ footer {
      /*/ replace headerTitle with smaller header /*/
     display: block !important;
   }
+
+  .footer-header-app .logo-text {
+    text-align: center !important;
+    margin: auto;
+  }
+
+  .footer-header-app * {
+    text-align: center;
+  }
+
+  .websiteInfo > *, .mini-links {
+    display: block !important;
+    width: 100%;
+    text-align: center;
+    margin: 8px 0; 
+  }
+}
+
+br {
+  display: block;
+  content: " ";
+  margin-bottom: 8px;
 }
