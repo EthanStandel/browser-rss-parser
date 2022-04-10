@@ -2226,6 +2226,14 @@
             "count": 1,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
+          },
+          {
+            "url": "https://news.un.org/feed/subscribe/fr/news/region/europe/feed/rss.xml",
+            "name": "Nations Unies",
+            "specification": "nNotif firstHeadline",
+            "count": 2,
+            "iconImg": "./nationsunies.png",
+            "backgroundImg": "./nationsunies_bgIMG.jpg"
           } 
         ],
         "Allemagne": [
@@ -2606,9 +2614,17 @@
             "count": 2,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
+          },
+          {
+            "url": "https://news.un.org/feed/subscribe/fr/news/region/africa/feed/rss.xml",
+            "name": "Nations Unies",
+            "specification": "nNotif firstHeadline",
+            "count": 3,
+            "iconImg": "./nationsunies.png",
+            "backgroundImg": "./nationsunies_bgIMG.jpg"
           } 
         ],
-        "Amérique": [
+        "Amériques": [
           {
             "url": "https://www.france24.com/fr/amériques/rss",
             "name": "France 24",
@@ -2648,7 +2664,15 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://news.un.org/feed/subscribe/fr/news/region/americas/feed/rss.xml",
+            "name": "Nations Unies",
+            "specification": "nNotif firstHeadline",
+            "count": 2,
+            "iconImg": "./nationsunies.png",
+            "backgroundImg": "./nationsunies_bgIMG.jpg"
+          } 
         ],
         "Asie Pacifique": [
           {
@@ -2698,7 +2722,15 @@
             "count": 2,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
-          } 
+          },
+          {
+            "url": "https://news.un.org/feed/subscribe/fr/news/region/asia-pacific/feed/rss.xml",
+            "name": "Nations Unies",
+            "specification": "nNotif firstHeadline",
+            "count": 2,
+            "iconImg": "./nationsunies.png",
+            "backgroundImg": "./nationsunies_bgIMG.jpg"
+          }  
         ],
         "Moyen-Orient": [
           {
@@ -2740,6 +2772,14 @@
             "count": 2,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
+          },
+          {
+            "url": "https://news.un.org/feed/subscribe/fr/news/region/middle-east/feed/rss.xml",
+            "name": "Nations Unies",
+            "specification": "nNotif firstHeadline",
+            "count": 2,
+            "iconImg": "./nationsunies.png",
+            "backgroundImg": "./nationsunies_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -2927,6 +2967,26 @@
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
           }   
+        ],
+        "Immigration": [
+          {
+            "url": "https://news.un.org/feed/subscribe/fr/news/topic/migrants-and-refugees/feed/rss.xml",
+            "name": "Nations Unies",
+            "specification": "nList",
+            "count": 4,
+            "iconImg": "./nationsunies.png",
+            "backgroundImg": "./nationsunies_bgIMG.jpg"
+          }
+        ],
+        "Paix": [
+          {
+            "url": "https://news.un.org/feed/subscribe/fr/news/topic/peace-and-security/feed/rss.xml",
+            "name": "Nations Unies",
+            "specification": "nList",
+            "count": 4,
+            "iconImg": "./nationsunies.png",
+            "backgroundImg": "./nationsunies_bgIMG.jpg"
+          } 
         ],
         "Presse étrangère": [
           {
@@ -3183,7 +3243,14 @@
           }
         ],
         "Philosophie": [
-
+          {
+            "url": "https://www.philomag.com/rss-le-fil",
+            "name": "Philo Mag",
+            "specification": "nNotif firstHeadline nodesc",
+            "count": 4,
+            "iconImg": "./philomag.png",
+            "backgroundImg": "./philomag_bgIMG.jpg"
+          } 
         ],
         "Presse étrangère": [
           {
@@ -3545,7 +3612,7 @@
             "url": "https://www.courrierinternational.com/feed/category/6997/rss.xml",
             "name": "Courrier International",
             "specification": "nNotif firstHeadline",
-            "count": 3,
+            "count": 2,
             "iconImg": "./courrierinter.png",
             "backgroundImg": "./courrierinter_bgIMG.jpg"
           },
@@ -3553,7 +3620,7 @@
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite&tags=ecole",
             "name": "Capital",
             "specification": "nNotif firstHeadline",
-            "count": 2,
+            "count": 1,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
           },
@@ -3564,7 +3631,15 @@
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
-          } 
+          },
+          {
+            "url": "https://news.un.org/feed/subscribe/fr/news/topic/culture-and-education/feed/rss.xml",
+            "name": "Nations Unies",
+            "specification": "nNotif firstHeadline",
+            "count": 2,
+            "iconImg": "./nationsunies.png",
+            "backgroundImg": "./nationsunies_bgIMG.jpg"
+          }  
         ],
         "Police & justice":[
           {
@@ -3600,18 +3675,10 @@
             "backgroundImg": "./france3_bgIMG.jpg"
           },
           {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=justice",
+            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=justice,police",
             "name": "Capital",
             "specification": "nList firstHeadline",
             "count": 3,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
-          },
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=police&categories=economie-politique,entreprises-marches",
-            "name": "Capital",
-            "specification": "nList firstHeadline",
-            "count": 2,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
           },
@@ -3622,14 +3689,22 @@
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
-          }  
+          },
+          {
+            "url": "https://news.un.org/feed/subscribe/fr/news/topic/law-and-crime-prevention/feed/rss.xml",
+            "name": "Nations Unies",
+            "specification": "nList firstHeadline",
+            "count": 2,
+            "iconImg": "./nationsunies.png",
+            "backgroundImg": "./nationsunies_bgIMG.jpg"
+          }   
         ],
         "Grèves & manifestations": [
           {
             "url": "https://www.francetvinfo.fr/economie/greve.rss",
             "name": "Franceinfo",
             "specification": "nList firstHeadline",
-            "count": 3,
+            "count": 2,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
@@ -3663,7 +3738,7 @@
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/societe/religions/?outputType=xml",
             "name": "Libération",
             "specification": "nList",
-            "count": 2,
+            "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
           }
@@ -3678,25 +3753,23 @@
             "backgroundImg": "./capital_bgIMG.jpg"
           }
         ],
-        "Discriminations": [
+        "Discriminations & inégalités": [
           {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=discrimination,harcelement,racisme",
+            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=discrimination,harcelement,racisme,sexisme",
             "name": "Capital",
             "specification": "nList",
             "count": 2,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
-          }
-        ],
-        "Immigration": [
+          },
           {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=immigration,migrations",
-            "name": "Capital",
+            "url": "https://news.un.org/feed/subscribe/fr/news/topic/women/feed/rss.xml",
+            "name": "Nations Unies",
             "specification": "nList",
-            "count": 1,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
-          }  
+            "count": 2,
+            "iconImg": "./nationsunies.png",
+            "backgroundImg": "./nationsunies_bgIMG.jpg"
+          }
         ],
         "Presse étrangère": [
           {
@@ -3838,14 +3911,6 @@
         ],
         "Médecine & santé": [
           {
-            "url": "https://www.francetvinfo.fr/sante.rss",
-            "name": "Franceinfo",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          },
-          {
             "url": "https://www.ladepeche.fr/sante/rss.xml",
             "name": "La Dépêche",
             "specification": "nList",
@@ -3860,14 +3925,6 @@
             "count": 1,
             "iconImg": "./leprogres.png",
             "backgroundImg": "./leprogres_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lepoint.fr/sante/rss.xml",
-            "name": "Le Point",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./lepoint.png",
-            "backgroundImg": "./lepoint_bgIMG.jpg"
           },
           {
             "url": "https://www.bfmtv.com/rss/sante/",
@@ -3913,9 +3970,17 @@
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=sante",
             "name": "Capital",
             "specification": "nList",
-            "count": 3,
+            "count": 2,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
+          },
+          {
+            "url": "https://news.un.org/feed/subscribe/fr/news/topic/health/feed/rss.xml",
+            "name": "Nations Unies",
+            "specification": "nList",
+            "count": 2,
+            "iconImg": "./nationsunies.png",
+            "backgroundImg": "./nationsunies_bgIMG.jpg"
           } 
         ],
         "Sciences physiques & mathématiques": [
@@ -4054,7 +4119,15 @@
             "count": 1,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://news.un.org/feed/subscribe/fr/news/topic/climate-change/feed/rss.xml",
+            "name": "Nations Unies",
+            "specification": "nNotif firstHeadline",
+            "count": 3,
+            "iconImg": "./nationsunies.png",
+            "backgroundImg": "./nationsunies_bgIMG.jpg"
+          } 
         ],
         "Environnement": [
           {
@@ -4130,12 +4203,12 @@
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
           {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=environnement,climat",
-            "name": "Capital",
+            "url": "https://news.un.org/feed/subscribe/fr/news/topic/sdgs/feed/rss.xml",
+            "name": "Nations Unies",
             "specification": "nList firstHeadline",
-            "count": 1,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
+            "count": 2,
+            "iconImg": "./nationsunies.png",
+            "backgroundImg": "./nationsunies_bgIMG.jpg"
           } 
         ],
         "Énergies & transports": [
@@ -4195,7 +4268,7 @@
             "url": "https://www.lapresse.ca/societe/animaux/rss",
             "name": "La Presse",
             "specification": "nList",
-            "count": 2,
+            "count": 1,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
           },
@@ -4880,6 +4953,14 @@
             "count": 1,
             "iconImg": "./radiocanada.png",
             "backgroundImg": "./radiocanada_bgIMG.png"
+          },
+          {
+            "url": "https://cdn1-parismatch.lanmedia.fr/var/exports/rss/rss-people.xml",
+            "name": "Paris Match",
+            "specification": "nList",
+            "count": 4,
+            "iconImg": "./parismatch.png",
+            "backgroundImg": "./parismatch_bgIMG.png"
           } 
         ],
         "Royautés": [
@@ -4887,7 +4968,7 @@
             "url": "https://www.francetvinfo.fr/societe/familles-royales.rss",
             "name": "Franceinfo",
             "specification": "nList",
-            "count": 3,
+            "count": 2,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
@@ -4898,6 +4979,14 @@
             "count": 1,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
+          },
+          {
+            "url": "https://cdn1-parismatch.lanmedia.fr/var/exports/rss/rss-royal-blog.xml",
+            "name": "Paris Match",
+            "specification": "nList",
+            "count": 4,
+            "iconImg": "./parismatch.png",
+            "backgroundImg": "./parismatch_bgIMG.png"
           } 
         ],
         "Maison": [

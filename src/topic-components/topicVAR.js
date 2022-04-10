@@ -30,8 +30,49 @@ if (day != 6) {
   var Sdiffusion = "Chaque samedi"
 }
 
+var Vdisplay = ""
+var Vdiffusion = ""
+if (day != 5) {
+  var Vdisplay = "NOT"
+  var Vdiffusion = "Chaque vendredi"
+}
 
+var Ldisplay = ""
+var Ldiffusion = ""
+if (day != 1) {
+  var Ldisplay = "NOT"
+  var Ldiffusion = "Chaque lundi"
+}
+
+var MAdisplay = ""
+var MAdiffusion = ""
+if (day != 2) {
+  var MAdisplay = "NOT"
+  var MAdiffusion = "Chaque mardi"
+}
+
+var MEdisplay = ""
+var MEdiffusion = ""
+if (day != 3) {
+  var MEdisplay = "NOT"
+  var MEdiffusion = "Chaque mercredi"
+}
+
+var Jdisplay = ""
+var Jdiffusion = ""
+if (day != 4) {
+  var Jdisplay = "NOT"
+  var Jdiffusion = "Chaque jeudi"
+}
+
+
+
+export { Ldisplay, Ldiffusion }
+export { MAdisplay, MAdiffusion }
+export { MEdisplay, MEdiffusion }
+export { Jdisplay, Jdiffusion }
+export { Vdisplay, Vdiffusion }
+export { LàVdiffusion, LàVdisplay }
+export { Sdisplay, Sdiffusion }
 export { SDdisplay, SDdiffusion }
 export { Ddisplay, Ddiffusion }
-export { Sdisplay, Sdiffusion }
-export { LàVdiffusion, LàVdisplay }
