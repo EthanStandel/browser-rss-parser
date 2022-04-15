@@ -1586,7 +1586,7 @@
           {
             "url": "http://rss.allocine.fr/ac/actualites/cine",
             "name": "Allociné",
-            "specification": "nNotif firstHeadline",
+            "specification": "nNotif firstHeadline nodesc",
             "count": 2,
             "iconImg": "./allocine.png",
             "backgroundImg": ".allocine_bgIMG.jpg"
@@ -1668,7 +1668,7 @@
           {
             "url": "http://rss.allocine.fr/ac/actualites/series",
             "name": "Allociné",
-            "specification": "nList",
+            "specification": "nList nodesc",
             "count": 2,
             "iconImg": "./allocine.png",
             "backgroundImg": ".allocine_bgIMG.jpg"
@@ -2842,7 +2842,7 @@
           {
             "url": "https://ici.radio-canada.ca/rss/96",
             "name": "Radio Canada",
-            "specification": "nNotif firstHeadline",
+            "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./radiocanada.png",
             "backgroundImg": "./radiocanada_bgIMG.png"

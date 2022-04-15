@@ -142,11 +142,11 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                           {source.name}
                           {source.subtopic && ` - ${source.subtopic}`}
                         </div>
-                        <div className="footnote item-publish-date">{displayedDate}</div>
+                        <div className="r2 item-publish-date">{displayedDate}</div>
                       </div>
                       <h6 className="item-title"dangerouslySetInnerHTML={{ __html: _unescape(item.title ?? "")}} />
                       <div className="item-infos">
-                        <div className="footnote item-publish-date">{displayedDate}</div>
+                        <div className="r2 item-publish-date">{displayedDate}</div>
                         
                         <div className="item-descriptionWrapper">
                           {item.description &&
@@ -155,7 +155,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                         </div>
                       </div>
                       <div className="item-infos2">
-                        <div className="footnote item-publish-date">{displayedDate}</div>
+                        <div className="r2 item-publish-date">{displayedDate}</div>
                       </div>
                     </div>
                   </div>

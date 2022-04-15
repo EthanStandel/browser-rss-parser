@@ -74,7 +74,7 @@ const App = () => {
       </header>
       <div className="body-container">
         <div className={topicFilter}>
-          {<h3 className={"bold " + topicFilter}>{topicFilter}</h3>}
+          {<h2 className={"bold " + topicFilter}>{topicFilter}</h2>}
           <CustomTopicComponent />
           {Object.entries(topics[topicFilter].subtopics)
             .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)
@@ -82,7 +82,7 @@ const App = () => {
             .map(([key, feeds]) => (
               <div key={key} className={`${key} section`}>
                 <div id="external-script-element" />
-                {key !== "noSubtopic" && <h4 className="subtopic">{key}</h4>}
+                {key !== "noSubtopic" && <h3 className="subtopic bold">{key}</h3>}
                 <RssContent rssFeeds={feeds} />
               </div>
             ))
@@ -93,7 +93,12 @@ const App = () => {
         <div className="footer-container">
           <div className="footer-header-app">
             <h1 className="logo-text">nuntium</h1>
-            <div className="h7">L'application nuntium (version bêta) permet à ses utilisateurs de faire un tour des actualités locales, nationales et internationales &#8209;&nbsp;avec des articles de rédactions étrangères. <br></br>Chaque sujet est traité en profondeur par les rédactions les plus spécialisées sur le sujet, pour permettre une information de qualité à chaque jour. De plus, les balados et autres émissions sont disponibles tout le temps pour suivre l'actualité autrement. </div>
+            <div className="h7">
+              L'application nuntium <span className="textLabel">(bêta)</span> permet à ses utilisateurs de faire un tour des actualités locales, nationales et internationales &#8209;&nbsp;avec des articles de rédactions étrangères. 
+            </div>
+            <div className="h7">
+            Chaque sujet est traité en profondeur par les rédactions les plus spécialisées sur le sujet, pour permettre une information de qualité à chaque jour. De plus, les balados et autres émissions sont disponibles tout le temps pour suivre l'actualité autrement.
+            </div>
           </div>
           <div className="footer-legal">
               <div className="websiteInfo">
