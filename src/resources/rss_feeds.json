@@ -2087,7 +2087,7 @@
             "url": "https://www.courrierinternational.com/feed/category/6679/rss.xml",
             "name": "Courrier International",
             "specification": "nList",
-            "count": 2,
+            "count": 1,
             "iconImg": "./courrierinter.png",
             "backgroundImg": "./courrierinter_bgIMG.jpg"
           },
@@ -2095,7 +2095,7 @@
             "url": "https://www.lhistoire.fr/rss.xml",
             "name": "l'Histoire",
             "specification": "nList",
-            "count": 2,
+            "count": 3,
             "iconImg": "./lhistoire.png",
             "backgroundImg": "./lhistoire_bgIMG.jpg"
           },
@@ -3279,7 +3279,7 @@
             "url": "https://france3-regions.francetvinfo.fr/actu/rss",
             "name": "France 3",
             "specification": "nNotif firstHeadline",
-            "count": 6,
+            "count": 3,
             "iconImg": "./france3.png",
             "backgroundImg": "./france3_bgIMG.jpg"
           },
@@ -3287,9 +3287,17 @@
             "url": "https://www.francebleu.fr/rss/vie-quotidienne.xml",
             "name": "France bleu",
             "specification": "nNotif firstHeadline",
-            "count": 4,
+            "count": 6,
             "iconImg": "./francebleu.png",
             "backgroundImg": "./francebleu_bgIMG.jpg"
+          },
+          {
+            "url": "https://la1ere.francetvinfo.fr/actu/rss",
+            "name": "La 1ère",
+            "specification": "nNotif firstHeadline",
+            "count": 3,
+            "iconImg": "./la1ere-portail.png",
+            "backgroundImg": "./la1ere_bgIMG.jpg"
           }
         ],
         "Auvergne-Rhône-Alpes": [
@@ -4753,7 +4761,7 @@
             "backgroundImg": "./forbes_bgIMG.jpg"
           }
         ],
-        "Tourisme & voyage": [
+        "Tourisme & voyages": [
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/voyages/?outputType=xml",
             "name": "Libération",
@@ -4798,7 +4806,7 @@
             "url": "https://www.linternaute.com/voyage/rss/",
             "name": "L'internaute",
             "specification": "nList",
-            "count": 2,
+            "count": 1,
             "iconImg": "./linternaute.png",
             "backgroundImg": "./linternaute_bgIMG.jpg"
           },
@@ -4968,17 +4976,9 @@
             "url": "https://www.francetvinfo.fr/societe/familles-royales.rss",
             "name": "Franceinfo",
             "specification": "nList",
-            "count": 2,
+            "count": 1,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
-          },
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=russie",
-            "name": "Capital",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
           },
           {
             "url": "https://cdn1-parismatch.lanmedia.fr/var/exports/rss/rss-royal-blog.xml",
@@ -5078,7 +5078,7 @@
             "url": "https://www.forbes.fr/management/feed/",
             "name": "Forbes",
             "specification": "nList",
-            "count": 1,
+            "count": 3,
             "iconImg": "./forbes.png",
             "backgroundImg": "./forbes_bgIMG.jpg"
           },

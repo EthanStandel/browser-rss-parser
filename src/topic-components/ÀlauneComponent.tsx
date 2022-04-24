@@ -4,7 +4,7 @@ const ÀlauneComponent = () => {
   return (
     <ul className='rss-podcasts'>
       <div className="intro">
-        <div className="r2">{new Date().toLocaleDateString([], {weekday:'long', day:'numeric', month: 'long'})}</div>
+        <div className="r2 secondaryColor">{new Date().toLocaleDateString([], {weekday:'long', day:'numeric', month: 'long'})}</div>
         <h5 className="bold">Rendez-vous avec l'info</h5>
       </div>
        

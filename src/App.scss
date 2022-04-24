@@ -38,6 +38,10 @@
   color: var(--colorTheme);
 }
 
+.secondaryColor {
+  color: var(--secondaryLabel);
+}
+
 /*/ loading Spinner in ul /*/
 .spinner-container > div {
   margin: auto;
@@ -262,6 +266,7 @@ header {
   -webkit-backdrop-filter:saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 0.5px solid var(--separator);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 40px 0px;
 }
 
 ul {
@@ -642,22 +647,27 @@ ul {
   &.rss-podcasts {
     background-color: var(--secondarySystemGroupedBackground);
     border-radius: var(--rounded-corners-block);
+    margin-bottom: 15px;
+    box-shadow: 2px 4px 12px rgba(0,0,0, 0.08);
 
     .intro {
       padding: 15px 10px;
-      border-bottom: 1.6px solid;
+      border-bottom: 1.8px solid;
     }
   }
 
+  &.rss {
+    margin-bottom: 30px;
+
+  }
+
   &.rss, &.rss-podcasts {
-    margin-bottom: 25px;
 
     /*/ subtopic list element /*/
     li {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       background-color: var(--secondarySystemGroupedBackground);
       border-radius: var(--rounded-corners-block);
-
 
       .footnote.icon-footnote-container {
   
@@ -683,6 +693,8 @@ ul {
           font-weight: normal !important;
           line-height: 20px !important;
           letter-spacing: -0.24px !important;
+          margin: 0 !important;
+          padding: 0 !important;
 
           /*/ for 'Capital' source /*/
           strong {
@@ -835,11 +847,13 @@ ul {
         width: max-content;
         white-space: nowrap;
         padding-left: 15px;
+
       }
       
       .item-F-line {
         width: 100%;
         display: table;
+        height:22px !important;
       }
 
       .item-infos, .item-infos2 {
@@ -895,10 +909,6 @@ ul {
           -webkit-box-orient: vertical;
         }
 
-        .item-F-line {
-          display: table !important;
-        }
-
         .item-infos2 {
           display: none !important;
         }
@@ -945,7 +955,7 @@ ul {
         }
 
         .item-F-line {
-          display: table;
+          display: table !important;
           position: absolute;
           top: 17px;
           left: 50px;
@@ -1166,6 +1176,7 @@ ul {
 
         &.TVbanner {
 
+
           .item-description {
             -webkit-line-clamp: 6 !important;
             overflow: hidden;
@@ -1177,8 +1188,6 @@ ul {
           .item-F-line {
             display: table !important;
           }
-
-          background-color:rgba(0, 0, 0, 0);
 
           &.NOT {
 
@@ -1333,7 +1342,7 @@ footer {
 
 .footer-container {
   margin: auto;
-  padding: 3rem 4rem 8rem;
+  padding: 3rem 25px 8rem;
   max-width: 950px;
 
   .websiteInfo {
@@ -1394,7 +1403,7 @@ Adapted for small devices
 @media only screen and (max-width: 734px) {
   .body-container {
     /*/ smaller vertical padding for small devices /*/
-    padding: 24px 25px !important; 
+    padding: 24px 12px !important; 
   }
 
   h6.item-title {
@@ -1444,16 +1453,13 @@ Adapted for small devices
     display: block !important;
     width: 100%;
     text-align: center;
-    margin: 8px 0; 
+    margin: 16px 0; 
   }
 }
 
-/*/ add space after paragraph blocks /*/
-.h7 {
-  margin-bottom: 8px;
-}
-
 /*/ small caps for label in paragraph /*/
-.textLabel {
-  font-variant: small-caps; 
+.tEmphasize {
+  font-family: 'Bodoni Moda' !important;
+  font-weight: 700;
+  font-size: calc(100% + 3px);
 }
