@@ -45,8 +45,8 @@
 /*/ loading Spinner in ul /*/
 .spinner-container > div {
   margin: auto;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 body {
@@ -256,7 +256,6 @@ a {
 }
 
 header {
-  
   padding: 8px 0px;
   position: sticky;
   top: 0;
@@ -266,7 +265,6 @@ header {
   -webkit-backdrop-filter:saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 0.5px solid var(--separator);
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 40px 0px;
 }
 
 ul {
@@ -614,7 +612,7 @@ h4.subtopic {
 /*/ higher version of header for mobile devices /*/
 .header-mobile {
   display: none !important;
-  background-color: var(--systemHeaderMaterial) !important;
+  background-color: var(--systemHeaderMaterial);
 
   .logo-text {
     text-align: center;
@@ -1453,7 +1451,8 @@ Adapted for small devices
     display: block !important;
     width: 100%;
     text-align: center;
-    margin: 16px 0; 
+    margin: 16px 0;
+    padding: 0 !important; 
   }
 }
 

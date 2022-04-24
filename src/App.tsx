@@ -101,7 +101,7 @@ const App = () => {
             </div>
           </div>
           <div className="footer-legal">
-              <div className="websiteInfo">
+            <div className="websiteInfo">
               <div className="footnote inline">© 2021-{new Date().toLocaleDateString([], {year:'numeric'})} — France.</div>
               <div className="footnote inline">Créé par <a className="color" href="https://www.reddit.com/user/iKL3W" target="_blank" rel="noreferrer">u/iKL3W</a>, avec <a className="color" href="https://www.reddit.com/user/besthelloworld" target="_blank" rel="noreferrer">u/besthelloworld</a>.</div>
               <div className="footnote inline">Ce site web n'est pas affilié à Apple.</div>
