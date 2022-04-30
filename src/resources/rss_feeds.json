@@ -512,7 +512,15 @@
             "count": 1,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.la-croix.com/RSS/Economie/Economie-et-entreprises",
+            "name": "La Croix",
+            "specification": "nNotif firstHeadline",
+            "count": 2,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
+          } 
         ],
         "Industrie": [
           {
@@ -560,6 +568,16 @@
             "count": 2,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
+          }
+        ],
+        "Média":[
+          {
+            "url": "https://www.la-croix.com/RSS/Economie/Media",
+            "name": "La Croix",
+            "specification": "nList",
+            "count": 2,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -1502,14 +1520,6 @@
             "backgroundImg": "./radiocanada_bgIMG.png"
           },
           {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/livres/?outputType=xml",
-            "name": "Libération",
-            "specification": "nNotif firstFocus",
-            "count": 1,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          },
-          {
             "url": "https://www.lesinrocks.com/livres/feed/",
             "name": "Les Inrocks",
             "specification": "nNotif firstFocus",
@@ -1521,7 +1531,7 @@
             "url": "https://www.lepoint.fr/livres/rss.xml",
             "name": "Le Point",
             "specification": "nNotif firstFocus",
-            "count": 1,
+            "count": 2,
             "iconImg": "./lepointpop.png",
             "backgroundImg": "./lepoint_bgIMG.jpg"
           },
@@ -1529,7 +1539,7 @@
             "url": "https://www.lemonde.fr/livres/rss_full.xml",
             "name": "Le Monde",
             "specification": "nNotif firstFocus",
-            "count": 1,
+            "count": 3,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
           },
@@ -1548,7 +1558,15 @@
             "count": 1,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
-          } 
+          },
+          {
+            "url": "https://www.la-croix.com/RSS/Culture/Livres-et-idees",
+            "name": "La Croix",
+            "specification": "nNotif firstFocus",
+            "count": 1,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
+          }  
         ],
         "Cinéma": [
           {
@@ -1608,14 +1626,6 @@
             "backgroundImg": "./numerama_bgIMG.jpg"
           },
           {
-            "url": "https://www.francetvinfo.fr/culture/cinema.rss",
-            "name": "Franceinfo",
-            "specification": "nNotif firstHeadline",
-            "count": 1,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          },
-          {
             "url": "https://www.tomsguide.fr/tag/cinema/feed/",
             "name": "Tom's guide",
             "specification": "nNotif firstHeadline",
@@ -1646,7 +1656,15 @@
             "count": 2,
             "iconImg": "./radiocanada.png",
             "backgroundImg": "./radiocanada_bgIMG.png"
-          }
+          },
+          {
+            "url": "https://www.la-croix.com/RSS/Culture/Cinema",
+            "name": "La Croix",
+            "specification": "nNotif firstFocus",
+            "count": 2,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
+          } 
         ],
         "Séries & TV": [
           {
@@ -1696,6 +1714,14 @@
             "count": 1,
             "iconImg": "./radiocanada.png",
             "backgroundImg": "./radiocanada_bgIMG.png"
+          },
+          {
+            "url": "https://www.la-croix.com/RSS/Culture/TV-Radio",
+            "name": "La Croix",
+            "specification": "nList",
+            "count": 2,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
           }
         ],
         "Arts visuels & graphiques": [
@@ -1732,15 +1758,7 @@
             "backgroundImg": "./lapresse_bgIMG.jpg"
           } 
         ],
-        "Expositions & événements": [
-          {
-            "url": "https://www.lefigaro.fr/rss/figaro_theatre.xml",
-            "name": "Le Figaro",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./lefigaro.png",
-            "backgroundImg": "./lefigaro_bgIMG.png"
-          },
+        "Expositions": [
           {
             "url": "https://www.lefigaro.fr/rss/figaro_arts-expositions.xml",
             "name": "Le Figaro",
@@ -1750,9 +1768,43 @@
             "backgroundImg": "./lefigaro_bgIMG.png"
           },
           {
+            "url": "https://www.francetvinfo.fr/culture/arts-expos.rss",
+            "name": "Franceinfo",
+            "specification": "nList",
+            "count": 2,
+            "iconImg": "./franceinfo.jpeg",
+            "backgroundImg": "./franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.la-croix.com/RSS/Culture/Expositions",
+            "name": "La Croix",
+            "specification": "nList",
+            "count": 2,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
+          } 
+        ],
+        "Théâtre & spectacles": [
+          {
+            "url": "https://www.lefigaro.fr/rss/figaro_theatre.xml",
+            "name": "Le Figaro",
+            "specification": "nList firstHeadline",
+            "count": 1,
+            "iconImg": "./lefigaro.png",
+            "backgroundImg": "./lefigaro_bgIMG.png"
+          },
+          {
+            "url": "https://www.lemonde.fr/scenes/rss_full.xml",
+            "name": "Le Monde",
+            "specification": "nList firstHeadline",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
             "url": "https://www.ladepeche.fr/culture-et-loisirs/spectacles/rss.xml",
             "name": "La Dépêche",
-            "specification": "nList",
+            "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./ladepeche.png",
             "backgroundImg": "./ladepeche_bgIMG.jpg"
@@ -1760,7 +1812,7 @@
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/scenes/?outputType=xml",
             "name": "Libération",
-            "specification": "nList",
+            "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
@@ -1768,27 +1820,19 @@
           {
             "url": "https://www.lesinrocks.com/arts-et-scenes/feed/",
             "name": "Les Inrocks",
-            "specification": "nList",
+            "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./lesinrocks.png",
             "backgroundImg": "./lesinrocks_bgIMG.jpg"
           },
           {
-            "url": "https://www.lemonde.fr/scenes/rss_full.xml",
-            "name": "Le Monde",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.francetvinfo.fr/culture/arts-expos.rss",
-            "name": "Franceinfo",
-            "specification": "nList",
+            "url": "https://www.la-croix.com/RSS/Culture/Theatre",
+            "name": "La Croix",
+            "specification": "nList firstHeadline",
             "count": 2,
-            "iconImg": "./franceinfo.jpeg",
-            "backgroundImg": "./franceinfo_bgIMG.jpg"
-          }
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
+          } 
         ],
         "Jeux vidéo": [
           {
@@ -1847,6 +1891,64 @@
             "iconImg": "./lacremedugaming.png",
             "backgroundImg": "./lacremedugaming_bgIMG.jpg"
           }
+        ],
+        "Musique": [
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/musique/?outputType=xml",
+            "name": "Libération",
+            "specification": "nList firstHeadline",
+            "count": 1,
+            "iconImg": "./liberation.png",
+            "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lesinrocks.com/musique/feed/",
+            "name": "Les Inrocks",
+            "specification": "nList firstHeadline",
+            "count": 2,
+            "iconImg": "./lesinrocks.png",
+            "backgroundImg": "./lesinrocks_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.melty.fr/musique/feed",
+            "name": "Melty",
+            "specification": "nList firstHeadline",
+            "count": 2,
+            "iconImg": "./melty.png",
+            "backgroundImg": "./melty_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/arts/musique/",
+            "name": "La Presse",
+            "specification": "nList firstHeadline",
+            "count": 2,
+            "iconImg": "./lapresse.png",
+            "backgroundImg": "./lapresse_bgIMG.jpg"
+          },
+          {
+            "url": "https://ici.radio-canada.ca/rss/1000230",
+            "name": "Radio Canada",
+            "specification": "nList firstHeadline",
+            "count": 2,
+            "iconImg": "./radiocanada.png",
+            "backgroundImg": "./radiocanada_bgIMG.png"
+          },
+          {
+            "url": "https://www.fip.fr/rss.xml",
+            "name": "FIP",
+            "specification": "nList firstHeadline",
+            "count": 3,
+            "iconImg": "./fip.png",
+            "backgroundImg": "./fip_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.la-croix.com/RSS/Culture/Musique",
+            "name": "La Croix",
+            "specification": "nList firstHeadline",
+            "count": 1,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
+          }  
         ],
         "Mode & beauté" : [
           {
@@ -1940,16 +2042,6 @@
             "backgroundImg": "./capital_bgIMG.jpg"
           }
         ],
-        "Arts du spectacle": [
-          {
-            "url": "https://www.lemonde.fr/scenes/rss_full.xml",
-            "name": "Le Monde",
-            "specification": "nList",
-            "count": 5,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          }
-        ],
         "BD, comics & mangas": [
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/bd/?outputType=xml",
@@ -2007,56 +2099,6 @@
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
           }
-        ],
-         "Musique": [
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/musique/?outputType=xml",
-            "name": "Libération",
-            "specification": "nList firstHeadline",
-            "count": 1,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lesinrocks.com/musique/feed/",
-            "name": "Les Inrocks",
-            "specification": "nList firstHeadline",
-            "count": 2,
-            "iconImg": "./lesinrocks.png",
-            "backgroundImg": "./lesinrocks_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.melty.fr/musique/feed",
-            "name": "Melty",
-            "specification": "nList firstHeadline",
-            "count": 2,
-            "iconImg": "./melty.png",
-            "backgroundImg": "./melty_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lapresse.ca/arts/musique/",
-            "name": "La Presse",
-            "specification": "nList firstHeadline",
-            "count": 2,
-            "iconImg": "./lapresse.png",
-            "backgroundImg": "./lapresse_bgIMG.jpg"
-          },
-          {
-            "url": "https://ici.radio-canada.ca/rss/1000230",
-            "name": "Radio Canada",
-            "specification": "nList firstHeadline",
-            "count": 2,
-            "iconImg": "./radiocanada.png",
-            "backgroundImg": "./radiocanada_bgIMG.png"
-          },
-          {
-            "url": "https://www.fip.fr/rss.xml",
-            "name": "FIP",
-            "specification": "nList firstHeadline",
-            "count": 3,
-            "iconImg": "./fip.png",
-            "backgroundImg": "./fip_bgIMG.jpg"
-          } 
         ],
         "Histoire": [
           {
@@ -2220,12 +2262,12 @@
             "backgroundImg": "./bfmtv_bgIMG.jpg"
           },
           {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=europe,ue",
-            "name": "Capital",
+            "url": "https://www.la-croix.com/RSS/Monde/Europe",
+            "name": "La Croix",
             "specification": "nNotif firstHeadline",
-            "count": 1,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
+            "count": 2,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
           },
           {
             "url": "https://news.un.org/feed/subscribe/fr/news/region/europe/feed/rss.xml",
@@ -2928,7 +2970,7 @@
           {
             "url": "https://www.europe1.fr/rss/politique.xml",
             "name": "Europe 1",
-            "specification": "nList",
+            "specification": "nNotif firstHeadline",
             "count": 4,
             "iconImg": "./europe1.png",
             "backgroundImg": "./europe1_bgIMG.jpg"
@@ -2973,12 +3015,20 @@
             "url": "https://news.un.org/feed/subscribe/fr/news/topic/migrants-and-refugees/feed/rss.xml",
             "name": "Nations Unies",
             "specification": "nList",
-            "count": 4,
+            "count": 2,
             "iconImg": "./nationsunies.png",
             "backgroundImg": "./nationsunies_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.la-croix.com/RSS/Solidarite/Actualite/Immigration",
+            "name": "La Croix",
+            "specification": "nList",
+            "count": 3,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
+          } 
         ],
-        "Paix": [
+        "Paix & sécurité": [
           {
             "url": "https://news.un.org/feed/subscribe/fr/news/topic/peace-and-security/feed/rss.xml",
             "name": "Nations Unies",
@@ -2986,7 +3036,15 @@
             "count": 4,
             "iconImg": "./nationsunies.png",
             "backgroundImg": "./nationsunies_bgIMG.jpg"
-          } 
+          },
+          {
+            "url": "https://www.la-croix.com/RSS/France/Securite",
+            "name": "La Croix",
+            "specification": "nList",
+            "count": 2,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
+          }
         ],
         "Presse étrangère": [
           {
@@ -3088,15 +3146,7 @@
             "url": "https://www.lemonde.fr/editoriaux/rss_full.xml",
             "name": "Le Monde",
             "specification": "nNotif firstFocus",
-            "count": 4,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/chroniques/rss_full.xml",
-            "name": "Le Monde",
-            "specification": "nNotif firstFocus",
-            "count": 1,
+            "count": 3,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
           },
@@ -3139,6 +3189,14 @@
             "count": 3,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.la-croix.com/RSS/UNIVERS_WDEB#_ga=2.217998102.1260305979.1651324089-660272716.1651321082",
+            "name": "La Croix",
+            "specification": "nNotif firstFocus",
+            "count": 4,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
           }   
         ],
         "Monde": [
@@ -3625,14 +3683,6 @@
             "backgroundImg": "./courrierinter_bgIMG.jpg"
           },
           {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite&tags=ecole",
-            "name": "Capital",
-            "specification": "nNotif firstHeadline",
-            "count": 1,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
-          },
-          {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/societe/education/?outputType=xml",
             "name": "Libération",
             "specification": "nNotif firstHeadline",
@@ -3647,7 +3697,15 @@
             "count": 2,
             "iconImg": "./nationsunies.png",
             "backgroundImg": "./nationsunies_bgIMG.jpg"
-          }  
+          },
+          {
+            "url": "https://www.la-croix.com/RSS/Famille/Education",
+            "name": "La Croix",
+            "specification": "nNotif firstHeadline",
+            "count": 2,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
+          }   
         ],
         "Police & justice":[
           {
@@ -3725,6 +3783,16 @@
             "backgroundImg": "./capital_bgIMG.jpg"
           }
         ],
+        "Solidarité": [
+          {
+            "url": "https://www.la-croix.com/RSS/France/Initiatives-et-solidarite",
+            "name": "La Croix",
+            "specification": "nList",
+            "count": 2,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
+          }
+        ],
         "Religions": [
           {
             "url": "https://www.lemonde.fr/religions/rss_full.xml",
@@ -3777,6 +3845,14 @@
             "count": 2,
             "iconImg": "./nationsunies.png",
             "backgroundImg": "./nationsunies_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.la-croix.com/RSS/France/Exclusion",
+            "name": "La Croix",
+            "specification": "nList",
+            "count": 2,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -3875,6 +3951,88 @@
             "backgroundImg": "./lapresse_bgIMG.jpg"
           }
         ],
+        "Médecine, santé & éthique": [
+          {
+            "url": "https://www.ladepeche.fr/sante/rss.xml",
+            "name": "La Dépêche",
+            "specification": "nList firstHeadline",
+            "count": 1,
+            "iconImg": "./ladepeche.png",
+            "backgroundImg": "./ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.leprogres.fr/magazine-sante/rss",
+            "name": "Le Progrès",
+            "specification": "nList firstHeadline",
+            "count": 1,
+            "iconImg": "./leprogres.png",
+            "backgroundImg": "./leprogres_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/sante/",
+            "name": "BFM TV",
+            "specification": "nList firstHeadline",
+            "count": 3,
+            "iconImg": "./bfmtv.png",
+            "backgroundImg": "./bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/medecine/rss_full.xml",
+            "name": "Le Monde",
+            "specification": "nList firstHeadline",
+            "count": 1,
+            "iconImg": "./lemonde.png",
+            "backgroundImg": "./lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.sciencesetavenir.fr/sante/rss.xml",
+            "name": "Sciences et Avenir",
+            "specification": "nList firstHeadline",
+            "count": 2,
+            "iconImg": "./sciencesetavenir.png",
+            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.futura-sciences.com/rss/sante/actualites.xml",
+            "name": "Futura Sciences",
+            "specification": "nList firstHeadline",
+            "count": 2,
+            "iconImg": "./futura.png",
+            "backgroundImg": "./futura_bgIMG.jpg"
+          },
+          {
+            "url": "https://information.tv5monde.com/afprss/francais--journal--medecine",
+            "name": "TV5 Monde",
+            "specification": "nList firstHeadline",
+            "count": 1,
+            "iconImg": "./tv5monde.png",
+            "backgroundImg": "./tv5monde_bgIMG.jpg"
+          },
+          {
+            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=sante",
+            "name": "Capital",
+            "specification": "nList firstHeadline",
+            "count": 1,
+            "iconImg": "./capital.png",
+            "backgroundImg": "./capital_bgIMG.jpg"
+          },
+          {
+            "url": "https://news.un.org/feed/subscribe/fr/news/topic/health/feed/rss.xml",
+            "name": "Nations Unies",
+            "specification": "nList firstHeadline",
+            "count": 2,
+            "iconImg": "./nationsunies.png",
+            "backgroundImg": "./nationsunies_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.la-croix.com/RSS/Sciences-et-ethique/Ethique#_ga=2.9210677.1260305979.1651324089-660272716.1651321082",
+            "name": "La Croix",
+            "specification": "nList firstHeadline",
+            "count": 2,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
+          } 
+        ],
         "Astronomie & espace": [
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sciences/espace/?outputType=xml",
@@ -3916,80 +4074,6 @@
             "iconImg": "./futura.png",
             "backgroundImg": "./futura_bgIMG.jpg"
           }
-        ],
-        "Médecine & santé": [
-          {
-            "url": "https://www.ladepeche.fr/sante/rss.xml",
-            "name": "La Dépêche",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./ladepeche.png",
-            "backgroundImg": "./ladepeche_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.leprogres.fr/magazine-sante/rss",
-            "name": "Le Progrès",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./leprogres.png",
-            "backgroundImg": "./leprogres_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/sante/",
-            "name": "BFM TV",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./bfmtv.png",
-            "backgroundImg": "./bfmtv_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/medecine/rss_full.xml",
-            "name": "Le Monde",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./lemonde.png",
-            "backgroundImg": "./lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.sciencesetavenir.fr/sante/rss.xml",
-            "name": "Sciences et Avenir",
-            "specification": "nList",
-            "count": 2,
-            "iconImg": "./sciencesetavenir.png",
-            "backgroundImg": "./sciencesetavenir_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.futura-sciences.com/rss/sante/actualites.xml",
-            "name": "Futura Sciences",
-            "specification": "nList",
-            "count": 2,
-            "iconImg": "./futura.png",
-            "backgroundImg": "./futura_bgIMG.jpg"
-          },
-          {
-            "url": "https://information.tv5monde.com/afprss/francais--journal--medecine",
-            "name": "TV5 Monde",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./tv5monde.png",
-            "backgroundImg": "./tv5monde_bgIMG.jpg"
-          },
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=sante",
-            "name": "Capital",
-            "specification": "nList",
-            "count": 2,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
-          },
-          {
-            "url": "https://news.un.org/feed/subscribe/fr/news/topic/health/feed/rss.xml",
-            "name": "Nations Unies",
-            "specification": "nList",
-            "count": 2,
-            "iconImg": "./nationsunies.png",
-            "backgroundImg": "./nationsunies_bgIMG.jpg"
-          } 
         ],
         "Sciences physiques & mathématiques": [
           {
@@ -4187,14 +4271,6 @@
             "backgroundImg": "./tv5monde_bgIMG.jpg"
           },
           {
-            "url": "https://www.forbes.fr/environnement/feed/",
-            "name": "Forbes",
-            "specification": "nList firstHeadline",
-            "count": 1,
-            "iconImg": "./forbes.png",
-            "backgroundImg": "./forbes_bgIMG.jpg"
-          },
-          {
             "url": "https://www.lapresse.ca/actualites/environnement/rss",
             "name": "La Presse",
             "specification": "nList firstHeadline",
@@ -4217,7 +4293,15 @@
             "count": 2,
             "iconImg": "./nationsunies.png",
             "backgroundImg": "./nationsunies_bgIMG.jpg"
-          } 
+          },
+          {
+            "url": "https://www.la-croix.com/RSS/Ethique/Environnement/Climat",
+            "name": "La Croix",
+            "specification": "nList firstHeadline",
+            "count": 1,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
+          }  
         ],
         "Énergies & transports": [
           {
@@ -4227,7 +4311,15 @@
             "count": 4,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
-          } 
+          },
+          {
+            "url": "https://www.la-croix.com/RSS/environnement/transition-energetique",
+            "name": "La Croix",
+            "specification": "nList",
+            "count": 2,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
+          }   
         ],
         "Alimentation": [
           {
@@ -4239,7 +4331,7 @@
             "backgroundImg": "./capital_bgIMG.jpg"
           } 
         ],
-        "Animaux": [
+        "Biodiversité": [
           {
             "url": "https://www.francetvinfo.fr/animaux.rss",
             "name": "Franceinfo",
@@ -4281,12 +4373,12 @@
             "backgroundImg": "./lapresse_bgIMG.jpg"
           },
           {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=animaux",
-            "name": "Capital",
+            "url": "https://www.la-croix.com/RSS/Sciences-et-ethique/Environnement/Biodiversite",
+            "name": "La Croix",
             "specification": "nList",
             "count": 1,
-            "iconImg": "./capital.png",
-            "backgroundImg": "./capital_bgIMG.jpg"
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
           } 
         ],
         "Agriculture": [
@@ -4390,7 +4482,7 @@
             "url": "https://www.futura-sciences.com/rss/high-tech/actualites.xml",
             "name": "Futura Sciences",
             "specification": "nNotif firstHeadline",
-            "count": 2,
+            "count": 1,
             "iconImg": "./futura.png",
             "backgroundImg": "./futura_bgIMG.jpg"
           },
@@ -4406,7 +4498,7 @@
             "url": "https://www.01net.com/rss/actualites/technos/",
             "name": "01NET",
             "specification": "nNotif firstHeadline",
-            "count": 2,
+            "count": 1,
             "iconImg": "./01net.png",
             "backgroundImg": ".01net_bgIMG.jpg"
           },
@@ -4433,7 +4525,15 @@
             "count": 2,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.la-croix.com/RSS/Sciences-et-ethique/Numerique",
+            "name": "La Croix",
+            "specification": "nNotif firstHeadline",
+            "count": 1,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
+          } 
         ],
         "Smartphones": [
           {
@@ -4708,7 +4808,7 @@
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/?outputType=xml",
             "name": "Libération",
             "specification": "nNotif firstFocus",
-            "count": 1,
+            "count": 2,
             "iconImg": "./liberation.png",
             "backgroundImg": "./liberation_bgIMG.jpg"
           },
@@ -4732,7 +4832,7 @@
             "url": "https://www.lemonde.fr/m-styles/rss_full.xml",
             "name": "Le Monde",
             "specification": "nNotif firstFocus",
-            "count": 1,
+            "count": 2,
             "iconImg": "./lemonde.png",
             "backgroundImg": "./lemonde_bgIMG.jpg"
           },
@@ -4861,7 +4961,7 @@
             "backgroundImg": "./capital_bgIMG.jpg"
           } 
         ],
-        "Gastronomie & terroir": [
+        "Gastronomie, cuisine & terroir": [
           {
             "url": "https://www.ladepeche.fr/culture-et-loisirs/gastronomie-et-terroir/rss.xml",
             "name": "La Dépêche",
@@ -4917,7 +5017,15 @@
             "count": 2,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
-          }  
+          },
+          {
+            "url": "https://www.la-croix.com/RSS/art-de-vivre/idee-recette-cuisine-facile-rapide-menu-repas",
+            "name": "La Croix",
+            "specification": "nList",
+            "count": 1,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
+          }    
         ],
         "Luxe": [
           {
@@ -4942,7 +5050,7 @@
             "url": "https://www.lapresse.ca/arts/celebrites/rss",
             "name": "La Presse",
             "specification": "nList",
-            "count": 3,
+            "count": 1,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
           },
@@ -4984,12 +5092,12 @@
             "url": "https://cdn1-parismatch.lanmedia.fr/var/exports/rss/rss-royal-blog.xml",
             "name": "Paris Match",
             "specification": "nList",
-            "count": 4,
+            "count": 5,
             "iconImg": "./parismatch.png",
             "backgroundImg": "./parismatch_bgIMG.png"
           } 
         ],
-        "Maison": [
+        "Maison & jardin": [
           {
             "url": "https://maison.20minutes.fr/feed/",
             "name": "20 Minutes",
@@ -5005,6 +5113,14 @@
             "count": 3,
             "iconImg": "./lapresse.png",
             "backgroundImg": "./lapresse_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.la-croix.com/RSS/Culture/jardin-idees-conseils-jardinage",
+            "name": "La Croix",
+            "specification": "nList",
+            "count": 1,
+            "iconImg": "./lacroix.png",
+            "backgroundImg": "./lacroix_bgIMG.jpg"
           } 
         ],
         "Insolite & tendances": [

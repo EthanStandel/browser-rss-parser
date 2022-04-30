@@ -94,17 +94,17 @@ const App = () => {
           <div className="footer-header-app">
             <h1 className="logo-text">nuntium</h1>
             <div className="h7">
-              L'application <span className="tEmphasize">nuntium</span> permet de faire un tour des actualités locales, nationales et internationales &#8209;&nbsp;avec des articles de rédactions étrangères. 
+              Une application pour faire un tour des actualités locales, nationales et internationales avec des articles de rédactions françaises et étrangères. 
             </div>
             <div className="h7">
-              Chaque sujet est traité en profondeur par les rédactions spécialisées pour permettre une information de qualité. De plus, les balados et autres émissions sont disponibles tout le temps pour suivre l'actualité.
+              Chaque sujet est traité en profondeur par les rédactions spécialisées pour permettre une information de qualité. Les balados et autres émissions sont disponibles pour suivre l'actualité du globe à toute heure.
             </div>
           </div>
           <div className="footer-legal">
             <div className="websiteInfo">
               <div className="footnote inline">© 2021-{new Date().toLocaleDateString([], {year:'numeric'})} — France.</div>
               <div className="footnote inline">Créé par <a className="color" href="https://www.reddit.com/user/iKL3W" target="_blank" rel="noreferrer">u/iKL3W</a>, avec <a className="color" href="https://www.reddit.com/user/besthelloworld" target="_blank" rel="noreferrer">u/besthelloworld</a>.</div>
-              <div className="footnote inline">Ce site web n'est pas affilié à Apple.</div>
+              <div className="footnote inline"><span className="tEmphasize">nuntium</span> n'est affilié à aucune rédaction, ni à Apple.</div>
             </div>
             <div className="mini-links footnote bold">
               <a href="mailto:clement.krajecki@gmail.com?subject=nuntium&body=Bonjour!">Contact</a>
