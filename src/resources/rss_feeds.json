@@ -1668,14 +1668,6 @@
         ],
         "Séries & TV": [
           {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/culture/series/?outputType=xml",
-            "name": "Libération",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./liberation.png",
-            "backgroundImg": "./liberation_bgIMG.jpg"
-          },
-          {
             "url": "https://www.telerama.fr/rss/series-tv.xml",
             "name": "Télérama",
             "specification": "nList",
@@ -1771,7 +1763,7 @@
             "url": "https://www.francetvinfo.fr/culture/arts-expos.rss",
             "name": "Franceinfo",
             "specification": "nList",
-            "count": 2,
+            "count": 3,
             "iconImg": "./franceinfo.jpeg",
             "backgroundImg": "./franceinfo_bgIMG.jpg"
           },
@@ -1779,7 +1771,7 @@
             "url": "https://www.la-croix.com/RSS/Culture/Expositions",
             "name": "La Croix",
             "specification": "nList",
-            "count": 2,
+            "count": 3,
             "iconImg": "./lacroix.png",
             "backgroundImg": "./lacroix_bgIMG.jpg"
           } 
@@ -1855,7 +1847,7 @@
             "url": "https://www.lesinrocks.com/jeux-video/feed/",
             "name": "Les Inrocks",
             "specification": "nList firstHeadline",
-            "count": 2,
+            "count": 1,
             "iconImg": "./lesinrocks.png",
             "backgroundImg": "./lesinrocks_bgIMG.jpg"
           },
@@ -2124,14 +2116,6 @@
             "count": 2,
             "iconImg": "./france3.png",
             "backgroundImg": "./france3_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.courrierinternational.com/feed/category/6679/rss.xml",
-            "name": "Courrier International",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./courrierinter.png",
-            "backgroundImg": "./courrierinter_bgIMG.jpg"
           },
           {
             "url": "https://www.lhistoire.fr/rss.xml",
@@ -3678,7 +3662,7 @@
             "url": "https://www.courrierinternational.com/feed/category/6997/rss.xml",
             "name": "Courrier International",
             "specification": "nNotif firstHeadline",
-            "count": 2,
+            "count": 1,
             "iconImg": "./courrierinter.png",
             "backgroundImg": "./courrierinter_bgIMG.jpg"
           },
@@ -3735,8 +3719,8 @@
           {
             "url": "https://france3-regions.francetvinfo.fr/societe/justice/rss",
             "name": "France 3",
-            "specification": "nList firstHeadline",
-            "count": 1,
+            "specification": "nList firstHeadline bigList",
+            "count": 3,
             "iconImg": "./france3.png",
             "backgroundImg": "./france3_bgIMG.jpg"
           },
@@ -3744,7 +3728,7 @@
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=justice,police",
             "name": "Capital",
             "specification": "nList firstHeadline",
-            "count": 3,
+            "count": 1,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
           },
@@ -3834,7 +3818,7 @@
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=discrimination,harcelement,racisme,sexisme",
             "name": "Capital",
             "specification": "nList",
-            "count": 2,
+            "count": 1,
             "iconImg": "./capital.png",
             "backgroundImg": "./capital_bgIMG.jpg"
           },
@@ -4216,7 +4200,7 @@
             "url": "https://news.un.org/feed/subscribe/fr/news/topic/climate-change/feed/rss.xml",
             "name": "Nations Unies",
             "specification": "nNotif firstHeadline",
-            "count": 3,
+            "count": 2,
             "iconImg": "./nationsunies.png",
             "backgroundImg": "./nationsunies_bgIMG.jpg"
           } 
