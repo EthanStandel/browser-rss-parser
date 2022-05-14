@@ -168,7 +168,7 @@ const PrInterComponent = () => {
           <div className="item-container">
             <div className="item-F-line">
               <h6 className="item-title">Le rendez-vous de la presse étrangère</h6>
-              <div className="icon-footnote-container footnote">4 min</div>
+              <div className="icon-footnote-container footnote">25 min</div>
             </div>    
             <div className="item-infos">
               <div className="item-descriptionWrapper">
