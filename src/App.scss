@@ -5,7 +5,7 @@
 :root {
   --rounded-corners-block: 12px;
 
-  --colorTheme: var(--systemPink);
+  --headlinesColorTheme: var(--systemPink);
   --cultureColorTheme: burlywood;
   --sportColorTheme: darkgoldenrod;
   --ecoColorTheme: orange;
@@ -24,22 +24,83 @@
 
   /*/
   colorTheme must be specified,
-    1- for underlining style (57)
-    2- for subtopics navbar li color (160)
-    3- for topics navbar li color scheme (237)
-    4- for topics navbar li hover effect (320)
-    5- for topics titles in body-container (377)
+    1- for App component (38)
+    2- for underlining style (57)
+    3- for subtopics navbar li color (160)
+    4- for topics navbar li color scheme (237)
+    5- for topics navbar li hover effect (320)
+    6- for topics titles in body-container (377)
     
   /*/
 }
 
 /*/ color focus for the entire webpage /*/
-.color {
-  color: var(--colorTheme);
-}
+.App {
+  --colorTheme: var(--headlinesColorTheme);
 
-.secondaryColor {
-  color: var(--secondaryLabel);
+  &.Sport { 
+    --colorTheme: var(--sportColorTheme);
+  }
+
+  &.Économie {
+    --colorTheme: var(--ecoColorTheme);
+  }
+
+  &.Culture {
+    --colorTheme: var(--cultureColorTheme);
+  }
+
+  &.Presse {
+    --colorTheme: var(--presseinterColorTheme);
+  }
+
+  &.Monde {
+    --colorTheme: var(--mondeColorTheme);
+  }
+
+  &.Science {
+    --colorTheme: var(--scienceColorTheme);
+  }
+  
+  &.Europe {
+    --colorTheme: var(--europeColorTheme);
+  }
+
+  &.Politique {
+    --colorTheme: var(--polColorTheme);
+  }
+
+  &.Idées {
+    --colorTheme: var(--ideesColorTheme);
+  }
+
+  &.Société {
+    --colorTheme: var(--societeColorTheme);
+  }
+
+  &.Tech {
+    --colorTheme: var(--techColorTheme);
+  }
+  
+  &.Régions {
+    --colorTheme: var(--regionsColorTheme);
+  }
+
+  &.Nature {
+    --colorTheme: var(--natureColorTheme);
+  }
+
+  &.Art {
+    --colorTheme: var(--lifestyleColorTheme);
+  }
+
+  &.Auto {
+    --colorTheme: var(--autoColorTheme);
+  }
+
+  .color {
+    color: var(--colorTheme);
+  }
 }
 
 /*/ loading Spinner in ul /*/
@@ -65,17 +126,32 @@ body {
 .body-container {
   padding: 40px 25px;
   min-width: 222px;
-  max-width: 555px;
+  max-width: calc(100% - 166px);
   margin: auto;
+  overflow: auto;
   min-height: 100vh;
+
+
+  /*/ two colums displayed for large devices/*/
+  .LeftPodcastsColumn {
+    float: left;
+    width: 35%;
+    padding-right: 40px;
+  }
+  
+  .RightRSSColumn {
+    float: left;
+    width: calc(65% - 40px);
+  }
+
   
   /*/ underlining color depending on topic for li /*/   
   * {
-    text-decoration-color: var(--colorTheme);
+    text-decoration-color: var(--headlinesColorTheme);
   }
 
   .rss-podcasts .intro {
-    border-bottom-color: var(--colorTheme);
+    border-bottom-color: var(--headlinesColorTheme);
   }
 
   .Science {
@@ -164,17 +240,6 @@ body {
     }
   }
 
-  .Société {
-    
-    .rss-podcasts * {
-      border-bottom-color: var(--societeColorTheme);
-    }
-
-    * {
-      text-decoration-color: var(--societeColorTheme);
-    }
-  }
-
   .Tech {
 
     .rss-podcasts * {
@@ -246,6 +311,25 @@ body {
   
     * > ul > li > * > * > * {
       text-decoration-color: var(--presseinterColorTheme);
+    }
+  }
+
+  /*/ special case since Société can be found as subtopic (in Idées topic) /*/
+  .Société:not(.section) {
+
+    ul.rss-podcasts {
+
+      .intro {
+        border-bottom-color: var(--societeColorTheme);
+      }
+      
+      li > * > * > * > * {
+        text-decoration-color: var(--societeColorTheme); 
+      }
+    }
+  
+    * > ul > li > * > * > * {
+      text-decoration-color: var(--societeColorTheme);
     }
   }
 }
@@ -364,8 +448,8 @@ ul {
       }
     
       > button {
-        border: 2px solid var(--colorTheme);
-        color: var(--colorTheme);
+        border: 2px solid var(--headlinesColorTheme);
+        color: var(--headlinesColorTheme);
         padding: 2px 15px;
         border-radius: 15px;
         overflow: hidden;
@@ -377,7 +461,7 @@ ul {
         cursor: pointer;
     
         &:hover, &.selected {
-          background-color: var(--colorTheme);
+          background-color: var(--headlinesColorTheme);
           color: white;
     
           /*/ background color on hover for topics navbar /*/
@@ -540,7 +624,7 @@ ul {
 
 /*/ Title colors for topics /*/
 h2.bold {
-  color: var(--colorTheme);
+  color: var(--headlinesColorTheme);
 
   &.Culture {
     color: var(--cultureColorTheme);
@@ -635,7 +719,9 @@ header .logo-text {
   text-align: center;
   float: left;
   line-height: 25.6px;
+  height: 28px;
   padding: 0 30px !important;
+  border-right: 1.8px solid var(--separator);
 }
 
 
@@ -1361,9 +1447,9 @@ footer {
     text-align: left !important;
     padding: 0 0 15px 0;
     background: #653DAC;
-    background: -webkit-linear-gradient(to right, #653DAC, #fe2c57);
-    background: -moz-linear-gradient(to right, #653DAC, #fe2c57);
-    background: linear-gradient(to right, #653DAC, #fe2c57);
+    background: -webkit-linear-gradient(to right, #653DAC, var(--colorTheme));
+    background: -moz-linear-gradient(to right, #653DAC, var(--colorTheme));
+    background: linear-gradient(to right, var(--secondaryLabel), var(--colorTheme));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1401,7 +1487,13 @@ Adapted for small devices
 @media only screen and (max-width: 734px) {
   .body-container {
     /*/ smaller vertical padding for small devices /*/
-    padding: 24px 12px !important; 
+    padding: 24px 12px !important;
+    max-width: 555px;
+  }
+
+  .LeftPodcastsColumn, .RightRSSColumn {
+    /*/ display a sigle column on small devices /*/
+    width: 100% !important;
   }
 
   h6.item-title {

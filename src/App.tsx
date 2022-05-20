@@ -33,7 +33,7 @@ const App = () => {
   const CustomTopicComponent = topicComponents[topicFilter] ?? "div";
 
   return (
-    <div className="App">
+    <div className={topicFilter + " App"}>
       <div className="header-mobile">
         <h4 className="logo-text">nuntium</h4>
       </div>
@@ -75,7 +75,10 @@ const App = () => {
       <div className="body-container">
         <div className={topicFilter}>
           {<h2 className={"bold " + topicFilter}>{topicFilter}</h2>}
+          <div className="LeftPodcastsColumn">
           <CustomTopicComponent />
+          </div>
+          <div className="RightRSSColumn">
           {Object.entries(topics[topicFilter].subtopics)
             .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)
             .filter(([ key ]) => !subtopicFilter ? true : subtopicFilter === key)
@@ -87,6 +90,7 @@ const App = () => {
               </div>
             ))
           }
+          </div>
         </div>
       </div>
       <footer> 
@@ -94,23 +98,24 @@ const App = () => {
           <div className="footer-header-app">
             <h1 className="logo-text">nuntium</h1>
             <div className="h7">
-              Une application pour faire un tour des actualités locales, nationales et internationales avec des articles de rédactions françaises et étrangères. 
+              Une application pour faire un tour des actualités locales, nationales et internationales avec des articles de rédactions françaises (et francophones) et étrangères. 
             </div>
             <div className="h7">
-              Chaque sujet est traité en profondeur par les rédactions spécialisées pour permettre une information de qualité. Les balados et autres émissions sont disponibles pour suivre l'actualité du globe à toute heure.
+              Chaque sujet est traité en profondeur par les rédactions spécialisées pour une information de qualité. Les balados et autres émissions sont disponibles pour suivre l'actualité du globe à toute heure de la journée et de la nuit.
             </div>
           </div>
           <div className="footer-legal">
             <div className="websiteInfo">
               <div className="footnote inline">© 2021-{new Date().toLocaleDateString([], {year:'numeric'})} — France.</div>
               <div className="footnote inline">Créé par <a className="color" href="https://www.reddit.com/user/iKL3W" target="_blank" rel="noreferrer">u/iKL3W</a>, avec <a className="color" href="https://www.reddit.com/user/besthelloworld" target="_blank" rel="noreferrer">u/besthelloworld</a>.</div>
-              <div className="footnote inline"><span className="tEmphasize">nuntium</span> n'est affilié à aucune rédaction, ni à Apple.</div>
+              <div className="footnote inline"><span className="tEmphasize">nuntium</span> n'est affilié ni à Apple, ni à une quelconque rédaction.</div>
             </div>
             <div className="mini-links footnote bold">
               <a href="mailto:clement.krajecki@gmail.com?subject=nuntium&body=Bonjour!">Contact</a>
               <a href="https://github.com/EthanStandel/browser-rss-parser" target="_blank" rel="noreferrer">Github</a>
               <a href="http://atlasflux.saynete.net" target="_blank" rel="noreferrer">Atlas des flux</a>
               <a href="https://www.iptc.org/std/NewsCodes/treeview/mediatopic/mediatopic-fr.html" target="_blank" rel="noreferrer">NewsCodes</a>
+              <a href="https://fr.reactjs.org/" target="_blank" rel="noreferrer">React</a>
             </div>
           </div>
         </div>
