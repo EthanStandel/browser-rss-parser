@@ -39,7 +39,7 @@ const App = () => {
       </div>
       <header>
         <div className="headerTitle">
-          <h4 className="logo-text">nuntium</h4>
+          <h4 className="logo-text" onClick={() => setTopicFilter(topicFilter)}>nuntium</h4>
         </div>
         <div className="headerTopics">
           <ul className="topics-navbar r2 bold">
@@ -96,7 +96,7 @@ const App = () => {
       <footer> 
         <div className="footer-container">
           <div className="footer-header-app">
-            <h1 className="logo-text">nuntium</h1>
+            <h1 className="logo-text" onClick={() => setTopicFilter(topicFilter)}>nuntium</h1>
             <div className="h7">
               Une application pour faire un tour des actualités locales, nationales et internationales avec des articles de rédactions françaises (et francophones) et étrangères. 
             </div>
@@ -108,7 +108,7 @@ const App = () => {
             <div className="websiteInfo">
               <div className="footnote inline">© 2021-{new Date().toLocaleDateString([], {year:'numeric'})} — France.</div>
               <div className="footnote inline">Créé par <a className="color" href="https://www.reddit.com/user/iKL3W" target="_blank" rel="noreferrer">u/iKL3W</a>, avec <a className="color" href="https://www.reddit.com/user/besthelloworld" target="_blank" rel="noreferrer">u/besthelloworld</a>.</div>
-              <div className="footnote inline"><span className="tEmphasize">nuntium</span> n'est affilié ni à Apple, ni à une quelconque rédaction.</div>
+              <div className="footnote inline"><span className="tEmphasize">nuntium</span> n'est affilié ni à <a href="https://www.apple.com" target="_blank" rel="noreferrer">Apple</a>, ni à une quelconque rédaction.</div>
             </div>
             <div className="mini-links footnote bold">
               <a href="mailto:clement.krajecki@gmail.com?subject=nuntium&body=Bonjour!">Contact</a>
