@@ -122,6 +122,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             ?? item.enclosure?.url ? item.enclosure?.url 
             : source.backgroundImg;
 
+            const AppIconImg = source.iconImg ?? "./icons/WebsitesIcons/applenews.png";
 
             let author = item.author ?? item["dc:creator"];
 
@@ -132,7 +133,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                 <a href={item.link} target="_blank" rel="noreferrer">
                   <div className="media">
                     <div className="icon-image"><img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/></div>
-                    <div className="icon-image">{source.iconImg && <img src={source.iconImg}/>}</div>
+                    <div className="icon-image"><img src={AppIconImg}/></div>
                     <div className="background-image">
                       <img src={imgHref}/>
                     </div>
