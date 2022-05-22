@@ -129,38 +129,48 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             let displayedDate = date?.setLocale("fr").toFormat("dd/M").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier');
 
             return (
+
               <li className={source.specification}>
-                <a href={item.link} target="_blank" rel="noreferrer">
-                  <div className="media">
-                    <div className="icon-image"><img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/></div>
-                    <div className="icon-image"><img src={AppIconImg}/></div>
-                    <div className="background-image">
-                      <img src={imgHref}/>
-                    </div>
-                    <div className="item-container">
-                      <div className="item-F-line">
-                        <div className="r1 bold source-name">
-                          {source.name}
-                          {source.subtopic && ` - ${source.subtopic}`}
+                <article>
+                  <a href={item.link} target="_blank" rel="noreferrer">
+                    <div className="media">
+                      <div className="icon-image">
+                        <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
+                      </div>
+                      <div className="icon-image">
+                        <img src={AppIconImg}/>
+                      </div>
+                      <div className="background-image">
+                        <img src={imgHref}/>
+                      </div>
+                      <div className="item-container">
+                        <div className="item-F-line">
+                          <div className="r1 bold source-name">
+                            {source.name}
+                            {source.subtopic && ` - ${source.subtopic}`}
+                          </div>
+                          <div className="r2 item-publish-date">
+                            {displayedDate}
+                          </div>
                         </div>
-                        <div className="r2 item-publish-date">{displayedDate}</div>
-                      </div>
-                      <h6 className="item-title"dangerouslySetInnerHTML={{ __html: _unescape(item.title ?? "")}} />
-                      <div className="item-infos">
-                        <div className="r2 item-publish-date">{displayedDate}</div>
-                        
-                        <div className="item-descriptionWrapper">
-                          {item.description &&
-                            <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: _unescape(item.description)}} />
-                          }
+                        <h6 className="item-title"dangerouslySetInnerHTML={{ __html: _unescape(item.title ?? "")}} />
+                        <div className="item-infos">
+                          <div className="r2 item-publish-date">
+                            {displayedDate}
+                          </div>
+                          <div className="item-descriptionWrapper">
+                            {item.description && <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: _unescape(item.description)}} />}
+                          </div>
+                        </div>
+                        <div className="item-infos2">
+                          <div className="r2 item-publish-date">
+                            {displayedDate}
+                          </div>
                         </div>
                       </div>
-                      <div className="item-infos2">
-                        <div className="r2 item-publish-date">{displayedDate}</div>
-                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </article>
               </li>
             );
           })

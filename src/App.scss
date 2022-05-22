@@ -29,7 +29,7 @@
     3- for subtopics navbar li color (160)
     4- for topics navbar li color scheme (237)
     5- for topics navbar li hover effect (320)
-    6- for topics titles in body-container (377)
+    6- for topics titles in ArticlesMain (377)
     
   /*/
 }
@@ -116,14 +116,14 @@ body {
 }
 
 /*/ elements to be not selectable /*/
-.headerTitle, .body-container, .mini-links a {
+.headerTitle, main.Articles, .mini-links a {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-.body-container {
+main.Articles {
   padding: 40px 25px;
   min-width: 222px;
   max-width: calc(100% - 166px);
@@ -687,7 +687,7 @@ h2.bold {
   }
 }
 
-/*/ Titles for subtopics in body-container /*/
+/*/ Titles for subtopics in ArticlesMain /*/
 h4.subtopic {
   font-weight: 600;
 }
@@ -697,6 +697,8 @@ h4.subtopic {
 .header-mobile {
   display: none !important;
   background-color: var(--systemHeaderMaterial);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
 
   .logo-text {
     text-align: center;
@@ -1436,6 +1438,7 @@ footer {
       color: var(--secondaryLabel);
       display: inline-block;
       padding-right: 30px;
+      margin-bottom: 0;
     }
   }
   
@@ -1485,7 +1488,7 @@ Adapted for small devices
 /*/
 
 @media only screen and (max-width: 734px) {
-  .body-container {
+  main.Articles {
     /*/ smaller vertical padding for small devices /*/
     padding: 24px 12px !important;
     max-width: 555px;
@@ -1549,8 +1552,9 @@ Adapted for small devices
 }
 
 /*/ small caps for label in paragraph /*/
-.tEmphasize {
+em {
   font-family: 'Bodoni Moda' !important;
   font-weight: 700;
   font-size: calc(100% + 3px);
+  font-style: normal;
 }
