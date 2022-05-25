@@ -30,7 +30,6 @@
     4- for topics navbar li color scheme (237)
     5- for topics navbar li hover effect (320)
     6- for topics titles in ArticlesMain (377)
-    
   /*/
 }
 
@@ -370,6 +369,7 @@ ul {
     li {
       margin: 1px 5px;
       display: inline-block;
+      color: var(--colorTheme);
     
       /*/ color styles for topics navbar -border and color /*/
       .Sport {
@@ -380,6 +380,11 @@ ul {
       .Culture {
         border-color: var(--cultureColorTheme);
         color: var(--cultureColorTheme);
+      }
+
+      .Société {
+        border-color: var(--societeColorTheme);
+        color: var(--societeColorTheme);
       }
     
       .Économie {
@@ -415,11 +420,6 @@ ul {
       .Idées {
         border-color: var(--ideesColorTheme);
         color: var(--ideesColorTheme);
-      }
-    
-      .Société {
-        border-color: var(--societeColorTheme);
-        color: var(--societeColorTheme);
       }
     
       .Tech {
@@ -466,6 +466,8 @@ ul {
     
           /*/ background color on hover for topics navbar /*/
           &:not(.subtopic-selection) {
+
+            background-color: var(--headlinesColorTheme);
             
             &.Économie {
               background-color: var(--ecoColorTheme);
@@ -473,6 +475,10 @@ ul {
           
             &.Culture {
               background-color: var(--cultureColorTheme);
+            }
+
+            &.Société {
+              background-color: var(--societeColorTheme);
             }
     
             &.Sport {
@@ -501,10 +507,6 @@ ul {
     
             &.Idées {
               background-color: var(--ideesColorTheme);
-            }
-    
-            &.Société {
-              background-color: var(--societeColorTheme);
             }
     
             &.Tech {
@@ -536,70 +538,14 @@ ul {
 /*/ subtopics menu on top of the page /*/
 .subtopic-selection ul.topics-navbar {
   padding-left: 15px;
-  
-  /*/ color for subtopic navbar li /*/
-  &.Économie li > *  {
-    color: var(--ecoColorTheme) !important;
-  }
-
-  &.Monde li > *  {
-    color: var(--mondeColorTheme) !important;
-  }
-
-  &.Sport li > *  {
-    color: var(--sportColorTheme) !important; 
-  }
-
-  &.Presse li > *  {
-    color: var(--presseinterColorTheme) !important;
-  }
-
-  &.Culture li > *  {
-    color: var(--cultureColorTheme) !important;
-  }
-
-  &.Science li > *  {
-    color: var(--scienceColorTheme) !important;
-  }
-
-  &.Europe li > *  {
-    color: var(--europeColorTheme) !important;
-  }
-
-  &.Politique li > *  {
-    color: var(--polColorTheme) !important;
-  }
-
-  &.Idées li > *  {
-    color: var(--ideesColorTheme) !important;
-  }
-
-  &.Société li > *  {
-    color: var(--societeColorTheme) !important;
-  }
-
-  &.Tech li > *  {
-    color: var(--techColorTheme) !important;
-  }
-
-  &.Régions li > *  {
-    color: var(--regionsColorTheme) !important;
-  }
-
-  &.Nature li > *  {
-    color: var(--natureColorTheme) !important;
-  }
-
-  &.Art li > *  {
-    color: var(--lifestyleColorTheme) !important;
-  }
-
-  &.Auto li > *  {
-    color: var(--autoColorTheme) !important;
-  }
 
   li {
     margin-top: 10px;
+
+    > * {
+      /*/ color for subtopic navbar li /*/
+      color: var(--colorTheme) !important;
+    }
   
     > button {
       border: none;
@@ -624,74 +570,13 @@ ul {
 
 /*/ Title colors for topics /*/
 h2.bold {
-  color: var(--headlinesColorTheme);
-
-  &.Culture {
-    color: var(--cultureColorTheme);
-  }
-
-  &.Sport {
-    color: var(--sportColorTheme);
-  }
-
-  &.Économie {
-    color: var(--ecoColorTheme);
-  }
-
-  &.Monde {
-    color: var(--mondeColorTheme);
-  }
-
-  &.Presse {
-    color: var(--presseinterColorTheme);
-  }
-
-  &.Science {
-    color: var(--scienceColorTheme);
-  }
-  
-  &.Europe {
-    color: var(--europeColorTheme);
-  }
-
-  &.Politique {
-    color: var(--polColorTheme);
-  }
-
-  &.Idées {
-    color: var(--ideesColorTheme);
-  }
-
-  &.Société {
-    color: var(--societeColorTheme);
-  }
-
-  &.Tech {
-    color: var(--techColorTheme);
-  }
-
-  &.Régions {
-    color: var(--regionsColorTheme);
-  }
-
-  &.Nature {
-    color: var(--natureColorTheme);
-  }
-
-  &.Art {
-    color: var(--lifestyleColorTheme);
-  }
-
-  &.Auto {
-    color: var(--autoColorTheme);
-  }
+  color: var(--colorTheme);
 }
 
 /*/ Titles for subtopics in ArticlesMain /*/
 h4.subtopic {
   font-weight: 600;
 }
-
 
 /*/ higher version of header for mobile devices /*/
 .header-mobile {
@@ -1450,9 +1335,9 @@ footer {
     text-align: left !important;
     padding: 0 0 15px 0;
     background: #653DAC;
-    background: -webkit-linear-gradient(to right, #653DAC, var(--colorTheme));
-    background: -moz-linear-gradient(to right, #653DAC, var(--colorTheme));
-    background: linear-gradient(to right, var(--secondaryLabel), var(--colorTheme));
+    background: -webkit-linear-gradient(to right, #653DAC, var(--colorTheme) 55%);
+    background: -moz-linear-gradient(to right, #653DAC, var(--colorTheme) 55%);
+    background: linear-gradient(to right, var(--secondaryLabel), var(--colorTheme) 55%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1470,8 +1355,8 @@ footer {
     }
   
     a:not(:last-child) {
-      border-right: 1.6px solid var(--tertiaryLabel);
-      margin-right: 7px !important;
+      border-right: 1.6px solid var(--colorTheme);
+      margin-right: 10px !important;
     }
   }
 }
