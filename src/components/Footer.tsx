@@ -5,10 +5,10 @@ export const Footer = () =>  {
       <section className="footer-header-app">
         <h1 className="logo-text">nuntium</h1>
         <p className="h7">
-          Une application pour faire un tour des actualités locales, nationales et internationales avec des articles de rédactions françaises (et francophones) et étrangères. 
+          Une application pour faire un tour des actualités locales, nationales et internationales avec des articles de rédactions françaises, francophones et étrangères. 
         </p>
         <p className="h7">
-          Chaque sujet est traité en profondeur par les rédactions spécialisées pour une information de qualité. Les balados et autres émissions sont disponibles pour suivre l'actualité du globe à toute heure de la journée et de la nuit.
+          Chaque sujet est traité en profondeur par les rédactions spécialisées pour une information de qualité. Les balados et autres émissions sont disponibles pour suivre l'actualité du globe à toute heure du jour et de la nuit.
         </p>
       </section>
       <section className="footer-legal">

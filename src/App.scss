@@ -129,6 +129,8 @@ main.Articles {
   margin: auto;
   overflow: hidden;
   min-height: 100vh;
+  display: grid;
+  justify-content: center;
 
 
   /*/ two colums displayed for large devices/*/
@@ -136,11 +138,18 @@ main.Articles {
     float: left;
     width: 35%;
     padding-right: 40px;
+    max-width: 444px;
   }
   
   .RightRSSColumn {
     float: left;
     width: calc(65% - 40px);
+    max-width: 666px;
+
+    > * {
+      width: 1000px;
+      max-width: 666px;
+    }
   }
 
   
@@ -624,6 +633,8 @@ ul {
     .intro {
       padding: 15px 10px;
       border-bottom: 1.8px solid;
+      max-width: calc(100% - 20px);
+      width: 500px;
     }
   }
 
@@ -880,7 +891,7 @@ ul {
           -webkit-box-orient: vertical;
         }
 
-        .item-infos2 {
+        .item-infos2, .item-infos2 > * {
           display: none !important;
         }
       
@@ -1334,10 +1345,10 @@ footer {
   .footer-header-app .logo-text {
     text-align: left !important;
     padding: 0 0 15px 0;
-    background: #653DAC;
-    background: -webkit-linear-gradient(to right, #653DAC, var(--colorTheme) 55%);
-    background: -moz-linear-gradient(to right, #653DAC, var(--colorTheme) 55%);
-    background: linear-gradient(to right, var(--secondaryLabel), var(--colorTheme) 55%);
+    background: var(--colorTheme);
+    background: -webkit-linear-gradient(to right, var(--systemGray2), var(--colorTheme) 88%);
+    background: -moz-linear-gradient(to right, var(--systemGray2), var(--colorTheme) 88%);
+    background: linear-gradient(to right, var(--systemGray2), var(--colorTheme) 88%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1375,13 +1386,19 @@ Adapted for small devices
 @media only screen and (max-width: 734px) {
   main.Articles {
     /*/ smaller vertical padding for small devices /*/
-    padding: 24px 12px !important;
+    padding: 24px 15px !important;
     max-width: 555px;
+    display: block;
   }
 
   .LeftPodcastsColumn, .RightRSSColumn {
     /*/ display a sigle column on small devices /*/
     width: 100% !important;
+    
+    > * {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
   }
 
   h6.item-title {
