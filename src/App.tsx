@@ -81,22 +81,22 @@ const App = () => {
         <div className={topicFilter}>
           <h2 className={"bold " + topicFilter}>{topicFilter}</h2>
           <div className="LeftPodcastsColumn">
-          <CustomTopicComponent />
+            <CustomTopicComponent />
           </div>
           <div className="RightRSSColumn">
-          {Object.entries(topics[topicFilter].subtopics)
-            .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)
-            .filter(([ key ]) => !subtopicFilter ? true : subtopicFilter === key)
-            .map(([key, feeds]) => (
-              <div key={key} className={`${key} section`}>
-                <div id="external-script-element" />
-                <section>
-                {key !== "noSubtopic" && <h3 className="subtopic bold">{key}</h3>}
-                <RssContent rssFeeds={feeds} />
-                </section>
-              </div>
-            ))
-          }
+            {Object.entries(topics[topicFilter].subtopics)
+              .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)
+              .filter(([ key ]) => !subtopicFilter ? true : subtopicFilter === key)
+              .map(([key, feeds]) => (
+                <div key={key} className={`${key} section`}>
+                  <div id="external-script-element" />
+                  <section>
+                    {key !== "noSubtopic" && <h3 className="subtopic bold">{key}</h3>}
+                    <RssContent rssFeeds={feeds} />
+                  </section>
+                </div>
+              ))
+            }
           </div>
         </div>
       </main>
