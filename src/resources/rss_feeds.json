@@ -2237,7 +2237,7 @@
             "backgroundImg": "./icons/WebsitesIcons/nationsunies_bgIMG.jpg"
           } 
         ],
-        "Allemagne": [
+        "Pays germaniques": [
           {
             "url": "https://www.francetvinfo.fr/monde/europe/allemagne.rss",
             "name": "Franceinfo",
@@ -2291,7 +2291,7 @@
             "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
           } 
         ],
-        "Russie": [
+        "Pays slaves": [
           {
             "url": "https://www.francetvinfo.fr/monde/russie.rss",
             "name": "Franceinfo",
@@ -2309,7 +2309,7 @@
             "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
           } 
         ],
-        "Espagne": [
+        "Pays ibériques": [
           {
             "url": "https://www.francetvinfo.fr/monde/espagne.rss",
             "name": "Franceinfo",
@@ -2421,6 +2421,9 @@
             "backgroundImg": "./icons/WebsitesIcons/france24_bgIMG.jpg"
           }   
         ],
+        "Pays baltes": [
+
+        ],
         "Balkans": [
           {
             "url": "https://www.francetvinfo.fr/monde/grece.rss",
@@ -2438,6 +2441,9 @@
             "iconImg": "./icons/WebsitesIcons/franceinfo.jpeg",
             "backgroundImg": "./icons/WebsitesIcons/franceinfo_bgIMG.jpg"
           }
+        ],
+        "Pays caucasiens": [
+
         ],
         "Presse étrangère": [
           {
