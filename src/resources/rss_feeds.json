@@ -98,48 +98,6 @@
     },
     "Presse étrangère": {
       "subtopics": {
-        "Deutschland": [
-          {
-            "url": "https://www.tagesschau.de/xml/rss2",
-            "name": "Tagesschau.de",
-            "specification": "nNotif firstHeadline",
-            "count": 2,
-            "iconImg": "./icons/WebsitesIcons/tagesschau.png",
-            "backgroundImg": "./icons/WebsitesIcons/tagesschau_bgIMG.png"
-          },
-          {
-            "url": "https://rss.dw.com/xml/rss-de-top",
-            "name": "Deutsche Welle",
-            "specification": "nNotif firstHeadline",
-            "count": 2,
-            "iconImg": "./icons/WebsitesIcons/dw.png",
-            "backgroundImg": "./icons/WebsitesIcons/dw_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.deutschlandfunk.de/die-nachrichten.353.de.rss",
-            "name": "Deutschlandfunk",
-            "specification": "nNotif firstHeadline",
-            "count": 2,
-            "iconImg": "./icons/WebsitesIcons/dfunk.png",
-            "backgroundImg": "./icons/WebsitesIcons/dfunk_bgIMG.jpg"
-          },
-          {
-            "url": "https://taz.de/feed/!p4608/rss.xml",
-            "name": "Die Tageszeitung",
-            "specification": "nNotif firstHeadline",
-            "count": 2,
-            "iconImg": "./icons/WebsitesIcons/taz.png",
-            "backgroundImg": "./icons/WebsitesIcons/taz_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=news.bild.html",
-            "name": "Bild",
-            "specification": "nNotif firstHeadline",
-            "count": 2,
-            "iconImg": "./icons/WebsitesIcons/bild.png",
-            "backgroundImg": "./icons/WebsitesIcons/bild_bgIMG.jpg"
-          }
-        ],
         "United States & Canada": [
           {
             "url": "https://www.cbsnews.com/latest/rss/main",
@@ -197,9 +155,7 @@
             "backgroundImg": "./icons/WebsitesIcons/radiocanada_bgIMG.png"
           }
         ],
-        "Australia & NZ": [
-        ],
-        "United Kingdom": [
+        "United Kingdom & Ireland": [
           {
             "url": "https://www.theguardian.com/uk-news/rss",
             "name": "The Guardian",
@@ -223,6 +179,76 @@
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/express.png",
             "backgroundImg": "./icons/WebsitesIcons/express_bgIMG.jpg"
+          }
+        ],
+        "Australia & New Zealand": [
+          {
+            "url": "https://www.ft.com/australia-newzealand?format=rss",
+            "name": "The Financial Times",
+            "specification": "nList firstHeadline",
+            "count": 3,
+            "iconImg": "./icons/WebsitesIcons/financialtimes.png",
+            "backgroundImg": "./icons/WebsitesIcons/financialtimes_bgIMG.jpg"
+          }
+        ],
+        "中国": [
+
+        ],
+        "भारत": [
+
+        ],
+        "العالم العربي": [
+
+        ],
+        "Mundo hispano": [
+
+        ],
+        "Русскоязычный мир": [
+
+        ],
+        "Mundo português": [
+
+        ],
+        "Deutschland": [
+          {
+            "url": "https://www.tagesschau.de/xml/rss2",
+            "name": "Tagesschau.de",
+            "specification": "nNotif firstHeadline",
+            "count": 2,
+            "iconImg": "./icons/WebsitesIcons/tagesschau.png",
+            "backgroundImg": "./icons/WebsitesIcons/tagesschau_bgIMG.png"
+          },
+          {
+            "url": "https://rss.dw.com/xml/rss-de-top",
+            "name": "Deutsche Welle",
+            "specification": "nNotif firstHeadline",
+            "count": 2,
+            "iconImg": "./icons/WebsitesIcons/dw.png",
+            "backgroundImg": "./icons/WebsitesIcons/dw_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.deutschlandfunk.de/die-nachrichten.353.de.rss",
+            "name": "Deutschlandfunk",
+            "specification": "nNotif firstHeadline",
+            "count": 2,
+            "iconImg": "./icons/WebsitesIcons/dfunk.png",
+            "backgroundImg": "./icons/WebsitesIcons/dfunk_bgIMG.jpg"
+          },
+          {
+            "url": "https://taz.de/feed/!p4608/rss.xml",
+            "name": "Die Tageszeitung",
+            "specification": "nNotif firstHeadline",
+            "count": 2,
+            "iconImg": "./icons/WebsitesIcons/taz.png",
+            "backgroundImg": "./icons/WebsitesIcons/taz_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=news.bild.html",
+            "name": "Bild",
+            "specification": "nNotif firstHeadline",
+            "count": 2,
+            "iconImg": "./icons/WebsitesIcons/bild.png",
+            "backgroundImg": "./icons/WebsitesIcons/bild_bgIMG.jpg"
           }
         ]
       }
@@ -640,13 +666,13 @@
             "backgroundImg": "./icons/WebsitesIcons/diezeit_bgIMG.jpg"
           },
           {
-            "url": "http://feed.informer.com/digests/US5ONEFA1P/feeder.rss",
-            "name": "Vox Business",
+            "url": "https://www.ft.com/global-economy?format=rss",
+            "name": "The Financial Times",
             "specification": "nList firstHeadline",
-            "count": 1,
-            "iconImg": "./icons/WebsitesIcons/vox.png",
-            "backgroundImg": "./icons/WebsitesIcons/vox_bgIMG.jpg"
-          }     
+            "count": 4,
+            "iconImg": "./icons/WebsitesIcons/financialtimes.png",
+            "backgroundImg": "./icons/WebsitesIcons/financialtimes_bgIMG.jpg"
+          }        
         ]
       }
     },
@@ -3270,7 +3296,15 @@
             "count": 3,
             "iconImg": "./icons/WebsitesIcons/express.png",
             "backgroundImg": "./icons/WebsitesIcons/express_bgIMG.jpg"
-          }    
+          },
+          {
+            "url": "https://www.ft.com/opinion?format=rss",
+            "name": "The Financial Times",
+            "specification": "nList firstHeadline",
+            "count": 4,
+            "iconImg": "./icons/WebsitesIcons/financialtimes.png",
+            "backgroundImg": "./icons/WebsitesIcons/financialtimes_bgIMG.jpg"
+          }
         ]
       }
     },
@@ -5128,23 +5162,23 @@
             "url": "https://www.newyorker.com/feed/everything",
             "name": "The New Yorker",
             "specification": "nList firstHeadline bigList",
-            "count": 2,
+            "count": 4,
             "iconImg": "./icons/WebsitesIcons/thenewyorker.png",
             "backgroundImg": "./icons/WebsitesIcons/thenewyorker_bgIMG.jpg"
           },
           {
-            "url": "http://feeds.washingtonpost.com/rss/lifestyle",
-            "name": "The Washington Post",
+            "url": "https://gestalten.com/blogs/journal.atom",
+            "name": "Gestalten",
             "specification": "nList firstHeadline",
-            "count": 1,
-            "iconImg": "./icons/WebsitesIcons/wpost.png",
-            "backgroundImg": "./icons/WebsitesIcons/wpost_bgIMG.jpg"
+            "count": 2,
+            "iconImg": "./icons/WebsitesIcons/gestalten.png",
+            "backgroundImg": "./icons/WebsitesIcons/gestalten_bgIMG.jpg"
           },
           {
             "url": "http://feeds.foxnews.com/foxnews/section/lifestyle?format=xml",
             "name": "FOX news",
             "specification": "nList firstHeadline",
-            "count": 1,
+            "count": 4,
             "iconImg": "./icons/WebsitesIcons/foxnews.png",
             "backgroundImg": "./icons/WebsitesIcons/foxnews_bgIMG.jpg"
           },
