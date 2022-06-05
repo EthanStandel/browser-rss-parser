@@ -15,8 +15,8 @@ const PrInterComponent = () => {
               <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
             </div>
             <div className="icon-image double-img">
-              <img src="./nbcnews.png"/>
-              <img src="./appletv.png"/>
+              <img src="./icons/WebsitesIcons/nbcnews.png"/>
+              <img src="./icons/WebsitesIcons/appletv.png"/>
             </div>
           </div>
           <div className="itemContainer">
@@ -43,8 +43,8 @@ const PrInterComponent = () => {
               <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
             </div>
             <div className="icon-image double-img">
-              <img src="./tagesschau.png"/>
-              <img src="./appletv.png"/>
+              <img src="./icons/WebsitesIcons/tagesschau.png"/>
+              <img src="./icons/WebsitesIcons/appletv.png"/>
             </div>
           </div>
           <div className="itemContainer">
@@ -71,8 +71,8 @@ const PrInterComponent = () => {
               <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
             </div>
             <div className="icon-image double-img">
-              <img src="./bbcnews.png"/>
-              <img src="./appletv.png"/>
+              <img src="./icons/WebsitesIcons/bbcnews.png"/>
+              <img src="./icons/WebsitesIcons/appletv.png"/>
             </div>
           </div>
           <div className="itemContainer">
@@ -99,8 +99,8 @@ const PrInterComponent = () => {
               <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
             </div>
             <div className="icon-image double-img">
-              <img src="./radiocanada.png"/>
-              <img src="./applepodcasts.png"/>
+              <img src="./icons/WebsitesIcons/radiocanada.png"/>
+              <img src="./icons/WebsitesIcons/applepodcasts.png"/>
             </div>
           </div>
           <div className="itemContainer">
@@ -130,8 +130,8 @@ const PrInterComponent = () => {
               <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
             </div>
             <div className="icon-image double-img">
-              <img src="./franceculture.png"/>
-              <img src="./applepodcasts.png"/>
+              <img src="./icons/WebsitesIcons/franceculture.png"/>
+              <img src="./icons/WebsitesIcons/applepodcasts.png"/>
             </div>
           </div>
           <div className="itemContainer">
@@ -161,8 +161,8 @@ const PrInterComponent = () => {
               <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
             </div>
             <div className="icon-image double-img">
-              <img src="./franceculture.png"/>
-              <img src="./applepodcasts.png"/>
+              <img src="./icons/WebsitesIcons/franceculture.png"/>
+              <img src="./icons/WebsitesIcons/applepodcasts.png"/>
             </div>
           </div>
           <div className="itemContainer">

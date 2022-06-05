@@ -15,8 +15,8 @@ const ArtdevivreComponent = () => {
               <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
             </div>
             <div className="icon-image double-img">
-              <img src="./europe1.png"/>
-              <img src="./applepodcasts.png"/>
+              <img src="./icons/WebsitesIcons/europe1.png"/>
+              <img src="./icons/WebsitesIcons/applepodcasts.png"/>
             </div>
           </div>
           <div className="itemContainer">
@@ -48,8 +48,8 @@ const ArtdevivreComponent = () => {
               <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
             </div>
             <div className="icon-image double-img">
-              <img src="./europe1.png"/>
-              <img src="./applepodcasts.png"/>
+              <img src="./icons/WebsitesIcons/europe1.png"/>
+              <img src="./icons/WebsitesIcons/applepodcasts.png"/>
             </div>
           </div>
           <div className="itemContainer">
@@ -79,8 +79,8 @@ const ArtdevivreComponent = () => {
               <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
             </div>
             <div className="icon-image double-img">
-              <img src="./europe1.png"/>
-              <img src="./applepodcasts.png"/>
+              <img src="./icons/WebsitesIcons/europe1.png"/>
+              <img src="./icons/WebsitesIcons/applepodcasts.png"/>
             </div>
           </div>
           <div className="itemContainer">
@@ -110,8 +110,8 @@ const ArtdevivreComponent = () => {
               <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
             </div>
             <div className="icon-image double-img">
-              <img src="./franceinfo.jpeg"/>
-              <img src="./applepodcasts.png"/>
+              <img src="./icons/WebsitesIcons/franceinfo.jpeg"/>
+              <img src="./icons/WebsitesIcons/applepodcasts.png"/>
             </div>
           </div>
           <div className="itemContainer">

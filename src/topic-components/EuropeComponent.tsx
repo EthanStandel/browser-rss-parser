@@ -13,8 +13,8 @@ const EuropeComponent = () => {
               <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
             </div>
             <div className="icon-image double-img">
-              <img src="./arte.png"/>
-              <img src="./appletv.png"/>
+              <img src="./icons/WebsitesIcons/arte.png"/>
+              <img src="./icons/WebsitesIcons/appletv.png"/>
             </div>
           </div>
           <div className="itemContainer">
