@@ -78,8 +78,9 @@ const App = () => {
         </div>
       </header>
       <main className="Articles">
-        <div className={topicFilter}>
-          <h2 className={"bold " + topicFilter}>{topicFilter}</h2>
+        
+        <div className={"grid "+ topicFilter}>
+        <h2 className={"bold " + topicFilter}>{topicFilter}</h2>
           <div className="LeftPodcastsColumn">
             <CustomTopicComponent />
           </div>

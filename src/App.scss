@@ -123,32 +123,37 @@ body {
 }
 
 main.Articles {
-  padding: 40px 25px;
   min-width: 222px;
-  max-width: calc(100% - 166px);
+  padding: 0 83px;
   margin: auto;
   overflow: hidden;
-  min-height: 100vh;
-  display: grid;
-  justify-content: center;
+  min-height: 150vh;
 
+  .grid {
+    display: grid;
+    grid-template-columns: 35% calc(65% - 40px);
+    grid-column-gap: 40px;
+    grid-auto-columns: min-content;
+    grid-template-rows: auto;
+    margin: auto;
+    max-width: calc(444px + 40px + 555px);
+}
+
+  h2 {
+    grid-area: 1 / 1 / 2 / 3;
+    width: 100%;
+  }
 
   /*/ two colums displayed for large devices/*/
   .LeftPodcastsColumn {
-    float: left;
-    width: 35%;
-    padding-right: 40px;
-    max-width: 444px;
+    grid-area: 2 / 1 / 3 / 2;
   }
   
   .RightRSSColumn {
-    float: left;
-    width: calc(65% - 40px);
-    max-width: 666px;
+    grid-area: 2 / 2 / 3 / 3;
 
     > * {
-      width: 1000px;
-      max-width: 666px;
+        min-width: 100%;
     }
   }
 
@@ -684,7 +689,7 @@ ul {
           }
         }
 
-        @media only screen and (max-width: 734px) {
+        @media only screen and (max-width: 1000px) {
         
           p {
             /*/ smaller font-size on small devices/*/
@@ -699,12 +704,7 @@ ul {
         }
       }
 
-      .item-descriptionWrapper {
-        display: table-cell;
-        width: 100%;
-      }
-
-      .item-title, .item-description {
+      .titleLine, .item-description {
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
@@ -716,7 +716,7 @@ ul {
       
       @media only screen and (min-width: 734px) {
         &:hover {
-          .item-title {
+          .titleLine {
             text-decoration: underline;
             text-decoration-color: inherit;
             transition: text-decoration-color 0.8s !important;
@@ -739,21 +739,25 @@ ul {
         background-repeat: no-repeat;
       }
 
-      .item-title {
+      .titleLine {
         -webkit-line-clamp: 5; /* number of lines to show */
       }
     
-      .item-container {
+      .itemContainer {
         vertical-align: middle;
         width: 100%;
+        padding: 10px 10px 10px 0;
+      }
+
+      .iconContainer {
+        padding: 10px 10px 10px 0;
       }
     
       .media {
         align-items: center;
         justify-content: left;
         display: flex !important;
-        padding: 10px;
-        width: calc(100% - 20px);
+        margin-left: 10px;
       }
       
       .icon-image {
@@ -763,7 +767,6 @@ ul {
         align-self: center;
         height: 40px;
         width: 40px;
-        margin-right: 10px;
 
         &.double-img {
 
@@ -838,7 +841,7 @@ ul {
         height:22px !important;
       }
 
-      .item-infos, .item-infos2 {
+      .descriptionLine, .descriptionLine2 {
         display: table;
         width: 100%;
 
@@ -852,11 +855,11 @@ ul {
 
       /*/ LIST STYLE FOR ITEMS hide item-description for items with weird descriptions /*/
       &.nodesc {
-        .item-infos {
+        .descriptionLine {
           display: none !important;
         }
 
-        .item-infos2 {
+        .descriptionLine2 {
           display: block !important;
         }
       }
@@ -866,16 +869,15 @@ ul {
         background-color: rgba(0, 0, 0, 0);
         transition-duration: 0.4s;
       
-        .item-infos {
+        .descriptionLine {
           position: absolute;
           bottom: 0;
-          width: calc(100% - 30px);
+          width: 100%;
           display: block;
           -webkit-backdrop-filter: saturate(180%) blur(20px);
           backdrop-filter: saturate(180%) blur(20px);
           background-color: var(--systemThickMaterial);
           border-radius: 0 0 var(--rounded-corners-block) var(--rounded-corners-block);
-          padding: 15px !important;
 
           .item-publish-date {
             display: none;
@@ -884,18 +886,19 @@ ul {
 
         .item-description {
           display: block;
-          -webkit-line-clamp: 2 !important;
+          padding: 12px;
+          -webkit-line-clamp: 3 !important;
           overflow: hidden;
           text-overflow: ellipsis !important;
           display: -webkit-box;
           -webkit-box-orient: vertical;
         }
 
-        .item-infos2, .item-infos2 > * {
+        .descriptionLine2, .descriptionLine2 > * {
           display: none !important;
         }
       
-        .item-title {
+        .titleLine {
           font-weight: 700;
           font-size: 28px;
           line-height: 34px;
@@ -907,25 +910,14 @@ ul {
           position: absolute;
           top: 40px;
           max-height: 200px;
-
-          -webkit-line-clamp: 3 !important;
+          -webkit-line-clamp: 4 !important;
           overflow: hidden;
           text-overflow: ellipsis !important;
           display: -webkit-box;
           -webkit-box-orient: vertical;
         }
-
-        @media only screen and (max-width: 734px) {
-          .item-title {
-            -webkit-line-clamp: 4 !important;
-            overflow: hidden;
-            text-overflow: ellipsis !important;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-          }
-        }
       
-        .item-container  {
+        .itemContainer  {
           display: block;
           padding: 0 !important;
           width: 100% !important;
@@ -934,6 +926,10 @@ ul {
           background-color: rgba(0, 0, 0, 0) !important;
           height: 300px;
           z-index: 2;
+        }
+        
+        .iconContainer {
+            padding: 0;
         }
 
         .item-F-line {
@@ -983,10 +979,8 @@ ul {
 
         .media {
           position: relative;
-          padding: 0;
           margin: 0;
           display: block !important;
-          width: 100% !important;
         }
       }
 
@@ -997,7 +991,7 @@ ul {
           display: none;
         }
 
-        .item-title {
+        .titleLine {
           -webkit-line-clamp: 4 !important;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -1013,13 +1007,13 @@ ul {
           -webkit-box-orient: vertical;
         }
 
-        .item-infos {
+        .descriptionLine {
 
           .item-publish-date {
             display: none;
           }
         }
-        .item-infos2 {
+        .descriptionLine2 {
           display: block !important;
         }
       }
@@ -1027,7 +1021,7 @@ ul {
       /*/ get big image for first-item /*/
       &.firstHeadline:first-child, &.bigHeadline {
     
-        .background-image, .media, .item-container {
+        .background-image, .media, .itemContainer {
           display: block !important;
         }
         
@@ -1043,7 +1037,7 @@ ul {
           position: relative !important;  
         }
       
-        .item-title {
+        .titleLine {
           font-weight: 700;
           -webkit-line-clamp: 4; /* number of lines to show */
           overflow: hidden;
@@ -1052,7 +1046,7 @@ ul {
           -webkit-box-orient: vertical;
         }
 
-        .item-container  {
+        .itemContainer  {
           padding: 14px 16px;
           width: calc(100% - 32px);
           border-radius: 0 0 var(--rounded-corners-block) var(--rounded-corners-block);
@@ -1108,7 +1102,7 @@ ul {
           }
         }
 
-        .item-infos, .item-infos2 {
+        .descriptionLine, .descriptionLine2 {
           
           .item-publish-date {
             display: none;
@@ -1117,13 +1111,16 @@ ul {
 
         &.nNotif {
 
-          .item-container {
+          .itemContainer {
             background-color: var(--secondarySystemGroupedBackground);
           }
 
+          .iconContainer {
+              padding: 0;
+          }
+
           .media {
-            width: 100%;
-            padding: 0 !important;
+              margin: 0;
           }
 
           .item-F-line {
@@ -1134,14 +1131,18 @@ ul {
 
         &.nList {
 
-          .item-container {
+          .itemContainer {
             background-color: var(--tertiarySystemGroupedBackground);
           }
 
+          .iconContainer {
+            padding: 0;
+          }
+
           .media {
-            width: calc(100% - 20px);
-            padding: 10px 0 0 !important;
             border-bottom: 0 solid red;
+            padding-right: 10px;
+            padding-top: 10px;
           }
 
           .item-F-line {
@@ -1173,7 +1174,7 @@ ul {
 
           &.NOT {
 
-            .item-infos:not(.always) {
+            .descriptionLine:not(.always) {
               display: none;
             }
 
@@ -1212,7 +1213,6 @@ ul {
             display: block;
             float: left;
             z-index: 0;
-            margin-right: 10px;
             width: 70px;
             height: 70px;
 
@@ -1223,7 +1223,7 @@ ul {
             }
           }
 
-          .item-infos {
+          .descriptionLine {
             .item-publish-date {
               display: none;
             }
@@ -1237,14 +1237,12 @@ ul {
             }
           }
 
-          .item-infos2 {
+          .descriptionLine2 {
             display: block !important;
           }
         }
 
         .media {
-          padding: 10px 0 !important;
-          margin: 0 10px;
           border-bottom: 0.8px solid var(--separator);
         }
 
@@ -1266,7 +1264,7 @@ ul {
           -webkit-box-orient: vertical;
         }
 
-        .item-title {
+        .titleLine {
           -webkit-line-clamp: 3 !important;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -1284,19 +1282,19 @@ ul {
           display: none;
         }
 
-        .item-infos2 {
+        .descriptionLine2 {
           display: none;
         }
 
-        @media only screen and (max-width: 734px) {
-          .item-infos:not(.always) {
+        @media only screen and (max-width: 1000px) {
+          .descriptionLine:not(.always) {
 
             .item-publish-date {
               display: none;
             }
           }
 
-          .item-infos2 {
+          .descriptionLine2 {
             display: block !important;
           }
 
@@ -1383,25 +1381,24 @@ footer {
 Adapted for small devices 
 /*/
 
-@media only screen and (max-width: 734px) {
+@media only screen and (max-width: 1000px) {
   main.Articles {
     /*/ smaller vertical padding for small devices /*/
     padding: 24px 15px !important;
     max-width: 555px;
-    display: block;
+
+    .grid {
+      display: block !important;
+      width: 100%;
+    }
   }
 
   .LeftPodcastsColumn, .RightRSSColumn {
     /*/ display a sigle column on small devices /*/
     width: 100% !important;
-    
-    > * {
-      width: 100% !important;
-      max-width: 100% !important;
-    }
   }
 
-  h6.item-title {
+  h6.titleLine {
     /*/ smaller font-size for small devices /*/
     font-size: 15px;
     line-height: 20px;
@@ -1459,4 +1456,8 @@ em {
   font-weight: 700;
   font-size: calc(100% + 3px);
   font-style: normal;
+}
+
+.section {
+    min-width: 100%;
 }

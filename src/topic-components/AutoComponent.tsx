@@ -10,7 +10,7 @@ const AutoComponent = () => {
     <li className={"nList TVbanner " + Ddisplay}>
       <a href="https://www.6play.fr/turbo-p_884" target="_blank" rel="noreferrer">
         <div className="media">
-          <div className="icons-container">
+          <div className="iconContainer">
             <div className="icon-image">
               <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
             </div>
@@ -19,19 +19,19 @@ const AutoComponent = () => {
               <img src="./appletv.png"/>
             </div>
           </div>
-          <div className="item-container">
+          <div className="itemContainer">
             <div className="item-F-line">
-              <h6 className="item-title">Turbo</h6>
+              <h6 className="titleLine">Turbo</h6>
               <div className="icon-footnote-container footnote">1 h</div>
             </div>    
-            <div className="item-infos">
+            <div className="descriptionLine">
               <div className="item-descriptionWrapper">
                 <div className="h8 item-description">
                 Votre magazine d'actualité automobile présenté par Dominique Chapatte : innovations, nouveautés, événéments... Toute l'auto est dans Turbo. 
                 </div>
               </div>
             </div>
-            <div className="item-infos always">
+            <div className="descriptionLine always">
               <div className="r2 item-publish-date">{Ddiffusion}</div>
             </div>
           </div>

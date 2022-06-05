@@ -11,7 +11,7 @@ const SportComponent = () => {
     <li className={"nList TVbanner " + LàVdisplay}>
       <a href="https://www.europe1.fr/emissions/ledito-sport" target="_blank" rel="noreferrer">
         <div className="media">
-          <div className="icons-container">
+          <div className="iconContainer">
             <div className="icon-image">
               <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
             </div>
@@ -20,19 +20,19 @@ const SportComponent = () => {
               <img src="./applepodcasts.png"/>
             </div>
           </div>
-          <div className="item-container">
+          <div className="itemContainer">
             <div className="item-F-line">
-              <h6 className="item-title">L'édito sport – Europe Matin</h6>
+              <h6 className="titleLine">L'édito sport – Europe Matin</h6>
               <div className="icon-footnote-container footnote">3 min</div>
             </div>    
-            <div className="item-infos">
+            <div className="descriptionLine">
               <div className="item-descriptionWrapper">
                 <div className="h8 item-description">
                 Virginie Phulpin livre chaque matin à 7:19 son point de vue tranché sur l'actualité sportive.
                 </div>
               </div>
             </div>
-            <div className="item-infos always">
+            <div className="descriptionLine always">
               <div className="r2 item-publish-date">{LàVdiffusion}</div>
             </div>
           </div>
@@ -42,7 +42,7 @@ const SportComponent = () => {
     <li className={"nList TVbanner " + LàVdisplay}>
       <a href="https://www.franceinter.fr/emissions/histoires-de-sport" target="_blank" rel="noreferrer">
         <div className="media">
-          <div className="icons-container">
+          <div className="iconContainer">
             <div className="icon-image">
               <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
             </div>
@@ -51,19 +51,19 @@ const SportComponent = () => {
               <img src="./applepodcasts.png"/>
             </div>
           </div>
-          <div className="item-container">
+          <div className="itemContainer">
             <div className="item-F-line">
-              <h6 className="item-title">Esprit sport</h6>
+              <h6 className="titleLine">Esprit sport</h6>
               <div className="icon-footnote-container footnote">2 min</div>
             </div>    
-            <div className="item-infos">
+            <div className="descriptionLine">
               <div className="item-descriptionWrapper">
                 <div className="h8 item-description">
                 Chaque jour à 6:16, le sport, ses personnages, ses anecdotes et ses coulisses vus par Xavier Monferran.
                 </div>
               </div>
             </div>
-            <div className="item-infos always">
+            <div className="descriptionLine always">
               <div className="r2 item-publish-date">{LàVdiffusion}</div>
             </div>
           </div>
