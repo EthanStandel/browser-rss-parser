@@ -33,6 +33,7 @@ interface ParsedRssItem {
     url?: string;
   }
   "dc:date"?: string;
+  "media:thumbnail url"?: string;
 }
 
 interface ParsedRssFeed {
@@ -155,14 +156,12 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                             {displayedDate}
                           </div>
                         </div>
-                        <h6 className="titleLine"dangerouslySetInnerHTML={{ __html: _unescape(item.title ?? "")}} />
+                        <h6 className="titleLine" dangerouslySetInnerHTML={{ __html: _unescape(item.title ?? "")}} />
                         <div className="descriptionLine">
                           <div className="r2 item-publish-date">
                             {displayedDate}
                           </div>
-                          <div className="item-descriptionWrapper">
                             {item.description && <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: _unescape(item.description)}} />}
-                          </div>
                         </div>
                         <div className="descriptionLine2">
                           <div className="r2 item-publish-date">

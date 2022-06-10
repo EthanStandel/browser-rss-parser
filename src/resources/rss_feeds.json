@@ -227,7 +227,7 @@
             "backgroundImg": "./icons/WebsitesIcons/dw_bgIMG.jpg"
           },
           {
-            "url": "https://www.deutschlandfunk.de/die-nachrichten.353.de.rss",
+            "url": "https://www.deutschlandfunk.de/nachrichten-100.rss",
             "name": "Deutschlandfunk",
             "specification": "nNotif firstHeadline",
             "count": 2,
@@ -543,6 +543,24 @@
             "iconImg": "./icons/WebsitesIcons/lacroix.png"
           } 
         ],
+        "Économie verte": [
+          {
+            "url": "https://www.maddyness.com/secteurs/greentech/feed",
+            "name": "Maddyness",
+            "specification": "nList nodesc",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/maddyness.png",
+            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.maddyness.com/secteurs/agritech/feed",
+            "name": "Maddyness",
+            "specification": "nList nodesc",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/maddyness.png",
+            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+          }
+        ],
         "Industrie": [
           {
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=industrie",
@@ -561,6 +579,16 @@
             "backgroundImg": "./icons/WebsitesIcons/bfmtv_bgIMG.jpg"
           }
         ],
+        "Marketing": [
+          {
+            "url": "https://www.maddyness.com/secteurs/martech/feed",
+            "name": "Maddyness",
+            "specification": "nList nodesc",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/maddyness.png",
+            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+          }
+        ],
         "Cryptomonnaies": [
           {
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&categories=crypto",
@@ -571,7 +599,43 @@
             "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
           }
         ],
-        "Retraite": [
+        "Management & RH": [
+          {
+            "url": "https://www.maddyness.com/secteurs/rh-management/feed",
+            "name": "Maddyness",
+            "specification": "nList nodesc",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/maddyness.png",
+            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.forbes.fr/management/feed/",
+            "name": "Forbes",
+            "specification": "nList",
+            "count": 3,
+            "iconImg": "./icons/WebsitesIcons/forbes.png",
+            "backgroundImg": "./icons/WebsitesIcons/forbes_bgIMG.jpg"
+          },
+          {
+            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=management",
+            "name": "Management le mag",
+            "specification": "nList",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/management.png",
+            "backgroundImg": "./icons/WebsitesIcons/management_bgIMG.jpg"
+          }
+        ],
+        "Innovations & start-ups": [
+          {
+            "url": "https://www.maddyness.com/secteurs/smart-industry/feed",
+            "name": "Maddyness",
+            "specification": "nList nodesc",
+            "count": 2,
+            "iconImg": "./icons/WebsitesIcons/maddyness.png",
+            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+          }
+        ],
+        "Retraites": [
           {
             "url": "https://www.bfmtv.com/rss/economie/patrimoine/retraite/",
             "name": "BFM TV",
@@ -591,14 +655,22 @@
             "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
           }
         ],
-        "Média":[
+        "Media":[
           {
             "url": "https://www.la-croix.com/RSS/Economie/Media",
             "name": "La Croix",
             "specification": "nList",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lacroix.png"
-          }
+          },
+          {
+            "url": "https://www.maddyness.com/secteurs/culture-medias/feed",
+            "name": "Maddyness",
+            "specification": "nList nodesc",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/maddyness.png",
+            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+          } 
         ],
         "Presse étrangère": [
           {
@@ -2154,12 +2226,12 @@
             "backgroundImg": "./icons/WebsitesIcons/bbcnews_bgIMG.jpg"
           },
           {
-            "url": "https://rss.dw.com/xml/rss-de-cul",
-            "name": "Deutsche Welle",
+            "url": "https://www.architecturaldigest.com/feed/culture-lifestyle/rss",
+            "name": "Architectural Digest",
             "specification": "nList firstHeadline",
             "count": 1,
-            "iconImg": "./icons/WebsitesIcons/dw.png",
-            "backgroundImg": "./icons/WebsitesIcons/dw_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/architecturalDigest.png",
+            "backgroundImg": "./icons/WebsitesIcons/architecturalDigest_bgIMG.jpg"
           },
           {
             "url": "https://www.newyorker.com/feed/culture",
@@ -2170,7 +2242,7 @@
             "backgroundImg": "./icons/WebsitesIcons/thenewyorker_bgIMG.jpg"
           },
           {
-            "url": "https://www.deutschlandfunk.de/kultur.1495.de.rss",
+            "url": "https://www.deutschlandfunk.de/kulturportal-100.rss",
             "name": "Deutschlandfunk",
             "specification": "nList firstHeadline",
             "count": 1,
@@ -2189,7 +2261,7 @@
             "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=unterhaltung.bild.html",
             "name": "Bild",
             "specification": "nList firstHeadline",
-            "count": 1,
+            "count": 4,
             "iconImg": "./icons/WebsitesIcons/bild.png",
             "backgroundImg": "./icons/WebsitesIcons/bild_bgIMG.jpg"
           },
@@ -2200,7 +2272,15 @@
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/vox.png",
             "backgroundImg": "./icons/WebsitesIcons/vox_bgIMG.jpg"
-          }  
+          },
+          {
+            "url": "https://www.forbes.com/lifestyle/feed2/",
+            "name": "Forbes",
+            "specification": "nList firstHeadline",
+            "count": 3,
+            "iconImg": "./icons/WebsitesIcons/forbes.png",
+            "backgroundImg": "./icons/WebsitesIcons/forbes_bgIMG.jpg"
+          }
         ]
       }
     },
@@ -4293,10 +4373,18 @@
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=alimentation",
             "name": "Capital",
             "specification": "nList",
-            "count": 3,
+            "count": 1,
             "iconImg": "./icons/WebsitesIcons/capital.png",
             "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
-          } 
+          },
+          {
+            "url": "https://www.maddyness.com/secteurs/foodtech-winetech/feed",
+            "name": "Maddyness",
+            "specification": "nList nodesc",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/maddyness.png",
+            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+          }
         ],
         "Biodiversité": [
           {
@@ -4542,7 +4630,7 @@
             "backgroundImg": "./icons/WebsitesIcons/frandroid_bgIMG.jpg"
           }
         ],
-        "IA": [
+        "Deeptech & IA": [
           {
             "url": "https://www.sciencesetavenir.fr/high-tech/intelligence-artificielle/rss.xml",
             "name": "Sciences et Avenir",
@@ -4566,6 +4654,14 @@
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/jdn.png",
             "backgroundImg": ".jdn_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.maddyness.com/secteurs/deeptech/feed",
+            "name": "Maddyness",
+            "specification": "nList nodesc",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/maddyness.png",
+            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
           }
         ],
         "Développeurs": [
@@ -4660,9 +4756,17 @@
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lemondeinfo.png",
             "backgroundImg": "./icons/WebsitesIcons/lemondeinfo_bgIMG.jpg"
-          }  
+          },
+          {
+            "url": "https://www.maddyness.com/secteurs/cybersecurite/feed",
+            "name": "Maddyness",
+            "specification": "nList nodesc",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/maddyness.png",
+            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+          }
         ],
-        "Web & geek": [
+        "Web & geeks": [
           {
             "url": "https://www.sciencesetavenir.fr/high-tech/web/rss.xml",
             "name": "Sciences et Avenir",
@@ -4918,6 +5022,14 @@
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/capital.png",
             "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.maddyness.com/secteurs/divertissement-loisirs/feed",
+            "name": "Maddyness",
+            "specification": "nList nodesc",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/maddyness.png",
+            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
           } 
         ],
         "Gastronomie, cuisine & terroir": [
@@ -5131,7 +5243,7 @@
             "backgroundImg": "./icons/WebsitesIcons/courrierinter_bgIMG.jpg"
           }
         ],
-        "Bien-être, productivité & management":[
+        "Bien-être":[
           {
             "url": "https://www.letelegramme.fr/mieux-vivre/rss.xml",
             "name": "Le Télégramme",
@@ -5139,22 +5251,6 @@
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/letelegramme.png",
             "backgroundImg": "./icons/WebsitesIcons/letelegramme_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.forbes.fr/management/feed/",
-            "name": "Forbes",
-            "specification": "nList",
-            "count": 3,
-            "iconImg": "./icons/WebsitesIcons/forbes.png",
-            "backgroundImg": "./icons/WebsitesIcons/forbes_bgIMG.jpg"
-          },
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=management",
-            "name": "Management le mag",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./icons/WebsitesIcons/management.png",
-            "backgroundImg": "./icons/WebsitesIcons/management_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -5183,12 +5279,12 @@
             "backgroundImg": "./icons/WebsitesIcons/foxnews_bgIMG.jpg"
           },
           {
-            "url": "https://www.forbes.com/lifestyle/feed2/",
-            "name": "Forbes",
+            "url": "https://www.architecturaldigest.com/feed/culture-lifestyle/motoring/rss",
+            "name": "Architectural Digest",
             "specification": "nList firstHeadline",
-            "count": 1,
-            "iconImg": "./icons/WebsitesIcons/forbes.png",
-            "backgroundImg": "./icons/WebsitesIcons/forbes_bgIMG.jpg"
+            "count": 2,
+            "iconImg": "./icons/WebsitesIcons/architecturalDigest.png",
+            "backgroundImg": "./icons/WebsitesIcons/architecturalDigest_bgIMG.jpg"
           },
           {
             "url": "https://rss.dw.com/xml/rss-de-deutschlandentdecken",
@@ -5233,7 +5329,7 @@
         ]
       }
     },
-    "Auto": {
+    "Auto & moto": {
       "subtopics": {
         "noSubtopic": [
           {
@@ -5345,6 +5441,14 @@
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/express.png",
             "backgroundImg": "./icons/WebsitesIcons/express_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.architecturaldigest.com/feed/culture-lifestyle/motoring/rss",
+            "name": "Architectural Digest",
+            "specification": "nList firstHeadline",
+            "count": 2,
+            "iconImg": "./icons/WebsitesIcons/architecturalDigest.png",
+            "backgroundImg": "./icons/WebsitesIcons/architecturalDigest_bgIMG.jpg"
           }
         ]
       }
