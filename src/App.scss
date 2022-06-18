@@ -706,13 +706,24 @@ ul {
         text-decoration-color: rgba(0,0,0,0);
         word-break: break-word;
       }
+
+      .ItemTitle {
+        display: inline;
       
-      @media only screen and (min-width: 734px) {
-        &:hover {
-          .titleLine {
-            text-decoration: underline;
-            text-decoration-color: inherit;
-            transition: text-decoration-color 0.8s !important;
+        .LanguageLabel {
+          color: white;
+          margin-right: 5px;
+          border-radius: 5px;
+          padding: 3px 5px;
+          display: inline;
+          text-transform: uppercase;
+          background-color: var(--systemFill);
+          line-height: 20px;
+          font-size: 11px;
+          vertical-align: middle;
+        
+          &.FRA {
+            display: none;
           }
         }
       }

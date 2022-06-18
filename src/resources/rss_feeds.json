@@ -54,6 +54,7 @@
           {
             "url": "https://www.linternaute.com/actualite/rss/",
             "name": "L'internaute",
+            "countryISO3": "USA",
             "specification": "nNotif firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/linternaute.png",
@@ -64,6 +65,7 @@
           {
             "url": "https://www.express.co.uk/latest/france/rss",
             "name": "Express",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/express.png",
@@ -72,6 +74,7 @@
           {
             "url": "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/topic/destination/france/rss.xml",
             "name": "The New York Times",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/thenytimes.png",
@@ -80,6 +83,7 @@
           {
             "url": "https://www.theguardian.com/world/france/rss",
             "name": "The Guardian",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/theguardian.png",
@@ -142,6 +146,7 @@
           {
             "url": "https://www.lapresse.ca/actualites/national/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -149,6 +154,7 @@
           {
             "url": "https://ici.radio-canada.ca/rss/4159",
             "name": "Radio Canada",
+            "countryISO3": "CAN",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/radiocanada.png",
@@ -159,6 +165,7 @@
           {
             "url": "https://www.theguardian.com/uk-news/rss",
             "name": "The Guardian",
+            "countryISO3": "GBR",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/theguardian.png",
@@ -213,6 +220,7 @@
           {
             "url": "https://www.tagesschau.de/xml/rss2",
             "name": "Tagesschau.de",
+            "countryISO3": "DEU",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/tagesschau.png",
@@ -221,6 +229,7 @@
           {
             "url": "https://rss.dw.com/xml/rss-de-top",
             "name": "Deutsche Welle",
+            "countryISO3": "DEU",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/dw.png",
@@ -229,6 +238,7 @@
           {
             "url": "https://www.deutschlandfunk.de/nachrichten-100.rss",
             "name": "Deutschlandfunk",
+            "countryISO3": "DEU",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/dfunk.png",
@@ -237,6 +247,7 @@
           {
             "url": "https://taz.de/feed/!p4608/rss.xml",
             "name": "Die Tageszeitung",
+            "countryISO3": "DEU",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/taz.png",
@@ -245,6 +256,7 @@
           {
             "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=news.bild.html",
             "name": "Bild",
+            "countryISO3": "DEU",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/bild.png",
@@ -357,6 +369,7 @@
           {
             "url": "https://www.lapresse.ca/affaires/marches/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -435,7 +448,7 @@
             "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
           }
         ],
-        "Banques & finance": [
+        "Finance": [
           {
             "url": "https://www.ladepeche.fr/economie/banque-finances/rss.xml",
             "name": "La Dépêche",
@@ -459,24 +472,6 @@
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/forbes.png",
             "backgroundImg": "./icons/WebsitesIcons/forbes_bgIMG.jpg"
-          }
-        ],
-        "Consommation": [
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=consommation",
-            "name": "Capital",
-            "specification": "nList firstHeadline",
-            "count": 2,
-            "iconImg": "./icons/WebsitesIcons/capital.png",
-            "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/economie/consommation/",
-            "name": "BFM TV",
-            "specification": "nList firstHeadline",
-            "count": 3,
-            "iconImg": "./icons/WebsitesIcons/bfmtv.png",
-            "backgroundImg": "./icons/WebsitesIcons/bfmtv_bgIMG.jpg"
           }
         ],
         "Entreprises": [
@@ -523,6 +518,7 @@
           {
             "url": "https://www.lapresse.ca/affaires/entreprises/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -543,6 +539,58 @@
             "iconImg": "./icons/WebsitesIcons/lacroix.png"
           } 
         ],
+        "Industrie": [
+          {
+            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=industrie",
+            "name": "Capital",
+            "specification": "nList firstHeadline",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/capital.png",
+            "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/economie/entreprises/industries/",
+            "name": "BFM TV",
+            "specification": "nList firstHeadline",
+            "count": 3,
+            "iconImg": "./icons/WebsitesIcons/bfmtv.png",
+            "backgroundImg": "./icons/WebsitesIcons/bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.humanite.fr/rss/actu.rss/Industrie",
+            "name": "L'Humanité",
+            "specification": "nList firstHeadline",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/humanite.png",
+            "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
+          } 
+        ],
+        "Consommation": [
+          {
+            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=consommation",
+            "name": "Capital",
+            "specification": "nList firstHeadline",
+            "count": 2,
+            "iconImg": "./icons/WebsitesIcons/capital.png",
+            "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/economie/consommation/",
+            "name": "BFM TV",
+            "specification": "nList firstHeadline",
+            "count": 3,
+            "iconImg": "./icons/WebsitesIcons/bfmtv.png",
+            "backgroundImg": "./icons/WebsitesIcons/bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.humanite.fr/rss/actu.rss/Consommation",
+            "name": "L'Humanité",
+            "specification": "nList firstHeadline",
+            "count": 2,
+            "iconImg": "./icons/WebsitesIcons/humanite.png",
+            "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
+          }
+        ],
         "Économie verte": [
           {
             "url": "https://www.maddyness.com/secteurs/greentech/feed",
@@ -561,24 +609,6 @@
             "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
           }
         ],
-        "Industrie": [
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=industrie",
-            "name": "Capital",
-            "specification": "nList firstHeadline",
-            "count": 1,
-            "iconImg": "./icons/WebsitesIcons/capital.png",
-            "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/economie/entreprises/industries/",
-            "name": "BFM TV",
-            "specification": "nList firstHeadline",
-            "count": 3,
-            "iconImg": "./icons/WebsitesIcons/bfmtv.png",
-            "backgroundImg": "./icons/WebsitesIcons/bfmtv_bgIMG.jpg"
-          }
-        ],
         "Marketing": [
           {
             "url": "https://www.maddyness.com/secteurs/martech/feed",
@@ -587,16 +617,6 @@
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/maddyness.png",
             "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
-          }
-        ],
-        "Cryptomonnaies": [
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&categories=crypto",
-            "name": "Capital",
-            "specification": "nList",
-            "count": 2,
-            "iconImg": "./icons/WebsitesIcons/capital.png",
-            "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
           }
         ],
         "Management & RH": [
@@ -672,12 +692,23 @@
             "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
           } 
         ],
+        "Cryptomonnaies": [
+          {
+            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&categories=crypto",
+            "name": "Capital",
+            "specification": "nList",
+            "count": 2,
+            "iconImg": "./icons/WebsitesIcons/capital.png",
+            "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
+          }
+        ],
         "Presse étrangère": [
           {
             "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
             "name": "The Wall Street Journal",
             "specification": "nList firstHeadline",
             "count": 1,
+            "country": "USA",
             "iconImg": "./icons/WebsitesIcons/wsjournal.png",
             "backgroundImg": "./icons/WebsitesIcons/wsjournal_bgIMG.jpg"
           },
@@ -918,6 +949,7 @@
           {
             "url": "https://www.lapresse.ca/sports/tennis/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -985,6 +1017,7 @@
           {
             "url": "https://www.lapresse.ca/sports/cyclisme/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -1026,6 +1059,7 @@
           {
             "url": "https://www.lapresse.ca/sports/basketball/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -1083,6 +1117,7 @@
           {
             "url": "https://www.lapresse.ca/sports/course-automobile/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -1168,6 +1203,7 @@
           {
             "url": "https://www.lapresse.ca/sports/baseball/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList",
             "count": 3,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -1278,6 +1314,7 @@
           {
             "url": "https://www.lapresse.ca/sports/golf/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -1341,6 +1378,7 @@
           {
             "url": "https://www.lapresse.ca/sports/hockey/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -1383,6 +1421,7 @@
           {
             "url": "https://www.lapresse.ca/sports/sports-dhiver/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -1422,7 +1461,7 @@
             "backgroundImg": "./icons/WebsitesIcons/franceinfo_bgIMG.jpg"
           }
         ],
-        "Handisports": [
+        "Handisport": [
           {
             "url": "https://www.francetvinfo.fr/sports/handisport.rss",
             "name": "Franceinfo",
@@ -1494,6 +1533,7 @@
           {
             "url": "https://www.deutschlandfunk.de/sport.1494.de.rss",
             "name": "Deutschlandfunk",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/dfunk.png",
@@ -1572,6 +1612,7 @@
           {
             "url": "https://ici.radio-canada.ca/rss/4167",
             "name": "Radio Canada",
+            "countryISO3": "CAN",
             "specification": "nNotif firstFocus",
             "count": 4,
             "iconImg": "./icons/WebsitesIcons/radiocanada.png",
@@ -1598,6 +1639,7 @@
           {
             "url": "https://ici.radio-canada.ca/rss/1000083",
             "name": "Radio Canada",
+            "countryISO3": "CAN",
             "specification": "nNotif firstFocus",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/radiocanada.png",
@@ -1637,6 +1679,7 @@
           {
             "url": "https://www.lapresse.ca/arts/litterature/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstFocus",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -1724,6 +1767,7 @@
           {
             "url": "https://www.lapresse.ca/cinema/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -1731,6 +1775,7 @@
           {
             "url": "https://ici.radio-canada.ca/rss/1000229",
             "name": "Radio Canada",
+            "countryISO3": "CAN",
             "specification": "nNotif firstFocus",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/radiocanada.png",
@@ -1780,6 +1825,7 @@
           {
             "url": "https://ici.radio-canada.ca/rss/1000233",
             "name": "Radio Canada",
+            "countryISO3": "CAN",
             "specification": "nList",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/radiocanada.png",
@@ -1821,6 +1867,7 @@
           {
             "url": "https://www.lapresse.ca/arts/arts-visuels/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -1849,7 +1896,15 @@
             "specification": "nList",
             "count": 3,
             "iconImg": "./icons/WebsitesIcons/lacroix.png"
-          } 
+          },
+          {
+            "url": "https://www.humanite.fr/rss/actu.rss/Expositions",
+            "name": "L'Humanité",
+            "specification": "nList",
+            "count": 3,
+            "iconImg": "./icons/WebsitesIcons/humanite.png",
+            "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
+          }   
         ],
         "Théâtre & spectacles": [
           {
@@ -1991,6 +2046,7 @@
           {
             "url": "https://www.lapresse.ca/arts/musique/",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -1998,6 +2054,7 @@
           {
             "url": "https://ici.radio-canada.ca/rss/1000230",
             "name": "Radio Canada",
+            "countryISO3": "CAN",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/radiocanada.png",
@@ -2047,6 +2104,7 @@
           {
             "url": "https://www.lapresse.ca/societe/mode-et-beaute/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -2096,6 +2154,7 @@
           {
             "url": "https://www.lapresse.ca/maison/architecture/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -2212,6 +2271,7 @@
           {
             "url": "https://www.theguardian.com/uk/culture/rss",
             "name": "The Guardian",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/theguardian.png",
@@ -2244,6 +2304,7 @@
           {
             "url": "https://www.deutschlandfunk.de/kulturportal-100.rss",
             "name": "Deutschlandfunk",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/dfunk.png",
@@ -2587,6 +2648,7 @@
           {
             "url": "https://www.deutschlandfunk.de/europa.1863.de.rss",
             "name": "Deutschlandfunk",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/dfunk.png",
@@ -2603,6 +2665,7 @@
           {
             "url": "https://www.lapresse.ca/international/europe/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -2672,6 +2735,7 @@
           {
             "url": "https://www.lapresse.ca/international/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -2721,6 +2785,7 @@
           {
             "url": "https://www.lapresse.ca/international/afrique/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -2828,6 +2893,7 @@
           {
             "url": "https://www.lapresse.ca/international/asie-et-oceanie/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -2877,6 +2943,7 @@
           {
             "url": "https://www.lapresse.ca/international/moyen-orient/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -2910,6 +2977,7 @@
           {
             "url": "https://www.theguardian.com/world/rss",
             "name": "The Guardian",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/theguardian.png",
@@ -2934,6 +3002,7 @@
           {
             "url": "https://www.deutschlandfunk.de/eine-welt.798.de.rss",
             "name": "Deutschlandfunk",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/dfunk.png",
@@ -2950,6 +3019,7 @@
           {
             "url": "https://ici.radio-canada.ca/rss/96",
             "name": "Radio Canada",
+            "countryISO3": "CAN",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/radiocanada.png",
@@ -3040,15 +3110,7 @@
             "count": 4,
             "iconImg": "./icons/WebsitesIcons/europe1.png",
             "backgroundImg": "./icons/WebsitesIcons/europe1_bgIMG.jpg"
-          },
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=politique",
-            "name": "Capital",
-            "specification": "nNotif firstHeadline",
-            "count": 2,
-            "iconImg": "./icons/WebsitesIcons/capital.png",
-            "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
-          } 
+          }
         ],
         "Élections & partis": [
           {
@@ -3089,9 +3151,17 @@
             "url": "https://www.la-croix.com/RSS/Solidarite/Actualite/Immigration",
             "name": "La Croix",
             "specification": "nList",
-            "count": 3,
+            "count": 5,
             "iconImg": "./icons/WebsitesIcons/lacroix.png"
-          } 
+          },
+          {
+            "url": "https://www.humanite.fr/rss/actu.rss/Immigration",
+            "name": "L'Humanité",
+            "specification": "nList",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/humanite.png",
+            "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
+          }  
         ],
         "Paix & sécurité": [
           {
@@ -3154,6 +3224,7 @@
           {
             "url": "https://www.deutschlandfunk.de/politik.1499.de.rss",
             "name": "Deutschlandfunk",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/dfunk.png",
@@ -3178,6 +3249,7 @@
           {
             "url": "https://www.lapresse.ca/actualites/politique/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -3200,6 +3272,7 @@
           {
             "url": "https://www.lapresse.ca/actualites/chroniques/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstFocus",
             "count": 3,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -3256,12 +3329,21 @@
             "specification": "nNotif firstFocus",
             "count": 4,
             "iconImg": "./icons/WebsitesIcons/lacroix.png"
-          }   
+          },
+          {
+            "url": "https://www.humanite.fr/rss/actu.rss/En%20d%C3%A9bat",
+            "name": "L'Humanité",
+            "specification": "nNotif firstFocus",
+            "count": 3,
+            "iconImg": "./icons/WebsitesIcons/humanite.png",
+            "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
+          }    
         ],
         "Monde": [
           {
             "url": "https://www.lapresse.ca/international/chroniques/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstFocus",
             "count": 3,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -3272,6 +3354,7 @@
           {
             "url": "https://www.lapresse.ca/sports/chroniques/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstFocus",
             "count": 4,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -3281,6 +3364,7 @@
           {
             "url": "https://www.lapresse.ca/arts/chroniques/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstFocus",
             "count": 4,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -3288,6 +3372,7 @@
           {
             "url": "https://www.lapresse.ca/cinema/chroniques/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstFocus",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -3305,6 +3390,7 @@
           {
             "url": "https://www.lapresse.ca/societe/chroniques/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstFocus",
             "count": 4,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -3321,6 +3407,7 @@
           {
             "url": "https://www.lapresse.ca/gourmand/chroniques/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstFocus",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -3328,6 +3415,7 @@
           {
             "url": "https://www.lapresse.ca/voyage/chroniques/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstFocus",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -3345,6 +3433,7 @@
           {
             "url": "https://www.lapresse.ca/maison/chroniques/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstFocus",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -3358,6 +3447,14 @@
             "count": 4,
             "iconImg": "./icons/WebsitesIcons/philomag.png",
             "backgroundImg": "./icons/WebsitesIcons/philomag_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.humanite.fr/rss/actu.rss/Philosophie",
+            "name": "L'Humanité",
+            "specification": "nNotif firstFocus",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/humanite.png",
+            "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
           } 
         ],
         "Presse étrangère": [
@@ -3707,6 +3804,71 @@
             "backgroundImg": "./icons/WebsitesIcons/europe1_bgIMG.jpg"
           }
         ],
+        "Santé": [
+          {
+            "url": "https://www.ladepeche.fr/sante/rss.xml",
+            "name": "La Dépêche",
+            "specification": "nList firstHeadline",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/ladepeche.png",
+            "backgroundImg": "./icons/WebsitesIcons/ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.leprogres.fr/magazine-sante/rss",
+            "name": "Le Progrès",
+            "specification": "nList firstHeadline",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/leprogres.png"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/sante/",
+            "name": "BFM TV",
+            "specification": "nList firstHeadline",
+            "count": 3,
+            "iconImg": "./icons/WebsitesIcons/bfmtv.png",
+            "backgroundImg": "./icons/WebsitesIcons/bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.sciencesetavenir.fr/sante/rss.xml",
+            "name": "Sciences et Avenir",
+            "specification": "nList firstHeadline",
+            "count": 2,
+            "iconImg": "./icons/WebsitesIcons/sciencesetavenir.png",
+            "backgroundImg": "./icons/WebsitesIcons/sciencesetavenir_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.futura-sciences.com/rss/sante/actualites.xml",
+            "name": "Futura Sciences",
+            "specification": "nList firstHeadline",
+            "count": 2,
+            "iconImg": "./icons/WebsitesIcons/futura.png",
+            "backgroundImg": "./icons/WebsitesIcons/futura_bgIMG.jpg"
+          },
+          {
+            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=sante",
+            "name": "Capital",
+            "specification": "nList firstHeadline",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/capital.png",
+            "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
+          },
+          {
+            "url": "https://news.un.org/feed/subscribe/fr/news/topic/health/feed/rss.xml",
+            "name": "Nations Unies",
+            "specification": "nList firstHeadline",
+            "count": 2,
+            "iconImg": "./icons/WebsitesIcons/nationsunies.png",
+            "backgroundImg": "./icons/WebsitesIcons/nationsunies_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.humanite.fr/rss/actu.rss/Sant%C3%A9",
+            "name": "L'Humanité",
+            "specification": "nList firstHeadline",
+            "count": 3,
+            "iconImg": "./icons/WebsitesIcons/humanite.png",
+            "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
+          } 
+        ],
         "Éducation": [
           {
             "url": "https://www.lemonde.fr/education/rss_full.xml",
@@ -3914,6 +4076,7 @@
           {
             "url": "https://www.deutschlandfunk.de/gesellschaft.1574.de.rss",
             "name": "Deutschlandfunk",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/dfunk.png",
@@ -3930,6 +4093,7 @@
           {
             "url": "https://www.lapresse.ca/societe/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -3999,35 +4163,13 @@
           {
             "url": "https://www.lapresse.ca/actualites/sciences/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
           }
         ],
-        "Médecine, santé & éthique": [
-          {
-            "url": "https://www.ladepeche.fr/sante/rss.xml",
-            "name": "La Dépêche",
-            "specification": "nList firstHeadline",
-            "count": 1,
-            "iconImg": "./icons/WebsitesIcons/ladepeche.png",
-            "backgroundImg": "./icons/WebsitesIcons/ladepeche_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.leprogres.fr/magazine-sante/rss",
-            "name": "Le Progrès",
-            "specification": "nList firstHeadline",
-            "count": 1,
-            "iconImg": "./icons/WebsitesIcons/leprogres.png"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/sante/",
-            "name": "BFM TV",
-            "specification": "nList firstHeadline",
-            "count": 3,
-            "iconImg": "./icons/WebsitesIcons/bfmtv.png",
-            "backgroundImg": "./icons/WebsitesIcons/bfmtv_bgIMG.jpg"
-          },
+        "Médecine & éthique": [
           {
             "url": "https://www.lemonde.fr/medecine/rss_full.xml",
             "name": "Le Monde",
@@ -4035,22 +4177,6 @@
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/lemonde.png",
             "backgroundImg": "./icons/WebsitesIcons/lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.sciencesetavenir.fr/sante/rss.xml",
-            "name": "Sciences et Avenir",
-            "specification": "nList firstHeadline",
-            "count": 2,
-            "iconImg": "./icons/WebsitesIcons/sciencesetavenir.png",
-            "backgroundImg": "./icons/WebsitesIcons/sciencesetavenir_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.futura-sciences.com/rss/sante/actualites.xml",
-            "name": "Futura Sciences",
-            "specification": "nList firstHeadline",
-            "count": 2,
-            "iconImg": "./icons/WebsitesIcons/futura.png",
-            "backgroundImg": "./icons/WebsitesIcons/futura_bgIMG.jpg"
           },
           {
             "url": "https://information.tv5monde.com/afprss/francais--journal--medecine",
@@ -4061,28 +4187,20 @@
             "backgroundImg": "./icons/WebsitesIcons/tv5monde_bgIMG.jpg"
           },
           {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=sante",
-            "name": "Capital",
-            "specification": "nList firstHeadline",
-            "count": 1,
-            "iconImg": "./icons/WebsitesIcons/capital.png",
-            "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
-          },
-          {
-            "url": "https://news.un.org/feed/subscribe/fr/news/topic/health/feed/rss.xml",
-            "name": "Nations Unies",
-            "specification": "nList firstHeadline",
-            "count": 2,
-            "iconImg": "./icons/WebsitesIcons/nationsunies.png",
-            "backgroundImg": "./icons/WebsitesIcons/nationsunies_bgIMG.jpg"
-          },
-          {
             "url": "https://www.la-croix.com/RSS/Sciences-et-ethique/Ethique#_ga=2.9210677.1260305979.1651324089-660272716.1651321082",
             "name": "La Croix",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lacroix.png"
-          } 
+          },
+          {
+            "url": "https://www.humanite.fr/rss/actu.rss/m%C3%A9decine",
+            "name": "L'Humanité",
+            "specification": "nList firstHeadline",
+            "count": 2,
+            "iconImg": "./icons/WebsitesIcons/humanite.png",
+            "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
+          }  
         ],
         "Astronomie & espace": [
           {
@@ -4158,7 +4276,15 @@
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/futura.png",
             "backgroundImg": "./icons/WebsitesIcons/futura_bgIMG.jpg"
-          }
+          },
+          {
+            "url": "https://www.humanite.fr/rss/actu.rss/math%C3%A9matiques",
+            "name": "L'Humanité",
+            "specification": "nList",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/humanite.png",
+            "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
+          }  
         ],
         "Presse étrangère": [
           {
@@ -4180,6 +4306,7 @@
           {
             "url": "https://www.theguardian.com/science/rss",
             "name": "The Guardian",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/theguardian.png",
@@ -4220,6 +4347,7 @@
           {
             "url": "https://www.deutschlandfunk.de/forschung-aktuell.675.de.rss",
             "name": "Deutschlandfunk",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/dfunk.png",
@@ -4244,7 +4372,7 @@
         ]
       }
     },
-    "Nature": {
+    "Planète": {
       "subtopics": {
         "noSubtopic": [
           {
@@ -4264,13 +4392,31 @@
             "backgroundImg": "./icons/WebsitesIcons/lemonde_bgIMG.jpg"
           },
           {
+            "url": "https://www.humanite.fr/rss/actu.rss/Plan%C3%A8te",
+            "name": "L'Humanité",
+            "specification": "nNotif firstHeadline",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/humanite.png",
+            "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
+          } 
+        ],
+        "Changement climatique": [
+          {
             "url": "https://news.un.org/feed/subscribe/fr/news/topic/climate-change/feed/rss.xml",
             "name": "Nations Unies",
-            "specification": "nNotif firstHeadline",
+            "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/nationsunies.png",
             "backgroundImg": "./icons/WebsitesIcons/nationsunies_bgIMG.jpg"
-          } 
+          },
+          {
+            "url": "https://www.humanite.fr/rss/actu.rss/R%C3%A9chauffement%20climatique",
+            "name": "L'Humanité",
+            "specification": "nList firstHeadline",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/humanite.png",
+            "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
+          }  
         ],
         "Environnement": [
           {
@@ -4323,6 +4469,7 @@
           {
             "url": "https://www.lapresse.ca/actualites/environnement/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -4366,7 +4513,15 @@
             "specification": "nList",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lacroix.png"
-          }   
+          },
+          {
+            "url": "https://www.humanite.fr/rss/actu.rss/%C3%A9nergie",
+            "name": "L'Humanité",
+            "specification": "nList",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/humanite.png",
+            "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
+          }  
         ],
         "Alimentation": [
           {
@@ -4384,6 +4539,14 @@
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/maddyness.png",
             "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.humanite.fr/rss/actu.rss/alimentation",
+            "name": "L'Humanité",
+            "specification": "nList",
+            "count": 1,
+            "iconImg": "./icons/WebsitesIcons/humanite.png",
+            "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
           }
         ],
         "Biodiversité": [
@@ -4422,6 +4585,7 @@
           {
             "url": "https://www.lapresse.ca/societe/animaux/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -4490,7 +4654,15 @@
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/capital.png",
             "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
-          } 
+          },
+          {
+            "url": "https://www.humanite.fr/rss/actu.rss/agriculture",
+            "name": "L'Humanité",
+            "specification": "nList",
+            "count": 2,
+            "iconImg": "./icons/WebsitesIcons/humanite.png",
+            "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
+          }
         ],
         "Presse étrangère": [
           {
@@ -4574,6 +4746,7 @@
           {
             "url": "https://www.lapresse.ca/affaires/techno/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -4858,6 +5031,7 @@
           {
             "url": "https://ici.radio-canada.ca/rss/4163",
             "name": "Radio Canada",
+            "countryISO3": "CAN",
             "specification": "nNotif firstFocus",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/radiocanada.png",
@@ -4910,14 +5084,6 @@
             "backgroundImg": "./icons/WebsitesIcons/tv5monde_bgIMG.jpg"
           },
           {
-            "url": "https://www.courrierinternational.com/feed/category/7426/rss.xml",
-            "name": "Courrier International",
-            "specification": "nNotif firstHeadline",
-            "count": 2,
-            "iconImg": "./icons/WebsitesIcons/courrierinter.png",
-            "backgroundImg": "./icons/WebsitesIcons/courrierinter_bgIMG.jpg"
-          },
-          {
             "url": "https://www.forbes.fr/lifestyle/feed/",
             "name": "Forbes",
             "specification": "nNotif firstHeadline",
@@ -4967,16 +5133,9 @@
             "backgroundImg": "./icons/WebsitesIcons/courrierinter_bgIMG.jpg"
           },
           {
-            "url": "https://www.linternaute.com/voyage/rss/",
-            "name": "L'internaute",
-            "specification": "nList",
-            "count": 1,
-            "iconImg": "./icons/WebsitesIcons/linternaute.png",
-            "backgroundImg": "./icons/WebsitesIcons/linternaute_bgIMG.jpg"
-          },
-          {
             "url": "https://www.lapresse.ca/voyage/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -5084,6 +5243,7 @@
           {
             "url": "https://www.lapresse.ca/gourmand/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -5118,6 +5278,7 @@
           {
             "url": "https://www.lapresse.ca/arts/celebrites/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -5133,6 +5294,7 @@
           {
             "url": "https://ici.radio-canada.ca/rss/1000232",
             "name": "Radio Canada",
+            "countryISO3": "CAN",
             "specification": "nList",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/radiocanada.png",
@@ -5175,6 +5337,7 @@
           {
             "url": "https://www.lapresse.ca/maison/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList",
             "count": 3,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -5214,6 +5377,7 @@
           {
             "url": "https://www.lapresse.ca/actualites/insolite/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nList",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
@@ -5401,6 +5565,7 @@
           {
             "url": "https://www.lapresse.ca/auto/guide-auto/rss",
             "name": "La Presse",
+            "countryISO3": "CAN",
             "specification": "nNotif firstHeadline",
             "count": 3,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"

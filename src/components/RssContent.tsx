@@ -5,6 +5,7 @@ import axios from "axios";
 import { useAsync } from "@react-hookz/web";
 import { Spinner } from "./Spinner";
 import _unescape from "lodash/unescape";
+import { countReset } from "console";
 
 export interface RssFeedSource {
   url: string;
@@ -15,6 +16,7 @@ export interface RssFeedSource {
   encodedTitles?: boolean;
   specification?: string;
   subtopic?: string;
+  countryISO3?: string;
 }
 
 interface ParsedRssItem {
@@ -127,6 +129,12 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
 
             let author = item.author ?? item["dc:creator"];
 
+            var countryISO3Label = String(source.countryISO3)
+
+            if (source.countryISO3 == undefined) {
+              var countryISO3Label = "FRA"
+            }
+
             let displayedDate = date?.setLocale("fr").toFormat("dd/M").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier');
 
             return (
@@ -156,7 +164,10 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                             {displayedDate}
                           </div>
                         </div>
-                        <h6 className="titleLine" dangerouslySetInnerHTML={{ __html: _unescape(item.title ?? "")}} />
+                        <h6 className="titleLine">
+                          <div className={"LanguageLabel r4 " + countryISO3Label}>{countryISO3Label}</div>
+                          <div className="ItemTitle" dangerouslySetInnerHTML={{ __html: _unescape(item.title ?? "")}} />
+                        </h6>
                         <div className="descriptionLine">
                           <div className="r2 item-publish-date">
                             {displayedDate}
