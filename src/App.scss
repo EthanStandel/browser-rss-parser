@@ -707,27 +707,6 @@ ul {
         word-break: break-word;
       }
 
-      .ItemTitle {
-        display: inline;
-      
-        .LanguageLabel {
-          color: white;
-          margin-right: 5px;
-          border-radius: 5px;
-          padding: 3px 5px;
-          display: inline;
-          text-transform: uppercase;
-          background-color: var(--systemFill);
-          line-height: 20px;
-          font-size: 11px;
-          vertical-align: middle;
-        
-          &.FRA {
-            display: none;
-          }
-        }
-      }
-
       .background-image {
         display: none;
       }
@@ -745,6 +724,27 @@ ul {
 
       .titleLine {
         -webkit-line-clamp: 5; /* number of lines to show */
+
+        .ItemTitle {
+          display: inline;
+        }
+  
+        .LanguageLabel {
+          color: white;
+          margin-right: 5px;
+          border-radius: 5px;
+          padding: 3px 5px;
+          display: inline;
+          text-transform: uppercase;
+          background-color: var(--systemFill);
+          line-height: 20px;
+          font-size: 11px;
+          vertical-align: middle;
+        
+          &.FRA {
+            display: none;
+          }
+        }
       }
     
       .itemContainer {
