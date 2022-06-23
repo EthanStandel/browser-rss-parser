@@ -1,6 +1,6 @@
-# Browser RSS parser
+# Browser RSS parser (rebranded nuntium)
 
-I was asked to throw this together for someone.  It just utilizes a `rss_feeds.json` which should contain an `Array<{ url: string; name: string; }>` that defines RSS feeds.  I `fetch`* and parse those feeds and render some of their details to `<RssContent />`.
+I was asked to throw this together for someone.  It just utilizes a `rss_feeds.json` which should contain an `Array<{ url: string; name: string; ...}>` that defines RSS feeds.  I `fetch`* and parse those feeds and render some of their details to `<RssContent />`.
 
 *I actually go through a free public CORS proxy to fetch the feeds because part of the point of the ask was to have all the code in the browser and not to have to stand up another server.
 
