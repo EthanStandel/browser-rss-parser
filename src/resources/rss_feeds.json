@@ -54,7 +54,6 @@
           {
             "url": "https://www.linternaute.com/actualite/rss/",
             "name": "L'internaute",
-            "countryISO3": "USA",
             "specification": "nNotif firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/linternaute.png",
@@ -106,6 +105,7 @@
           {
             "url": "https://www.cbsnews.com/latest/rss/main",
             "name": "CBS News",
+            "countryISO3": "CAN",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/cbsnews.png",
@@ -114,6 +114,7 @@
           {
             "url": "https://www.latimes.com/world-nation/rss2.0.xml",
             "name": "Los Angeles Times",
+            "countryISO3": "USA",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/latimes.png",
@@ -122,6 +123,7 @@
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml",
             "name": "The New York Times",
+            "countryISO3": "USA",
             "specification": "nNotif firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/thenytimes.png",
@@ -130,6 +132,7 @@
           {
             "url": "http://rss.cnn.com/rss/edition_us.rss",
             "name": "CNN",
+            "countryISO3": "USA",
             "specification": "nNotif firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/cnn.png",
@@ -138,6 +141,7 @@
           {
             "url": "https://www.newyorker.com/feed/news",
             "name": "The New Yorker",
+            "countryISO3": "USA",
             "specification": "nNotif bigFocus",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/thenewyorker.png",
@@ -174,6 +178,7 @@
           {
             "url": "http://feeds.bbci.co.uk/news/uk/rss.xml",
             "name": "BBC News",
+            "countryISO3": "GBR",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/bbcnews.png",
@@ -182,6 +187,7 @@
           {
             "url": "http://feeds.feedburner.com/daily-express-uk-news",
             "name": "Express",
+            "countryISO3": "GBR",
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/express.png",
@@ -192,6 +198,7 @@
           {
             "url": "https://www.ft.com/australia-newzealand?format=rss",
             "name": "The Financial Times",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 3,
             "iconImg": "./icons/WebsitesIcons/financialtimes.png",
@@ -631,6 +638,7 @@
           {
             "url": "https://www.forbes.fr/management/feed/",
             "name": "Forbes",
+            "countryISO3": "GBR",
             "specification": "nList",
             "count": 3,
             "iconImg": "./icons/WebsitesIcons/forbes.png",
@@ -706,6 +714,7 @@
           {
             "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
             "name": "The Wall Street Journal",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 1,
             "country": "USA",
@@ -715,6 +724,7 @@
           {
             "url": "https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml",
             "name": "The Wall Street Journal",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/wsjournal.png",
@@ -723,6 +733,7 @@
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
             "name": "The New York Times",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/thenytimes.png",
@@ -731,6 +742,7 @@
           {
             "url": "http://feeds.washingtonpost.com/rss/business",
             "name": "The Washington Post",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/wpost.png",
@@ -739,6 +751,7 @@
           {
             "url": "https://markets.businessinsider.com/rss/news",
             "name": "Markets Insider",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline nodesc",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/minsider.png",
@@ -747,6 +760,7 @@
           {
             "url": "https://rss.dw.com/xml/rss-de-eco",
             "name": "Deutsche Welle",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/dw.png",
@@ -755,6 +769,7 @@
           {
             "url": "https://www.businessinsider.de/wirtschaft/feed/",
             "name": "Business Insider",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/binsider.png",
@@ -763,6 +778,7 @@
           {
             "url": "https://newsfeed.zeit.de/wirtschaft/index",
             "name": "Die Zeit",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/diezeit.png",
@@ -771,6 +787,7 @@
           {
             "url": "https://www.ft.com/global-economy?format=rss",
             "name": "The Financial Times",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 4,
             "iconImg": "./icons/WebsitesIcons/financialtimes.png",
@@ -1485,6 +1502,7 @@
           {
             "url": "http://feeds.foxnews.com/foxnews/sports?format=xml",
             "name": "FOX news",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/foxnews.png",
@@ -1493,6 +1511,7 @@
           {
             "url": "http://feeds.bbci.co.uk/sport/rss.xml",
             "name": "BBC News",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/bbcnews.png",
@@ -1501,6 +1520,7 @@
           {
             "url": "http://www.independent.co.uk/sport/rss",
             "name": "The Independent",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/theindependent.png",
@@ -1509,6 +1529,7 @@
           {
             "url": "http://feeds.washingtonpost.com/rss/sports",
             "name": "The Washington Post",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/wpost.png",
@@ -1517,6 +1538,7 @@
           {
             "url": "https://rss.dw.com/xml/rss-de-sport",
             "name": "Deutsche Welle",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/dw.png",
@@ -1525,6 +1547,7 @@
           {
             "url": "https://www.newyorker.com/feed/news/sporting-scene",
             "name": "The New Yorker",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/thenewyorker.png",
@@ -1542,6 +1565,7 @@
           {
             "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=sport.bild.html",
             "name": "Bild",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/bild.png",
@@ -1550,6 +1574,7 @@
           {
             "url": "http://feeds.feedburner.com/daily-express-sport-news",
             "name": "Express",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/express.png",
@@ -1564,7 +1589,7 @@
           {
             "url": "https://www.lefigaro.fr/rss/figaro_culture.xml",
             "name": "Le Figaro",
-            "specification": "nNotif nNotif firstFocus",
+            "specification": "nNotif firstFocus",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lefigaro.png",
             "backgroundImg": "./icons/WebsitesIcons/lefigaro_bgIMG.png"
@@ -1572,23 +1597,16 @@
           {
             "url": "https://www.vanityfair.fr/rss.xml",
             "name": "Vanity Fair",
-            "specification": "nNotif nNotif firstFocus",
+            "specification": "nNotif firstFocus",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/vanityfair.png",
             "backgroundImg": "./icons/WebsitesIcons/vanityfair_bgIMG.jpg"
           },
           {
-            "url": "https://www.lexpress.fr/rss/culture.xml",
-            "name": "L'Express",
-            "specification": "nNotif nNotif firstFocus",
-            "count": 1,
-            "iconImg": "./icons/WebsitesIcons/lexpress.jpeg",
-            "backgroundImg": "./icons/WebsitesIcons/lexpress_bgIMG.jpg"
-          },
-          {
             "url": "https://5minutes.rtl.lu/rss/culture",
             "name": "RTL.LU",
-            "specification": "nNotif nNotif firstFocus",
+            "countryISO3": "LUX",
+            "specification": "nNotif firstFocus",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/rtl.png",
             "backgroundImg": "./icons/WebsitesIcons/rtl_bgIMG.png"
@@ -2253,7 +2271,7 @@
           },
           {
             "url": "https://www.lhistoire.fr/rss.xml",
-            "name": "l'Histoire",
+            "name": "L'Histoire",
             "specification": "nList",
             "count": 3,
             "iconImg": "./icons/WebsitesIcons/lhistoire.png",
@@ -2280,6 +2298,7 @@
           {
             "url": "https://www.bbc.com/culture/feed.rss",
             "name": "BBC News",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/bbcnews.png",
@@ -2288,6 +2307,7 @@
           {
             "url": "https://www.architecturaldigest.com/feed/culture-lifestyle/rss",
             "name": "Architectural Digest",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/architecturalDigest.png",
@@ -2296,6 +2316,7 @@
           {
             "url": "https://www.newyorker.com/feed/culture",
             "name": "The New Yorker",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 3,
             "iconImg": "./icons/WebsitesIcons/thenewyorker.png",
@@ -2313,6 +2334,7 @@
           {
             "url": "https://taz.de/feed/!p4639/rss.xml",
             "name": "Die Tageszeitung",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/taz.png",
@@ -2321,6 +2343,7 @@
           {
             "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=unterhaltung.bild.html",
             "name": "Bild",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 4,
             "iconImg": "./icons/WebsitesIcons/bild.png",
@@ -2329,6 +2352,7 @@
           {
             "url": "http://feed.informer.com/digests/ABZM4GN0OP/feeder.rss",
             "name": "Vox Culture",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/vox.png",
@@ -2337,6 +2361,7 @@
           {
             "url": "https://www.forbes.com/lifestyle/feed2/",
             "name": "Forbes",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 3,
             "iconImg": "./icons/WebsitesIcons/forbes.png",
@@ -2616,6 +2641,7 @@
           {
             "url": "http://feeds.washingtonpost.com/rss/world/europe",
             "name": "The Washington Post",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/wpost.png",
@@ -2624,6 +2650,7 @@
           {
             "url": "https://www.economist.com/feeds/print-sections/75/europe.xml",
             "name": "The Economist",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/theeconomist.png",
@@ -2632,6 +2659,7 @@
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/Europe.xml",
             "name": "The New York Times",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/thenytimes.png",
@@ -2640,6 +2668,7 @@
           {
             "url": "http://feeds.bbci.co.uk/news/world/europe/rss.xml?edition=int",
             "name": "BBC News",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/bbcnews.png",
@@ -2657,6 +2686,7 @@
           {
             "url": "https://taz.de/feed/!p4617/rss.xml",
             "name": "Die Tageszeitung",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/taz.png",
@@ -3257,6 +3287,7 @@
           {
             "url": "http://feeds.feedburner.com/daily-express-politics",
             "name": "Express",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/express.png",
@@ -3461,6 +3492,7 @@
           {
             "url": "http://feeds.feedburner.com/daily-express-columnists",
             "name": "Express",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/express.png",
@@ -3469,6 +3501,7 @@
           {
             "url": "http://feeds.feedburner.com/daily-express-express-comment",
             "name": "Express",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 3,
             "iconImg": "./icons/WebsitesIcons/express.png",
@@ -3477,6 +3510,7 @@
           {
             "url": "https://www.ft.com/opinion?format=rss",
             "name": "The Financial Times",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 4,
             "iconImg": "./icons/WebsitesIcons/financialtimes.png",
@@ -4085,6 +4119,7 @@
           {
             "url": "https://taz.de/feed/!p4608/rss.xml",
             "name": "Die Tageszeitung",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/taz.png",
@@ -4290,6 +4325,7 @@
           {
             "url": "https://www.telegraph.co.uk/science/rss.xml",
             "name": "The Telegraph",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/thetelegraph.png",
@@ -4298,6 +4334,7 @@
           {
             "url": "https://www.techrepublic.com/rssfeeds/articles/?feedType=rssfeeds&sort=latest",
             "name": "TechRepublic",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/techrep.png",
@@ -4315,6 +4352,7 @@
           {
             "url": "https://www.forbes.com/science/feed2",
             "name": "Forbes",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/forbes.png",
@@ -4323,6 +4361,7 @@
           {
             "url": "http://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
             "name": "BBC News",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/bbcnews.png",
@@ -4331,6 +4370,7 @@
           {
             "url": "https://www.wired.com/feed/science/rss",
             "name": "Wired",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/wired.png",
@@ -4339,6 +4379,7 @@
           {
             "url": "https://rss.dw.com/xml/rss-de-wissenschaft",
             "name": "Deutsche Welle",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/dw.png",
@@ -4356,6 +4397,7 @@
           {
             "url": "https://www.vox.com/rss/science-and-health/index.xml",
             "name": "Vox",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/vox.png",
@@ -4364,6 +4406,7 @@
           {
             "url": "https://newsfeed.zeit.de/wissen/index",
             "name": "Die Zeit",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/diezeit.png",
@@ -4668,6 +4711,7 @@
           {
             "url": "https://taz.de/feed/!p4624/rss.xml",
             "name": "Die Tageszeitung",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/taz.png",
@@ -4676,6 +4720,7 @@
           {
             "url": "http://www.vox.com/rss/energy-and-environment/index.xml",
             "name": "Vox",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/vox.png",
@@ -4684,6 +4729,7 @@
           {
             "url": "http://feeds.feedburner.com/daily-express-nature",
             "name": "Express",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/express.png",
@@ -4969,6 +5015,7 @@
           {
             "url": "https://www.businessinsider.de/tech/feed/",
             "name": "Tech Insider",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/tinsider.png",
@@ -4977,6 +5024,7 @@
           {
             "url": "https://www.newyorker.com/feed/tech",
             "name": "The New Yorker",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/thenewyorker.png",
@@ -4985,6 +5033,7 @@
           {
             "url": "https://www.newyorker.com/feed/tech/elements",
             "name": "The New Yorker",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/thenewyorker.png",
@@ -4993,6 +5042,7 @@
           {
             "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=digital.bild.html",
             "name": "Bild",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/bild.png",
@@ -5001,6 +5051,7 @@
           {
             "url": "http://feed.informer.com/digests/ZWY0DHB1SW/feeder.rss",
             "name": "Vox Tech-Mix",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 3,
             "iconImg": "./icons/WebsitesIcons/vox.png",
@@ -5009,6 +5060,7 @@
           {
             "url": "https://newsfeed.zeit.de/digital/index",
             "name": "Die Zeit",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/diezeit.png",
@@ -5421,6 +5473,7 @@
           {
             "url": "https://www.newyorker.com/feed/everything",
             "name": "The New Yorker",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline bigList",
             "count": 4,
             "iconImg": "./icons/WebsitesIcons/thenewyorker.png",
@@ -5429,6 +5482,7 @@
           {
             "url": "https://gestalten.com/blogs/journal.atom",
             "name": "Gestalten",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/gestalten.png",
@@ -5437,6 +5491,7 @@
           {
             "url": "http://feeds.foxnews.com/foxnews/section/lifestyle?format=xml",
             "name": "FOX news",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 4,
             "iconImg": "./icons/WebsitesIcons/foxnews.png",
@@ -5445,6 +5500,7 @@
           {
             "url": "https://www.architecturaldigest.com/feed/culture-lifestyle/motoring/rss",
             "name": "Architectural Digest",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/architecturalDigest.png",
@@ -5453,6 +5509,7 @@
           {
             "url": "https://rss.dw.com/xml/rss-de-deutschlandentdecken",
             "name": "Deutsche Welle",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/dw.png",
@@ -5461,6 +5518,7 @@
           {
             "url": "https://www.businessinsider.de/leben/feed/",
             "name": "Insider",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/insider.png",
@@ -5469,6 +5527,7 @@
           {
             "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=lifestyle.bild.html",
             "name": "Bild",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/bild.png",
@@ -5477,6 +5536,7 @@
           {
             "url": "http://feed.informer.com/digests/BSROK1KTDS/feeder.rss",
             "name": "Vox",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 3,
             "iconImg": "./icons/WebsitesIcons/vox.png",
@@ -5485,6 +5545,7 @@
           {
             "url": "http://feeds.feedburner.com/daily-express-lifestyle",
             "name": "Express",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/express.png",
@@ -5594,6 +5655,7 @@
           {
             "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=auto.bild.html",
             "name": "Bild",
+            "countryISO3": "DEU",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/bild.png",
@@ -5602,6 +5664,7 @@
           {
             "url": "http://feeds.feedburner.com/daily-express-cars-news",
             "name": "Express",
+            "countryISO3": "GBR",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/express.png",
@@ -5610,6 +5673,7 @@
           {
             "url": "https://www.architecturaldigest.com/feed/culture-lifestyle/motoring/rss",
             "name": "Architectural Digest",
+            "countryISO3": "USA",
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/architecturalDigest.png",

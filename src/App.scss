@@ -18,7 +18,7 @@
   --societeColorTheme: mediumaquamarine;
   --techColorTheme: teal;
   --regionsColorTheme: cornflowerblue;
-  --natureColorTheme: limegreen;
+  --planeteColorTheme: limegreen;
   --lifestyleColorTheme: #6667ab;
   --autoColorTheme: mediumvioletred;
 
@@ -85,8 +85,8 @@
     --colorTheme: var(--regionsColorTheme);
   }
 
-  &.Nature {
-    --colorTheme: var(--natureColorTheme);
+  &.Planète {
+    --colorTheme: var(--planeteColorTheme);
   }
 
   &.Art {
@@ -269,14 +269,14 @@ main.Articles {
     }
   }
 
-  .Nature {
+  .Planète {
 
     .rss-podcasts * {
-      border-bottom-color: var(--natureColorTheme);
+      border-bottom-color: var(--planeteColorTheme);
     }
 
     * {
-      text-decoration-color: var(--natureColorTheme);
+      text-decoration-color: var(--planeteColorTheme);
     }
   }
 
@@ -440,9 +440,9 @@ ul {
         color: var(--regionsColorTheme);
       }
     
-      .Nature {
-        border-color: var(--natureColorTheme);
-        color: var(--natureColorTheme);
+      .Planète {
+        border-color: var(--planeteColorTheme);
+        color: var(--planeteColorTheme);
       }
     
       .Art {
@@ -525,8 +525,8 @@ ul {
               background-color: var(--regionsColorTheme);
             }
     
-            &.Nature {
-              background-color: var(--natureColorTheme);
+            &.Planète {
+              background-color: var(--planeteColorTheme);
             }
     
             &.Art {
@@ -1464,4 +1464,24 @@ em {
 
 .section {
     min-width: 100%;
+}
+
+.BlockParagraph {
+  background-color: var(--secondarySystemGroupedBackground);
+  box-shadow: 2px 4px 12px rgba(0,0,0, 0.25);
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px 0;
+  border: 2px solid var(--systemGray5);
+
+  h1, h2, h3, h4, h5 {
+    text-align: center;
+    width: 100% !important;
+    padding: 0 0 20px 0;
+  }
+
+  &.Bday {
+    border: 4px solid var(--headlinesColorTheme);
+  }
+
 }

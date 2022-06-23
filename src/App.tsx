@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import './App.scss';
 import Footer from './components/Footer'
+import HappyBday from './components/HappyBirthday';
 import RssContent from './components/RssContent';
 import rssFeeds from "./resources/rss_feeds.json";
 import topicComponents from './topic-components/topicComponents';
@@ -79,6 +80,7 @@ const App = () => {
       </header>
       <main className="Articles">
         <div className={"grid "+ topicFilter}>
+          <HappyBday />
           <h2 className={"bold " + topicFilter}>{topicFilter}</h2>
           <div className="LeftPodcastsColumn">
             <CustomTopicComponent />
