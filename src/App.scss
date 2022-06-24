@@ -1,6 +1,6 @@
 @import "ios/ios-typography.scss";
 @import "ios/ios-semantic_colors.scss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 :root {
   --rounded-corners-block: 12px;
@@ -1470,7 +1470,7 @@ em {
   background-color: var(--secondarySystemGroupedBackground);
   box-shadow: 2px 4px 12px rgba(0,0,0, 0.25);
   border-radius: 20px;
-  padding: 25px;
+  padding: 30px;
   margin: 20px 0;
   border: 2px solid var(--systemGray5);
 
@@ -1483,5 +1483,4 @@ em {
   &.Bday {
     border: 4px solid var(--headlinesColorTheme);
   }
-
 }
