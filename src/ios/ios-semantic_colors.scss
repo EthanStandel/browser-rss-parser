@@ -66,6 +66,13 @@
       --systemUltrathickMaterial: rgba(246, 246, 246, 0.84);
       --systemHeaderMaterial: rgba(255, 255, 255, 0.8);
       --systemTitlebarMaterial: rgba(253, 253, 253, 0.8);
+
+      /*/ Addition by KL3W /*/
+      --cardBorder: rgba(209, 209, 214, 0.63);
+
+      /*/ Addition by KL3W - dropdown shadows [use drop-shadow(0 10px 10px Shadow)] /*/
+      --lightShadow: rgba(76,76,109,0.03);
+      --hardShadow: rgba(76, 76, 109, 0.07);
     }
   }
   

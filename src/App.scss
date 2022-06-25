@@ -378,6 +378,13 @@ ul {
       margin: 1px 5px;
       display: inline-block;
       color: var(--colorTheme);
+
+      @media only screen and (min-width: 1000px) {
+        
+        &:first-child {
+          margin-left: 10px;
+        }
+      }
     
       /*/ color styles for topics navbar -border and color /*/
       .Sport {
@@ -545,10 +552,21 @@ ul {
 
 /*/ subtopics menu on top of the page /*/
 .subtopic-selection ul.topics-navbar {
-  padding-left: 15px;
+  padding-left: 26px;
 
   li {
     margin-top: 10px;
+
+    @media only screen and (min-width: 1000px) {
+        
+      &:first-child {
+        margin-left: 0;
+  
+        > * {
+          padding-left: 0;
+        }
+      }
+    }
 
     > * {
       /*/ color for subtopic navbar li /*/
@@ -615,7 +633,7 @@ header .logo-text {
   float: left;
   line-height: 25.6px;
   height: 28px;
-  padding: 0 30px !important;
+  padding: 0 20px 0 16px !important;
   border-right: 1.8px solid var(--separator);
 }
 
@@ -944,7 +962,7 @@ ul {
           width: calc(100% - 60px);
           
           .item-publish-date {
-            color: white;
+            color: white !important;
             text-shadow: 0 0 8px black;
             opacity: 0.8;
           }
@@ -1095,7 +1113,7 @@ ul {
           position: absolute;
           
           .item-publish-date {
-            color: white;
+            color: white !important;
             text-shadow: 0 0 8px black;
             opacity: 0.8;
             padding-left: 0;
