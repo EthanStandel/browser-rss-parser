@@ -37,11 +37,11 @@ const App = () => {
   return (
     <div className={topicFilter + " App"}>
       <div className="header-mobile">
-        <h5 className="logo-text" onClick={() => setTopicFilter(topicFilter)}>nuntium</h5>
+        <h5 className="logo-text" onClick={() => setTopicFilter(topicFilter)}>nuntii</h5>
       </div>
       <header>
         <div className="headerTitle">
-          <h5 className="logo-text" onClick={() => setTopicFilter(topicFilter)}>nuntium</h5>
+          <h5 className="logo-text" onClick={() => setTopicFilter(topicFilter)}>nuntii</h5>
         </div>
         <div className="headerTopics">
           <nav>
