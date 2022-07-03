@@ -37,11 +37,11 @@ const App = () => {
   return (
     <div className={topicFilter + " App"}>
       <div className="header-mobile">
-        <h4 className="logo-text" onClick={() => setTopicFilter(topicFilter)}>nuntium</h4>
+        <h5 className="logo-text" onClick={() => setTopicFilter(topicFilter)}>nuntium</h5>
       </div>
       <header>
         <div className="headerTitle">
-          <h4 className="logo-text" onClick={() => setTopicFilter(topicFilter)}>nuntium</h4>
+          <h5 className="logo-text" onClick={() => setTopicFilter(topicFilter)}>nuntium</h5>
         </div>
         <div className="headerTopics">
           <nav>
@@ -80,8 +80,7 @@ const App = () => {
       </header>
       <main className="Articles">
         <div className={"grid "+ topicFilter}>
-          <HappyBday />
-          <h2 className={"bold " + topicFilter}>{topicFilter}</h2>
+          <h3 className={"bold " + topicFilter}>{topicFilter}</h3>
           <div className="LeftPodcastsColumn">
             <CustomTopicComponent />
           </div>
@@ -93,7 +92,7 @@ const App = () => {
                 <div key={key} className={`${key} section`}>
                   <div id="external-script-element" />
                   <section>
-                    {key !== "noSubtopic" && <h3 className="subtopic bold">{key}</h3>}
+                    {key !== "noSubtopic" && <h4 className="subtopic bold">{key}</h4>}
                     <RssContent rssFeeds={feeds} />
                   </section>
                 </div>

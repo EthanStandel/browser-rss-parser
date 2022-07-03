@@ -166,13 +166,13 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                         </div>
                         <h6 className="titleLine">
                           <div className={"LanguageLabel r4 " + countryISO3Label}>{countryISO3Label}</div>
-                          <div className="ItemTitle" dangerouslySetInnerHTML={{ __html: _unescape(item.title ?? "")}} />
+                          <div className="ItemTitle" dangerouslySetInnerHTML={{ __html: _unescape(item.title ?? "").replace('*** BILDplus Inhalt *** ','').replace('<<','«').replace('>>','»')}} />
                         </h6>
                         <div className="descriptionLine">
                           <div className="r2 item-publish-date">
                             {displayedDate}
                           </div>
-                            {item.description && <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: _unescape(item.description)}} />}
+                            {item.description && <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: _unescape(item.description).replace('<<','«').replace('>>','»')}} />}
                         </div>
                         <div className="descriptionLine2">
                           <div className="r2 item-publish-date">

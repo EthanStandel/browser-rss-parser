@@ -1,5 +1,6 @@
 @import "ios/ios-typography.scss";
 @import "ios/ios-semantic_colors.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
 :root {
@@ -127,7 +128,7 @@ main.Articles {
   padding: 0 83px;
   margin: auto;
   overflow: hidden;
-  min-height: 150vh;
+  min-height: 111vh;
 
   .grid {
     max-width: calc(444px + 40px + 555px);
@@ -142,7 +143,7 @@ main.Articles {
     padding-right: 40px;
   }
 
-  h2 {
+  h3 {
     width: fit-content;
   }
   
@@ -557,6 +558,10 @@ ul {
   li {
     margin-top: 10px;
 
+    button {
+      border-radius: 0;
+    }
+
     @media only screen and (min-width: 1000px) {
         
       &:first-child {
@@ -595,13 +600,13 @@ ul {
 }
 
 /*/ Title colors for topics /*/
-h2.bold {
+h3.bold {
   color: var(--colorTheme);
 }
 
 /*/ Titles for subtopics in ArticlesMain /*/
 h4.subtopic {
-  font-weight: 600;
+  padding-top: 0;
 }
 
 /*/ higher version of header for mobile devices /*/
@@ -615,7 +620,6 @@ h4.subtopic {
     text-align: center;
     width: 100% !important;
     padding: 5px 0 !important;
-    line-height: 28px;
   }
 }
 
@@ -631,8 +635,8 @@ header .logo-text {
   display: block;
   text-align: center;
   float: left;
-  line-height: 25.6px;
-  height: 28px;
+  line-height: 25px; /*/ height of nav .topics-navbar element /*/ 
+  height: 25px;
   padding: 0 20px 0 16px !important;
   border-right: 1.8px solid var(--separator);
 }
@@ -667,17 +671,6 @@ ul {
       background-color: var(--secondarySystemGroupedBackground);
       border-radius: var(--rounded-corners-block);
 
-      .footnote.icon-footnote-container {
-  
-        text-align: right;
-        display: table-cell;
-        color: var(--secondaryLabel);
-        line-height: 22px;
-        width: max-content;
-        white-space: nowrap;
-        padding-left: 15px;
-      }
-
       .item-description {
         
         p img, img, br, a, ul, li {
@@ -687,26 +680,23 @@ ul {
         }
 
         p {
-          font-size: 15px !important;
+
+          /*/ Define as h8/*/
+          font-size: 14px !important;
+          line-height: 18px !important;
+          letter-spacing: -0.0062px !important;
           font-weight: normal !important;
-          line-height: 20px !important;
-          letter-spacing: -0.24px !important;
           margin: 0 !important;
           padding: 0 !important;
 
-          /*/ for 'Capital' source /*/
           strong {
             font-weight: normal !important;
           }
-        }
 
-        @media only screen and (max-width: 1000px) {
-        
-          p {
-            /*/ smaller font-size on small devices/*/
-            font-size: 13px !important;
-            line-height: 16px !important;
-            letter-spacing: -0.08px !important;
+          /*/ Display like topic/*/
+          b:first-of-type {
+            color: var(--colorTheme);
+            text-transform: uppercase;
           }
         }
 
@@ -755,8 +745,8 @@ ul {
           display: inline;
           text-transform: uppercase;
           background-color: var(--systemFill);
-          line-height: 20px;
-          font-size: 11px;
+          line-height: 20px; /*/ line height of TitleLine /*/
+          font-size: 10px;
           vertical-align: middle;
         
           &.FRA {
@@ -833,6 +823,7 @@ ul {
       }
 
       .source-name {
+        /*/ not displayed element /*/
         font-weight: 900 !important;
         color: var(--systemGray);
         -webkit-line-clamp: 1 !important;
@@ -842,34 +833,35 @@ ul {
         text-align: left;
         word-break: break-all;
         width: 100%;
-        line-height: 22px;
-        display:  -webkit-box !important;
+        line-height: 20px; /*/ height of titleLine /*/
+        display: -webkit-box !important;
       }
       
       .item-publish-date {
         text-align: right;
         display: table-cell;
         color: var(--secondaryLabel);
-        line-height: 22px;
         width: max-content;
         white-space: nowrap;
-        padding-left: 15px;
-
       }
       
       .item-F-line {
         width: 100%;
         display: table;
-        height:22px !important;
+        height:20px !important;
+
+        .item-publish-date {
+          line-height: 20px; /*/ height of titleLine /*/
+          padding-left: 15px;
+        }
       }
 
       .descriptionLine, .descriptionLine2 {
         display: table;
-        width: 100%;
+        width: initial;
 
         .item-publish-date {
           padding-left: 0;
-          line-height: 16px !important;
           text-align: left;
           padding-right: 5px;
         }
@@ -919,13 +911,19 @@ ul {
         .descriptionLine2, .descriptionLine2 > * {
           display: none !important;
         }
+
+        .LanguageLabel {
+          /*/ as titleLine /*/
+          line-height: 31px !important;
+        }
       
         .titleLine {
+          /*/ define as h5 /*/
           font-weight: 700;
-          font-size: 28px;
-          line-height: 34px;
+          font-size: 24px;
+          line-height: 31px;
           display: block;
-          letter-spacing: 0.36px;
+          letter-spacing: -0.0195px;
           text-shadow: 0 0 5px black;
           padding: 14px 16px 0;
           color: white;
@@ -991,7 +989,7 @@ ul {
             position: absolute;
             border-radius: 9px;
             top: 10px;
-            left: 10px;
+            left: 16px; /*/ left-margin for titleLine /*/
           }
 
           &:nth-child(1) {
@@ -1100,7 +1098,7 @@ ul {
             position: absolute;
             border-radius: 9px !important;
             top: 10px !important;
-            left: 10px !important;
+            left: 16px !important; /*/ left-margin for ItemContainer/*/
           }
 
           &:nth-child(1) {
@@ -1420,20 +1418,6 @@ Adapted for small devices
     width: 100% !important;
   }
 
-  h6.titleLine {
-    /*/ smaller font-size for small devices /*/
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: -0.24px;
-  }
-
-  .h8.item-description {
-    /*/ smaller font-size for small devices /*/
-    font-size: 13px;
-    line-height: 16px;
-    letter-spacing: -0.08px;
-  }
-
   .subtopic-selection ul.topics-navbar {
      /*/ smaller padding for small devices /*/
     padding-left: 0px !important; 
@@ -1473,7 +1457,7 @@ Adapted for small devices
 }
 
 /*/ small caps for label in paragraph /*/
-em {
+em:not(.itemContainer em) {
   font-family: 'Bodoni Moda' !important;
   font-weight: 700;
   font-size: calc(100% + 3px);

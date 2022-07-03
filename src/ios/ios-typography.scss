@@ -3,6 +3,8 @@
 /*/ May use Playfair Display as serif font https://fonts.google.com/specimen/Playfair+Display /*/
 @import "ios-semantic_colors.scss";
 
+/*/ Changes to come for font-size https://miro.medium.com/max/1382/1*D4_UjYVP4bj7M_c1PldO-A.png /*/
+
   * {
       margin: 0;
       padding: 0;
@@ -14,9 +16,9 @@ h1 {
     font-family: 'Bodoni Moda' !important;
     font-style: normal;
     font-weight: 400;
-    font-size: 60px;
-    line-height: 70px;
-    letter-spacing: -0.223px;
+    font-size: 64px;
+    line-height: 81px;
+    letter-spacing: -0.0223px;
 }
 
 /* Bold style for Huge Title */
@@ -29,10 +31,9 @@ h2 {
     font-family: --font-ui;
     font-style: normal;
     font-weight: 400;
-    font-size: 34px;
-    line-height: 41px;
-    letter-spacing: -0.0218px;
-    padding: 22px 0;
+    font-size: 48px;
+    line-height: 61px;
+    letter-spacing: -0.0223px;
 }
 
 /* Bold style for Large Title */
@@ -45,10 +46,10 @@ h3 {
     font-family: --font-ui;
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: -0.0209px;
-    padding-bottom: 16px;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: -0.0220px;
+    padding: 22px 0;
 }
 
 /* Bold style for Title 1 */
@@ -61,10 +62,10 @@ h4 {
     font-family: --font-ui;
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 28px;
-    letter-spacing: -0.0183px;
-    padding: 12px 0;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.0213px;
+    padding-bottom: 16px;
 }
 
 /* Bold style for Title 2 */
@@ -77,9 +78,9 @@ h5 {
     font-family: --font-ui;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: -0.0167px;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: -0.0195px;
 }
 
 /* Bold style for Title 3 */
@@ -92,9 +93,9 @@ h6 {
     font-family: --font-ui;
     font-style: normal;
     font-weight: 600;
-    font-size: 17px;
-    line-height: 22px;
-    letter-spacing: -0.0128px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.0110px;
 }
 
 /* Callout */
@@ -102,9 +103,9 @@ h6 {
     font-family: --font-ui;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    letter-spacing: -0.011px;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: -0.0088px;
     margin-bottom: 16px;
 }
 
@@ -118,9 +119,9 @@ h6 {
     font-family: --font-ui;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: -0.0088px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.0062px;
 }
 
 /* Bold style for Subheadline */
@@ -133,9 +134,9 @@ p {
     font-family: --font-ui;
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 22px;
-    letter-spacing: -0.0128px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.0110px;
     margin-bottom: 16px;
     color: var(--label);
     margin-top: 0.8em;
@@ -151,9 +152,9 @@ p.bold {
     font-family: --font-ui;
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
-    line-height: 16px;
-    letter-spacing: -0.0032px;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0px;
     color: var(--systemGray);
 }
 
@@ -167,9 +168,9 @@ p.bold {
     font-family: --font-ui;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.0005px;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.0048px;
 }
 
 /* Bold Style for Caption 1 */
@@ -182,9 +183,9 @@ p.bold {
     font-family: --font-ui;
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
-    line-height: 12px;
-    letter-spacing: 0.0048px;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.0100px;
 }
 
 /* Bold style for Caption 2 */
@@ -197,9 +198,9 @@ p.bold {
     font-family: --font-ui;
     font-style: normal;
     font-weight: 500;
-    font-size: 10px;
-    line-height: 12px;
-    letter-spacing: 0.01px;
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 0.0162px;
 }
 
 /* Rubric 1 */
@@ -207,9 +208,9 @@ p.bold {
     font-family: --font-ui;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-    letter-spacing: -0.0088px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.0062px;
     text-transform: uppercase;
 }
 
@@ -223,9 +224,9 @@ p.bold {
     font-family: --font-ui;
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
-    line-height: 18px;
-    letter-spacing: -0.0032px;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0px;
     text-transform: uppercase;
     color: var(--secondaryLabel) !important;
 }
@@ -240,9 +241,9 @@ p.bold {
     font-family: --font-ui;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: -0.011px;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: -0.0088px;
     text-transform: uppercase;
 }
 
@@ -251,9 +252,9 @@ p.bold {
     font-family: --font-ui;
     font-style: normal;
     font-weight: 700;
-    font-size: 11px;
-    line-height: 16px;
-    letter-spacing: 0.0048px;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.0100px;
     text-transform: uppercase;
 }
 
@@ -262,8 +263,8 @@ p.bold {
     font-family: --font-ui;
     font-style: normal;
     font-weight: 700;
-    font-size: 9px;
-    line-height: 22px;
-    letter-spacing: 0.0162px;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.0235px;
     text-transform: uppercase;
 }

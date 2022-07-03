@@ -115,7 +115,7 @@ const EcoComponent = () => {
           <div className="itemContainer">
             <div className="item-F-line">
               <h6 className="titleLine">Le journal de l'économie</h6>
-              <div className="icon-footnote-container footnote">4 min</div>
+              <div className="footnote item-publish-date">4 min</div>
             </div>    
             <div className="descriptionLine">
               <div className="item-descriptionWrapper">
