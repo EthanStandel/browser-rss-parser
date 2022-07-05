@@ -1,7 +1,7 @@
 @import "ios/ios-typography.scss";
 @import "ios/ios-semantic_colors.scss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400..900');
 
 :root {
   --rounded-corners-block: 12px;
@@ -108,6 +108,25 @@
   margin: auto;
   margin-top: 6rem;
   margin-bottom: 6rem;
+}
+
+
+/*/ for Test /*/ /*/ to delete if layout for À la une is deleted. /*/
+@media only screen and (min-width: 1000px) {
+  .À.la.une .Articles {
+    
+    .LeftPodcastsColumn, .RightRSSColumn {
+      width: 100%;
+
+      ul.rss-podcasts {
+
+        li {
+          width: 50%;
+          display: inline-block;
+        }
+      }
+    }
+  }
 }
 
 body {
@@ -384,6 +403,10 @@ ul {
         
         &:first-child {
           margin-left: 10px;
+        }
+
+        &:last-child {
+          margin-right: 10px;
         }
       }
     

@@ -1,19 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400..900');
-/*/ May use Playfair Display as serif font https://fonts.google.com/specimen/Playfair+Display /*/
 @import "ios-semantic_colors.scss";
-
-/*/ Changes to come for font-size https://miro.medium.com/max/1382/1*D4_UjYVP4bj7M_c1PldO-A.png /*/
 
   * {
       margin: 0;
       padding: 0;
-      font-family: 'Inter';
+      --font-ui: 'Inter';
   }
 
 /* Huge Title */
 h1 {
-    font-family: 'Bodoni Moda' !important;
+    font-family: 'Bodoni Moda';
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
@@ -28,7 +23,7 @@ h1.bold {
 
 /* Large Title */
 h2 {
-    font-family: --font-ui;
+    font-family: var(--font-ui);
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
@@ -43,7 +38,7 @@ h2.bold {
 
 /* Title 1 */
 h3 {
-    font-family: --font-ui;
+    font-family: var(--font-ui);
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -59,7 +54,7 @@ h3.bold {
 
 /* Title 2 */
 h4 {
-    font-family: --font-ui;
+    font-family: var(--font-ui);
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -75,7 +70,7 @@ h4.bold {
 
 /* Title 3 */
 h5 {
-    font-family: --font-ui;
+    font-family: var(--font-ui);
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -90,7 +85,7 @@ h5.bold {
 
 /* Headline */
 h6 {
-    font-family: --font-ui;
+    font-family: var(--font-ui);
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -100,7 +95,7 @@ h6 {
 
 /* Callout */
 .h7 {
-    font-family: --font-ui;
+    font-family: var(--font-ui);
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -116,7 +111,7 @@ h6 {
 
 /* Subheadline */
 .h8 {
-    font-family: --font-ui;
+    font-family: var(--font-ui);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -131,7 +126,7 @@ h6 {
 
 /* Body */
 p {
-    font-family: --font-ui;
+    font-family: var(--font-ui);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -149,7 +144,7 @@ p.bold {
 
 /* Footnote */
 .footnote {
-    font-family: --font-ui;
+    font-family: var(--font-ui);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -165,7 +160,7 @@ p.bold {
 
 /* Caption 1 */
 .c1 {
-    font-family: --font-ui;
+    font-family: var(--font-ui);
     font-style: normal;
     font-weight: 400;
     font-size: 11px;
@@ -180,7 +175,7 @@ p.bold {
 
 /* Caption 2 */
 .c2 {
-    font-family: --font-ui;
+    font-family: var(--font-ui);
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
@@ -195,7 +190,7 @@ p.bold {
 
 /* Caption 3 */
 .c3 {
-    font-family: --font-ui;
+    font-family: var(--font-ui);
     font-style: normal;
     font-weight: 500;
     font-size: 9px;
@@ -205,7 +200,7 @@ p.bold {
 
 /* Rubric 1 */
 .r1 {
-    font-family: --font-ui;
+    font-family: var(--font-ui);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -221,7 +216,7 @@ p.bold {
 
 /* Rubric 2 */
 .r2 {
-    font-family: --font-ui;
+    font-family: var(--font-ui);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -238,7 +233,7 @@ p.bold {
 
 /* Rubric 3 */
 .r3 {
-    font-family: --font-ui;
+    font-family: var(--font-ui);
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -249,7 +244,7 @@ p.bold {
 
 /* Rubric 4 */
 .r4 {
-    font-family: --font-ui;
+    font-family: var(--font-ui);
     font-style: normal;
     font-weight: 700;
     font-size: 10px;
@@ -260,7 +255,7 @@ p.bold {
 
 /* Rubric 5 */
 .r5 {
-    font-family: --font-ui;
+    font-family: var(--font-ui);
     font-style: normal;
     font-weight: 700;
     font-size: 8px;
