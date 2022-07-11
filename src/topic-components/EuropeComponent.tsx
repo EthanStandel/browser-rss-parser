@@ -1,6 +1,6 @@
 const EuropeComponent = () => {
   return (
-   
+    <div className="LeftPodcastsColumn">
     <ul className='rss-podcasts'>
       <div className="intro">
         <h5 className="bold">Rendez-vous avec l'Europe</h5>
@@ -34,6 +34,7 @@ const EuropeComponent = () => {
       </a>
     </li>
     </ul>
+    </div>
   );
 }
 

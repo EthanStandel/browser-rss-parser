@@ -2,7 +2,7 @@ import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddispla
 
 const IdeesComponent = () => {
   return (
-   
+    <div className="LeftPodcastsColumn">
     <ul className='rss-podcasts'>
       <div className="intro">
         <h5 className="bold">Rendez-vous avec la science</h5>
@@ -70,6 +70,7 @@ const IdeesComponent = () => {
       </a>
     </li>
     </ul>
+    </div>
   );
 }
 

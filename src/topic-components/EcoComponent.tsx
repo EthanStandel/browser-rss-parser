@@ -2,7 +2,7 @@ import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddispla
 
 const EcoComponent = () => {
   return (
-   
+    <div className="LeftPodcastsColumn">
     <ul className='rss-podcasts'>
       <div className="intro">
         <h5 className="bold">Rendez-vous avec l'éco</h5>
@@ -160,6 +160,7 @@ const EcoComponent = () => {
       </a>
     </li>
     </ul>
+    </div>
   );
 }
 

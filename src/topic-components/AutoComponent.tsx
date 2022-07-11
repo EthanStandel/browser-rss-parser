@@ -2,7 +2,7 @@ import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddispla
 
 const AutoComponent = () => {
   return (
-   
+    <div className="LeftPodcastsColumn">
     <ul className='rss-podcasts'>
       <div className="intro">
         <h5 className="bold">Rendez-vous sportifs</h5>
@@ -39,6 +39,7 @@ const AutoComponent = () => {
       </a>
     </li>
     </ul>
+    </div>
   );
 }
 

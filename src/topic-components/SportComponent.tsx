@@ -3,7 +3,7 @@ import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddispla
 
 const SportComponent = () => {
   return (
-   
+    <div className="LeftPodcastsColumn">
     <ul className='rss-podcasts'>
       <div className="intro">
         <h5 className="bold">Rendez-vous avec le sport</h5>
@@ -71,6 +71,7 @@ const SportComponent = () => {
       </a>
     </li>
     </ul>
+    </div>
   );
 }
 

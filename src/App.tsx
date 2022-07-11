@@ -8,10 +8,8 @@ import topicComponents from './topic-components/topicComponents';
 import { BrowserUtils } from './utils/BrowserUtils';
 
 const { topics } = rssFeeds;
-const initialTopicFilter = (new URLSearchParams(document.location.search)
-  .get("topic") ?? "À la une") as keyof typeof topics;
-const selectableTopics = Object.entries(rssFeeds.topics)
-  .map(([key]) => key) as Array<keyof typeof topics>;
+const initialTopicFilter = (new URLSearchParams(document.location.search).get("topic") ?? "À la une") as keyof typeof topics;
+const selectableTopics = Object.entries(rssFeeds.topics).map(([key]) => key) as Array<keyof typeof topics>;
 
 const App = () => {
   const [ subtopicFilter, _setSubtopicFilter ] = useState<string | undefined>(undefined);
@@ -81,9 +79,7 @@ const App = () => {
       <main className="Articles">
         <div className={"grid "+ topicFilter}>
           <h3 className={"bold " + topicFilter}>{topicFilter}</h3>
-          <div className="LeftPodcastsColumn">
-            <CustomTopicComponent />
-          </div>
+          <CustomTopicComponent />
           <div className="RightRSSColumn">
             {Object.entries(topics[topicFilter].subtopics)
               .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)

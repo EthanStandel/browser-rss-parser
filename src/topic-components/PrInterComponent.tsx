@@ -2,6 +2,7 @@ import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddispla
 
 const PrInterComponent = () => {
   return (
+    <div className="LeftPodcastsColumn">
     <ul className='rss-podcasts'>
       <div className="intro">
         <h5 className="bold">Rendez-vous à l'international</h5>
@@ -185,6 +186,7 @@ const PrInterComponent = () => {
       </a>
     </li>
     </ul>
+    </div>
   );
 }
 

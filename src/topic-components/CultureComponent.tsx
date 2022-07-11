@@ -2,7 +2,7 @@ import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddispla
 
 const CultureComponent = () => {
   return (
-   
+    <div className="LeftPodcastsColumn">
     <ul className='rss-podcasts'>
       <div className="intro">
         <h5 className="bold">Rendez-vous avec la culture</h5>
@@ -411,6 +411,7 @@ const CultureComponent = () => {
       </a>
     </li>
     </ul>
+    </div>
   );
 }
 
