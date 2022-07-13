@@ -17,6 +17,7 @@ export interface RssFeedSource {
   specification?: string;
   subtopic?: string;
   countryISO3?: string;
+  displayBETA?: string;
 }
 
 interface ParsedRssItem {
@@ -61,7 +62,7 @@ var ddbeforeYesterday = String(beforeYesterdayDate.getDate()).padStart(2, '0');
 
 const todayFormat = dd + '/' + (new Date().getMonth()+1) ;
 const yesterdayFormat = ddyesterday + '/' + (yesterdayDate.getMonth()+1) ;
-const beforeYesterdayFormat = ddbeforeYesterday + '/' + (beforeYesterdayDate.getMonth()+1) ;
+const beforeYesterdayFormat = ddbeforeYesterday + '/' + (beforeYesterdayDate.getMonth()+1);
 
 // This is bad but the whole point of this is to not stand up a server
 const openCorsProxy = "https://api.codetabs.com/v1/proxy?quest=";
@@ -139,7 +140,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
 
             return (
 
-              <li className={source.specification}>
+              <li className={source.specification + " " + source.displayBETA}>
                 <article>
                   <a href={item.link} target="_blank" rel="noreferrer">
                     <div className="media">
@@ -148,7 +149,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                           <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
                         </div>
                         <div className="icon-image">
-                          <img src={AppIconImg}/>
+                          <img src={AppIconImg}/> 
                         </div>
                         <div className="background-image">
                           <img src={imgHref}/>

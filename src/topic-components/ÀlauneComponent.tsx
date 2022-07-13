@@ -3,11 +3,11 @@ import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddispla
 const ÀlauneComponent = () => {
   return (
   <div className="LeftPodcastsColumn">
+    <div className="r2 secondaryColor">{new Date().toLocaleDateString([], {weekday:'long', day:'numeric', month: 'long'})}</div>
+    <ul className='rss-podcasts'> 
     <div className="intro">
-        <div className="r2 secondaryColor">{new Date().toLocaleDateString([], {weekday:'long', day:'numeric', month: 'long'})}</div>
         <h5 className="bold">Rendez-vous avec l'info</h5>
-      </div>
-    <ul className='rss-podcasts'>       
+      </div>      
     <li className="nList TVbanner ">
       <a href="https://www.francetvinfo.fr/replay-jt/france-2/8-heures/" target="_blank" rel="noreferrer">
         <div className="media">

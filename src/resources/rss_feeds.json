@@ -9,7 +9,8 @@
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lemonde.png",
-            "backgroundImg": "./icons/WebsitesIcons/lemonde_bgIMG.jpg"
+            "backgroundImg": "./icons/WebsitesIcons/lemonde_bgIMG.jpg",
+            "displayBETA": "Newsroom1"
           },
           {
             "url": "https://www.francetvinfo.fr/titres.rss",
@@ -17,7 +18,8 @@
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/franceinfo.jpeg",
-            "backgroundImg": "./icons/WebsitesIcons/franceinfo_bgIMG.jpg"
+            "backgroundImg": "./icons/WebsitesIcons/franceinfo_bgIMG.jpg",
+            "displayBETA": "Newsroom1"
           },
           {
             "url": "https://www.lefigaro.fr/rss/figaro_flash-actu.xml",
@@ -25,7 +27,8 @@
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/lefigaro.png",
-            "backgroundImg": "./icons/WebsitesIcons/lefigaro_bgIMG.png"
+            "backgroundImg": "./icons/WebsitesIcons/lefigaro_bgIMG.png",
+            "displayBETA": "Newsroom1"
           },
           {
             "url": "https://www.bfmtv.com/rss/news-24-7/",
@@ -33,7 +36,8 @@
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/bfmtv.png",
-            "backgroundImg": "./icons/WebsitesIcons/bfmtv_bgIMG.jpg"
+            "backgroundImg": "./icons/WebsitesIcons/bfmtv_bgIMG.jpg",
+            "displayBETA": "Newsroom1"
           },
           {
             "url": "https://www.france24.com/fr/rss",
@@ -41,7 +45,8 @@
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/france24.jpg",
-            "backgroundImg": "./icons/WebsitesIcons/france24_bgIMG.jpg"
+            "backgroundImg": "./icons/WebsitesIcons/france24_bgIMG.jpg",
+            "displayBETA": "Newsroom1"
           },
           {
             "url": "http://www.20minutes.fr/rss/une.xml",
@@ -49,7 +54,8 @@
             "specification": "nNotif firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/20minutes.png",
-            "backgroundImg": "./icons/WebsitesIcons/20minutes_bgIMG.png"
+            "backgroundImg": "./icons/WebsitesIcons/20minutes_bgIMG.png",
+            "displayBETA": "Newsroom1"
           },
           {
             "url": "https://www.linternaute.com/actualite/rss/",
@@ -57,7 +63,8 @@
             "specification": "nNotif firstHeadline",
             "count": 1,
             "iconImg": "./icons/WebsitesIcons/linternaute.png",
-            "backgroundImg": "./icons/WebsitesIcons/linternaute_bgIMG.jpg"
+            "backgroundImg": "./icons/WebsitesIcons/linternaute_bgIMG.jpg",
+            "displayBETA": "Newsroom1"
           }
         ],
         "Presse étrangère": [
@@ -68,7 +75,8 @@
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/express.png",
-            "backgroundImg": "./icons/WebsitesIcons/express_bgIMG.jpg"
+            "backgroundImg": "./icons/WebsitesIcons/express_bgIMG.jpg",
+            "displayBETA": "Newsroom1"
           },
           {
             "url": "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/topic/destination/france/rss.xml",
@@ -77,7 +85,8 @@
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/thenytimes.png",
-            "backgroundImg": "./icons/WebsitesIcons/thenytimes_bgIMG.jpg"
+            "backgroundImg": "./icons/WebsitesIcons/thenytimes_bgIMG.jpg",
+            "displayBETA": "Newsroom1"
           },
           {
             "url": "https://www.theguardian.com/world/france/rss",
@@ -86,7 +95,8 @@
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/theguardian.png",
-            "backgroundImg": "./icons/WebsitesIcons/theguardian_bgIMG.jpg"
+            "backgroundImg": "./icons/WebsitesIcons/theguardian_bgIMG.jpg",
+            "displayBETA": "Newsroom1"
           },
           {
             "url": "https://www.france24.com/en/france/rss",
@@ -94,7 +104,8 @@
             "specification": "nList firstHeadline",
             "count": 2,
             "iconImg": "./icons/WebsitesIcons/france24.jpg",
-            "backgroundImg": "./icons/WebsitesIcons/france24_bgIMG.jpg"
+            "backgroundImg": "./icons/WebsitesIcons/france24_bgIMG.jpg",
+            "displayBETA": "Newsroom1"
           }
         ]
       }

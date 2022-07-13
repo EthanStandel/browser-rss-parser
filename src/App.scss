@@ -114,15 +114,57 @@
 /*/ for Test /*/ /*/ to delete if layout for À la une is deleted. /*/
 @media only screen and (min-width: 1000px) {
   .À.la.une .Articles {
+
+    .grid.À.la.une {
+      background-color: var(--secondarySystemGroupedBackground);
+      display: grid;
+      border-radius: var(--rounded-corners-block);
+      margin-top: 50px;
+    }
     
     .LeftPodcastsColumn, .RightRSSColumn {
       width: 100%;
+    }
+
+    .LeftPodcastsColumn {
+
+      
+      .intro {
+        width: 100%;
+      }
 
       ul.rss-podcasts {
 
+        display: flex;
+        background: none;
+        box-shadow: 0 0 0 0 rgb(0, 0, 0);
+        flex-wrap: wrap;
+        align-items: center;
+
         li {
           width: 50%;
-          display: inline-block;
+          background: none;
+
+          .media {
+          border-bottom: 0 solid rgba(0, 0, 0, 0);
+          }
+        }
+      }
+    }
+
+    .RightRSSColumn { 
+      
+      section ul {
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        border-radius: var(--rounded-corners-block);
+
+        li {
+          width: 50%;
+          border-radius: 0;
+          background: none;
         }
       }
     }
@@ -150,10 +192,17 @@ main.Articles {
   min-height: 111vh;
 
   .grid {
-    max-width: calc(444px + 40px + 555px);
     margin: auto;
     width: auto;
-}
+
+    &:not(.À.la.une) {
+      max-width: calc(444px + 40px + 555px);
+    }
+
+    &.À.la.une {
+      max-width: 1222px;
+    }
+  }
 
   /*/ two colums displayed for large devices/*/
   .LeftPodcastsColumn {
@@ -658,8 +707,8 @@ header .logo-text {
   display: block;
   text-align: center;
   float: left;
-  line-height: 25px; /*/ height of nav .topics-navbar element /*/ 
-  height: 25px;
+  line-height: 28px; /*/ height of nav .topics-navbar element /*/ 
+  height: 28px;
   padding: 0 20px 0 16px !important;
   border-right: 1.8px solid var(--separator);
 }
@@ -683,7 +732,6 @@ ul {
 
   &.rss {
     margin-bottom: 44px;
-
   }
 
   &.rss, &.rss-podcasts {
@@ -846,7 +894,7 @@ ul {
       }
 
       .source-name {
-        /*/ not displayed element /*/
+        /*/ should be displayed as -webkit-box /*/
         font-weight: 900 !important;
         color: var(--systemGray);
         -webkit-line-clamp: 1 !important;
@@ -1028,7 +1076,7 @@ ul {
       }
 
       /*/ LIST STYLE FOR ITEMS - list without item-description + based on Apple notification system /*/
-      &.nNotif {
+      &.nNotif, &.Newsroom1 {
 
         .item-F-line {
           display: none;
@@ -1062,7 +1110,7 @@ ul {
       }
 
       /*/ get big image for first-item /*/
-      &.firstHeadline:first-child, &.bigHeadline {
+      &.firstHeadline:first-child, &.bigHeadline, &.firstHeadline.Newsroom1:nth-child(-n+2) {
     
         .background-image, .media, .itemContainer {
           display: block !important;
@@ -1152,7 +1200,7 @@ ul {
           }
         }
 
-        &.nNotif {
+        &.nNotif:not(.Newsroom1) {
 
           .itemContainer {
             background-color: var(--secondarySystemGroupedBackground);
@@ -1172,7 +1220,7 @@ ul {
           }
         }
 
-        &.nList {
+        &.nList, &.Newsroom1 {
 
           .itemContainer {
             background-color: var(--tertiarySystemGroupedBackground);
@@ -1196,7 +1244,7 @@ ul {
       }
 
       /*/ LIST STYLE FOR ITEMS - list without bgIMG + small description /*/
-      &.nList {
+      &.nList:not(.Newsroom1) {
         margin-bottom: 0;
         border-radius: 0;
 
@@ -1359,6 +1407,7 @@ FOOTER
 /*/
 
 footer {
+  margin-top: 44px;
   background-color: var(--secondarySystemGroupedBackground);
   min-width: 222px;
 }
