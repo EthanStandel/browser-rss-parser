@@ -188,7 +188,8 @@ main.Articles {
   min-width: 222px;
   padding: 0 83px;
   margin: auto;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   min-height: 111vh;
 
   .grid {
@@ -422,6 +423,7 @@ header {
   z-index: 3;
   width: 100%;
   background-color: var(--systemHeaderMaterial);
+  overflow: hidden;
   -webkit-backdrop-filter:saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 0.5px solid var(--separator);
@@ -655,18 +657,18 @@ ul {
       padding: 2px 10px;
       font-weight: 500 !important;
       overflow: hidden;
-      transition: font-weight 1s, color 0s !important;
+      transition: color 0s !important;
       width: 100%;
       height: 100%;
       font: inherit;
-      background-color: transparent;
+      background-color: transparent !important;
       cursor: pointer;
   
-      &:hover, &.selected {
+      &.selected {
         font-weight: 900 !important;
-        background-color: transparent !important;
         color: var(--systemPink);
       }
+
     }
   }
 }
@@ -818,11 +820,26 @@ ul {
           background-color: var(--systemFill);
           line-height: 20px; /*/ line height of TitleLine /*/
           font-size: 10px;
-          vertical-align: middle;
+          vertical-align: bottom;
         
           &.FRA {
             display: none;
           }
+        }
+      }
+
+      .justifiedTitle {
+        display: flex;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: flex-start;
+
+        .item-publish-date {
+          display: flex;
+          justify-content: flex-end;
+          line-height: 20px; /* h6 line-height to align content */
         }
       }
     
@@ -1138,8 +1155,8 @@ ul {
         }
 
         .itemContainer  {
-          padding: 14px 16px;
-          width: calc(100% - 32px);
+          padding: 14px 10px 16px 16px;
+          width: calc(100% - 16px - 10px);
           border-radius: 0 0 var(--rounded-corners-block) var(--rounded-corners-block);
         }
 
