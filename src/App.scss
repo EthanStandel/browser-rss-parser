@@ -1024,6 +1024,10 @@ ul {
           display: -webkit-box;
           -webkit-box-orient: vertical;
         }
+
+        .justifiedTitle .item-publish-date {
+          display: none;
+        }
       
         .itemContainer  {
           display: block;
@@ -1122,7 +1126,7 @@ ul {
           }
         }
         .descriptionLine2 {
-          display: block !important;
+          display: none; /* use justifiedTitle instead */
         }
       }
 
@@ -1203,6 +1207,7 @@ ul {
             text-shadow: 0 0 8px black;
             opacity: 0.8;
             padding-left: 0;
+            display: none; /* justifiedTitle instead */
           }
 
           .source-name {
@@ -1346,7 +1351,7 @@ ul {
           }
 
           .descriptionLine2 {
-            display: block !important;
+            display: none;
           }
         }
 
@@ -1394,6 +1399,10 @@ ul {
           display: none;
         }
 
+        .descriptionLine .item-publish-date { /* use justifiedTitle instead */
+          display: none !important;
+        }
+
         @media only screen and (max-width: 1000px) {
           .descriptionLine:not(.always) {
 
@@ -1403,7 +1412,7 @@ ul {
           }
 
           .descriptionLine2 {
-            display: block !important;
+            display: none; /* use justifiedTitle instead */
           }
 
           .item-description {
