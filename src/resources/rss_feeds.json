@@ -25,7 +25,8 @@
             "specification": "nNotif firstHeadline",
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/lefigaro.png",
-            "backgroundImg": "./icons/WebsitesIcons/lefigaro_bgIMG.png"
+            "backgroundImg": "./icons/WebsitesIcons/lefigaro_bgIMG.png",
+            "category": "left"
           },
           {
             "url": "https://www.bfmtv.com/rss/news-24-7/",
@@ -33,7 +34,8 @@
             "specification": "nNotif firstHeadline",
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/bfmtv.png",
-            "backgroundImg": "./icons/WebsitesIcons/bfmtv_bgIMG.jpg"
+            "backgroundImg": "./icons/WebsitesIcons/bfmtv_bgIMG.jpg",
+            "category": "left"
           },
           {
             "url": "https://www.france24.com/fr/rss",
