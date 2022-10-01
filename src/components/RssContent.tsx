@@ -10,14 +10,14 @@ import { countReset } from "console";
 export interface RssFeedSource {
   url: string;
   name?: string;
-  count?: number;
+  articlesCount?: number;
   iconImg?: string;
   backgroundImg?: string;
   encodedTitles?: boolean;
   specification?: string;
+  category?: string;
   subtopic?: string;
-  countryISO3?: string;
-  displayBETA?: string;
+  articlesCountryISO3?: string;
 }
 
 interface ParsedRssItem {
@@ -37,6 +37,7 @@ interface ParsedRssItem {
   }
   "dc:date"?: string;
   "media:thumbnail url"?: string;
+  category?: string;
 }
 
 interface ParsedRssFeed {
@@ -79,9 +80,9 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
       }))
     )
     .reduce((all, curr, index) => all.concat(
-      typeof rssFeeds[index].count === "undefined"
+      typeof rssFeeds[index].articlesCount === "undefined"
         ? curr
-        : curr.slice(0, rssFeeds[index].count)
+        : curr.slice(0, rssFeeds[index].articlesCount)
     ), [])
     .sort((a, b) => {
       // Sort items with subtopics at the bottom
@@ -129,18 +130,35 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             const AppIconImg = source.iconImg ?? "./icons/WebsitesIcons/applenews.png";
 
             let author = item.author ?? item["dc:creator"];
+            
+            let categoryArray = [item.category, source.category]
+            
+            
+            /* let lf = new Intl.ListFormat('en', {
+              style: 'long',
+              type: 'conjunction',
+            })
 
-            var countryISO3Label = String(source.countryISO3)
+            let displayedCategory = lf.format(categoryArray); */
 
-            if (source.countryISO3 == undefined) {
+            var countryISO3Label = String(source.articlesCountryISO3)
+
+            if ((source.articlesCountryISO3 == "") || (source.articlesCountryISO3 == null)) {
               var countryISO3Label = "FRA"
             }
 
             let displayedDate = date?.setLocale("fr").toFormat("dd/M").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier');
+            
+            var displayedFirstLineDate = String(displayedDate)
+            var displayedSecondLineDate= ""
+            if ((source.category == "") || (source.category == null)) {
+              var displayedFirstLineDate = ""
+              var displayedSecondLineDate= String(displayedDate)
+            } /* if an article doesn't have a category, the date is displayed on the secondline (justifiedTitle), otherwhise, it's diplayed on the first line alongside the category */
 
             return (
 
-              <li className={source.specification + " " + source.displayBETA}>
+              <li className={source.specification}>
                 <article>
                   <a href={item.link} target="_blank" rel="noreferrer">
                     <div className="media">
@@ -156,13 +174,12 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                         </div>
                       </div>
                       <div className="itemContainer">
-                        <div className="item-F-line">
-                          <div className="r1 bold source-name">
-                            {source.name}
-                            {source.subtopic && ` - ${source.subtopic}`}
+                        <div className="firstLine">
+                          <div className="r1 bold articleCategory">
+                            {categoryArray}
                           </div>
-                          <div className="r2 item-publish-date">
-                            {displayedDate}
+                          <div className="r2 articleDate">
+                            {displayedFirstLineDate}
                           </div>
                         </div>
                         <div className="justifiedTitle">
@@ -170,19 +187,19 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                             <div className={"LanguageLabel r4 " + countryISO3Label}>{countryISO3Label}</div>
                             <div className="ItemTitle" dangerouslySetInnerHTML={{ __html: _unescape(item.title ?? "").replace('*** BILDplus Inhalt *** ','').replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;')}} />
                           </h6>
-                          <div className="r2 item-publish-date">
-                            {displayedDate}
+                          <div className="r2 articleDate">
+                            {displayedSecondLineDate}
                           </div>
                         </div>
                         <div className="descriptionLine">
-                          <div className="r2 item-publish-date">
+                          <div className="r2 articleDate">
                             {displayedDate}
                           </div>
                             {item.description && <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: _unescape(item.description).replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;')}} />}
                         </div>
-                        <div className="descriptionLine2">
-                          <div className="r2 item-publish-date">
-                            {displayedDate}
+                        <div className="additional-infosLine">
+                          <div className="r2 articleDate">
+                            {(author === "true")}
                           </div>
                         </div>
                       </div>

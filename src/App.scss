@@ -110,67 +110,6 @@
   margin-bottom: 6rem;
 }
 
-
-/*/ for Test /*/ /*/ to delete if layout for À la une is deleted. /*/
-@media only screen and (min-width: 1000px) {
-  .À.la.une .Articles {
-
-    .grid.À.la.une {
-      background-color: var(--secondarySystemGroupedBackground);
-      display: grid;
-      border-radius: var(--rounded-corners-block);
-      margin-top: 50px;
-    }
-    
-    .LeftPodcastsColumn, .RightRSSColumn {
-      width: 100%;
-    }
-
-    .LeftPodcastsColumn {
-
-      
-      .intro {
-        width: 100%;
-      }
-
-      ul.rss-podcasts {
-
-        display: flex;
-        background: none;
-        box-shadow: 0 0 0 0 rgb(0, 0, 0);
-        flex-wrap: wrap;
-        align-items: center;
-
-        li {
-          width: 50%;
-          background: none;
-
-          .media {
-          border-bottom: 0 solid rgba(0, 0, 0, 0);
-          }
-        }
-      }
-    }
-
-    .RightRSSColumn { 
-      
-      section ul {
-
-        display: flex;
-        flex-wrap: wrap;
-        align-items: stretch;
-        border-radius: var(--rounded-corners-block);
-
-        li {
-          width: 50%;
-          border-radius: 0;
-          background: none;
-        }
-      }
-    }
-  }
-}
-
 body {
   background-color: var(--systemGroupedBackground);
   color: var(--label);
@@ -195,14 +134,7 @@ main.Articles {
   .grid {
     margin: auto;
     width: auto;
-
-    &:not(.À.la.une) {
-      max-width: calc(444px + 40px + 555px);
-    }
-
-    &.À.la.une {
-      max-width: 1222px;
-    }
+    max-width: calc(444px + 40px + 555px);
   }
 
   /*/ two colums displayed for large devices/*/
@@ -833,12 +765,12 @@ ul {
         flex-direction: row;
         -webkit-box-pack: justify;
         justify-content: space-between;
-        gap: 10px;
         align-items: flex-start;
 
-        .item-publish-date {
+        .articleDate {
           display: flex;
           justify-content: flex-end;
+          padding-left: 10px;
           line-height: 20px; /* h6 line-height to align content */
         }
       }
@@ -910,8 +842,8 @@ ul {
         }
       }
 
-      .source-name {
-        /*/ should be displayed as -webkit-box /*/
+      .articleCategory {
+        display: -webkit-box;
         font-weight: 900 !important;
         color: var(--systemGray);
         -webkit-line-clamp: 1 !important;
@@ -921,11 +853,10 @@ ul {
         text-align: left;
         word-break: break-all;
         width: 100%;
-        line-height: 20px; /*/ height of titleLine /*/
-        display: -webkit-box !important;
       }
-      
-      .item-publish-date {
+
+      .articleDate {
+        padding-left: 10px;
         text-align: right;
         display: table-cell;
         color: var(--secondaryLabel);
@@ -933,22 +864,16 @@ ul {
         white-space: nowrap;
       }
       
-      .item-F-line {
+      .firstLine {
         width: 100%;
         display: table;
-        height:20px !important;
-
-        .item-publish-date {
-          line-height: 20px; /*/ height of titleLine /*/
-          padding-left: 15px;
-        }
       }
 
       .descriptionLine, .descriptionLine2 {
         display: table;
         width: initial;
 
-        .item-publish-date {
+        .articleDate {
           padding-left: 0;
           text-align: left;
           padding-right: 5px;
@@ -981,7 +906,7 @@ ul {
           background-color: var(--systemThickMaterial);
           border-radius: 0 0 var(--rounded-corners-block) var(--rounded-corners-block);
 
-          .item-publish-date {
+          .articleDate {
             display: none;
           }
         }
@@ -1025,7 +950,7 @@ ul {
           -webkit-box-orient: vertical;
         }
 
-        .justifiedTitle .item-publish-date {
+        .justifiedTitle .articleDate {
           display: none;
         }
       
@@ -1042,24 +967,6 @@ ul {
         
         .iconContainer {
             padding: 0;
-        }
-
-        .item-F-line {
-          display: table !important;
-          position: absolute;
-          top: 17px;
-          left: 50px;
-          width: calc(100% - 60px);
-          
-          .item-publish-date {
-            color: white !important;
-            text-shadow: 0 0 8px black;
-            opacity: 0.8;
-          }
-          
-          .source-name {
-            display: none !important;
-          }
         }
       
         .background-image {
@@ -1097,11 +1004,7 @@ ul {
       }
 
       /*/ LIST STYLE FOR ITEMS - list without item-description + based on Apple notification system /*/
-      &.nNotif, &.Newsroom1 {
-
-        .item-F-line {
-          display: none;
-        }
+      &.nNotif {
 
         .titleLine {
           -webkit-line-clamp: 4 !important;
@@ -1121,7 +1024,7 @@ ul {
 
         .descriptionLine {
 
-          .item-publish-date {
+          .articleDate {
             display: none;
           }
         }
@@ -1131,7 +1034,7 @@ ul {
       }
 
       /*/ get big image for first-item /*/
-      &.firstHeadline:first-child, &.bigHeadline, &.firstHeadline.Newsroom1:nth-child(-n+2) {
+      &.firstHeadline:first-child, &.bigHeadline {
     
         .background-image, .media, .itemContainer {
           display: block !important;
@@ -1198,31 +1101,14 @@ ul {
           }
         }
 
-        .item-F-line {
-          display: table !important;
-          position: absolute;
-          
-          .item-publish-date {
-            color: white !important;
-            text-shadow: 0 0 8px black;
-            opacity: 0.8;
-            padding-left: 0;
-            display: none; /* justifiedTitle instead */
-          }
-
-          .source-name {
-            display: none !important;
-          }
-        }
-
         .descriptionLine, .descriptionLine2 {
           
-          .item-publish-date {
+          .articleDate {
             display: none;
           }
         }
 
-        &.nNotif:not(.Newsroom1) {
+        &.nNotif {
 
           .itemContainer {
             background-color: var(--secondarySystemGroupedBackground);
@@ -1235,14 +1121,9 @@ ul {
           .media {
               margin: 0;
           }
-
-          .item-F-line {
-            width: calc(100% - 32px);
-            top: 17px;
-          }
         }
 
-        &.nList, &.Newsroom1 {
+        &.nList {
 
           .itemContainer {
             background-color: var(--tertiarySystemGroupedBackground);
@@ -1257,16 +1138,11 @@ ul {
             padding-right: 10px;
             padding-top: 10px;
           }
-
-          .item-F-line {
-            width: calc(100% - 16px - 20px);
-            top: calc(17px + 10px) !important;
-          }
         }
       }
 
       /*/ LIST STYLE FOR ITEMS - list without bgIMG + small description /*/
-      &.nList:not(.Newsroom1) {
+      &.nList {
         margin-bottom: 0;
         border-radius: 0;
 
@@ -1281,17 +1157,13 @@ ul {
             -webkit-box-orient: vertical;
           }
 
-          .item-F-line {
-            display: table !important;
-          }
-
           &.NOT {
 
             .descriptionLine:not(.always) {
               display: none;
             }
 
-            .item-F-line {
+            .firstLine {
               .icon-footnote-container.footnote {
                 display: none;
               }
@@ -1337,7 +1209,7 @@ ul {
           }
 
           .descriptionLine {
-            .item-publish-date {
+            .articleDate {
               display: none;
             }
 
@@ -1391,22 +1263,18 @@ ul {
           }
         }
 
-        .item-F-line {
-          display: none;
-        }
-
         .descriptionLine2 {
           display: none;
         }
 
-        .descriptionLine .item-publish-date { /* use justifiedTitle instead */
+        .descriptionLine .articleDate { /* use justifiedTitle instead */
           display: none !important;
         }
 
         @media only screen and (max-width: 1000px) {
           .descriptionLine:not(.always) {
 
-            .item-publish-date {
+            .articleDate {
               display: none;
             }
           }

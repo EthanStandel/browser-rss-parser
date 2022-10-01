@@ -54,7 +54,7 @@ const App = () => {
           {Object.keys(topics[topicFilter].subtopics).length > 1 &&
             <div className="subtopic-selection">
               <nav>
-                <ul ref={subtopicNavbarContainer} className={"topics-navbar r2 " + topicFilter}>
+                <ul ref={subtopicNavbarContainer} className={"topics-navbar r1 " + topicFilter}>
                   <li className="all-subtopic">
                     <button className={!subtopicFilter ? "selected" : ""} onClick={() => setSubtopicFilter(undefined)}>
                       Tout
