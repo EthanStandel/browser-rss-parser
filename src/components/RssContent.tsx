@@ -130,9 +130,13 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             const AppIconImg = source.iconImg ?? "./icons/WebsitesIcons/applenews.png";
 
             let author = item.author ?? item["dc:creator"];
+
+            let categoryArray1 = [(source.category || item.category)].join(',') /* select categories from the RSS feed if none is specified*/
             
-            let categoryArray = [item.category, source.category]
-            
+            let categoryArray = String(categoryArray1).split(',').slice(0, 3); /* presents categories in an array with 3 elements (split with the comma sign) */
+
+            const arrford = require('arrford');
+            let categoryArray2 = arrford(categoryArray, true, ''); /* list formatting equaling to 'ListFormat' */
             
             /* let lf = new Intl.ListFormat('en', {
               style: 'long',
@@ -145,13 +149,13 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
 
             if ((source.articlesCountryISO3 == "") || (source.articlesCountryISO3 == null)) {
               var countryISO3Label = "FRA"
-            }
+            } /* by default, articles are considered from French newsrooms and hidden */
 
             let displayedDate = date?.setLocale("fr").toFormat("dd/M").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier');
             
             var displayedFirstLineDate = String(displayedDate)
             var displayedSecondLineDate= ""
-            if ((source.category == "") || (source.category == null)) {
+            if ((categoryArray1 == "") || (categoryArray1 == null)) {
               var displayedFirstLineDate = ""
               var displayedSecondLineDate= String(displayedDate)
             } /* if an article doesn't have a category, the date is displayed on the secondline (justifiedTitle), otherwhise, it's diplayed on the first line alongside the category */
@@ -176,7 +180,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                       <div className="itemContainer">
                         <div className="firstLine">
                           <div className="r1 bold articleCategory">
-                            {categoryArray}
+                            {categoryArray2}
                           </div>
                           <div className="r2 articleDate">
                             {displayedFirstLineDate}
@@ -198,8 +202,8 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                             {item.description && <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: _unescape(item.description).replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;')}} />}
                         </div>
                         <div className="additional-infosLine">
-                          <div className="r2 articleDate">
-                            {(author === "true")}
+                          <div className="r4">
+                            {author}
                           </div>
                         </div>
                       </div>
