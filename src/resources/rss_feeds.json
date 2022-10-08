@@ -25,8 +25,7 @@
             "specification": "nNotif firstHeadline",
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/lefigaro.png",
-            "backgroundImg": "./icons/WebsitesIcons/lefigaro_bgIMG.png",
-            "category": "left"
+            "backgroundImg": "./icons/WebsitesIcons/lefigaro_bgIMG.png"
           },
           {
             "url": "https://www.bfmtv.com/rss/news-24-7/",
@@ -34,8 +33,7 @@
             "specification": "nNotif firstHeadline",
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/bfmtv.png",
-            "backgroundImg": "./icons/WebsitesIcons/bfmtv_bgIMG.jpg",
-            "category": "left"
+            "backgroundImg": "./icons/WebsitesIcons/bfmtv_bgIMG.jpg"
           },
           {
             "url": "https://www.france24.com/fr/rss",
@@ -43,7 +41,8 @@
             "specification": "nNotif firstHeadline",
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/france24.jpg",
-            "backgroundImg": "./icons/WebsitesIcons/france24_bgIMG.jpg"
+            "backgroundImg": "./icons/WebsitesIcons/france24_bgIMG.jpg",
+            "category": "France"
           },
           {
             "url": "http://www.20minutes.fr/rss/une.xml",

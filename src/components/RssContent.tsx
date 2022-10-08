@@ -5,6 +5,7 @@ import axios from "axios";
 import { useAsync } from "@react-hookz/web";
 import { Spinner } from "./Spinner";
 import _unescape from "lodash/unescape";
+import _deburr from "lodash/deburr";
 import { countReset } from "console";
 
 export interface RssFeedSource {
@@ -129,21 +130,37 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
 
             const AppIconImg = source.iconImg ?? "./icons/WebsitesIcons/applenews.png";
 
-            let author = item.author ?? item["dc:creator"];
+            var author = item.author || item["dc:creator"];
+            var author = author?.includes(String(source.name)) ? undefined : author;
+            var author = author?.includes(String(source.name?.toUpperCase)) ? undefined : author;
+            var author = author?.includes(String(source.name?.toLowerCase)) ? undefined : author;
+            var author = author?.includes("AFP") ? undefined : author;
+            var author = author?.includes(String(_deburr(source.name))) ? undefined : author;
 
-            let categoryArray1 = [(source.category || item.category)].join(',') /* select categories from the RSS feed if none is specified*/
+            let concatListofCategories = [(item.category || source.category)].join(',') /* select categories from the RSS feed if none is specified*/
+     
+            let arrayCategories = concatListofCategories.split(',').slice(0, 3); /* presents categories in an array with 3 elements (split in elements by comma sign) */
+
+            var arrayCategoriesTEST = []
+            for (var element of arrayCategories) {
+              var correctedElement = String(element.replace(' and ', ' & ').replace('Content Type: Personal Profile', '').replace('News /', '').replace('has_diapo', ''));
+              
+              if (correctedElement != "") {
+                arrayCategoriesTEST.push(correctedElement)
+              } else {
+                arrayCategoriesTEST.push("")
+              }
+            }
             
-            let categoryArray = String(categoryArray1).split(',').slice(0, 3); /* presents categories in an array with 3 elements (split with the comma sign) */
-
+           /* var arrayCategoriesTEST2 = Array()
+            while (arrayCategoriesTEST.includes("")) {
+                const start = arrayCategoriesTEST.indexOf('');
+                var arrayCategoriesTEST2 = arrayCategoriesTEST.splice(start, 1);
+                var arrayCategoriesTEST = arrayCategoriesTEST2;
+              } ADDITION TO FILTER THE EMPTY STRINGS FROM arrayCATEGROIESTEST.push("") (l. 153)*/ 
+            
             const arrford = require('arrford');
-            let categoryArray2 = arrford(categoryArray, true, ''); /* list formatting equaling to 'ListFormat' */
-            
-            /* let lf = new Intl.ListFormat('en', {
-              style: 'long',
-              type: 'conjunction',
-            })
-
-            let displayedCategory = lf.format(categoryArray); */
+            let CategoriesCommaSeparated = arrford(arrayCategoriesTEST, false).replace(' and ', ', '); /* list formatting with commas' */
 
             var countryISO3Label = String(source.articlesCountryISO3)
 
@@ -155,7 +172,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             
             var displayedFirstLineDate = String(displayedDate)
             var displayedSecondLineDate= ""
-            if ((categoryArray1 == "") || (categoryArray1 == null)) {
+            if ((concatListofCategories == "") || (concatListofCategories == null)) {
               var displayedFirstLineDate = ""
               var displayedSecondLineDate= String(displayedDate)
             } /* if an article doesn't have a category, the date is displayed on the secondline (justifiedTitle), otherwhise, it's diplayed on the first line alongside the category */
@@ -180,7 +197,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                       <div className="itemContainer">
                         <div className="firstLine">
                           <div className="r1 bold articleCategory">
-                            {categoryArray2}
+                            {CategoriesCommaSeparated}
                           </div>
                           <div className="r2 articleDate">
                             {displayedFirstLineDate}
@@ -203,7 +220,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                         </div>
                         <div className="additional-infosLine">
                           <div className="r4">
-                            {author}
+                            {author?.replace(" avec ", ", ").replace(" et ", ", ")}
                           </div>
                         </div>
                       </div>
