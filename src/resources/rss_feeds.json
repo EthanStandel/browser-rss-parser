@@ -2377,6 +2377,15 @@
             "articlesCount": 3,
             "iconImg": "./icons/WebsitesIcons/forbes.png",
             "backgroundImg": "./icons/WebsitesIcons/forbes_bgIMG.jpg"
+          },
+          {
+            "url": "https://wegotthiscovered.com/feed/",
+            "name": "We Got This Covered",
+            "articlesCountryISO3": "USA",
+            "specification": "nList firstHeadline",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/wgtc.png",
+            "backgroundImg": "./icons/WebsitesIcons/wgtc_bgIMG.jpg"
           }
         ]
       }
@@ -3526,6 +3535,15 @@
             "articlesCount": 4,
             "iconImg": "./icons/WebsitesIcons/financialtimes.png",
             "backgroundImg": "./icons/WebsitesIcons/financialtimes_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.dezeen.com/opinion/feed/",
+            "name": "Deezen",
+            "articlesCountryISO3": "GB",
+            "specification": "nList firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/dezeen.png",
+            "backgroundImg": "./icons/WebsitesIcons/dezeen_bgIMG.jpg"
           }
         ]
       }
@@ -5388,31 +5406,47 @@
             "iconImg": "./icons/WebsitesIcons/parismatch.png"
           } 
         ],
-        "Maison & jardin": [
-          {
-            "url": "https://maison.20minutes.fr/feed/",
-            "name": "20 Minutes",
-            "specification": "nList",
-            "articlesCount": 3,
-            "iconImg": "./icons/WebsitesIcons/20minutes.png",
-            "backgroundImg": "./icons/WebsitesIcons/20minutesmaison_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lapresse.ca/maison/rss",
-            "name": "La Presse",
-            "articlesCountryISO3": "CAN",
-            "specification": "nList",
-            "articlesCount": 3,
-            "iconImg": "./icons/WebsitesIcons/lapresse.png"
-          },
-          {
-            "url": "https://www.la-croix.com/RSS/Culture/jardin-idees-conseils-jardinage",
-            "name": "La Croix",
-            "specification": "nList",
-            "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/lacroix.png"
-          } 
-        ],
+        "Maison & jardin": {
+          "ultraSubtopics": {
+            "noUltraSubtopic": [
+              {
+                "url": "https://maison.20minutes.fr/feed/",
+                "name": "20 Minutes",
+                "specification": "nList",
+                "articlesCount": 3,
+                "iconImg": "./icons/WebsitesIcons/20minutes.png",
+                "backgroundImg": "./icons/WebsitesIcons/20minutesmaison_bgIMG.jpg"
+              },
+              {
+                "url": "https://www.lapresse.ca/maison/rss",
+                "name": "La Presse",
+                "articlesCountryISO3": "CAN",
+                "specification": "nList",
+                "articlesCount": 3,
+                "iconImg": "./icons/WebsitesIcons/lapresse.png"
+              },
+              {
+                "url": "https://www.la-croix.com/RSS/Culture/jardin-idees-conseils-jardinage",
+                "name": "La Croix",
+                "specification": "nList",
+                "articlesCount": 1,
+                "iconImg": "./icons/WebsitesIcons/lacroix.png"
+              }
+            ],
+            "Dans le monde": [
+              {
+                "url": "https://www.dezeen.com/lookbooks/feed/",
+                "name": "Deezen",
+                "articlesCountryISO3": "GB",
+                "specification": "nList firstHeadline",
+                "articlesCount": 2,
+                "iconImg": "./icons/WebsitesIcons/dezeen.png",
+                "backgroundImg": "./icons/WebsitesIcons/dezeen_bgIMG.jpg",
+                "category": "Design"
+              }
+            ]
+          }
+        },
         "Insolite & tendances": [
           {
             "url": "https://www.ladepeche.fr/insolite/rss.xml",
@@ -5561,6 +5595,16 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/express.png",
             "backgroundImg": "./icons/WebsitesIcons/express_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.dezeen.com/opinion/feed/",
+            "name": "Deezen",
+            "articlesCountryISO3": "GB",
+            "specification": "nList firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/dezeen.png",
+            "backgroundImg": "./icons/WebsitesIcons/dezeen_bgIMG.jpg",
+            "category": "Design"
           }   
         ]
       }

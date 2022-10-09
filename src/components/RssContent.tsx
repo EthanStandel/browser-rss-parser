@@ -14,11 +14,11 @@ export interface RssFeedSource {
   articlesCount?: number;
   iconImg?: string;
   backgroundImg?: string;
-  encodedTitles?: boolean;
   specification?: string;
+  articlesCountryISO3?: string;
   category?: string;
   subtopic?: string;
-  articlesCountryISO3?: string;
+  ultraSubtopic?: string;
 }
 
 interface ParsedRssItem {
@@ -140,10 +140,18 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             let concatListofCategories = [(item.category || source.category)].join(',') /* select categories from the RSS feed if none is specified*/
      
             let arrayCategories = concatListofCategories.split(',').slice(0, 3); /* presents categories in an array with 3 elements (split in elements by comma sign) */
-
+           
+            var dict = ['Content Type: Personal Profile','has_diapo','Radio 1','News','Actu','Video']
+            
             var arrayCategoriesTEST = []
             for (var element of arrayCategories) {
-              var correctedElement = String(element.replace(' and ', ' & ').replace('Content Type: Personal Profile', '').replace('News /', '').replace('has_diapo', ''));
+
+              var correctedElement = String(element
+                .replace(' and ', ' & ')
+                .replace('Content Type: Personal Profile', '')
+                .replace('News /', '')
+                .replace('Culture /', '')
+                .replace('has_diapo', ''));
               
               if (correctedElement != "") {
                 arrayCategoriesTEST.push(correctedElement)
@@ -152,7 +160,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
               }
             }
             
-           /* var arrayCategoriesTEST2 = Array()
+            /* var arrayCategoriesTEST2 = Array()
             while (arrayCategoriesTEST.includes("")) {
                 const start = arrayCategoriesTEST.indexOf('');
                 var arrayCategoriesTEST2 = arrayCategoriesTEST.splice(start, 1);
@@ -169,13 +177,6 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             } /* by default, articles are considered from French newsrooms and hidden */
 
             let displayedDate = date?.setLocale("fr").toFormat("dd/M").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier');
-            
-            var displayedFirstLineDate = String(displayedDate)
-            var displayedSecondLineDate= ""
-            if ((concatListofCategories == "") || (concatListofCategories == null)) {
-              var displayedFirstLineDate = ""
-              var displayedSecondLineDate= String(displayedDate)
-            } /* if an article doesn't have a category, the date is displayed on the secondline (justifiedTitle), otherwhise, it's diplayed on the first line alongside the category */
 
             return (
 
@@ -200,16 +201,16 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                             {CategoriesCommaSeparated}
                           </div>
                           <div className="r2 articleDate">
-                            {displayedFirstLineDate}
+                            {((concatListofCategories == "") || (concatListofCategories == null)) ? null : String(displayedDate)}
                           </div>
                         </div>
                         <div className="justifiedTitle">
                           <h6 className="titleLine">
                             <div className={"LanguageLabel r4 " + countryISO3Label}>{countryISO3Label}</div>
-                            <div className="ItemTitle" dangerouslySetInnerHTML={{ __html: _unescape(item.title ?? "").replace('*** BILDplus Inhalt *** ','').replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;')}} />
+                            <div className="ItemTitle" dangerouslySetInnerHTML={{ __html: _unescape(item.title ?? "").replace('*** BILDplus Inhalt *** ','').replace('[EN LIGNE]', '').replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;')}} />
                           </h6>
                           <div className="r2 articleDate">
-                            {displayedSecondLineDate}
+                            {((concatListofCategories == "") || (concatListofCategories == null)) ? String(displayedDate) : null}
                           </div>
                         </div>
                         <div className="descriptionLine">
