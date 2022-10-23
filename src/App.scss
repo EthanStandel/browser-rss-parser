@@ -1283,6 +1283,7 @@ em:not(.itemContainer em) {
 .nList {
   background-color: var(--secondarySystemGroupedBackground);
   border-radius: var(--rounded-corners-block);
+  filter: drop-shadow(0 10px 10px var(--lightShadow));
   
   h4 {
     border-bottom: 3.2px solid var(--label);
