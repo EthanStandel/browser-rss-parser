@@ -94,7 +94,7 @@ const App = () => {
               .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)
               .filter(([ key ]) => !subtopicFilter ? true : subtopicFilter === key)
               .map(([key, feeds]) => (
-                <section key={key} className={`${key} ArticleSection ` + (nListYS(key)==true ? "nList2" : "")}> 
+                <section key={key} className={`${key} ArticleSection ` + (nListYS(key)==true ? "nList" : "")}> 
                   {key !== "noSubtopic" && <h4 className="subtopic bold">{key}</h4>}
                   <div id="external-script-element" />
                   <RssContent rssFeeds={feeds} />
