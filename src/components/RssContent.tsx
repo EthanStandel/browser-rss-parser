@@ -218,7 +218,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                         </div>
                         <div className="justifiedTitle">
                           <h6 className="titleLine">
-                            <div className={"LanguageLabel r4 " + countryISO3Label}>{countryISO3Label}</div>
+                            {countryISO3Label == "FRA" ? null : <div className={"LanguageLabel r4 " + countryISO3Label}>{countryISO3Label}</div>}
                             <div className="ItemTitle" dangerouslySetInnerHTML={{ __html: (item.title?.includes("|") ? _unescape(item.title.split("|")[1] ?? "") : _unescape(item.title ?? "")).replace('*** BILDplus Inhalt *** ','').replace('[EN LIGNE]', '').replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;').replace(" - " + dateNDaysBefore[0],"")}} />
                           </h6>
                           <div className="r2 articleDate">

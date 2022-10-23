@@ -32,12 +32,12 @@ const App = () => {
   }
   const CustomTopicComponent = topicComponents[topicFilter] ?? "div";
 
-  var nListDisplays = ["Photographie","Histoire","Presse étrangère"]
+  var nListDisplays = ["Photographie","Histoire","Presse étrangère","Musique","Bien-être","Royautés","Luxe"]
   function nListYS(key : string) {
     var displayednList = false 
-    nListDisplays.forEach((element) => {
-      key.includes(element) ? (displayednList = true) : null;
-    })
+    for(let i = 0; i < nListDisplays.length; i++) {
+      var displayednList = key.includes(nListDisplays[i]) ? true : displayednList;
+    }
     return displayednList
   }
 

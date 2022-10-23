@@ -672,71 +672,56 @@ ul {
       background-color: var(--secondarySystemGroupedBackground);
       border-radius: var(--rounded-corners-block);
 
-      .descriptionLine .articleDate {
-        display: none;
-      }
+      .descriptionLine {
 
-      .item-description {
-        
-        p img, img, br, a, ul, li {
+        .articleDate {
           display: none;
-          width: 100%;
-          height: auto;
         }
 
-        p {
+        .item-description {
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box !important;
+          -webkit-box-orient: vertical;
 
-          /*/ Define as h8/*/
-          font-size: 14px !important;
-          line-height: 18px !important;
-          letter-spacing: -0.0062px !important;
-          font-weight: normal !important;
-          margin: 0 !important;
-          padding: 0 !important;
-
-          strong {
+          p img, img, br, a, ul, li {
+            display: none;
+            width: 100%;
+            height: auto;
+          }
+  
+          p {
+            /*/ Define as h8/*/
+            font-size: 14px !important;
+            line-height: 18px !important;
+            letter-spacing: -0.0062px !important;
             font-weight: normal !important;
+            margin: 0 !important;
+            padding: 0 !important;
+  
+            strong {
+              font-weight: normal !important;
+            }
+  
+            /*/ used by some newsrooms as topic, so hidden here/*/
+            b:first-of-type {
+              display: none;
+            }
           }
-
-          /*/ Display like topic/*/
-          b:first-of-type {
-            color: var(--colorTheme);
-            text-transform: uppercase;
+  
+          p:not(:nth-child(1)) {
+            display: none;
           }
         }
-
-        p:not(:nth-child(1)) {
-          display: none;
-        }
-      }
-
-      .titleLine, .item-description {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        /* number of lines */
-        -webkit-box-orient: vertical;
-        text-decoration-color: rgba(0,0,0,0);
-        word-break: break-word;
-      }
-
-      .background-image {
-        display: none;
-      }
-
-      .background-image img {
-        
-        background-image: url("https://tapsmart-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/ipadnews2-750x400.jpg");
-        object-fit: cover;
-        background-size: cover !important;
-        height: 100%;
-        width: 100%;
-        background-size: 100%;
-        background-repeat: no-repeat;
       }
 
       .titleLine {
-        -webkit-line-clamp: 5; /* number of lines to show */
+        -webkit-line-clamp: 4 !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box !important;
+        -webkit-box-orient: vertical;
 
         .ItemTitle {
           display: inline;
@@ -753,10 +738,32 @@ ul {
           line-height: 20px; /*/ line height of TitleLine /*/
           font-size: 10px;
           vertical-align: bottom;
+      
+        }
+      }
+
+      .titleLine, .item-description {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        /* number of lines */
+        -webkit-box-orient: vertical;
+        text-decoration-color: rgba(0,0,0,0);
+        word-break: break-word;
+      }
+
+      .background-image {
+        display: none;
+
+        img {
         
-          &.FRA {
-            display: none;
-          }
+          background-image: url("https://tapsmart-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/ipadnews2-750x400.jpg");
+          object-fit: cover;
+          background-size: cover !important;
+          height: 100%;
+          width: 100%;
+          background-size: 100%;
+          background-repeat: no-repeat;
         }
       }
 
@@ -869,7 +876,7 @@ ul {
         display: table;
       }
 
-      .descriptionLine, .descriptionLine2 {
+      .descriptionLine {
         display: table;
         width: initial;
 
@@ -885,16 +892,11 @@ ul {
         .descriptionLine {
           display: none !important;
         }
-
-        .descriptionLine2 {
-          display: block !important;
-        }
       }
 
       /*/ LIST STYLE FOR LI ITEMS - big title + big image + small desc /*/
       &.bigFocus, &.firstFocus:first-of-type {
         background-color: rgba(0, 0, 0, 0);
-        transition-duration: 0.4s;
       
         .descriptionLine {
           position: absolute;
@@ -919,10 +921,6 @@ ul {
           text-overflow: ellipsis !important;
           display: -webkit-box;
           -webkit-box-orient: vertical;
-        }
-
-        .descriptionLine2, .descriptionLine2 > * {
-          display: none !important;
         }
 
         .LanguageLabel {
@@ -1003,36 +1001,6 @@ ul {
         }
       }
 
-      /*/ LIST STYLE FOR ITEMS - list without item-description + based on Apple notification system /*/
-      &.nNotif {
-
-        .titleLine {
-          -webkit-line-clamp: 4 !important;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box !important;
-          -webkit-box-orient: vertical;
-        }
-
-        .item-description {
-          -webkit-line-clamp: 2;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box !important;
-          -webkit-box-orient: vertical;
-        }
-
-        .descriptionLine {
-
-          .articleDate {
-            display: none;
-          }
-        }
-        .descriptionLine2 {
-          display: none; /* use justifiedTitle instead */
-        }
-      }
-
       /*/ get big image for first-item /*/
       &.firstHeadline:first-child, &.bigHeadline {
     
@@ -1049,7 +1017,8 @@ ul {
         }
 
         .media {
-          position: relative !important;  
+          position: relative !important;
+          margin: 0;
         }
       
         .titleLine {
@@ -1065,6 +1034,11 @@ ul {
           padding: 14px 10px 16px 16px;
           width: calc(100% - 16px - 10px);
           border-radius: 0 0 var(--rounded-corners-block) var(--rounded-corners-block);
+
+          .descriptionLine {
+            margin-right: 16px;
+            // only the justifiedTitle line has a right-margin of 10px in order for the date to be aligned with other li elements
+          }
         }
 
         .background-image {
@@ -1101,26 +1075,8 @@ ul {
           }
         }
 
-        .descriptionLine, .descriptionLine2 {
-          
-          .articleDate {
-            display: none;
-          }
-        }
-
-        &.nNotif {
-
-          .itemContainer {
-            background-color: var(--secondarySystemGroupedBackground);
-          }
-
-          .iconContainer {
-              padding: 0;
-          }
-
-          .media {
-              margin: 0;
-          }
+        .iconContainer {
+            padding: 0;
         }
       }
     }
@@ -1286,17 +1242,19 @@ em:not(.itemContainer em) {
   filter: drop-shadow(0 10px 10px var(--lightShadow));
   
   h4 {
-    border-bottom: 3.2px solid var(--label);
-    padding: 10px 10px 5px;
+    border-bottom: 3.2px solid var(--colorTheme);
+    padding: 10px 15px 5px;
   }
 
   li {
     margin-bottom: 0 !important;
+    background-color: none !important;
 
     &.firstHeadline:first-child, &.bigHeadline {
 
       .itemContainer {
         background-color: var(--tertiarySystemGroupedBackground);
+        padding: 14px 16px 16px 16px;
       }
 
       .iconContainer {
@@ -1305,8 +1263,7 @@ em:not(.itemContainer em) {
 
       .media {
         border-bottom: 0 solid red;
-        padding-right: 10px;
-        padding-top: 10px;
+        padding: 10px 10px 0;
       }
     }
 
@@ -1384,10 +1341,6 @@ em:not(.itemContainer em) {
           -webkit-box-orient: vertical;
         }
       }
-
-      .descriptionLine2 {
-        display: none;
-      }
     }
 
     .media {
@@ -1414,10 +1367,6 @@ em:not(.itemContainer em) {
       .media {
         border-bottom: 0 solid red;
       }
-    }
-
-    .descriptionLine2 {
-      display: none;
     }
 
     .descriptionLine .articleDate { /* use justifiedTitle instead */
