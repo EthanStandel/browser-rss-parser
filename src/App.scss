@@ -107,7 +107,7 @@
 .spinner-container > div {
   margin: auto;
   margin-top: 6rem;
-  margin-bottom: 6rem;
+  padding-bottom: 6rem;
 }
 
 body {
@@ -664,10 +664,6 @@ ul {
     }
   }
 
-  &.rss {
-    margin-bottom: 44px;
-  }
-
   &.rss, &.rss-podcasts {
 
     /*/ subtopic list element /*/
@@ -675,6 +671,10 @@ ul {
       margin-bottom: 15px;
       background-color: var(--secondarySystemGroupedBackground);
       border-radius: var(--rounded-corners-block);
+
+      .descriptionLine .articleDate {
+        display: none;
+      }
 
       .item-description {
         
@@ -1122,175 +1122,6 @@ ul {
               margin: 0;
           }
         }
-
-        &.nList {
-
-          .itemContainer {
-            background-color: var(--tertiarySystemGroupedBackground);
-          }
-
-          .iconContainer {
-            padding: 0;
-          }
-
-          .media {
-            border-bottom: 0 solid red;
-            padding-right: 10px;
-            padding-top: 10px;
-          }
-        }
-      }
-
-      /*/ LIST STYLE FOR ITEMS - list without bgIMG + small description /*/
-      &.nList {
-        margin-bottom: 0;
-        border-radius: 0;
-
-        &.TVbanner {
-
-
-          .item-description {
-            -webkit-line-clamp: 6 !important;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box !important;
-            -webkit-box-orient: vertical;
-          }
-
-          &.NOT {
-
-            .descriptionLine:not(.always) {
-              display: none;
-            }
-
-            .firstLine {
-              .icon-footnote-container.footnote {
-                display: none;
-              }
-            }
-          }
-        }
-
-        &:first-of-type:not(.TVbanner), &.bigList {
-
-          .icon-image:nth-child(1) {
-            display: none !important;
-          }
-
-          .icon-image:not(:nth-child(1)) {
-              z-index: 2;
-              margin: 0;
-              position: absolute;
-              width: 70px;
-              height: 70px;
-            
-            img {
-              width: 18px;
-              height: 18px;
-              border-radius: 5px;
-              position: absolute;
-              top: 5px;
-              left: 5px;
-            }
-          }
-
-          .background-image {
-            display: block;
-            float: left;
-            z-index: 0;
-            width: 70px;
-            height: 70px;
-
-            img {
-              width: 70px;
-              border-radius: 10px;
-              height: 70px;
-            }
-          }
-
-          .descriptionLine {
-            .articleDate {
-              display: none;
-            }
-
-            .item-description {
-              -webkit-line-clamp: 2 !important;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              display: -webkit-box !important;
-              -webkit-box-orient: vertical;
-            }
-          }
-
-          .descriptionLine2 {
-            display: none;
-          }
-        }
-
-        .media {
-          border-bottom: 0.8px solid var(--separator);
-        }
-
-        &:first-child {
-          border-top-left-radius: var(--rounded-corners-block);
-          border-top-right-radius: var(--rounded-corners-block);
-        }
-
-        &:last-child {
-          border-bottom-left-radius: var(--rounded-corners-block);
-          border-bottom-right-radius: var(--rounded-corners-block);
-        }
-
-        .item-description {
-          -webkit-line-clamp: 1 !important;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box !important;
-          -webkit-box-orient: vertical;
-        }
-
-        .titleLine {
-          -webkit-line-clamp: 3 !important;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box !important;
-          -webkit-box-orient: vertical;
-        }
-
-        &:last-child {
-          .media {
-            border-bottom: 0 solid red;
-          }
-        }
-
-        .descriptionLine2 {
-          display: none;
-        }
-
-        .descriptionLine .articleDate { /* use justifiedTitle instead */
-          display: none !important;
-        }
-
-        @media only screen and (max-width: 1000px) {
-          .descriptionLine:not(.always) {
-
-            .articleDate {
-              display: none;
-            }
-          }
-
-          .descriptionLine2 {
-            display: none; /* use justifiedTitle instead */
-          }
-
-          .item-description {
-            -webkit-line-clamp: 2 !important;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box !important;
-            -webkit-box-orient: vertical;
-          }
-        }
       }
     }
   }
@@ -1430,10 +1261,6 @@ em:not(.itemContainer em) {
   font-style: normal;
 }
 
-.section {
-    min-width: 100%;
-}
-
 .BlockParagraph {
   background-color: var(--secondarySystemGroupedBackground);
   box-shadow: 2px 4px 12px rgba(0,0,0, 0.25);
@@ -1451,4 +1278,174 @@ em:not(.itemContainer em) {
   &.Bday {
     border: 4px solid var(--headlinesColorTheme);
   }
+}
+
+.nList2 {
+  background-color: var(--secondarySystemGroupedBackground);
+  border-radius: var(--rounded-corners-block);
+  
+  h4 {
+    border-bottom: 3.2px solid var(--label);
+    padding: 10px 10px 5px;
+  }
+
+  li {
+    margin-bottom: 0 !important;
+
+    &.firstHeadline:first-child, &.bigHeadline {
+
+      .itemContainer {
+        background-color: var(--tertiarySystemGroupedBackground);
+      }
+
+      .iconContainer {
+        padding: 0;
+      }
+
+      .media {
+        border-bottom: 0 solid red;
+        padding-right: 10px;
+        padding-top: 10px;
+      }
+    }
+
+    &.TVbanner {
+
+      .item-description {
+        -webkit-line-clamp: 6 !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box !important;
+        -webkit-box-orient: vertical;
+      }
+
+      &.NOT {
+
+        .descriptionLine:not(.always) {
+          display: none;
+        }
+
+        .firstLine {
+          .icon-footnote-container.footnote {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &:first-of-type:not(.TVbanner), &.bigList {
+
+      .icon-image:nth-child(1) {
+        display: none !important;
+      }
+
+      .icon-image:not(:nth-child(1)) {
+          z-index: 2;
+          margin: 0;
+          position: absolute;
+          width: 70px;
+          height: 70px;
+        
+        img {
+          width: 18px;
+          height: 18px;
+          border-radius: 5px;
+          position: absolute;
+          top: 5px;
+          left: 5px;
+        }
+      }
+
+      .background-image {
+        display: block;
+        float: left;
+        z-index: 0;
+        width: 70px;
+        height: 70px;
+
+        img {
+          width: 70px;
+          border-radius: 10px;
+          height: 70px;
+        }
+      }
+
+      .descriptionLine {
+        .articleDate {
+          display: none;
+        }
+
+        .item-description {
+          -webkit-line-clamp: 2 !important;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box !important;
+          -webkit-box-orient: vertical;
+        }
+      }
+
+      .descriptionLine2 {
+        display: none;
+      }
+    }
+
+    .media {
+      border-bottom: 0.8px solid var(--separator);
+    }
+
+    .item-description {
+      -webkit-line-clamp: 1 !important;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box !important;
+      -webkit-box-orient: vertical;
+    }
+
+    .titleLine {
+      -webkit-line-clamp: 3 !important;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box !important;
+      -webkit-box-orient: vertical;
+    }
+
+    &:last-child {
+      .media {
+        border-bottom: 0 solid red;
+      }
+    }
+
+    .descriptionLine2 {
+      display: none;
+    }
+
+    .descriptionLine .articleDate { /* use justifiedTitle instead */
+      display: none !important;
+    }
+
+    @media only screen and (max-width: 1000px) {
+      .descriptionLine:not(.always) {
+
+        .articleDate {
+          display: none;
+        }
+      }
+
+      .descriptionLine2 {
+        display: none; /* use justifiedTitle instead */
+      }
+
+      .item-description {
+        -webkit-line-clamp: 2 !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box !important;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+}
+
+section.ArticleSection {
+  margin-bottom: 44px;
 }

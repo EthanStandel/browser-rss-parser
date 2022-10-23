@@ -59,7 +59,7 @@ var NDaysBeforeWeekday = [""]
 var dateNDaysBefore = [""]
 function weekday(n: number) {
   const daysIndex = ['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
-  if (n>2) {
+  if (n>0) {
     for (let i of range(n+1)) {
       var minusDay = new Date();
       minusDay.setDate(minusDay.getDate() - i);
@@ -225,10 +225,8 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                           </div>
                         </div>
                         <div className="descriptionLine">
-                          <div className="r2 articleDate">
-                            {displayedDate}
-                          </div>
-                            {item.description && <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: _unescape(item.description).replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;')}} />}
+                          <div className="r2 articleDate">{displayedDate}</div>
+                          {item.description && <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: _unescape(item.description).replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;')}} />}
                         </div>
                         <div className="additional-infosLine">
                           <div className="r4">

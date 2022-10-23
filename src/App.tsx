@@ -32,6 +32,15 @@ const App = () => {
   }
   const CustomTopicComponent = topicComponents[topicFilter] ?? "div";
 
+  var nListDisplays = ["Photographie","Histoire","Presse étrangère"]
+  function nListYS(key : string) {
+    var displayednList = false 
+    nListDisplays.forEach((element) => {
+      key.includes(element) ? (displayednList = true) : null;
+    })
+    return displayednList
+  }
+
   return (
     <div className={topicFilter + " App"}>
       <div className="header-mobile">
@@ -85,13 +94,11 @@ const App = () => {
               .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)
               .filter(([ key ]) => !subtopicFilter ? true : subtopicFilter === key)
               .map(([key, feeds]) => (
-                <div key={key} className={`${key} section`}>
+                <section key={key} className={`${key} ArticleSection ` + (nListYS(key)==true ? "nList2" : "")}> 
+                  {key !== "noSubtopic" && <h4 className="subtopic bold">{key}</h4>}
                   <div id="external-script-element" />
-                  <section>
-                    {key !== "noSubtopic" && <h4 className="subtopic bold">{key}</h4>}
-                    <RssContent rssFeeds={feeds} />
-                  </section>
-                </div>
+                  <RssContent rssFeeds={feeds} />
+                </section>
               ))
             }
           </div>
