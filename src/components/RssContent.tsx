@@ -7,6 +7,7 @@ import { Spinner } from "./Spinner";
 import _unescape from "lodash/unescape";
 import _deburr from "lodash/deburr";
 import { countReset } from "console";
+import { range } from "lodash";
 
 export interface RssFeedSource {
   url: string;
@@ -53,18 +54,27 @@ export interface RssContentProps {
   rssFeeds: Array<RssFeedSource>;
 };
 
-var dd = String(new Date().getDate()).padStart(2, '0');
-var yesterdayDate = new Date();
-yesterdayDate.setDate(yesterdayDate.getDate()-1);
-var ddyesterday = String(yesterdayDate.getDate()).padStart(2, '0');
+// The following function creates date formats for the n days before (dateNDaysBefore[]) and associates to NDaysBeforeWeekday the corresponding weekday
+var NDaysBeforeWeekday = [""]
+var dateNDaysBefore = [""]
+function weekday(n: number) {
+  const daysIndex = ['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+  if (n>2) {
+    for (let i of range(n+1)) {
+      var minusDay = new Date();
+      minusDay.setDate(minusDay.getDate() - i);
+      var ddMinusDay = String(minusDay.getDate()).padStart(2, '0');
+      var DateMinusDay = ddMinusDay + '/' + (minusDay.getMonth()+1);
+      
+      // N-days-before Date
+      dateNDaysBefore[i]= String(DateMinusDay);
 
-var beforeYesterdayDate = new Date();
-beforeYesterdayDate.setDate(beforeYesterdayDate.getDate()-2);
-var ddbeforeYesterday = String(beforeYesterdayDate.getDate()).padStart(2, '0');
-
-const todayFormat = dd + '/' + (new Date().getMonth()+1) ;
-const yesterdayFormat = ddyesterday + '/' + (yesterdayDate.getMonth()+1) ;
-const beforeYesterdayFormat = ddbeforeYesterday + '/' + (beforeYesterdayDate.getMonth()+1);
+      // weekday for n-days-before day
+      minusDay.getDay();
+      NDaysBeforeWeekday[i] = daysIndex[minusDay.getDay()];
+    }
+  }
+}
 
 // This is bad but the whole point of this is to not stand up a server
 const openCorsProxy = "https://api.codetabs.com/v1/proxy?quest=";
@@ -151,7 +161,8 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                 .replace('Content Type: Personal Profile', '')
                 .replace('News /', '')
                 .replace('Culture /', '')
-                .replace('has_diapo', ''));
+                .replace('has_diapo', '')
+                .replace('&amp;', '&'));
               
               if (correctedElement != "") {
                 arrayCategoriesTEST.push(correctedElement)
@@ -171,12 +182,12 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             let CategoriesCommaSeparated = arrford(arrayCategoriesTEST, false).replace(' and ', ', '); /* list formatting with commas' */
 
             var countryISO3Label = String(source.articlesCountryISO3)
-
             if ((source.articlesCountryISO3 == "") || (source.articlesCountryISO3 == null)) {
               var countryISO3Label = "FRA"
             } /* by default, articles are considered from French newsrooms and hidden */
 
-            let displayedDate = date?.setLocale("fr").toFormat("dd/M").replace('Invalid DateTime', '').replace(todayFormat, '' + date?.setLocale("fr").toFormat("HH:mm")).replace(yesterdayFormat, 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(beforeYesterdayFormat, 'avant-hier');
+            weekday(7)
+            var displayedDate = date?.setLocale("fr").toFormat("dd/MM").replace('Invalid DateTime', '').replace(dateNDaysBefore[0], '' + date?.setLocale("fr").toFormat("HH:mm")).replace(dateNDaysBefore[1], 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(dateNDaysBefore[2], 'avant-hier').replace(dateNDaysBefore[3], NDaysBeforeWeekday[3]).replace(dateNDaysBefore[4], NDaysBeforeWeekday[4]).replace(dateNDaysBefore[5], NDaysBeforeWeekday[5]).replace(dateNDaysBefore[6], NDaysBeforeWeekday[6]);
 
             return (
 
@@ -207,7 +218,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                         <div className="justifiedTitle">
                           <h6 className="titleLine">
                             <div className={"LanguageLabel r4 " + countryISO3Label}>{countryISO3Label}</div>
-                            <div className="ItemTitle" dangerouslySetInnerHTML={{ __html: _unescape(item.title ?? "").replace('*** BILDplus Inhalt *** ','').replace('[EN LIGNE]', '').replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;')}} />
+                            <div className="ItemTitle" dangerouslySetInnerHTML={{ __html: _unescape(item.title ?? "").replace('*** BILDplus Inhalt *** ','').replace('[EN LIGNE]', '').replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;').replace(" - " + dateNDaysBefore[0],"")}} />
                           </h6>
                           <div className="r2 articleDate">
                             {((concatListofCategories == "") || (concatListofCategories == null)) ? String(displayedDate) : null}
