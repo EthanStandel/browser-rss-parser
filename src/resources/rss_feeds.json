@@ -1153,6 +1153,36 @@
             "backgroundImg": "./icons/WebsitesIcons/lequipe_bgIMG.jpg"
           }
         ],
+        "Golf": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/golf/",
+            "name": "RMC Sport",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/rmcsport.jpeg",
+            "backgroundImg": "./icons/WebsitesIcons/rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ladepeche.fr/sport/golf/rss.xml",
+            "name": "La Dépêche",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/ladepeche.png",
+            "backgroundImg": "./icons/WebsitesIcons/ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Golf.xml",
+            "name": "L'Équipe",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/lequipe.png",
+            "backgroundImg": "./icons/WebsitesIcons/lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/sports/golf/rss",
+            "name": "La Presse",
+            "articlesCountryISO3": "CAN",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/lapresse.png"
+          } 
+        ],
         "Handball & volleyball": [
           {
             "url": "https://rmcsport.bfmtv.com/rss/handball/",
@@ -1267,36 +1297,6 @@
             "backgroundImg": "./icons/WebsitesIcons/franceinfo_bgIMG.jpg"
           }
         ],
-        "Golf": [
-          {
-            "url": "https://rmcsport.bfmtv.com/rss/golf/",
-            "name": "RMC Sport",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/rmcsport.jpeg",
-            "backgroundImg": "./icons/WebsitesIcons/rmcsport_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.ladepeche.fr/sport/golf/rss.xml",
-            "name": "La Dépêche",
-            "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/ladepeche.png",
-            "backgroundImg": "./icons/WebsitesIcons/ladepeche_bgIMG.jpg"
-          },
-          {
-            "url": "https://www6.lequipe.fr/rss/actu_rss_Golf.xml",
-            "name": "L'Équipe",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/lequipe.png",
-            "backgroundImg": "./icons/WebsitesIcons/lequipe_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lapresse.ca/sports/golf/rss",
-            "name": "La Presse",
-            "articlesCountryISO3": "CAN",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/lapresse.png"
-          } 
-        ],
         "Sports de combat": [
           {
             "url": "https://rmcsport.bfmtv.com/rss/sports-de-combat/",
@@ -1350,10 +1350,9 @@
             "url": "https://www.lapresse.ca/sports/hockey/rss",
             "name": "La Presse",
             "articlesCountryISO3": "CAN",
-            "articlesCount": 2,
+            "articlesCount": 3,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
           } 
-
         ],
         "Sports d'hiver": [
           {
@@ -1426,7 +1425,7 @@
           {
             "url": "https://www.francetvinfo.fr/sports/handisport.rss",
             "name": "Franceinfo",
-            "articlesCount": 2,
+            "articlesCount": 3,
             "iconImg": "./icons/WebsitesIcons/franceinfo.jpeg",
             "backgroundImg": "./icons/WebsitesIcons/franceinfo_bgIMG.jpg"
           }
@@ -1435,7 +1434,7 @@
           {
             "url": "https://rmcsport.bfmtv.com/rss/sport-us/",
             "name": "RMC Sport",
-            "articlesCount": 4,
+            "articlesCount": 3,
             "iconImg": "./icons/WebsitesIcons/rmcsport.jpeg",
             "backgroundImg": "./icons/WebsitesIcons/rmcsport_bgIMG.jpg"
           }
@@ -3542,7 +3541,7 @@
             "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
           }
         ],
-        "Ile-de-France": [
+        "Île-de-France": [
           {
             "url": "https://france3-regions.francetvinfo.fr/paris-ile-de-france/actu/rss",
             "name": "France 3",
@@ -3632,7 +3631,7 @@
             "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
           }
         ],
-        "Provence-Alpes-Côte d’Azur": [
+        "Provence-Alpes-Côte d'Azur": [
           {
             "url": "https://france3-regions.francetvinfo.fr/provence-alpes-cote-d-azur/actu/rss",
             "name": "France 3",

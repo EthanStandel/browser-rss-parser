@@ -147,7 +147,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             var author = author?.includes("AFP") ? undefined : author;
             var author = author?.includes(String(_deburr(source.name))) ? undefined : author;
 
-            var splitTitleCategory = (item.title?.includes("|") ? item.title.split("|")[0] : undefined)
+            var splitTitleCategory = (item.title?.includes("|") ? item.title.split("| ")[0] : undefined)
             let concatListofCategories = [(item.category || source.category)].join(',') /* select categories from the RSS feed if none is specified*/
      
             let arrayCategories = concatListofCategories.split(',').slice(0, 3); /* presents categories in an array with 3 elements (split in elements by comma sign) */
@@ -219,7 +219,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                         <div className="justifiedTitle">
                           <h6 className="titleLine">
                             {countryISO3Label == "FRA" ? null : <div className={"LanguageLabel r4 " + countryISO3Label}>{countryISO3Label}</div>}
-                            <div className="ItemTitle" dangerouslySetInnerHTML={{ __html: (item.title?.includes("|") ? _unescape(item.title.split("|")[1] ?? "") : _unescape(item.title ?? "")).replace('*** BILDplus Inhalt *** ','').replace('[EN LIGNE]', '').replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;').replace(" - " + dateNDaysBefore[0],"")}} />
+                            <div className="ItemTitle" dangerouslySetInnerHTML={{ __html: (item.title?.includes("|") ? _unescape(item.title.split("| ")[1] ?? "") : _unescape(item.title ?? "")).replace('*** BILDplus Inhalt *** ','').replace('[EN LIGNE]', '').replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;').replace(" - " + dateNDaysBefore[0],"")}} />
                           </h6>
                           <div className="r2 articleDate">
                             {((concatListofCategories == "") || (concatListofCategories == null)) ? String(displayedDate) : null}

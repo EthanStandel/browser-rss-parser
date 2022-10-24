@@ -32,7 +32,20 @@ const App = () => {
   }
   const CustomTopicComponent = topicComponents[topicFilter] ?? "div";
 
-  var nListDisplays = ["Photographie","Histoire","Presse étrangère","Musique","Bien-être","Royautés","Luxe"]
+  var nListDisplays = [
+    "Presse étrangère",
+    "Finance","Économie verte","Marketing","Management","Innovations","Retraites","Enchères","Media","Cryptomonnaies",
+    "Rugby","Handball","Baseball","Équitation","Sports de combat","Nautisme","Escrime","Pétanque","Hockey","Handisport","US",
+    "Photographie","Histoire","Musique",
+    "Bien-être","Royautés","Luxe",
+    "Pays ibériques","Suisse","Balkans","Italie",
+    "Paix & sécurité",
+    "Auvergne-Rhône-Alpes","Bourgogne-Franche-Comté","Bretagne","Centre-Val de Loire","Corse","Grand Est","Guadeloupe","Guyane","Hauts-de-France","Île-de-France","Martinique","Mayotte","Normandie","Nouvelle-Aquitaine","Nouvelle-Calédonie","Occitanie","Pays de la Loire","Polynésie","Provence-Alpes-Côte d'Azur","Réunion","Saint-Pierre-et-Miquelon","Wallis-et-Futuna",
+    "Action sociale",
+    "Discrimination",
+    "Astronomie",
+    "Deeptech","Développeurs","GAFAM","geeks","Ordinateurs"
+  ]
   function nListYS(key : string) {
     var displayednList = false 
     for(let i = 0; i < nListDisplays.length; i++) {
