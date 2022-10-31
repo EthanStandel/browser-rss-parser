@@ -3,6 +3,12 @@
 
 /* HTML5 color-names allowed for use in Titles (News App). List: https://www.w3schools.com/colors/colors_names.asp */
 
+
+// non changing styles with light or dark mode -- mainly shadows)
+.iOSlargeShadow {
+  filter: drop-shadow(17px 20px 40px rgba(0, 0, 0, 0.21));
+}
+
 @media (prefers-color-scheme: light) {
     :root {
       /* Adaptable Colors */

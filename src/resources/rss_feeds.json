@@ -164,6 +164,15 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/radiocanada.png",
             "backgroundImg": "./icons/WebsitesIcons/radiocanada_bgIMG.png"
+          },
+          {
+            "url": "https://www.ft.com/world/us?format=rss",
+            "name": "The Financial Times",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/financialtimes.png",
+            "backgroundImg": "./icons/WebsitesIcons/financialtimes_bgIMG.jpg"
           }
         ],
         "United Kingdom & Ireland": [
@@ -2887,6 +2896,24 @@
             "backgroundImg": "./icons/WebsitesIcons/nationsunies_bgIMG.jpg"
           }
         ],
+        "Chine": [
+
+        ],
+        "États-Unis": [
+
+        ],
+        "Inde": [
+
+        ],
+        "Japon": [
+
+        ],
+        "Canada": [
+
+        ],
+        "Brésil": [
+
+        ],
         "Presse étrangère": [
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
@@ -2954,6 +2981,15 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/radiocanada.png",
             "backgroundImg": "./icons/WebsitesIcons/radiocanada_bgIMG.png"
+          },
+          {
+            "url": "https://www.ft.com/world?format=rss",
+            "name": "The Financial Times",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline",
+            "articlesCount": 4,
+            "iconImg": "./icons/WebsitesIcons/financialtimes.png",
+            "backgroundImg": "./icons/WebsitesIcons/financialtimes_bgIMG.jpg"
           }
         ]
       }
@@ -3311,6 +3347,15 @@
             "iconImg": "./icons/WebsitesIcons/lemonde-diplo.png",
             "backgroundImg": "./icons/WebsitesIcons/lemonde-diplo_bgIMG.jpg"
           } 
+        ],
+        "Économie": [
+          {
+            "url": "https://www.latribune.fr/rss/rubriques/opinions.html",
+            "name": "La Tribune",
+            "specification": "firstFocus",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/latribune.png"
+          }
         ],
         "Société": [
           {
@@ -4916,6 +4961,15 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/diezeit.png",
             "backgroundImg": "./icons/WebsitesIcons/diezeit_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.ft.com/technology?format=rss",
+            "name": "The Financial Times",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline",
+            "articlesCount": 4,
+            "iconImg": "./icons/WebsitesIcons/financialtimes.png",
+            "backgroundImg": "./icons/WebsitesIcons/financialtimes_bgIMG.jpg"
           }
         ]
       }
@@ -5398,7 +5452,7 @@
         ]
       }
     },
-    "Auto & moto": {
+    "Auto-moto": {
       "subtopics": {
         "noSubtopic": [
           {
@@ -5490,9 +5544,16 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/capital.png",
             "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.auto-moto.com/essais/feed",
+            "name": "Auto Moto",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/automoto.png"
           }
         ],
-        "Événements": [
+        "F1": [
 
         ],
         "Presse étrangère": [
