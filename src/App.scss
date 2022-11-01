@@ -647,14 +647,18 @@ header .logo-text {
   border-right: 1.8px solid var(--separator);
 }
 
-section:not(.nList) ul {
-      
-  li:not(.firstFocus:first-child) {
-    filter: drop-shadow(0 10px 10px var(--lightShadow));
-    border: 1px solid var(--cardBorder);
-    border-bottom: 3px solid var(--colorTheme);
+section.ArticleSection {
+  margin-bottom: 44px;
+
+  &:not(.nList) {
+
+    ul li:not(.firstFocus:first-child) {
+      filter: drop-shadow(0 10px 10px var(--lightShadow));
+      border: 1px solid var(--cardBorder);
+    }
   }
-} 
+}
+
 /*/ list containing a whole subtopic /*/
 ul {
 
@@ -1248,7 +1252,6 @@ em:not(.itemContainer em) {
   border-radius: var(--rounded-corners-block);
   filter: drop-shadow(0 10px 10px var(--hardShadow));
   border: 1px solid var(--cardBorder);
-  border-bottom: 3px solid var(--colorTheme);
   
   h4 {
     border-bottom: 3.2px solid var(--colorTheme);
@@ -1403,8 +1406,4 @@ em:not(.itemContainer em) {
       }
     }
   }
-}
-
-section.ArticleSection {
-  margin-bottom: 44px;
 }
