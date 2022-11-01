@@ -78,7 +78,7 @@
       /*/ Addition by KL3W /*/
       --cardBorder: rgba(209, 209, 214, 0.63);
 
-      /*/ Addition by KL3W - dropdown shadows [use filter: drop-shadow(0 10px 10px --Shadow)] /*/
+      /*/ Addition by KL3W - dropdown shadows [use filter: drop-shadow(0 10px 10px var(--Shadow))] /*/
       --lightShadow: rgba(76,76,109,0.03);
       --hardShadow: rgba(76, 76, 109, 0.07);
     }
@@ -156,7 +156,7 @@
       /*/ Addition by KL3W /*/
       --cardBorder: rgba(60, 65, 68, 0.63);
 
-      /*/ Addition by KL3W - dropdown shadows [use filter: drop-shadow(0 10px 10px --Shadow)] /*/
+      /*/ Addition by KL3W - dropdown shadows [use filter: drop-shadow(0 10px 10px var(--Shadow))] /*/
       --lightShadow: rgba(215, 215, 186, 0.03);
       --hardShadow: rgba(122, 122, 174, 0.07);
     }

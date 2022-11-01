@@ -5198,18 +5198,9 @@
           {
             "url": "https://www.challenges.fr/luxe/rss.xml",
             "name": "Challenges",
-            "specification": "firstFocus",
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/challenges.png",
             "backgroundImg": "./icons/WebsitesIcons/challenges_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.forbes.fr/luxe/feed/",
-            "name": "Forbes",
-            "specification": "firstHeadline",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/forbes.png",
-            "backgroundImg": "./icons/WebsitesIcons/forbes_bgIMG.jpg"
           }
         ],
         "Célébrités": [

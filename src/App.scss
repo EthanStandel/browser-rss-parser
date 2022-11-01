@@ -94,7 +94,7 @@
     --colorTheme: var(--lifestyleColorTheme);
   }
 
-  &.Auto {
+  &.Auto-moto {
     --colorTheme: var(--autoColorTheme);
   }
 
@@ -293,7 +293,7 @@ main.Articles {
     }
   }
 
-  .Auto {
+  .Auto-moto {
 
     .rss-podcasts * {
       border-bottom-color: var(--autoColorTheme);
@@ -464,7 +464,7 @@ ul {
         color: var(--lifestyleColorTheme);
       }
     
-      .Auto {
+      .Auto-moto {
         border-color: var(--autoColorTheme);
         color: var(--autoColorTheme);
       }
@@ -547,7 +547,7 @@ ul {
               background-color: var(--lifestyleColorTheme);
             }
     
-            &.Auto {
+            &.Auto-moto {
               background-color: var(--autoColorTheme);
             }
           }
@@ -647,7 +647,14 @@ header .logo-text {
   border-right: 1.8px solid var(--separator);
 }
 
-
+section:not(.nList) ul {
+      
+  li:not(.firstFocus:first-child) {
+    filter: drop-shadow(0 10px 10px var(--lightShadow));
+    border: 1px solid var(--cardBorder);
+    border-bottom: 3px solid var(--colorTheme);
+  }
+} 
 /*/ list containing a whole subtopic /*/
 ul {
 
@@ -1241,6 +1248,7 @@ em:not(.itemContainer em) {
   border-radius: var(--rounded-corners-block);
   filter: drop-shadow(0 10px 10px var(--hardShadow));
   border: 1px solid var(--cardBorder);
+  border-bottom: 3px solid var(--colorTheme);
   
   h4 {
     border-bottom: 3.2px solid var(--colorTheme);
