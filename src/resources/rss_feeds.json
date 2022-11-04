@@ -202,6 +202,14 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/express.png",
             "backgroundImg": "./icons/WebsitesIcons/express_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.telegraph.co.uk/news/rss.xml",
+            "name": "The Telegraph",
+            "specification": "firstHeadline",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/thetelegraph.png",
+            "backgroundImg": "./icons/WebsitesIcons/thetelegraph_bgIMG.jpg"
           }
         ],
         "Australia & New Zealand": [
@@ -210,9 +218,34 @@
             "name": "The Financial Times",
             "articlesCountryISO3": "USA",
             "specification": "firstHeadline",
-            "articlesCount": 3,
+            "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/financialtimes.png",
             "backgroundImg": "./icons/WebsitesIcons/financialtimes_bgIMG.jpg"
+          },
+          {
+            "url": "http://feeds.sydneysun.com/rss/ae0def0d9b645403",
+            "name": "Sydney Sun",
+            "articlesCountryISO3": "AUS",
+            "specification": "firstHeadline",
+            "articlesCount": 4,
+            "iconImg": "./icons/WebsitesIcons/sydneysun.png"
+          },
+          {
+            "url": "https://www.theage.com.au/rss/national.xml",
+            "name": "The Age",
+            "articlesCountryISO3": "AUS",
+            "specification": "firstHeadline",
+            "articlesCount": 4,
+            "iconImg": "./icons/WebsitesIcons/theage.png"
+          },
+          {
+            "url": "https://peppermintmag.com/category/news-events/feed/",
+            "name": "Peppermint Magazine",
+            "articlesCountryISO3": "AUS",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/peppermint.png",
+            "backgroundImg": "./icons/WebsitesIcons/peppermint_bgIMG.jpg"
           }
         ],
         "中国": [
@@ -1495,13 +1528,12 @@
             "backgroundImg": "./icons/WebsitesIcons/dw_bgIMG.jpg"
           },
           {
-            "url": "https://www.newyorker.com/feed/news/sporting-scene",
-            "name": "The New Yorker",
-            "articlesCountryISO3": "USA",
+            "url": "https://www.theage.com.au/rss/sport.xml",
+            "name": "The Age",
+            "articlesCountryISO3": "AUS",
             "specification": "firstHeadline",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/thenewyorker.png",
-            "backgroundImg": "./icons/WebsitesIcons/thenewyorker_bgIMG.jpg"
+            "articlesCount": 4,
+            "iconImg": "./icons/WebsitesIcons/theage.png"
           },
           {
             "url": "https://www.deutschlandfunk.de/sport.1494.de.rss",
@@ -2918,6 +2950,7 @@
           {
             "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
             "name": "The New York Times",
+            "articlesCountryISO3": "USA",
             "specification": "firstHeadline",
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/thenytimes.png",
@@ -2926,6 +2959,7 @@
           {
             "url": "http://feeds.bbci.co.uk/news/video_and_audio/world/rss.xml",
             "name": "BBC News",
+            "articlesCountryISO3": "GBR",
             "specification": "firstHeadline",
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/bbcnews.png",
@@ -2944,6 +2978,7 @@
             "url": "http://feeds.foxnews.com/foxnews/world?format=xml",
             "name": "FOX news",
             "specification": "firstHeadline",
+            "articlesCountryISO3": "USA",
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/foxnews.png",
             "backgroundImg": "./icons/WebsitesIcons/foxnews_bgIMG.jpg"
@@ -2951,24 +2986,25 @@
           {
             "url": "http://rss.cnn.com/rss/edition_world.rss",
             "name": "CNN",
+            "articlesCountryISO3": "USA",
             "specification": "firstHeadline",
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/cnn.png",
             "backgroundImg": "./icons/WebsitesIcons/cnn_bgIMG.jpg"
           },
           {
-            "url": "https://www.deutschlandfunk.de/eine-welt.798.de.rss",
-            "name": "Deutschlandfunk",
-            "articlesCountryISO3": "DEU",
+            "url": "https://www.theage.com.au/rss/world.xml",
+            "name": "The Age",
+            "articlesCountryISO3": "AUS",
             "specification": "firstHeadline",
-            "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/dfunk.png",
-            "backgroundImg": "./icons/WebsitesIcons/dfunk_bgIMG.jpg"
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/theage.png"
           },
           {
             "url": "http://feed.informer.com/digests/92PSY9Q7MN/feeder.rss",
             "name": "Vox World",
             "specification": "firstHeadline",
+            "articlesCountryISO3": "USA",
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/vox.png",
             "backgroundImg": "./icons/WebsitesIcons/vox_bgIMG.jpg"
@@ -2991,6 +3027,257 @@
             "iconImg": "./icons/WebsitesIcons/financialtimes.png",
             "backgroundImg": "./icons/WebsitesIcons/financialtimes_bgIMG.jpg"
           }
+        ]
+      }
+    },
+    "Régions": {
+      "subtopics": {
+        "noSubtopic": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/actu/rss",
+            "name": "France 3",
+            "specification": "firstHeadline",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/france3.png",
+            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francebleu.fr/rss/vie-quotidienne.xml",
+            "name": "France bleu",
+            "specification": "firstHeadline",
+            "articlesCount": 6,
+            "iconImg": "./icons/WebsitesIcons/francebleu.png",
+            "backgroundImg": "./icons/WebsitesIcons/francebleu_bgIMG.jpg"
+          },
+          {
+            "url": "https://la1ere.francetvinfo.fr/actu/rss",
+            "name": "La 1ère",
+            "specification": "firstHeadline",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/la1ere-portail.png",
+            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
+          }
+        ],
+        "Auvergne-Rhône-Alpes": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/auvergne-rhone-alpes/actu/rss",
+            "name": "France 3",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/france3.png",
+            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          }
+        ],
+        "Bourgogne-Franche-Comté": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/actu/rss",
+            "name": "France 3",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/france3.png",
+            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          }
+        ],
+        "Bretagne": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/bretagne/actu/rss",
+            "name": "France 3",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/france3.png",
+            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          }
+        ],
+        "Centre-Val de Loire": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/centre-val-de-loire/actu/rss",
+            "name": "France 3",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/france3.png",
+            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          }
+        ],
+        "Corse": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/corse/actu/rss",
+            "name": "France 3",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/france3.png",
+            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          }
+        ],
+        "Grand Est": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/grand-est/actu/rss",
+            "name": "France 3",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/france3.png",
+            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          }
+        ],
+        "Guadeloupe": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/guadeloupe/actu/rss",
+            "name": "La 1ère",
+            "specification": "firstHeadline",
+            "articlesCount": 6,
+            "iconImg": "./icons/WebsitesIcons/la1ere.png",
+            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
+          }
+        ],
+        "Guyane": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/guyane/actu/rss",
+            "name": "La 1ère",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/la1ere.png",
+            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
+          }
+        ],
+        "Hauts-de-France": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/hauts-de-france/actu/rss",
+            "name": "France 3",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/france3.png",
+            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          }
+        ],
+        "Île-de-France": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/paris-ile-de-france/actu/rss",
+            "name": "France 3",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/france3.png",
+            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          }
+        ],
+        "Martinique": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/martinique/actu/rss",
+            "name": "La 1ère",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/la1ere.png",
+            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
+          }
+        ],
+        "Mayotte": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/mayotte/actu/rss",
+            "name": "La 1ère",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/la1ere.png",
+            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
+          }
+        ],
+        "Normandie": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/normandie/actu/rss",
+            "name": "France 3",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/france3.png",
+            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          }
+        ],
+        "Nouvelle-Aquitaine": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/nouvelle-aquitaine/actu/rss",
+            "name": "France 3",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/france3.png",
+            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          }
+        ],
+        "Nouvelle-Calédonie": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/nouvellecaledonie/actu/rss",
+            "name": "La 1ère",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/la1ere.png",
+            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
+          }
+        ],
+        "Occitanie": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/occitanie/actu/rss",
+            "name": "France 3",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/france3.png",
+            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          }
+        ],
+        "Pays de la Loire": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/pays-de-la-loire/actu/rss",
+            "name": "France 3",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/france3.png",
+            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          }
+        ],
+        "Polynésie": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/polynesie/actu/rss",
+            "name": "La 1ère",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/la1ere.png",
+            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
+          }
+        ],
+        "Provence-Alpes-Côte d'Azur": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/provence-alpes-cote-d-azur/actu/rss",
+            "name": "France 3",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/france3.png",
+            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          }
+        ],
+        "Réunion": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/reunion/actu/rss",
+            "name": "La 1ère",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/la1ere.png",
+            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
+          }
+        ],
+        "Saint-Pierre-et-Miquelon": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/saintpierremiquelon/actu/rss",
+            "name": "La 1ère",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/la1ere.png",
+            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
+          }
+        ],
+        "Wallis-et-Futuna": [
+          {
+            "url": "https://la1ere.francetvinfo.fr/wallisfutuna/actu/rss",
+            "name": "La 1ère",
+            "specification": "firstHeadline",
+            "articlesCount": 8,
+            "iconImg": "./icons/WebsitesIcons/la1ere.png",
+            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
+          }
+
         ]
       }
     },
@@ -3459,263 +3746,12 @@
           {
             "url": "https://www.dezeen.com/opinion/feed/",
             "name": "Deezen",
-            "articlesCountryISO3": "GB",
+            "articlesCountryISO3": "GBR",
             "specification": "firstHeadline",
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/dezeen.png",
             "backgroundImg": "./icons/WebsitesIcons/dezeen_bgIMG.jpg"
           }
-        ]
-      }
-    },
-    "Régions": {
-      "subtopics": {
-        "noSubtopic": [
-          {
-            "url": "https://france3-regions.francetvinfo.fr/actu/rss",
-            "name": "France 3",
-            "specification": "firstHeadline",
-            "articlesCount": 3,
-            "iconImg": "./icons/WebsitesIcons/france3.png",
-            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.francebleu.fr/rss/vie-quotidienne.xml",
-            "name": "France bleu",
-            "specification": "firstHeadline",
-            "articlesCount": 6,
-            "iconImg": "./icons/WebsitesIcons/francebleu.png",
-            "backgroundImg": "./icons/WebsitesIcons/francebleu_bgIMG.jpg"
-          },
-          {
-            "url": "https://la1ere.francetvinfo.fr/actu/rss",
-            "name": "La 1ère",
-            "specification": "firstHeadline",
-            "articlesCount": 3,
-            "iconImg": "./icons/WebsitesIcons/la1ere-portail.png",
-            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
-          }
-        ],
-        "Auvergne-Rhône-Alpes": [
-          {
-            "url": "https://france3-regions.francetvinfo.fr/auvergne-rhone-alpes/actu/rss",
-            "name": "France 3",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/france3.png",
-            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
-          }
-        ],
-        "Bourgogne-Franche-Comté": [
-          {
-            "url": "https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/actu/rss",
-            "name": "France 3",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/france3.png",
-            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
-          }
-        ],
-        "Bretagne": [
-          {
-            "url": "https://france3-regions.francetvinfo.fr/bretagne/actu/rss",
-            "name": "France 3",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/france3.png",
-            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
-          }
-        ],
-        "Centre-Val de Loire": [
-          {
-            "url": "https://france3-regions.francetvinfo.fr/centre-val-de-loire/actu/rss",
-            "name": "France 3",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/france3.png",
-            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
-          }
-        ],
-        "Corse": [
-          {
-            "url": "https://france3-regions.francetvinfo.fr/corse/actu/rss",
-            "name": "France 3",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/france3.png",
-            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
-          }
-        ],
-        "Grand Est": [
-          {
-            "url": "https://france3-regions.francetvinfo.fr/grand-est/actu/rss",
-            "name": "France 3",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/france3.png",
-            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
-          }
-        ],
-        "Guadeloupe": [
-          {
-            "url": "https://la1ere.francetvinfo.fr/guadeloupe/actu/rss",
-            "name": "La 1ère",
-            "specification": "firstHeadline",
-            "articlesCount": 6,
-            "iconImg": "./icons/WebsitesIcons/la1ere.png",
-            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
-          }
-        ],
-        "Guyane": [
-          {
-            "url": "https://la1ere.francetvinfo.fr/guyane/actu/rss",
-            "name": "La 1ère",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/la1ere.png",
-            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
-          }
-        ],
-        "Hauts-de-France": [
-          {
-            "url": "https://france3-regions.francetvinfo.fr/hauts-de-france/actu/rss",
-            "name": "France 3",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/france3.png",
-            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
-          }
-        ],
-        "Île-de-France": [
-          {
-            "url": "https://france3-regions.francetvinfo.fr/paris-ile-de-france/actu/rss",
-            "name": "France 3",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/france3.png",
-            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
-          }
-        ],
-        "Martinique": [
-          {
-            "url": "https://la1ere.francetvinfo.fr/martinique/actu/rss",
-            "name": "La 1ère",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/la1ere.png",
-            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
-          }
-        ],
-        "Mayotte": [
-          {
-            "url": "https://la1ere.francetvinfo.fr/mayotte/actu/rss",
-            "name": "La 1ère",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/la1ere.png",
-            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
-          }
-        ],
-        "Normandie": [
-          {
-            "url": "https://france3-regions.francetvinfo.fr/normandie/actu/rss",
-            "name": "France 3",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/france3.png",
-            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
-          }
-        ],
-        "Nouvelle-Aquitaine": [
-          {
-            "url": "https://france3-regions.francetvinfo.fr/nouvelle-aquitaine/actu/rss",
-            "name": "France 3",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/france3.png",
-            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
-          }
-        ],
-        "Nouvelle-Calédonie": [
-          {
-            "url": "https://la1ere.francetvinfo.fr/nouvellecaledonie/actu/rss",
-            "name": "La 1ère",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/la1ere.png",
-            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
-          }
-        ],
-        "Occitanie": [
-          {
-            "url": "https://france3-regions.francetvinfo.fr/occitanie/actu/rss",
-            "name": "France 3",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/france3.png",
-            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
-          }
-        ],
-        "Pays de la Loire": [
-          {
-            "url": "https://france3-regions.francetvinfo.fr/pays-de-la-loire/actu/rss",
-            "name": "France 3",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/france3.png",
-            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
-          }
-        ],
-        "Polynésie": [
-          {
-            "url": "https://la1ere.francetvinfo.fr/polynesie/actu/rss",
-            "name": "La 1ère",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/la1ere.png",
-            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
-          }
-        ],
-        "Provence-Alpes-Côte d'Azur": [
-          {
-            "url": "https://france3-regions.francetvinfo.fr/provence-alpes-cote-d-azur/actu/rss",
-            "name": "France 3",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/france3.png",
-            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
-          }
-        ],
-        "Réunion": [
-          {
-            "url": "https://la1ere.francetvinfo.fr/reunion/actu/rss",
-            "name": "La 1ère",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/la1ere.png",
-            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
-          }
-        ],
-        "Saint-Pierre-et-Miquelon": [
-          {
-            "url": "https://la1ere.francetvinfo.fr/saintpierremiquelon/actu/rss",
-            "name": "La 1ère",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/la1ere.png",
-            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
-          }
-        ],
-        "Wallis-et-Futuna": [
-          {
-            "url": "https://la1ere.francetvinfo.fr/wallisfutuna/actu/rss",
-            "name": "La 1ère",
-            "specification": "firstHeadline",
-            "articlesCount": 8,
-            "iconImg": "./icons/WebsitesIcons/la1ere.png",
-            "backgroundImg": "./icons/WebsitesIcons/la1ere_bgIMG.jpg"
-          }
-
         ]
       }
     },
@@ -4651,6 +4687,15 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/express.png",
             "backgroundImg": "./icons/WebsitesIcons/express_bgIMG.jpg"
+          },
+          {
+            "url": "https://peppermintmag.com/category/environment/feed/",
+            "name": "Peppermint Magazine",
+            "articlesCountryISO3": "AUS",
+            "specification": "firstHeadline",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/peppermint.png",
+            "backgroundImg": "./icons/WebsitesIcons/peppermint_bgIMG.jpg"
           }      
         ]
       }
@@ -4970,6 +5015,14 @@
             "articlesCount": 4,
             "iconImg": "./icons/WebsitesIcons/financialtimes.png",
             "backgroundImg": "./icons/WebsitesIcons/financialtimes_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.theage.com.au/rss/technology.xml",
+            "name": "The Age",
+            "articlesCountryISO3": "AUS",
+            "specification": "firstHeadline",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/theage.png"
           }
         ]
       }
@@ -5279,7 +5332,7 @@
               {
                 "url": "https://www.dezeen.com/lookbooks/feed/",
                 "name": "Deezen",
-                "articlesCountryISO3": "GB",
+                "articlesCountryISO3": "GBR",
                 "specification": "firstHeadline",
                 "articlesCount": 2,
                 "iconImg": "./icons/WebsitesIcons/dezeen.png",
@@ -5337,15 +5390,6 @@
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/courrierinter.png",
             "backgroundImg": "./icons/WebsitesIcons/courrierinter_bgIMG.jpg"
-          }
-        ],
-        "Bien-être":[
-          {
-            "url": "https://www.letelegramme.fr/mieux-vivre/rss.xml",
-            "name": "Le Télégramme",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/letelegramme.png",
-            "backgroundImg": "./icons/WebsitesIcons/letelegramme_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
@@ -5433,13 +5477,49 @@
           {
             "url": "https://www.dezeen.com/opinion/feed/",
             "name": "Deezen",
-            "articlesCountryISO3": "GB",
+            "articlesCountryISO3": "GBR",
             "specification": "firstHeadline",
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/dezeen.png",
             "backgroundImg": "./icons/WebsitesIcons/dezeen_bgIMG.jpg",
             "category": "Design"
           }   
+        ]
+      }
+    },
+    "Éthique": {
+      "subtopics": {
+        "noSubtopic": [
+
+        ],
+        "Communauté & vivre-ensemble": [
+
+        ],
+        "Engagement": [
+
+        ],
+        "Bien-être": [
+          {
+            "url": "https://www.letelegramme.fr/mieux-vivre/rss.xml",
+            "name": "Le Télégramme",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/letelegramme.png",
+            "backgroundImg": "./icons/WebsitesIcons/letelegramme_bgIMG.jpg"
+          }
+        ],
+        "Opinions": [
+
+        ],
+        "Presse étrangère": [
+          {
+            "url": "https://peppermintmag.com/category/better-together/feed/",
+            "name": "Peppermint Magazine",
+            "articlesCountryISO3": "AUS",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/peppermint.png",
+            "backgroundImg": "./icons/WebsitesIcons/peppermint_bgIMG.jpg"
+          } 
         ]
       }
     },
@@ -5574,6 +5654,15 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/architecturalDigest.png",
             "backgroundImg": "./icons/WebsitesIcons/architecturalDigest_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.telegraph.co.uk/cars/rss.xml",
+            "name": "The Telegraph",
+            "articlesCountryISO3": "GBR",
+            "specification": "firstHeadline",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/thetelegraph.png",
+            "backgroundImg": "./icons/WebsitesIcons/thetelegraph_bgIMG.jpg"
           }
         ]
       }

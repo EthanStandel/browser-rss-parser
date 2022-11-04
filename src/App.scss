@@ -16,11 +16,12 @@
   --europeColorTheme: yellowgreen;
   --polColorTheme: darkviolet;
   --ideesColorTheme: orchid;
-  --societeColorTheme: mediumaquamarine;
+  --societeColorTheme: lightpink;// mediumaquamarine;
   --techColorTheme: teal;
   --regionsColorTheme: cornflowerblue;
   --planeteColorTheme: limegreen;
   --lifestyleColorTheme: #6667ab;
+  --ethicsColorTheme: #398bb3; // #6db866;
   --autoColorTheme: mediumvioletred;
 
   /*/
@@ -92,6 +93,10 @@
 
   &.Art {
     --colorTheme: var(--lifestyleColorTheme);
+  }
+
+  &.Éthique {
+    --colorTheme: var(--ethicsColorTheme);
   }
 
   &.Auto-moto {
@@ -293,6 +298,17 @@ main.Articles {
     }
   }
 
+  .Éthique {
+    
+    .rss-podcasts * {
+      border-bottom-color: var(--ethicsColorTheme);
+    }
+
+    * {
+      text-decoration-color: var(--ethicsColorTheme);
+    }
+  }
+
   .Auto-moto {
 
     .rss-podcasts * {
@@ -463,6 +479,11 @@ ul {
         border-color: var(--lifestyleColorTheme);
         color: var(--lifestyleColorTheme);
       }
+
+      .Éthique {
+        border-color: var(--ethicsColorTheme);
+        color: var(--ethicsColorTheme);
+      }
     
       .Auto-moto {
         border-color: var(--autoColorTheme);
@@ -545,6 +566,10 @@ ul {
     
             &.Art {
               background-color: var(--lifestyleColorTheme);
+            }
+
+            &.Éthique {
+              background-color: var(--ethicsColorTheme);
             }
     
             &.Auto-moto {
