@@ -950,8 +950,7 @@ ul {
         }
 
         .item-description {
-          display: block;
-          padding: 12px;
+          margin: 12px;
           -webkit-line-clamp: 3 !important;
           overflow: hidden;
           text-overflow: ellipsis !important;
