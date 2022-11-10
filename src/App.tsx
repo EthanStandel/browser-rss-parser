@@ -45,7 +45,7 @@ const App = () => {
     "Discrimination",
     "Astronomie",
     "Deeptech","Développeurs","GAFAM","geeks","Ordinateurs",
-    "Bien-être","Engagement","Fin de vie","vivre-ensemble","Opinions"
+    "Bien-être","Engagement","Fin de vie","vivre-ensemble","Opinions","Bioéthique"
   ]
   function nListYS(key : string) {
     var displayednList = false 
