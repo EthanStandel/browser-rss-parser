@@ -21,7 +21,7 @@ const EthiqueComponent = () => {
             <div className="SOLBLesson">{Lesson + "*"}</div>
           </section>
           <section className="Comments">
-            <img className="FamilyPortrait" src="./illustrations/SolarOpposites/famPhoto.png" alt="The Solar Opposites, bitch" />
+            <img className="FamilyPortrait" src="./illustrations/SolarOpposites/FamPhoto.png" alt="The Solar Opposites, bitch" />
             <div className="Signature">*This lesson is brought to you by the Solar Opposites.</div>
             <img className="PuppaCoin" src="./illustrations/SolarOpposites/PupaCoin.gif" alt="Pay the rent u fuck" />
           </section>

@@ -1432,12 +1432,14 @@ em:not(.itemContainer em) {
   }
 }
 
+// EthiqueComponent
 .SolarOppLessonalyzerBlock {
   background-color: #4d4abf;
   box-shadow: 5px 8px 5px white inset;
   border-bottom: 5px solid #02052f;
   border-right: 2px solid #02052f;
   color: white;
+  
   * {
     font-family: Times New Roman,serif;
   }
@@ -1477,13 +1479,14 @@ em:not(.itemContainer em) {
     img.FamilyPortrait {
       height: 44px;
       margin: 10px;
+      max-width: 50px;
     }
 
     img.PuppaCoin {
       position: absolute;
       bottom: -66px;
       right: 2px;
-      z-index: 5;
+      z-index: 2;
       width: 150px;
     }
 
@@ -1493,7 +1496,5 @@ em:not(.itemContainer em) {
       padding: 5px 10px;
       font-weight: bold;
     }
-  }
-
-  
+  }  
 }
