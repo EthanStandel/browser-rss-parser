@@ -21,9 +21,9 @@ const EthiqueComponent = () => {
             <div className="SOLBLesson">{Lesson + "*"}</div>
           </section>
           <section className="Comments">
-            <img className="FamilyPortrait" src="https://thesolaropposites.com/lessonalyzer/img/fam-photo.e34b51ca.png" alt="The Solar Opposites, bitch" />
+            <img className="FamilyPortrait" src="./illustrations/SolarOpposites/famPhoto.png" alt="The Solar Opposites, bitch" />
             <div className="Signature">*This lesson is brought to you by the Solar Opposites.</div>
-            <img className="PuppaCoin" src="https://thesolaropposites.com/lessonalyzer/img/pupa-coin-desktop.c108aeaf.gif" alt="Pay the rent u fuck" />
+            <img className="PuppaCoin" src="./illustrations/SolarOpposites/PupaCoin.gif" alt="Pay the rent u fuck" />
           </section>
         </a>
       </div>

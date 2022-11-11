@@ -41,10 +41,10 @@ const App = () => {
     "Pays ibériques","Suisse","Balkans","Italie",
     "Paix & sécurité",
     "Auvergne-Rhône-Alpes","Bourgogne-Franche-Comté","Bretagne","Centre-Val de Loire","Corse","Grand Est","Guadeloupe","Guyane","Hauts-de-France","Île-de-France","Martinique","Mayotte","Normandie","Nouvelle-Aquitaine","Nouvelle-Calédonie","Occitanie","Pays de la Loire","Polynésie","Provence-Alpes-Côte d'Azur","Réunion","Saint-Pierre-et-Miquelon","Wallis-et-Futuna",
-    "Action sociale",
-    "Discrimination",
+    "Action sociale","Handicap","Discrimination","Droit",
+    "Déchets",
     "Astronomie",
-    "Deeptech","Développeurs","GAFAM","geeks","Ordinateurs",
+    "Deeptech","GAFAM","geeks","Ordinateurs","Big Data",
     "Bien-être","Engagement","Fin de vie","vivre-ensemble","Opinions","Bioéthique"
   ]
   function nListYS(key : string) {

@@ -747,6 +747,36 @@
             "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
           }
         ],
+        "Tourisme": [
+          {
+            "url": "https://www.lechotouristique.com/feed",
+            "name": "L'écho touristique",
+            "specification": "firstHeadline bigList",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/lechotouristique.png"
+          },
+          {
+            "url": "https://www.quotidiendutourisme.com/rss.xml",
+            "name": "Le quotidien du tourisme",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/lequotidiendutourisme.png"
+          },
+          {
+            "url": "https://www.lhotellerie-restauration.fr/rss/actu_rss.xml?xtor=RSS-1",
+            "name": "L'Hôtellerie Restauration",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/lhotellerie-restauration.png"
+          },
+          {
+            "url": "https://www.aerobuzz.fr/feed/",
+            "name": "Aerobuzz",
+            "specification": "firstHeadline",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/aerobuzz.png"
+          }
+        ],
         "Presse étrangère": [
           {
             "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
@@ -4028,6 +4058,15 @@
             "iconImg": "./icons/WebsitesIcons/lacroix.png"
           }
         ],
+        "Droit": [
+          {
+            "url": "https://www.lemonde.fr/droit-social/rss_full.xml",
+            "name": "Le Monde",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/lemonde.png",
+            "backgroundImg": "./icons/WebsitesIcons/lemonde_bgIMG.jpg"
+          }
+        ],
         "Religions": [
           {
             "url": "https://www.lemonde.fr/religions/rss_full.xml",
@@ -4080,6 +4119,22 @@
             "name": "La Croix",
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/lacroix.png"
+          }
+        ],
+        "Handicap": [
+          {
+            "url": "https://france3-regions.francetvinfo.fr/societe/handicap/rss",
+            "name": "France 3",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/france3.png",
+            "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.handicap.fr/rss/",
+            "name": "Handicap.fr",
+            "specification": "firstHeadline bigList",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/handicap.fr.png"
           }
         ],
         "Presse étrangère": [
@@ -4660,6 +4715,21 @@
             "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
           }
         ],
+        "Déchets & recyclage": [
+          {
+            "url": "https://www.actu-environnement.com/flux/rss/dechets/",
+            "name": "Actu-Environnement.com",
+            "specification": "firstHeadline bigList",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/actu-environnement.fr.png"
+          },
+          {
+            "url": "https://www.recyclage-recuperation.fr/feed",
+            "name": "Recyclage Récupération",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/recyclage-recuperation.png"
+          }
+        ],
         "Presse étrangère": [
           {
             "url": "https://taz.de/feed/!p4624/rss.xml",
@@ -4838,13 +4908,38 @@
             "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
           }
         ],
-        "Développeurs": [
+        "Dev": [
           {
             "url": "https://www.journaldunet.com/web-tech/developpeur/rss/",
             "name": "Journal du Net",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/jdn.png",
-            "backgroundImg": ".jdn_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/jdn.png"
+          },
+          {
+            "url": "https://www.developpez.com/index/rss",
+            "name": "Developpez.com",
+            "specification": "firstHeadline bigList",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/developpez.png"
+          },
+          {
+            "url": "https://www.programmez.com/rss.xml",
+            "name": "Programmez.com",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/programmez.png"
+          },
+          {
+            "url": "https://www.blogdumoderateur.com/dossier/developpement/feed/",
+            "name": "Le blog du modérateur",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/blogdumod.png"
+          },
+          {
+            "url": "https://news.humancoders.com/items/feed.rss",
+            "name": "Human Coders",
+            "specification": "firstHeadline bigList",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/humancoders.png"
           }
         ],
         "GAFAM": [
@@ -4884,7 +4979,7 @@
             "backgroundImg": ".jdg_bgIMG.jpg"
           }
         ],
-        "Big data & cybersécurité": [
+        "Cybersécurité": [
           {
             "url": "https://www.journaldugeek.com/category/securite/feed/",
             "name": "Le journal du geek",
@@ -4898,13 +4993,6 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/01net.png",
             "backgroundImg": ".01net_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.journaldunet.com/solutions/analytics/big-data/rss/",
-            "name": "Journal du Net",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/jdn.png",
-            "backgroundImg": ".jdn_bgIMG.jpg"
           },
           {
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=cybersecurite",
@@ -4927,6 +5015,28 @@
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/maddyness.png",
             "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+          }
+        ],
+        "Big Data": [
+          {
+            "url": "https://www.journaldunet.com/solutions/analytics/big-data/rss/",
+            "name": "Journal du Net",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/jdn.png"
+          },
+          {
+            "url": "https://www.lebigdata.fr/feed",
+            "name": "Le Big Data",
+            "specification": "firstHeadline bigList",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/lebigdata.png"
+          },
+          {
+            "url": "https://www.lemondeinformatique.fr/flux-rss/thematique/big-data/rss.xml",
+            "name": "Le Monde Informatique",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/lemondeinfo.png",
+            "backgroundImg": "./icons/WebsitesIcons/lemondeinfo_bgIMG.jpg"
           }
         ],
         "Web & geeks": [
@@ -5102,7 +5212,7 @@
             "backgroundImg": "./icons/WebsitesIcons/forbes_bgIMG.jpg"
           }
         ],
-        "Tourisme & voyages": [
+        "Voyages": [
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/voyages/?outputType=xml",
             "name": "Libération",
@@ -5628,6 +5738,27 @@
           }
         ],
         "F1": [
+          {
+            "url": "https://le10sport.com/fr/rss/formule1/",
+            "name": "Le 10 Sport",
+            "specification": "firstHeadline",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/le10sport.png"
+          },
+          {
+            "url": "https://www.sports.fr/f1/feed",
+            "name": "Sports.fr",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/sports.fr.png"
+          },
+          {
+            "url": "https://f1i.autojournal.fr/feed/",
+            "name": "F1i Magazine",
+            "specification": "firstHeadline bigList",
+            "articlesCount": 5,
+            "iconImg": "./icons/WebsitesIcons/f1imag.png"
+          }
 
         ],
         "Presse étrangère": [
