@@ -721,10 +721,18 @@ ul {
           display: -webkit-box !important;
           -webkit-box-orient: vertical;
 
-          p img, img, br, a, ul, li {
-            display: none;
+          * {
+            margin: 0 !important;
+          }
+
+          p img, img, br, a, ul, li, img {
+            display: none !important;
             width: 100%;
             height: auto;
+          }
+
+          b {
+            font-weight: normal !important;
           }
   
           p {
@@ -746,7 +754,7 @@ ul {
             }
           }
   
-          p:not(:nth-child(1)) {
+          p:not(:first-of-type) {
             display: none;
           }
         }

@@ -753,12 +753,13 @@
             "name": "L'écho touristique",
             "specification": "firstHeadline bigList",
             "articlesCount": 3,
-            "iconImg": "./icons/WebsitesIcons/lechotouristique.png"
+            "iconImg": "./icons/WebsitesIcons/lechotouristique.png",
+            "backgroundImg": "./icons/WebsitesIcons/lechotouristique_bgIMG.jpg"
           },
           {
             "url": "https://www.quotidiendutourisme.com/rss.xml",
             "name": "Le quotidien du tourisme",
-            "specification": "firstHeadline",
+            "specification": "firstHeadline nodesc",
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/lequotidiendutourisme.png"
           },
@@ -1767,8 +1768,7 @@
             "name": "Le journal du geek",
             "specification": "firstHeadline",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/jdg.png"
           },
           {
             "url": "https://www.numerama.com/pop-culture/cinema/feed/",
@@ -2016,8 +2016,7 @@
             "name": "Le journal du geek",
             "specification": "firstHeadline",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/jdg.png"
           },
           {
             "url": "https://www.tomsguide.fr/tag/jeux-video/feed/",
@@ -2195,8 +2194,7 @@
             "url": "https://www.journaldugeek.com/tag/comics/feed/",
             "name": "Le journal du geek",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/jdg.png"
           },
           {
             "url": "https://www.melty.fr/comics-mangas/feed",
@@ -4207,8 +4205,7 @@
             "name": "Le journal du geek",
             "specification": "firstHeadline",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/jdg.png"
           },
           {
             "url": "https://information.tv5monde.com/afprss/francais--journal--sci",
@@ -4842,8 +4839,7 @@
             "url": "https://www.journaldugeek.com/category/smartphone/feed/",
             "name": "Le journal du geek",
             "articlesCount": 4,
-            "iconImg": "./icons/WebsitesIcons/jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/jdg.png"
           },
           {
             "url": "https://www.01net.com/rss/smartphones/",
@@ -4889,8 +4885,7 @@
             "url": "https://www.journaldugeek.com/category/intelligence-artificielle/feed/",
             "name": "Le journal du geek",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/jdg.png"
           },
           {
             "url": "https://www.journaldunet.com/intelligence-artificielle/rss",
@@ -4920,11 +4915,12 @@
             "name": "Developpez.com",
             "specification": "firstHeadline bigList",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/developpez.png"
+            "iconImg": "./icons/WebsitesIcons/developpez.com.png"
           },
           {
             "url": "https://www.programmez.com/rss.xml",
             "name": "Programmez.com",
+            "specification": "nodesc",
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/programmez.png"
           },
@@ -4947,36 +4943,31 @@
             "url": "https://www.journaldugeek.com/tag/gafam/feed",
             "name": "Le journal du geek",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/jdg.png"
           },
           {
             "url": "https://www.journaldugeek.com/tag/apple/feed",
             "name": "Le journal du geek",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/jdg.png"
           },
           {
             "url": "https://www.journaldugeek.com/tag/microsoft/feed",
             "name": "Le journal du geek",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/jdg.png"
           },
           {
             "url": "https://www.journaldugeek.com/tag/facebook/feed",
             "name": "Le journal du geek",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/jdg.png"
           },
           {
             "url": "https://www.journaldugeek.com/tag/google/feed",
             "name": "Le journal du geek",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/jdg.png"
           }
         ],
         "Cybersécurité": [
@@ -4984,8 +4975,7 @@
             "url": "https://www.journaldugeek.com/category/securite/feed/",
             "name": "Le journal du geek",
             "articlesCount": 3,
-            "iconImg": "./icons/WebsitesIcons/jdg.png",
-            "backgroundImg": ".jdg_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/jdg.png"
           },
           {
             "url": "https://www.01net.com/rss/actualites/securite/",
@@ -4993,13 +4983,6 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/01net.png",
             "backgroundImg": ".01net_bgIMG.jpg"
-          },
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=cybersecurite",
-            "name": "Capital",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/capital.png",
-            "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
           },
           {
             "url": "https://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml",

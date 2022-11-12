@@ -34,7 +34,7 @@ const App = () => {
 
   var nListDisplays = [
     "Presse étrangère",
-    "Finance","Économie verte","Marketing","Management","Innovations","Retraites","Enchères","Media","Cryptomonnaies",
+    "Finance","Économie verte","Marketing","Management","Innovations","Retraites","Enchères","Media","Cryptomonnaies","Tourisme",
     "Rugby","Handball","Baseball","Équitation","Sports de combat","Nautisme","Escrime","Pétanque","Hockey","Handisport","US",
     "Photographie","Histoire","Musique","Patrimoine",
     "Royautés","Luxe",
