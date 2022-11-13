@@ -57,9 +57,17 @@
             "name": "L'internaute",
             "specification": "firstHeadline",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/linternaute.png",
-            "backgroundImg": "./icons/WebsitesIcons/linternaute_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/linternaute.png"
           }
+        ],
+        "JO24": [
+
+        ],
+        "Guerre en Ukraine": [
+
+        ],
+        "COVID-19": [
+
         ],
         "Presse étrangère": [
           {

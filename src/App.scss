@@ -118,6 +118,7 @@
 body {
   background-color: var(--systemGroupedBackground);
   color: var(--label);
+  -webkit-tap-highlight-color: transparent; // iOS
 }
 
 /*/ elements to be not selectable /*/
@@ -646,6 +647,7 @@ h4.subtopic {
   background-color: var(--systemHeaderMaterial);
   -webkit-backdrop-filter:saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
+  padding-top: env(safe-area-inset-top); // iOS
 
   .logo-text {
     text-align: center;
