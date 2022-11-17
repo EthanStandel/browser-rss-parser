@@ -439,6 +439,13 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/capital.png",
             "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.latribune.fr/rss/rubriques/vos-finances.html",
+            "name": "La Tribune",
+            "specification": "firstHeadline",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/latribune.png"
           }
         ],
         "Patrimoine & immobilier": [
@@ -506,7 +513,7 @@
             "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
           }
         ],
-        "Finance": [
+        "Banques & finance": [
           {
             "url": "https://www.ladepeche.fr/economie/banque-finances/rss.xml",
             "name": "La Dépêche",
@@ -530,6 +537,13 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/forbes.png",
             "backgroundImg": "./icons/WebsitesIcons/forbes_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.latribune.fr/rss/sous-rubriques-entreprises/banques-finance.html",
+            "name": "La Tribune",
+            "specification": "firstHeadline",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/latribune.png"
           }
         ],
         "Entreprises": [
@@ -665,6 +679,12 @@
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/maddyness.png",
             "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.latribune.fr/rss/rubriques/green-business.html",
+            "name": "La Tribune",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/latribune.png"
           }
         ],
         "Marketing": [
@@ -710,6 +730,12 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/maddyness.png",
             "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.latribune.fr/rss/sous-rubriques-techno-medias/innovation-et-start-up.html",
+            "name": "La Tribune",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/latribune.png"
           }
         ],
         "Retraites": [
@@ -744,7 +770,13 @@
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/maddyness.png",
             "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
-          } 
+          },
+          {
+            "url": "https://www.latribune.fr/rss/sous-rubriques-techno-medias/medias.html",
+            "name": "La Tribune",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/latribune.png"
+          }
         ],
         "Cryptomonnaies": [
           {
@@ -1658,7 +1690,7 @@
             "backgroundImg": "./icons/WebsitesIcons/radiocanada_bgIMG.png"
           }
         ],
-        "Littérature": [
+        "Livres": [
           {
             "url": "https://www.lefigaro.fr/rss/figaro_livres.xml",
             "name": "Le Figaro",
@@ -1729,7 +1761,14 @@
             "specification": "firstFocus",
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/lacroix.png"
-          }  
+          },
+          {
+            "url": "https://www.fisheyemagazine.fr/categorie/rdv/livre/feed/",
+            "name": "Fisheye",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/fisheye.png",
+            "backgroundImg": "./icons/WebsitesIcons/fisheye_bgIMG.jpg"
+          }
         ],
         "Cinéma": [
           {
@@ -2427,7 +2466,14 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/nationsunies.png",
             "backgroundImg": "./icons/WebsitesIcons/nationsunies_bgIMG.jpg"
-          } 
+          },
+          {
+            "url": "https://www.latribune.fr/rss/sous-rubriques-actualite/union-europeenne.html",
+            "name": "La Tribune",
+            "specification": "firstHeadline",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/latribune.png"
+          }
         ],
         "Pays germaniques": [
           {
@@ -3102,6 +3148,13 @@
             "articlesCount": 8,
             "iconImg": "./icons/WebsitesIcons/france3.png",
             "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.latribune.fr/rss/rubriques/rhone-alpes.html",
+            "name": "La Tribune",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/latribune.png"
           }
         ],
         "Bourgogne-Franche-Comté": [
@@ -3122,6 +3175,13 @@
             "articlesCount": 8,
             "iconImg": "./icons/WebsitesIcons/france3.png",
             "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.latribune.fr/rss/rubriques/bretagne.html",
+            "name": "La Tribune",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/latribune.png"
           }
         ],
         "Centre-Val de Loire": [
@@ -3152,6 +3212,13 @@
             "articlesCount": 8,
             "iconImg": "./icons/WebsitesIcons/france3.png",
             "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.latribune.fr/rss/rubriques/alsace.html",
+            "name": "La Tribune",
+            "specification": "firstHeadline",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/latribune.png"
           }
         ],
         "Guadeloupe": [
@@ -3182,6 +3249,13 @@
             "articlesCount": 8,
             "iconImg": "./icons/WebsitesIcons/france3.png",
             "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.latribune.fr/rss/rubriques/nord-pas-de-calais.html",
+            "name": "La Tribune",
+            "specification": "firstHeadline",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/latribune.png"
           }
         ],
         "Île-de-France": [
@@ -3192,6 +3266,13 @@
             "articlesCount": 8,
             "iconImg": "./icons/WebsitesIcons/france3.png",
             "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.latribune.fr/rss/rubriques/ile-de-france.html",
+            "name": "La Tribune",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/latribune.png"
           }
         ],
         "Martinique": [
@@ -3232,6 +3313,13 @@
             "articlesCount": 8,
             "iconImg": "./icons/WebsitesIcons/france3.png",
             "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.latribune.fr/rss/rubriques/aquitaine.html",
+            "name": "La Tribune",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/latribune.png"
           }
         ],
         "Nouvelle-Calédonie": [
@@ -3252,6 +3340,20 @@
             "articlesCount": 8,
             "iconImg": "./icons/WebsitesIcons/france3.png",
             "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.latribune.fr/rss/rubriques/languedoc.html",
+            "name": "La Tribune",
+            "specification": "firstHeadline",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/latribune.png"
+          },
+          {
+            "url": "https://www.latribune.fr/rss/rubriques/midi-pyrenees.html",
+            "name": "La Tribune",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/latribune.png"
           }
         ],
         "Pays de la Loire": [
@@ -3262,6 +3364,13 @@
             "articlesCount": 8,
             "iconImg": "./icons/WebsitesIcons/france3.png",
             "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.latribune.fr/rss/rubriques/pays-de-loire.html",
+            "name": "La Tribune",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/latribune.png"
           }
         ],
         "Polynésie": [
@@ -3282,6 +3391,13 @@
             "articlesCount": 8,
             "iconImg": "./icons/WebsitesIcons/france3.png",
             "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.latribune.fr/rss/rubriques/paca.html",
+            "name": "La Tribune",
+            "specification": "firstHeadline",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/latribune.png"
           }
         ],
         "Réunion": [
@@ -4587,6 +4703,12 @@
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/humanite.png",
             "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.latribune.fr/rss/rubriques/transport-logistique-rss",
+            "name": "La Tribune",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/latribune.png"
           }  
         ],
         "Alimentation": [
@@ -5443,13 +5565,20 @@
             ]
           }
         },
-        "Insolite & tendances": [
+        "Insolite & curiosité": [
           {
             "url": "https://www.ladepeche.fr/insolite/rss.xml",
             "name": "La Dépêche",
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/ladepeche.png",
             "backgroundImg": "./icons/WebsitesIcons/ladepeche_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.fisheyemagazine.fr/categorie/rdv/curiosite/feed/",
+            "name": "Fisheye",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/fisheye.png",
+            "backgroundImg": "./icons/WebsitesIcons/fisheye_bgIMG.jpg"
           },
           {
             "url": "https://www.leprogres.fr/insolite/rss",
