@@ -181,6 +181,15 @@
             "articlesCount": 3,
             "iconImg": "./icons/WebsitesIcons/financialtimes.png",
             "backgroundImg": "./icons/WebsitesIcons/financialtimes_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.foreignaffairs.com/feeds/region/United+States/rss.xml",
+            "name": "Foreign Affairs",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/foreignaffairs.png",
+            "backgroundImg": "./icons/WebsitesIcons/foreignaffairs_bgIMG.jpg"
           }
         ],
         "United Kingdom & Ireland": [
@@ -900,7 +909,16 @@
             "articlesCount": 4,
             "iconImg": "./icons/WebsitesIcons/financialtimes.png",
             "backgroundImg": "./icons/WebsitesIcons/financialtimes_bgIMG.jpg"
-          }        
+          },
+          {
+            "url": "https://www.foreignaffairs.com/feeds/topic/Economics/rss.xml",
+            "name": "Foreign Affairs",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline bigList",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/foreignaffairs.png",
+            "backgroundImg": "./icons/WebsitesIcons/foreignaffairs_bgIMG.jpg"
+          }       
         ]
       }
     },
@@ -3108,6 +3126,15 @@
             "articlesCount": 4,
             "iconImg": "./icons/WebsitesIcons/financialtimes.png",
             "backgroundImg": "./icons/WebsitesIcons/financialtimes_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.foreignaffairs.com/rss.xml",
+            "name": "Foreign Affairs",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline bigList",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/foreignaffairs.png",
+            "backgroundImg": "./icons/WebsitesIcons/foreignaffairs_bgIMG.jpg"
           }
         ]
       }
@@ -4893,7 +4920,16 @@
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/peppermint.png",
             "backgroundImg": "./icons/WebsitesIcons/peppermint_bgIMG.jpg"
-          }      
+          },
+          {
+            "url": "https://www.foreignaffairs.com/feeds/topic/Climate+Change/rss.xml",
+            "name": "Foreign Affairs",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/foreignaffairs.png",
+            "backgroundImg": "./icons/WebsitesIcons/foreignaffairs_bgIMG.jpg"
+          }    
         ]
       }
     },

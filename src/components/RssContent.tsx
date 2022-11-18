@@ -152,17 +152,16 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
      
             let arrayCategories = concatListofCategories.split(',').slice(0, 3); /* presents categories in an array with 3 elements (split in elements by comma sign) */
            
-            var dict = ['Content Type: Personal Profile','has_diapo','Radio 1','News','Actu','Video','Vidéo','Diaporama']
+            var dict = ['Content Type: Personal Profile','has_diapo','Radio 1','News','Actu','Actus','Video','Vidéo','Diaporama','Not found']
             
             var arrayCategoriesTEST = []
             for (var element of arrayCategories) {
 
               var correctedElement = String(element
                 .replace(' and ', ' & ')
-                .replace('Content Type: Personal Profile', '')
                 .replace('News /', '')
                 .replace('Culture /', '')
-                .replace('has_diapo', '')
+                .replace('World /', '')
                 .replace('&amp;', '&'));
               
               if (correctedElement != "") {
