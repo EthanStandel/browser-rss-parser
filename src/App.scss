@@ -710,6 +710,12 @@ ul {
       background-color: var(--secondarySystemGroupedBackground);
       border-radius: var(--rounded-corners-block);
 
+      &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 100px 140px -50px rgba(0, 0, 0, 0.25), 0 0 20px 0 rgba(0, 0, 0, 0.05);
+        z-index: 100;
+      }
+
       .descriptionLine {
 
         .articleDate {
@@ -762,6 +768,14 @@ ul {
         }
       }
 
+      .additional-infosLine {
+        -webkit-line-clamp: 2 !important;
+        overflow: hidden;
+        text-overflow: ellipsis !important;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+      }
+
       .titleLine {
         -webkit-line-clamp: 4 !important;
         overflow: hidden;
@@ -802,8 +816,6 @@ ul {
         display: none;
 
         img {
-        
-          background-image: url("https://tapsmart-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/ipadnews2-750x400.jpg");
           object-fit: cover;
           background-size: cover !important;
           height: 100%;
@@ -832,6 +844,7 @@ ul {
         vertical-align: middle;
         width: 100%;
         padding: 10px 10px 10px 0;
+        overflow: hidden;
       }
 
       .iconContainer {
@@ -942,25 +955,9 @@ ul {
 
       /*/ LIST STYLE FOR LI ITEMS - big title + big image + small desc /*/
       &.bigFocus, &.firstFocus:first-of-type {
-        background-color: rgba(0, 0, 0, 0);
-      
-        .descriptionLine {
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          display: block;
-          -webkit-backdrop-filter: saturate(180%) blur(20px);
-          backdrop-filter: saturate(180%) blur(20px);
-          background-color: var(--systemThickMaterial);
-          border-radius: 0 0 var(--rounded-corners-block) var(--rounded-corners-block);
-
-          .articleDate {
-            display: none;
-          }
-        }
+        background-color: var(--colorTheme);
 
         .item-description {
-          margin: 12px;
           -webkit-line-clamp: 3 !important;
           overflow: hidden;
           text-overflow: ellipsis !important;
@@ -978,19 +975,18 @@ ul {
           font-weight: 700;
           font-size: 24px;
           line-height: 31px;
-          display: block;
           letter-spacing: -0.0195px;
-          text-shadow: 0 0 5px black;
-          padding: 14px 16px 0;
-          color: white;
-          position: absolute;
-          top: 40px;
-          max-height: 200px;
           -webkit-line-clamp: 4 !important;
           overflow: hidden;
           text-overflow: ellipsis !important;
           display: -webkit-box;
           -webkit-box-orient: vertical;
+          width: 100%;
+
+          > *:not(.LanguageLabel) {
+            text-shadow: 0 0 5px black;
+            color: white;
+          }
         }
 
         .justifiedTitle .articleDate {
@@ -998,14 +994,29 @@ ul {
         }
       
         .itemContainer  {
+          max-height: 75%;
           display: block;
           padding: 0 !important;
           width: 100% !important;
           position: absolute;
-          top: 0;
-          background-color: rgba(0, 0, 0, 0) !important;
-          height: 300px;
+          bottom: 0;
           z-index: 2;
+          -webkit-backdrop-filter: saturate(180%) blur(20px);
+          backdrop-filter: saturate(180%) blur(20px);
+          background-color: var(--systemThickMaterial);
+          border-radius: 0 0 var(--rounded-corners-block) var(--rounded-corners-block);
+
+          > *:not(.justifiedTitle), .titleLine /* otherwhise, the shadow effect is cut*/ {
+            padding: 0 16px;
+          }
+
+          > *:first-child {
+            margin-top: 14px;
+          }
+
+          > *:last-child {
+            margin-bottom: 14px;
+          }
         }
         
         .iconContainer {
@@ -1017,7 +1028,7 @@ ul {
           height: 300px !important;
 
           img {
-            border-radius: 10px;
+            border-radius: var(--rounded-corners-block);
           }
         }
         
@@ -1043,6 +1054,7 @@ ul {
           position: relative;
           margin: 0;
           display: block !important;
+          height: 300px;
         }
       }
 
@@ -1087,7 +1099,6 @@ ul {
         }
 
         .background-image {
-
           height: 170px !important;
           width: 100% !important;
           margin-right: 0;

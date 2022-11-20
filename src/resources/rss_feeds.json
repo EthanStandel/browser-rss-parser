@@ -94,8 +94,7 @@
             "articlesCountryISO3": "GBR",
             "specification": "firstHeadline",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/theguardian.png",
-            "backgroundImg": "./icons/WebsitesIcons/theguardian_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/theguardian.png"
           },
           {
             "url": "https://www.france24.com/en/france/rss",
@@ -199,8 +198,7 @@
             "articlesCountryISO3": "GBR",
             "specification": "firstHeadline",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/theguardian.png",
-            "backgroundImg": "./icons/WebsitesIcons/theguardian_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/theguardian.png"
           },
           {
             "url": "http://feeds.bbci.co.uk/news/uk/rss.xml",
@@ -404,8 +402,7 @@
             "name": "Challenges",
             "specification": "firstHeadline",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/challenges.png",
-            "backgroundImg": "./icons/WebsitesIcons/challenges_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/challenges.png"
           }
         ],
         "Marchés & bourse": [
@@ -510,8 +507,7 @@
             "name": "Challenges",
             "specification": "firstHeadline",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/challenges.png",
-            "backgroundImg": "./icons/WebsitesIcons/challenges_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/challenges.png"
           },
           {
             "url": "http://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&categories=immobilier",
@@ -593,8 +589,7 @@
             "name": "Challenges",
             "specification": "firstHeadline",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/challenges.png",
-            "backgroundImg": "./icons/WebsitesIcons/challenges_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/challenges.png"
           },
           {
             "url": "https://www.lapresse.ca/affaires/entreprises/rss",
@@ -678,16 +673,14 @@
             "name": "Maddyness",
             "specification": "nodesc",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/maddyness.png",
-            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/maddyness.png"
           },
           {
             "url": "https://www.maddyness.com/secteurs/agritech/feed",
             "name": "Maddyness",
             "specification": "nodesc",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/maddyness.png",
-            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/maddyness.png"
           },
           {
             "url": "https://www.latribune.fr/rss/rubriques/green-business.html",
@@ -702,8 +695,7 @@
             "name": "Maddyness",
             "specification": "nodesc",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/maddyness.png",
-            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/maddyness.png"
           }
         ],
         "Management & RH": [
@@ -712,8 +704,7 @@
             "name": "Maddyness",
             "specification": "nodesc",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/maddyness.png",
-            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/maddyness.png"
           },
           {
             "url": "https://www.forbes.fr/management/feed/",
@@ -737,8 +728,7 @@
             "name": "Maddyness",
             "specification": "nodesc",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/maddyness.png",
-            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/maddyness.png"
           },
           {
             "url": "https://www.latribune.fr/rss/sous-rubriques-techno-medias/innovation-et-start-up.html",
@@ -777,8 +767,7 @@
             "name": "Maddyness",
             "specification": "nodesc",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/maddyness.png",
-            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/maddyness.png"
           },
           {
             "url": "https://www.latribune.fr/rss/sous-rubriques-techno-medias/medias.html",
@@ -2162,6 +2151,7 @@
             "url": "https://www.fisheyemagazine.fr/feed",
             "name": "Fisheye",
             "articlesCount": 3,
+            "specification": "bigList",
             "iconImg": "./icons/WebsitesIcons/fisheye.png",
             "backgroundImg": "./icons/WebsitesIcons/fisheye_bgIMG.jpg"
           }
@@ -2340,8 +2330,7 @@
             "articlesCountryISO3": "GBR",
             "specification": "firstHeadline",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/theguardian.png",
-            "backgroundImg": "./icons/WebsitesIcons/theguardian_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/theguardian.png"
           },
           {
             "url": "https://www.bbc.com/culture/feed.rss",
@@ -2792,8 +2781,7 @@
             "name": "Challenges",
             "specification": "firstHeadline",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/challenges.png",
-            "backgroundImg": "./icons/WebsitesIcons/challenges_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/challenges.png"
           },
           {
             "url": "https://www.monde-diplomatique.fr/rss/",
@@ -3071,8 +3059,7 @@
             "articlesCountryISO3": "GBR",
             "specification": "firstHeadline",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/theguardian.png",
-            "backgroundImg": "./icons/WebsitesIcons/theguardian_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/theguardian.png"
           },
           {
             "url": "http://feeds.foxnews.com/foxnews/world?format=xml",
@@ -3532,8 +3519,7 @@
             "name": "Challenges",
             "specification": "firstHeadline",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/challenges.png",
-            "backgroundImg": "./icons/WebsitesIcons/challenges_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/challenges.png"
           },
           {
             "url": "https://www.europe1.fr/rss/politique.xml",
@@ -4515,8 +4501,7 @@
             "articlesCountryISO3": "GBR",
             "specification": "firstHeadline",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/theguardian.png",
-            "backgroundImg": "./icons/WebsitesIcons/theguardian_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/theguardian.png"
           },
           {
             "url": "https://www.forbes.com/science/feed2",
@@ -4751,8 +4736,7 @@
             "name": "Maddyness",
             "specification": "nodesc",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/maddyness.png",
-            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/maddyness.png"
           },
           {
             "url": "https://www.humanite.fr/rss/actu.rss/alimentation",
@@ -5065,8 +5049,7 @@
             "name": "Maddyness",
             "specification": "nodesc",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/maddyness.png",
-            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/maddyness.png"
           }
         ],
         "Dev": [
@@ -5162,8 +5145,7 @@
             "name": "Maddyness",
             "specification": "nodesc",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/maddyness.png",
-            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/maddyness.png"
           }
         ],
         "Big Data": [
@@ -5445,8 +5427,7 @@
             "name": "Maddyness",
             "specification": "nodesc",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/maddyness.png",
-            "backgroundImg": "./icons/WebsitesIcons/maddyness_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/maddyness.png"
           } 
         ],
         "Gastronomie, cuisine & terroir": [
@@ -5511,8 +5492,7 @@
             "url": "https://www.challenges.fr/luxe/rss.xml",
             "name": "Challenges",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/challenges.png",
-            "backgroundImg": "./icons/WebsitesIcons/challenges_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/challenges.png"
           }
         ],
         "Célébrités": [
@@ -5816,8 +5796,7 @@
             "name": "Challenges",
             "specification": "firstHeadline",
             "articlesCount": 3,
-            "iconImg": "./icons/WebsitesIcons/challenges.png",
-            "backgroundImg": "./icons/WebsitesIcons/challenges_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/challenges.png"
           },
           {
             "url": "https://www.bfmtv.com/rss/auto/",

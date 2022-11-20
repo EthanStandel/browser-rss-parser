@@ -135,8 +135,8 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             const imgHref = 
             item.image
             ?? item["media:content"]?.url
-            ?? item.enclosure?.url ? item.enclosure?.url 
-            : source.backgroundImg;
+            ?? item.enclosure?.url ?? item.enclosure?.url 
+            ?? source.backgroundImg ?? "./genIcons/applenews_bgIMG_alt.jpg";
 
             const AppIconImg = source.iconImg ?? "./icons/WebsitesIcons/applenews.png";
 
