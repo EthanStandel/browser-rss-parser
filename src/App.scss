@@ -709,6 +709,9 @@ ul {
       margin-bottom: 15px;
       background-color: var(--secondarySystemGroupedBackground);
       border-radius: var(--rounded-corners-block);
+      transition-timing-function: ease-in-out;
+      transition-duration: .2s;
+      transition-property: box-shadow,transform;
 
       &:hover {
         transform: scale(1.01);
