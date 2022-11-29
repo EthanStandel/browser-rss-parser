@@ -16,7 +16,7 @@
   --europeColorTheme: yellowgreen;
   --polColorTheme: darkviolet;
   --ideesColorTheme: orchid;
-  --societeColorTheme: lightpink;// mediumaquamarine;
+  --societeColorTheme: palevioletred;// mediumaquamarine;
   --techColorTheme: teal;
   --regionsColorTheme: cornflowerblue;
   --planeteColorTheme: limegreen;
@@ -711,12 +711,18 @@ ul {
       border-radius: var(--rounded-corners-block);
       transition-timing-function: ease-in-out;
       transition-duration: .2s;
-      transition-property: box-shadow,transform;
+      transition-property: box-shadow, border, transform;
+      border: 0 solid var(--cardBorder);
 
       &:hover {
         transform: scale(1.01);
         box-shadow: 0 100px 140px -50px rgba(0, 0, 0, 0.25), 0 0 20px 0 rgba(0, 0, 0, 0.05);
+        border: 1px solid var(--cardBorder);
         z-index: 100;
+
+        .background-image img {
+          transform: scale(1.1);
+        }
       }
 
       .descriptionLine {
@@ -817,6 +823,7 @@ ul {
 
       .background-image {
         display: none;
+        overflow: hidden !important;
 
         img {
           object-fit: cover;
@@ -825,6 +832,9 @@ ul {
           width: 100%;
           background-size: 100%;
           background-repeat: no-repeat;
+          transition-timing-function: ease-in-out;
+          transition-duration: .2s;
+          transition-property: transform;
         }
       }
 
@@ -968,6 +978,10 @@ ul {
           -webkit-box-orient: vertical;
         }
 
+        .firstLine {
+          width: -webkit-fill-available // all width without padding
+        }
+
         .LanguageLabel {
           /*/ as titleLine /*/
           line-height: 31px !important;
@@ -991,10 +1005,6 @@ ul {
             color: white;
           }
         }
-
-        .justifiedTitle .articleDate {
-          display: none;
-        }
       
         .itemContainer  {
           max-height: 75%;
@@ -1009,8 +1019,16 @@ ul {
           background-color: var(--systemThickMaterial);
           border-radius: 0 0 var(--rounded-corners-block) var(--rounded-corners-block);
 
-          > *:not(.justifiedTitle), .titleLine /* otherwhise, the shadow effect is cut*/ {
+          > *:not(.justifiedTitle) {
             padding: 0 16px;
+          }
+
+          .justifiedTitle /* otherwhise, the shadow effect is cut*/ {
+            padding-right: 16px;
+
+            .titleLine {
+              padding-left: 16px;
+            }
           }
 
           > *:first-child {
@@ -1023,15 +1041,20 @@ ul {
         }
         
         .iconContainer {
-            padding: 0;
+          padding: 0;
         }
       
         .background-image {
           display: block !important;
           height: 300px !important;
+          border-radius: var(--rounded-corners-block);
+        }
 
-          img {
-            border-radius: var(--rounded-corners-block);
+        &:hover {
+          border: 0 solid red;
+
+          .background-image img {
+            transform: scale(1.1);
           }
         }
         
@@ -1107,12 +1130,7 @@ ul {
           margin-right: 0;
           z-index: -1;
           float: none !important;
-          
-          img {
-            width: 100% !important;
-            height: 170px !important;
-            border-radius: 10px 10px 0 0 !important;
-          }
+          border-radius: var(--rounded-corners-block) var(--rounded-corners-block) 0 0;
         }
 
         .icon-image {
@@ -1310,6 +1328,12 @@ em:not(.itemContainer em) {
     margin-bottom: 0 !important;
     background-color: none !important;
 
+    &:hover {
+      .media {
+        border-bottom: 0 solid red;
+      }
+    }
+
     &.firstHeadline:first-child, &.bigHeadline {
 
       .itemContainer {
@@ -1376,6 +1400,7 @@ em:not(.itemContainer em) {
 
       .background-image {
         display: block;
+        border-radius: 10px;
         float: left;
         z-index: 0;
         width: 70px;
@@ -1383,7 +1408,6 @@ em:not(.itemContainer em) {
 
         img {
           width: 70px;
-          border-radius: 10px;
           height: 70px;
         }
       }
@@ -1521,4 +1545,8 @@ em:not(.itemContainer em) {
       font-weight: bold;
     }
   }  
+}
+
+.beautify {
+  background-color: red !important;
 }

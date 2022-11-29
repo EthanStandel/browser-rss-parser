@@ -169,8 +169,7 @@
             "articlesCountryISO3": "CAN",
             "specification": "firstHeadline",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/radiocanada.png",
-            "backgroundImg": "./icons/WebsitesIcons/radiocanada_bgIMG.png"
+            "iconImg": "./icons/WebsitesIcons/radiocanada.png"
           },
           {
             "url": "https://www.ft.com/world/us?format=rss",
@@ -1693,8 +1692,7 @@
             "articlesCountryISO3": "CAN",
             "specification": "firstFocus",
             "articlesCount": 4,
-            "iconImg": "./icons/WebsitesIcons/radiocanada.png",
-            "backgroundImg": "./icons/WebsitesIcons/radiocanada_bgIMG.png"
+            "iconImg": "./icons/WebsitesIcons/radiocanada.png"
           }
         ],
         "Livres": [
@@ -1720,8 +1718,7 @@
             "articlesCountryISO3": "CAN",
             "specification": "firstFocus",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/radiocanada.png",
-            "backgroundImg": "./icons/WebsitesIcons/radiocanada_bgIMG.png"
+            "iconImg": "./icons/WebsitesIcons/radiocanada.png"
           },
           {
             "url": "https://www.lesinrocks.com/livres/feed/",
@@ -1810,14 +1807,6 @@
             "iconImg": "./icons/WebsitesIcons/lesinrocks.png"
           },
           {
-            "url": "http://rss.allocine.fr/ac/actualites/cine",
-            "name": "Allociné",
-            "specification": "firstHeadline nodesc",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/allocine.png",
-            "backgroundImg": ".allocine_bgIMG.jpg"
-          },
-          {
             "url": "https://www.journaldugeek.com/category/cinema/feed/",
             "name": "Le journal du geek",
             "specification": "firstHeadline",
@@ -1862,8 +1851,7 @@
             "articlesCountryISO3": "CAN",
             "specification": "firstFocus",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/radiocanada.png",
-            "backgroundImg": "./icons/WebsitesIcons/radiocanada_bgIMG.png"
+            "iconImg": "./icons/WebsitesIcons/radiocanada.png"
           },
           {
             "url": "https://www.la-croix.com/RSS/Culture/Cinema",
@@ -1880,14 +1868,6 @@
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/telerama.png",
             "backgroundImg": "./icons/WebsitesIcons/telerama_bgIMG.jpg"
-          },
-          {
-            "url": "http://rss.allocine.fr/ac/actualites/series",
-            "name": "Allociné",
-            "specification": "nodesc",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/allocine.png",
-            "backgroundImg": ".allocine_bgIMG.jpg"
           },
           {
             "url": "https://www.melty.fr/series/feed",
@@ -1908,8 +1888,7 @@
             "name": "Radio Canada",
             "articlesCountryISO3": "CAN",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/radiocanada.png",
-            "backgroundImg": "./icons/WebsitesIcons/radiocanada_bgIMG.png"
+            "iconImg": "./icons/WebsitesIcons/radiocanada.png"
           },
           {
             "url": "https://www.la-croix.com/RSS/Culture/TV-Radio",
@@ -2127,8 +2106,7 @@
             "articlesCountryISO3": "CAN",
             "specification": "firstHeadline",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/radiocanada.png",
-            "backgroundImg": "./icons/WebsitesIcons/radiocanada_bgIMG.png"
+            "iconImg": "./icons/WebsitesIcons/radiocanada.png"
           },
           {
             "url": "https://www.fip.fr/rss.xml",
@@ -3102,8 +3080,7 @@
             "articlesCountryISO3": "CAN",
             "specification": "firstHeadline",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/radiocanada.png",
-            "backgroundImg": "./icons/WebsitesIcons/radiocanada_bgIMG.png"
+            "iconImg": "./icons/WebsitesIcons/radiocanada.png"
           },
           {
             "url": "https://www.ft.com/world?format=rss",
@@ -5285,8 +5262,7 @@
             "articlesCountryISO3": "CAN",
             "specification": "firstFocus",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/radiocanada.png",
-            "backgroundImg": "./icons/WebsitesIcons/radiocanada_bgIMG.png"
+            "iconImg": "./icons/WebsitesIcons/radiocanada.png"
           },
           {
             "url": "https://cdn1-parismatch.lanmedia.fr/var/exports/rss/rss-vivre.xml",
@@ -5515,8 +5491,7 @@
             "name": "Radio Canada",
             "articlesCountryISO3": "CAN",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/radiocanada.png",
-            "backgroundImg": "./icons/WebsitesIcons/radiocanada_bgIMG.png"
+            "iconImg": "./icons/WebsitesIcons/radiocanada.png"
           },
           {
             "url": "https://cdn1-parismatch.lanmedia.fr/var/exports/rss/rss-people.xml",
@@ -5540,47 +5515,28 @@
             "iconImg": "./icons/WebsitesIcons/parismatch.png"
           } 
         ],
-        "Maison & jardin": {
-          "ultraSubtopics": {
-            "noUltraSubtopic": [
-              {
-                "url": "https://maison.20minutes.fr/feed/",
-                "name": "20 Minutes",
-  
-                "articlesCount": 3,
-                "iconImg": "./icons/WebsitesIcons/20minutes.png",
-                "backgroundImg": "./icons/WebsitesIcons/20minutesmaison_bgIMG.jpg"
-              },
-              {
-                "url": "https://www.lapresse.ca/maison/rss",
-                "name": "La Presse",
-                "articlesCountryISO3": "CAN",
-  
-                "articlesCount": 3,
-                "iconImg": "./icons/WebsitesIcons/lapresse.png"
-              },
-              {
-                "url": "https://www.la-croix.com/RSS/Culture/jardin-idees-conseils-jardinage",
-                "name": "La Croix",
-  
-                "articlesCount": 1,
-                "iconImg": "./icons/WebsitesIcons/lacroix.png"
-              }
-            ],
-            "Dans le monde": [
-              {
-                "url": "https://www.dezeen.com/lookbooks/feed/",
-                "name": "Deezen",
-                "articlesCountryISO3": "GBR",
-                "specification": "firstHeadline",
-                "articlesCount": 2,
-                "iconImg": "./icons/WebsitesIcons/dezeen.png",
-                "backgroundImg": "./icons/WebsitesIcons/dezeen_bgIMG.jpg",
-                "category": "Design"
-              }
-            ]
+        "Maison & jardin": [
+          {
+            "url": "https://maison.20minutes.fr/feed/",
+            "name": "20 Minutes",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/20minutes.png",
+            "backgroundImg": "./icons/WebsitesIcons/20minutesmaison_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/maison/rss",
+            "name": "La Presse",
+            "articlesCountryISO3": "CAN",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/lapresse.png"
+          },
+          {
+            "url": "https://www.la-croix.com/RSS/Culture/jardin-idees-conseils-jardinage",
+            "name": "La Croix",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/lacroix.png"
           }
-        },
+        ],
         "Insolite & curiosité": [
           {
             "url": "https://www.ladepeche.fr/insolite/rss.xml",

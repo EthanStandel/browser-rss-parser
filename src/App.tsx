@@ -36,7 +36,7 @@ const App = () => {
     "Presse étrangère",
     "Finance","Économie verte","Marketing","Management","Innovations","Retraites","Enchères","Media","Cryptomonnaies","Tourisme",
     "Rugby","Handball","Baseball","Équitation","Sports de combat","Nautisme","Escrime","Pétanque","Hockey","Handisport","US",
-    "Photographie","Histoire","Musique","Patrimoine",
+    "Photographie","Histoire","Musique","Patrimoine","Arts visuels","Mode",
     "Royautés","Luxe",
     "Pays ibériques","Suisse","Balkans","Italie",
     "Paix & sécurité",
