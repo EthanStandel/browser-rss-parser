@@ -828,10 +828,8 @@ ul {
         img {
           object-fit: cover;
           background-size: cover !important;
-          height: 100%;
-          width: 100%;
-          background-size: 100%;
-          background-repeat: no-repeat;
+          height: 100% !important;
+          width: 100% !important;
           transition-timing-function: ease-in-out;
           transition-duration: .2s;
           transition-property: transform;

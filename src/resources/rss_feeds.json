@@ -3699,14 +3699,6 @@
             "iconImg": "./icons/WebsitesIcons/lavie.png"
           },
           {
-            "url": "https://www.courrierinternational.com/feed/category/6994/rss.xml",
-            "name": "Courrier International",
-            "specification": "firstFocus",
-            "articlesCount": 3,
-            "iconImg": "./icons/WebsitesIcons/courrierinter.png",
-            "backgroundImg": "./icons/WebsitesIcons/courrierinter_bgIMG.jpg"
-          },
-          {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/idees-et-debats/?outputType=xml",
             "name": "Libération",
             "specification": "firstFocus",
@@ -3819,14 +3811,6 @@
             "specification": "firstFocus",
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
-          },
-          {
-            "url": "https://www.courrierinternational.com/feed/category/6994/rss.xml",
-            "name": "Courrier International",
-            "specification": "firstFocus",
-            "articlesCount": 3,
-            "iconImg": "./icons/WebsitesIcons/courrierinter.png",
-            "backgroundImg": "./icons/WebsitesIcons/courrierinter_bgIMG.jpg"
           }
         ],
         "Maison": [
@@ -4053,14 +4037,6 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/france3.png",
             "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.courrierinternational.com/feed/category/6997/rss.xml",
-            "name": "Courrier International",
-            "specification": "firstHeadline",
-            "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/courrierinter.png",
-            "backgroundImg": "./icons/WebsitesIcons/courrierinter_bgIMG.jpg"
           },
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/societe/education/?outputType=xml",
@@ -5348,13 +5324,6 @@
             "backgroundImg": "./icons/WebsitesIcons/france3_bgIMG.jpg"
           },
           {
-            "url": "https://www.courrierinternational.com/feed/category/6271/rss.xml",
-            "name": "Courrier International",
-            "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/courrierinter.png",
-            "backgroundImg": "./icons/WebsitesIcons/courrierinter_bgIMG.jpg"
-          },
-          {
             "url": "https://www.lapresse.ca/voyage/rss",
             "name": "La Presse",
             "articlesCountryISO3": "CAN",
@@ -5578,20 +5547,6 @@
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/europe1.png",
             "backgroundImg": "./icons/WebsitesIcons/europe1_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.courrierinternational.com/feed/category/6282/rss.xml",
-            "name": "Courrier International",
-            "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/courrierinter.png",
-            "backgroundImg": "./icons/WebsitesIcons/courrierinter_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.courrierinternational.com/feed/category/6680/rss.xml",
-            "name": "Courrier International",
-            "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/courrierinter.png",
-            "backgroundImg": "./icons/WebsitesIcons/courrierinter_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [
