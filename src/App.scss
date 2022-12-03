@@ -11,18 +11,18 @@
   --sportColorTheme: darkgoldenrod;
   --ecoColorTheme: orange;
   --mondeColorTheme: dodgerblue;
-  --presseinterColorTheme: crimson;
+  --presseinterColorTheme: mediumvioletred; // crimson;
   --scienceColorTheme: mediumseagreen;
   --europeColorTheme: yellowgreen;
   --polColorTheme: darkviolet;
   --ideesColorTheme: orchid;
-  --societeColorTheme: palevioletred;// mediumaquamarine;
+  --societeColorTheme: mediumaquamarine; // palevioletred
   --techColorTheme: teal;
   --regionsColorTheme: cornflowerblue;
   --planeteColorTheme: limegreen;
-  --lifestyleColorTheme: #6667ab;
-  --ethicsColorTheme: #398bb3; // #6db866;
-  --autoColorTheme: mediumvioletred;
+  --lifestyleColorTheme:  #ea054d;//#bb2548; // 2022 Pantone color: #6667ab;
+  --ethicsColorTheme: #398bb3; // color from the Good Place palette in 'The Good Place'—#6db866;
+  --autoColorTheme: #6667ab;
 
   /*/
   colorTheme must be specified,
@@ -714,14 +714,16 @@ ul {
       transition-property: box-shadow, border, transform;
       border: 0 solid var(--cardBorder);
 
-      &:hover {
-        transform: scale(1.01);
-        box-shadow: 0 100px 140px -50px rgba(0, 0, 0, 0.25), 0 0 20px 0 rgba(0, 0, 0, 0.05);
-        border: 1px solid var(--cardBorder);
-        z-index: 100;
+      @media only screen and (min-width: 1000px) {
+        &:hover {
+          transform: scale(1.01);
+          box-shadow: 0 100px 140px -50px rgba(0, 0, 0, 0.25), 0 0 20px 0 rgba(0, 0, 0, 0.05);
+          border: 1px solid var(--cardBorder);
+          z-index: 100;
 
-        .background-image img {
-          transform: scale(1.1);
+          .background-image img {
+            transform: scale(1.1);
+          }
         }
       }
 
@@ -1048,11 +1050,13 @@ ul {
           border-radius: var(--rounded-corners-block);
         }
 
-        &:hover {
-          border: 0 solid red;
+        @media only screen and (min-width: 1000px) { 
+            &:hover {
+            border: 0 solid red;
 
-          .background-image img {
-            transform: scale(1.1);
+            .background-image img {
+              transform: scale(1.1);
+            }
           }
         }
         
@@ -1166,6 +1170,24 @@ footer {
   margin-top: 44px;
   background-color: var(--secondarySystemGroupedBackground);
   min-width: 222px;
+
+  .footerTitleLine {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    padding-bottom: 15px;
+    column-gap: 10px;
+  
+    > * {
+      display: inline-flex;
+      padding: 0;
+    }
+  
+    .BetaBadge {
+      fill: var(--colorTheme);
+    }
+  }
 }
 
 .footer-container {
@@ -1179,6 +1201,7 @@ footer {
     &> * {
       color: var(--secondaryLabel);
       display: inline-block;
+      margin-top: 0.8em;
       padding-right: 30px;
       margin-bottom: 0;
     }
@@ -1190,7 +1213,6 @@ footer {
 
   .footer-header-app .logo-text {
     text-align: left !important;
-    padding: 0 0 15px 0;
     background: var(--colorTheme);
     background: -webkit-linear-gradient(to right, var(--systemGray2), var(--colorTheme) 88%);
     background: -moz-linear-gradient(to right, var(--systemGray2), var(--colorTheme) 88%);
@@ -1326,13 +1348,17 @@ em:not(.itemContainer em) {
     margin-bottom: 0 !important;
     background-color: none !important;
 
-    &:hover {
-      .media {
-        border-bottom: 0 solid red;
-      }
+    @media only screen and (min-width: 1000px) {
+      &:hover {
+        .media {
+          border-bottom: 0 solid red;
+        }
+      } 
     }
 
     &.firstHeadline:first-child, &.bigHeadline {
+
+      margin: 10px 10px 0 !important;
 
       .itemContainer {
         background-color: var(--tertiarySystemGroupedBackground);
@@ -1345,7 +1371,6 @@ em:not(.itemContainer em) {
 
       .media {
         border-bottom: 0 solid red;
-        padding: 10px 10px 0;
       }
     }
 
@@ -1493,10 +1518,12 @@ em:not(.itemContainer em) {
   section.Lesson {
     padding: 15px;
 
-    &:hover {
-      .SOLBLesson {
-        opacity: 0.05;
-        transition-duration: 0.8s;
+    @media only screen and (min-width: 1000px) {
+      &:hover {
+        .SOLBLesson {
+          opacity: 0.05;
+          transition-duration: 0.8s;
+        }
       }
     }
 

@@ -47,7 +47,7 @@ const App = () => {
     "Deeptech","GAFAM","geeks","Ordinateurs","Big Data",
     "Bien-être","Engagement","Fin de vie","vivre-ensemble","Opinions","Bioéthique"
   ]
-  function nListYS(key : string) {
+  function nListYS(key : string) { // for the subtopics above, add a nList class
     var displayednList = false 
     for(let i = 0; i < nListDisplays.length; i++) {
       var displayednList = key.includes(nListDisplays[i]) ? true : displayednList;

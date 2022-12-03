@@ -49,8 +49,7 @@
             "name": "20 Minutes",
             "specification": "firstHeadline",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/20minutes.png",
-            "backgroundImg": "./icons/WebsitesIcons/20minutes_bgIMG.png"
+            "iconImg": "./icons/WebsitesIcons/20minutes.png"
           },
           {
             "url": "https://www.linternaute.com/actualite/rss/",
@@ -109,16 +108,7 @@
     },
     "Presse étrangère": {
       "subtopics": {
-        "United States & Canada": [
-          {
-            "url": "https://www.cbsnews.com/latest/rss/main",
-            "name": "CBS News",
-            "articlesCountryISO3": "CAN",
-            "specification": "firstHeadline",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/cbsnews.png",
-            "backgroundImg": "./icons/WebsitesIcons/cnn.jpg"
-          },
+        "United States": [
           {
             "url": "https://www.latimes.com/world-nation/rss2.0.xml",
             "name": "Los Angeles Times",
@@ -164,14 +154,6 @@
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
           },
           {
-            "url": "https://ici.radio-canada.ca/rss/4159",
-            "name": "Radio Canada",
-            "articlesCountryISO3": "CAN",
-            "specification": "firstHeadline",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/radiocanada.png"
-          },
-          {
             "url": "https://www.ft.com/world/us?format=rss",
             "name": "The Financial Times",
             "articlesCountryISO3": "USA",
@@ -188,6 +170,42 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/foreignaffairs.png",
             "backgroundImg": "./icons/WebsitesIcons/foreignaffairs_bgIMG.jpg"
+          },
+          {
+            "url": "https://foreignpolicy.com/feed/",
+            "name": "Foreign Policy",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/foreignpolicy.png",
+            "backgroundImg": "./icons/WebsitesIcons/foreignaffairs_bgIMG.jpg"
+          }
+        ],
+        "Canada": [
+          {
+            "url": "https://ici.radio-canada.ca/rss/4159",
+            "name": "Radio Canada",
+            "articlesCountryISO3": "CAN",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/radiocanada.png"
+          },
+          {
+            "url": "https://www.cbsnews.com/latest/rss/main",
+            "name": "CBS News",
+            "articlesCountryISO3": "CAN",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/cbsnews.png",
+            "backgroundImg": "./icons/WebsitesIcons/cnn.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/actualites/national/rss",
+            "name": "La Presse",
+            "articlesCountryISO3": "CAN",
+            "specification": "firstHeadline",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/lapresse.png"
           }
         ],
         "United Kingdom & Ireland": [
@@ -4530,8 +4548,7 @@
             "name": "20 Minutes",
             "specification": "firstHeadline",
             "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/20minutes.png",
-            "backgroundImg": "./icons/WebsitesIcons/20minutes_bgIMG.png"
+            "iconImg": "./icons/WebsitesIcons/20minutes.png"
           },
           {
             "url": "https://www.lemonde.fr/planete/rss_full.xml",
@@ -4726,6 +4743,7 @@
             "url": "https://www.l214.com/rss.xml",
             "name": "L214",
             "articlesCount": 2,
+            "specification": "nodesc",
             "iconImg": "./icons/WebsitesIcons/l214.png",
             "backgroundImg": "./icons/WebsitesIcons/l214_bgIMG.jpg"
           },

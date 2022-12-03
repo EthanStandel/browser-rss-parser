@@ -1,6 +1,3 @@
-import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddisplay } from "./topicVAR";
-
-
 const EthiqueComponent = () => {
 
 
