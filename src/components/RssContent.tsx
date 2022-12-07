@@ -152,7 +152,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
      
             let arrayCategories = concatListofCategories.split(',').slice(0, 3); /* presents categories in an array with 3 elements (split in elements by comma sign) */
            
-            var dict = ['Content Type: Personal Profile','has_diapo','Produits','Radio 1','all','News','Actu','Actus','Video','Vidéo','Diaporama','Not found','Fil Info']
+            var dict = ['Content Type: Personal Profile','Vivre','Images','blog','Auto-News','has_diapo','Produits','Radio 1','all','News','Actu','Actus','Video','Vidéo','Diaporama','Not found','Fil Info','Magazine']
             
             var arrayCategoriesTEST = []
             for (var element of arrayCategories) {
@@ -162,7 +162,8 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                 .replace('News /', '')
                 .replace('Culture /', '')
                 .replace('World /', '')
-                .replace('&amp;', '&'));
+                .replace('&amp;', '&'))
+              ;
               
               if (correctedElement != "") {
                 arrayCategoriesTEST.push(correctedElement)
@@ -197,13 +198,13 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                     <div className="media">
                       <div className="iconContainer">
                         <div className="icon-image">
-                          <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
+                          <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg" alt=""/>
                         </div>
                         <div className="icon-image">
-                          <img src={AppIconImg}/> 
+                          <img src={AppIconImg} alt={"icon image for " + source.name}/> 
                         </div>
                         <div className="background-image">
-                          <img src={imgHref}/>
+                          <img src={imgHref} alt={"illustrative image for " + source.name}/>
                         </div>
                       </div>
                       <div className="itemContainer">

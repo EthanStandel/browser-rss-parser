@@ -110,7 +110,7 @@ const App = () => {
               .map(([key, feeds]) => (
                 <section key={key} className={`${key} ArticleSection ` + (nListYS(key)==true ? "nList" : "")}> 
                   {key !== "noSubtopic" && <h4 className="subtopic bold">{key}</h4>}
-                  <div id="external-script-element" />
+                  <div id={"ExternalScript " + topicFilter} />
                   <RssContent rssFeeds={feeds} />
                 </section>
               ))

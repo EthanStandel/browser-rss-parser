@@ -924,7 +924,7 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/foreignaffairs.png",
             "backgroundImg": "./icons/WebsitesIcons/foreignaffairs_bgIMG.jpg"
-          }       
+          }     
         ]
       }
     },
@@ -4489,8 +4489,7 @@
             "articlesCountryISO3": "GBR",
             "specification": "firstHeadline",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/bbcnews.png",
-            "backgroundImg": "./icons/WebsitesIcons/bbcnews_bgIMG.jpg"
+            "iconImg": "./icons/WebsitesIcons/ted.png"
           },
           {
             "url": "https://www.wired.com/feed/science/rss",
@@ -4536,7 +4535,7 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/diezeit.png",
             "backgroundImg": "./icons/WebsitesIcons/diezeit_bgIMG.jpg"
-          }    
+          } 
         ]
       }
     },
@@ -5862,6 +5861,81 @@
             "iconImg": "./icons/WebsitesIcons/thetelegraph.png",
             "backgroundImg": "./icons/WebsitesIcons/thetelegraph_bgIMG.jpg"
           }
+        ]
+      }
+    },
+    "TED & cie": {
+      "subtopics": {
+        "noSubtopic": [
+          {
+            "url": "https://blog.ted.com/feed/",
+            "name": "TED",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline bigList",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/ted.png",
+            "backgroundImg": "./icons/WebsitesIcons/ted_bgIMG.jpg"
+          }
+        ],
+        "Économie": [
+          {
+            "url": "https://ideas.ted.com/category/business/feed/",
+            "name": "TED Ideas",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline bigList",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/ted-ideas.png",
+            "backgroundImg": "./icons/WebsitesIcons/ted_bgIMG.jpg"
+          }
+        ],
+        "Art & culture": [
+          {
+            "url": "https://ideas.ted.com/category/arts-design/feed/",
+            "name": "TED Ideas",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline bigList",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/ted-ideas.png",
+            "backgroundImg": "./icons/WebsitesIcons/ted_bgIMG.jpg"
+          }
+        ],
+        "Éducation": [
+          {
+            "url": "https://ed.ted.com/blog/feed",
+            "name": "TED-Ed",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline bigList",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/ted-ed.png",
+            "backgroundImg": "./icons/WebsitesIcons/ted-ed_bgIMG.jpg"
+          }
+        ],
+        "Science": [
+          {
+            "url": "https://ideas.ted.com/category/science/feed/",
+            "name": "TED Ideas",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline bigList",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/ted-ideas.png",
+            "backgroundImg": "./icons/WebsitesIcons/ted_bgIMG.jpg"
+          }
+        ],
+        "Tech": [
+
+
+        ],
+        "Société": [
+          {
+            "url": "https://ideas.ted.com/category/we-humans/feed/",
+            "name": "TED Ideas",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline bigList",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/ted-ideas.png",
+            "backgroundImg": "./icons/WebsitesIcons/ted_bgIMG.jpg"
+          }
+
         ]
       }
     }

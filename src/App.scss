@@ -20,9 +20,10 @@
   --techColorTheme: teal;
   --regionsColorTheme: cornflowerblue;
   --planeteColorTheme: limegreen;
-  --lifestyleColorTheme:  #ea054d;//#bb2548; // 2022 Pantone color: #6667ab;
+  --lifestyleColorTheme:  #6667ab;//#bb2548;
   --ethicsColorTheme: #398bb3; // color from the Good Place palette in 'The Good Place'—#6db866;
-  --autoColorTheme: #6667ab;
+  --autoColorTheme: #ea054d;
+  --TEDColorTheme: #d91e17;
 
   /*/
   colorTheme must be specified,
@@ -33,6 +34,30 @@
     5- for topics navbar li hover effect (320)
     6- for topics titles in ArticlesMain (377)
   /*/
+}
+
+// TED topic
+.App  {
+  &.TED { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+    --colorTheme: var(--TEDColorTheme);
+  }
+
+  ul.topics-navbar li { // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
+    
+    .TED {
+      border-color: var(--TEDColorTheme);
+      color: var(--TEDColorTheme);
+    }
+
+    > button {
+      &:hover, &.selected {
+        color: white;
+        &:not(.subtopic-selection).TED /* checks not to use the subtopics-navbar */ {
+          background-color: var(--TEDColorTheme);
+        }
+      }
+    }
+  }
 }
 
 /*/ color focus for the entire webpage /*/
@@ -163,10 +188,6 @@ main.Articles {
   /*/ underlining color depending on topic for li /*/   
   * {
     text-decoration-color: var(--headlinesColorTheme);
-  }
-
-  .rss-podcasts .intro {
-    border-bottom-color: var(--headlinesColorTheme);
   }
 
   .Science {
@@ -397,7 +418,6 @@ ul {
     li {
       margin: 1px 5px;
       display: inline-block;
-      color: var(--colorTheme);
 
       @media only screen and (min-width: 1000px) {
         
