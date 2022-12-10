@@ -60,23 +60,24 @@ const App = () => {
       <div className="header-mobile">
         <h5 className="logo-text" onClick={() => setTopicFilter(topicFilter)}>nuntii</h5>
       </div>
-      <header>
-        <div className="headerTitle">
-          <h5 className="logo-text" onClick={() => setTopicFilter(topicFilter)}>nuntii</h5>
-        </div>
-        <div className="headerTopics">
-          <nav>
-            <ul className="topics-navbar r1 bold">
-              {selectableTopics.map(name => (
-                <li key={name} className={name}>
-                  <button className={name === topicFilter ? `selected ${name}` : name} onClick={() => setTopicFilter(name)}>{name}</button>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          {Object.keys(topics[topicFilter].subtopics).length > 1 &&
-            <div className="subtopic-selection">
-              <nav>
+      <header className="headerTopics">
+          <div id="headerFirstLine">
+            <div className="headerTitle">
+              <h5 className="logo-text" onClick={() => setTopicFilter(topicFilter)}>nuntii</h5>
+            </div>
+            <nav>
+              <ul className="topics-navbar r1 bold">
+                {selectableTopics.map(name => (
+                  <li key={name} className={name}>
+                    <button className={name === topicFilter ? `selected ${name}` : name} onClick={() => setTopicFilter(name)}>{name}</button>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+          <div id="headerSecondLine">
+            {Object.keys(topics[topicFilter].subtopics).length > 1 &&
+              <nav className="subtopic-selection">
                 <ul ref={subtopicNavbarContainer} className={"topics-navbar r1 " + topicFilter}>
                   <li className="all-subtopic">
                     <button className={!subtopicFilter ? "selected" : ""} onClick={() => setSubtopicFilter(undefined)}>
@@ -95,9 +96,8 @@ const App = () => {
                   }
                 </ul>
               </nav>
-            </div>
-          }
-        </div>
+            }
+          </div>
       </header>
       <main className="Articles">
         <div className={"grid "+ topicFilter}>

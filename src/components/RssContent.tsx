@@ -162,7 +162,10 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                 .replace('News /', '')
                 .replace('Culture /', '')
                 .replace('World /', '')
-                .replace('&amp;', '&'))
+                .replace('&amp;', '&')
+                .replace('topics:things/','')
+                .replace('topics:places/','')
+                )
               ;
               
               if (correctedElement != "") {

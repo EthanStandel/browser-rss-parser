@@ -1,0 +1,445 @@
+:root {
+    --cultureColorTheme: burlywood;
+    --sportColorTheme: darkgoldenrod;
+    --ecoColorTheme: orange;
+    --mondeColorTheme: dodgerblue;
+    --peColorTheme: mediumvioletred; // crimson;
+    --scienceColorTheme: mediumseagreen;
+    --europeColorTheme: yellowgreen;
+    --politiqueColorTheme: darkviolet;
+    --ideesColorTheme: orchid;
+    --societeColorTheme: mediumaquamarine; // palevioletred
+    --techColorTheme: teal;
+    --regionsColorTheme: cornflowerblue;
+    --planeteColorTheme: limegreen;
+    --lifestyleColorTheme:  #6667ab;
+    --ethiqueColorTheme: #398bb3; // color from the Good Place palette in 'The Good Place'—#6db866;
+    --autoColorTheme: #ea054d;
+    --TEDColorTheme: #d91e17;
+  }
+  
+  // specifics colors & display for Presse étrangère topic
+  .App {
+    &.Presse.étrangère { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+      --colorTheme: var(--peColorTheme);
+    }
+  
+    header #headerFirstLine ul li {
+    // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
+    
+      .Presse.étrangère {
+        border-color: var(--peColorTheme);
+        color: var(--peColorTheme);
+      }
+  
+      > button {
+        &:hover, &.selected {
+          color: white !important;
+          &.Presse.étrangère {
+            background-color: var(--peColorTheme);
+          }
+        }
+      }
+    }
+  }
+  
+  // specifics colors & display for Économie topic
+  .App {
+    &.Économie { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+      --colorTheme: var(--ecoColorTheme);
+    }
+  
+    header #headerFirstLine ul li {
+    // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
+    
+      .Économie {
+        border-color: var(--ecoColorTheme);
+        color: var(--ecoColorTheme);
+      }
+  
+      > button {
+        &:hover, &.selected {
+          color: white !important;
+          &.Économie {
+            background-color: var(--ecoColorTheme);
+          }
+        }
+      }
+    }
+  }
+  
+  // specifics colors & display for Sport topic
+  .App {
+    &.Sport { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+      --colorTheme: var(--sportColorTheme);
+    }
+  
+    header #headerFirstLine ul li {
+    // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
+    
+      .Sport {
+        border-color: var(--sportColorTheme);
+        color: var(--sportColorTheme);
+      }
+  
+      > button {
+        &:hover, &.selected {
+          color: white !important;
+          &.Sport {
+            background-color: var(--sportColorTheme);
+          }
+        }
+      }
+    }
+  }
+  
+  // specifics colors & display for Culture topic
+  .App {
+    &.Culture { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+      --colorTheme: var(--cultureColorTheme);
+    }
+  
+    header #headerFirstLine ul li {
+    // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
+    
+      .Culture {
+        border-color: var(--cultureColorTheme);
+        color: var(--cultureColorTheme);
+      }
+  
+      > button {
+        &:hover, &.selected {
+          color: white !important;
+          &.Culture {
+            background-color: var(--cultureColorTheme);
+          }
+        }
+      }
+    }
+  }
+  
+  // specifics colors & display for Europe topic
+  .App {
+    &.Europe { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+      --colorTheme: var(--europeColorTheme);
+    }
+  
+    header #headerFirstLine ul li {
+    // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
+    
+      .Europe {
+        border-color: var(--europeColorTheme);
+        color: var(--europeColorTheme);
+      }
+  
+      > button {
+        &:hover, &.selected {
+          color: white !important;
+          &.Europe {
+            background-color: var(--europeColorTheme);
+          }
+        }
+      }
+    }
+  }
+  
+  // specifics colors & display for Monde topic
+  .App {
+    &.Monde { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+      --colorTheme: var(--mondeColorTheme);
+    }
+  
+    header #headerFirstLine ul li {
+    // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
+    
+      .Monde {
+        border-color: var(--mondeColorTheme);
+        color: var(--mondeColorTheme);
+      }
+  
+      > button {
+        &:hover, &.selected {
+          color: white !important;
+          &.Monde {
+            background-color: var(--mondeColorTheme);
+          }
+        }
+      }
+    }
+  }
+  
+  // specifics colors & display for Régions topic
+  .App {
+    &.Régions { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+      --colorTheme: var(--regionsColorTheme);
+    }
+  
+    header #headerFirstLine ul li {
+    // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
+    
+      .Régions {
+        border-color: var(--regionsColorTheme);
+        color: var(--regionsColorTheme);
+      }
+  
+      > button {
+        &:hover, &.selected {
+          color: white !important;
+          &.Régions {
+            background-color: var(--regionsColorTheme);
+          }
+        }
+      }
+    }
+  }
+  
+  // specifics colors & display for Politique topic
+  .App {
+    &.Politique { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+      --colorTheme: var(--politiqueColorTheme);
+    }
+  
+    header #headerFirstLine ul li {
+    // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
+    
+      .Politique {
+        border-color: var(--politiqueColorTheme);
+        color: var(--politiqueColorTheme);
+      }
+  
+      > button {
+        &:hover, &.selected {
+          color: white !important;
+          &.Politique {
+            background-color: var(--politiqueColorTheme);
+          }
+        }
+      }
+    }
+  }
+  
+  // specifics colors & display for Idées topic
+  .App {
+    &.Idées { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+      --colorTheme: var(--ideesColorTheme);
+    }
+  
+    header #headerFirstLine ul li {
+    // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
+    
+      .Idées {
+        border-color: var(--ideesColorTheme);
+        color: var(--ideesColorTheme);
+      }
+  
+      > button {
+        &:hover, &.selected {
+          color: white !important;
+          &.Idées {
+            background-color: var(--ideesColorTheme);
+          }
+        }
+      }
+    }
+  }
+  
+  // specifics colors & display for Société topic
+  .App {
+    &.Société { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+      --colorTheme: var(--societeColorTheme);
+    }
+  
+    header #headerFirstLine ul li {
+    // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
+    
+      .Société {
+        border-color: var(--societeColorTheme);
+        color: var(--societeColorTheme);
+      }
+  
+      > button {
+        &:hover, &.selected {
+          color: white !important;
+          &.Société {
+            background-color: var(--societeColorTheme);
+          }
+        }
+      }
+    }
+  }
+  
+  // specifics colors & display for Science topic
+  .App {
+    &.Science { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+      --colorTheme: var(--scienceColorTheme);
+    }
+  
+    header #headerFirstLine ul li {
+    // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
+    
+      .Science {
+        border-color: var(--scienceColorTheme);
+        color: var(--scienceColorTheme);
+      }
+  
+      > button {
+        &:hover, &.selected {
+          color: white !important;
+          &.Science {
+            background-color: var(--scienceColorTheme);
+          }
+        }
+      }
+    }
+  }
+  
+  // specifics colors & display for Planète topic
+  .App {
+    &.Planète { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+      --colorTheme: var(--planeteColorTheme);
+    }
+  
+    header #headerFirstLine ul li {
+    // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
+    
+      .Planète {
+        border-color: var(--planeteColorTheme);
+        color: var(--planeteColorTheme);
+      }
+  
+      > button {
+        &:hover, &.selected {
+          color: white !important;
+          &.Planète {
+            background-color: var(--planeteColorTheme);
+          }
+        }
+      }
+    }
+  }
+  
+  // specifics colors & display for Tech topic
+  .App {
+    &.Tech { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+      --colorTheme: var(--techColorTheme);
+    }
+  
+    header #headerFirstLine ul li {
+    // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
+    
+      .Tech {
+        border-color: var(--techColorTheme);
+        color: var(--techColorTheme);
+      }
+  
+      > button {
+        &:hover, &.selected {
+          color: white !important;
+          &.Tech {
+            background-color: var(--techColorTheme);
+          }
+        }
+      }
+    }
+  }
+  
+  
+  // specifics colors & display for Art.de.vivre topic
+  .App {
+    &.Art.de.vivre { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+      --colorTheme: var(--lifestyleColorTheme);
+    }
+  
+    header #headerFirstLine ul li {
+    // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
+    
+      .Art.de.vivre {
+        border-color: var(--lifestyleColorTheme);
+        color: var(--lifestyleColorTheme);
+      }
+  
+      > button {
+        &:hover, &.selected {
+          color: white !important;
+          &.Art.de.vivre {
+            background-color: var(--lifestyleColorTheme);
+          }
+        }
+      }
+    }
+  }
+  
+  // specifics colors & display for Éthique topic
+  .App {
+    &.Éthique { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+      --colorTheme: var(--ethiqueColorTheme);
+    }
+  
+    header #headerFirstLine ul li {
+    // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
+    
+      .Éthique {
+        border-color: var(--ethiqueColorTheme);
+        color: var(--ethiqueColorTheme);
+      }
+  
+      > button {
+        &:hover, &.selected {
+          color: white !important;
+          &.Éthique {
+            background-color: var(--ethiqueColorTheme);
+          }
+        }
+      }
+    }
+  }
+  
+  // specifics colors & display for Auto-moto topic
+  .App {
+    &.Auto-moto { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+      --colorTheme: var(--autoColorTheme);
+    }
+  
+    header #headerFirstLine ul li {
+    // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
+    
+      .Auto-moto {
+        border-color: var(--autoColorTheme);
+        color: var(--autoColorTheme);
+      }
+  
+      > button {
+        &:hover, &.selected {
+          color: white !important;
+          &.Auto-moto {
+            background-color: var(--autoColorTheme);
+          }
+        }
+      }
+    }
+  }
+  
+  // specifics colors & display for TED topic
+  .App {
+    &.TED { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+      --colorTheme: var(--TEDColorTheme);
+    }
+  
+    header #headerFirstLine ul li {
+    // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
+    
+      .TED {
+        border-color: var(--TEDColorTheme);
+        color: var(--TEDColorTheme);
+      }
+  
+      > button {
+        &:hover, &.selected {
+          color: white !important;
+          &.TED {
+            background-color: var(--TEDColorTheme);
+          }
+        }
+      }
+    }
+  }

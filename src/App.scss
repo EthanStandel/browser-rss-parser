@@ -2,138 +2,24 @@
 @import "ios/ios-semantic_colors.scss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400..900');
+@import "./AppColorTopics.scss";
+@import "./topic-components/EthiqueComponent.scss";
 
 :root {
   --rounded-corners-block: 12px;
-
   --headlinesColorTheme: var(--systemPink);
-  --cultureColorTheme: burlywood;
-  --sportColorTheme: darkgoldenrod;
-  --ecoColorTheme: orange;
-  --mondeColorTheme: dodgerblue;
-  --presseinterColorTheme: mediumvioletred; // crimson;
-  --scienceColorTheme: mediumseagreen;
-  --europeColorTheme: yellowgreen;
-  --polColorTheme: darkviolet;
-  --ideesColorTheme: orchid;
-  --societeColorTheme: mediumaquamarine; // palevioletred
-  --techColorTheme: teal;
-  --regionsColorTheme: cornflowerblue;
-  --planeteColorTheme: limegreen;
-  --lifestyleColorTheme:  #6667ab;//#bb2548;
-  --ethicsColorTheme: #398bb3; // color from the Good Place palette in 'The Good Place'—#6db866;
-  --autoColorTheme: #ea054d;
-  --TEDColorTheme: #d91e17;
-
-  /*/
-  colorTheme must be specified,
-    1- for App component (38)
-    2- for underlining style (57)
-    3- for subtopics navbar li color (160)
-    4- for topics navbar li color scheme (237)
-    5- for topics navbar li hover effect (320)
-    6- for topics titles in ArticlesMain (377)
-  /*/
-}
-
-// TED topic
-.App  {
-  &.TED { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
-    --colorTheme: var(--TEDColorTheme);
-  }
-
-  ul.topics-navbar li { // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
-    
-    .TED {
-      border-color: var(--TEDColorTheme);
-      color: var(--TEDColorTheme);
-    }
-
-    > button {
-      &:hover, &.selected {
-        color: white;
-        &:not(.subtopic-selection).TED /* checks not to use the subtopics-navbar */ {
-          background-color: var(--TEDColorTheme);
-        }
-      }
-    }
-  }
 }
 
 /*/ color focus for the entire webpage /*/
 .App {
   --colorTheme: var(--headlinesColorTheme);
 
-  &.Sport { 
-    --colorTheme: var(--sportColorTheme);
-  }
-
-  &.Économie {
-    --colorTheme: var(--ecoColorTheme);
-  }
-
-  &.Culture {
-    --colorTheme: var(--cultureColorTheme);
-  }
-
-  &.Presse {
-    --colorTheme: var(--presseinterColorTheme);
-  }
-
-  &.Monde {
-    --colorTheme: var(--mondeColorTheme);
-  }
-
-  &.Science {
-    --colorTheme: var(--scienceColorTheme);
-  }
-  
-  &.Europe {
-    --colorTheme: var(--europeColorTheme);
-  }
-
-  &.Politique {
-    --colorTheme: var(--polColorTheme);
-  }
-
-  &.Idées {
-    --colorTheme: var(--ideesColorTheme);
-  }
-
-  &.Société {
-    --colorTheme: var(--societeColorTheme);
-  }
-
-  &.Tech {
-    --colorTheme: var(--techColorTheme);
-  }
-  
-  &.Régions {
-    --colorTheme: var(--regionsColorTheme);
-  }
-
-  &.Planète {
-    --colorTheme: var(--planeteColorTheme);
-  }
-
-  &.Art {
-    --colorTheme: var(--lifestyleColorTheme);
-  }
-
-  &.Éthique {
-    --colorTheme: var(--ethicsColorTheme);
-  }
-
-  &.Auto-moto {
-    --colorTheme: var(--autoColorTheme);
-  }
-
   .color {
     color: var(--colorTheme);
   }
 }
 
-/*/ loading Spinner in ul /*/
+/*/ loading Spinner in RssFeeds /*/
 .spinner-container > div {
   margin: auto;
   margin-top: 6rem;
@@ -182,202 +68,6 @@ main.Articles {
   .RightRSSColumn {
     float: left;
     width: calc(65% - 40px);
-  }
-
-  
-  /*/ underlining color depending on topic for li /*/   
-  * {
-    text-decoration-color: var(--headlinesColorTheme);
-  }
-
-  .Science {
-
-    .rss-podcasts * {
-      border-bottom-color: var(--scienceColorTheme);
-    }
-
-    * {
-      text-decoration-color: var(--scienceColorTheme);
-    }
-  }
-
-  .Monde {
-
-    .rss-podcasts * {
-      border-bottom-color: var(--mondeColorTheme);
-    }
-
-    * {
-      text-decoration-color: var(--mondeColorTheme);
-    }
-  }
-  
-  .Sport {
-
-    .rss-podcasts * {
-      border-bottom-color: var(--sportColorTheme);
-    }
-
-    * {
-      text-decoration-color: var(--sportColorTheme);
-    }
-  }
-
-  .Économie {
-
-    .rss-podcasts * {
-      border-bottom-color: var(--ecoColorTheme);
-    }
-
-    * {
-      text-decoration-color: var(--ecoColorTheme);
-    }
-  }
-  
-  .Culture {
-    .rss-podcasts * {
-      border-bottom-color: var(--cultureColorTheme);
-    }
-
-    * {
-      text-decoration-color: var(--cultureColorTheme);
-    }
-  }
-  
-  .Europe {
-    .rss-podcasts * {
-      border-bottom-color: var(--europeColorTheme);
-    }
-
-    * {
-      text-decoration-color: var(--europeColorTheme);
-    }
-  }
-
-  .Politique {
-    
-    .rss-podcasts * {
-      border-bottom-color: var(--polColorTheme);
-    }
-
-    * {
-      text-decoration-color: var(--polColorTheme);
-    }
-  }
-
-  .Idées {
-
-        .rss-podcasts * {
-      border-bottom-color: var(--ideesColorTheme);
-    }
-
-    * {
-      text-decoration-color: var(--ideesColorTheme);
-    }
-  }
-
-  .Tech {
-
-    .rss-podcasts * {
-      border-bottom-color: var(--techColorTheme);
-    }
-
-    * {
-      text-decoration-color: var(--techColorTheme);
-    }
-  }
-
-  .Régions {
-
-    .rss-podcasts * {
-      border-bottom-color: var(--regionsColorTheme);
-    }
-
-    * {
-      text-decoration-color: var(--regionsColorTheme);
-    }
-  }
-
-  .Planète {
-
-    .rss-podcasts * {
-      border-bottom-color: var(--planeteColorTheme);
-    }
-
-    * {
-      text-decoration-color: var(--planeteColorTheme);
-    }
-  }
-
-  .Art {
-    
-    .rss-podcasts * {
-      border-bottom-color: var(--lifestyleColorTheme);
-    }
-
-    * {
-      text-decoration-color: var(--lifestyleColorTheme);
-    }
-  }
-
-  .Éthique {
-    
-    .rss-podcasts * {
-      border-bottom-color: var(--ethicsColorTheme);
-    }
-
-    * {
-      text-decoration-color: var(--ethicsColorTheme);
-    }
-  }
-
-  .Auto-moto {
-
-    .rss-podcasts * {
-      border-bottom-color: var(--autoColorTheme);
-    }
-
-    * {
-      text-decoration-color: var(--autoColorTheme);
-    }
-  }
-  
-  /*/ special case since Presse étrangère can be found as subtopic /*/
-  .étrangère:not(.section) {
-
-    ul.rss-podcasts {
-
-      .intro {
-        border-bottom-color: var(--presseinterColorTheme);
-      }
-      
-      li > * > * > * > * {
-        text-decoration-color: var(--presseinterColorTheme); 
-      }
-    }
-  
-    * > ul > li > * > * > * {
-      text-decoration-color: var(--presseinterColorTheme);
-    }
-  }
-
-  /*/ special case since Société can be found as subtopic (in Idées topic) /*/
-  .Société:not(.section) {
-
-    ul.rss-podcasts {
-
-      .intro {
-        border-bottom-color: var(--societeColorTheme);
-      }
-      
-      li > * > * > * > * {
-        text-decoration-color: var(--societeColorTheme); 
-      }
-    }
-  
-    * > ul > li > * > * > * {
-      text-decoration-color: var(--societeColorTheme);
-    }
   }
 }
 
@@ -430,87 +120,6 @@ ul {
         }
       }
     
-      /*/ color styles for topics navbar -border and color /*/
-      .Sport {
-        border-color: var(--sportColorTheme);
-        color: var(--sportColorTheme);
-      }
-      
-      .Culture {
-        border-color: var(--cultureColorTheme);
-        color: var(--cultureColorTheme);
-      }
-
-      .Société {
-        border-color: var(--societeColorTheme);
-        color: var(--societeColorTheme);
-      }
-    
-      .Économie {
-        border-color: var(--ecoColorTheme);
-        color: var(--ecoColorTheme);
-      }
-    
-      .Presse {
-        border-color: var(--presseinterColorTheme);
-        color: var(--presseinterColorTheme);
-      }
-    
-      .Monde {
-        border-color: var(--mondeColorTheme);
-        color: var(--mondeColorTheme);
-      }
-    
-      .Science {
-        border-color: var(--scienceColorTheme);
-        color: var(--scienceColorTheme);
-      }
-    
-      .Europe {
-        border-color: var(--europeColorTheme);
-        color: var(--europeColorTheme);
-      }
-    
-      .Politique {
-        border-color: var(--polColorTheme);
-        color: var(--polColorTheme);
-      }
-    
-      .Idées {
-        border-color: var(--ideesColorTheme);
-        color: var(--ideesColorTheme);
-      }
-    
-      .Tech {
-        border-color: var(--techColorTheme);
-        color: var(--techColorTheme);
-      }
-    
-      .Régions {
-        border-color: var(--regionsColorTheme);
-        color: var(--regionsColorTheme);
-      }
-    
-      .Planète {
-        border-color: var(--planeteColorTheme);
-        color: var(--planeteColorTheme);
-      }
-    
-      .Art {
-        border-color: var(--lifestyleColorTheme);
-        color: var(--lifestyleColorTheme);
-      }
-
-      .Éthique {
-        border-color: var(--ethicsColorTheme);
-        color: var(--ethicsColorTheme);
-      }
-    
-      .Auto-moto {
-        border-color: var(--autoColorTheme);
-        color: var(--autoColorTheme);
-      }
-    
       > button {
         border: 2px solid var(--headlinesColorTheme);
         color: var(--headlinesColorTheme);
@@ -526,76 +135,11 @@ ul {
     
         &:hover, &.selected {
           background-color: var(--headlinesColorTheme);
-          color: white;
     
           /*/ background color on hover for topics navbar /*/
           &:not(.subtopic-selection) {
 
             background-color: var(--headlinesColorTheme);
-            
-            &.Économie {
-              background-color: var(--ecoColorTheme);
-            }
-          
-            &.Culture {
-              background-color: var(--cultureColorTheme);
-            }
-
-            &.Société {
-              background-color: var(--societeColorTheme);
-            }
-    
-            &.Sport {
-              background-color: var(--sportColorTheme);
-            }
-    
-            &.Presse {
-              background-color: var(--presseinterColorTheme);
-            }
-    
-            &.Monde {
-              background-color: var(--mondeColorTheme);
-            }
-    
-            &.Science {
-              background-color: var(--scienceColorTheme);
-            }
-            
-            &.Europe {
-              background-color: var(--europeColorTheme);
-            }
-    
-            &.Politique {
-              background-color: var(--polColorTheme);
-            }
-    
-            &.Idées {
-              background-color: var(--ideesColorTheme);
-            }
-    
-            &.Tech {
-              background-color: var(--techColorTheme);
-            }
-            
-            &.Régions {
-              background-color: var(--regionsColorTheme);
-            }
-    
-            &.Planète {
-              background-color: var(--planeteColorTheme);
-            }
-    
-            &.Art {
-              background-color: var(--lifestyleColorTheme);
-            }
-
-            &.Éthique {
-              background-color: var(--ethicsColorTheme);
-            }
-    
-            &.Auto-moto {
-              background-color: var(--autoColorTheme);
-            }
           }
         }
       }
@@ -1308,9 +852,9 @@ Adapted for small devices
     display: block !important;
   }
 
-  .footer-header-app .logo-text {
-    text-align: center !important;
+  .footer-header-app .footerTitleLine {
     margin: auto;
+    width: fit-content;
   }
 
   .footer-header-app * {
@@ -1521,77 +1065,4 @@ em:not(.itemContainer em) {
       }
     }
   }
-}
-
-// EthiqueComponent
-.SolarOppLessonalyzerBlock {
-  background-color: #4d4abf;
-  box-shadow: 5px 8px 5px white inset;
-  border-bottom: 5px solid #02052f;
-  border-right: 2px solid #02052f;
-  color: white;
-  
-  * {
-    font-family: Times New Roman,serif;
-  }
-
-  section.Lesson {
-    padding: 15px;
-
-    @media only screen and (min-width: 1000px) {
-      &:hover {
-        .SOLBLesson {
-          opacity: 0.05;
-          transition-duration: 0.8s;
-        }
-      }
-    }
-
-    .SOLBTitle {
-      position: relative;
-      padding: 8px 0 15px;
-      font-weight: bold;
-      left: -20%;
-      font-size: 120%;
-      color: #ff0;
-      text-align: center;
-      transform: rotate(-3deg);
-    }
-  
-    .SOLBLesson {
-      text-align: center;
-    }
-  }
-
-  section.Comments {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-
-    img.FamilyPortrait {
-      height: 44px;
-      margin: 10px;
-      max-width: 50px;
-    }
-
-    img.PuppaCoin {
-      position: absolute;
-      bottom: -66px;
-      right: 2px;
-      z-index: 2;
-      width: 150px;
-    }
-
-    .Signature {
-      text-transform: uppercase;
-      font-size: 70%;
-      padding: 5px 10px;
-      font-weight: bold;
-    }
-  }  
-}
-
-.beautify {
-  background-color: red !important;
 }
