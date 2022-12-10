@@ -390,6 +390,7 @@ ul {
       .background-image {
         display: none;
         overflow: hidden !important;
+        background-color: var(--colorTheme);
 
         img {
           object-fit: cover;

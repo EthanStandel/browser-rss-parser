@@ -138,8 +138,6 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             ?? item.enclosure?.url ?? item.enclosure?.url 
             ?? source.backgroundImg ?? "./genIcons/applenews_bgIMG_alt.jpg";
 
-            const AppIconImg = source.iconImg ?? "./icons/WebsitesIcons/applenews.png";
-
             var author = item.author || item["dc:creator"];
             var author = author?.includes(String(source.name)) ? undefined : author;
             var author = author?.includes(String(source.name?.toUpperCase)) ? undefined : author;
@@ -204,10 +202,23 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                           <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg" alt=""/>
                         </div>
                         <div className="icon-image">
-                          <img src={AppIconImg} alt={"icon image for " + source.name}/> 
+                          <img 
+                            src={source.iconImg ?? "./icons/WebsitesIcons/applenews.png"}
+                            alt=""
+                            onError={({ currentTarget }) => {
+                              currentTarget.onerror = null; // prevents looping
+                              currentTarget.src="./icons/WebsitesIcons/applenews.png";
+                            }}
+                          /> 
                         </div>
                         <div className="background-image">
-                          <img src={imgHref} alt={"illustrative image for " + source.name}/>
+                          <img src={imgHref}
+                          alt={"illustrative image for " + source.name}
+                          onError={({ currentTarget }) => {
+                            currentTarget.onerror = null; // prevents looping
+                            currentTarget.src="./genIcons/applenews_bgIMG_alt.jpg";
+                          }}
+                        /> 
                         </div>
                       </div>
                       <div className="itemContainer">
