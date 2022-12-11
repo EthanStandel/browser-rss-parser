@@ -63,7 +63,14 @@
 
         ],
         "Guerre en Ukraine": [
-
+          {
+            "url": "https://www.nouvelobs.com/guerre-en-ukraine/rss.xml",
+            "name": "L'Obs",
+            "articlesCount": 3,
+            "specification": "firstHeadline",
+            "iconImg": "./icons/WebsitesIcons/lobs.png",
+            "backgroundImg": "./icons/WebsitesIcons/lobs_bgIMG.jpg"
+          }
         ],
         "COVID-19": [
 
@@ -994,6 +1001,13 @@
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/linternaute.png",
             "backgroundImg": "./icons/WebsitesIcons/linternaute_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.7sur7.be/sport/rss.xml",
+            "name": "7sur7",
+            "articlesCountryISO3": "BEL",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/7sur7.png"
           }
         ],
         "Football": [
@@ -1036,6 +1050,13 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/lequipe.png",
             "backgroundImg": "./icons/WebsitesIcons/lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.7sur7.be/football/rss.xml",
+            "name": "7sur7",
+            "articlesCountryISO3": "BEL",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/7sur7.png"
           }
         ],
         "Sports de raquettes": [
@@ -1170,6 +1191,13 @@
             "specification": "firstHeadline",
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
+          },
+          {
+            "url": "https://www.7sur7.be/cyclisme/rss.xml",
+            "name": "7sur7",
+            "articlesCountryISO3": "BEL",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/7sur7.png"
           }
         ],
         "Basketball": [
@@ -1203,57 +1231,6 @@
           },
           {
             "url": "https://www.lapresse.ca/sports/basketball/rss",
-            "name": "La Presse",
-            "articlesCountryISO3": "CAN",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/lapresse.png"
-          }
-        ],
-        "Sports mécaniques": [
-          {
-            "url": "https://rmcsport.bfmtv.com/rss/auto-moto/",
-            "name": "RMC Sport",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/rmcsport.jpeg",
-            "backgroundImg": "./icons/WebsitesIcons/rmcsport_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lemonde.fr/sports-mecaniques/rss_full.xml",
-            "name": "Le Monde",
-            "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/lemonde.png",
-            "backgroundImg": "./icons/WebsitesIcons/lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www6.lequipe.fr/rss/actu_rss_F1.xml",
-            "name": "L'Équipe",
-            "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/lequipe.png",
-            "backgroundImg": "./icons/WebsitesIcons/lequipe_bgIMG.jpg"
-          },
-          {
-            "url": "https://www6.lequipe.fr/rss/actu_rss_Moto.xml",
-            "name": "L'Équipe",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/lequipe.png",
-            "backgroundImg": "./icons/WebsitesIcons/lequipe_bgIMG.jpg"
-          },
-          {
-            "url": "https://www6.lequipe.fr/rss/actu_rss_Rallye.xml",
-            "name": "L'Équipe",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/lequipe.png",
-            "backgroundImg": "./icons/WebsitesIcons/lequipe_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.francetvinfo.fr/sports/auto-moto.rss",
-            "name": "Franceinfo",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/franceinfo.jpeg",
-            "backgroundImg": "./icons/WebsitesIcons/franceinfo_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lapresse.ca/sports/course-automobile/rss",
             "name": "La Presse",
             "articlesCountryISO3": "CAN",
             "articlesCount": 2,
@@ -2028,7 +2005,14 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/leclaireurFNAC.png",
             "backgroundImg": "./icons/WebsitesIcons/leclaireurFNAC_bgIMG.jpg"
-          }  
+          },
+          {
+            "url": "https://www.7sur7.be/spectacles/rss.xml",
+            "name": "7sur7",
+            "articlesCountryISO3": "BEL",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/7sur7.png"
+          }
         ],
         "Jeux vidéo": [
           {
@@ -2151,50 +2135,6 @@
             "iconImg": "./icons/WebsitesIcons/fisheye.png",
             "backgroundImg": "./icons/WebsitesIcons/fisheye_bgIMG.jpg"
           }
-        ],
-        "Mode & beauté": [
-          {
-            "url": "https://www.lemonde.fr/m-mode/rss_full.xml",
-            "name": "Le Monde",
-            "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/lemonde.png",
-            "backgroundImg": "./icons/WebsitesIcons/lemonde_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.francetvinfo.fr/culture/mode.rss",
-            "name": "Franceinfo",
-            "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/franceinfo.jpeg",
-            "backgroundImg": "./icons/WebsitesIcons/franceinfo_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.bfmtv.com/rss/people/mode/",
-            "name": "BFM TV",
-            "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/bfmtv.png",
-            "backgroundImg": "./icons/WebsitesIcons/bfmtv_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.lapresse.ca/societe/mode-et-beaute/rss",
-            "name": "La Presse",
-            "articlesCountryISO3": "CAN",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/lapresse.png"
-          },
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/mode/?outputType=xml",
-            "name": "Libération",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/liberation.png",
-            "backgroundImg": "./icons/WebsitesIcons/liberation_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/beaute/?outputType=xml",
-            "name": "Libération",
-            "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/liberation.png",
-            "backgroundImg": "./icons/WebsitesIcons/liberation_bgIMG.jpg"
-          }      
         ],
         "Patrimoine, architecture & urbanisme": [
           {
@@ -2586,7 +2526,15 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/capital.png",
             "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
-          } 
+          },
+          {
+            "url": "https://www.7sur7.be/belgique/rss.xml",
+            "name": "7sur7",
+            "articlesCountryISO3": "BEL",
+            "specification": "bigList",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/7sur7.png"
+          }
         ],
         "Suisse": [
           {
@@ -3588,6 +3536,16 @@
             "iconImg": "./icons/WebsitesIcons/lacroix.png"
           }
         ],
+        "Écologie politique": [
+          {
+            "url": "https://nouvelobs.com/ecologie-politique/rss.xml",
+            "name": "L'Obs",
+            "articlesCount": 1,
+            "specification": "firstHeadline",
+            "iconImg": "./icons/WebsitesIcons/lobs.png",
+            "backgroundImg": "./icons/WebsitesIcons/lobs_bgIMG.jpg"
+          }
+        ],
         "Presse étrangère": [
           {
             "url": "https://www.telegraph.co.uk/politics/rss.xml",
@@ -3738,6 +3696,14 @@
             "articlesCount": 3,
             "iconImg": "./icons/WebsitesIcons/humanite.png",
             "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
+          },
+          {
+            "url": "https://o.nouvelobs.com/opinions/rss.xml",
+            "name": "L'Obs",
+            "specification": "firstFocus",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/lobs.png",
+            "backgroundImg": "./icons/WebsitesIcons/lobs_bgIMG.jpg"
           }    
         ],
         "Monde": [
@@ -3968,6 +3934,13 @@
         ],
         "Santé": [
           {
+            "url": "https://www.7sur7.be/sante-et-bien-etre/rss.xml",
+            "name": "7sur7",
+            "articlesCountryISO3": "BEL",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/7sur7.png"
+          },
+          {
             "url": "https://www.ladepeche.fr/sante/rss.xml",
             "name": "La Dépêche",
             "specification": "firstHeadline",
@@ -4078,7 +4051,15 @@
             "specification": "firstHeadline",
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/lacroix.png"
-          }   
+          },
+          {
+            "url": "https://o.nouvelobs.com/education/rss.xml",
+            "name": "L'Obs",
+            "articlesCount": 3,
+            "specification": "firstHeadline",
+            "iconImg": "./icons/WebsitesIcons/lobs.png",
+            "backgroundImg": "./icons/WebsitesIcons/lobs_bgIMG.jpg"
+          }
         ],
         "Police & justice":[
           {
@@ -4205,6 +4186,22 @@
             "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
           }
         ],
+        "Faits divers": [
+          {
+            "url": "https://www.7sur7.be/faits-divers/rss.xml",
+            "name": "7sur7",
+            "articlesCountryISO3": "BEL",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/7sur7.png"
+          },
+          {
+            "url": "https://o.nouvelobs.com/faits-divers/rss.xml",
+            "name": "L'Obs",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/lobs.png",
+            "backgroundImg": "./icons/WebsitesIcons/lobs_bgIMG.jpg"
+          }  
+        ],
         "Discriminations & inégalités": [
           {
             "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=discrimination,harcelement,racisme,sexisme",
@@ -4276,6 +4273,13 @@
     "Science": {
       "subtopics": {
         "noSubtopic": [
+          {
+            "url": "https://www.7sur7.be/sciences/rss.xml",
+            "name": "7sur7",
+            "articlesCountryISO3": "BEL",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/7sur7.png"
+          },
           {
             "url": "https://www.francetvinfo.fr/sciences.rss",
             "name": "Franceinfo",
@@ -4582,7 +4586,14 @@
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/humanite.png",
             "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
-          }  
+          },
+          {
+            "url": "https://www.7sur7.be/ecologie/rss.xml",
+            "name": "7sur7",
+            "articlesCountryISO3": "BEL",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/7sur7.png"
+          }   
         ],
         "Environnement": [
           {
@@ -4758,6 +4769,14 @@
             "name": "La Croix",
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/lacroix.png"
+          },
+          {
+            "url": "https://o.nouvelobs.com/animaux/rss.xml",
+            "name": "L'Obs",
+            "articlesCount": 3,
+            "specification": "firstHeadline",
+            "iconImg": "./icons/WebsitesIcons/lobs.png",
+            "backgroundImg": "./icons/WebsitesIcons/lobs_bgIMG.jpg"
           } 
         ],
         "Agriculture": [
@@ -5059,21 +5078,21 @@
         ],
         "GAFAM": [
           {
-            "url": "https://www.journaldugeek.com/tag/gafam/feed",
-            "name": "Le journal du geek",
-            "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/jdg.png"
-          },
-          {
             "url": "https://www.journaldugeek.com/tag/apple/feed",
             "name": "Le journal du geek",
-            "articlesCount": 1,
+            "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/jdg.png"
           },
           {
             "url": "https://www.journaldugeek.com/tag/microsoft/feed",
             "name": "Le journal du geek",
             "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/jdg.png"
+          },
+          {
+            "url": "https://www.journaldugeek.com/tag/amazon/feed",
+            "name": "Le journal du geek",
+            "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/jdg.png"
           },
           {
@@ -5085,7 +5104,7 @@
           {
             "url": "https://www.journaldugeek.com/tag/google/feed",
             "name": "Le journal du geek",
-            "articlesCount": 1,
+            "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/jdg.png"
           }
         ],
@@ -5258,13 +5277,6 @@
             "iconImg": "./icons/WebsitesIcons/radiocanada.png"
           },
           {
-            "url": "https://cdn1-parismatch.lanmedia.fr/var/exports/rss/rss-vivre.xml",
-            "name": "Paris Match",
-            "specification": "firstFocus",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/parismatch.png"
-          },
-          {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/?outputType=xml",
             "name": "Libération",
             "specification": "firstFocus",
@@ -5353,7 +5365,14 @@
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/capital.png",
             "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
-          }  
+          },
+          {
+            "url": "https://www.7sur7.be/voyager/rss.xml",
+            "name": "7sur7",
+            "articlesCountryISO3": "BEL",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/7sur7.png"
+          }   
         ],
         "Loisirs": [
           {
@@ -5447,6 +5466,13 @@
             "name": "La Croix",
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/lacroix.png"
+          },
+          {
+            "url": "https://www.7sur7.be/manger/rss.xml",
+            "name": "7sur7",
+            "articlesCountryISO3": "BEL",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/7sur7.png"
           }    
         ],
         "Luxe": [
@@ -5480,11 +5506,26 @@
             "iconImg": "./icons/WebsitesIcons/radiocanada.png"
           },
           {
-            "url": "https://cdn1-parismatch.lanmedia.fr/var/exports/rss/rss-people.xml",
-            "name": "Paris Match",
-            "articlesCount": 4,
-            "iconImg": "./icons/WebsitesIcons/parismatch.png"
-          } 
+            "url": "https://www.7sur7.be/people/rss.xml",
+            "name": "7sur7",
+            "articlesCountryISO3": "BEL",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/7sur7.png"
+          },
+          {
+            "url": "https://o.nouvelobs.com/people/rss.xml",
+            "name": "L'Obs",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/lobs.png",
+            "backgroundImg": "./icons/WebsitesIcons/lobs_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.20minutes.fr/feeds/rss-people.xml",
+            "name": "20 Minutes",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/20minutes.png",
+            "backgroundImg": "./icons/WebsitesIcons/20minutesmaison_bgIMG.jpg"
+          }
         ],
         "Royautés": [
           {
@@ -5495,11 +5536,12 @@
             "backgroundImg": "./icons/WebsitesIcons/franceinfo_bgIMG.jpg"
           },
           {
-            "url": "https://cdn1-parismatch.lanmedia.fr/var/exports/rss/rss-royal-blog.xml",
-            "name": "Paris Match",
-            "articlesCount": 5,
-            "iconImg": "./icons/WebsitesIcons/parismatch.png"
-          } 
+            "url": "https://www.7sur7.be/monarchies/rss.xml",
+            "name": "7sur7",
+            "articlesCountryISO3": "BEL",
+            "articlesCount": 3,
+            "iconImg": "./icons/WebsitesIcons/7sur7.png"
+          }
         ],
         "Maison & jardin": [
           {
@@ -5523,7 +5565,66 @@
             "iconImg": "./icons/WebsitesIcons/lacroix.png"
           }
         ],
+        "Mode & beauté": [
+          {
+            "url": "https://www.lemonde.fr/m-mode/rss_full.xml",
+            "name": "Le Monde",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/lemonde.png",
+            "backgroundImg": "./icons/WebsitesIcons/lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/culture/mode.rss",
+            "name": "Franceinfo",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/franceinfo.jpeg",
+            "backgroundImg": "./icons/WebsitesIcons/franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bfmtv.com/rss/people/mode/",
+            "name": "BFM TV",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/bfmtv.png",
+            "backgroundImg": "./icons/WebsitesIcons/bfmtv_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/societe/mode-et-beaute/rss",
+            "name": "La Presse",
+            "articlesCountryISO3": "CAN",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/lapresse.png"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/mode/?outputType=xml",
+            "name": "Libération",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/liberation.png",
+            "backgroundImg": "./icons/WebsitesIcons/liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/lifestyle/beaute/?outputType=xml",
+            "name": "Libération",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/liberation.png",
+            "backgroundImg": "./icons/WebsitesIcons/liberation_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.7sur7.be/beaute/rss.xml",
+            "name": "7sur7",
+            "articlesCountryISO3": "BEL",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/7sur7.png"
+          }      
+        ],
         "Insolite & curiosité": [
+          {
+            "url": "https://www.7sur7.be/tendances/rss.xml",
+            "name": "7sur7",
+            "articlesCountryISO3": "BEL",
+            "specification": "bigList",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/7sur7.png"
+          },
           {
             "url": "https://www.ladepeche.fr/insolite/rss.xml",
             "name": "La Dépêche",
@@ -5564,6 +5665,15 @@
             "articlesCount": 1,
             "iconImg": "./icons/WebsitesIcons/europe1.png",
             "backgroundImg": "./icons/WebsitesIcons/europe1_bgIMG.jpg"
+          }
+        ],
+        "Sexe & relations": [
+          {
+            "url": "https://www.7sur7.be/sexe-et-relations/rss.xml",
+            "name": "7sur7",
+            "articlesCountryISO3": "BEL",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/7sur7.png"
           }
         ],
         "Presse étrangère": [
@@ -5821,8 +5931,65 @@
             "specification": "firstHeadline bigList",
             "articlesCount": 5,
             "iconImg": "./icons/WebsitesIcons/f1imag.png"
+          },
+          {
+            "url": "https://www.7sur7.be/formule-1/rss.xml",
+            "name": "7sur7",
+            "articlesCountryISO3": "BEL",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/7sur7.png"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_F1.xml",
+            "name": "L'Équipe",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/lequipe.png",
+            "backgroundImg": "./icons/WebsitesIcons/lequipe_bgIMG.jpg"
           }
-
+        ],
+        "Sports mécaniques": [
+          {
+            "url": "https://rmcsport.bfmtv.com/rss/auto-moto/",
+            "name": "RMC Sport",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/rmcsport.jpeg",
+            "backgroundImg": "./icons/WebsitesIcons/rmcsport_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lemonde.fr/sports-mecaniques/rss_full.xml",
+            "name": "Le Monde",
+            "articlesCount": 1,
+            "iconImg": "./icons/WebsitesIcons/lemonde.png",
+            "backgroundImg": "./icons/WebsitesIcons/lemonde_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Moto.xml",
+            "name": "L'Équipe",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/lequipe.png",
+            "backgroundImg": "./icons/WebsitesIcons/lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www6.lequipe.fr/rss/actu_rss_Rallye.xml",
+            "name": "L'Équipe",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/lequipe.png",
+            "backgroundImg": "./icons/WebsitesIcons/lequipe_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.francetvinfo.fr/sports/auto-moto.rss",
+            "name": "Franceinfo",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/franceinfo.jpeg",
+            "backgroundImg": "./icons/WebsitesIcons/franceinfo_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.lapresse.ca/sports/course-automobile/rss",
+            "name": "La Presse",
+            "articlesCountryISO3": "CAN",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/lapresse.png"
+          }
         ],
         "Presse étrangère": [
           {

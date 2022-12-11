@@ -150,7 +150,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
      
             let arrayCategories = concatListofCategories.split(',').slice(0, 3); /* presents categories in an array with 3 elements (split in elements by comma sign) */
            
-            var dict = ['Content Type: Personal Profile','Vivre','Images','blog','Auto-News','has_diapo','Produits','Radio 1','all','News','Actu','Actus','Video','Vidéo','Diaporama','Not found','Fil Info','Magazine']
+            var dict = ['Content Type: Personal Profile','Vivre','Images','blog','Auto-News','has_diapo','Produits','Radio 1','all','News','Actu','Actus','Video','Vidéo','Diaporama','Not found','Fil Info','Magazine','Flash Actu']
             
             var arrayCategoriesTEST = []
             for (var element of arrayCategories) {
