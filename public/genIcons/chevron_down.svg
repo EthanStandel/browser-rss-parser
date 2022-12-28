@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   class="chevronFill"
+   id="svg4"
+   sodipodi:docname="chevron_down.svg"
+   width="100"
+   height="58.353394"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="4.3192079"
+     inkscape:cx="39.09782"
+     inkscape:cy="23.108991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     d="m 50.000114,58.353392 c 2.280256,0 4.226884,-0.890892 6.006642,-2.728314 L 97.83103,12.806496 C 99.277162,11.358832 100,9.632696 100,7.572554 100,3.396508 96.663166,0 92.491754,0 90.489538,0 88.54291,0.890836 87.041306,2.394262 L 50.055698,40.479856 12.958807,2.394262 C 11.457204,0.890836 9.5661604,0 7.4526612,0 3.3370618,0 0,3.396508 0,7.572554 0,9.632696 0.77865156,11.358832 2.1690846,12.806496 L 43.993358,55.680728 c 1.835344,1.781772 3.726388,2.672664 6.006756,2.672664 z"
+     id="path2"
+     style="fill-rule:evenodd;stroke-width:1.1396935"
+     inkscape:connector-curvature="0" />
+</svg>

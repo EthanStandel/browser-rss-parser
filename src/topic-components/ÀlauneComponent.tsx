@@ -1,159 +1,109 @@
 import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddisplay } from "./topicVAR";
+import { disclosureDisplay } from '../visualScripts';
 
+const ÀlauneEntries = [
+  {
+    "title": "Journal de 8h",
+    "URL": "https://www.francetvinfo.fr/replay-jt/france-2/8-heures/",
+    "image1": "./icons/WebsitesIcons/france2.png",
+    "image2": "./icons/WebsitesIcons/appletv.png",
+    "duration": "15min",
+    "description": "Le JT de 8h propose des reportages et témoignages sur les événements de la nuit et donne l'agenda de la journée."
+  },
+  {
+    "title": "Réveil Courrier",
+    "URL": "https://reveil.courrierinternational.com/#/",
+    "image1": "./icons/WebsitesIcons/courrierinter-reveil.png",
+    "image2": "./icons/WebsitesIcons/applenews.png",
+    "duration": "25min",
+    "description": "Chaque matin à 6h, une sélection des meilleurs articles de la presse étrangère, un résumé de l’actualité internationale utile pour bien commencer la journée."
+  },
+  {
+    "title": "La météo",
+    "URL": "https://www.rtl.fr/programmes/la-meteo-a-7-jours",
+    "image1": "./icons/WebsitesIcons/rtl.png",
+    "image2": "./icons/WebsitesIcons/applepodcasts.png",
+    "duration": "2min",
+    "description": "Tous les jours dès 4:37, retrouvez la météo avec le service météo de RTL."
+  },
+  {
+    "title": "Le jour où",
+    "URL": "https://www.europe1.fr/emissions/le-jour-ou",
+    "image1": "./icons/WebsitesIcons/europe1.png",
+    "image2": "./icons/WebsitesIcons/applepodcasts.png",
+    "duration": "3min",
+    "description": "Dans le jour où, tous les matins à 7:23, le passé éclaire le présent&nbsp;: grâce à ses archives, la rédaction d'Europe 1 fait le récit d'un événement relié à l'actualité.",
+    "specification": "LàV"
+  },
+  {
+    "title": "La question du jour",
+    "URL": "https://www.franceculture.fr/emissions/la-question-du-jour",
+    "image1": "./icons/WebsitesIcons/franceculture.png",
+    "image2": "./icons/WebsitesIcons/applepodcasts.png",
+    "duration": "8min",
+    "description": "Pour enrichir et approfondir les questions d’actualité, Guillaume Erner pose au meilleur expert du sujet la Question du jour à 7:13.",
+    "specification": "LàV"
+  }
+]
+
+let out =""
+for (let i of ÀlauneEntries) {
+  out += `
+  <li class="TVbanner ">
+    <a href="${i.URL}" target="_blank" rel="noreferrer">
+      <div class="media">
+        <div class="iconContainer">
+          <div class="icon-image">
+            <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg" alt=""/>
+          </div>
+          <div class="icon-image double-img">
+            <img src="${i.image1}"/>
+            <img src="${i.image2}"/>
+          </div>
+        </div>
+        <div class="itemContainer">
+          <div class="justifiedTitle">
+            <h6 class="titleLine">
+              <div class="ItemTitle">
+              ${i.title}
+              </div>
+            </h6>
+            <div class="r2 articleDate">${i.duration}</div>
+          </div>    
+          <div class="descriptionLine">
+            <div class="h8 item-description">
+            ${i.description}
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </li>
+  `
+}
+
+// used typeofDisclosure used for id and onClick must be the same
 const ÀlauneComponent = () => {
+
   return (
-  <div className="LeftPodcastsColumn">
-    <div className="r2 secondaryColor">{new Date().toLocaleDateString([], {weekday:'long', day:'numeric', month: 'long'})}</div>
-    <ul className='rss-podcasts'> 
-    <div className="intro">
-        <h5 className="bold">Rendez-vous avec l'info</h5>
-      </div>      
-    <li className="nList TVbanner ">
-      <a href="https://www.francetvinfo.fr/replay-jt/france-2/8-heures/" target="_blank" rel="noreferrer">
-        <div className="media">
-          <div className="iconContainer">
-            <div className="icon-image">
-              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
-            </div>
-            <div className="icon-image double-img">
-              <img src="./icons/WebsitesIcons/france2.png"/>
-              <img src="./icons/WebsitesIcons/appletv.png"/>
-            </div>
+    <div className="LeftPodcastsColumn">
+      <div className="Disclosure">
+        <div className="intro" id="disclosureHeader News" onClick={() => disclosureDisplay("News")}> 
+          <div>
+            <div className="r2 secondaryColor">{new Date().toLocaleDateString([], {weekday:'long', day:'numeric', month: 'long'}) + " " + ((String(new Date().toLocaleDateString([], {month:'numeric'})) >= "10") ?? (String(new Date().toLocaleDateString([], {month:'numeric'})) <= "1") ? new Date().toLocaleDateString([], {year:'numeric'}) : "")}</div> 
+            <h5 className="bold">Les rendez-vous à la une</h5>
           </div>
-          <div className="itemContainer">
-            <div className="item-F-line">
-              <h6 className="titleLine">JT de 8h - Télématin</h6>
-              <div className="footnote item-publish-date">15 min</div>
-            </div>    
-            <div className="descriptionLine">
-              <div className="h8 item-description">
-              Le JT de 8h propose des reportages et témoignages sur les événements de la nuit et donne l'agenda de la journée.
-              </div>
-            </div>
+          <div className="chevron">
+            <svg viewBox="0 0 100 58.353394" /* ratio of the svg file*/ width="12">
+              <use xlinkHref="./genIcons/chevron_down.svg#path2"></use>
+            </svg>
           </div>
         </div>
-      </a>
-    </li>
-    <li className="TVbanner nList">
-      <a href="https://reveil.courrierinternational.com/#/" target="_blank" rel="noreferrer">
-        <div className="media">
-          <div className="iconContainer">
-            <div className="icon-image">
-              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
-            </div>
-            <div className="icon-image double-img">
-              <img src="./icons/WebsitesIcons/courrierinter-reveil.png"/>
-              <img src="./icons/WebsitesIcons/applenews.png"/>
-            </div>
-          </div>
-          <div className="itemContainer">
-            <div className="item-F-line">
-              <h6 className="titleLine">Réveil Courrier</h6>
-              <div className="footnote item-publish-date">25 min</div>
-            </div>    
-            <div className="descriptionLine">
-              <div className="item-descriptionWrapper">
-                <div className="h8 item-description">
-                Chaque matin à 6h, une sélection des meilleurs articles de la presse étrangère, un résumé de l’actualité internationale utile pour bien commencer la journée. 
-                </div>
-              </div>
-            </div>
-          </div>
+        <div id="disclosurePlus"> 
+          <ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: out}} />
         </div>
-      </a>
-    </li>
-    <li className="TVbanner nList">
-      <a href="https://www.rtl.fr/programmes/la-meteo-a-7-jours" target="_blank" rel="noreferrer">
-        <div className="media">
-        <div className="iconContainer">
-            <div className="icon-image">
-              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
-            </div>
-            <div className="icon-image double-img">
-              <img src="./icons/WebsitesIcons/rtl.png"/>
-              <img src="./icons/WebsitesIcons/applepodcasts.png"/>
-            </div>
-          </div>
-          <div className="itemContainer">
-            <div className="item-F-line">
-              <h6 className="titleLine">La météo</h6>
-              <div className="footnote item-publish-date">2 min</div>
-            </div>    
-            <div className="descriptionLine">
-              <div className="item-descriptionWrapper">
-                <div className="h8 item-description">
-                Tous les jours dès 4:37, retrouvez la météo avec le service météo de RTL.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </li>
-    <li className={"nList TVbanner " + LàVdisplay}>
-      <a href="https://www.europe1.fr/emissions/le-jour-ou" target="_blank" rel="noreferrer">
-        <div className="media">
-          <div className="iconContainer">
-            <div className="icon-image">
-              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
-            </div>
-            <div className="icon-image double-img">
-              <img src="./icons/WebsitesIcons/europe1.png"/>
-              <img src="./icons/WebsitesIcons/applepodcasts.png"/>
-            </div>
-          </div>
-          <div className="itemContainer">
-            <div className="item-F-line">
-              <h6 className="titleLine">Le jour où – Europe Matin</h6>
-              <div className="icon-footnote-container footnote">3 min</div>
-            </div>    
-            <div className="descriptionLine">
-              <div className="item-descriptionWrapper">
-                <div className="h8 item-description">
-                Dans le jour où, tous les matins à 7:23, le passé éclaire le présent&nbsp;: grâce à ses archives, la rédaction d'Europe 1 fait le récit d'un événement relié à l'actualité.
-                </div>
-              </div>
-            </div>
-            <div className="descriptionLine always">
-              <div className="r2 item-publish-date">{LàVdiffusion}</div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </li>
-    <li className={"nList TVbanner " + LàVdisplay}>
-      <a href="https://www.franceculture.fr/emissions/la-question-du-jour" target="_blank" rel="noreferrer">
-        <div className="media">
-          <div className="iconContainer">
-            <div className="icon-image">
-              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
-            </div>
-            <div className="icon-image double-img">
-              <img src="./icons/WebsitesIcons/franceculture.png"/>
-              <img src="./icons/WebsitesIcons/applepodcasts.png"/>
-            </div>
-          </div>
-          <div className="itemContainer">
-            <div className="item-F-line">
-              <h6 className="titleLine">La Question du jour</h6>
-              <div className="icon-footnote-container footnote">8 min</div>
-            </div>    
-            <div className="descriptionLine">
-              <div className="item-descriptionWrapper">
-                <div className="h8 item-description">
-                Pour enrichir et approfondir les questions d’actualité, Guillaume Erner pose au meilleur expert du sujet la Question du jour à 7:13.
-                </div>
-              </div>
-            </div>
-            <div className="descriptionLine always">
-              <div className="r2 item-publish-date">{LàVdiffusion}</div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </li>
-    </ul>
-  </div>
+      </div>
+    </div>
   );
 }
 

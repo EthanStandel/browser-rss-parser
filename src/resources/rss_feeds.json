@@ -6102,7 +6102,21 @@
             "iconImg": "./icons/WebsitesIcons/ted-ideas.png",
             "backgroundImg": "./icons/WebsitesIcons/ted_bgIMG.jpg"
           }
-
+        ]
+      }
+    },
+    "Sandbox": {
+      "subtopics": {
+        "noSubtopic": [
+          {
+            "url": "https://www.apple.com/tv-pr/news-feed.xml",
+            "name": "Apple",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline bigList",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/ted-ideas.png",
+            "backgroundImg": "./icons/WebsitesIcons/ted_bgIMG.jpg"
+          }
         ]
       }
     }

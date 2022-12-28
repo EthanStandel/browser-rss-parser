@@ -99,6 +99,11 @@ ul {
     overflow-x: auto;
     overscroll-behavior-y: none;
     white-space: nowrap;
+    
+    @media only screen and (min-width: 1000px) { // hide li elements when scrolled to right
+      -webkit-mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 100px), transparent);
+      mask-image: linear-gradient(to left, black calc(100% - 60px), transparent);
+    }
   
     /*/ do not display bar to scroll through topics on top of the page/*/
     &::-webkit-scrollbar {
@@ -112,11 +117,11 @@ ul {
       @media only screen and (min-width: 1000px) {
         
         &:first-child {
-          margin-left: 10px;
+          margin-left: 25px;
         }
 
         &:last-child {
-          margin-right: 10px;
+          margin-right: 100px;
         }
       }
     
@@ -252,19 +257,6 @@ section.ArticleSection {
 
 /*/ list containing a whole subtopic /*/
 ul {
-
-  &.rss-podcasts {
-    background-color: var(--secondarySystemGroupedBackground);
-    border-radius: var(--rounded-corners-block);
-    box-shadow: 2px 4px 12px rgba(0,0,0, 0.08);
-    margin-bottom: 15px;
-
-    .intro {
-      padding: 15px 10px;
-      border-bottom: 1.8px solid;
-      max-width: 100%;
-    }
-  }
 
   &.rss, &.rss-podcasts {
 
@@ -899,10 +891,13 @@ em:not(.itemContainer em) {
 }
 
 .nList {
-  background-color: var(--secondarySystemGroupedBackground);
-  border-radius: var(--rounded-corners-block);
-  filter: drop-shadow(0 10px 10px var(--hardShadow));
-  border: 1px solid var(--cardBorder);
+
+  &:not(.rss-podcasts) {
+    border: 1px solid var(--cardBorder);
+    background-color: var(--secondarySystemGroupedBackground);
+    border-radius: var(--rounded-corners-block);
+    filter: drop-shadow(0 10px 10px var(--hardShadow));
+  }
   
   h4 {
     border-bottom: 3.2px solid var(--colorTheme);
@@ -1065,5 +1060,46 @@ em:not(.itemContainer em) {
         -webkit-box-orient: vertical;
       }
     }
+  }
+}
+
+.Disclosure {
+  background-color: var(--secondarySystemGroupedBackground);
+  border-radius: var(--rounded-corners-block);
+  box-shadow: 2px 4px 12px rgba(0,0,0, 0.08);
+  margin-bottom: 15px;
+  overflow: hidden;
+  border: 1px solid var(--cardBorder);
+  background-color: var(--secondarySystemGroupedBackground);
+  border-radius: var(--rounded-corners-block);
+  filter: drop-shadow(0 10px 10px var(--hardShadow));
+
+  #disclosurePlus {
+    transition: max-height 0.4s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .intro {
+    padding: 15px 16px;
+    max-width: 100%;
+    cursor: pointer;
+    border-bottom: 1.8px rgba(0,0,0,0) solid;
+    transition: border-color 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+}
+
+.chevron {
+  transition: all 0.35s ease;
+  transform : rotate(-90deg);
+  fill: var(--separator);
+
+  svg {
+    height: 12px;
+    width: 12px;
   }
 }

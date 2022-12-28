@@ -163,6 +163,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                 .replace('&amp;', '&')
                 .replace('topics:things/','')
                 .replace('topics:places/','')
+                .replace('d&#039;',"'")
                 )
               ;
               
