@@ -2,19 +2,22 @@ import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddispla
 import { disclosureDisplay } from '../visualScripts';
 
 const ÀlauneEntries = [
+
+  // always have a countryISOLabel by default once
   {
     "title": "Journal de 8h",
     "URL": "https://www.francetvinfo.fr/replay-jt/france-2/8-heures/",
     "image1": "./icons/WebsitesIcons/france2.png",
     "image2": "./icons/WebsitesIcons/appletv.png",
     "duration": "15min",
-    "description": "Le JT de 8h propose des reportages et témoignages sur les événements de la nuit et donne l'agenda de la journée."
+    "description": "Le JT de 8h propose des reportages et témoignages sur les événements de la nuit et donne l'agenda de la journée.",
+    "countryISO3Label": "FRA",
   },
   {
     "title": "Réveil Courrier",
     "URL": "https://reveil.courrierinternational.com/#/",
     "image1": "./icons/WebsitesIcons/courrierinter-reveil.png",
-    "image2": "./icons/WebsitesIcons/applenews.png",
+    "image2": "",
     "duration": "25min",
     "description": "Chaque matin à 6h, une sélection des meilleurs articles de la presse étrangère, un résumé de l’actualité internationale utile pour bien commencer la journée."
   },
@@ -56,14 +59,15 @@ for (let i of ÀlauneEntries) {
           <div class="icon-image">
             <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg" alt=""/>
           </div>
-          <div class="icon-image double-img">
+          <div class="icon-image ${(i.image2 !== '') ? ' double-img' : ''}">
             <img src="${i.image1}"/>
-            <img src="${i.image2}"/>
+            ${i.image2 == '' ? "" : "<img src=" + i.image2 + " />"}
           </div>
         </div>
         <div class="itemContainer">
           <div class="justifiedTitle">
             <h6 class="titleLine">
+              ${((i?.countryISO3Label == "FRA") || (i?.countryISO3Label == undefined)) ? "" : "<div class='r4 LanguageLabel'>" + i.countryISO3Label + "</div>"}
               <div class="ItemTitle">
               ${i.title}
               </div>
@@ -84,7 +88,6 @@ for (let i of ÀlauneEntries) {
 
 // used typeofDisclosure used for id and onClick must be the same
 const ÀlauneComponent = () => {
-
   return (
     <div className="LeftPodcastsColumn">
       <div className="Disclosure">
