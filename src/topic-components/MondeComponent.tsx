@@ -1,4 +1,4 @@
-import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddisplay } from "./topicVAR";
+import { LàVdiffusion } from "./topicVAR";
 
 const IdeesComponent = () => {
   return (
@@ -7,7 +7,7 @@ const IdeesComponent = () => {
       <div className="intro">
         <h5 className="bold">Rendez-vous à l'international</h5>
       </div>
-    <li className={"nList TVbanner " + LàVdisplay}>
+    <li className={"nList TVbanner "}>
       <a href="https://www.europe1.fr/emissions/La-revue-de-presse-internationale" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">
@@ -38,7 +38,7 @@ const IdeesComponent = () => {
         </div>
       </a>
     </li>
-    <li className={"nList TVbanner " + LàVdisplay}>
+    <li className={"nList TVbanner "}>
       <a href="https://www.europe1.fr/emissions/vincent-hervouet-vous-parle-international" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">

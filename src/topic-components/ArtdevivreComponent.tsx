@@ -1,4 +1,4 @@
-import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddisplay } from "./topicVAR";
+import { LàVdiffusion, SDdiffusion, Ddiffusion } from "./topicVAR";
 
 const ArtdevivreComponent = () => {
   return (
@@ -7,7 +7,7 @@ const ArtdevivreComponent = () => {
       <div className="intro">
         <h5 className="bold">Rendez-vous avec l'art de vivre</h5>
       </div>
-    <li className={"nList TVbanner " + LàVdisplay}>
+    <li className="nList TVbanner ">
       <a href="https://www.europe1.fr/emissions/les-origines" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">
@@ -40,7 +40,7 @@ const ArtdevivreComponent = () => {
         </div>
       </a>
     </li>
-    <li className={"nList TVbanner " + LàVdisplay}>
+    <li className={"nList TVbanner "}>
       <a href="https://www.europe1.fr/emissions/les-tendances" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">
@@ -71,7 +71,7 @@ const ArtdevivreComponent = () => {
         </div>
       </a>
     </li>
-    <li className={"nList TVbanner " + LàVdisplay}>
+    <li className={"nList TVbanner "}>
       <a href="https://www.europe1.fr/emissions/vite-fait-tres-bien-fait" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">
@@ -102,7 +102,7 @@ const ArtdevivreComponent = () => {
         </div>
       </a>
     </li>
-    <li className={"nList TVbanner "+ SDdisplay}>
+    <li className={"nList TVbanner "}>
       <a href="https://www.francetvinfo.fr/replay-radio/a-la-carte/" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">

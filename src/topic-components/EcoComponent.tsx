@@ -1,4 +1,4 @@
-import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddisplay } from "./topicVAR";
+import { LàVdiffusion, SDdiffusion, Ddiffusion } from "./topicVAR";
 
 const EcoComponent = () => {
   return (
@@ -7,7 +7,7 @@ const EcoComponent = () => {
       <div className="intro">
         <h5 className="bold">Rendez-vous avec l'éco</h5>
       </div>
-    <li className={"nList TVbanner " + LàVdisplay}>
+    <li className={"nList TVbanner "}>
       <a href="https://www.europe1.fr/emissions/linterview-eco" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">
@@ -38,7 +38,7 @@ const EcoComponent = () => {
         </div>
       </a>
     </li>
-    <li className={"nList TVbanner " + LàVdisplay}>
+    <li className={"nList TVbanner "}>
       <a href="https://www.europe1.fr/emissions/L-edito-eco2" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">
@@ -69,7 +69,7 @@ const EcoComponent = () => {
         </div>
       </a>
     </li>
-    <li className={"nList TVbanner " + LàVdisplay}>
+    <li className={"nList TVbanner "}>
       <a href="https://www.europe1.fr/emissions/la-bourse" target="_blank" rel="noreferrer">
         <div className="media">
          <div className="iconContainer">
@@ -128,7 +128,7 @@ const EcoComponent = () => {
         </div>
       </a>
     </li>
-    <li className={"nList TVbanner " + LàVdisplay}>
+    <li className={"nList TVbanner " }>
       <a href="https://www.franceculture.fr/emissions/le-pourquoi-du-comment-economie-social" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">

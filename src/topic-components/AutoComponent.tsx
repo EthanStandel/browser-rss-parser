@@ -1,4 +1,4 @@
-import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddisplay } from "./topicVAR";
+import { Ddiffusion } from "./topicVAR";
 
 const AutoComponent = () => {
   return (
@@ -7,7 +7,7 @@ const AutoComponent = () => {
       <div className="intro">
         <h5 className="bold">Rendez-vous sportifs</h5>
       </div>
-    <li className={"nList TVbanner " + Ddisplay}>
+    <li className={"nList TVbanner "}>
       <a href="https://www.6play.fr/turbo-p_884" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">

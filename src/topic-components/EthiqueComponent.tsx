@@ -1,3 +1,4 @@
+import { MAdiffusion } from "./topicVAR";
 import { disclosureDisplay } from '../visualScripts';
 
 const EthicsEntries = [
@@ -11,6 +12,7 @@ const EthicsEntries = [
     "duration": "5min",
     "description": "Weekly, Kwame Anthony Appiah considers readers’ ethical quandaries.",
     "countryISO3Label": "USA",
+    "specification": MAdiffusion
   }
 ]
 
@@ -43,6 +45,7 @@ for (let i of EthicsEntries) {
             <div class="h8 item-description">
             ${i.description}
             </div>
+            ${(i.specification !== undefined) ? "<div class='descriptionLine always'><div class='r2 item-publish-date'>" + i.specification + "</div> </div>" : ""}
           </div>
         </div>
       </div>

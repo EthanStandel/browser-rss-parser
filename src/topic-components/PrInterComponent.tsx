@@ -1,4 +1,4 @@
-import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddisplay, Sdiffusion, Sdisplay } from "./topicVAR";
+import { LàVdiffusion, SDdiffusion, Ddiffusion, Sdiffusion } from "./topicVAR";
 
 const PrInterComponent = () => {
   return (
@@ -92,7 +92,7 @@ const PrInterComponent = () => {
         </div>
       </a>
     </li>
-    <li className={"nList TVbanner " + LàVdisplay}>
+    <li className={"nList TVbanner "}>
       <a href="https://ici.radio-canada.ca/ohdio/balados/302/nouvelles-info-matin-canada-monde-politique" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">
@@ -123,7 +123,7 @@ const PrInterComponent = () => {
         </div>
       </a>
     </li>
-    <li className={"nList TVbanner " + LàVdisplay}>
+    <li className={"nList TVbanner "}>
       <a href="https://www.franceculture.fr/emissions/revue-de-presse-internationale" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">
@@ -154,7 +154,7 @@ const PrInterComponent = () => {
         </div>
       </a>
     </li>
-    <li className={"nList TVbanner " + Sdisplay}>
+    <li className={"nList TVbanner " }>
       <a href="https://www.franceculture.fr/emissions/la-fabrique-mediatique" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">

@@ -1,4 +1,4 @@
-import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddisplay } from "./topicVAR";
+import { LàVdiffusion } from "./topicVAR";
 
 
 const SportComponent = () => {
@@ -8,7 +8,7 @@ const SportComponent = () => {
       <div className="intro">
         <h5 className="bold">Rendez-vous avec le sport</h5>
       </div>
-    <li className={"nList TVbanner " + LàVdisplay}>
+    <li className={"nList TVbanner "}>
       <a href="https://www.europe1.fr/emissions/ledito-sport" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">
@@ -39,7 +39,7 @@ const SportComponent = () => {
         </div>
       </a>
     </li>
-    <li className={"nList TVbanner " + LàVdisplay}>
+    <li className={"nList TVbanner "}>
       <a href="https://www.franceinter.fr/emissions/histoires-de-sport" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">

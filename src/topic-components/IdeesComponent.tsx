@@ -1,4 +1,4 @@
-import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Sdiffusion, Sdisplay, Ddiffusion, Ddisplay } from "./topicVAR";
+import { LàVdiffusion, Sdiffusion} from "./topicVAR";
 
 const IdeesComponent = () => {
   return (
@@ -7,7 +7,7 @@ const IdeesComponent = () => {
       <div className="intro">
         <h5 className="bold">Rendez-vous avec les idées</h5>
       </div>
-    <li className={"nList TVbanner " + LàVdisplay}>
+    <li className={"nList TVbanner " }>
       <a href="https://www.europe1.fr/emissions/telescopages" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">
@@ -38,7 +38,7 @@ const IdeesComponent = () => {
         </div>
       </a>
     </li>
-    <li className={"nList TVbanner " + LàVdisplay}>
+    <li className={"nList TVbanner "}>
       <a href="https://www.europe1.fr/emissions/delice-in-extremiste" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">
@@ -69,7 +69,7 @@ const IdeesComponent = () => {
         </div>
       </a>
     </li>
-    <li className={"nList TVbanner " + LàVdisplay}>
+    <li className={"nList TVbanner "}>
       <a href="https://www.franceculture.fr/emissions/le-pourquoi-du-comment-philo" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">
@@ -100,7 +100,7 @@ const IdeesComponent = () => {
         </div>
       </a>
     </li>
-    <li className={"nList TVbanner " + Sdisplay}>
+    <li className={"nList TVbanner "}>
       <a href="https://www.franceculture.fr/emissions/la-revue-de-presse-des-idees" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">

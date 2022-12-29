@@ -1,4 +1,4 @@
-import { LàVdiffusion, LàVdisplay, SDdiffusion, SDdisplay, Ddiffusion, Ddisplay, Sdiffusion, Sdisplay, Jdiffusion, Jdisplay, Ldiffusion, Ldisplay, MAdiffusion, MAdisplay, MEdiffusion, MEdisplay, Vdiffusion, Vdisplay } from "./topicVAR";
+import { LàVdiffusion, SDdiffusion, Ddiffusion, Sdiffusion, Jdiffusion, Ldiffusion, MAdiffusion, MEdiffusion, Vdiffusion } from "./topicVAR";
 
 const CultureComponent = () => {
   return (
@@ -7,7 +7,7 @@ const CultureComponent = () => {
       <div className="intro">
         <h5 className="bold">Rendez-vous avec la culture</h5>
       </div>
-      <li className={"nList TVbanner " + LàVdisplay}>
+      <li className={"nList TVbanner " }>
         <a href="https://www.europe1.fr/emissions/L-invite-culture" target="_blank" rel="noreferrer">
           <div className="media">
             <div className="iconContainer">
@@ -38,7 +38,7 @@ const CultureComponent = () => {
           </div>
         </a>
       </li>
-      <li className={"nList TVbanner " + LàVdisplay}>
+      <li className={"nList TVbanner " }>
         <a href="https://www.franceculture.fr/emissions/le-pourquoi-du-comment-histoire" target="_blank" rel="noreferrer">
           <div className="media">
             <div className="iconContainer">
@@ -69,7 +69,7 @@ const CultureComponent = () => {
           </div>
         </a>
       </li>
-      <li className={"nList TVbanner " + LàVdisplay}>
+      <li className={"nList TVbanner "}>
         <a href="https://www.europe1.fr/emissions/dans-lintimite-de-lhistoire" target="_blank" rel="noreferrer">
           <div className="media">
             <div className="iconContainer">
@@ -100,7 +100,7 @@ const CultureComponent = () => {
           </div>
         </a>
       </li>
-      <li className={"nList TVbanner " + Ddisplay}>
+      <li className={"nList TVbanner "}>
         <a href="https://www.fip.fr/emissions/certains-l-aiment-fip" target="_blank" rel="noreferrer">
           <div className="media">
             <div className="iconContainer">
@@ -131,7 +131,7 @@ const CultureComponent = () => {
           </div>
         </a>
       </li>
-      <li className={"nList TVbanner " + Ddisplay}>
+      <li className={"nList TVbanner "}>
         <a href="https://www.radiofrance.fr/francemusique/podcasts/la-correspondance-de-15h21" target="_blank" rel="noreferrer">
           <div className="media">
             <div className="iconContainer">
@@ -162,7 +162,7 @@ const CultureComponent = () => {
           </div>
         </a>
       </li>
-      <li className={"nList TVbanner " + Vdisplay}>
+      <li className={"nList TVbanner "}>
         <a href="https://www.radiofrance.fr/francemusique/podcasts/la-chronique-de-christian-merlin" target="_blank" rel="noreferrer">
           <div className="media">
             <div className="iconContainer">
@@ -193,7 +193,7 @@ const CultureComponent = () => {
           </div>
         </a>
       </li>
-      <li className={"nList TVbanner " + MAdisplay}>
+      <li className={"nList TVbanner "}>
         <a href="https://www.radiofrance.fr/francemusique/podcasts/la-chronique-d-aliette-de-laleu" target="_blank" rel="noreferrer">
           <div className="media">
             <div className="iconContainer">
@@ -224,7 +224,7 @@ const CultureComponent = () => {
           </div>
         </a>
       </li>
-      <li className={"nList TVbanner " + Ldisplay}>
+      <li className={"nList TVbanner "}>
         <a href="https://www.radiofrance.fr/francemusique/podcasts/la-chronique-d-antoine-pecqueur" target="_blank" rel="noreferrer">
           <div className="media">
             <div className="iconContainer">
@@ -255,7 +255,7 @@ const CultureComponent = () => {
           </div>
         </a>
       </li>
-      <li className={"nList TVbanner " + Jdisplay}>
+      <li className={"nList TVbanner "}>
         <a href="https://www.radiofrance.fr/francemusique/podcasts/la-chronique-de-marjolaine-portier-kaltenbach" target="_blank" rel="noreferrer">
           <div className="media">
             <div className="iconContainer">
@@ -286,7 +286,7 @@ const CultureComponent = () => {
           </div>
         </a>
       </li>
-      <li className={"nList TVbanner " + Ddisplay}>
+      <li className={"nList TVbanner "}>
         <a href="https://www.radiofrance.fr/francemusique/podcasts/histoires-de-musique" target="_blank" rel="noreferrer">
           <div className="media">
             <div className="iconContainer">
@@ -317,7 +317,7 @@ const CultureComponent = () => {
           </div>
         </a>
       </li>
-      <li className={"nList TVbanner " + LàVdisplay}>
+      <li className={"nList TVbanner "}>
         <a href="https://www.radiofrance.fr/francemusique/podcasts/au-fil-de-l-actu" target="_blank" rel="noreferrer">
           <div className="media">
             <div className="iconContainer">
@@ -348,7 +348,7 @@ const CultureComponent = () => {
           </div>
         </a>
       </li>
-      <li className={"nList TVbanner " + MEdisplay}>
+      <li className={"nList TVbanner "}>
         <a href="https://www.franceinter.fr/emissions/bulles-de-bd" target="_blank" rel="noreferrer">
           <div className="media">
             <div className="iconContainer">
@@ -379,7 +379,7 @@ const CultureComponent = () => {
           </div>
         </a>
       </li>
-      <li className={"nList TVbanner "+ Ddisplay}>
+      <li className={"nList TVbanner "}>
       <a href="https://www.francetvinfo.fr/replay-radio/jeux-video/" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">
