@@ -1,5 +1,6 @@
 {
   "name": "nuntii",
+  "type": "module",
   "version": "0.1.0",
   "homepage": ".",
   "private": true,
@@ -23,6 +24,7 @@
     "web-vitals": "^1.0.1"
   },
   "devDependencies": {
+    "@babel/plugin-syntax-import-assertions": "^7.20.0",
     "@types/axios": "^0.14.0",
     "@types/jest": "^26.0.15",
     "@types/lodash": "^4.14.190",

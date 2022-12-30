@@ -1,0 +1,26 @@
+{
+    "Franceinfo": {
+        "name": "Franceinfo",
+        "iconImg": "./icons/WebsitesIcons/franceinfo.jpeg",
+        "backgroundImg": "./icons/WebsitesIcons/franceinfo_bgIMG.jpg"
+    },
+    "Europe1": {
+        "name": "Europe 1",
+        "iconImg": "./icons/WebsitesIcons/europe1.png"
+    },
+    "Apple": {
+        "name": "Apple",
+        "ApplePodcasts": {
+            "iconImg": "./icons/WebsitesIcons/applepodcasts.png",
+            "backgroundImg": ""
+        },
+        "AppleNews": {
+            "iconImg": "./icons/WebsitesIcons/applenews.png",
+            "backgroundImg": ""
+        },
+        "AppleTV": {
+            "iconImg": "./icons/WebsitesIcons/appletv.png",
+            "backgroundImg": ""
+        }
+    }
+}

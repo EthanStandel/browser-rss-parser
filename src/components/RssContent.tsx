@@ -7,7 +7,7 @@ import { Spinner } from "./Spinner";
 import _unescape from "lodash/unescape";
 import _deburr from "lodash/deburr";
 import { countReset } from "console";
-import { add, range } from "lodash";
+import { range } from "lodash";
 
 export interface RssFeedSource {
   url: string;

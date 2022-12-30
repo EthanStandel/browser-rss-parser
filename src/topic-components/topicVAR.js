@@ -47,3 +47,44 @@ if (day != 4) {
 }
 
 export { Ldiffusion, MAdiffusion, MEdiffusion, Jdiffusion, Vdiffusion, LàVdiffusion, Sdiffusion, SDdiffusion, Ddiffusion }
+
+export function jsonToListDisclosure(array = Array()) {
+  let out =""
+  for (let i of array) {
+    out += `
+    <li class="TVbanner ">
+      <a href="${i.URL}" target="_blank" rel="noreferrer">
+        <div class="media">
+          <div class="iconContainer">
+            <div class="icon-image">
+              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg" alt=""/>
+            </div>
+            <div class="icon-image ${(i.image2 !== '') ? ' double-img' : ''}">
+              <img src="${i.image1}"/>
+              ${i.image2 == '' ? "" : "<img src=" + i.image2 + " />"}
+            </div>
+          </div>
+          <div class="itemContainer">
+            <div class="justifiedTitle">
+              <h6 class="titleLine">
+                ${((i?.countryISO3Label == "FRA") || (i?.countryISO3Label == undefined)) ? "" : "<div class='r4 LanguageLabel'>" + i.countryISO3Label + "</div>"}
+                <div class="ItemTitle">
+                ${i.title}
+                </div>
+              </h6>
+              <div class="r2 articleDate">${i.duration}</div>
+            </div>    
+            <div class="descriptionLine">
+              <div class="h8 item-description">
+                ${i.description}
+              </div>
+              ${(i.specification !== undefined) ? "<div class='descriptionLine always'><div class='r2 item-publish-date'>" + i.specification + "</div> </div>" : ""}
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+    `
+  }
+  return out 
+}

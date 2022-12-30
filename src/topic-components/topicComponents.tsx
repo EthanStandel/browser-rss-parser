@@ -11,6 +11,8 @@ import MondeComponent from "./MondeComponent";
 import PrInterComponent from "./PrInterComponent";
 import AutoComponent from "./AutoComponent";
 import EthiqueComponent from "./EthiqueComponent";
+import SocieteComponent from "./SocieteComponent";
+import PlaneteComponent from "./PlaneteComponent";
 
 const topicComponents: Record<string, FC> = {
   "Culture": CultureComponent,
@@ -24,7 +26,9 @@ const topicComponents: Record<string, FC> = {
   "Sport": SportComponent,
   "Presse étrangère": PrInterComponent,
   "Éthique": EthiqueComponent,
-  "Auto": AutoComponent
+  "Auto-moto": AutoComponent,
+  "Société": SocieteComponent,
+  "Planète": PlaneteComponent
 };
 
 export default topicComponents;

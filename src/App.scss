@@ -51,7 +51,7 @@ main.Articles {
   .grid {
     margin: auto;
     width: auto;
-    max-width: calc(444px + 40px + 555px);
+    max-width: calc(494px + 40px + 555px); // THEORY only (proportions assigns the width for each elements); LeftPodcastsColumn width + LeftPodcastsColumn padding-right + RightRSSColumn width
   }
 
   /*/ two colums displayed for large devices/*/
