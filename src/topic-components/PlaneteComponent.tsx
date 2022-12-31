@@ -1,4 +1,4 @@
-import { LàVdiffusion, jsonToListDisclosure } from "./topicVAR";
+import { jsonToListDisclosure } from "./topicVAR";
 import { disclosureDisplay } from '../visualScripts';
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
@@ -12,6 +12,7 @@ const PlaneteEntries = [
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "15min",
     "description": "Marine Baousson, oujours en train, a le temps de se poser plein de questions&nbsp;: est ce que ça se recycle, un train&nbsp;? Est-ce que la SNCF fait des efforts pour réduire ses émissions carbone&nbsp;? Est-ce qu’on fait attention aux animaux qui vivent aux abords des voies&nbsp;?",
+    "specification": "2 épisodes par semaine"
   }
 ]
 

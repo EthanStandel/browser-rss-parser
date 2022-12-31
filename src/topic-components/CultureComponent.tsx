@@ -1,9 +1,8 @@
-import { LàVdiffusion, Ddiffusion, Jdiffusion, Ldiffusion, MAdiffusion, MEdiffusion, Vdiffusion, jsonToListDisclosure } from "./topicVAR";
+import { LàVdiffusion, Ddiffusion, Jdiffusion, MAdiffusion, MEdiffusion, jsonToListDisclosure } from "./topicVAR";
 import { disclosureDisplay } from '../visualScripts';
 import iconsByNewsroom from "../resources/iconsByNewsroom.json"
 
 const CultureEntries = [
-
   {
     "title": "L'invité culture",
     "URL": "https://www.europe1.fr/emissions/L-invite-culture",

@@ -1,54 +1,54 @@
 const today = new Date();
-let day = today.getDay()
+var day = today.getDay()
 
-var LàVdiffusion = ""
-if ((day == 6) || (day == 0)) {
-  var LàVdiffusion = "Du lundi au vendredi"
+let LàVdiffusion = ""
+if ((day === 6) || (day === 0)) {
+  LàVdiffusion = "Du lundi au vendredi"
 }
 
-var SDdiffusion = ""
-if (!((day == 6) || (day == 0))) {
-  var SDdiffusion = "Samedi et dimanche"
+let SDdiffusion = ""
+if (!((day === 6) || (day === 0))) {
+  SDdiffusion = "Samedi et dimanche"
 }
 
-var Ddiffusion = ""
-if (day != 0) {
-  var Ddiffusion = "Chaque dimanche"
+let Ddiffusion = ""
+if (day !== 0) {
+  Ddiffusion = "Chaque dimanche"
 }
 
-var Sdiffusion = ""
-if (day != 6) {
-  var Sdiffusion = "Chaque samedi"
+let Sdiffusion = ""
+if (day !== 6) {
+  Sdiffusion = "Chaque samedi"
 }
 
-var Vdiffusion = ""
-if (day != 5) {
-  var Vdiffusion = "Chaque vendredi"
+let Vdiffusion = ""
+if (day !== 5) {
+  Vdiffusion = "Chaque vendredi"
 }
 
-var Ldiffusion = ""
-if (day != 1) {
-  var Ldiffusion = "Chaque lundi"
+let Ldiffusion = ""
+if (day !== 1) {
+  Ldiffusion = "Chaque lundi"
 }
 
-var MAdiffusion = ""
-if (day != 2) {
-  var MAdiffusion = "Chaque mardi"
+let MAdiffusion = ""
+if (day !== 2) {
+  MAdiffusion = "Chaque mardi"
 }
 
-var MEdiffusion = ""
-if (day != 3) {
-  var MEdiffusion = "Chaque mercredi"
+let MEdiffusion = ""
+if (day !== 3) {
+  MEdiffusion = "Chaque mercredi"
 }
 
-var Jdiffusion = ""
-if (day != 4) {
-  var Jdiffusion = "Chaque jeudi"
+let Jdiffusion = ""
+if (day !== 4) {
+  Jdiffusion = "Chaque jeudi"
 }
 
 export { Ldiffusion, MAdiffusion, MEdiffusion, Jdiffusion, Vdiffusion, LàVdiffusion, Sdiffusion, SDdiffusion, Ddiffusion }
 
-export function jsonToListDisclosure(array = Array()) {
+export function jsonToListDisclosure(array = []) {
   let out =""
   for (let i of array) {
     out += `
@@ -61,13 +61,13 @@ export function jsonToListDisclosure(array = Array()) {
             </div>
             <div class="icon-image ${(i.image2 !== '') ? ' double-img' : ''}">
               <img src="${i.image1}"/>
-              ${i.image2 == '' ? "" : "<img src=" + i.image2 + " />"}
+              ${i.image2 === '' ? "" : "<img src=" + i.image2 + " />"}
             </div>
           </div>
           <div class="itemContainer">
             <div class="justifiedTitle">
               <h6 class="titleLine">
-                ${((i?.countryISO3Label == "FRA") || (i?.countryISO3Label == undefined)) ? "" : "<div class='r4 LanguageLabel'>" + i.countryISO3Label + "</div>"}
+                ${((i?.countryISO3Label === "FRA") || (i?.countryISO3Label === undefined)) ? "" : "<div class='r4 LanguageLabel'>" + i.countryISO3Label + "</div>"}
                 <div class="ItemTitle">
                 ${i.title}
                 </div>

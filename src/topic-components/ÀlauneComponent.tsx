@@ -30,8 +30,8 @@ const AlauneEntries = [
   {
     "title": "Réveil Courrier",
     "URL": "https://reveil.courrierinternational.com/#/",
-    "image1": "./icons/WebsitesIcons/courrierinter-reveil.png",
-    "image2": "",
+    "image1": iconsByNewsroom.CourrierInternational.Réveil.iconImg,
+    "image2": iconsByNewsroom.CourrierInternational.iconImg,
     "duration": "25min",
     "description": "Chaque matin à 6h, une sélection des meilleurs articles de la presse étrangère, un résumé de l’actualité internationale utile pour bien commencer la journée."
   },

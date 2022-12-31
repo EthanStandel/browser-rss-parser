@@ -184,9 +184,9 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             const arrford = require('arrford');
             let CategoriesCommaSeparated = arrford(arrayCategoriesTEST, false).replace(' and ', ', '); /* list formatting with commas' */
 
-            var countryISO3Label = String(source.articlesCountryISO3)
+            let countryISO3Label = String(source.articlesCountryISO3)
             if ((source.articlesCountryISO3 == "") || (source.articlesCountryISO3 == null)) {
-              var countryISO3Label = "FRA"
+              countryISO3Label = "FRA"
             } /* by default, articles are considered from French newsrooms and hidden */
 
             weekday(7)
@@ -214,12 +214,12 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                         </div>
                         <div className="background-image">
                           <img src={imgHref}
-                          alt={"illustrative image for " + source.name}
-                          onError={({ currentTarget }) => {
-                            currentTarget.onerror = null; // prevents looping
-                            currentTarget.src="./genIcons/applenews_bgIMG_alt.jpg";
-                          }}
-                        /> 
+                            alt={"illustrative image for " + source.name}
+                            onError={({ currentTarget }) => {
+                              currentTarget.onerror = null; // prevents looping
+                              currentTarget.src="./genIcons/applenews_bgIMG_alt.jpg";
+                            }}
+                          /> 
                         </div>
                       </div>
                       <div className="itemContainer">

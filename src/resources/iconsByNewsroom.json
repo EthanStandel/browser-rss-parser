@@ -2,7 +2,7 @@
     "Franceinfo": {
         "name": "Franceinfo",
         "iconImg": "./icons/WebsitesIcons/franceinfo.jpeg",
-        "backgroundImg": "./icons/WebsitesIcons/franceinfo_bgIMG.jpg"
+        "bgImg": "./icons/WebsitesIcons/franceinfo_bgIMG.jpg"
     },
     "Europe1": {
         "name": "Europe 1",
@@ -12,15 +12,33 @@
         "name": "Apple",
         "ApplePodcasts": {
             "iconImg": "./icons/WebsitesIcons/applepodcasts.png",
-            "backgroundImg": ""
+            "bgImg": ""
         },
         "AppleNews": {
             "iconImg": "./icons/WebsitesIcons/applenews.png",
-            "backgroundImg": ""
+            "bgImg": ""
         },
         "AppleTV": {
             "iconImg": "./icons/WebsitesIcons/appletv.png",
-            "backgroundImg": ""
+            "bgImg": ""
+        }
+    },
+    "M6": {
+        "name": "M6",
+        "6play": {
+            "iconImg": "./icons/WebsitesIcons/6play.png",
+            "bgImg": ""
+        },
+        "Turbo": {
+            "iconImg": "./icons/WebsitesIcons/turbo.png"
+        }
+    },
+    "CourrierInternational": {
+        "name": "Courrier International",
+        "iconImg": "./icons/WebsitesIcons/courrierinter.png",
+        "bgImg": "./icons/WebsitesIcons/courrierinter_BgImg.jpg",
+        "Réveil": {
+            "iconImg": "./icons/WebsitesIcons/courrierinter-reveil.png"
         }
     }
 }
