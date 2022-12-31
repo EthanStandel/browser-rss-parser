@@ -12,7 +12,6 @@ const PrinterFREntries = [
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "6min",
     "description": "Panorama de la presse du monde entier autour d'une actualité par Camille Magnard, du lundi au vendredi dans les Matins de France Culture à 7:35.",
-    "countryISO3Label": "FRA",
     "specification": LàVdiffusion
   },
   {

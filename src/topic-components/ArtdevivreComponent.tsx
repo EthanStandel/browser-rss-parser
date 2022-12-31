@@ -12,7 +12,6 @@ const ArtdevivreEntries = [
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "10min",
     "description": "Chaque jour à 11:45, Julia Vignali et Mélanie Gomez présentent les tendances santé, bien-être et art de vivre du moment.",
-    "countryISO3Label": "FRA",
     "specification": LàVdiffusion
   },
   {

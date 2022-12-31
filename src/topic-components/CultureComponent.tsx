@@ -10,7 +10,6 @@ const CultureEntries = [
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "30min",
     "description": "Tous les jours à 10:30, Philippe Vandel reçoit un invité pour évoquer l'actualité culturelle.",
-    "countryISO3Label": "FRA",
     "specification": LàVdiffusion
   },
   {

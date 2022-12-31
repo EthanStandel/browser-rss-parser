@@ -11,7 +11,7 @@ const PlaneteEntries = [
     "image1": "./icons/WebsitesIcons/toujoursentrain.png",
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "15min",
-    "description": "Marine Baousson, oujours en train, a le temps de se poser plein de questions&nbsp;: est ce que ça se recycle, un train&nbsp;? Est-ce que la SNCF fait des efforts pour réduire ses émissions carbone&nbsp;? Est-ce qu’on fait attention aux animaux qui vivent aux abords des voies&nbsp;?",
+    "description": "Marine Baousson, toujours en train, a le temps de se poser plein de questions&nbsp;: est ce que ça se recycle, un train&nbsp;? Est-ce que la SNCF fait des efforts pour réduire ses émissions carbone&nbsp;? Est-ce qu’on fait attention aux animaux qui vivent aux abords des voies&nbsp;?",
     "specification": "2 épisodes par semaine"
   }
 ]
