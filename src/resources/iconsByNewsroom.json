@@ -40,5 +40,13 @@
         "Réveil": {
             "iconImg": "./icons/WebsitesIcons/courrierinter-reveil.png"
         }
+    },
+    "TV5Monde": {
+        "name": "TV5 Monde",
+        "iconImg": "./icons/WebsitesIcons/tv5monde.png"
+    },
+    "FranceCulture": {
+        "name": "France Culture",
+        "iconImg": "./icons/WebsitesIcons/franceculture.png"
     }
 }

@@ -1,5 +1,5 @@
 import { LàVdiffusion, Ddiffusion, Jdiffusion, MAdiffusion, MEdiffusion, jsonToListDisclosure } from "./topicVAR";
-import { disclosureDisplay } from '../visualScripts';
+import Disc from '../components/Disclosure_comp'
 import iconsByNewsroom from "../resources/iconsByNewsroom.json"
 
 const CultureEntries = [
@@ -23,7 +23,7 @@ const CultureEntries = [
   }
 ]
 
-const CultureMusiqueEntries = [
+const CultureMusicEntries = [
   {
     "title": "Au fil de l'actu",
     "URL": "https://www.radiofrance.fr/francemusique/podcasts/au-fil-de-l-actu",
@@ -108,66 +108,11 @@ const CultureHistoryEntries = [
 const CultureComponent = () => {
   return (
     <div className="LeftPodcastsColumn">
-      <div className="Disclosure">
-        <div className="intro" id="disclosureHeader Culture" onClick={() => disclosureDisplay("Culture")}> 
-          <div> 
-            <h5 className="bold">Les rendez-vous culturels</h5>
-          </div>
-          <div className="chevron">
-            <svg viewBox="0 0 100 58.353394" /* ratio of the svg file*/ width="12">
-              <use xlinkHref="./genIcons/chevron_down.svg#path2"></use>
-            </svg>
-          </div>
-        </div>
-        <div id="disclosurePlus"> 
-          <ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(CultureEntries)}} />
-        </div>
-      </div>
-      <div className="Disclosure">
-        <div className="intro" id="disclosureHeader CultureHistory" onClick={() => disclosureDisplay("CultureHistory")}> 
-          <div> 
-            <h5 className="bold">Les rendez-vous avec l'Histoire</h5>
-          </div>
-          <div className="chevron">
-            <svg viewBox="0 0 100 58.353394" /* ratio of the svg file*/ width="12">
-              <use xlinkHref="./genIcons/chevron_down.svg#path2"></use>
-            </svg>
-          </div>
-        </div>
-        <div id="disclosurePlus"> 
-          <ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(CultureHistoryEntries)}} />
-        </div>
-      </div>
-      <div className="Disclosure">
-        <div className="intro" id="disclosureHeader CultureMusique" onClick={() => disclosureDisplay("CultureMusique")}> 
-          <div> 
-            <h5 className="bold">Les rendez-vous musicaux</h5>
-          </div>
-          <div className="chevron">
-            <svg viewBox="0 0 100 58.353394" /* ratio of the svg file*/ width="12">
-              <use xlinkHref="./genIcons/chevron_down.svg#path2"></use>
-            </svg>
-          </div>
-        </div>
-        <div id="disclosurePlus"> 
-          <ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(CultureMusiqueEntries)}} />
-        </div>
-      </div>
-      <div className="Disclosure">
-        <div className="intro" id="disclosureHeader CultureBD" onClick={() => disclosureDisplay("CultureBD")}> 
-          <div> 
-            <h5 className="bold">Les rendez-vous de la BD</h5>
-          </div>
-          <div className="chevron">
-            <svg viewBox="0 0 100 58.353394" /* ratio of the svg file*/ width="12">
-              <use xlinkHref="./genIcons/chevron_down.svg#path2"></use>
-            </svg>
-          </div>
-        </div>
-        <div id="disclosurePlus"> 
-          <ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(CultureBDEntries)}} />
-        </div>
-      </div>
+      
+      {Disc(<div><h5 className="bold">Les rendez-vous culturels</h5></div>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(CultureEntries)}} />, 'Culture', CultureEntries.length, "discIDBlock")}
+      {Disc(<div><h5 className="bold">Les rendez-vous avec l'Histoire</h5></div>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(CultureHistoryEntries)}} />, 'CultureHistory', CultureHistoryEntries.length, "discIDBlock")}
+      {Disc(<div><h5 className="bold">Les rendez-vous musicaux</h5></div>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(CultureMusicEntries)}} />, 'CultureMusic', CultureMusicEntries.length, "discIDBlock")}
+      {Disc(<div><h5 className="bold">Les rendez-vous de la BD</h5></div>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(CultureBDEntries)}} />, 'CultureBD', CultureBDEntries.length, "discIDBlock")}
     </div>
   );
 }

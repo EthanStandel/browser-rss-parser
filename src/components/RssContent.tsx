@@ -64,7 +64,7 @@ function weekday(n: number) {
       var minusDay = new Date();
       minusDay.setDate(minusDay.getDate() - i);
       var ddMinusDay = String(minusDay.getDate()).padStart(2, '0');
-      var DateMinusDay = ddMinusDay + '/' + (minusDay.getMonth()+1);
+      var DateMinusDay = ddMinusDay + '/' + String((minusDay.getMonth()+1)).padStart(2, '0');
       
       // N-days-before Date
       dateNDaysBefore[i]= String(DateMinusDay);
@@ -193,7 +193,6 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             var displayedDate = date?.setLocale("fr").toFormat("dd/MM").replace('Invalid DateTime', '').replace(dateNDaysBefore[0], '' + date?.setLocale("fr").toFormat("HH:mm")).replace(dateNDaysBefore[1], 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(dateNDaysBefore[2], 'avant-hier').replace(dateNDaysBefore[3], NDaysBeforeWeekday[3]).replace(dateNDaysBefore[4], NDaysBeforeWeekday[4]).replace(dateNDaysBefore[5], NDaysBeforeWeekday[5]).replace(dateNDaysBefore[6], NDaysBeforeWeekday[6]);
 
             return (
-
               <li className={source.specification}>
                 <article>
                   <a href={item.link} target="_blank" rel="noreferrer">

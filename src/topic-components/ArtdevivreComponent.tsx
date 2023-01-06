@@ -1,5 +1,5 @@
 import { LàVdiffusion, SDdiffusion, jsonToListDisclosure } from "./topicVAR";
-import { disclosureDisplay } from '../visualScripts';
+import Disc from '../components/Disclosure_comp';
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
 const ArtdevivreEntries = [
@@ -37,21 +37,7 @@ const ArtdevivreEntries = [
 const ArtdevivreComponent = () => {
   return (
     <div className="LeftPodcastsColumn">
-      <div className="Disclosure">
-        <div className="intro" id="disclosureHeader Artdevivre" onClick={() => disclosureDisplay("Artdevivre")}> 
-          <div> 
-            <h5 className="bold">Les rendez-vous avec l'art de vivre</h5>
-          </div>
-          <div className="chevron">
-            <svg viewBox="0 0 100 58.353394" /* ratio of the svg file*/ width="12">
-              <use xlinkHref="./genIcons/chevron_down.svg#path2"></use>
-            </svg>
-          </div>
-        </div>
-        <div id="disclosurePlus"> 
-          <ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(ArtdevivreEntries)}} />
-        </div>
-      </div>
+      {Disc(<h5 className="bold">Les rendez-vous avec l'art de vivre</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(ArtdevivreEntries)}} />,'Artdevivre',ArtdevivreEntries.length,"discIDBlock")}
     </div>
   );
 }

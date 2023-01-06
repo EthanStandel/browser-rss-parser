@@ -272,10 +272,10 @@ ul {
 
       @media only screen and (min-width: 1000px) {
         &:hover {
-          transform: scale(1.01);
+          /* transform: scale(1.01);
           box-shadow: 0 100px 140px -50px rgba(0, 0, 0, 0.25), 0 0 20px 0 rgba(0, 0, 0, 0.05);
           border: 1px solid var(--cardBorder);
-          z-index: 100;
+          z-index: 100; */
 
           .background-image img {
             transform: scale(1.1);
@@ -1064,42 +1064,93 @@ em:not(.itemContainer em) {
 }
 
 .Disclosure {
-  background-color: var(--secondarySystemGroupedBackground);
-  border-radius: var(--rounded-corners-block);
-  box-shadow: 2px 4px 12px rgba(0,0,0, 0.08);
   margin-bottom: 15px;
-  overflow: hidden;
-  border: 1px solid var(--cardBorder);
-  background-color: var(--secondarySystemGroupedBackground);
-  border-radius: var(--rounded-corners-block);
-  filter: drop-shadow(0 10px 10px var(--hardShadow));
+  overflow: hidden; // keep it for now because of fucked-up icon images being displayed randomly
 
-  #disclosurePlus {
+  #discPlus {
     transition: max-height 0.4s ease-in-out;
     max-height: 0;
     overflow: hidden;
   }
 
-  .intro {
-    padding: 15px 16px;
+  &.largeDisplay {
+    #discPlus {
+      max-height: 10000px;
+    }
+
+    .chevron {
+      transform: none;
+    }
+  }
+
+  .discHeader {
     max-width: 100%;
     cursor: pointer;
-    border-bottom: 1.8px rgba(0,0,0,0) solid;
     transition: border-color 0.4s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 15px;
+    padding-bottom: 16px;
   }
-}
 
-.chevron {
-  transition: all 0.35s ease;
-  transform : rotate(-90deg);
-  fill: var(--separator);
+  .chevron {
+    transition: all 0.35s ease;
+    fill: var(--colorTheme);
+    transform: rotate(-90deg);
+  
+    svg {
+      height: 12px;
+      width: 12px;
+    }
+  }
 
-  svg {
-    height: 12px;
-    width: 12px;
+  &.noSubtopic {
+    .discHeader {
+      display: none;
+    }
+  }
+
+  &#discIDBlock {
+    background-color: var(--secondarySystemGroupedBackground);
+    border-radius: var(--rounded-corners-block);
+    box-shadow: 2px 4px 12px rgba(0,0,0, 0.08);
+    border: 1px solid var(--cardBorder);
+    filter: drop-shadow(0 10px 10px var(--hardShadow));
+
+    .discHeader {
+      padding: 15px 16px;
+      border-bottom: 1.8px rgba(0,0,0,0) solid;
+    }
+
+    .chevron {
+      fill: var(--separator);
+    }
+
+    &.largeDisplay {
+      
+      .discHeader {
+        border-bottom: 1.8px solid var(--colorTheme);
+      }
+    }
+  }
+
+  &.nList {
+    h4 {
+      border-bottom: none;
+      padding: 0;
+    }
+
+    .discHeader {
+      border-bottom: 3.2px rgba(0,0,0,0) solid;
+      padding: 15px 16px;
+    }
+
+    &.largeDisplay {
+      
+      .discHeader {
+        border-bottom: 3.2px solid var(--colorTheme);
+      }
+    }
   }
 }

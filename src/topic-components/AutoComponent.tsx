@@ -1,5 +1,5 @@
 import { Ddiffusion, jsonToListDisclosure } from "./topicVAR";
-import { disclosureDisplay } from '../visualScripts';
+import { disclosureDisplay } from '../components/disc_fct';
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
 const AutoEntries = [

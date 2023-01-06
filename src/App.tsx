@@ -5,7 +5,17 @@ import HappyBday from './components/HappyBirthday';
 import RssContent from './components/RssContent';
 import rssFeeds from "./resources/rss_feeds.json";
 import topicComponents from './topic-components/topicComponents';
+import subtopicComponents from './topic-components/subtopic-components/subtopicComponents';
 import { BrowserUtils } from './utils/BrowserUtils';
+import Disc from './components/Disclosure_comp';
+
+function sum(array = Array()) {
+  let sum = 0
+  for (let i = 0; i < array.length; i++) {
+   sum += array[i];
+  }
+  return sum
+}
 
 const { topics } = rssFeeds;
 const initialTopicFilter = (new URLSearchParams(document.location.search).get("topic") ?? "À la une") as keyof typeof topics;
@@ -31,6 +41,7 @@ const App = () => {
     _setTopicFilter(shouldUnfilter ? "À la une": newTopicFilter);
   }
   const CustomTopicComponent = topicComponents[topicFilter] ?? "div";
+  const CustomSubtopicComponent = subtopicComponents ?? "div";
 
   var nListDisplays = [
     "Presse étrangère",
@@ -108,11 +119,7 @@ const App = () => {
               .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)
               .filter(([ key ]) => !subtopicFilter ? true : subtopicFilter === key)
               .map(([key, feeds]) => (
-                <section key={key} className={`${key} ArticleSection ` + (nListYS(key) === true ? "nList" : "")}> 
-                  {key !== "noSubtopic" && <h4 className="subtopic bold">{key}</h4>}
-                  <div id={"ExternalScript " + topicFilter} />
-                  <RssContent rssFeeds={feeds} />
-                </section>
+                Disc(<h4 className="subtopic bold">{key !== "noSubtopic" && key}</h4>,<div> {(subtopicComponents[key]) /* not working */ }  <RssContent rssFeeds={feeds} /></div>, key, sum(feeds.map(value => value.articlesCount)), undefined , key + " ArticleSection Disclosure " + ((sum(feeds.map(value => value.articlesCount)) > 5) && " largeDisplay ") + (nListYS(key) && " nList")) 
               ))
             }
           </div>

@@ -1,5 +1,5 @@
 import { LàVdiffusion, jsonToListDisclosure } from "./topicVAR";
-import { disclosureDisplay } from '../visualScripts';
+import Disc from '../components/Disclosure_comp'
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
 const saints = [
@@ -67,22 +67,7 @@ const AlauneEntries = [
 const ÀlauneComponent = () => {
   return (
     <div className="LeftPodcastsColumn">
-      <div className="Disclosure">
-        <div className="intro" id="disclosureHeader News" onClick={() => disclosureDisplay("News")}> 
-          <div>
-            <div className="r2 secondaryColor">{new Date().toLocaleDateString([], {weekday:'long', day:'numeric', month: 'long'}) + " " + ((String(new Date().toLocaleDateString([], {month:'numeric'})) >= "10") ?? (String(new Date().toLocaleDateString([], {month:'numeric'})) <= "1") ? new Date().toLocaleDateString([], {year:'numeric'}) : "") + " • " + saints[Number(new Date().toLocaleDateString([], {month:'numeric'})) - 1][Number(new Date().toLocaleDateString([], {day:'numeric'})) - 1]}</div> 
-            <h5 className="bold">Les rendez-vous à la une</h5>
-          </div>
-          <div className="chevron">
-            <svg viewBox="0 0 100 58.353394" /* ratio of the svg file*/ width="12">
-              <use xlinkHref="./genIcons/chevron_down.svg#path2"></use>
-            </svg>
-          </div>
-        </div>
-        <div id="disclosurePlus"> 
-          <ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(AlauneEntries)}} />
-        </div>
-      </div>
+      {Disc(<div><div className="r2 secondaryColor">{new Date().toLocaleDateString('fr-fr', {weekday:'long', day:'numeric', month: 'long'}) + " " + ((String(new Date().toLocaleDateString('fr-fr', {month:'numeric'})) >= "10") || (String(new Date().toLocaleDateString('fr-fr', {month:'numeric'})) <= "1") ? new Date().toLocaleDateString('fr-fr', {year:'numeric'}) : "") + " • " + saints[Number(new Date().toLocaleDateString('fr-fr', {month:'numeric'})) - 1][Number(new Date().toLocaleDateString('fr-fr', {day:'numeric'})) - 1]}</div><h5 className="bold">Les rendez-vous à la une</h5></div>, <ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(AlauneEntries)}} />, 'News', AlauneEntries.length, "discIDBlock")}
     </div>
   );
 }

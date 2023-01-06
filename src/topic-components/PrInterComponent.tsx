@@ -1,5 +1,5 @@
 import { LàVdiffusion, Sdiffusion, jsonToListDisclosure } from "./topicVAR";
-import { disclosureDisplay } from '../visualScripts';
+import Disc from '../components/Disclosure_comp'
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
 const PrinterFREntries = [
@@ -70,36 +70,8 @@ const PrinterOTHEREntries = [
 const PrInterComponent = () => {
   return (
     <div className="LeftPodcastsColumn">
-      <div className="Disclosure">
-        <div className="intro" id="disclosureHeader PrinterFR" onClick={() => disclosureDisplay("PrinterFR")}> 
-          <div> 
-            <h5 className="bold">Les rendez-vous vers l'étranger</h5>
-          </div>
-          <div className="chevron">
-            <svg viewBox="0 0 100 58.353394" /* ratio of the svg file*/ width="12">
-              <use xlinkHref="./genIcons/chevron_down.svg#path2"></use>
-            </svg>
-          </div>
-        </div>
-        <div id="disclosurePlus"> 
-          <ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(PrinterFREntries)}} />
-        </div>
-      </div>
-      <div className="Disclosure">
-        <div className="intro" id="disclosureHeader PrinterOTHER" onClick={() => disclosureDisplay("PrinterOTHER")}> 
-          <div> 
-            <h5 className="bold">Les rendez-vous internationaux</h5>
-          </div>
-          <div className="chevron">
-            <svg viewBox="0 0 100 58.353394" /* ratio of the svg file*/ width="12">
-              <use xlinkHref="./genIcons/chevron_down.svg#path2"></use>
-            </svg>
-          </div>
-        </div>
-        <div id="disclosurePlus"> 
-          <ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(PrinterOTHEREntries)}} />
-        </div>
-      </div>
+      {Disc(<h5 className="bold">Les rendez-vous vers l'étranger</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(PrinterFREntries)}} />,"PrinterFR",PrinterFREntries.length,"discIDBlock")}
+      {Disc(<h5 className="bold">Les rendez-vous internationaux</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(PrinterOTHEREntries)}} />,"PrinterOTHER",PrinterOTHEREntries.length,"discIDBlock")}
     </div>
   );
 }
