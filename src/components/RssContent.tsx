@@ -198,18 +198,15 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                   <a href={item.link} target="_blank" rel="noreferrer">
                     <div className="media">
                       <div className="iconContainer">
-                        <div className="icon-image">
-                          <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg" alt=""/>
-                        </div>
-                        <div className="icon-image">
+                        <div className="iconImgWrapper">
                           <img 
-                            src={source.iconImg ?? "./icons/WebsitesIcons/applenews.png"}
+                            src={source.iconImg}
                             alt=""
                             onError={({ currentTarget }) => {
                               currentTarget.onerror = null; // prevents looping
                               currentTarget.src="./icons/WebsitesIcons/applenews.png";
                             }}
-                          /> 
+                          />
                         </div>
                         <div className="background-image">
                           <img src={imgHref}
@@ -223,7 +220,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                       </div>
                       <div className="itemContainer">
                         <div className="firstLine">
-                          <div className="r1 bold articleCategory">
+                          <div className="r1 up bold articleCategory">
                             {CategoriesCommaSeparated}
                           </div>
                           <div className="r2 articleDate">

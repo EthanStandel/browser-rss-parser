@@ -1,5 +1,5 @@
 import { MAdiffusion, jsonToListDisclosure } from "./topicVAR";
-import Disc from '../components/Disclosure_comp'
+import { Disc } from '../components/Disclosure_comp'
 
 const EthicsEntries = [
   {

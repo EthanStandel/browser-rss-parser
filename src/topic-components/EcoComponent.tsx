@@ -1,5 +1,5 @@
 import { LàVdiffusion, jsonToListDisclosure } from "./topicVAR";
-import Disc from '../components/Disclosure_comp'
+import { Disc } from '../components/Disclosure_comp'
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
 const EcoEntries = [

@@ -11,10 +11,10 @@ const IdeesComponent = () => {
       <a href="https://www.europe1.fr/emissions/L-innovation-du-jour" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">
-            <div className="icon-image">
+            <div className="iconImgWrapper">
               <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
             </div>
-            <div className="icon-image double-img">
+            <div className="iconImgWrapper double-img">
               <img src="./icons/WebsitesIcons/europe1.png"/>
               <img src="./icons/WebsitesIcons/applepodcasts.png"/>
             </div>
@@ -42,10 +42,10 @@ const IdeesComponent = () => {
       <a href="https://www.franceculture.fr/emissions/le-pourquoi-du-comment-science" target="_blank" rel="noreferrer">
         <div className="media">
           <div className="iconContainer">
-            <div className="icon-image">
+            <div className="iconImgWrapper">
               <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
             </div>
-            <div className="icon-image double-img">
+            <div className="iconImgWrapper double-img">
               <img src="./icons/WebsitesIcons/franceculture.png"/>
               <img src="./icons/WebsitesIcons/applepodcasts.png"/>
             </div>

@@ -5,9 +5,10 @@ import HappyBday from './components/HappyBirthday';
 import RssContent from './components/RssContent';
 import rssFeeds from "./resources/rss_feeds.json";
 import topicComponents from './topic-components/topicComponents';
-import subtopicComponents from './topic-components/subtopic-components/subtopicComponents';
+import SubtopicComponents from './topic-components/subtopic-components/subtopicComponents';
 import { BrowserUtils } from './utils/BrowserUtils';
-import Disc from './components/Disclosure_comp';
+import { Disc } from './components/Disclosure_comp';
+import { DiscAllDisplay } from './components/disc_fct';
 
 function sum(array = Array()) {
   let sum = 0
@@ -41,7 +42,6 @@ const App = () => {
     _setTopicFilter(shouldUnfilter ? "À la une": newTopicFilter);
   }
   const CustomTopicComponent = topicComponents[topicFilter] ?? "div";
-  const CustomSubtopicComponent = subtopicComponents ?? "div";
 
   var nListDisplays = [
     "Presse étrangère",
@@ -58,6 +58,7 @@ const App = () => {
     "Deeptech","GAFAM","geeks","Ordinateurs","Big Data",
     "Bien-être","Engagement","Fin de vie","vivre-ensemble","Opinions","Bioéthique"
   ]
+
   function nListYS(key : string) { // for the subtopics above, add a nList class
     var displayednList = false 
     for(let i = 0; i < nListDisplays.length; i++) {
@@ -112,14 +113,20 @@ const App = () => {
       </header>
       <main className="Articles">
         <div className={"grid "+ topicFilter}>
-          <h3 className={"bold " + topicFilter}>{topicFilter}</h3>
+          <div className="gridTopELement">
+            <h3 className={"bold " + topicFilter}>{topicFilter}</h3>
+            <div >
+              <button className="r1" onClick={() => DiscAllDisplay()} id="DiscAllDisplay">Tout afficher</button>
+            </div>
+            
+          </div>
           <CustomTopicComponent />
           <div className="RightRSSColumn">
             {Object.entries(topics[topicFilter].subtopics)
               .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)
               .filter(([ key ]) => !subtopicFilter ? true : subtopicFilter === key)
               .map(([key, feeds]) => (
-                Disc(<h4 className="subtopic bold">{key !== "noSubtopic" && key}</h4>,<div> {(subtopicComponents[key]) /* not working */ }  <RssContent rssFeeds={feeds} /></div>, key, sum(feeds.map(value => value.articlesCount)), undefined , key + " ArticleSection Disclosure " + ((sum(feeds.map(value => value.articlesCount)) > 5) && " largeDisplay ") + (nListYS(key) && " nList")) 
+                Disc(<h4 className="subtopic bold">{key !== "noSubtopic" && key}</h4>,<div> {(SubtopicComponents[key]) /* not working */ }  <RssContent rssFeeds={feeds} /></div>, key, sum(feeds.map(value => value.articlesCount)), undefined , key + " ArticleSection " + String((sum(feeds.map(value => value.articlesCount)) > 5) && " largeDisplay ").replace("false", "") + String(nListYS(key) && " nList").replace("false", "")) 
               ))
             }
           </div>

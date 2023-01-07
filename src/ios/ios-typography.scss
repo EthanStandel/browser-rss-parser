@@ -206,7 +206,10 @@ p.bold {
     font-size: 14px;
     line-height: 18px;
     letter-spacing: -0.0062px;
-    text-transform: uppercase;
+
+    &.up {
+        text-transform: uppercase;
+    }
 }
 
 /* Bold style for Rubric 1 */

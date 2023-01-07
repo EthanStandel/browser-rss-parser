@@ -3,8 +3,8 @@ export function disclosureDisplay(typeofDisclosure) {
   const x = document.getElementById("discHeader " + typeofDisclosure);
   const X = x.parentElement;
   let transitionTime = 0.4*Number(X.className.split(" ")[0].replace(/\D/g, "")) //0.4s for 1 elements
-  if (transitionTime > 2) {
-    transitionTime = 2
+  if (transitionTime > 1.5) {
+    transitionTime = 1.5
   }
 
   X.lastChild.style.transition = "max-height " + transitionTime + "s ease-in-out"
@@ -14,4 +14,30 @@ export function disclosureDisplay(typeofDisclosure) {
   } else {
     X.classList.add("largeDisplay")
   }
+}
+
+export function DiscAllDisplay() {
+  const x = document.querySelectorAll("#discPlus")
+  if (document.getElementById("DiscAllDisplay")?.textContent.includes("Tout afficher")) {
+    Array.from(x).forEach( el => {
+      if (el.parentElement.className.includes("noSubtopic")) {
+        }
+      else {
+        el.parentElement.classList.add("largeDisplay")
+      }}
+    )
+    document.getElementById("DiscAllDisplay").textContent = "Tout cacher"
+  }
+
+  else {
+    Array.from(x).forEach( el => {
+      if (el.parentElement.className.includes("noSubtopic")) {
+        }
+      else {
+        el.parentElement.classList.remove("largeDisplay")
+      }}
+    )
+    document.getElementById("DiscAllDisplay").textContent = "Tout afficher"
+  }
+
 }

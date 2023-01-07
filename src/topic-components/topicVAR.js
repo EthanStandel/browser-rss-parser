@@ -52,14 +52,11 @@ export function jsonToListDisclosure(array = []) {
   let out =""
   for (let i of array) {
     out += `
-    <li class="TVbanner ">
+    <li class="nListFreeDesc">
       <a href="${i.URL}" target="_blank" rel="noreferrer">
         <div class="media">
           <div class="iconContainer">
-            <div class="icon-image">
-              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg" alt=""/>
-            </div>
-            <div class="icon-image ${(i.image2 !== '') ? ' double-img' : ''}">
+            <div class="iconImgWrapper ${(i.image2 !== '') ? ' double-img' : ''}">
               <img src="${i.image1}"/>
               ${i.image2 === '' ? "" : "<img src=" + i.image2 + " />"}
             </div>
