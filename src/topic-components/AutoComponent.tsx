@@ -20,7 +20,7 @@ const AutoComponent = () => {
       <div className="Disclosure">
         <div className="intro" id="disclosureHeader Auto" onClick={() => disclosureDisplay("Auto")}> 
           <div> 
-            <h5 className="bold">Les rendez-vous avec l'auto</h5>
+            <h5>Les rendez-vous avec l'auto</h5>
           </div>
           <div className="chevron">
             <svg viewBox="0 0 100 58.353394" /* ratio of the svg file*/ width="12">

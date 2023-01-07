@@ -5,7 +5,7 @@ const IdeesComponent = () => {
     <div className="LeftPodcastsColumn">
     <ul className='rss-podcasts'>
       <div className="intro">
-        <h5 className="bold">Rendez-vous avec la science</h5>
+        <h5>Rendez-vous avec la science</h5>
       </div>
     <li className={"nList TVbanner "}>
       <a href="https://www.europe1.fr/emissions/L-innovation-du-jour" target="_blank" rel="noreferrer">

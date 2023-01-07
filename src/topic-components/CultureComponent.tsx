@@ -109,10 +109,10 @@ const CultureComponent = () => {
   return (
     <div className="LeftPodcastsColumn">
       
-      {Disc(<div><h5 className="bold">Les rendez-vous culturels</h5></div>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(CultureEntries)}} />, 'Culture', CultureEntries.length, "discIDBlock")}
-      {Disc(<div><h5 className="bold">Les rendez-vous avec l'Histoire</h5></div>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(CultureHistoryEntries)}} />, 'CultureHistory', CultureHistoryEntries.length, "discIDBlock")}
-      {Disc(<div><h5 className="bold">Les rendez-vous musicaux</h5></div>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(CultureMusicEntries)}} />, 'CultureMusic', CultureMusicEntries.length, "discIDBlock")}
-      {Disc(<div><h5 className="bold">Les rendez-vous de la BD</h5></div>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(CultureBDEntries)}} />, 'CultureBD', CultureBDEntries.length, "discIDBlock")}
+      {Disc(<div><h5>Les rendez-vous culturels</h5></div>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(CultureEntries)}} />, 'Culture', CultureEntries.length, "discIDBlock")}
+      {Disc(<div><h5>Les rendez-vous avec l'Histoire</h5></div>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(CultureHistoryEntries)}} />, 'CultureHistory', CultureHistoryEntries.length, "discIDBlock")}
+      {Disc(<div><h5>Les rendez-vous musicaux</h5></div>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(CultureMusicEntries)}} />, 'CultureMusic', CultureMusicEntries.length, "discIDBlock")}
+      {Disc(<div><h5>Les rendez-vous de la BD</h5></div>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(CultureBDEntries)}} />, 'CultureBD', CultureBDEntries.length, "discIDBlock")}
     </div>
   );
 }

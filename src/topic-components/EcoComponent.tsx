@@ -51,7 +51,7 @@ const EcoEntries = [
 const EcoComponent = () => {
   return (
     <div className="LeftPodcastsColumn">
-      {Disc(<h5 className="bold">Les rendez-vous avec l'éco</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(EcoEntries)}} />,"Eco",EcoEntries.length,"discIDBlock")}
+      {Disc(<h5>Les rendez-vous avec l'éco</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(EcoEntries)}} />,"Eco",EcoEntries.length,"discIDBlock")}
     </div>
   );
 }

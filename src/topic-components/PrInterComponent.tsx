@@ -70,8 +70,8 @@ const PrinterOTHEREntries = [
 const PrInterComponent = () => {
   return (
     <div className="LeftPodcastsColumn">
-      {Disc(<h5 className="bold">Les rendez-vous vers l'étranger</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(PrinterFREntries)}} />,"PrinterFR",PrinterFREntries.length,"discIDBlock")}
-      {Disc(<h5 className="bold">Les rendez-vous internationaux</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(PrinterOTHEREntries)}} />,"PrinterOTHER",PrinterOTHEREntries.length,"discIDBlock")}
+      {Disc(<h5>Les rendez-vous vers l'étranger</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(PrinterFREntries)}} />,"PrinterFR",PrinterFREntries.length,"discIDBlock")}
+      {Disc(<h5>Les rendez-vous internationaux</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(PrinterOTHEREntries)}} />,"PrinterOTHER",PrinterOTHEREntries.length,"discIDBlock")}
     </div>
   );
 }

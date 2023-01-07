@@ -22,7 +22,7 @@ const SocieteComponent = () => {
       <div className="Disclosure">
         <div className="intro" id="disclosureHeader Sante" onClick={() => disclosureDisplay("Sante")}> 
           <div> 
-            <h5 className="bold">Les rendez-vous sociétaux</h5>
+            <h5>Les rendez-vous sociétaux</h5>
           </div>
           <div className="chevron">
             <svg viewBox="0 0 100 58.353394" /* ratio of the svg file*/ width="12">

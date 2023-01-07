@@ -67,7 +67,7 @@ const AlauneEntries = [
 const ÀlauneComponent = () => {
   return (
     <div className="LeftPodcastsColumn">
-      {Disc(<div><div className="r2 secondaryColor">{new Date().toLocaleDateString('fr-fr', {weekday:'long', day:'numeric', month: 'long'}) + " " + ((String(new Date().toLocaleDateString('fr-fr', {month:'numeric'})) >= "10") || (String(new Date().toLocaleDateString('fr-fr', {month:'numeric'})) <= "1") ? new Date().toLocaleDateString('fr-fr', {year:'numeric'}) : "") + " • " + saints[Number(new Date().toLocaleDateString('fr-fr', {month:'numeric'})) - 1][Number(new Date().toLocaleDateString('fr-fr', {day:'numeric'})) - 1]}</div><h5 className="bold">Les rendez-vous à la une</h5></div>, <ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(AlauneEntries)}} />, 'News', AlauneEntries.length, "discIDBlock")}
+      {Disc(<div><div className="r2 secondaryColor">{new Date().toLocaleDateString('fr-fr', {weekday:'long', day:'numeric', month: 'long'}) + " " + ((String(new Date().toLocaleDateString('fr-fr', {month:'numeric'})) >= "10") || (String(new Date().toLocaleDateString('fr-fr', {month:'numeric'})) <= "1") ? new Date().toLocaleDateString('fr-fr', {year:'numeric'}) : "") + " • " + saints[Number(new Date().toLocaleDateString('fr-fr', {month:'numeric'})) - 1][Number(new Date().toLocaleDateString('fr-fr', {day:'numeric'})) - 1]}</div><h5>Les rendez-vous à la une</h5></div>, <ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(AlauneEntries)}} />, 'News', AlauneEntries.length, "discIDBlock")}
     </div>
   );
 }

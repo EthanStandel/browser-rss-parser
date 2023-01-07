@@ -6,7 +6,7 @@ const SportComponent = () => {
     <div className="LeftPodcastsColumn">
     <ul className='rss-podcasts'>
       <div className="intro">
-        <h5 className="bold">Rendez-vous avec le sport</h5>
+        <h5>Rendez-vous avec le sport</h5>
       </div>
     <li className={"nList TVbanner "}>
       <a href="https://www.europe1.fr/emissions/ledito-sport" target="_blank" rel="noreferrer">

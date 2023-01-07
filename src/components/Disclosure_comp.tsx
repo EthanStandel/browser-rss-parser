@@ -2,7 +2,7 @@ import { disclosureDisplay } from './disc_fct';
 
 export function Disc(discHeader: JSX.Element, discPlus: JSX.Element, discID: string, nbOfItems = Number(1), discType?: "discIDBlock", addDiscClass?: string)  {
     return (
-        <div className={nbOfItems + " Disclosure " + addDiscClass} id={discType}>
+        <div className={String(nbOfItems).replace("0", "discEmpty") + " Disclosure " + addDiscClass} id={discType}>
             <div className="discHeader" id={"discHeader " + discID} onClick={() => disclosureDisplay(discID)}> 
                 <div>
                     {discHeader}

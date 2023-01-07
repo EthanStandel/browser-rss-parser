@@ -114,9 +114,9 @@ const App = () => {
       <main className="Articles">
         <div className={"grid "+ topicFilter}>
           <div className="gridTopELement">
-            <h3 className={"bold " + topicFilter}>{topicFilter}</h3>
+            <h4 className={"bold color Htopic " + topicFilter}>{topicFilter}</h4>
             <div >
-              <button className="r1" onClick={() => DiscAllDisplay()} id="DiscAllDisplay">Tout afficher</button>
+              <button className="r1" onClick={() => DiscAllDisplay()} id="DiscAllDisplay">Tout voir</button>
             </div>
             
           </div>
@@ -126,7 +126,7 @@ const App = () => {
               .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)
               .filter(([ key ]) => !subtopicFilter ? true : subtopicFilter === key)
               .map(([key, feeds]) => (
-                Disc(<h4 className="subtopic bold">{key !== "noSubtopic" && key}</h4>,<div> {(SubtopicComponents[key]) /* not working */ }  <RssContent rssFeeds={feeds} /></div>, key, sum(feeds.map(value => value.articlesCount)), undefined , key + " ArticleSection " + String((sum(feeds.map(value => value.articlesCount)) > 5) && " largeDisplay ").replace("false", "") + String(nListYS(key) && " nList").replace("false", "")) 
+                Disc(<h5 className="subtopic bold">{key !== "noSubtopic" && key}</h5>,<div> {(SubtopicComponents[key]) /* not working */ }  <RssContent rssFeeds={feeds} /></div>, key, sum(feeds.map(value => value.articlesCount)), undefined , key + " ArticleSection " + String((sum(feeds.map(value => value.articlesCount)) > 5) && " largeDisplay ").replace("false", "") + String(nListYS(key) && " nList").replace("false", "")) 
               ))
             }
           </div>

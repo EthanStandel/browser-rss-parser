@@ -18,7 +18,7 @@ export function disclosureDisplay(typeofDisclosure) {
 
 export function DiscAllDisplay() {
   const x = document.querySelectorAll("#discPlus")
-  if (document.getElementById("DiscAllDisplay")?.textContent.includes("Tout afficher")) {
+  if (document.getElementById("DiscAllDisplay")?.textContent.includes("Tout voir")) {
     Array.from(x).forEach( el => {
       if (el.parentElement.className.includes("noSubtopic")) {
         }
@@ -37,7 +37,7 @@ export function DiscAllDisplay() {
         el.parentElement.classList.remove("largeDisplay")
       }}
     )
-    document.getElementById("DiscAllDisplay").textContent = "Tout afficher"
+    document.getElementById("DiscAllDisplay").textContent = "Tout voir"
   }
 
 }

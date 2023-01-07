@@ -19,7 +19,7 @@ const PlaneteEntries = [
 const PlaneteComponent = () => {
   return (
     <div className="LeftPodcastsColumn">
-      {Disc(<h5 className="bold">Les rendez-vous avec la planète</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(PlaneteEntries)}} />,"Planete",PlaneteEntries.length,"discIDBlock")}
+      {Disc(<h5>Les rendez-vous avec la planète</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(PlaneteEntries)}} />,"Planete",PlaneteEntries.length,"discIDBlock")}
     </div>
   );
 }

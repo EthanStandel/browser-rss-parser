@@ -3,7 +3,7 @@ const EuropeComponent = () => {
     <div className="LeftPodcastsColumn">
     <ul className='rss-podcasts'>
       <div className="intro">
-        <h5 className="bold">Rendez-vous avec l'Europe</h5>
+        <h5>Rendez-vous avec l'Europe</h5>
       </div>
     <li className="nList TVbanner">
       <a href="https://www.arte.tv/fr/videos/RC-014085/arte-journal/" target="_blank" rel="noreferrer">

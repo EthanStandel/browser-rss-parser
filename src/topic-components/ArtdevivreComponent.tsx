@@ -37,7 +37,7 @@ const ArtdevivreEntries = [
 const ArtdevivreComponent = () => {
   return (
     <div className="LeftPodcastsColumn">
-      {Disc(<h5 className="bold">Les rendez-vous avec l'art de vivre</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(ArtdevivreEntries)}} />,'Artdevivre',ArtdevivreEntries.length,"discIDBlock")}
+      {Disc(<h5>Les rendez-vous avec l'art de vivre</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(ArtdevivreEntries)}} />,'Artdevivre',ArtdevivreEntries.length,"discIDBlock")}
     </div>
   );
 }
