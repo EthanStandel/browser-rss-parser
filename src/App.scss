@@ -303,21 +303,39 @@ ul {
         }
       }
 
+      @media only screen and (max-width: 1000px) {
+        .justifiedTitle, .firstLine {
+          .articleDate {
+            display: none !important;
+          }
+        }
+
+        .descriptionLine .articleDate {
+          display: inline !important;
+        }
+      }
+
       .descriptionLine {
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box !important;
+        -webkit-box-orient: vertical;
+        line-height: 0px;
 
         .articleDate {
+          padding-left: 0;
+          text-align: left;
+          padding-right: 5px;
           display: none;
         }
 
         .item-description {
-          -webkit-line-clamp: 2;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box !important;
-          -webkit-box-orient: vertical;
+          display: inline;
 
           * {
             margin: 0 !important;
+            display: inline;
           }
 
           p img, img, br, a, ul, li, img {
@@ -369,6 +387,8 @@ ul {
         text-overflow: ellipsis;
         display: -webkit-box !important;
         -webkit-box-orient: vertical;
+        text-decoration-color: rgba(0,0,0,0);
+        word-break: break-word;
 
         .itemTitle {
           display: inline;
@@ -387,16 +407,6 @@ ul {
           vertical-align: bottom;
       
         }
-      }
-
-      .titleLine, .item-description {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        /* number of lines */
-        -webkit-box-orient: vertical;
-        text-decoration-color: rgba(0,0,0,0);
-        word-break: break-word;
       }
 
       .background-image {
@@ -426,6 +436,9 @@ ul {
           justify-content: flex-end;
           padding-left: 10px;
           line-height: 20px; /* h6 line-height to align content */
+          padding-left: 10px;
+          text-align: right;
+          display: table-cell;
         }
       }
     
@@ -438,6 +451,45 @@ ul {
 
       .iconContainer {
         padding: 10px 10px 10px 0;
+
+        .iconImgWrapper {
+          float: left;
+          object-fit: cover;
+          display: block;
+          height: 40px;
+          width: 40px;
+          position: relative;
+          border-radius: calc(9px + 1px); // inner border-radius from img + desired border
+          border: 0.5px solid var(--separator);
+  
+          &.double-img {
+  
+            img:not(:first-of-type) {
+              position: relative !important;
+              width: 20px;
+              z-index: 2;
+              height: 20px;
+              border-radius: 5px;
+              top: 25px;
+              left: 25px;
+            }
+  
+            img:first-of-type {
+              position: absolute;
+            }
+          }
+  
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            height: 40px;
+            width: 40px;
+            border-radius: 9px;
+            vertical-align: bottom;
+          }
+        }
       }
     
       .media {
@@ -445,45 +497,6 @@ ul {
         justify-content: left;
         display: flex !important;
         margin-left: 10px;
-      }
-      
-      .iconImgWrapper {
-        float: left;
-        object-fit: cover;
-        display: block;
-        height: 40px;
-        width: 40px;
-        position: relative;
-        border-radius: calc(9px + 1px); // inner border-radius from img + desired border
-        border: 0.5px solid var(--separator);
-
-        &.double-img {
-
-          img:not(:first-of-type) {
-            position: relative !important;
-            width: 20px;
-            z-index: 2;
-            height: 20px;
-            border-radius: 5px;
-            top: 25px;
-            left: 25px;
-          }
-
-          img:first-of-type {
-            position: absolute;
-          }
-        }
-
-        img {
-          position: absolute;
-          top: 0;
-          left: 0;
-          object-fit: cover;
-          height: 40px;
-          width: 40px;
-          border-radius: 9px;
-          vertical-align: bottom;
-        }
       }
 
       .articleCategory {
@@ -500,9 +513,6 @@ ul {
       }
 
       .articleDate {
-        padding-left: 10px;
-        text-align: right;
-        display: table-cell;
         color: var(--secondaryLabel);
         width: max-content;
         white-space: nowrap;
@@ -511,16 +521,11 @@ ul {
       .firstLine {
         width: 100%;
         display: table;
-      }
-
-      .descriptionLine {
-        display: table;
-        width: initial;
 
         .articleDate {
-          padding-left: 0;
-          text-align: left;
-          padding-right: 5px;
+          display: table-cell;
+          padding-left: 10px;
+          text-align: right;
         }
       }
 
@@ -535,12 +540,8 @@ ul {
       &.bigFocus, &.firstFocus:first-of-type {
         background-color: var(--colorTheme);
 
-        .item-description {
+        .descriptionLine {
           -webkit-line-clamp: 3 !important;
-          overflow: hidden;
-          text-overflow: ellipsis !important;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
         }
 
         .firstLine {
@@ -574,8 +575,8 @@ ul {
         .itemContainer  {
           max-height: 75%;
           display: block;
-          padding: 0 !important;
-          width: 100% !important;
+          padding: 14px 10px 14px 16px; 
+          width: calc(100% - 16px - 10px) !important;
           position: absolute;
           bottom: 0;
           z-index: 2;
@@ -583,26 +584,6 @@ ul {
           backdrop-filter: saturate(180%) blur(20px);
           background-color: var(--systemThickMaterial);
           border-radius: 0 0 var(--rounded-corners-block) var(--rounded-corners-block);
-
-          > *:not(.justifiedTitle) {
-            padding: 0 16px;
-          }
-
-          .justifiedTitle /* otherwhise, the shadow effect is cut*/ {
-            padding-right: 16px;
-
-            .titleLine {
-              padding-left: 16px;
-            }
-          }
-
-          > *:first-child {
-            margin-top: 14px;
-          }
-
-          > *:last-child {
-            margin-bottom: 14px;
-          }
         }
         
         .iconContainer {
@@ -645,12 +626,8 @@ ul {
           display: block !important;
         }
         
-        .item-description {
+        .descriptionLine {
           -webkit-line-clamp: 3 !important;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box !important;
-          -webkit-box-orient: vertical;
         }
 
         .media {
@@ -668,14 +645,9 @@ ul {
         }
 
         .itemContainer  {
-          padding: 14px 10px 16px 16px;
+          padding: 14px 10px 14px 16px;
           width: calc(100% - 16px - 10px);
           border-radius: 0 0 var(--rounded-corners-block) var(--rounded-corners-block);
-
-          .descriptionLine {
-            margin-right: 16px;
-            // only the justifiedTitle line has a right-margin of 10px in order for the date to be aligned with other li elements
-          }
         }
 
         .iconContainer {
@@ -894,18 +866,24 @@ em:not(.itemContainer em) {
   li {
     margin-bottom: 0 !important;
     background-color: none !important;
-    border: 0 solid var(--cardBorder) !important;
+    border: none !important;
 
     .media {
       border-bottom: 0.8px solid var(--separator);
     }
 
-    .item-description {
+    &:last-child {
+      .media {
+        border-bottom: none;
+      }
+    }
+
+    .descriptionLine {
       -webkit-line-clamp: 1 !important;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box !important;
-      -webkit-box-orient: vertical;
+
+      .articleDate { /* use justifiedTitle instead */
+        display: none !important;
+      }
     }
 
     .titleLine {
@@ -914,16 +892,6 @@ em:not(.itemContainer em) {
       text-overflow: ellipsis;
       display: -webkit-box !important;
       -webkit-box-orient: vertical;
-    }
-
-    &:last-child {
-      .media {
-        border-bottom: 0 solid red;
-      }
-    }
-
-    .descriptionLine .articleDate { /* use justifiedTitle instead */
-      display: none !important;
     }
 
     @media only screen and (max-width: 1000px) {
@@ -938,22 +906,14 @@ em:not(.itemContainer em) {
         display: none; /* use justifiedTitle instead */
       }
 
-      .item-description {
+      .descriptionLine {
         -webkit-line-clamp: 2 !important;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box !important;
-        -webkit-box-orient: vertical;
       }
     }
 
     &.nListFreeDesc {
-      .item-description {
+      .descriptionLine {
         -webkit-line-clamp: 6 !important;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box !important;
-        -webkit-box-orient: vertical;
       }
     }
 
@@ -983,7 +943,7 @@ em:not(.itemContainer em) {
       }
     }
 
-    &:first-of-type:not(.nListFreeDesc), &.bigList {
+    &:first-of-type:not(.nListFreeDesc), &.bigList:not(:first-of-type) {
 
       .iconContainer {
         position: relative;
@@ -1021,16 +981,10 @@ em:not(.itemContainer em) {
       }
 
       .descriptionLine {
+        -webkit-line-clamp: 2 !important;
+        
         .articleDate {
           display: none;
-        }
-
-        .item-description {
-          -webkit-line-clamp: 2 !important;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box !important;
-          -webkit-box-orient: vertical;
         }
       }
     }
