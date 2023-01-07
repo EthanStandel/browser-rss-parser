@@ -967,8 +967,7 @@
             "name": "L'Express",
             "specification": "firstHeadline",
             "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/lexpress.jpeg",
-            "backgroundImg": "./icons/WebsitesIcons/lexpress.jpeg"
+            "iconImg": "./icons/WebsitesIcons/lexpress.jpeg"
           },
           {
             "url": "https://www.liberation.fr/arc/outboundfeeds/rss/category/sports/?outputType=xml",

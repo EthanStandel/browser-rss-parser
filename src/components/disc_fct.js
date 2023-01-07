@@ -16,28 +16,31 @@ export function disclosureDisplay(typeofDisclosure) {
   }
 }
 
-export function DiscAllDisplay() {
+export function DiscAllDisplay(show) { // the parameter tells the function to reset to 'Tout voir'
   const x = document.querySelectorAll("#discPlus")
-  if (document.getElementById("DiscAllDisplay")?.textContent.includes("Tout voir")) {
-    Array.from(x).forEach( el => {
-      if (el.parentElement.className.includes("noSubtopic")) {
-        }
-      else {
-        el.parentElement.classList.add("largeDisplay")
-      }}
-    )
-    document.getElementById("DiscAllDisplay").textContent = "Tout cacher"
-  }
-
-  else {
-    Array.from(x).forEach( el => {
-      if (el.parentElement.className.includes("noSubtopic")) {
-        }
-      else {
-        el.parentElement.classList.remove("largeDisplay")
-      }}
-    )
+  if (show === undefined) {
+    if (document.getElementById("DiscAllDisplay")?.textContent.includes("Tout voir")) {
+      Array.from(x).forEach( el => {
+        if (el.parentElement.className.includes("noSubtopic")) {
+          }
+        else {
+          el.parentElement.classList.add("largeDisplay")
+        }}
+      )
+      document.getElementById("DiscAllDisplay").textContent = "Tout cacher"
+    }
+  
+    else {
+      Array.from(x).forEach( el => {
+        if (el.parentElement.className.includes("noSubtopic")) {
+          }
+        else {
+          el.parentElement.classList.remove("largeDisplay")
+        }}
+      )
+      document.getElementById("DiscAllDisplay").textContent = "Tout voir"
+    }
+  } else {
     document.getElementById("DiscAllDisplay").textContent = "Tout voir"
   }
-
 }

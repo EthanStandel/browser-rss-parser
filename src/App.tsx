@@ -75,13 +75,13 @@ const App = () => {
       <header className="headerTopics">
           <div id="headerFirstLine">
             <div className="headerTitle">
-              <h5 className="logo-text" onClick={() => setTopicFilter(topicFilter)}>nuntii</h5>
+              <h5 className="logo-text" onClick={() => { setTopicFilter(topicFilter); DiscAllDisplay("show")}}>nuntii</h5>
             </div>
             <nav>
               <ul className="topics-navbar r1 bold">
                 {selectableTopics.map(name => (
                   <li key={name} className={name}>
-                    <button className={name === topicFilter ? `selected ${name}` : name} onClick={() => setTopicFilter(name)}>{name}</button>
+                    <button className={name === topicFilter ? `selected ${name}` : name} onClick={() => { setTopicFilter(name); DiscAllDisplay("show")}}>{name}</button>
                   </li>
                 ))}
               </ul>

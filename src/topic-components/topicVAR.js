@@ -65,7 +65,7 @@ export function jsonToListDisclosure(array = []) {
             <div class="justifiedTitle">
               <h6 class="titleLine">
                 ${((i?.countryISO3Label === "FRA") || (i?.countryISO3Label === undefined)) ? "" : "<div class='r4 LanguageLabel'>" + i.countryISO3Label + "</div>"}
-                <div class="ItemTitle">
+                <div class="itemTitle">
                 ${i.title}
                 </div>
               </h6>
