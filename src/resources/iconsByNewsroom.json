@@ -55,5 +55,9 @@
         "ARTE Journal": {
             "iconImg": "./icons/WebsitesIcons/arte-journal.jpg"
         }
+    },
+    "FranceInter": {
+        "name": "France Inter",
+        "iconImg": "./icons/WebsitesIcons/franceinter.png"
     }
 }

@@ -15,7 +15,7 @@ const SportEntries = [
   {
     "title": "Esprit sport",
     "URL": "https://www.franceinter.fr/emissions/histoires-de-sport",
-    "image1": "./icons/WebsitesIcons/franceinter.png",
+    "image1": iconsByNewsroom.FranceInter.iconImg,
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "2min",
     "description": "Chaque jour à 6:16, le sport, ses personnages, ses anecdotes et ses coulisses vus par Xavier Monferran.",
