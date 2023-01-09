@@ -48,7 +48,7 @@ const App = () => {
     "Finance","Économie verte","Marketing","Management","Innovations","Retraites","Enchères","Media","Cryptomonnaies","Tourisme",
     "Rugby","Handball","Baseball","Équitation","Sports de combat","Nautisme","Escrime","Pétanque","Hockey","Handisport","US",
     "Photographie","Histoire","Musique","Patrimoine","Arts visuels","Mode",
-    "Royautés","Luxe","Sexe & relations","Maison & jardin",
+    "Royautés","Luxe","Sexe & relations","Maison & jardin","Insolite & curiosité",
     "Pays ibériques","Suisse","Balkans","Italie",
     "Paix & sécurité","Écologie politique",
     "Auvergne-Rhône-Alpes","Bourgogne-Franche-Comté","Bretagne","Centre-Val de Loire","Corse","Grand Est","Guadeloupe","Guyane","Hauts-de-France","Île-de-France","Martinique","Mayotte","Normandie","Nouvelle-Aquitaine","Nouvelle-Calédonie","Occitanie","Pays de la Loire","Polynésie","Provence-Alpes-Côte d'Azur","Réunion","Saint-Pierre-et-Miquelon","Wallis-et-Futuna",
@@ -120,7 +120,7 @@ const App = () => {
             </div>
             
           </div>
-          <CustomTopicComponent />
+          <div className="LeftPodcastsColumn" ><CustomTopicComponent /></div>
           <div className="RightRSSColumn">
             {Object.entries(topics[topicFilter].subtopics)
               .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)

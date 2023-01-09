@@ -1,54 +1,52 @@
 const today = new Date();
 var day = today.getDay()
 
-let LàVdiffusion = ""
+export let LàVdiffusion = ""
 if ((day === 6) || (day === 0)) {
   LàVdiffusion = "Du lundi au vendredi"
 }
 
-let SDdiffusion = ""
+export let SDdiffusion = ""
 if (!((day === 6) || (day === 0))) {
   SDdiffusion = "Samedi et dimanche"
 }
 
-let Ddiffusion = ""
+export let Ddiffusion = ""
 if (day !== 0) {
   Ddiffusion = "Chaque dimanche"
 }
 
-let Sdiffusion = ""
+export let Sdiffusion = ""
 if (day !== 6) {
   Sdiffusion = "Chaque samedi"
 }
 
-let Vdiffusion = ""
+export let Vdiffusion = ""
 if (day !== 5) {
   Vdiffusion = "Chaque vendredi"
 }
 
-let Ldiffusion = ""
+export let Ldiffusion = ""
 if (day !== 1) {
   Ldiffusion = "Chaque lundi"
 }
 
-let MAdiffusion = ""
+export let MAdiffusion = ""
 if (day !== 2) {
   MAdiffusion = "Chaque mardi"
 }
 
-let MEdiffusion = ""
+export let MEdiffusion = ""
 if (day !== 3) {
   MEdiffusion = "Chaque mercredi"
 }
 
-let Jdiffusion = ""
+export let Jdiffusion = ""
 if (day !== 4) {
   Jdiffusion = "Chaque jeudi"
 }
 
-export { Ldiffusion, MAdiffusion, MEdiffusion, Jdiffusion, Vdiffusion, LàVdiffusion, Sdiffusion, SDdiffusion, Ddiffusion }
-
-export function jsonToListDisclosure(array = []) {
+export function jsonToListDisc(array = []) {
   let out =""
   for (let i of array) {
     out += `
@@ -72,9 +70,7 @@ export function jsonToListDisclosure(array = []) {
               <div class="r2 articleDate">${i.duration}</div>
             </div>    
             <div class="descriptionLine">
-              <div class="h8 item-description">
-                ${i.description}
-              </div>
+              ${(i.specification !== undefined) ? <div class="h8 item-description">{i.description}</div>: ""}
               ${(i.specification !== undefined) ? "<div class='descriptionLine always'><div class='r2 item-publish-date'>" + i.specification + "</div> </div>" : ""}
             </div>
           </div>

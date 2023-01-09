@@ -1,4 +1,4 @@
-import { LàVdiffusion, Ddiffusion, Jdiffusion, MAdiffusion, jsonToListDisclosure } from "../../topicVAR";
+import { LàVdiffusion, Ddiffusion, Jdiffusion, MAdiffusion, jsonToListDisc } from "../../topicVAR";
 import { Disc } from '../../../components/Disclosure_comp'
 import iconsByNewsroom from "../../../resources/iconsByNewsroom.json"
 
@@ -44,7 +44,7 @@ const CultureMusicEntries = [
 const CultureMusiqueComponent = () => {
   return (
     <div className="LeftPodcastsColumn">
-      {Disc(<div><h5>Les rendez-vous musicaux</h5></div>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(CultureMusicEntries)}} />, 'CultureMusic', CultureMusicEntries.length, "discIDBlock")}
+      {Disc(<div><h5>Les rendez-vous musicaux</h5></div>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(CultureMusicEntries)}} />, 'CultureMusic', CultureMusicEntries.length, "discIDBlock")}
     </div>
   );
 }

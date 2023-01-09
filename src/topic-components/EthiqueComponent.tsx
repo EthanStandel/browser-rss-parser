@@ -1,4 +1,4 @@
-import { MAdiffusion, jsonToListDisclosure } from "./topicVAR";
+import { MAdiffusion, jsonToListDisc } from "./topicVAR";
 import { Disc } from '../components/Disclosure_comp'
 
 const EthicsEntries = [
@@ -23,7 +23,7 @@ var LessonNumber = 'Lesson #' + Number(randomNumber+1)
 const EthiqueComponent = () => {
 
   return (
-    <div className="LeftPodcastsColumn">
+    <div>
       <div className="SolarOppLessonalyzerBlock">
          <a href="https://thesolaropposites.com/lessonalyzer/" target="_blank" rel="noreferrer">
           <section className="Lesson">
@@ -37,7 +37,7 @@ const EthiqueComponent = () => {
           </section>
         </a>
       </div>
-      {Disc(<h5>Les rendez-vous éthiques</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(EthicsEntries)}} />,"Ethics", EthicsEntries.length,"discIDBlock")}
+      {Disc(<h5>Les rendez-vous éthiques</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(EthicsEntries)}} />,"Ethics", EthicsEntries.length,"discIDBlock")}
     </div>
   );
 }

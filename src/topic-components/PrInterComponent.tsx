@@ -1,33 +1,8 @@
-import { LàVdiffusion, Sdiffusion, jsonToListDisclosure } from "./topicVAR";
-import { Disc } from '../components/Disclosure_comp'
+import { LàVdiffusion, jsonToListDisc } from "./topicVAR";
+import { Disc } from '../components/Disclosure_comp';
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
-const PrinterFREntries = [
-
-  // always have a countryISOLabel and specification by default once
-  {
-    "title": "La Revue de presse internationale",
-    "URL": "https://www.franceculture.fr/emissions/revue-de-presse-internationale",
-    "image1": "./icons/WebsitesIcons/franceculture.png",
-    "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
-    "duration": "6min",
-    "description": "Panorama de la presse du monde entier autour d'une actualité par Camille Magnard, du lundi au vendredi dans les Matins de France Culture à 7:35.",
-    "specification": LàVdiffusion
-  },
-  {
-    "title": "Le rendez-vous de la presse étrangère",
-    "URL": "hhttps://www.franceculture.fr/emissions/la-fabrique-mediatique",
-    "image1": iconsByNewsroom.Franceinfo.iconImg,
-    "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
-    "duration": "25min",
-    "description": "À 7:33, des journalistes correspondants de la presse internationale croisent leurs regards sur un fait d’actualité marquant de la semaine : l’information vue par ceux qui nous l’ont racontée.",
-    "specification": Sdiffusion
-  }
-]
-
-const PrinterOTHEREntries = [
-
-  // always have a countryISOLabel and specification by default once
+const PrinterEntries = [
   {
     "title": "Nightly News",
     "URL": "https://www.nbcnews.com/nightly-news-full-episodes",
@@ -69,10 +44,7 @@ const PrinterOTHEREntries = [
 
 const PrInterComponent = () => {
   return (
-    <div className="LeftPodcastsColumn">
-      {Disc(<h5>Les rendez-vous vers l'étranger</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(PrinterFREntries)}} />,"PrinterFR",PrinterFREntries.length,"discIDBlock")}
-      {Disc(<h5>Les rendez-vous internationaux</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(PrinterOTHEREntries)}} />,"PrinterOTHER",PrinterOTHEREntries.length,"discIDBlock")}
-    </div>
+    Disc(<h5>Les rendez-vous internationaux</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(PrinterEntries)}} />,"Printer",PrinterEntries.length,"discIDBlock")
   );
 }
 

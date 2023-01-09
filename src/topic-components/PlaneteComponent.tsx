@@ -1,4 +1,4 @@
-import { jsonToListDisclosure } from "./topicVAR";
+import { jsonToListDisc } from "./topicVAR";
 import { Disc } from '../components/Disclosure_comp'
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
@@ -18,9 +18,7 @@ const PlaneteEntries = [
 
 const PlaneteComponent = () => {
   return (
-    <div className="LeftPodcastsColumn">
-      {Disc(<h5>Les rendez-vous avec la planète</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(PlaneteEntries)}} />,"Planete",PlaneteEntries.length,"discIDBlock")}
-    </div>
+    Disc(<h5>Les rendez-vous avec la planète</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(PlaneteEntries)}} />,"Planete",PlaneteEntries.length,"discIDBlock")
   );
 }
 

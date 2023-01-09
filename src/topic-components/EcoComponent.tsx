@@ -1,4 +1,4 @@
-import { LàVdiffusion, jsonToListDisclosure } from "./topicVAR";
+import { LàVdiffusion, jsonToListDisc } from "./topicVAR";
 import { Disc } from '../components/Disclosure_comp'
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
@@ -50,9 +50,7 @@ const EcoEntries = [
 
 const EcoComponent = () => {
   return (
-    <div className="LeftPodcastsColumn">
-      {Disc(<h5>Les rendez-vous avec l'éco</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(EcoEntries)}} />,"Eco",EcoEntries.length,"discIDBlock")}
-    </div>
+    Disc(<h5>Les rendez-vous avec l'éco</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(EcoEntries)}} />,"Eco",EcoEntries.length,"discIDBlock")
   );
 }
 

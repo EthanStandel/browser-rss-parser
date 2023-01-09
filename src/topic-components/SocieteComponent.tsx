@@ -1,10 +1,8 @@
-import { LàVdiffusion, jsonToListDisclosure } from "./topicVAR";
-import { disclosureDisplay } from '../components/disc_fct';
+import { LàVdiffusion, jsonToListDisc } from "./topicVAR";
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
+import { Disc } from '../components/Disclosure_comp';
 
 const SocieteEntries = [
-
-  // always have a countryISOLabel by default once
   {
     "title": "Le dossier santé du jour",
     "URL": "https://www.europe1.fr/emissions/vite-fait-tres-bien-fait",
@@ -18,23 +16,7 @@ const SocieteEntries = [
 
 const SocieteComponent = () => {
   return (
-    <div className="LeftPodcastsColumn">
-      <div className="Disclosure">
-        <div className="intro" id="disclosureHeader Sante" onClick={() => disclosureDisplay("Sante")}> 
-          <div> 
-            <h5>Les rendez-vous sociétaux</h5>
-          </div>
-          <div className="chevron">
-            <svg viewBox="0 0 100 58.353394" /* ratio of the svg file*/ width="12">
-              <use xlinkHref="./genIcons/chevron_down.svg#path2"></use>
-            </svg>
-          </div>
-        </div>
-        <div id="disclosurePlus"> 
-          <ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(SocieteEntries)}} />
-        </div>
-      </div>
-    </div>
+    Disc(<h5>Les rendez-vous de la société</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(SocieteEntries)}} />,"Societe",SocieteEntries.length,"discIDBlock")
   );
 }
 

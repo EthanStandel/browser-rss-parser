@@ -1,5 +1,5 @@
-import { Ddiffusion, jsonToListDisclosure } from "./topicVAR";
-import { disclosureDisplay } from '../components/disc_fct';
+import { Ddiffusion, jsonToListDisc } from "./topicVAR";
+import { Disc } from '../components/Disclosure_comp';
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
 const AutoEntries = [
@@ -16,23 +16,7 @@ const AutoEntries = [
 
 const AutoComponent = () => {
   return (
-    <div className="LeftPodcastsColumn">
-      <div className="Disclosure">
-        <div className="intro" id="disclosureHeader Auto" onClick={() => disclosureDisplay("Auto")}> 
-          <div> 
-            <h5>Les rendez-vous avec l'auto</h5>
-          </div>
-          <div className="chevron">
-            <svg viewBox="0 0 100 58.353394" /* ratio of the svg file*/ width="12">
-              <use xlinkHref="./genIcons/chevron_down.svg#path2"></use>
-            </svg>
-          </div>
-        </div>
-        <div id="disclosurePlus"> 
-          <ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisclosure(AutoEntries)}} />
-        </div>
-      </div>
-    </div>
+    Disc(<h5>Les rendez-vous avec l'auto</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(AutoEntries)}} />,"Auto",AutoEntries.length,"discIDBlock")
   );
 }
 

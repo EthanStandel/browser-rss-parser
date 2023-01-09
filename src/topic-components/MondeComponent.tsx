@@ -1,105 +1,49 @@
-import { LàVdiffusion } from "./topicVAR";
+import { LàVdiffusion, jsonToListDisc } from "./topicVAR";
+import { Disc } from '../components/Disclosure_comp';
+import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
-const IdeesComponent = () => {
+const MondeEntries = [
+  {
+    "title": "Revue de presse internationale",
+    "URL": "https://www.franceculture.fr/emissions/revue-de-presse-internationale",
+    "image1": "./icons/WebsitesIcons/franceculture.png",
+    "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
+    "duration": "6min",
+    "description": "Panorama de la presse du monde entier autour d'une actualité par Camille Magnard, du lundi au vendredi dans les Matins de France Culture à 7:35.",
+    "specification": LàVdiffusion
+  },
+  {
+    "title": "Le rendez-vous de la presse étrangère",
+    "URL": "https://www.europe1.fr/emissions/La-revue-de-presse-internationale",
+    "image1": iconsByNewsroom.Europe1.iconImg,
+    "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
+    "duration": "4min",
+    "description": "Chaque matin à 6:53, nos correspondants aux quatre coins du monde répondent à une question simple : Que se passe-t-il chez eux aujourd’hui ?",
+    "specification": LàVdiffusion
+  },
+  {
+    "title": "L'édito international",
+    "URL": "https://www.europe1.fr/emissions/vincent-hervouet-vous-parle-international",
+    "image1": iconsByNewsroom.Europe1.iconImg,
+    "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
+    "duration": "3min",
+    "description": "Chaque jour à 7:12, Vincent Hervouët zoome sur un sujet qui fait l'actualité à travers le monde.",
+    "specification": LàVdiffusion
+  },
+  {
+    "title": "Le journal international", 
+    "URL": "https://information.tv5monde.com/les-jt/eco?jt=jt_eco",
+    "image1": iconsByNewsroom.TV5Monde.iconImg,
+    "image2": iconsByNewsroom.Apple.AppleTV.iconImg,
+    "duration": "20min",
+    "description": "À 12h chaque jour, un tour du monde des dernières informations par la rédaction."
+  }
+]
+
+const MondeComponent = () => {
   return (
-    <div className="LeftPodcastsColumn">
-    <ul className='rss-podcasts'>
-      <div className="intro">
-        <h5>Rendez-vous à l'international</h5>
-      </div>
-    <li className={"nList TVbanner "}>
-      <a href="https://www.europe1.fr/emissions/La-revue-de-presse-internationale" target="_blank" rel="noreferrer">
-        <div className="media">
-          <div className="iconContainer">
-            <div className="iconImgWrapper">
-              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
-            </div>
-            <div className="iconImgWrapper double-img">
-              <img src="./icons/WebsitesIcons/europe1.png"/>
-              <img src="./icons/WebsitesIcons/applepodcasts.png"/>
-            </div>
-          </div>
-          <div className="itemContainer">
-            <div className="item-F-line">
-              <h6 className="titleLine">La revue de presse internationale – Europe Matin</h6>
-              <div className="icon-footnote-container footnote">4 min</div>
-            </div>    
-            <div className="descriptionLine">
-              <div className="item-descriptionWrapper">
-                <div className="h8 item-description">
-                Chaque matin à 6:53, nos correspondants aux quatre coins du monde répondent à une question simple : Que se passe-t-il chez eux aujourd’hui ?
-                </div>
-              </div>
-            </div>
-            <div className="descriptionLine always">
-                <div className="r2 item-publish-date">{LàVdiffusion}</div>
-              </div>
-          </div>
-        </div>
-      </a>
-    </li>
-    <li className={"nList TVbanner "}>
-      <a href="https://www.europe1.fr/emissions/vincent-hervouet-vous-parle-international" target="_blank" rel="noreferrer">
-        <div className="media">
-          <div className="iconContainer">
-            <div className="iconImgWrapper">
-              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
-            </div>
-            <div className="iconImgWrapper double-img">
-              <img src="./icons/WebsitesIcons/europe1.png"/>
-              <img src="./icons/WebsitesIcons/applepodcasts.png"/>
-            </div>
-          </div>
-          <div className="itemContainer">
-            <div className="item-F-line">
-              <h6 className="titleLine">L'édito international – Europe Matin</h6>
-              <div className="icon-footnote-container footnote">3 min</div>
-            </div>    
-            <div className="descriptionLine">
-              <div className="item-descriptionWrapper">
-                <div className="h8 item-description">
-                Chaque jour à 7:12, Vincent Hervouët zoome sur un sujet qui fait l'actualité à travers le monde.
-                </div>
-              </div>
-            </div>
-            <div className="descriptionLine always">
-                <div className="r2 item-publish-date">{LàVdiffusion}</div>
-              </div>
-          </div>
-        </div>
-      </a>
-    </li>
-    <li className="nList TVbanner">
-      <a href="https://information.tv5monde.com/les-jt/eco?jt=jt_eco" target="_blank" rel="noreferrer">
-        <div className="media">
-         <div className="iconContainer">
-            <div className="iconImgWrapper">
-              <img src="https://apps.apple.com/assets/images/masks/icon-app-mask-border-61226afcae6a8f2b3d2755728daaf4f2.svg"/>
-            </div>
-            <div className="iconImgWrapper double-img">
-              <img src="./icons/WebsitesIcons/tv5monde.png"/>
-              <img src="./icons/WebsitesIcons/appletv.png"/>
-            </div>
-          </div>
-          <div className="itemContainer">
-            <div className="item-F-line">
-              <h6 className="titleLine">Le journal international</h6>
-              <div className="icon-footnote-container footnote">20 min</div>
-            </div>    
-            <div className="descriptionLine">
-              <div className="item-descriptionWrapper">
-                <div className="h8 item-description">
-                À 12h chaque jour, un tour du monde des dernières informations par la rédaction.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </li>
-    </ul>
-    </div>
+    Disc(<h5>Les rendez-vous avec le monde</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(MondeEntries)}} />,"Monde",MondeEntries.length,"discIDBlock")
   );
 }
 
-export default IdeesComponent
+export default MondeComponent

@@ -48,5 +48,12 @@
     "FranceCulture": {
         "name": "France Culture",
         "iconImg": "./icons/WebsitesIcons/franceculture.png"
+    },
+    "Arte": {
+        "name": "ARTE",
+        "iconImg": "./icons/WebsitesIcons/arte.png",
+        "ARTE Journal": {
+            "iconImg": "./icons/WebsitesIcons/arte-journal.jpg"
+        }
     }
 }
