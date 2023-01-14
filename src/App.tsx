@@ -6,8 +6,8 @@ import rssFeeds from "./resources/rss_feeds.json";
 import topicComponents from './topic-components/topicComponents';
 import SubtopicComponents from './topic-components/subtopic-components/subtopicComponents';
 import { BrowserUtils } from './utils/BrowserUtils';
-import { Disc } from './components/Disclosure_comp';
-import { DiscAllDisplay } from './components/disc_fct';
+import { Disc, DiscAdditonal } from './components/Disclosure_comp';
+import { DiscAllDisplay, disclosureDisplay } from './components/disc_fct';
 import { sidebarDisplayInverted } from './components/sidebar_fct';
 import { defaultTheme, inverseTheme } from "./ios/color-scheme-toggle";
 
@@ -36,12 +36,12 @@ const App = () => {
     BrowserUtils.scrollToTop();
     setSubtopicFilter(undefined);
     subtopicNavbarContainer.current?.scroll({ left: 0 });
-    const shouldUnfilter = newTopicFilter === topicFilter;
-    const query = shouldUnfilter ? "" : `?topic=${encodeURIComponent(newTopicFilter)}`;
+
+    const query = `?topic=${encodeURIComponent(newTopicFilter)}`;
     // eslint-disable-next-line no-restricted-globals
     const path = `${location.protocol}//${location.host}${location.pathname}${query}`;
     window.history.pushState({ path }, "", path);
-    _setTopicFilter(shouldUnfilter ? "À la une": newTopicFilter);
+    _setTopicFilter(newTopicFilter);
   }
 
   const CustomTopicComponent = topicComponents[topicFilter] ?? "div";
@@ -69,27 +69,27 @@ const App = () => {
     }
     return displayednList
   }
-  window.onload = sidebarDisplayInverted
+  window.onload = () => sidebarDisplayInverted() // show the sidebar on load
 
   return (
-    <div className={topicFilter + " App"} data-color-scheme={defaultTheme()} id="App">
+    <div id="App" className={topicFilter} data-color-scheme={defaultTheme()}>
       <div className="header-mobile">
         <h5 className="logo-text" onClick={() => setTopicFilter(topicFilter)}>nuntii</h5>
       </div>
-      <header className="headerTopics">
+      <header>
         <div id="headerFirstLine" className="spacingLine noGapSL">
           <div className="spacingLine" id="largeHeader">            
             <div className='spacingLineLeft spacingLine noGapSL'>
-            <button className="squareButton20" onClick={() => sidebarDisplayInverted()} id="sidebarDisplayInverted">
-              <svg viewBox="0 0 126.80602 100" /* ratio of the svg file*/ height="20">
-                <use xlinkHref="./genIcons/sidebar.svg#path2"></use>
-              </svg>
-            </button>
-            <button className="squareButton20" onClick={() => null} id="nuntiiInfo">
-              <svg viewBox="0 0 100 100" /* ratio of the svg file*/ height="20">
-                <use xlinkHref="./genIcons/info.svg#path2"></use>
-              </svg>
-            </button>
+              <button className="squareButton20" onClick={() => sidebarDisplayInverted()} id="sidebarDisplayInverted">
+                <svg viewBox="0 0 126.80602 100" /* ratio of the svg file*/ height="20">
+                  <use xlinkHref="./genIcons/sidebar.svg#path2"></use>
+                </svg>
+              </button>
+              <button className="squareButton20" onClick={() => null} id="nuntiiInfo">
+                <svg viewBox="0 0 100 100" /* ratio of the svg file*/ height="20">
+                  <use xlinkHref="./genIcons/info.svg#path2"></use>
+                </svg>
+              </button>
             </div>
             <div className="headerTitle" onClick={() => { setTopicFilter(topicFilter); DiscAllDisplay("show")}}>
               <h6 className='nuntiiHeaderTitle'>nuntii</h6>
@@ -110,7 +110,7 @@ const App = () => {
               </button>
             </div>
           </div>
-          <nav>
+          <nav id="oldTopicnavbar">
             <ul className="topics-navbar r1 bold">
               {selectableTopics.map(name => (
                 <li key={name} className={name}>
@@ -148,15 +148,27 @@ const App = () => {
         <div id="uiSplit-sidebar">
           <div className='uiSplit-sidebarContainer'>
             <section id="sidebarTopics">
-              <div className='r2 up bold sidebarSectionTitle' >Sujets & domaines</div>
+              <div className='r2 up bold sidebarSectionTitle'>Sujets & thèmes</div>
               <ul className="sidebarTopics">
-              {selectableTopics.map(name => (
-                <li key={name} className={"h8 bold " + (name === topicFilter ? `selected ${name}` : name)} onClick={() => { setTopicFilter(name); DiscAllDisplay("show")}}>
-                  {name}
-                </li>
-                
-              ))}
-              
+                {selectableTopics.map(name => (
+                  <li key={name} className={"h8 bold " + (name === topicFilter ? `selected ${name}` : name)}>
+                    {DiscAdditonal(
+                      <button className="h8 bold " onClick={() => { setTopicFilter(name); DiscAllDisplay("show")}}>{name}</button>, 
+                      <div>
+                        {Object.keys(topics[name].subtopics)
+                          .filter(key => key !== "noSubtopic")
+                          .map(key => (
+                            <div key={key} className={`${key}-subtopic`}>
+                              <button className={subtopicFilter === key ? `h8 selected ${key}` : 'h8'} onClick={() => {setTopicFilter(name); setSubtopicFilter(key); DiscAllDisplay("show")}}>{key}</button>
+                            </div>
+                          ))
+                        }
+                      </div>,
+                      (name),
+                      Object.keys(topics[name].subtopics).length
+                    )}
+                  </li>
+                ))}
               </ul>
             </section>
             <section id="sidebarPlus">

@@ -9,7 +9,7 @@
   filter: drop-shadow(17px 20px 40px rgba(0, 0, 0, 0.21));
 }
 
-.App {
+#App {
   &[data-color-scheme="light"] {
     /* Adaptable Colors */
     --systemBlue: rgba(0.0, 122.0, 255.0, 1.0);
