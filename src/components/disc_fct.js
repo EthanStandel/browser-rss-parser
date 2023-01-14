@@ -1,6 +1,6 @@
-export function disclosureDisplay(typeofDisclosure) {
+export function disclosureDisplay(typOfDiscHeader, typeofDisclosure) {
 
-  const x = document.getElementById("discHeader " + typeofDisclosure);
+  const x = document.getElementById(typOfDiscHeader + " " + typeofDisclosure);
   const X = x.parentElement;
   let transitionTime = 0.4*Number(X.className.split(" ")[0].replace(/\D/g, "")) //0.4s for 1 elements
   if (transitionTime > 1.5) {

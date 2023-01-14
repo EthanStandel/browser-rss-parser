@@ -92,7 +92,7 @@ const App = () => {
               </button>
             </div>
             <div className="headerTitle" onClick={() => { setTopicFilter(topicFilter); DiscAllDisplay("show")}}>
-              <h6 className='nuntiiHeaderTitle'>nuntii</h6>
+              <h6><em>nuntii</em></h6>
               <h6>{topicFilter}</h6>
             </div>
             <div className='spacingLineRight spacingLine noGapSL'>
@@ -153,7 +153,7 @@ const App = () => {
                 {selectableTopics.map(name => (
                   <li key={name} className={"h8 bold " + (name === topicFilter ? `selected ${name}` : name)}>
                     {DiscAdditonal(
-                      <button className="h8 bold " onClick={() => { setTopicFilter(name); DiscAllDisplay("show")}}>{name}</button>, 
+                      <button className="h8 bold " onClick={() => { setTopicFilter(name); DiscAllDisplay("show"); disclosureDisplay("discAddHeader", name)}}>{name}</button>, 
                       <div>
                         {Object.keys(topics[name].subtopics)
                           .filter(key => key !== "noSubtopic")

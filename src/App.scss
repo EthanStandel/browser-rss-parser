@@ -838,10 +838,10 @@ Adapted for small devices
 }
 
 /*/ small caps for label in paragraph /*/
-em:not(.itemContainer em) {
+em {
   font-family: 'Bodoni Moda' !important;
   font-weight: 700;
-  font-size: calc(100% + 3px);
+  font-size: calc(113%);
   font-style: normal;
 }
 
@@ -1231,10 +1231,8 @@ em:not(.itemContainer em) {
   align-items: baseline;
   gap: 10px;
 
-  .nuntiiHeaderTitle {
+  > *:first-of-type {
     border-right: 1.8px solid var(--separator);
-    font-family: 'Bodoni Moda';
-    font-weight: 800;
     padding-right: 8px;
   }
 }
