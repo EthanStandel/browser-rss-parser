@@ -1,12 +1,30 @@
 {
-    "Franceinfo": {
-        "name": "Franceinfo",
-        "iconImg": "./icons/WebsitesIcons/franceinfo.jpeg",
-        "bgImg": "./icons/WebsitesIcons/franceinfo_bgIMG.jpg"
+    "Francetv": {
+        "Franceinfo": {
+            "name": "Franceinfo",
+            "iconImg": "./icons/WebsitesIcons/franceinfo.jpeg",
+            "bgImg": "./icons/WebsitesIcons/franceinfo_bgIMG.jpg"
+        },
+        "France2": {
+            "name": "France 2",
+            "iconImg": "./icons/WebsitesIcons/france2.png",
+            "j8h": {
+                "name": "Journal de 8h",
+                "iconImg": "./icons/WebsitesIcons/france2-j8h.png"
+            }
+        }
     },
     "Europe1": {
         "name": "Europe 1",
-        "iconImg": "./icons/WebsitesIcons/europe1.png"
+        "iconImg": "./icons/WebsitesIcons/europe1.png",
+        "LesOrigines": {
+            "name": "Les origines",
+            "iconImg": "./icons/WebsitesIcons/europe1-DCL.png"
+        },
+        "LesTendances": {
+            "name": "Les tendances", 
+            "iconImg": "./icons/WebsitesIcons/europe1-LesTendances.png"
+        }
     },
     "Apple": {
         "name": "Apple",

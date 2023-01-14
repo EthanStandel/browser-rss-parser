@@ -16,9 +16,12 @@ export function disclosureDisplay(typeofDisclosure) {
   }
 }
 
-export function DiscAllDisplay(show) { // the parameter tells the function to reset to 'Tout voir'
-  const x = document.querySelectorAll("#discPlus")
-  if (show === undefined) {
+export function DiscAllDisplay(show, classtoUse) { // the parameter tells the function to reset to 'Tout voir'
+  let x = document.querySelectorAll("#discPlus")
+  if (classtoUse !== undefined) {
+    x = document.getElementsByClassName(classtoUse).querySelectorAll("#discPlus")
+  }
+  if ((show === undefined) ?? (show === ""))  {
     if (document.getElementById("DiscAllDisplay")?.textContent.includes("Tout voir")) {
       Array.from(x).forEach( el => {
         if (el.parentElement.className.includes("noSubtopic")) {

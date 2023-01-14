@@ -153,14 +153,6 @@
             "backgroundImg": "./icons/WebsitesIcons/thenewyorker_bgIMG.jpg"
           },
           {
-            "url": "https://www.lapresse.ca/actualites/national/rss",
-            "name": "La Presse",
-            "articlesCountryISO3": "CAN",
-            "specification": "firstHeadline",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/lapresse.png"
-          },
-          {
             "url": "https://www.ft.com/world/us?format=rss",
             "name": "The Financial Times",
             "articlesCountryISO3": "USA",
@@ -2135,7 +2127,7 @@
             "backgroundImg": "./icons/WebsitesIcons/fisheye_bgIMG.jpg"
           }
         ],
-        "Patrimoine, architecture & urbanisme": [
+        "Architecture & urbanisme": [
           {
             "url": "https://www.ladepeche.fr/culture-et-loisirs/patrimoine/rss.xml",
             "name": "La Dépêche",
@@ -2163,13 +2155,6 @@
             "articlesCountryISO3": "CAN",
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/lapresse.png"
-          },
-          {
-            "url": "https://feed.prismamediadigital.com/v1/cap/rss?sources=capital,polemik,xerfi,management,capital-avec-agence-france-presse,capital-avec-aof,capital-avec-reuters,capital-avec-optimaretraite,aeronewstv&tags=architecture,urbanisme",
-            "name": "Capital",
-            "articlesCount": 1,
-            "iconImg": "./icons/WebsitesIcons/capital.png",
-            "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
           }
         ],
         "BD, comics & mangas": [

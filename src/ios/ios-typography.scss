@@ -1,10 +1,10 @@
 @import "ios-semantic_colors.scss";
 
-  * {
-      margin: 0;
-      padding: 0;
-      --font-ui: 'Inter';
-  }
+* {
+    margin: 0;
+    padding: 0;
+    --font-ui: 'Inter';
+}
 
 /* Huge Title */
 h1 {
@@ -225,8 +225,11 @@ p.bold {
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 0px;
-    text-transform: uppercase;
     color: var(--secondaryLabel) !important;
+
+    &.up {
+        text-transform: uppercase;
+    }
 }
 
 /* Bold style for Rubric 1 */
@@ -242,7 +245,10 @@ p.bold {
     font-size: 15px;
     line-height: 19px;
     letter-spacing: -0.0088px;
-    text-transform: uppercase;
+
+    &.up {
+        text-transform: uppercase;
+    }
 }
 
 /* Rubric 4 */
@@ -253,7 +259,10 @@ p.bold {
     font-size: 10px;
     line-height: 13px;
     letter-spacing: 0.0100px;
-    text-transform: uppercase;
+
+    &.up {
+        text-transform: uppercase;
+    }
 }
 
 /* Rubric 5 */
@@ -265,4 +274,10 @@ p.bold {
     line-height: 10px;
     letter-spacing: 0.0235px;
     text-transform: uppercase;
+}
+button {
+    color: var(--label);
+    background-color: rgba(0,0,0,0);
+    border: none;
+    cursor: pointer;
 }

@@ -23,6 +23,15 @@
     &.Presse.étrangère { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
       --colorTheme: var(--peColorTheme);
     }
+
+    #uiSplit-sidebar ul.sidebarTopics li {
+      
+      &:hover, &.selected {
+        &.Presse.étrangère {
+          background-color: var(--peColorTheme) !important;
+        }
+  }
+}
   
     header #headerFirstLine ul li {
     // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
@@ -47,6 +56,15 @@
   .App {
     &.Économie { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
       --colorTheme: var(--ecoColorTheme);
+    }
+
+    #uiSplit-sidebar ul.sidebarTopics li {
+      
+      &:hover, &.selected {
+        &.Économie {
+          background-color: var(--ecoColorTheme)!important;
+                  }
+      }
     }
   
     header #headerFirstLine ul li {
@@ -73,6 +91,15 @@
     &.Sport { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
       --colorTheme: var(--sportColorTheme);
     }
+
+    #uiSplit-sidebar ul.sidebarTopics li {
+      
+      &:hover, &.selected {
+        &.Sport {
+          background-color: var(--sportColorTheme)!important;
+                  }
+      }
+    }
   
     header #headerFirstLine ul li {
     // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
@@ -97,6 +124,15 @@
   .App {
     &.Culture { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
       --colorTheme: var(--cultureColorTheme);
+    }
+
+    #uiSplit-sidebar ul.sidebarTopics li {
+      
+      &:hover, &.selected {
+        &.Culture {
+          background-color: var(--cultureColorTheme)!important;
+                  }
+      }
     }
   
     header #headerFirstLine ul li {
@@ -123,6 +159,15 @@
     &.Europe { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
       --colorTheme: var(--europeColorTheme);
     }
+
+    #uiSplit-sidebar ul.sidebarTopics li {
+      
+      &:hover, &.selected {
+        &.Europe {
+          background-color: var(--europeColorTheme)!important;
+                  }
+      }
+    }
   
     header #headerFirstLine ul li {
     // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
@@ -147,6 +192,15 @@
   .App {
     &.Monde { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
       --colorTheme: var(--mondeColorTheme);
+    }
+
+    #uiSplit-sidebar ul.sidebarTopics li {
+      
+      &:hover, &.selected {
+        &.Monde {
+          background-color: var(--mondeColorTheme)!important;
+                  }
+      }
     }
   
     header #headerFirstLine ul li {
@@ -173,6 +227,15 @@
     &.Régions { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
       --colorTheme: var(--regionsColorTheme);
     }
+
+    #uiSplit-sidebar ul.sidebarTopics li {
+      
+      &:hover, &.selected {
+        &.Régions {
+          background-color: var(--regionsColorTheme)!important;
+                  }
+      }
+    }
   
     header #headerFirstLine ul li {
     // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
@@ -197,6 +260,15 @@
   .App {
     &.Politique { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
       --colorTheme: var(--politiqueColorTheme);
+    }
+
+    #uiSplit-sidebar ul.sidebarTopics li {
+      
+      &:hover, &.selected {
+        &.Politique {
+          background-color: var(--politiqueColorTheme)!important;
+                  }
+      }
     }
   
     header #headerFirstLine ul li {
@@ -223,6 +295,15 @@
     &.Idées { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
       --colorTheme: var(--ideesColorTheme);
     }
+
+    #uiSplit-sidebar ul.sidebarTopics li {
+      
+      &:hover, &.selected {
+        &.Idées {
+          background-color: var(--ideesColorTheme)!important;
+                  }
+      }
+    }
   
     header #headerFirstLine ul li {
     // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
@@ -247,6 +328,15 @@
   .App {
     &.Société { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
       --colorTheme: var(--societeColorTheme);
+    }
+
+    #uiSplit-sidebar ul.sidebarTopics li {
+      
+      &:hover, &.selected {
+        &.Société {
+          background-color: var(--societeColorTheme)!important;
+                  }
+      }
     }
   
     header #headerFirstLine ul li {
@@ -273,6 +363,15 @@
     &.Science { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
       --colorTheme: var(--scienceColorTheme);
     }
+
+    #uiSplit-sidebar ul.sidebarTopics li {
+      
+      &:hover, &.selected {
+        &.Science {
+          background-color: var(--scienceColorTheme)!important;
+                  }
+      }
+    }
   
     header #headerFirstLine ul li {
     // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
@@ -298,6 +397,15 @@
     &.Planète { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
       --colorTheme: var(--planeteColorTheme);
     }
+
+    #uiSplit-sidebar ul.sidebarTopics li {
+      
+      &:hover, &.selected {
+        &.Planète {
+          background-color: var(--planeteColorTheme)!important;
+                  }
+      }
+    }
   
     header #headerFirstLine ul li {
     // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
@@ -322,6 +430,15 @@
   .App {
     &.Tech { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
       --colorTheme: var(--techColorTheme);
+    }
+
+    #uiSplit-sidebar ul.sidebarTopics li {
+      
+      &:hover, &.selected {
+        &.Tech {
+          background-color: var(--techColorTheme)!important;
+                  }
+      }
     }
   
     header #headerFirstLine ul li {
@@ -349,6 +466,15 @@
     &.Art.de.vivre { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
       --colorTheme: var(--lifestyleColorTheme);
     }
+
+    #uiSplit-sidebar ul.sidebarTopics li {
+      
+      &:hover, &.selected {
+        &.Art.de.vivre {
+          background-color: var(--lifestyleColorTheme)!important;
+                  }
+      }
+    }
   
     header #headerFirstLine ul li {
     // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
@@ -373,6 +499,15 @@
   .App {
     &.Éthique { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
       --colorTheme: var(--ethiqueColorTheme);
+    }
+
+    #uiSplit-sidebar ul.sidebarTopics li {
+      
+      &:hover, &.selected {
+        &.Éthique {
+          background-color: var(--ethiqueColorTheme)!important;
+                  }
+      }
     }
   
     header #headerFirstLine ul li {
@@ -399,6 +534,15 @@
     &.Auto-moto { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
       --colorTheme: var(--autoColorTheme);
     }
+
+    #uiSplit-sidebar ul.sidebarTopics li {
+      
+      &:hover, &.selected {
+        &.Auto-moto {
+          background-color: var(--autoColorTheme)!important;
+                  }
+      }
+    }
   
     header #headerFirstLine ul li {
     // for whatever selected topic, the topics-navbar for the X topic will show the associated X colorTheme
@@ -423,6 +567,15 @@
   .App {
     &.TED { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
       --colorTheme: var(--TEDColorTheme);
+    }
+
+    #uiSplit-sidebar ul.sidebarTopics li {
+      
+      &:hover, &.selected {
+        &.TED {
+          background-color: var(--TEDColorTheme)!important;
+                  }
+      }
     }
   
     header #headerFirstLine ul li {

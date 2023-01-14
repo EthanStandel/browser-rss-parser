@@ -60,18 +60,18 @@ export function jsonToListDisc(array = []) {
             </div>
           </div>
           <div class="itemContainer">
-            <div class="justifiedTitle">
+            <div class="justifiedTitle spacingLine">
               <h6 class="titleLine">
                 ${((i?.countryISO3Label === "FRA") || (i?.countryISO3Label === undefined)) ? "" : "<div class='r4 LanguageLabel'>" + i.countryISO3Label + "</div>"}
                 <div class="itemTitle">
                 ${i.title}
                 </div>
               </h6>
-              <div class="r2 articleDate">${i.duration}</div>
+              <div class="r2 up articleDate">${i.duration}</div>
             </div>    
             <div class="descriptionLine">
-              ${(i.specification !== undefined) ? <div class="h8 item-description">{i.description}</div>: ""}
-              ${(i.specification !== undefined) ? "<div class='descriptionLine always'><div class='r2 item-publish-date'>" + i.specification + "</div> </div>" : ""}
+              ${((i.specification !== undefined) && (i.specification !== "")) ? "": "<div class='h8 item-description'>" + i.description + "</div>"}
+              ${((i.specification === "") || (i.specification === undefined))  ? "" : "<div class='descriptionLine always'><div class='r2 up item-publish-date'>" + i.specification + "</div> </div>"}
             </div>
           </div>
         </div>

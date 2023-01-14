@@ -6,7 +6,6 @@ import { useAsync } from "@react-hookz/web";
 import { Spinner } from "./Spinner";
 import _unescape from "lodash/unescape";
 import _deburr from "lodash/deburr";
-import { countReset } from "console";
 import { range } from "lodash";
 
 export interface RssFeedSource {
@@ -129,8 +128,8 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             // WARNING: Some of these items contain HTML
             // If they ever contain a script, it's not being filtered out
             
-            const titleSplitTitle = item.title?.split(", says ")[0] ?? item.title?.split(", blasts ")[0] ?? item.title?.split(", warns ")[0];
-            const titleSplit = item.title?.split(", says ")[1] ?? item.title?.split(", blasts ")[1] ?? item.title?.split(", warns ")[1];
+            // const titleSplitTitle = item.title?.split(", says ")[0] ?? item.title?.split(", blasts ")[0] ?? item.title?.split(", warns ")[0];
+            // const titleSplit = item.title?.split(", says ")[1] ?? item.title?.split(", blasts ")[1] ?? item.title?.split(", warns ")[1];
 
             const imgHref = 
             item.image
@@ -138,19 +137,19 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             ?? item.enclosure?.url ?? item.enclosure?.url 
             ?? source.backgroundImg ?? "./genIcons/applenews_bgIMG_alt.jpg";
 
-            var author = item.author || item["dc:creator"];
-            var author = author?.includes(String(source.name)) ? undefined : author;
-            var author = author?.includes(String(source.name?.toUpperCase)) ? undefined : author;
-            var author = author?.includes(String(source.name?.toLowerCase)) ? undefined : author;
-            var author = author?.includes("AFP") ? undefined : author;
-            var author = author?.includes(String(_deburr(source.name))) ? undefined : author;
+            let author = item.author || item["dc:creator"];
+            author = author?.includes(String(source.name)) ? undefined : author;
+            author = author?.includes(String(source.name?.toUpperCase)) ? undefined : author;
+            author = author?.includes(String(source.name?.toLowerCase)) ? undefined : author;
+            author = author?.includes("AFP") ? undefined : author;
+            author = author?.includes(String(_deburr(source.name))) ? undefined : author;
 
-            var splitTitleCategory = (item.title?.includes("|") ? item.title.split("| ")[0] : undefined)
+            // var splitTitleCategory = (item.title?.includes("|") ? item.title.split("| ")[0] : undefined)
             let concatListofCategories = [(item.category || source.category)].join(',') /* select categories from the RSS feed if none is specified*/
      
             let arrayCategories = concatListofCategories.split(',').slice(0, 3); /* presents categories in an array with 3 elements (split in elements by comma sign) */
            
-            var dict = ['Content Type: Personal Profile','Vivre','Images','blog','Auto-News','has_diapo','Produits','Radio 1','all','News','Actu','Actus','Video','Vidéo','Diaporama','Not found','Fil Info','Magazine','Flash Actu']
+            // var dict = ['Content Type: Personal Profile','Vivre','Images','blog','Auto-News','has_diapo','Produits','Radio 1','all','News','Actu','Actus','Video','Vidéo','Diaporama','Not found','Fil Info','Magazine','Flash Actu']
             
             var arrayCategoriesTEST = []
             for (var element of arrayCategories) {
@@ -167,7 +166,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                 )
               ;
               
-              if (correctedElement != "") {
+              if (correctedElement !== "") {
                 arrayCategoriesTEST.push(correctedElement)
               } else {
                 arrayCategoriesTEST.push("")
@@ -185,7 +184,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             let CategoriesCommaSeparated = arrford(arrayCategoriesTEST, false).replace(' and ', ', '); /* list formatting with commas' */
 
             let countryISO3Label = String(source.articlesCountryISO3)
-            if ((source.articlesCountryISO3 == "") || (source.articlesCountryISO3 == null)) {
+            if ((source.articlesCountryISO3 === undefined) ?? (source.articlesCountryISO3 == null)) {
               countryISO3Label = "FRA"
             } /* by default, articles are considered from French newsrooms and hidden */
 
@@ -223,25 +222,25 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                           <div className="r1 up bold articleCategory">
                             {CategoriesCommaSeparated}
                           </div>
-                          <div className="r2 articleDate">
-                            {((concatListofCategories == "") || (concatListofCategories == null)) ? null : String(displayedDate)}
+                          <div className="r2 up articleDate">
+                            {((concatListofCategories === "") || (concatListofCategories === null)) ? null : String(displayedDate)}
                           </div>
                         </div>
-                        <div className="justifiedTitle">
+                        <div className="justifiedTitle spacingLine">
                           <h6 className="titleLine">
-                            {countryISO3Label == "FRA" ? null : <div className={"LanguageLabel r4 " + countryISO3Label}>{countryISO3Label}</div>}
+                            {(countryISO3Label !== "FRA") ? <div className={"LanguageLabel r4 " + countryISO3Label}>{countryISO3Label}</div> : null}
                             <div className="itemTitle" dangerouslySetInnerHTML={{ __html: (item.title?.includes("|") ? _unescape(item.title.split("| ")[1] ?? "") : _unescape(item.title ?? "")).replace('*** BILDplus Inhalt *** ','').replace('[EN LIGNE]', '').replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;').replace(" - " + dateNDaysBefore[0],"")}} />
                           </h6>
-                          <div className="r2 articleDate">
-                            {((concatListofCategories == "") || (concatListofCategories == null)) ? String(displayedDate) : null}
+                          <div className="r2 up articleDate">
+                            {((concatListofCategories === "") || (concatListofCategories === null)) ? String(displayedDate) : null}
                           </div>
                         </div>
                         <div className="descriptionLine">
-                          <div className="r2 articleDate">{displayedDate}</div>
+                          <div className="r2 up articleDate">{displayedDate}</div>
                           {item.description && <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: _unescape(item.description).replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;')}} />}
                         </div>
                         <div className="additional-infosLine">
-                          <div className="r4">
+                          <div className="r4 up">
                             {author?.replace(" avec ", ", ").replace(" et ", ", ")}
                           </div>
                         </div>

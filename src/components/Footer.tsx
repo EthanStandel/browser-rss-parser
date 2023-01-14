@@ -18,18 +18,21 @@ export const Footer = () =>  {
       </section>
       <section className="footer-legal">
         <ul className="websiteInfo footnote inline">
-          <li className="footnote inline">© 2021-{new Date().toLocaleDateString([], {year:'numeric'})} — France.</li>
+          <li className="footnote inline">© 2021–{new Date().toLocaleDateString([], {year:'numeric'})} — France.</li>
           <li className="footnote inline">Créé par <a className="color" href="https://www.reddit.com/user/iKL3W" target="_blank" rel="noreferrer">u/iKL3W</a>, avec <a className="color" href="https://www.reddit.com/user/besthelloworld" target="_blank" rel="noreferrer">u/besthelloworld</a>.</li>
           <li className="footnote inline"><em>nuntii</em> n'est affilié ni à <a href="https://www.apple.com" target="_blank" rel="noreferrer">Apple</a>, ni à une quelconque rédaction.</li>
           <li className="footnote inline">Les images et contenus sont soumis au droit d'auteur.</li>
         </ul>
-        <nav className="mini-links c1 bold">
-          <a href="mailto:clement.krajecki@gmail.com?subject=nuntii&body=Bonjour!">Contact</a>
-          <a href="https://github.com/EthanStandel/browser-rss-parser" target="_blank" rel="noreferrer">Github</a>
-          <a href="http://atlasflux.saynete.net" target="_blank" rel="noreferrer">Atlas des flux</a>
-          <a href="https://www.iptc.org/std/NewsCodes/treeview/mediatopic/mediatopic-fr.html" target="_blank" rel="noreferrer">NewsCodes</a>
-          <a href="https://fr.reactjs.org/" target="_blank" rel="noreferrer">React</a>
-        </nav>
+        
+        <div className="spacingLine">
+          <nav className="mini-links c1 bold">
+            <a href="https://github.com/EthanStandel/browser-rss-parser" target="_blank" rel="noreferrer">Github</a>
+            <a href="http://atlasflux.saynete.net" target="_blank" rel="noreferrer">Atlas des flux</a>
+            <a href="https://www.iptc.org/std/NewsCodes/treeview/mediatopic/mediatopic-fr.html" target="_blank" rel="noreferrer">NewsCodes</a>
+            <a href="https://fr.reactjs.org/" target="_blank" rel="noreferrer">React</a>
+            <a href="https://heroicons.com/" target="_blank" rel="noreferrer">Heroicons</a>
+          </nav>
+        </div>
       </section>
     </div>
   </footer>

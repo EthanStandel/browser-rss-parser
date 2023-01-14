@@ -20,10 +20,10 @@ const saints = [
 const AlauneEntries = [
 
   {
-    "title": "Journal de 8h",
+    "title": iconsByNewsroom.Francetv.France2.j8h.name,
     "URL": "https://www.francetvinfo.fr/replay-jt/france-2/8-heures/",
-    "image1": "./icons/WebsitesIcons/france2.png",
-    "image2": iconsByNewsroom.Apple.AppleTV.iconImg,
+    "image1": iconsByNewsroom.Francetv.France2.j8h.iconImg,
+    "image2": iconsByNewsroom.Francetv.France2.iconImg,
     "duration": "15min",
     "description": "Le JT de 8h propose des reportages et témoignages sur les événements de la nuit et donne l'agenda de la journée.",
   },
@@ -66,7 +66,7 @@ const AlauneEntries = [
 // used typeofDisclosure used for id and onClick must be the same
 const ÀlauneComponent = () => {
   return (
-    Disc(<div><div className="r2 secondaryColor">{new Date().toLocaleDateString('fr-fr', {weekday:'long', day:'numeric', month: 'long'}) + " " + ((String(new Date().toLocaleDateString('fr-fr', {month:'numeric'})) >= "10") || (String(new Date().toLocaleDateString('fr-fr', {month:'numeric'})) <= "1") ? new Date().toLocaleDateString('fr-fr', {year:'numeric'}) : "") + " • " + saints[Number(new Date().toLocaleDateString('fr-fr', {month:'numeric'})) - 1][Number(new Date().toLocaleDateString('fr-fr', {day:'numeric'})) - 1]}</div><h5>Les rendez-vous à la une</h5></div>, <ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(AlauneEntries)}} />, 'News', AlauneEntries.length, "discIDBlock")
+    Disc(<div><div className="r2 up secondaryColor">{new Date().toLocaleDateString('fr-fr', {weekday:'long', day:'numeric', month: 'long'}) + " " + ((String(new Date().toLocaleDateString('fr-fr', {month:'numeric'})) >= "10") || (String(new Date().toLocaleDateString('fr-fr', {month:'numeric'})) <= "1") ? new Date().toLocaleDateString('fr-fr', {year:'numeric'}) : "") + " • " + saints[Number(new Date().toLocaleDateString('fr-fr', {month:'numeric'})) - 1][Number(new Date().toLocaleDateString('fr-fr', {day:'numeric'})) - 1]}</div><h5>Les rendez-vous à la une</h5></div>, <ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(AlauneEntries)}} />, 'News', AlauneEntries.length, "discIDBlock")
   );
 }
 
