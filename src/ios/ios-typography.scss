@@ -275,9 +275,22 @@ p.bold {
     letter-spacing: 0.0235px;
     text-transform: uppercase;
 }
+
 button {
-    color: var(--label);
+    color: inherit;
     background-color: rgba(0,0,0,0);
     border: none;
     cursor: pointer;
 }
+
+// default spacingLine
+.spacingLine {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+  
+    &.noGapSL {
+      gap: 0;
+    }
+  }

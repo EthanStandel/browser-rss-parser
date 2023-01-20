@@ -10,6 +10,7 @@ import { Disc, DiscAdditonal } from './components/Disclosure_comp';
 import { DiscAllDisplay, disclosureDisplay } from './components/disc_fct';
 import { sidebarDisplayInverted } from './components/sidebar_fct';
 import { defaultTheme, inverseTheme } from "./ios/color-scheme-toggle";
+import { displayPopUp } from './components/PopUp_fct';
 
 // eslint-disable-next-line
 function sum(array = Array()) {
@@ -69,10 +70,11 @@ const App = () => {
     }
     return displayednList
   }
-  window.onload = () => sidebarDisplayInverted() // show the sidebar on load
+  window.onload = () => {sidebarDisplayInverted(); disclosureDisplay("discHeader", topicFilter)} // show the sidebar on load
 
   return (
     <div id="App" className={topicFilter} data-color-scheme={defaultTheme()}>
+      <div id="genPopUp" onClick={() => displayPopUp()}></div>
       <div className="header-mobile">
         <h5 className="logo-text" onClick={() => setTopicFilter(topicFilter)}>nuntii</h5>
       </div>
@@ -80,12 +82,12 @@ const App = () => {
         <div id="headerFirstLine" className="spacingLine noGapSL">
           <div className="spacingLine" id="largeHeader">            
             <div className='spacingLineLeft spacingLine noGapSL'>
-              <button className="squareButton20" onClick={() => sidebarDisplayInverted()} id="sidebarDisplayInverted">
+              <button title="Afficher/cacher la barre latérale" className="squareButton20" onClick={() => sidebarDisplayInverted()} id="sidebarDisplayInverted">
                 <svg viewBox="0 0 126.80602 100" /* ratio of the svg file*/ height="20">
                   <use xlinkHref="./genIcons/sidebar.svg#path2"></use>
                 </svg>
               </button>
-              <button className="squareButton20" onClick={() => null} id="nuntiiInfo">
+              <button title="Informations" className="squareButton20 blockedButton" id="nuntiiInfo">
                 <svg viewBox="0 0 100 100" /* ratio of the svg file*/ height="20">
                   <use xlinkHref="./genIcons/info.svg#path2"></use>
                 </svg>
@@ -96,14 +98,14 @@ const App = () => {
               <h6>{topicFilter}</h6>
             </div>
             <div className='spacingLineRight spacingLine noGapSL'>
-              <a href="mailto:clement.krajecki@gmail.com?subject=nuntii&body=Bonjour!">
+              <a title="Envoyer un retour" href="mailto:clement.krajecki@gmail.com?subject=nuntii&body=Bonjour!">
                 <button className="squareButton20" id="sendFeedback">
                   <svg viewBox="0 0 100 94.147377" /* ratio of the svg file*/ height="20">
                     <use xlinkHref="./genIcons/feedback.svg#path2"></use>
                   </svg>
                 </button>
               </a>
-              <button className="squareButton20" onClick={() => inverseTheme()} id={"colorTheme"}>
+              <button title="Inverser le thème" className="squareButton20" onClick={() => inverseTheme()} id={"colorTheme"}>
                 <svg viewBox="0 0 100 100" /* ratio of the svg file*/ height="20">
                   <use xlinkHref={"./genIcons/" + (defaultTheme() === "light" ? "moon" : "sun") + ".svg#path2"}></use>
                 </svg>
@@ -146,14 +148,14 @@ const App = () => {
       </header>
       <div id="uiSplitContainer">
         <div id="uiSplit-sidebar">
-          <div className='uiSplit-sidebarContainer'>
+          <div className='uiSplit-sidebar-sbContainer'>
             <section id="sidebarTopics">
               <div className='r2 up bold sidebarSectionTitle'>Sujets & thèmes</div>
               <ul className="sidebarTopics">
                 {selectableTopics.map(name => (
                   <li key={name} className={"h8 bold " + (name === topicFilter ? `selected ${name}` : name)}>
                     {DiscAdditonal(
-                      <button className="h8 bold " onClick={() => { setTopicFilter(name); DiscAllDisplay("show"); disclosureDisplay("discAddHeader", name)}}>{name}</button>, 
+                      <button className="h8 bold " onClick={() => { setTopicFilter(name); DiscAllDisplay("show"); disclosureDisplay("discHeader", name)}}>{name}</button>, 
                       <div>
                         {Object.keys(topics[name].subtopics)
                           .filter(key => key !== "noSubtopic")
@@ -165,27 +167,27 @@ const App = () => {
                         }
                       </div>,
                       (name),
-                      Object.keys(topics[name].subtopics).length
+                      Object.keys(topics[name].subtopics).filter(key => key !== "noSubtopic").length
                     )}
                   </li>
                 ))}
               </ul>
             </section>
             <section id="sidebarPlus">
-              <div className='r2 up bold sidebarSectionTitle' >Plus de <em>nuntii</em></div>
+              <div className='r2 up bold sidebarSectionTitle'>Plus de <em>nuntii</em></div>
             </section>
           </div>
         </div>
         <main className="Articles" id="uiSplit-main">
           <div className={"grid "+ topicFilter}>
-            <div className="gridTopELement spacingLine">
-              <h4 className={"bold color Htopic " + topicFilter}>{topicFilter}</h4>
+            <section className="gridTopELement spacingLine" id="uiSplit-main-TopElement">
+              <h4 className={"bold color gridTop-TopicTitle " + topicFilter}>{topicFilter}</h4>
               <div >
                 <button className="r1" onClick={() => DiscAllDisplay()} id="DiscAllDisplay">Tout voir</button>
               </div>
-            </div>
-            <div className="LeftPodcastsColumn" ><CustomTopicComponent /></div>
-            <div className="RightRSSColumn">
+            </section>
+            <section className="LeftPodcastsColumn" id="uiSplit-main-LeftElement"><CustomTopicComponent /></section>
+            <section className="RightRSSColumn" id="uiSplit-main-RightElement">
               {Object.entries(topics[topicFilter].subtopics)
                 .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)
                 .filter(([ key ]) => !subtopicFilter ? true : subtopicFilter === key)
@@ -193,7 +195,7 @@ const App = () => {
                   Disc(<h5 className="subtopic bold">{key !== "noSubtopic" && key}</h5>,<div> {(SubtopicComponents[key]) /* not working */ } <RssContent rssFeeds={feeds}/></div>, key, sum(feeds.map(value => value.articlesCount)), undefined , key + " ArticleSection " + String(sum(feeds.map(value => value.articlesCount)) ? " largeDisplay ": "") + String(nListYS(key) && " nList").replace("false", "")) 
                 ))
               }
-            </div>
+            </section>
           </div>
         </main>
       </div>

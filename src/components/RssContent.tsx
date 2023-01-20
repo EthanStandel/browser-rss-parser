@@ -7,6 +7,8 @@ import { Spinner } from "./Spinner";
 import _unescape from "lodash/unescape";
 import _deburr from "lodash/deburr";
 import { range } from "lodash";
+import { displayPopUp } from "./PopUp_fct";
+import { genPopUpStructure } from "./PopUp_comp";
 
 export interface RssFeedSource {
   url: string;
@@ -69,7 +71,6 @@ function weekday(n: number) {
       dateNDaysBefore[i]= String(DateMinusDay);
 
       // weekday for n-days-before day
-      minusDay.getDay();
       NDaysBeforeWeekday[i] = daysIndex[minusDay.getDay()];
     }
   }
@@ -131,18 +132,19 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             // const titleSplitTitle = item.title?.split(", says ")[0] ?? item.title?.split(", blasts ")[0] ?? item.title?.split(", warns ")[0];
             // const titleSplit = item.title?.split(", says ")[1] ?? item.title?.split(", blasts ")[1] ?? item.title?.split(", warns ")[1];
 
+            var str = String(item.title);
+            var matches = str.match(/\b(\w)/g);
+            var titleAcronym = matches?.join('');
+            
             const imgHref = 
             item.image
-            ?? item["media:content"]?.url
-            ?? item.enclosure?.url ?? item.enclosure?.url 
-            ?? source.backgroundImg ?? "./genIcons/applenews_bgIMG_alt.jpg";
+            || item["media:content"]?.url
+            || item.enclosure?.url 
+            || source.backgroundImg 
+            || "./genIcons/applenews_bgIMG_alt.jpg";
 
             let author = item.author || item["dc:creator"];
-            author = author?.includes(String(source.name)) ? undefined : author;
-            author = author?.includes(String(source.name?.toUpperCase)) ? undefined : author;
-            author = author?.includes(String(source.name?.toLowerCase)) ? undefined : author;
-            author = author?.includes("AFP") ? undefined : author;
-            author = author?.includes(String(_deburr(source.name))) ? undefined : author;
+            author = (author?.includes(String(source.name)) ?? author?.includes(String(source.name?.toUpperCase)) ?? author?.includes(String(source.name?.toLowerCase)) ?? author?.includes("AFP") ?? author?.includes(String(_deburr(source.name)))) ? "": author;
 
             // var splitTitleCategory = (item.title?.includes("|") ? item.title.split("| ")[0] : undefined)
             let concatListofCategories = [(item.category || source.category)].join(',') /* select categories from the RSS feed if none is specified*/
@@ -240,7 +242,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                           {item.description && <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: _unescape(item.description).replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;')}} />}
                         </div>
                         <div className="additional-infosLine">
-                          <div className="r4 up">
+                          <div className="r4 up" onClick= {() => {displayPopUp("rssItemPopUpBlock" + titleAcronym); genPopUpStructure(String(<div>{item.title}</div>))}}>
                             {author?.replace(" avec ", ", ").replace(" et ", ", ")}
                           </div>
                         </div>

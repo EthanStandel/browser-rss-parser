@@ -27,18 +27,19 @@
   #uiSplit-sidebar ul.sidebarTopics li.Économie {
 
     &.selected {
-      .discAddHeader {
+      .discHeader {
         background-color: var(--ecoColorTheme) !important;
       }
     }
 
-    .discAddHeader {
-      * {
-        fill: var(--ecoColorTheme);
+    &:not(.selected) .discHeader {
+    
+      &:not(:hover) * {
+        fill: var(--ecoColorTheme); // for .chevron svg
       }
 
       &:hover {
-        background-color: var(--ecoColorTheme) !important;
+        background-color: var(--ecoColorTheme);
       }
     }
   }
@@ -72,12 +73,12 @@
   #uiSplit-sidebar ul.sidebarTopics li.Presse.étrangère {
 
     &.selected {
-      .discAddHeader {
+      .discHeader {
         background-color: var(--peColorTheme) !important;
       }
     }
 
-    .discAddHeader {
+    .discHeader {
       * {
         fill: var(--peColorTheme);
       }
@@ -116,12 +117,12 @@
   #uiSplit-sidebar ul.sidebarTopics li.Sport {
 
     &.selected {
-      .discAddHeader {
+      .discHeader {
         background-color: var(--sportColorTheme) !important;
       }
     }
 
-    .discAddHeader {
+    .discHeader {
       * {
         fill: var(--sportColorTheme);
       }
@@ -160,12 +161,12 @@
   #uiSplit-sidebar ul.sidebarTopics li.Culture {
 
     &.selected {
-      .discAddHeader {
+      .discHeader {
         background-color: var(--cultureColorTheme) !important;
       }
     }
 
-    .discAddHeader {
+    .discHeader {
       * {
         fill: var(--cultureColorTheme);
       }
@@ -204,12 +205,12 @@
   #uiSplit-sidebar ul.sidebarTopics li.Europe {
 
     &.selected {
-      .discAddHeader {
+      .discHeader {
         background-color: var(--europeColorTheme) !important;
       }
     }
 
-    .discAddHeader {
+    .discHeader {
       * {
         fill: var(--europeColorTheme);
       }
@@ -248,12 +249,12 @@
   #uiSplit-sidebar ul.sidebarTopics li.Monde {
 
     &.selected {
-      .discAddHeader {
+      .discHeader {
         background-color: var(--mondeColorTheme) !important;
       }
     }
 
-    .discAddHeader {
+    .discHeader {
       * {
         fill: var(--mondeColorTheme);
       }
@@ -292,12 +293,12 @@
   #uiSplit-sidebar ul.sidebarTopics li.Régions {
 
     &.selected {
-      .discAddHeader {
+      .discHeader {
         background-color: var(--regionsColorTheme) !important;
       }
     }
 
-    .discAddHeader {
+    .discHeader {
       * {
         fill: var(--regionsColorTheme);
       }
@@ -336,12 +337,12 @@
   #uiSplit-sidebar ul.sidebarTopics li.Politique {
 
     &.selected {
-      .discAddHeader {
+      .discHeader {
         background-color: var(--politiqueColorTheme) !important;
       }
     }
 
-    .discAddHeader {
+    .discHeader {
       * {
         fill: var(--politiqueColorTheme);
       }
@@ -380,12 +381,12 @@
   #uiSplit-sidebar ul.sidebarTopics li.Idées {
 
     &.selected {
-      .discAddHeader {
+      .discHeader {
         background-color: var(--ideesColorTheme) !important;
       }
     }
 
-    .discAddHeader {
+    .discHeader {
       * {
         fill: var(--ideesColorTheme);
       }
@@ -424,12 +425,12 @@
   #uiSplit-sidebar ul.sidebarTopics li.Société {
 
     &.selected {
-      .discAddHeader {
+      .discHeader {
         background-color: var(--societeColorTheme) !important;
       }
     }
 
-    .discAddHeader {
+    .discHeader {
       * {
         fill: var(--societeColorTheme);
       }
@@ -468,12 +469,12 @@
   #uiSplit-sidebar ul.sidebarTopics li.Science {
 
     &.selected {
-      .discAddHeader {
+      .discHeader {
         background-color: var(--scienceColorTheme) !important;
       }
     }
 
-    .discAddHeader {
+    .discHeader {
       * {
         fill: var(--scienceColorTheme);
       }
@@ -512,12 +513,12 @@
   #uiSplit-sidebar ul.sidebarTopics li.Planète {
 
     &.selected {
-      .discAddHeader {
+      .discHeader {
         background-color: var(--planeteColorTheme) !important;
       }
     }
 
-    .discAddHeader {
+    .discHeader {
       * {
         fill: var(--planeteColorTheme);
       }
@@ -556,12 +557,12 @@
   #uiSplit-sidebar ul.sidebarTopics li.Tech {
 
     &.selected {
-      .discAddHeader {
+      .discHeader {
         background-color: var(--techColorTheme) !important;
       }
     }
 
-    .discAddHeader {
+    .discHeader {
       * {
         fill: var(--techColorTheme);
       }
@@ -601,18 +602,19 @@
   #uiSplit-sidebar ul.sidebarTopics li.Art.de.vivre {
 
     &.selected {
-      .discAddHeader {
+      .discHeader {
         background-color: var(--lifestyleColorTheme) !important;
       }
     }
 
-    .discAddHeader {
-      * {
-        fill: var(--lifestyleColorTheme);
+    &:not(.selected) .discHeader {
+    
+      &:not(:hover) * {
+        fill: var(--lifestyleColorTheme); // for .chevron svg
       }
 
       &:hover {
-        background-color: var(--lifestyleColorTheme) !important;
+        background-color: var(--lifestyleColorTheme);
       }
     }
   }
@@ -645,12 +647,12 @@
   #uiSplit-sidebar ul.sidebarTopics li.Éthique {
 
     &.selected {
-      .discAddHeader {
+      .discHeader {
         background-color: var(--ethiqueColorTheme) !important;
       }
     }
 
-    .discAddHeader {
+    .discHeader {
       * {
         fill: var(--ethiqueColorTheme);
       }
@@ -689,12 +691,12 @@
   #uiSplit-sidebar ul.sidebarTopics li.Auto-moto {
 
     &.selected {
-      .discAddHeader {
+      .discHeader {
         background-color: var(--autoColorTheme) !important;
       }
     }
 
-    .discAddHeader {
+    .discHeader {
       * {
         fill: var(--autoColorTheme);
       }
@@ -733,12 +735,12 @@
   #uiSplit-sidebar ul.sidebarTopics li.TED {
 
     &.selected {
-      .discAddHeader {
+      .discHeader {
         background-color: var(--TEDColorTheme) !important;
       }
     }
 
-    .discAddHeader {
+    .discHeader {
       * {
         fill: var(--TEDColorTheme);
       }

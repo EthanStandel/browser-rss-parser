@@ -23,23 +23,19 @@ export function DiscAllDisplay(show) { // the parameter tells the function to re
   if ((show === undefined) ?? (show === "")) {
     if (y.getElementById("DiscAllDisplay")?.textContent.includes("Tout voir")) {
       Array.from(x).forEach( el => {
-        if (el.parentElement.className.includes("noSubtopic")) {
-          }
-        else {
+        if (!el.parentElement.className.includes("noSubtopic")) {
           el.parentElement.classList.add("largeDisplay")
-        }}
-      )
+        }
+      })
       y.getElementById("DiscAllDisplay").textContent = "Tout cacher"
     }
   
     else {
       Array.from(x).forEach( el => {
-        if (el.parentElement.className.includes("noSubtopic")) {
-          }
-        else {
+        if (!el.parentElement.className.includes("noSubtopic")) {
           el.parentElement.classList.remove("largeDisplay")
-        }}
-      )
+        }
+      })
       y.getElementById("DiscAllDisplay").textContent = "Tout voir"
     }
   } else {

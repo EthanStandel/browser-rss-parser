@@ -9,10 +9,16 @@
   --rounded-corners-block: 12px;
 }
 
-/*/ color focus for the entire webpage /*/
+// set for the entire page
 #App {
   --colorTheme: var(--headlinesColorTheme);
   --headlinesColorTheme: var(--systemPink);
+  -webkit-tap-highlight-color: transparent; // iOS
+  
+  min-width: 222px;
+
+  color: var(--label);
+  background-color: var(--systemGroupedBackground);
 
   .color {
     color: var(--colorTheme) !important;
@@ -26,23 +32,6 @@
   padding-bottom: 6rem;
 }
 
-#App {
-  background-color: var(--systemGroupedBackground);
-  color: var(--label);
-  -webkit-tap-highlight-color: transparent; // iOS
-}
-
-.spacingLine {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  justify-content: space-between;
-
-  &.noGapSL {
-    gap: 0;
-  }
-}
-
 /*/ elements to be not selectable /*/
 .headerTitle, main.Articles, .mini-links a {
   -moz-user-select: none;
@@ -51,73 +40,20 @@
   user-select: none;
 }
 
-main.Articles {
-  min-width: 222px;
-  padding: 0 83px;
-  margin: auto;
-  overflow-y: auto;
-  overflow-x: hidden;
-  min-height: 88vh;
-
-  .grid {
-    margin: auto;
-    width: auto;
-    max-width: calc(494px + 40px + 555px); // THEORY only (proportions assigns the width for each elements); LeftPodcastsColumn width + LeftPodcastsColumn padding-right + RightRSSColumn width
-
-    @media only screen and (min-width: 1200px) {
-      margin-top: 20px;
-    }
-  }
-
-  /*/ two colums displayed for large devices/*/
-  .LeftPodcastsColumn {
-    float: left;
-    width: 35%;
-    padding-right: 40px;
-  }
-
-  .gridTopELement {
-    align-items: baseline;
-    padding: 22px 0;
-
-    h3, h4 {
-      padding: 0;
-    }
-
-    button {
-
-      color: var(--secondaryLabel);
-      background: none;
-      border: none;
-      text-align: right;
-      white-space: nowrap;
-      line-height: 38px // h4
-    }
-  }
-
-  h3, h4 {
-    width: fit-content;
-  }
-  
-  .RightRSSColumn {
-    float: left;
-    width: calc(65% - 40px);
-  }
-}
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
 header {
-  padding: 3px 0px;
+  padding: 3px 0;
   position: sticky;
   top: 0;
-  z-index: 3;
+  z-index: 2;
   width: 100%;
-  background-color: var(--systemHeaderMaterial);
   overflow: hidden;
+
+  background-color: var(--systemHeaderMaterial);
   -webkit-backdrop-filter:saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 0.5px solid var(--separator);
@@ -257,16 +193,6 @@ ul {
   width: max-content;
 }
 
-header .logo-text {
-  display: block;
-  text-align: center;
-  float: left;
-  line-height: 28px; /*/ height of nav .topics-navbar element /*/ 
-  height: 28px;
-  padding: 0 20px 0 16px !important;
-  border-right: 1.8px solid var(--separator);
-}
-
 section.ArticleSection {
   margin-bottom: 44px;
 
@@ -395,7 +321,6 @@ ul {
         text-overflow: ellipsis;
         display: -webkit-box !important;
         -webkit-box-orient: vertical;
-        text-decoration-color: rgba(0,0,0,0);
         word-break: break-word;
 
         .itemTitle {
@@ -641,10 +566,6 @@ ul {
         .titleLine {
           font-weight: 700;
           -webkit-line-clamp: 4; /* number of lines to show */
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box !important;
-          -webkit-box-orient: vertical;
         }
 
         .itemContainer  {
@@ -692,8 +613,65 @@ FOOTER
 footer {
   margin-top: 44px;
   background-color: var(--secondarySystemGroupedBackground);
-  min-width: 222px;
 
+  .footer-container {
+    margin: auto;
+    padding: 3rem 25px 8rem;
+    max-width: 950px;
+  
+    .websiteInfo {
+      margin-bottom: 15px;
+  
+      &> * {
+        color: var(--secondaryLabel);
+        display: inline-block;
+        margin-top: 0.8em;
+        padding-right: 30px;
+        margin-bottom: 0;
+      }
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+  
+    .fHeader .logo-text {
+      text-align: left !important;
+      background: var(--colorTheme);
+      background: -webkit-linear-gradient(to right, var(--systemGray2), var(--colorTheme) 88%);
+      background: -moz-linear-gradient(to right, var(--systemGray2), var(--colorTheme) 88%);
+      background: linear-gradient(to right, var(--systemGray2), var(--colorTheme) 88%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 1;
+    }
+  
+    .footer-legal .mini-links {
+      margin-top: 5px;
+    
+      a {
+        width: fit-content;
+        display: inline-block;
+        margin-top: 5px;
+        padding-right: 10px;
+      }
+    
+      a:not(:last-child) {
+        border-right: 1.6px solid var(--colorTheme);
+        margin-right: 10px !important;
+      }
+    }
+  }
+  
+  /*/ Bottom border to separate footer-container elements (but not last element in footer-container) /*/
+  .footer-container > *:not(:last-of-type) {
+    border-bottom: 0.5px solid var(--separator);
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+  }  
+
+  //first element in footer
   .footerTitleLine {
     display: flex;
     flex-direction: row;
@@ -713,67 +691,7 @@ footer {
   }
 }
 
-.footer-container {
-  margin: auto;
-  padding: 3rem 25px 8rem;
-  max-width: 950px;
-
-  .websiteInfo {
-    margin-bottom: 15px;
-
-    &> * {
-      color: var(--secondaryLabel);
-      display: inline-block;
-      margin-top: 0.8em;
-      padding-right: 30px;
-      margin-bottom: 0;
-    }
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-
-  .footer-header-app .logo-text {
-    text-align: left !important;
-    background: var(--colorTheme);
-    background: -webkit-linear-gradient(to right, var(--systemGray2), var(--colorTheme) 88%);
-    background: -moz-linear-gradient(to right, var(--systemGray2), var(--colorTheme) 88%);
-    background: linear-gradient(to right, var(--systemGray2), var(--colorTheme) 88%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 1;
-  }
-
-  .footer-legal .mini-links {
-    margin-top: 5px;
-  
-    a {
-      width: fit-content;
-      display: inline-block;
-      margin-top: 5px;
-      padding-right: 10px;
-    }
-  
-    a:not(:last-child) {
-      border-right: 1.6px solid var(--colorTheme);
-      margin-right: 10px !important;
-    }
-  }
-}
-
-/*/ Bottom border to separate footer-container elements (but not last element in footer-container) /*/
-.footer-container > *:not(.footer-container > *:last-child) {
-  border-bottom: 0.5px solid var(--separator);
-  padding-bottom: 30px;
-  margin-bottom: 15px;
-}
-
-/*/
-Adapted for small devices 
-/*/
-
+// Adapted for small devices 
 @media only screen and (max-width: 1200px) {
   main.Articles {
     /*/ smaller vertical padding for small devices /*/
@@ -838,7 +756,7 @@ Adapted for small devices
 }
 
 /*/ small caps for label in paragraph /*/
-em {
+em:not(.itemContainer em) { // do not the emphasis for content in a RSS feed item
   font-family: 'Bodoni Moda' !important;
   font-weight: 700;
   font-size: calc(113%);
@@ -879,47 +797,22 @@ em {
     background-color: none !important;
     border: none !important;
 
-    .media {
-      border-bottom: 0.8px solid var(--separator);
-    }
-
-    &:last-child {
+    &:not(li:last-child) {
       .media {
-        border-bottom: none;
+        border-bottom: 0.8px solid var(--separator);
       }
     }
 
     .descriptionLine {
       -webkit-line-clamp: 1 !important;
 
-      .articleDate { /* use justifiedTitle instead */
+      .articleDate {
         display: none !important;
       }
     }
 
     .titleLine {
       -webkit-line-clamp: 3 !important;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box !important;
-      -webkit-box-orient: vertical;
-    }
-
-    @media only screen and (max-width: 1200px) {
-      .descriptionLine:not(.always) {
-
-        .articleDate {
-          display: none;
-        }
-      }
-
-      .descriptionLine2 {
-        display: none; /* use justifiedTitle instead */
-      }
-
-      .descriptionLine {
-        -webkit-line-clamp: 2 !important;
-      }
     }
 
     &.nListFreeDesc {
@@ -928,14 +821,6 @@ em {
       }
     }
 
-    /* @media only screen and (min-width: 1200px) {
-      &:hover {
-        .media {
-          border-bottom: 0 solid red;
-        }
-      } 
-    } */
-
     &.firstHeadline:first-child, &.bigHeadline {
 
       margin: 10px 10px 0 !important;
@@ -943,6 +828,10 @@ em {
       .itemContainer {
         background-color: var(--tertiarySystemGroupedBackground);
         padding: 14px 16px 16px 16px;
+
+        em { // for emphasis in a RSS feed item, use italice since most of the time it's used for titles 
+          font-style: italic;
+        }
       }
 
       .iconContainer {
@@ -960,7 +849,7 @@ em {
         position: relative;
 
         .iconImgWrapper {
-          z-index: 2;
+          z-index: 1;
           margin: 0;
           position: absolute;
           width: 70px;
@@ -999,17 +888,80 @@ em {
         }
       }
     }
+
+    @media only screen and (max-width: 1200px) {
+      .descriptionLine:not(.always) {
+
+        .articleDate {
+          display: none;
+        }
+      }
+
+      .descriptionLine {
+        -webkit-line-clamp: 2 !important;
+      }
+    }
   }
 }
 
+// for component Disc
 .Disclosure {
   margin-bottom: 15px;
-  overflow: hidden; // keep it for now because of fucked-up icon images being displayed randomly
+  overflow: hidden; 
 
   #discPlus {
     transition: max-height 0.4s ease-in-out;
     max-height: 0;
     overflow: hidden;
+  }
+
+  .discHeader {
+    max-width: 100%;
+    transition: border-color 0.4s ease-in-out;
+    align-items: center;
+    padding-bottom: 16px;
+
+    .chevron {
+      transition: all 0.35s ease;
+      fill: var(--colorTheme);
+      transform: rotate(-90deg);
+    
+      svg {
+        height: 12px;
+        width: 12px;
+      }
+    }  
+
+    &:not(.noDiscItem) { // if the Disc is empty, do not show the pointer
+      cursor: pointer;
+    }
+  }
+
+  &.noSubtopic { //when displaying a Disc for a noSubtopic block, hide the Disc component (discPlus is always shown)
+    .discHeader {
+      display: none;
+    }
+  }
+
+  &#discIDBlock { // display the Disc with a background and a block
+    background-color: var(--secondarySystemGroupedBackground);
+    border-radius: var(--rounded-corners-block);
+    box-shadow: 2px 4px 12px rgba(0,0,0, 0.08);
+    border: 1px solid var(--cardBorder);
+    filter: drop-shadow(0 10px 10px var(--hardShadow));
+
+    .discHeader {
+      padding: 15px 16px;
+      border-bottom: 1.8px rgba(0,0,0,0) solid;
+
+      .chevron {
+        fill: var(--separator);
+      }
+    }
+
+    &.largeDisplay .discHeader {
+        border-bottom: 1.8px solid var(--colorTheme);
+    }
   }
 
   &.largeDisplay {
@@ -1021,70 +973,9 @@ em {
       transform: none;
     }
   }
-
-  .discHeader {
-    max-width: 100%;
-    transition: border-color 0.4s ease-in-out;
-    align-items: center;
-    padding-bottom: 16px;
-
-    &:not(.noDiscItem) {
-      cursor: pointer;
-    }
-  }
-
-  .chevron {
-    transition: all 0.35s ease;
-    fill: var(--colorTheme);
-    transform: rotate(-90deg);
-  
-    svg {
-      height: 12px;
-      width: 12px;
-    }
-  }
-
-  &.noSubtopic {
-    .discHeader {
-      display: none;
-    }
-  }
-
-  &#discIDBlock {
-    background-color: var(--secondarySystemGroupedBackground);
-    border-radius: var(--rounded-corners-block);
-    box-shadow: 2px 4px 12px rgba(0,0,0, 0.08);
-    border: 1px solid var(--cardBorder);
-    filter: drop-shadow(0 10px 10px var(--hardShadow));
-
-    .discHeader {
-      padding: 15px 16px;
-      border-bottom: 1.8px rgba(0,0,0,0) solid;
-    }
-
-    .chevron {
-      fill: var(--separator);
-    }
-
-    &.largeDisplay {
-      
-      .discHeader {
-        border-bottom: 1.8px solid var(--colorTheme);
-      }
-    }
-  }
-}
-
-.Htopic {
-  -webkit-line-clamp: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box !important;
-  -webkit-box-orient: vertical;
 }
 
 // uiSplit hierarchy 
-
 #uiSplitContainer {
   display: flex;
 
@@ -1112,7 +1003,7 @@ em {
       display: none;
     }
 
-    .uiSplit-sidebarContainer {
+    .uiSplit-sidebar-sbContainer {
       padding: 30px 15px;
       margin-bottom: 77px;
 
@@ -1131,10 +1022,10 @@ em {
           margin-bottom: 5px;
 
           &.selected {
-            .discAddHeader {
+            .discHeader {
               color: white;
-            border-radius: 5px;
-            background-color: var(--headlinesColorTheme);
+              border-radius: 5px;
+              background-color: var(--headlinesColorTheme);
             }
 
             * {
@@ -1142,35 +1033,24 @@ em {
             }
           }
 
-          .discAddHeader {
-
+          .discHeader {
 
             &:hover {
-              color: white;
               border-radius: 5px;
               background-color: var(--headlinesColorTheme);
+              color: white;
         
-              * {
+              * { // for svg
                 fill: white;
               }
             }
           }
 
-          .discPlus {
-            button {
-              width: 100%;
+          .discPlus button {
+            width: 100%;
 
-              &:hover {
-                background-color: var(--quaternarySystemFill);
-              }
-            }
-          }
-      
-          > button {
-            &:hover, &.selected {
-              border-radius: 5px;
-              color: white !important;
-              background-color: var(--headlinesColorTheme);
+            &:hover {
+              background-color: var(--quaternarySystemFill);
             }
           }
         }
@@ -1182,6 +1062,66 @@ em {
     width: 100%;
     margin-left: 0;
     transition: margin-left 0.4s ease-in-out;
+
+    min-width: 222px;
+    padding: 0 83px;
+    margin: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 88vh;
+
+    .grid {
+      margin: auto;
+      width: auto;
+      max-width: calc(494px + 40px + 555px); // THEORY only (proportions assigns the width for each elements); LeftPodcastsColumn width + LeftPodcastsColumn padding-right + RightRSSColumn width
+
+      @media only screen and (min-width: 1200px) {
+        margin-top: 20px;
+      }
+    }
+
+    /*/ two colums displayed for large devices/*/
+    .LeftPodcastsColumn {
+      float: left;
+      width: 35%;
+      padding-right: 40px;
+    }
+
+    .gridTopELement {
+      align-items: baseline;
+      padding: 22px 0;
+
+      h3, h4 {
+        padding: 0;
+      }
+
+      button {
+
+        color: var(--secondaryLabel);
+        background: none;
+        border: none;
+        text-align: right;
+        white-space: nowrap;
+        line-height: 38px // h4
+      }
+
+      .gridTop-TopicTitle { // used to title the topic title on one line only
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+      }
+    }
+
+    h3, h4 {
+      width: fit-content;
+    }
+    
+    .RightRSSColumn {
+      float: left;
+      width: calc(65% - 40px);
+    }
 
     @media only screen and (max-width: 1200px) {
       margin-left: auto !important;
@@ -1245,36 +1185,38 @@ button.squareButton20 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: calc(100% - 20px);
 
-  &:hover {
-    background-color: var(--quaternarySystemFill);
+  &.blockedButton {
+    fill: var(--tertiaryLabel);
+    cursor: default;
   }
-}
 
-// only for some time 
-@media only screen and (max-width: 1200px) {
-  #headerFirstLine {
-    > #largeHeader {
-      display: none;
-    }
+  &:hover:not(.blockedButton) {
+    background-color: var(--quaternarySystemFill);
   }
 }
 
 .DisclosureAdditional {
   margin-bottom: 0;
 
-  .discAddHeader {
+  .discHeader {
     margin-bottom: 5px;
     display: table;
     padding: 5px 3px;
+    width: -webkit-fill-available;
 
     * {
       fill: var(--headlinesColorTheme);
     }
 
+    .chevron svg {
+      vertical-align: top;
+      padding: 5px;
+    }
+
     > * {
       display: table-cell;
+      vertical-align: middle;
 
       &:last-of-type {
         padding-left: 8px;
@@ -1294,7 +1236,7 @@ button.squareButton20 {
     button {
       width: 100%;
       text-align: left;
-      padding: 4px 5px;
+      padding: 4px 10px;
       margin-bottom: 2px;
 
       &:hover, &.selected {
@@ -1303,8 +1245,31 @@ button.squareButton20 {
       }
 
       &.selected {
-        font-weight: 700;
+        font-weight: 600;
       }
     }
+  }
+}
+
+// only for some time 
+@media only screen and (max-width: 1200px) {
+  #headerFirstLine {
+    > #largeHeader {
+      display: none;
+    }
+  }
+}
+
+#genPopUp {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: red;
+  width: 100vh;
+  height: 100vh;
+  margin: auto;
+
+  &:not(.shown) {
+    display: none;
   }
 }

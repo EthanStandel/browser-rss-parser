@@ -2,7 +2,7 @@ export const Footer = () =>  {
   return (
     <footer> 
     <div className="footer-container">
-      <section className="footer-header-app">
+      <section className="fHeader">
         <div className="footerTitleLine">
           <h1 className="logo-text">nuntii</h1>
           <svg className="BetaBadge" viewBox="0 0 52 22" /* ratio of the svg file*/ height="28">
@@ -10,10 +10,10 @@ export const Footer = () =>  {
           </svg>
         </div>
         <p className="h8">
-          Une application pour faire un tour des actualités locales, nationales, européennes et internationales avec des articles de rédactions françaises, francophones et étrangères. 
+          <em>nuntii</em> est un agrégateur de nouvelles convivial qui rassemble des articles et des balados provenant de diverses sources, tous triés par thème et catégorie. En utilisant des flux RSS, <em>nuntii</em> vous apporte les dernières nouvelles et mises à jour de sources fiables françaises, européennes et mondiales sur une plateforme unique et facile à naviguer, économisant ainsi du temps et des efforts aux utilisateurs qui n'ont pas besoin de visiter plusieurs sites web. 
         </p>
         <p className="h8">
-          Chaque sujet est traité par les rédactions spécialisées pour une information de qualité. Les balados et autres émissions sont disponibles pour suivre l'actualité du globe à toute heure du jour et de la nuit.
+          Que vous souhaitiez rester informé sur les événements courants, votre compétition sportive préférée ou que vous cherchiez simplement une manière plus efficace de consommer des nouvelles et des balados, <em>nuntii</em> est la solution parfaite.
         </p>
       </section>
       <section className="footer-legal">
@@ -31,6 +31,7 @@ export const Footer = () =>  {
             <a href="https://www.iptc.org/std/NewsCodes/treeview/mediatopic/mediatopic-fr.html" target="_blank" rel="noreferrer">NewsCodes</a>
             <a href="https://fr.reactjs.org/" target="_blank" rel="noreferrer">React</a>
             <a href="https://heroicons.com/" target="_blank" rel="noreferrer">Heroicons</a>
+            <a href="https://chat.openai.com/chat" target="_blank" rel="noreferrer">ChatGPT</a>
           </nav>
         </div>
       </section>
