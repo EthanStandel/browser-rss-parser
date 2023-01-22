@@ -92,6 +92,11 @@ const App = () => {
                   <use xlinkHref="./genIcons/info.svg#path2"></use>
                 </svg>
               </button>
+              <button title="Filter" className="squareButton20 blockedButton" id="sidebarSettingsFilter">
+                <svg viewBox="0 0 100 100" /* ratio of the svg file*/ height="20">
+                  <use xlinkHref="./genIcons/filter.svg#path2"></use>
+                </svg>
+              </button>
             </div>
             <div className="headerTitle" onClick={() => { setTopicFilter(topicFilter); DiscAllDisplay("show")}}>
               <h6><em>nuntii</em></h6>
