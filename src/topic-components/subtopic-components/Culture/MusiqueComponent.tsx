@@ -1,4 +1,4 @@
-import { LàVdiffusion, Ddiffusion, Jdiffusion, MAdiffusion, jsonToListDisc } from "../../topicVAR";
+import {  jsonToListDisc, podcastDiffusion } from "../../topicVAR";
 import { Disc } from '../../../components/Disclosure_comp'
 import iconsByNewsroom from "../../../resources/iconsByNewsroom.json"
 
@@ -10,7 +10,7 @@ const CultureMusicEntries = [
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "8min",
     "description": "Tous les jours à 7h20, un coup de fil avec un invité au coeur de l'actualité musicale française et internationale.",
-    "specification": LàVdiffusion
+    "specification": podcastDiffusion([1,2,3,4,5])
   },
   {
     "title": "La chronique d'Aliette de Laleu",
@@ -19,7 +19,7 @@ const CultureMusicEntries = [
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "4min",
     "description": "À 7:50, focus sur une œuvre qui a changé la vie d’une compositrice d’hier ou d’aujourd'hui, qu’elle soit avant-gardiste ou jouée dans les plus grandes salles, qu’elle ait fait office de première fois pour les femmes, ou qu’elle ait simplement rendu célèbre sa créatrice.",
-    "specification": MAdiffusion
+    "specification": podcastDiffusion([2])
   },
   {
     "title": "La chronique de Marjolaine Portier-Kaltenbach",
@@ -28,7 +28,7 @@ const CultureMusicEntries = [
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "3min",
     "description": "Disques, concerts, festivals : l'actualité du jazz vue par Marjolaine PK à 7:50.",
-    "specification": Jdiffusion
+    "specification": podcastDiffusion([4])
   },
   {
     "title": "Histoires de musique",
@@ -37,7 +37,7 @@ const CultureMusicEntries = [
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "10min",
     "description": "À 6:49, Marianne Vourch invite à partager un sujet d'Histoire, de Littérature ou d'Histoire des Arts en musique.",
-    "specification": Ddiffusion
+    "specification": podcastDiffusion([7])
   }
 ]
 

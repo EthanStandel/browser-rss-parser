@@ -1,4 +1,4 @@
-import { LàVdiffusion, jsonToListDisc } from "./topicVAR";
+import {  jsonToListDisc, podcastDiffusion } from "./topicVAR";
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 import { Disc } from '../components/Disclosure_comp';
 
@@ -10,7 +10,7 @@ const SocieteEntries = [
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "30min",
     "description": "Chaque jour à 11:30, en compagnie de leurs invités, Mélanie&nbsp;Gomez et Julia&nbsp;Vignali, vous livrent leurs meilleurs conseils pour prendre soin de vous au quotidien.",
-    "specification": LàVdiffusion
+    "specification": podcastDiffusion([1,2,3,4,5])
   }
 ]
 

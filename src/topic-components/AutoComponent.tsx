@@ -1,4 +1,4 @@
-import { Ddiffusion, jsonToListDisc } from "./topicVAR";
+import { jsonToListDisc, podcastDiffusion } from "./topicVAR";
 import { Disc } from '../components/Disclosure_comp';
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
@@ -10,7 +10,7 @@ const AutoEntries = [
     "image2": iconsByNewsroom.M6["6play"].iconImg,
     "duration": "1h",
     "description": "Votre magazine d'actualité automobile présenté par Dominique Chapatte : innovations, nouveautés, événéments... Toute l'auto est dans Turbo.",
-    "specification": Ddiffusion
+    "specification": podcastDiffusion([7])
   }
 ]
 

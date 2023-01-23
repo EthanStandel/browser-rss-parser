@@ -1,4 +1,4 @@
-import { LàVdiffusion, jsonToListDisc } from "./topicVAR";
+import {  jsonToListDisc, podcastDiffusion } from "./topicVAR";
 import { Disc } from '../components/Disclosure_comp'
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
@@ -10,7 +10,7 @@ const EcoEntries = [
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "9min",
     "description": "Chaque matin à 6:41, Dimitri Pavlenko reçoit un invité pour faire le point sur l'actualité économique.",
-    "specification": LàVdiffusion
+    "specification": podcastDiffusion([1,2,3,4,5])
   },
   {
     "title": "Le Pourquoi du comment : économie et social",
@@ -27,7 +27,7 @@ const EcoEntries = [
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "3min",
     "description": "Chaque jour à 7:15, Nicolas Bouzou et André Loesekrug-Pietri décryptent un fait de l'actualité économique.",
-    "specification": LàVdiffusion
+    "specification": podcastDiffusion([1,2,3,4,5])
   },
   {
     "title": "Top à Wall Street",
@@ -36,7 +36,7 @@ const EcoEntries = [
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "2min",
     "description": "Wall Street, Cac 40, Didier Hameau fait le point chaque soir à 22:12 sur la situation de la Bourse.",
-    "specification": LàVdiffusion
+    "specification": podcastDiffusion([1,2,3,4,5])
   },
   {
     "title": "Le journal de l'économie",

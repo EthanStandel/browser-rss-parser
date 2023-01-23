@@ -1,49 +1,32 @@
 const today = new Date();
-var day = today.getDay()
+let day = today.getDay()
 
-export let LàVdiffusion = ""
-if ((day === 6) || (day === 0)) {
-  LàVdiffusion = "Du lundi au vendredi"
+if (day === 0) {
+  day = 7
 }
 
-export let SDdiffusion = ""
-if (!((day === 6) || (day === 0))) {
-  SDdiffusion = "Samedi et dimanche"
-}
+const weekdays = ["lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"]
+export function podcastDiffusion(array = []) {
+  let diffusion = ""
+  let diffusionDays = []
+  let isDiffused = false
+  for (let i of array.sort((a,b)=>a-b)) {
+    if (i !== day) {
+      diffusionDays.push(weekdays[i-1])
+    }
+    else {
+      isDiffused = true
+      break
+    }
+  }
 
-export let Ddiffusion = ""
-if (day !== 0) {
-  Ddiffusion = "Chaque dimanche"
-}
+  if ((diffusionDays.length !== 0) && isDiffused === false) {
+    diffusion = "Chaque " + diffusionDays.join(', ').replace(/,(?=[^,]+$)/, ' et') // replace last comma
+  }
 
-export let Sdiffusion = ""
-if (day !== 6) {
-  Sdiffusion = "Chaque samedi"
-}
-
-export let Vdiffusion = ""
-if (day !== 5) {
-  Vdiffusion = "Chaque vendredi"
-}
-
-export let Ldiffusion = ""
-if (day !== 1) {
-  Ldiffusion = "Chaque lundi"
-}
-
-export let MAdiffusion = ""
-if (day !== 2) {
-  MAdiffusion = "Chaque mardi"
-}
-
-export let MEdiffusion = ""
-if (day !== 3) {
-  MEdiffusion = "Chaque mercredi"
-}
-
-export let Jdiffusion = ""
-if (day !== 4) {
-  Jdiffusion = "Chaque jeudi"
+  return diffusion
+    .replace('samedi et dimanche', 'fin de semaine')
+    .replace('Chaque lundi, mardi, mercredi, jeudi, vendredi', 'En semaine')
 }
 
 export function jsonToListDisc(array = []) {

@@ -1,4 +1,4 @@
-import { LàVdiffusion, jsonToListDisc } from "./topicVAR";
+import {  jsonToListDisc, podcastDiffusion } from "./topicVAR";
 import { Disc } from '../components/Disclosure_comp'
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
@@ -50,7 +50,7 @@ const AlauneEntries = [
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "3min",
     "description": "Dans le jour où, tous les matins à 7:23, le passé éclaire le présent&nbsp;: grâce à ses archives, la rédaction d'Europe 1 fait le récit d'un événement relié à l'actualité.",
-    "specification": LàVdiffusion
+    "specification": podcastDiffusion([1,2,3,4,5])
   },
   {
     "title": "La question du jour",
@@ -59,7 +59,7 @@ const AlauneEntries = [
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "8min",
     "description": "Pour enrichir et approfondir les questions d’actualité, Guillaume Erner pose au meilleur expert du sujet la Question du jour à 7:13.",
-    "specification": LàVdiffusion
+    "specification": podcastDiffusion([1,2,3,4,5])
   }
 ]
 

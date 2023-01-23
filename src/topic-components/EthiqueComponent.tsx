@@ -1,5 +1,6 @@
-import { MAdiffusion, jsonToListDisc } from "./topicVAR";
+import { jsonToListDisc, podcastDiffusion } from "./topicVAR";
 import { Disc } from '../components/Disclosure_comp'
+import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
 const EthicsEntries = [
   {
@@ -10,7 +11,17 @@ const EthicsEntries = [
     "duration": "5min",
     "description": "Weekly, Kwame Anthony Appiah considers readers’ ethical quandaries.",
     "countryISO3Label": "USA",
-    "specification": MAdiffusion
+    "specification": podcastDiffusion([2])
+  },
+  {
+    "title": "The Mel Robbins Podcast",
+    "URL": "https://podcasts.apple.com/us/podcast/the-mel-robbins-podcast/id1646101002",
+    "image1": "./icons/WebsitesIcons/themelrobbinspodcast.png",
+    "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
+    "duration": "1h10",
+    "description": "Mel welcomes you into her life: Every episode is packed with deeply relatable topics, tactical advice, hilarious screwups, compelling conversations, and the tools and inspiration you need to create a better life. Tune in and buckle up—your life is about to change.",
+    "countryISO3Label": "USA",
+    "specification": podcastDiffusion([1,4])
   }
 ]
 

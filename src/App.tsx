@@ -92,7 +92,7 @@ const App = () => {
                   <use xlinkHref="./genIcons/info.svg#path2"></use>
                 </svg>
               </button>
-              <button title="Filter" className="squareButton20 blockedButton" id="sidebarSettingsFilter">
+              <button title="Filtres & paramètres" className="squareButton20 blockedButton" id="sidebarSettingsFilter">
                 <svg viewBox="0 0 100 100" /* ratio of the svg file*/ height="20">
                   <use xlinkHref="./genIcons/filter.svg#path2"></use>
                 </svg>
@@ -110,6 +110,11 @@ const App = () => {
                   </svg>
                 </button>
               </a>
+              <button  title="Fonctionnalités expérimentales" className="squareButton20 blockedButton" id="experimentalFeatures">
+                  <svg viewBox="0 0 100 100" /* ratio of the svg file*/ height="20">
+                    <use xlinkHref="./genIcons/beaker.svg#path2"></use>
+                  </svg>
+                </button>
               <button title="Inverser le thème" className="squareButton20" onClick={() => inverseTheme()} id={"colorTheme"}>
                 <svg viewBox="0 0 100 100" /* ratio of the svg file*/ height="20">
                   <use xlinkHref={"./genIcons/" + (defaultTheme() === "light" ? "moon" : "sun") + ".svg#path2"}></use>

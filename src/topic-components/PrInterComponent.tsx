@@ -1,4 +1,4 @@
-import { LàVdiffusion, jsonToListDisc } from "./topicVAR";
+import { jsonToListDisc, podcastDiffusion } from "./topicVAR";
 import { Disc } from '../components/Disclosure_comp';
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
@@ -38,7 +38,7 @@ const PrinterEntries = [
     "duration": "23min",
     "description": "Mathieu Belhumeur est entouré de ses collaborateurs pour présenter les principales nouvelles d'ici et d'ailleurs. Le tout sur un ton convivial. Un condensé de l'actualité pour bien démarrer la journée.",
     "countryISO3Label": "CAN",
-    "specialisation": LàVdiffusion
+    "specialisation": podcastDiffusion([1,2,3,4,5])
   }
 ]
 

@@ -126,8 +126,6 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
       <ul className="rss">
         {
           result!.map(({ item, source, date }) => {
-            // WARNING: Some of these items contain HTML
-            // If they ever contain a script, it's not being filtered out
             
             // const titleSplitTitle = item.title?.split(", says ")[0] ?? item.title?.split(", blasts ")[0] ?? item.title?.split(", warns ")[0];
             // const titleSplit = item.title?.split(", says ")[1] ?? item.title?.split(", blasts ")[1] ?? item.title?.split(", warns ")[1];
@@ -184,6 +182,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             
             const arrford = require('arrford');
             let CategoriesCommaSeparated = arrford(arrayCategoriesTEST, false).replace(' and ', ', '); /* list formatting with commas' */
+            // https://stackoverflow.com/questions/201724/easy-way-to-turn-javascript-array-into-comma-separated-list
 
             let countryISO3Label = String(source.articlesCountryISO3)
             if ((source.articlesCountryISO3 === undefined) ?? (source.articlesCountryISO3 == null)) {

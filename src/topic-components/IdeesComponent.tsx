@@ -1,4 +1,4 @@
-import { LàVdiffusion, Sdiffusion, jsonToListDisc} from "./topicVAR";
+import {  jsonToListDisc, podcastDiffusion} from "./topicVAR";
 import { Disc } from '../components/Disclosure_comp';
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
@@ -10,7 +10,7 @@ const IdeesEntries = [
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "6min",
     "description": "Chaque jour à 10:03, Bruno Donnet regarde la télévision, écoute la radio et scrute les journaux ainsi que les réseaux sociaux pour livrer ses téléscopages.",
-    "specification": LàVdiffusion
+    "specification": podcastDiffusion([1,2,3,4,5])
   },
   {
     "title": "Papilles de la nation",
@@ -19,7 +19,7 @@ const IdeesEntries = [
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "5min",
     "description": "La France est LE pays de la gastronomie, et Olivier Poels vous le prouve tous les jours à 17:45 en vous emmenant à la découverte d'un plat emblématique de l'Hexagone.",
-    "specification": LàVdiffusion
+    "specification": podcastDiffusion([1,2,3,4,5])
   },
   {
     "title": "Le Pourquoi du comment : Philo",
@@ -28,16 +28,7 @@ const IdeesEntries = [
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "3min",
     "description": "Frédéric Worms aborde à 10:52 avec pédagogie les questions que l’on se pose en philo sans oser les formuler.",
-    "specification": LàVdiffusion
-  },
-  {
-    "title": "La revue de presse des idées",
-    "URL": "https://www.franceculture.fr/emissions/la-revue-de-presse-des-idees",
-    "image1": iconsByNewsroom.FranceCulture.iconImg,
-    "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
-    "duration": "4min",
-    "description": "Chaque samedi dans la matinale à 8:45, l'exploration des tribunes et opinions dans la presse française et internationale.",
-    "specification": Sdiffusion
+    "specification": podcastDiffusion([1,2,3,4,5])
   }
 ]
 
