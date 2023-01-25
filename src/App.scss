@@ -57,6 +57,10 @@ header {
   -webkit-backdrop-filter:saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 0.5px solid var(--separator);
+
+  @media only screen and (max-width: 1200px) {
+    padding: 8px 0;
+  }
 }
 
 ul {
@@ -167,21 +171,6 @@ ul {
       }
 
     }
-  }
-}
-
-/*/ higher version of header for mobile devices /*/
-.header-mobile {
-  display: none !important;
-  background-color: var(--systemHeaderMaterial);
-  -webkit-backdrop-filter:saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-  padding-top: env(safe-area-inset-top); // iOS
-
-  .logo-text {
-    text-align: center;
-    width: 100% !important;
-    padding: 5px 0 !important;
   }
 }
 
@@ -723,12 +712,6 @@ footer {
     display: none;
   }
 
-  .header-mobile {
-
-     /*/ replace headerTitle with smaller header /*/
-    display: block !important;
-  }
-
   .footer-header-app .footerTitleLine {
     margin: auto;
     width: fit-content;
@@ -1191,8 +1174,15 @@ button.squareButton20 {
     cursor: default;
   }
 
-  &:hover:not(.blockedButton) {
-    background-color: var(--quaternarySystemFill);
+  @media only screen and (min-width: 1200px) {
+    &:hover:not(.blockedButton), &.selected {
+      background-color: var(--quaternarySystemFill);
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -1251,16 +1241,6 @@ button.squareButton20 {
     }
   }
 }
-
-// only for some time 
-@media only screen and (max-width: 1200px) {
-  #headerFirstLine {
-    > #largeHeader {
-      display: none;
-    }
-  }
-}
-
 #genPopUp {
   position: sticky;
   top: 0;
@@ -1271,6 +1251,12 @@ button.squareButton20 {
   margin: auto;
 
   &:not(.shown) {
+    display: none;
+  }
+}
+
+.noSmallDisplay {
+  @media only screen and (max-width: 1200px) {
     display: none;
   }
 }

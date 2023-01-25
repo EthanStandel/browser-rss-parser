@@ -1,32 +1,22 @@
 const today = new Date();
 let day = today.getDay()
 
-if (day === 0) {
+if (day === 0) { // Sunday is 7 instead of 0
   day = 7
 }
 
 const weekdays = ["lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"]
-export function podcastDiffusion(array = []) {
-  let diffusion = ""
+export function podcastDiffusion(array = [Number()]) {
   let diffusionDays = []
-  let isDiffused = false
-  for (let i of array.sort((a,b)=>a-b)) {
-    if (i !== day) {
-      diffusionDays.push(weekdays[i-1])
-    }
-    else {
-      isDiffused = true
-      break
-    }
+  for (let i of array.sort((a,b)=>a-b).filter(i => i !== day)) {
+    diffusionDays.push(weekdays[i-1])
   }
 
-  if ((diffusionDays.length !== 0) && isDiffused === false) {
-    diffusion = "Chaque " + diffusionDays.join(', ').replace(/,(?=[^,]+$)/, ' et') // replace last comma
-  }
-
-  return diffusion
-    .replace('samedi et dimanche', 'fin de semaine')
-    .replace('Chaque lundi, mardi, mercredi, jeudi, vendredi', 'En semaine')
+  return ((diffusionDays.length !== 0) && array.every(diffusionDate => diffusionDate !== day)) 
+    ? "Chaque " + diffusionDays.join(', ').replace(/,(?=[^,]+$)/, ' et')
+      .replace('samedi et dimanche', 'fin de semaine')
+      .replace('Chaque lundi, mardi, mercredi, jeudi, vendredi', 'En semaine') 
+    : ""
 }
 
 export function jsonToListDisc(array = []) {

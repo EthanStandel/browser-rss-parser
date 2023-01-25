@@ -1,6 +1,6 @@
 import {  jsonToListDisc, podcastDiffusion } from "./topicVAR";
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
-import { Disc } from '../components/Disclosure_comp';
+import { Disc } from '../components/gen/Disclosure_comp';
 
 const SocieteEntries = [
   {

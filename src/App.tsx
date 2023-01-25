@@ -1,16 +1,17 @@
 import { useRef, useState } from 'react';
 import './App.scss';
-import Footer from './components/Footer'
-import RssContent from './components/RssContent';
+import { Header } from './components/buildingBlocks/Header';
+import Footer from './components/buildingBlocks/Footer'
+import RssContent from './components/buildingBlocks/RssContent';
 import rssFeeds from "./resources/rss_feeds.json";
 import topicComponents from './topic-components/topicComponents';
 import SubtopicComponents from './topic-components/subtopic-components/subtopicComponents';
 import { BrowserUtils } from './utils/BrowserUtils';
-import { Disc, DiscAdditonal } from './components/Disclosure_comp';
-import { DiscAllDisplay, disclosureDisplay } from './components/disc_fct';
-import { sidebarDisplayInverted } from './components/sidebar_fct';
-import { defaultTheme, inverseTheme } from "./ios/color-scheme-toggle";
-import { displayPopUp } from './components/PopUp_fct';
+import { Disc, DiscAdditonal } from './components/gen/Disclosure_comp';
+import { DiscAllDisplay, disclosureDisplay } from './components/gen/disc_fct';
+import { sidebarDisplayInverted } from './components/buildingBlocks/sidebar_fct';
+import { defaultTheme } from "./ios/color-scheme-toggle";
+import { displayPopUp } from './components/gen/PopUp_fct';
 
 // eslint-disable-next-line
 function sum(array = Array()) {
@@ -75,87 +76,15 @@ const App = () => {
   return (
     <div id="App" className={topicFilter} data-color-scheme={defaultTheme()}>
       <div id="genPopUp" onClick={() => displayPopUp()}></div>
-      <div className="header-mobile">
-        <h5 className="logo-text" onClick={() => setTopicFilter(topicFilter)}>nuntii</h5>
-      </div>
-      <header>
-        <div id="headerFirstLine" className="spacingLine noGapSL">
-          <div className="spacingLine" id="largeHeader">            
-            <div className='spacingLineLeft spacingLine noGapSL'>
-              <button title="Afficher/cacher la barre latérale" className="squareButton20" onClick={() => sidebarDisplayInverted()} id="sidebarDisplayInverted">
-                <svg viewBox="0 0 126.80602 100" /* ratio of the svg file*/ height="20">
-                  <use xlinkHref="./genIcons/sidebar.svg#path2"></use>
-                </svg>
-              </button>
-              <button title="Informations" className="squareButton20 blockedButton" id="nuntiiInfo">
-                <svg viewBox="0 0 100 100" /* ratio of the svg file*/ height="20">
-                  <use xlinkHref="./genIcons/info.svg#path2"></use>
-                </svg>
-              </button>
-              <button title="Filtres & paramètres" className="squareButton20 blockedButton" id="sidebarSettingsFilter">
-                <svg viewBox="0 0 100 100" /* ratio of the svg file*/ height="20">
-                  <use xlinkHref="./genIcons/filter.svg#path2"></use>
-                </svg>
-              </button>
-            </div>
-            <div className="headerTitle" onClick={() => { setTopicFilter(topicFilter); DiscAllDisplay("show")}}>
-              <h6><em>nuntii</em></h6>
-              <h6>{topicFilter}</h6>
-            </div>
-            <div className='spacingLineRight spacingLine noGapSL'>
-              <a title="Envoyer un retour" href="mailto:clement.krajecki@gmail.com?subject=nuntii&body=Bonjour!">
-                <button className="squareButton20" id="sendFeedback">
-                  <svg viewBox="0 0 100 94.147377" /* ratio of the svg file*/ height="20">
-                    <use xlinkHref="./genIcons/feedback.svg#path2"></use>
-                  </svg>
-                </button>
-              </a>
-              <button  title="Fonctionnalités expérimentales" className="squareButton20 blockedButton" id="experimentalFeatures">
-                  <svg viewBox="0 0 100 100" /* ratio of the svg file*/ height="20">
-                    <use xlinkHref="./genIcons/beaker.svg#path2"></use>
-                  </svg>
-                </button>
-              <button title="Inverser le thème" className="squareButton20" onClick={() => inverseTheme()} id={"colorTheme"}>
-                <svg viewBox="0 0 100 100" /* ratio of the svg file*/ height="20">
-                  <use xlinkHref={"./genIcons/" + (defaultTheme() === "light" ? "moon" : "sun") + ".svg#path2"}></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <nav id="oldTopicnavbar">
-            <ul className="topics-navbar r1 bold">
-              {selectableTopics.map(name => (
-                <li key={name} className={name}>
-                  <button className={name === topicFilter ? `selected ${name}` : name} onClick={() => { setTopicFilter(name); DiscAllDisplay("show")}}>{name}</button>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
-        <div id="headerSecondLine">
-          {Object.keys(topics[topicFilter].subtopics).length > 1 &&
-          <nav className="subtopic-selection">
-            <ul ref={subtopicNavbarContainer} className={"topics-navbar r1 " + topicFilter}>
-              <li className="all-subtopic">
-                <button className={!subtopicFilter ? "selected" : ""} onClick={() => {setSubtopicFilter(undefined)}}>
-                  Tout
-                </button>
-              </li>
-              {Object.keys(topics[topicFilter].subtopics)
-                .filter(key => key !== "noSubtopic")
-                .map(key => (
-                  <li key={key} className={`${key}-subtopic`}>
-                    <button className={subtopicFilter === key ? `selected ${key}` : ""} onClick={() => setSubtopicFilter(key)}>
-                      {key}
-                    </button>
-                  </li>
-                ))
-              }
-            </ul>
-          </nav>
-          }
-        </div>
-      </header>
+      {Header(["",""],
+          <div className={"headerTitle"} onClick={() => { setTopicFilter(topicFilter); DiscAllDisplay("show")}}>
+            <h6><em>nuntii</em></h6>
+            <h6>{topicFilter}</h6>
+          </div>,
+      [""],
+      "Top"
+      )
+      }
       <div id="uiSplitContainer">
         <div id="uiSplit-sidebar">
           <div className='uiSplit-sidebar-sbContainer'>
@@ -202,7 +131,7 @@ const App = () => {
                 .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)
                 .filter(([ key ]) => !subtopicFilter ? true : subtopicFilter === key)
                 .map(([key, feeds]) => (
-                  Disc(<h5 className="subtopic bold">{key !== "noSubtopic" && key}</h5>,<div> {(SubtopicComponents[key]) /* not working */ } <RssContent rssFeeds={feeds}/></div>, key, sum(feeds.map(value => value.articlesCount)), undefined , key + " ArticleSection " + String(sum(feeds.map(value => value.articlesCount)) ? " largeDisplay ": "") + String(nListYS(key) && " nList").replace("false", "")) 
+                  Disc(<h5 className="subtopic bold">{key !== "noSubtopic" && key}</h5>,<div> {(SubtopicComponents[key]) /* not working */ } <RssContent rssFeeds={feeds}/></div>, key, sum(feeds.map(value => value.articlesCount)), undefined , key + " ArticleSection " + String(sum(feeds.map(value => value.articlesCount)) > 5 ? " largeDisplay ": "") + String(nListYS(key) && " nList").replace("false", "")) 
                 ))
               }
             </section>

@@ -293,4 +293,8 @@ button {
     &.noGapSL {
       gap: 0;
     }
+
+    &.centerItems {
+        justify-content: center;
+    }
   }

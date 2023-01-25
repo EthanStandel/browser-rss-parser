@@ -3,12 +3,12 @@ import XmlParser from "fast-xml-parser";
 import { DateTime } from "luxon";
 import axios from "axios";
 import { useAsync } from "@react-hookz/web";
-import { Spinner } from "./Spinner";
+import { Spinner } from "../Spinner";
 import _unescape from "lodash/unescape";
 import _deburr from "lodash/deburr";
 import { range } from "lodash";
-import { displayPopUp } from "./PopUp_fct";
-import { genPopUpStructure } from "./PopUp_comp";
+import { displayPopUp } from "../gen/PopUp_fct";
+import { genPopUpStructure } from "../gen/PopUp_comp";
 
 export interface RssFeedSource {
   url: string;

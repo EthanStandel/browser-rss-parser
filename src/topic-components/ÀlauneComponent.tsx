@@ -1,5 +1,5 @@
 import {  jsonToListDisc, podcastDiffusion } from "./topicVAR";
-import { Disc } from '../components/Disclosure_comp'
+import { Disc } from '../components/gen/Disclosure_comp'
 import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
 const saints = [
@@ -18,7 +18,6 @@ const saints = [
 ]
 
 const AlauneEntries = [
-
   {
     "title": iconsByNewsroom.Francetv.France2.j8h.name,
     "URL": "https://www.francetvinfo.fr/replay-jt/france-2/8-heures/",
