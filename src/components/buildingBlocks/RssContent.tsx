@@ -145,17 +145,23 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             author = (author?.includes(String(source.name)) ?? author?.includes(String(source.name?.toUpperCase)) ?? author?.includes(String(source.name?.toLowerCase)) ?? author?.includes("AFP") ?? author?.includes(String(_deburr(source.name)))) ? "": author;
 
             // var splitTitleCategory = (item.title?.includes("|") ? item.title.split("| ")[0] : undefined)
-            let concatListofCategories = [(item.category || source.category)].join(',') /* select categories from the RSS feed if none is specified*/
-     
-            let arrayCategories = concatListofCategories.split(',').slice(0, 3); /* presents categories in an array with 3 elements (split in elements by comma sign) */
-           
-            // var dict = ['Content Type: Personal Profile','Vivre','Images','blog','Auto-News','has_diapo','Produits','Radio 1','all','News','Actu','Actus','Video','Vidéo','Diaporama','Not found','Fil Info','Magazine','Flash Actu']
             
-            var arrayCategoriesTEST = []
-            for (var element of arrayCategories) {
+            
+            
+            /// FILTER FOR TOPICS 
+            let concatListofCategories = [(item.category || source.category)].join(',').split(',').slice(0, 3)
+           
+            var filteredTopics = ['Content Type: Personal Profile','Vivre','Nos recommandations culturelles','Images','blog','Auto-News','has_diapo','Produits','Radio 1','all','News','Actu','Actus','Video','Vidéo','Diaporama','Not found','Fil Info','Magazine','Flash Actu']
+            for (var filteredTopicElement of filteredTopics) {
+              // eslint-disable-next-line
+              concatListofCategories = concatListofCategories.filter(arrayElement => !arrayElement.includes(filteredTopicElement))
+            }
 
+            var filteredTopicsArray = []
+            for (var element of concatListofCategories) {
               var correctedElement = String(element
                 .replace(' and ', ' & ')
+                .replace(' et ', ' & ')
                 .replace('News /', '')
                 .replace('Culture /', '')
                 .replace('World /', '')
@@ -163,26 +169,14 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                 .replace('topics:things/','')
                 .replace('topics:places/','')
                 .replace('d&#039;',"'")
-                )
-              ;
+                .replace('France - Monde', "Monde")
+              );
               
               if (correctedElement !== "") {
-                arrayCategoriesTEST.push(correctedElement)
-              } else {
-                arrayCategoriesTEST.push("")
+                filteredTopicsArray.push(correctedElement)
               }
             }
-            
-            /* var arrayCategoriesTEST2 = Array()
-            while (arrayCategoriesTEST.includes("")) {
-                const start = arrayCategoriesTEST.indexOf('');
-                var arrayCategoriesTEST2 = arrayCategoriesTEST.splice(start, 1);
-                var arrayCategoriesTEST = arrayCategoriesTEST2;
-              } ADDITION TO FILTER THE EMPTY STRINGS FROM arrayCATEGROIESTEST.push("") (l. 153)*/ 
-            
-            const arrford = require('arrford');
-            let CategoriesCommaSeparated = arrford(arrayCategoriesTEST, false).replace(' and ', ', '); /* list formatting with commas' */
-            // https://stackoverflow.com/questions/201724/easy-way-to-turn-javascript-array-into-comma-separated-list
+            var displayedTopics = filteredTopicsArray.join(', ')
 
             let countryISO3Label = String(source.articlesCountryISO3)
             if ((source.articlesCountryISO3 === undefined) ?? (source.articlesCountryISO3 == null)) {
@@ -221,10 +215,10 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                       <div className="itemContainer">
                         <div className="firstLine">
                           <div className="r1 up bold articleCategory">
-                            {CategoriesCommaSeparated}
+                            {displayedTopics}
                           </div>
                           <div className="r2 up articleDate">
-                            {((concatListofCategories === "") || (concatListofCategories === null)) ? null : String(displayedDate)}
+                            {((displayedTopics === "") ?? (displayedTopics === null)) ? null : String(displayedDate)}
                           </div>
                         </div>
                         <div className="justifiedTitle spacingLine">
@@ -233,7 +227,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                             <div className="itemTitle" dangerouslySetInnerHTML={{ __html: (item.title?.includes("|") ? _unescape(item.title.split("| ")[1] ?? "") : _unescape(item.title ?? "")).replace('*** BILDplus Inhalt *** ','').replace('[EN LIGNE]', '').replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;').replace(" - " + dateNDaysBefore[0],"")}} />
                           </h6>
                           <div className="r2 up articleDate">
-                            {((concatListofCategories === "") || (concatListofCategories === null)) ? String(displayedDate) : null}
+                            {((displayedTopics === "") ?? (concatListofCategories === null)) ? String(displayedDate) : null}
                           </div>
                         </div>
                         <div className="descriptionLine">

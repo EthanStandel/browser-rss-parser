@@ -1,5 +1,9 @@
 @import "ios-semantic_colors.scss";
 
+:root {
+    --rounded-corners-block: 12px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -297,4 +301,4 @@ button {
     &.centerItems {
         justify-content: center;
     }
-  }
+}

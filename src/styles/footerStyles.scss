@@ -1,0 +1,80 @@
+footer {
+    margin-top: 44px;
+    background-color: var(--secondarySystemGroupedBackground);
+
+    .footer-container {
+        margin: auto;
+        padding: 3rem 25px 8rem;
+        max-width: 950px;
+
+        .websiteInfo {
+        margin-bottom: 15px;
+
+        &> * {
+            color: var(--secondaryLabel);
+            display: inline-block;
+            margin-top: 0.8em;
+            padding-right: 30px;
+            margin-bottom: 0;
+        }
+        }
+        
+        a:hover {
+        text-decoration: underline;
+        }
+
+        .fHeader .logo-text {
+        text-align: left !important;
+        background: var(--colorTheme);
+        background: -webkit-linear-gradient(to right, var(--systemGray2), var(--colorTheme) 88%);
+        background: -moz-linear-gradient(to right, var(--systemGray2), var(--colorTheme) 88%);
+        background: linear-gradient(to right, var(--systemGray2), var(--colorTheme) 88%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 1;
+        }
+
+        .footer-legal .mini-links {
+        margin-top: 5px;
+        
+        a {
+            width: fit-content;
+            display: inline-block;
+            margin-top: 5px;
+            padding-right: 10px;
+        }
+        
+        a:not(:last-child) {
+            border-right: 1.6px solid var(--colorTheme);
+            margin-right: 10px !important;
+        }
+        }
+    }
+
+    /*/ Bottom border to separate footer-container elements (but not last element in footer-container) /*/
+    .footer-container > *:not(:last-of-type) {
+        border-bottom: 0.5px solid var(--separator);
+        padding-bottom: 30px;
+        margin-bottom: 15px;
+    }  
+
+    //first element in footer
+    .footerTitleLine {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        padding-bottom: 15px;
+        column-gap: 10px;
+
+        > * {
+        display: inline-flex;
+        padding: 0;
+        }
+
+        .BetaBadge {
+        fill: var(--colorTheme);
+        }
+    }
+}

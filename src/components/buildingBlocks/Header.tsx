@@ -5,7 +5,7 @@ export function Header(leftSPLIcons: Array<string>, middlePart: JSX.Element, rig
 
     return (
         <header className={Position}>
-            <div id="headerFirstLine" className="spacingLine noGapSL">
+            <div id="headerFirstLine">
                 <div className="spacingLine" id="largeHeader">       
                     <div className='spacingLineLeft spacingLine noGapSL'>
                     <button title="Afficher/cacher la barre latérale" className="squareButton20" onClick={() => sidebarDisplayInverted()} id="sidebarDisplayInverted">

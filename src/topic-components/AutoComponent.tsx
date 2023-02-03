@@ -16,7 +16,7 @@ const AutoEntries = [
 
 const AutoComponent = () => {
   return (
-    Disc(<h5>Les rendez-vous avec l'auto</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(AutoEntries)}} />,"Auto",AutoEntries.length,"discIDBlock")
+    Disc(<h5>Les rendez-vous avec l'auto</h5>,<ul className='rss nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(AutoEntries)}} />,"Auto",AutoEntries.length,"discIDBlock")
   );
 }
 

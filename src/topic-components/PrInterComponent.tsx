@@ -6,8 +6,8 @@ const PrinterEntries = [
   {
     "title": "Nightly News",
     "URL": "https://www.nbcnews.com/nightly-news-full-episodes",
-    "image1": "./icons/WebsitesIcons/nbcnews.png",
-    "image2": iconsByNewsroom.Apple.AppleTV.iconImg,
+    "image1": iconsByNewsroom.NBC["Nightly News"].iconImg,
+    "image2": iconsByNewsroom.NBC.iconImg,
     "duration": "20min",
     "description": "Coverage of the latest global and US breaking news stories by Lester Holt at 5:12 am (CET).",
     "countryISO3Label": "USA"
@@ -44,7 +44,7 @@ const PrinterEntries = [
 
 const PrInterComponent = () => {
   return (
-    Disc(<h5>Les rendez-vous internationaux</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(PrinterEntries)}} />,"Printer",PrinterEntries.length,"discIDBlock")
+    Disc(<h5>Les rendez-vous internationaux</h5>,<ul className='rss nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(PrinterEntries)}} />,"Printer",PrinterEntries.length,"discIDBlock")
   );
 }
 

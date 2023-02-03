@@ -4824,6 +4824,13 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/humanite.png",
             "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
+          },
+          {
+            "url": "https://usbeketrica.com/fr/rss/tags/agriculture",
+            "name": "Usbek & Rica",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/usbek&rica.png",
+            "backgroundImg": "./icons/WebsitesIcons/usbek&rica_bgIMG.jpg"
           }
         ],
         "Déchets & recyclage": [
@@ -5658,6 +5665,13 @@
             "articlesCountryISO3": "BEL",
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/7sur7.png"
+          },
+          {
+            "url": "https://usbeketrica.com/fr/rss/tags/sexe",
+            "name": "Usbek & Rica",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/usbek&rica.png",
+            "backgroundImg": "./icons/WebsitesIcons/usbek&rica_bgIMG.jpg"
           }
         ],
         "Presse étrangère": [

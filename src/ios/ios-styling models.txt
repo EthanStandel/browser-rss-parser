@@ -7,6 +7,10 @@ https://www.alexanderlogan.co.uk/
 https://guides.apple.com/?pp=16477572344376014386&lsp=9902&name=hyperlocal
 https://bignews.app/
 https://v1.bigmail.app/
+https://getuntil.app/
 
 
 https://react.semantic-ui.com/modules/transition/
+
+-webkit-mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 100px), transparent);
+mask-image: linear-gradient(to left, black calc(100% - 60px), transparent);

@@ -1,12 +1,12 @@
 const today = new Date();
-let day = today.getDay()
+let day = today.getDay();
 
 if (day === 0) { // Sunday is 7 instead of 0
   day = 7
 }
 
-const weekdays = ["lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"]
 export function podcastDiffusion(array = [Number()]) {
+  const weekdays = ["lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"]
   let diffusionDays = []
   for (let i of array.sort((a,b)=>a-b).filter(i => i !== day)) {
     diffusionDays.push(weekdays[i-1])

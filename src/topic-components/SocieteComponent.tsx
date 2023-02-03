@@ -16,7 +16,7 @@ const SocieteEntries = [
 
 const SocieteComponent = () => {
   return (
-    Disc(<h5>Les rendez-vous de la société</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(SocieteEntries)}} />,"Societe",SocieteEntries.length,"discIDBlock")
+    Disc(<h5>Les rendez-vous de la société</h5>,<ul className='rss nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(SocieteEntries)}} />,"Societe",SocieteEntries.length,"discIDBlock")
   );
 }
 

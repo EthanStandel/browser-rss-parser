@@ -1,0 +1,65 @@
+:root {
+  --cultureColorTheme: burlywood;
+  --sportColorTheme: darkgoldenrod;
+  --ecoColorTheme: orange;
+  --mondeColorTheme: dodgerblue;
+  --peColorTheme: mediumvioletred; // crimson;
+  --scienceColorTheme: mediumseagreen;
+  --europeColorTheme: yellowgreen;
+  --politiqueColorTheme: darkviolet;
+  --ideesColorTheme: orchid;
+  --societeColorTheme: mediumaquamarine; // palevioletred
+  --techColorTheme: teal;
+  --regionsColorTheme: cornflowerblue;
+  --planeteColorTheme: limegreen;
+  --lifestyleColorTheme:  #6667ab;
+  --ethiqueColorTheme: #398bb3; // color from the Good Place palette in 'The Good Place'—#6db866;
+  --autoColorTheme: #ea054d;
+  --TEDColorTheme: #d91e17;
+}
+
+$topics: (
+  'Culture': var(--cultureColorTheme),
+  'Sport': var(--sportColorTheme),
+  'Économie': var(--ecoColorTheme),
+  'Monde': var(--mondeColorTheme), 
+  'Presse.étrangère': var(--peColorTheme),
+  'Science': var(--scienceColorTheme),
+  'Europe': var(--europeColorTheme),
+  'Politique': var(--politiqueColorTheme),
+  'Idées': var(--ideesColorTheme),
+  'Société': var(--societeColorTheme),
+  'Tech': var(--techColorTheme),
+  'Régions': var(--regionsColorTheme),
+  'Planète': var(--planeteColorTheme),
+  'Art.de.vivre': var(--lifestyleColorTheme),
+  'Éthique': var(--ethiqueColorTheme),
+  'Auto-moto': var(--autoColorTheme),
+  'TED': var(--TEDColorTheme),
+);
+
+@each $topicName, $topicColor in $topics {
+  #App {
+    &.#{$topicName} { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+      --colorTheme: #{$topicColor};
+    }
+  
+    #uiSplit-sidebar ul.sidebarTopics li.#{$topicName} {
+  
+      &.selected .discHeader {
+        background-color: #{$topicColor} !important;
+      }
+  
+      &:not(.selected) .discHeader {
+      
+        &:not(:hover) * {
+          fill: #{$topicColor}; // for .chevron svg
+        }
+  
+        &:hover {
+          background-color: #{$topicColor};
+        }
+      }
+    }
+  }
+}

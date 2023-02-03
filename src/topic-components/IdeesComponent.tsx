@@ -34,7 +34,7 @@ const IdeesEntries = [
 
 const IdeesComponent = () => {
   return (
-    Disc(<h5>Les rendez-vous avec les idées</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(IdeesEntries)}} />,"Idees",IdeesEntries.length,"discIDBlock")
+    Disc(<h5>Les rendez-vous avec les idées</h5>,<ul className='rss nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(IdeesEntries)}} />,"Idees",IdeesEntries.length,"discIDBlock")
   );
 }
 

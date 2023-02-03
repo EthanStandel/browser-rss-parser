@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
-import './App.scss';
+import './styles/App.scss';
 import { Header } from './components/buildingBlocks/Header';
-import Footer from './components/buildingBlocks/Footer'
+import Footer from './components/buildingBlocks/Footer';
 import RssContent from './components/buildingBlocks/RssContent';
 import rssFeeds from "./resources/rss_feeds.json";
 import topicComponents from './topic-components/topicComponents';
@@ -14,7 +14,7 @@ import { defaultTheme } from "./ios/color-scheme-toggle";
 import { displayPopUp } from './components/gen/PopUp_fct';
 
 // eslint-disable-next-line
-function sum(array = Array()) {
+function sum(array = Array(Number())) { // sum values in an array 
   let sum = 0
   for (let i = 0; i < array.length; i++) {
    sum += array[i];
@@ -120,7 +120,7 @@ const App = () => {
         <main className="Articles" id="uiSplit-main">
           <div className={"grid "+ topicFilter}>
             <section className="gridTopELement spacingLine" id="uiSplit-main-TopElement">
-              <h4 className={"bold color gridTop-TopicTitle " + topicFilter}>{topicFilter}</h4>
+              <h4 className={"bold color gridTop-TopicTitle " + topicFilter} title="Voir tout le thème" onClick={() => setSubtopicFilter(undefined)}>{topicFilter}</h4>
               <div >
                 <button className="r1" onClick={() => DiscAllDisplay()} id="DiscAllDisplay">Tout voir</button>
               </div>

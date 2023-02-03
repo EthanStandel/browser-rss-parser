@@ -36,7 +36,7 @@ const ArtdevivreEntries = [
 
 const ArtdevivreComponent = () => {
   return (
-    Disc(<h5>Les rendez-vous avec l'art de vivre</h5>,<ul className='rss-podcasts nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(ArtdevivreEntries)}} />,'Artdevivre',ArtdevivreEntries.length,"discIDBlock")
+    Disc(<h5>Les rendez-vous avec l'art de vivre</h5>,<ul className='rss nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(ArtdevivreEntries)}} />,'Artdevivre',ArtdevivreEntries.length,"discIDBlock")
   );
 }
 
