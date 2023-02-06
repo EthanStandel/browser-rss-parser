@@ -9,11 +9,7 @@ export function disclosureDisplay(typOfDiscHeader, typeofDisclosure) {
 
   X.lastChild.style.transition = "max-height " + transitionTime + "s ease-in-out"
   x.style.transition = "border-color " + 0.4 + "s ease-in-out" 
-  if (X.className.includes("largeDisplay")) {
-    X.classList.remove("largeDisplay")
-  } else {
-    X.classList.add("largeDisplay")
-  }
+  X.classList.toggle("largeDisplay")
 }
 
 export function DiscAllDisplay(show) { // the parameter tells the function to reset to 'Tout voir'

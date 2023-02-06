@@ -40,7 +40,7 @@ export function Header(leftSPLIcons: Array<string>, middlePart: JSX.Element, rig
                         </button>
                     <button title="Inverser le thème" className="squareButton20" onClick={() => inverseTheme()} id={"colorTheme"}>
                         <svg viewBox="0 0 100 100" /* ratio of the svg file*/ height="20">
-                        <use xlinkHref={"./genIcons/" + (defaultTheme() === "light" ? "moon" : "sun") + ".svg#path2"}></use>
+                            <use xlinkHref={"./genIcons/" + (defaultTheme() === "light" ? "moon" : "sun") + ".svg#path2"}></use>
                         </svg>
                     </button>
                     </div>

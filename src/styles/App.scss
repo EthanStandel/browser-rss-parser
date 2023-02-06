@@ -21,6 +21,10 @@
   }
 }
 
+.clickVisible {
+  cursor: pointer;
+}
+
 /*/ loading Spinner in RssFeeds /*/
 .spinner-container > div {
   margin: auto;
@@ -498,7 +502,7 @@ em:not(.itemContainer em) { // do not the emphasis for content in a RSS feed ite
   }
 }
 
-.nList ul {
+ ul.nList {
   border: 1px solid var(--cardBorder);
   background-color: var(--secondarySystemGroupedBackground);
   border-radius: var(--rounded-corners-block);
@@ -694,6 +698,7 @@ em:not(.itemContainer em) { // do not the emphasis for content in a RSS feed ite
   display: flex;
 
   #uiSplit-sidebar {
+    overflow-y: scroll;
 
     &.displayed {
       max-width: 230px;
@@ -728,8 +733,6 @@ em:not(.itemContainer em) { // do not the emphasis for content in a RSS feed ite
       ul.sidebarTopics {
         overflow-y: visible;
         li {
-          cursor: pointer;
-          margin-bottom: 5px;
 
           &.selected {
             .discHeader {
@@ -917,8 +920,8 @@ button.squareButton20 {
   margin-bottom: 0;
 
   .discHeader {
-    margin-bottom: 5px;
     display: table;
+    margin-bottom: 5px;
     padding: 5px 3px;
     width: -webkit-fill-available;
     height: 22px;
@@ -1012,36 +1015,38 @@ button.squareButton20 {
     display: none;
   }
 
-  .footer-header-app .footerTitleLine {
-    margin: auto;
-    width: fit-content;
-  }
-
-  .footer-header-app * {
-    text-align: center;
-  }
-
-  .websiteInfo > *, .mini-links {
-    display: block !important;
-    width: 100%;
-    text-align: center;
-    padding: 0 !important; 
-  }
-
-  .footer-container section {
-    margin: auto;
-
-    > * {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
   #uiSplit-sidebar {
     width: 100% !important;
 
     &.displayed {
       max-width: 100% !important;
     }
+  }
+}
+
+input#searchBox {
+  font-size: 15px;
+  background-color: var(--tertiarySystemGroupedBackground);
+  border: none;
+  border-radius: 5px;
+  width: -webkit-fill-available;
+  padding: 5px 10px;
+  font-family: 'Inter';
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.show { max-height: 100px !important}
+
+#topicsSearchDropdown {
+  transition: all 0.4s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+  margin-bottom: 0;
+
+  &.show {
+    margin-bottom: 15px;
   }
 }

@@ -78,3 +78,31 @@ footer {
         }
     }
 }
+
+@media only screen and (max-width: 1200px) {
+
+    .footer-header-app .footerTitleLine {
+      margin: auto;
+      width: fit-content;
+    }
+  
+    .footer-header-app * {
+      text-align: center;
+    }
+  
+    .websiteInfo > *, .mini-links {
+      display: block !important;
+      width: 100%;
+      text-align: center;
+      padding: 0 !important; 
+    }
+  
+    .footer-container section {
+      margin: auto;
+  
+      > * {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }

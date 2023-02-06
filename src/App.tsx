@@ -12,6 +12,7 @@ import { DiscAllDisplay, disclosureDisplay } from './components/gen/disc_fct';
 import { sidebarDisplayInverted } from './components/buildingBlocks/sidebar_fct';
 import { defaultTheme } from "./ios/color-scheme-toggle";
 import { displayPopUp } from './components/gen/PopUp_fct';
+import { toggleElement, filterTopics, activeSVG } from './components/gen/fct';
 
 // eslint-disable-next-line
 function sum(array = Array(Number())) { // sum values in an array 
@@ -89,10 +90,18 @@ const App = () => {
         <div id="uiSplit-sidebar">
           <div className='uiSplit-sidebar-sbContainer'>
             <section id="sidebarTopics">
-              <div className='r2 up bold sidebarSectionTitle'>Sujets & thèmes</div>
-              <ul className="sidebarTopics">
+              <div className="spacingLine sidebarSectionTitle">
+                <div className='r2 up bold'>Sujets & thèmes</div>
+                <svg viewBox="0 0 100 100" /* ratio of the svg file*/ id="topicsSearchMagnifyingGlass" className="clickVisible" height="13" fill="var(--secondaryLabel)" onClick={() => {toggleElement("topicsSearchDropdown"); activeSVG("topicsSearchMagnifyingGlass", "var(--secondaryLabel)", "var(--colorTheme)")}}>
+                  <use xlinkHref="./genIcons/magnifying-glass.svg#path2"></use>
+                </svg>
+              </div>
+              <div id="topicsSearchDropdown">
+                <input type="text" placeholder="Rechercher..." id="searchBox" onKeyUp={() => filterTopics()}></input>
+              </div>
+              <ul className="sidebarTopics" id="topicsList">
                 {selectableTopics.map(name => (
-                  <li key={name} className={"h8 bold " + (name === topicFilter ? `selected ${name}` : name)}>
+                  <li key={name} className={"h8 bold clickVisible " + (name === topicFilter ? `selected ${name}` : name)}>
                     {DiscAdditonal(
                       <button className="h8 bold " onClick={() => { setTopicFilter(name); DiscAllDisplay("show"); disclosureDisplay("discHeader", name)}}>{name}</button>, 
                       <div>
