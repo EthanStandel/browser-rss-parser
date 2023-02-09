@@ -11,7 +11,7 @@ export function sidebarDisplayInverted() {
       
     } else {
       x.classList.add("displayed")
-      y.style.marginLeft = "230px"
+      y.style.marginLeft = "250px" // width of the sidebar
       z.style.fill = "var(--colorTheme)"
       z.classList.add('selected')
     }

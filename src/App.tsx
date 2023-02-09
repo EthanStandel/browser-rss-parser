@@ -90,14 +90,22 @@ const App = () => {
         <div id="uiSplit-sidebar">
           <div className='uiSplit-sidebar-sbContainer'>
             <section id="sidebarTopics">
-              <div className="spacingLine sidebarSectionTitle">
-                <div className='r2 up bold'>Sujets & thèmes</div>
-                <svg viewBox="0 0 100 100" /* ratio of the svg file*/ id="topicsSearchMagnifyingGlass" className="clickVisible" height="13" fill="var(--secondaryLabel)" onClick={() => {toggleElement("topicsSearchDropdown"); activeSVG("topicsSearchMagnifyingGlass", "var(--secondaryLabel)", "var(--colorTheme)")}}>
-                  <use xlinkHref="./genIcons/magnifying-glass.svg#path2"></use>
-                </svg>
-              </div>
-              <div id="topicsSearchDropdown">
-                <input type="text" placeholder="Rechercher..." id="searchBox" onKeyUp={() => filterTopics()}></input>
+              <div id="sidebarTopics-header1">
+                <div className="spacingLine sidebarSectionTitle">
+                  <div className='r2 up bold'>Sujets & thèmes</div>
+                  <svg viewBox="0 0 100 100" /* ratio of the svg file*/ id="topicsSearchMagnifyingGlass" className="clickVisible" height="13" fill="var(--secondaryLabel)" onClick={() => {toggleElement("topicsSearchDropdown"); activeSVG("topicsSearchMagnifyingGlass", "var(--secondaryLabel)", "var(--colorTheme)")}}>
+                    <use xlinkHref="./genIcons/magnifying-glass.svg#path2"></use>
+                  </svg>
+                </div>
+                
+                <div id="topicsSearchDropdown">
+                  <div className="CONTAINER">
+                    <svg viewBox="0 0 100 100" /* ratio of the svg file*/ height="13" fill="var(--secondaryLabel)">
+                      <use xlinkHref="./genIcons/magnifying-glass.svg#path2"></use>
+                    </svg>
+                    <input type="text" placeholder="Sujets, thèmes..." id="searchBox" onKeyUp={() => filterTopics()}></input>
+                  </div>
+                </div>
               </div>
               <ul className="sidebarTopics" id="topicsList">
                 {selectableTopics.map(name => (

@@ -701,10 +701,10 @@ em:not(.itemContainer em) { // do not the emphasis for content in a RSS feed ite
     overflow-y: scroll;
 
     &.displayed {
-      max-width: 230px;
+      max-width: 250px; // width to change in ./sidebar_fct
     }
     
-    width: 230px;
+    width: 250px;
     max-height: calc(100vh - 51.8px);
     background-color: var(--systemHeaderMaterial);
     -webkit-backdrop-filter:saturate(180%) blur(20px);
@@ -1026,12 +1026,10 @@ button.squareButton20 {
 
 input#searchBox {
   font-size: 15px;
-  background-color: var(--tertiarySystemGroupedBackground);
   border: none;
-  border-radius: 5px;
-  width: -webkit-fill-available;
-  padding: 5px 10px;
   font-family: 'Inter';
+  background: none;
+  width: 100%;
 
   &:focus {
     outline: none;
@@ -1042,9 +1040,21 @@ input#searchBox {
 
 #topicsSearchDropdown {
   transition: all 0.4s ease-in-out;
+
+  
   max-height: 0;
   overflow: hidden;
   margin-bottom: 0;
+
+  
+  .CONTAINER { // otherwhise we can't use padding or inline-flew properly due to the transition & the svg as child
+    padding: 5px 10px;
+    align-items: center;
+    background-color: var(--tertiarySystemGroupedBackground);
+    display: inline-flex;
+    border-radius: 5px;
+    gap: 5px;
+  }
 
   &.show {
     margin-bottom: 15px;
