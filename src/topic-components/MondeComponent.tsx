@@ -42,7 +42,7 @@ const MondeEntries = [
 
 const MondeComponent = () => {
   return (
-    Disc(<h5>Les rendez-vous avec le monde</h5>,<ul className='rss nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(MondeEntries)}} />,"Monde",MondeEntries.length,"discIDBlock")
+    Disc(<h5>Les rendez-vous avec le monde</h5>,<ul className='rss nList nListInblock' dangerouslySetInnerHTML={{ __html: jsonToListDisc(MondeEntries)}} />,"Monde",MondeEntries.length,"discIDBlock")
   );
 }
 

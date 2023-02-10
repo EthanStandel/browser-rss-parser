@@ -48,7 +48,7 @@ const EthiqueComponent = () => {
           </section>
         </a>
       </div>
-      {Disc(<h5>Les rendez-vous éthiques</h5>,<ul className='rss nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(EthicsEntries)}} />,"Ethics", EthicsEntries.length,"discIDBlock")}
+      {Disc(<h5>Les rendez-vous éthiques</h5>,<ul className='rss nList nListInblock' dangerouslySetInnerHTML={{ __html: jsonToListDisc(EthicsEntries)}} />,"Ethics", EthicsEntries.length,"discIDBlock")}
     </div>
   );
 }

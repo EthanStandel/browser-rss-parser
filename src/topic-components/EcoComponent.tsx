@@ -50,7 +50,7 @@ const EcoEntries = [
 
 const EcoComponent = () => {
   return (
-    Disc(<h5>Les rendez-vous avec l'éco</h5>,<ul className='rss nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(EcoEntries)}} />,"Eco",EcoEntries.length,"discIDBlock")
+    Disc(<h5>Les rendez-vous avec l'éco</h5>,<ul className='rss nList nListInblock' dangerouslySetInnerHTML={{ __html: jsonToListDisc(EcoEntries)}} />,"Eco",EcoEntries.length,"discIDBlock")
   );
 }
 

@@ -25,7 +25,7 @@ const SportEntries = [
 
 const SportComponent = () => {
   return (
-    Disc(<h5>Les rendez-vous avec le sport</h5>,<ul className='rss nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(SportEntries)}} />,"Societe",SportEntries.length,"discIDBlock")
+    Disc(<h5>Les rendez-vous avec le sport</h5>,<ul className='rss nList nListInblock' dangerouslySetInnerHTML={{ __html: jsonToListDisc(SportEntries)}} />,"Societe",SportEntries.length,"discIDBlock")
   );
 }
 

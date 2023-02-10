@@ -15,7 +15,7 @@ const EuropeEntries = [
 
 const EuropeComponent = () => {
   return (
-    Disc(<h5>Les rendez-vous européens</h5>,<ul className='rss nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(EuropeEntries)}} />,"Europe",EuropeEntries.length,"discIDBlock")
+    Disc(<h5>Les rendez-vous européens</h5>,<ul className='rss nList nListInblock' dangerouslySetInnerHTML={{ __html: jsonToListDisc(EuropeEntries)}} />,"Europe",EuropeEntries.length,"discIDBlock")
   );
 }
 

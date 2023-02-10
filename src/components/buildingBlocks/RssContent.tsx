@@ -170,6 +170,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                 .replace('topics:places/','')
                 .replace('d&#039;',"'")
                 .replace('France - Monde', "Monde")
+                .replace('&#039;',"’")
               );
               
               if (correctedElement !== "") {

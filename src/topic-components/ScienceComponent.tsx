@@ -25,7 +25,7 @@ const ScienceEntries = [
 
 const ScienceComponent = () => {
   return (
-    Disc(<h5>Les rendez-vous internationaux</h5>,<ul className='rss nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(ScienceEntries)}} />,"Science",ScienceEntries.length,"discIDBlock")
+    Disc(<h5>Les rendez-vous internationaux</h5>,<ul className='rss nList nListInblock' dangerouslySetInnerHTML={{ __html: jsonToListDisc(ScienceEntries)}} />,"Science",ScienceEntries.length,"discIDBlock")
   );
 }
 

@@ -502,12 +502,16 @@ em:not(.itemContainer em) { // do not the emphasis for content in a RSS feed ite
   }
 }
 
- ul.nList {
-  border: 1px solid var(--cardBorder);
-  background-color: var(--secondarySystemGroupedBackground);
-  border-radius: var(--rounded-corners-block);
-  margin-bottom: 15px;
-  // filter: drop-shadow(0 10px 10px var(--hardShadow));
+ ul.nList, .nList ul {
+  
+
+  &:not(.nListInblock) { // for nList in discIDBlock
+    border: 1px solid var(--cardBorder);
+    background-color: var(--secondarySystemGroupedBackground);
+    border-radius: var(--rounded-corners-block);
+    margin-bottom: 15px;
+    // filter: drop-shadow(0 10px 10px var(--hardShadow));
+  }
 
   li {
     margin-bottom: 0 !important;
@@ -536,7 +540,7 @@ em:not(.itemContainer em) { // do not the emphasis for content in a RSS feed ite
 
     &.nListFreeDesc {
       .descriptionLine {
-        -webkit-line-clamp: 6 !important;
+        -webkit-line-clamp: 8 !important;
       }
     }
 

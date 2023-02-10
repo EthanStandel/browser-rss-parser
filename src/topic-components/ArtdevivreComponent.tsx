@@ -29,14 +29,14 @@ const ArtdevivreEntries = [
     "image1": iconsByNewsroom.Europe1.LesOrigines.iconImg,
     "image2": iconsByNewsroom.Europe1.iconImg,
     "duration": "6min",
-    "description": "«&nbsp;Depuis quand, comment et surtout pourquoi a-t-on créé ça&nbsp;?&nbsp;» Vous ne vous êtes peut-être jamais posé la question. Qu’importe&nbsp;! Lui a la réponse… À 17:30, David&nbsp;Castello-Lopes remonte aux origines d’un objet de notre quotidien.",
+    "description": "«&nbsp;Depuis quand, comment et surtout pourquoi a-t-on créé ça&nbsp;?&nbsp;» À 17:30, David Castello-Lopes remonte aux origines d’un objet de notre quotidien.",
     "specification": podcastDiffusion([1,2,3,4,5])
   }
 ]
 
 const ArtdevivreComponent = () => {
   return (
-    Disc(<h5>Les rendez-vous avec l'art de vivre</h5>,<ul className='rss nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(ArtdevivreEntries)}} />,'Artdevivre',ArtdevivreEntries.length,"discIDBlock")
+    Disc(<h5>Les rendez-vous avec l'art de vivre</h5>,<ul className='rss nList nListInblock' dangerouslySetInnerHTML={{ __html: jsonToListDisc(ArtdevivreEntries)}} />,'Artdevivre',ArtdevivreEntries.length,"discIDBlock")
   );
 }
 

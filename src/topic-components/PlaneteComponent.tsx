@@ -18,7 +18,7 @@ const PlaneteEntries = [
 
 const PlaneteComponent = () => {
   return (
-    Disc(<h5>Les rendez-vous avec la planète</h5>,<ul className='rss nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(PlaneteEntries)}} />,"Planete",PlaneteEntries.length,"discIDBlock")
+    Disc(<h5>Les rendez-vous avec la planète</h5>,<ul className='rss nList nListInblock' dangerouslySetInnerHTML={{ __html: jsonToListDisc(PlaneteEntries)}} />,"Planete",PlaneteEntries.length,"discIDBlock")
   );
 }
 

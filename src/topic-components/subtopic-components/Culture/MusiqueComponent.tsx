@@ -44,7 +44,7 @@ const CultureMusicEntries = [
 const CultureMusiqueComponent = () => {
   return (
     <div className="LeftPodcastsColumn">
-      {Disc(<div><h5>Les rendez-vous musicaux</h5></div>,<ul className='rss nList' dangerouslySetInnerHTML={{ __html: jsonToListDisc(CultureMusicEntries)}} />, 'CultureMusic', CultureMusicEntries.length, "discIDBlock")}
+      {Disc(<div><h5>Les rendez-vous musicaux</h5></div>,<ul className='rss nList nListInblock' dangerouslySetInnerHTML={{ __html: jsonToListDisc(CultureMusicEntries)}} />, 'CultureMusic', CultureMusicEntries.length, "discIDBlock")}
     </div>
   );
 }
