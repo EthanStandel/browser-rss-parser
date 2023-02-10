@@ -148,7 +148,7 @@ const App = () => {
                 .sort(([ keyA ], [ keyB ]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)
                 .filter(([ key ]) => !subtopicFilter ? true : subtopicFilter === key)
                 .map(([key, feeds]) => (
-                  Disc(<h5 className="subtopic bold">{key !== "noSubtopic" && key}</h5>,<div> {(SubtopicComponents[key]) /* not working */ } <RssContent rssFeeds={feeds}/></div>, key, sum(feeds.map(value => value.articlesCount)), undefined , key + " ArticleSection " + String(((key === "noSubtopic") || (sum(feeds.map(value => value.articlesCount)) > 5)) ? " largeDisplay ": "") + nListYS(key) ? " nList" : "") 
+                  Disc(<h5 className="subtopic bold">{key !== "noSubtopic" && key}</h5>,<div> {(SubtopicComponents[key]) /* not working */ } <RssContent rssFeeds={feeds}/></div>, key, sum(feeds.map(value => value.articlesCount)), undefined , key + " ArticleSection " + (((key === "noSubtopic") || (sum(feeds.map(value => value.articlesCount)) > 5)) ? " largeDisplay ": "") + (nListYS(key) ? " nList" : "")) 
                 ))
               }
             </section>

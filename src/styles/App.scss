@@ -732,6 +732,10 @@ em:not(.itemContainer em) { // do not the emphasis for content in a RSS feed ite
 
       .sidebarSectionTitle {
         margin-bottom: 10px;
+        
+        :last-child { // do not shrink last-child element (svg)
+          flex: none;
+        }
       }
 
       ul.sidebarTopics {
