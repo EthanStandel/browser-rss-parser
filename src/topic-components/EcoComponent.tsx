@@ -4,7 +4,7 @@ import iconsByNewsroom from "../resources/iconsByNewsroom.json";
 
 const EcoEntries = [
   {
-    "title": "L'interview éco",
+    "title": "L’interview éco",
     "URL": "https://www.europe1.fr/emissions/linterview-eco",
     "image1": iconsByNewsroom.Europe1.iconImg,
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
@@ -13,15 +13,16 @@ const EcoEntries = [
     "specification": podcastDiffusion([1,2,3,4,5])
   },
   {
-    "title": "Le Pourquoi du comment : économie et social",
+    "title": "Le Pourquoi du comment&nbsp;: économie et social",
     "URL": "https://www.franceculture.fr/emissions/le-pourquoi-du-comment-economie-social",
     "image1": iconsByNewsroom.FranceCulture.iconImg,
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
     "duration": "4min",
-    "description": "À 15h, Les chercheuses de l'Institut Veblen abordent avec pédagogie les questions que l’on se pose sur l'économie et le social sans oser les formuler."
+    "description": "À 15h, Les chercheuses de l'Institut Veblen abordent avec pédagogie les questions que l’on se pose sur l'économie et le social sans oser les formuler.",
+    "specification": podcastDiffusion([5])
   },
   {
-    "title": "L'édito éco",
+    "title": "L’édito éco",
     "URL": "https://www.europe1.fr/emissions/L-edito-eco2",
     "image1": iconsByNewsroom.Europe1.iconImg,
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,
@@ -39,7 +40,7 @@ const EcoEntries = [
     "specification": podcastDiffusion([1,2,3,4,5])
   },
   {
-    "title": "Le journal de l'économie",
+    "title": "Le journal de l’économie",
     "URL": "https://www.europe1.fr/emissions/la-bourse",
     "image1": iconsByNewsroom.TV5Monde.iconImg,
     "image2": iconsByNewsroom.Apple.AppleTV.iconImg,

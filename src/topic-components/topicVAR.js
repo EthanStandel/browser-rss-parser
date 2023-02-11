@@ -13,9 +13,7 @@ export function podcastDiffusion(array = [Number()]) {
   }
 
   return ((diffusionDays.length !== 0) && array.every(diffusionDate => diffusionDate !== day)) 
-    ? "Chaque " + diffusionDays.join(', ').replace(/,(?=[^,]+$)/, ' et')
-      .replace('samedi et dimanche', 'fin de semaine')
-      .replace('Chaque lundi, mardi, mercredi, jeudi, vendredi', 'En semaine') 
+    ? (((String(array).includes(String([1,2,3,4,5])) ? 'En semaine' : undefined) || (String(array).includes(String([6,7])) ? 'En fin de semaine' : undefined)) ?? "Chaque " + diffusionDays.join(', ').replace(/,(?=[^,]+$)/, ' et'))
     : ""
 }
 

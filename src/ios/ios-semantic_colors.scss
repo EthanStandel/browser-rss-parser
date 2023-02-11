@@ -66,14 +66,17 @@
     --lightText: rgba(255.0, 255.0, 255.0, 0.6);
     --darkText: rgba(0.0, 0.0, 0.0, 1.0);
 
-    /*/ Materials (Blur effects) /*/
-    --systemUltrathinMaterial: rgba(246, 246, 246, 0.36);
-    --systemThinMaterial: rgba(246, 246, 246, 0.48);
-    --systemMediumMaterial: rgba(246, 246, 246, 0.6);
-    --systemThickMaterial: rgba(246, 246, 246, 0.72);
-    --systemUltrathickMaterial: rgba(246, 246, 246, 0.84);
+    /*/ Materials (Blur effects) 
+      backdrop-filter: blur(27px) saturate(1.8);
+    use with 
+    /*/
+    --systemUltrathinMaterial: rgba(246, 246, 246, 0.36); 
+    --systemThinMaterial: rgba(246, 246, 246, 0.48); // backdrop-filter: blur(27px)
+    --systemMediumMaterial: rgba(246, 246, 246, 0.6); // backdrop-filter: blur(27px) -- notifications 
+    --systemThickMaterial: rgba(246, 246, 246, 0.72); // backdrop-filter: blur(15px)
+    --systemUltrathickMaterial: rgba(246, 246, 246, 0.84); // backdrop-filter: blur(27px)
     --systemHeaderMaterial: rgba(255, 255, 255, 0.8);
-    --systemTitlebarMaterial: rgba(253, 253, 253, 0.8);
+    --systemTitlebarMaterial: rgba(253, 253, 253, 0.8); // backdrop-filter: blur(10px)
 
     /*/ Addition by KL3W /*/
     --cardBorder: rgba(209, 209, 214, 0.63);

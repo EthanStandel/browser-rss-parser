@@ -72,7 +72,7 @@ const App = () => {
     }
     return displayednList
   }
-  window.onload = () => {sidebarDisplayInverted(); disclosureDisplay("discHeader", topicFilter)} // show the sidebar on load
+  window.onload = () => {sidebarDisplayInverted(); disclosureDisplay("discAddHeader", topicFilter)} // show the sidebar on load
 
   return (
     <div id="App" className={topicFilter} data-color-scheme={defaultTheme()}>
@@ -111,7 +111,7 @@ const App = () => {
                 {selectableTopics.map(name => (
                   <li key={name} className={"h8 bold clickVisible " + (name === topicFilter ? `selected ${name}` : name)}>
                     {DiscAdditonal(
-                      <button className="h8 bold " onClick={() => { setTopicFilter(name); DiscAllDisplay("show"); disclosureDisplay("discHeader", name)}}>{name}</button>, 
+                      <button className="h8 bold " onClick={() => { setTopicFilter(name); DiscAllDisplay("show"); disclosureDisplay("discAddHeader", name)}}>{name}</button>, 
                       <div>
                         {Object.keys(topics[name].subtopics)
                           .filter(key => key !== "noSubtopic")

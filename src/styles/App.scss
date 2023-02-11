@@ -21,10 +21,6 @@
   }
 }
 
-.clickVisible {
-  cursor: pointer;
-}
-
 /*/ loading Spinner in RssFeeds /*/
 .spinner-container > div {
   margin: auto;
@@ -370,8 +366,8 @@ ul.rss li {
     .itemContainer  {
       max-height: 75%;
       display: block;
-      padding: 14px 10px 14px 0; 
-      width: calc(100% - 10px) !important;
+      padding: 14px 0 14px 0; 
+      width: 100% !important;
       position: absolute;
       bottom: 0;
       z-index: 2;
@@ -381,7 +377,7 @@ ul.rss li {
       border-radius: 0 0 var(--rounded-corners-block) var(--rounded-corners-block);
 
       > *:not(.justifiedTitle), .justifiedTitle .titleLine {
-        padding-left: 16px // in order to keep the shadow for title 
+        padding: 0 10px 0 16px // in order to keep the shadow for title 
       }
     }
     
@@ -710,7 +706,7 @@ em:not(.itemContainer em) { // do not the emphasis for content in a RSS feed ite
     
     width: 250px;
     max-height: calc(100vh - 51.8px);
-    background-color: var(--systemHeaderMaterial);
+    background-color: var(--systemTitlebarMaterial);
     -webkit-backdrop-filter:saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
     border-right: 0.5px solid var(--separator);
@@ -1062,9 +1058,29 @@ input#searchBox {
     display: inline-flex;
     border-radius: 5px;
     gap: 5px;
+    width: -webkit-fill-available;
   }
 
   &.show {
     margin-bottom: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+  ul.sidebarTopics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    column-gap: 10px;
+  
+    > * {
+      min-width: 222px;
+      flex: 1 1 0;
+    }
   }
 }

@@ -18,7 +18,7 @@ const PrinterEntries = [
     "image1": "./icons/WebsitesIcons/tagesschau.png",
     "image2": iconsByNewsroom.Apple.AppleTV.iconImg,
     "duration": "2min",
-    "description": "Nachrichten schauen auf tagesschau.de - die erste Adresse für Nachrichten und umfassende Berichte zu aktuellen Themen.",
+    "description": "Nachrichten schauen auf tagesschau.de –&nbsp;die erste Adresse für Nachrichten und umfassende Berichte zu aktuellen Themen.",
     "countryISO3Label": "DEU"
   },
   {
