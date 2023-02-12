@@ -1,4 +1,4 @@
-export function displayPopUp(displayedStyle) {
+export function ModalDisplay(displayedStyle) {
 
     if (document.getElementById('genPopUp').className.includes("shown")) {
         document.getElementById('genPopUp').classList.remove("shown")
@@ -11,3 +11,4 @@ export function displayPopUp(displayedStyle) {
 }
 
 // https://medium.com/tinyso/how-to-create-a-modal-component-in-react-from-basic-to-advanced-a3357a2a716a
+// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal

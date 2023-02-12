@@ -4435,7 +4435,7 @@
             "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
           }  
         ],
-        "Presse étrangère": [
+        "ENGForeignNewsrooms": [
           {
             "url": "https://www.telegraph.co.uk/science/rss.xml",
             "name": "The Telegraph",
@@ -4489,6 +4489,25 @@
             "backgroundImg": "./icons/WebsitesIcons/wired_bgIMG.jpg"
           },
           {
+            "url": "https://www.theverge.com/rss/science/index.xml",
+            "name": "The Verge",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/theverge.png"
+          },
+          {
+            "url": "https://www.vox.com/rss/science-and-health/index.xml",
+            "name": "Vox",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/vox.png",
+            "backgroundImg": "./icons/WebsitesIcons/vox_bgIMG.jpg"
+          }
+        ],
+        "DEUForeignNewsrooms": [
+          {
             "url": "https://rss.dw.com/xml/rss-de-wissenschaft",
             "name": "Deutsche Welle",
             "articlesCountryISO3": "DEU",
@@ -4505,25 +4524,7 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/dfunk.png",
             "backgroundImg": "./icons/WebsitesIcons/dfunk_bgIMG.jpg"
-          },
-          {
-            "url": "https://www.vox.com/rss/science-and-health/index.xml",
-            "name": "Vox",
-            "articlesCountryISO3": "USA",
-            "specification": "firstHeadline",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/vox.png",
-            "backgroundImg": "./icons/WebsitesIcons/vox_bgIMG.jpg"
-          },
-          {
-            "url": "https://newsfeed.zeit.de/wissen/index",
-            "name": "Die Zeit",
-            "articlesCountryISO3": "DEU",
-            "specification": "firstHeadline",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/diezeit.png",
-            "backgroundImg": "./icons/WebsitesIcons/diezeit_bgIMG.jpg"
-          } 
+          }
         ]
       }
     },
@@ -4848,20 +4849,11 @@
             "iconImg": "./icons/WebsitesIcons/recyclage-recuperation.png"
           }
         ],
-        "Presse étrangère": [
-          {
-            "url": "https://taz.de/feed/!p4624/rss.xml",
-            "name": "Die Tageszeitung",
-            "articlesCountryISO3": "DEU",
-            "specification": "firstHeadline",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/taz.png",
-            "backgroundImg": "./icons/WebsitesIcons/taz_bgIMG.jpg"
-          },
+        "ENGForeignNewsrooms": [
           {
             "url": "http://www.vox.com/rss/energy-and-environment/index.xml",
             "name": "Vox",
-            "articlesCountryISO3": "DEU",
+            "articlesCountryISO3": "USA",
             "specification": "firstHeadline",
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/vox.png",
@@ -4893,7 +4885,26 @@
             "articlesCount": 2,
             "iconImg": "./icons/WebsitesIcons/foreignaffairs.png",
             "backgroundImg": "./icons/WebsitesIcons/foreignaffairs_bgIMG.jpg"
-          }    
+          },
+          {
+            "url": "https://www.theverge.com/rss/environment/index.xml",
+            "name": "The Verge",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/theverge.png"
+          } 
+        ],
+        "DEUForeignNewsrooms": [
+          {
+            "url": "https://taz.de/feed/!p4624/rss.xml",
+            "name": "Die Tageszeitung",
+            "articlesCountryISO3": "DEU",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/taz.png",
+            "backgroundImg": "./icons/WebsitesIcons/taz_bgIMG.jpg"
+          }
         ]
       }
     },
@@ -5173,16 +5184,7 @@
             "backgroundImg": "./icons/WebsitesIcons/bfmtv_bgIMG.jpg"
           }
         ],
-        "Presse étrangère": [
-          {
-            "url": "https://www.businessinsider.de/tech/feed/",
-            "name": "Tech Insider",
-            "articlesCountryISO3": "DEU",
-            "specification": "firstHeadline",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/tinsider.png",
-            "backgroundImg": "./icons/WebsitesIcons/tinsider_bgIMG.jpg"
-          },
+        "ENGForeignNewsrooms": [
           {
             "url": "https://www.newyorker.com/feed/tech",
             "name": "The New Yorker",
@@ -5202,15 +5204,6 @@
             "backgroundImg": "./icons/WebsitesIcons/thenewyorker_bgIMG.jpg"
           },
           {
-            "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=digital.bild.html",
-            "name": "Bild",
-            "articlesCountryISO3": "DEU",
-            "specification": "firstHeadline",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/bild.png",
-            "backgroundImg": "./icons/WebsitesIcons/bild_bgIMG.jpg"
-          },
-          {
             "url": "http://feed.informer.com/digests/ZWY0DHB1SW/feeder.rss",
             "name": "Vox Tech-Mix",
             "articlesCountryISO3": "USA",
@@ -5218,15 +5211,6 @@
             "articlesCount": 3,
             "iconImg": "./icons/WebsitesIcons/vox.png",
             "backgroundImg": "./icons/WebsitesIcons/vox_bgIMG.jpg"
-          },
-          {
-            "url": "https://newsfeed.zeit.de/digital/index",
-            "name": "Die Zeit",
-            "articlesCountryISO3": "DEU",
-            "specification": "firstHeadline",
-            "articlesCount": 2,
-            "iconImg": "./icons/WebsitesIcons/diezeit.png",
-            "backgroundImg": "./icons/WebsitesIcons/diezeit_bgIMG.jpg"
           },
           {
             "url": "https://www.ft.com/technology?format=rss",
@@ -5244,6 +5228,43 @@
             "specification": "firstHeadline",
             "articlesCount": 3,
             "iconImg": "./icons/WebsitesIcons/theage.png"
+          },
+          {
+            "url": "https://www.theverge.com/rss/tech/index.xml",
+            "name": "The Verge",
+            "articlesCountryISO3": "USA",
+            "specification": "firstHeadline",
+            "articlesCount": 5,
+            "iconImg": "./icons/WebsitesIcons/theverge.png"
+          }
+        ],
+        "DEUForeignNewsrooms": [
+          {
+            "url": "https://newsfeed.zeit.de/digital/index",
+            "name": "Die Zeit",
+            "articlesCountryISO3": "DEU",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/diezeit.png",
+            "backgroundImg": "./icons/WebsitesIcons/diezeit_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.bild.de/rss-feeds/rss-16725492,feed=digital.bild.html",
+            "name": "Bild",
+            "articlesCountryISO3": "DEU",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/bild.png",
+            "backgroundImg": "./icons/WebsitesIcons/bild_bgIMG.jpg"
+          },
+          {
+            "url": "https://www.businessinsider.de/tech/feed/",
+            "name": "Tech Insider",
+            "articlesCountryISO3": "DEU",
+            "specification": "firstHeadline",
+            "articlesCount": 2,
+            "iconImg": "./icons/WebsitesIcons/tinsider.png",
+            "backgroundImg": "./icons/WebsitesIcons/tinsider_bgIMG.jpg"
           }
         ]
       }

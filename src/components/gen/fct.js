@@ -1,9 +1,8 @@
 export function toggleElement(id) {
-    document.getElementById(id).classList.toggle("show");
+  document.getElementById(id).classList.toggle("show");
 }
 
-export function filterTopics() {
-    
+export function filterTopics() { // used for the searchbar in the sidebar to filter topics
   var input = document.getElementById("searchBox");
   var filter = input.value.toUpperCase();
   var div = document.getElementById("topicsList");
@@ -19,5 +18,5 @@ export function filterTopics() {
 }
 
 export function activeSVG(svgID, baseColor, activeColor) {
-    document.getElementById(svgID).style.fill === String(activeColor) ? document.getElementById(svgID).style.fill = baseColor : document.getElementById(svgID).style.fill = String(activeColor)
+  document.getElementById(svgID).style.fill === String(activeColor) ? document.getElementById(svgID).style.fill = baseColor : document.getElementById(svgID).style.fill = String(activeColor)
 }

@@ -11,7 +11,6 @@ import { Disc, DiscAdditonal } from './components/gen/Disclosure_comp';
 import { DiscAllDisplay, disclosureDisplay } from './components/gen/disc_fct';
 import { sidebarDisplayInverted } from './components/buildingBlocks/sidebar_fct';
 import { defaultTheme } from "./ios/color-scheme-toggle";
-import { displayPopUp } from './components/gen/PopUp_fct';
 import { toggleElement, filterTopics, activeSVG } from './components/gen/fct';
 
 // eslint-disable-next-line
@@ -76,7 +75,6 @@ const App = () => {
 
   return (
     <div id="App" className={topicFilter} data-color-scheme={defaultTheme()}>
-      <div id="genPopUp" onClick={() => displayPopUp()}></div>
       {Header(["",""],
           <div className={"headerTitle"} onClick={() => { setTopicFilter(topicFilter); DiscAllDisplay("show")}}>
             <h6><em>nuntii</em></h6>
@@ -84,8 +82,7 @@ const App = () => {
           </div>,
       [""],
       "Top"
-      )
-      }
+      )}
       <div id="uiSplitContainer">
         <div id="uiSplit-sidebar">
           <div className='uiSplit-sidebar-sbContainer'>

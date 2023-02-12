@@ -3,6 +3,8 @@
 
 /* HTML5 color-names allowed for use in Titles (News App). List: https://www.w3schools.com/colors/colors_names.asp */
 
+// https://fjolt.com/article/css-ios-crystalline-effect-backdrop-filter
+
 
 // non changing styles with light or dark mode -- mainly shadows)
 .iOSlargeShadow {
@@ -10,7 +12,7 @@
 }
 
 #App {
-  &[data-color-scheme="light"] {
+  &[data-color-scheme='light'] {
     /* Adaptable Colors */
     --systemBlue: rgba(0.0, 122.0, 255.0, 1.0);
     --systemGreen: rgba(52.0, 199.0, 89.0, 1.0);
@@ -86,7 +88,7 @@
     --hardShadow: rgba(76, 76, 109, 0.07);
 }
     
-  &[data-color-scheme="dark"]  {
+  &[data-color-scheme='dark']  {
     /* Adaptable Colors */
     --systemBlue: rgba(10.0, 132.0, 255.0, 1.0);
     --systemGreen: rgba(48.0, 209.0, 88.0, 1.0);

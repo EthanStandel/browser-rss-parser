@@ -42,7 +42,7 @@ export function jsonToListDisc(array = []) {
             </div>    
             <div class="descriptionLine">
               ${((i.specification !== undefined) && (i.specification !== "")) ? "": "<div class='h8 item-description'>" + i.description + "</div>"}
-              ${((i.specification === "") || (i.specification === undefined))  ? "" : "<div class='descriptionLine always'><div class='r2 up item-publish-date'>" + i.specification + "</div> </div>"}
+              ${((i.specification === "") || (i.specification === undefined))  ? "" : "<div class='descriptionLine always'><div class='r2 up item-publish-date'>" + i.specification + "</div></div>"}
             </div>
           </div>
         </div>

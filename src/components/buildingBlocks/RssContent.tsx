@@ -7,8 +7,6 @@ import { Spinner } from "../Spinner";
 import _unescape from "lodash/unescape";
 import _deburr from "lodash/deburr";
 import { range } from "lodash";
-import { displayPopUp } from "../gen/PopUp_fct";
-import { genPopUpStructure } from "../gen/PopUp_comp";
 
 export interface RssFeedSource {
   url: string;
@@ -130,9 +128,11 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             // const titleSplitTitle = item.title?.split(", says ")[0] ?? item.title?.split(", blasts ")[0] ?? item.title?.split(", warns ")[0];
             // const titleSplit = item.title?.split(", says ")[1] ?? item.title?.split(", blasts ")[1] ?? item.title?.split(", warns ")[1];
 
+            /*/ UNIQUE CODE FOR THE ITEM
             var str = String(item.title);
             var matches = str.match(/\b(\w)/g);
             var titleAcronym = matches?.join('');
+            /*/ 
             
             const imgHref = 
             item.image
@@ -237,7 +237,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                           {item.description && <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: _unescape(item.description).replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;')}} />}
                         </div>
                         <div className="additional-infosLine">
-                          <div className="r4 up" onClick= {() => {displayPopUp("rssItemPopUpBlock" + titleAcronym); genPopUpStructure(String(<div>{item.title}</div>))}}>
+                          <div className="r4 up">
                             {author?.replace(" avec ", ", ").replace(" et ", ", ")}
                           </div>
                         </div>
