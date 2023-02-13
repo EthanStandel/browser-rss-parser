@@ -6,6 +6,7 @@
 @import "../topic-components/EthiqueComponent_styles.scss";
 @import "./defaultStyles.scss";
 @import "./footerStyles.scss";
+@import "./modalStyles.scss";
 
 #App {
   --colorTheme: var(--headlinesColorTheme);
@@ -25,7 +26,7 @@
 }
 
 /*/ elements to be not selectable /*/
-.headerTitle, main.Articles, .mini-links a {
+.headerTitle, main.Articles, .mini-links a, .modal {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -71,7 +72,7 @@ ul.rss li {
   margin-bottom: 15px;
   border: 1px solid var(--cardBorder);
   background-color: var(--secondarySystemGroupedBackground);
-  border-radius: var(--rounded-corners-block);
+  border-radius: var(--roundedBlockRadius);
   transition-timing-function: ease-in-out;
   transition-duration: .2s;
   transition-property: box-shadow, border, transform;
@@ -363,10 +364,20 @@ ul.rss li {
       -webkit-backdrop-filter: saturate(180%) blur(20px);
       backdrop-filter: saturate(180%) blur(20px);
       background-color: var(--systemThickMaterial);
-      border-radius: 0 0 var(--rounded-corners-block) var(--rounded-corners-block);
+      border-radius: 0 0 var(--roundedBlockRadius) var(--roundedBlockRadius);
 
-      > *:not(.justifiedTitle), .justifiedTitle .titleLine {
+      > *:not(.justifiedTitle) {
         padding: 0 10px 0 16px // in order to keep the shadow for title 
+      }
+
+      .justifiedTitle {
+        .titleLine {
+          padding-left: 16px;
+        }
+
+        .articleDate {
+          padding-right: 10px;
+        }
       }
     }
     
@@ -378,7 +389,7 @@ ul.rss li {
         display: block !important;
         height: 300px !important;
         width: 100% !important;
-        border-radius: var(--rounded-corners-block);
+        border-radius: var(--roundedBlockRadius);
       }
       
       .iconImgWrapper {
@@ -427,7 +438,7 @@ ul.rss li {
     .itemContainer  {
       padding: 14px 10px 14px 16px;
       width: calc(100% - 16px - 10px);
-      border-radius: 0 0 var(--rounded-corners-block) var(--rounded-corners-block);
+      border-radius: 0 0 var(--roundedBlockRadius) var(--roundedBlockRadius);
     }
 
     .iconContainer {
@@ -440,7 +451,7 @@ ul.rss li {
         margin-right: 0;
         z-index: -1;
         float: none !important;
-        border-radius: var(--rounded-corners-block) var(--rounded-corners-block) 0 0;
+        border-radius: var(--roundedBlockRadius) var(--roundedBlockRadius) 0 0;
       }
 
       .iconImgWrapper {
@@ -473,7 +484,7 @@ ul.nList, .nList ul {
   &:not(.nListInblock) { // for nList in discIDBlock
     border: 1px solid var(--cardBorder);
     background-color: var(--secondarySystemGroupedBackground);
-    border-radius: var(--rounded-corners-block);
+    border-radius: var(--roundedBlockRadius);
     margin-bottom: 15px;
     // filter: drop-shadow(0 10px 10px var(--hardShadow));
   }
@@ -623,7 +634,7 @@ ul.nList, .nList ul {
 
   &#discIDBlock { // display the Disc with a background and a block
     background-color: var(--secondarySystemGroupedBackground);
-    border-radius: var(--rounded-corners-block);
+    border-radius: var(--roundedBlockRadius);
     box-shadow: 2px 4px 12px rgba(0,0,0, 0.08);
     border: 1px solid var(--cardBorder);
     filter: drop-shadow(0 10px 10px var(--hardShadow));
@@ -664,17 +675,18 @@ ul.nList, .nList ul {
     background-color: var(--systemTitlebarMaterial);
     -webkit-backdrop-filter:saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
-    border-right: 0.5px solid var(--separator);
+    border: 0;
     position: fixed;
     z-index: 3;
     overflow-x: hidden;
     max-width: 0;
     height: 100%;
-    transition: max-width 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     top: 51.8px; // height of header
 
     &.displayed {
       max-width: 250px; // width to change in ./sidebar_fct
+      border-right: 0.5px solid var(--separator);
     }
 
     .uiSplit-sidebar-sbContainer {

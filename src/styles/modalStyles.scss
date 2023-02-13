@@ -1,0 +1,70 @@
+aside.modal {
+    z-index: 100;
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+    backdrop-filter: blur(2px) brightness(50%);
+
+    &.displayedModal {
+        display: flex;
+    }
+
+    svg {
+        width: 20px;
+      } 
+      
+    .modalContainer { // used for rounded scrollbar 
+        overflow: hidden;
+        border-radius: 11px;
+        max-width: 666px;
+        max-height: calc(100% - 250px);
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+
+        .modalDialog {
+            background-color: var(--systemBackground);
+            filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 11px 34px);
+            width: -webkit-fill-available;
+            height: -webkit-fill-available;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .modalToTop {
+                .modalHeader {
+                    position: sticky;
+                    top: 0;
+                    left: 0;
+                    width: -webkit-fill-available;
+                    text-align: center;
+                    padding: 15px 20px;
+                    border-bottom: 0.5px solid rgba(0, 0, 0, 0);
+                    background-color: rgba(0, 0, 0, 0);
+                    transition: all 0.4s ease-in-out;
+                }
+        
+                .modalContent {
+                    padding: 15px 80px;
+                }
+            }
+    
+            .modalFooter {
+                border-top: 0.5px solid var(--separator);
+                position: sticky;
+                padding: 15px 10px;
+                bottom: 0;
+                left: 0;
+                width: -webkit-fill-available;
+                text-align: center;
+                backdrop-filter: blur(27px) saturate(1.8);
+                background-color: var(--colorTheme);
+            }
+        }
+    }
+}

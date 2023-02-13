@@ -12,6 +12,8 @@ import { DiscAllDisplay, disclosureDisplay } from './components/gen/disc_fct';
 import { sidebarDisplayInverted } from './components/buildingBlocks/sidebar_fct';
 import { defaultTheme } from "./ios/color-scheme-toggle";
 import { toggleElement, filterTopics, activeSVG } from './components/gen/fct';
+import { ModalStructure } from './components/gen/Modal/Modal_comp';
+import { ModalDisplay } from './components/gen/Modal/Modal_fct';
 
 // eslint-disable-next-line
 function sum(array = Array(Number())) { // sum values in an array 
@@ -71,7 +73,7 @@ const App = () => {
     }
     return displayednList
   }
-  window.onload = () => {sidebarDisplayInverted(); disclosureDisplay("discAddHeader", topicFilter)} // show the sidebar on load
+  window.onload = () => {ModalDisplay("Splash"); disclosureDisplay("discAddHeader", topicFilter)} // show the sidebar on load
 
   return (
     <div id="App" className={topicFilter} data-color-scheme={defaultTheme()}>
@@ -83,6 +85,7 @@ const App = () => {
       [""],
       "Top"
       )}
+      {ModalStructure("Splash")}
       <div id="uiSplitContainer">
         <div id="uiSplit-sidebar">
           <div className='uiSplit-sidebar-sbContainer'>
@@ -94,7 +97,6 @@ const App = () => {
                     <use xlinkHref="./genIcons/magnifying-glass.svg#path2"></use>
                   </svg>
                 </div>
-                
                 <div id="topicsSearchDropdown">
                   <div className="CONTAINER">
                     <svg viewBox="0 0 100 100" /* ratio of the svg file*/ height="13" fill="var(--secondaryLabel)">
@@ -127,7 +129,14 @@ const App = () => {
               </ul>
             </section>
             <section id="sidebarPlus">
-              <div className='r2 up bold sidebarSectionTitle'>Plus de <em>nuntii</em></div>
+              <div id="sidebarTopics-header2">
+                <div className='sidebarSectionTitle'>
+                  <div className='r2 up bold sidebarSectionTitle'>Plus de <em>nuntii</em></div>
+                </div>
+                <ul>
+                  <li>Presse étrangère selectionnée</li>
+                </ul>
+              </div>
             </section>
           </div>
         </div>

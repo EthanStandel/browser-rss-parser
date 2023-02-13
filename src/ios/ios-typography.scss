@@ -1,7 +1,7 @@
 @import "ios-semantic_colors.scss";
 
 :root {
-    --rounded-corners-block: 12px;
+    --roundedBlockRadius: 12px;
 }
 
 * {
@@ -234,6 +234,10 @@ p.bold {
     &.up {
         text-transform: uppercase;
     }
+
+    &.bold {
+        font-weight: 700;
+    }
 }
 
 /* Bold style for Rubric 1 */
@@ -285,6 +289,22 @@ button {
     background-color: rgba(0,0,0,0);
     border: none;
     cursor: pointer;
+
+    &.largeButton {
+        background-color: var(--colorTheme);
+        color: white;
+        padding: 10px;
+        width: -webkit-fill-available;
+        border-radius: 8px;
+    }
+
+    &.largeButtonInverted { // used for a var(--colorTheme) bg outside of the button
+        background-color: white;
+        color: var(--colorTheme);
+        padding: 10px;
+        width: -webkit-fill-available;
+        border-radius: 8px;
+    }
 }
 
 // default spacingLine
@@ -301,4 +321,9 @@ button {
     &.centerItems {
         justify-content: center;
     }
+}
+
+.blockwBorder {
+    border: 1px solid var(--cardBorder);
+    border-radius: var(--roundedBlockRadius);
 }

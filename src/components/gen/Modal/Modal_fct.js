@@ -1,13 +1,27 @@
-export function ModalDisplay(displayedStyle) {
+export function ModalDisplay(modalID) {
+    const x = document.getElementById("Modal" + modalID);
+    x.classList.toggle("displayedModal")
 
-    if (document.getElementById('genPopUp').className.includes("shown")) {
-        document.getElementById('genPopUp').classList.remove("shown")
-        document.body.style.overflow = "auto"
+    if (x.className.includes("displayedModal")) {
+        document.getElementById('root').style.overflow = 'hidden'
+    } else {
+        document.getElementById('root').style.overflow = 'auto'
     }
-    else {
-        document.getElementById('genPopUp').classList.add("shown")
-        document.body.style.overflow = "hidden"
+}
+
+export function scrollModalBackground(modalID) {
+    const x = document.getElementById("Modal" + modalID).getElementsByClassName('modalHeader')[0];
+    if (document.getElementById("Modal" + modalID).getElementsByClassName('modalDialog')[0].scrollTop > 10) {
+        x.style.backgroundColor = "var(--systemHeaderMaterial)"
+    x.style.borderBottom = "0.5px solid var(--separator)"
+    x.style.backdropFilter = 'blur(27px) saturate(1.8)'
+    } else {
+        x.style.backgroundColor = "rgba(0,0,0,0)"
+        x.style.borderBottom = "0 solid rgba(0,0,0,0)"
+        x.style.backdropFilter = 'none'   
     }
+    
+    
 }
 
 // https://medium.com/tinyso/how-to-create-a-modal-component-in-react-from-basic-to-advanced-a3357a2a716a
