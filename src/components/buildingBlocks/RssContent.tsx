@@ -151,7 +151,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             /// FILTER FOR TOPICS 
             let concatListofCategories = [(item.category || source.category)].join(',').split(',').slice(0, 3)
            
-            var filteredTopics = ['Content Type: Personal Profile','Vivre','/travel','/arts','Nos recommandations culturelles','Images','blog','Auto-News','has_diapo','Produits','Radio 1','all','News','Actu','Actus','Video','Vidéo','Diaporama','Not found','Fil Info','Magazine','Flash Actu']
+            var filteredTopics = ['Content Type: Personal Profile','/style-beauty','/transportation','Vivre','/travel','/arts','Nos recommandations culturelles','Images','blog','Auto-News','has_diapo','Produits','Radio 1','all','News','Actu','Actus','Video','Vidéo','Diaporama','Not found','Fil Info','Magazine','Flash Actu']
             for (var filteredTopicElement of filteredTopics) {
               // eslint-disable-next-line
               concatListofCategories = concatListofCategories.filter(arrayElement => !arrayElement.includes(filteredTopicElement))

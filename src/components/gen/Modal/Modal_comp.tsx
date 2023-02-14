@@ -10,10 +10,10 @@ export function ModalStructure(modalID: string) {
             <div className="modalDialog blockwBorder" onScroll={() => scrollModalBackground(modalID)}>
                 <div className='modalToTop'>                
                     <div className="modalHeader">
-                        <h4 className="bold">Welcome to <em>nuntii</em>!</h4>
+                        <h4 className="bold">Bienvenue sur <em>nuntii</em>!</h4>
                     </div>
                     <div className="modalContent">
-                        <p><em>nuntii</em> vous permet d'accéder aux meilleures sources d'informations dans le monde. <em>nuntii</em> est proposé pour la France mais vous pouvez suivre les actualités par les rédactions internationales. Choisissez ci-dessous vos paramètres de navigation sur <em>nuntii</em> avant de continuer.</p>
+                        <p><em>nuntii</em> vous permet d'accéder aux meilleures sources d'informations dans le monde. <em>nuntii</em> est proposé pour la France mais vous pouvez suivre les actualités par les rédactions internationales. Avant d'accéder à <em>nuntii</em>, choisissez ci-dessous vos paramètres de navigation.</p>
                     </div>
                 </div>
                 <div className="modalFooter">

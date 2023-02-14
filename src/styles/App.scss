@@ -437,7 +437,7 @@ ul.rss li {
 
     .itemContainer  {
       padding: 14px 10px 14px 16px;
-      width: calc(100% - 16px - 10px);
+      width: -webkit-fill-available;
       border-radius: 0 0 var(--roundedBlockRadius) var(--roundedBlockRadius);
     }
 
@@ -477,6 +477,11 @@ em:not(.itemContainer em) { // do not the emphasis for content in a RSS feed ite
   font-weight: 700;
   font-size: calc(113%); // this font is small compared to Inter 
   font-style: normal;
+}
+
+.up em {
+  text-transform: lowercase;
+  font-size: 140% !important;
 }
 
 ul.nList, .nList ul {
@@ -521,7 +526,7 @@ ul.nList, .nList ul {
 
       .itemContainer {
         background-color: var(--tertiarySystemGroupedBackground);
-        padding: 14px 16px 16px 16px;
+        padding: 14px 10px 16px 16px;
 
         em { // for emphasis in a RSS feed item, use italice since most of the time it's used for titles 
           font-style: italic;
@@ -561,7 +566,6 @@ ul.nList, .nList ul {
 
         .background-image {
           display: block;
-          border-radius: 10px;
           float: left;
           z-index: 0;
           width: 70px;

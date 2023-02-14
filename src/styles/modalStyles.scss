@@ -1,7 +1,7 @@
 aside.modal {
     z-index: 100;
     position: fixed;
-    top:0;
+    top:0 ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,10 +13,6 @@ aside.modal {
     &.displayedModal {
         display: flex;
     }
-
-    svg {
-        width: 20px;
-      } 
       
     .modalContainer { // used for rounded scrollbar 
         overflow: hidden;
@@ -37,6 +33,7 @@ aside.modal {
             justify-content: space-between;
 
             .modalToTop {
+                
                 .modalHeader {
                     position: sticky;
                     top: 0;
@@ -46,7 +43,7 @@ aside.modal {
                     padding: 15px 20px;
                     border-bottom: 0.5px solid rgba(0, 0, 0, 0);
                     background-color: rgba(0, 0, 0, 0);
-                    transition: all 0.4s ease-in-out;
+                    transition: all 0.1s ease-in-out;
                 }
         
                 .modalContent {

@@ -65,6 +65,12 @@ h4 {
     line-height: 38px;
     letter-spacing: -0.0213px;
     // padding-bottom: 16px;
+    transition: all 0.1s ease-in-out;
+
+    &.scrolled {
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
 
 /* Bold style for Title 2 */
@@ -292,14 +298,14 @@ button {
 
     &.largeButton {
         background-color: var(--colorTheme);
-        color: white;
+        color: var(--systemBackground);
         padding: 10px;
         width: -webkit-fill-available;
         border-radius: 8px;
     }
 
     &.largeButtonInverted { // used for a var(--colorTheme) bg outside of the button
-        background-color: white;
+        background-color: var(--systemBackground);
         color: var(--colorTheme);
         padding: 10px;
         width: -webkit-fill-available;
