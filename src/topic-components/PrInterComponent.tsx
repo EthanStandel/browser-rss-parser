@@ -9,8 +9,26 @@ const PrinterEntries = [
     "image1": iconsByNewsroom.NBC["Nightly News"].iconImg,
     "image2": iconsByNewsroom.NBC.iconImg,
     "duration": "20min",
-    "description": "Coverage of the latest global and US breaking news stories by Lester Holt at 5:12 am (CET).",
+    "description": "Coverage of the latest global and US breaking news stories by Lester Holt at 5:12 am&nbsp;(CET).",
     "countryISO3Label": "USA"
+  },
+  {
+    "title": "Evening News",
+    "URL": "https://www.cbsnews.com/evening-news/full-episodes/",
+    "image1": iconsByNewsroom.CBS["Evening News"].iconImg,
+    "image2": iconsByNewsroom.CBS.iconImg,
+    "duration": "20min",
+    "description": "Watch the CBS Evening News, the longest-running evening newscast, at 12:30 am&nbsp;(CET).",
+    "countryISO3Label": "USA"
+  },
+  {
+    "title": "Late News",
+    "URL": "https://iview.abc.net.au/show/abc-late-news/series/0/",
+    "image1": iconsByNewsroom["ABC Australia"]["Late News"].iconImg,
+    "image2": iconsByNewsroom["ABC Australia"].iconImg,
+    "duration": "15min",
+    "description": "ABC News brings you comprehensive coverage from our reporters on the ground telling you what's happening and why it matters. Presented by Michael Tetlow at 12:40 am&nbsp;(CET).",
+    "countryISO3Label": "AUS"
   },
   {
     "title": "100 Sekunden",
@@ -31,7 +49,7 @@ const PrinterEntries = [
     "countryISO3Label": "GBR"
   },
   {
-    "title": "À la une : Canada, monde et politique",
+    "title": "À la une&nbsp;: Canada, monde et politique",
     "URL": "https://ici.radio-canada.ca/ohdio/balados/302/nouvelles-info-matin-canada-monde-politique",
     "image1": "./icons/WebsitesIcons/radiocanada.png",
     "image2": iconsByNewsroom.Apple.ApplePodcasts.iconImg,

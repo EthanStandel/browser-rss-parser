@@ -84,5 +84,20 @@
         "Nightly News": {
             "iconImg": "./icons/WebsitesIcons/nbc-nightlyNews.png"
         }
+    },
+    "CBS": {
+        "name": "CBS News",
+        "iconImg": "./icons/WebsitesIcons/cbsnews.png",
+        "bgImg": "./icons/WebsitesIcons/cbsnews_bgIMG.jpg",
+        "Evening News":  {
+            "iconImg": "./icons/WebsitesIcons/cbsnews-eveningNews.png"
+        }
+    },
+    "ABC Australia": {
+        "name": "ABC Australia",
+        "iconImg": "./icons/WebsitesIcons/abc-Australia.png",
+        "Late News": {
+            "iconImg": "./icons/WebsitesIcons/abc-Australia-lateNews.png"
+        }
     }
 }

@@ -11,7 +11,7 @@ export function ModalDisplay(modalID) {
 
 export function scrollModalBackground(modalID) {
     const x = document.getElementById("Modal" + modalID).getElementsByClassName('modalHeader')[0];
-    if (document.getElementById("Modal" + modalID).getElementsByClassName('modalDialog')[0].scrollTop > 0) {
+    if (document.getElementById("Modal" + modalID).getElementsByClassName('modalContent')[0].scrollTop > 0) {
         x.style.backgroundColor = "var(--systemHeaderMaterial)"
         x.style.borderBottom = "0.5px solid var(--separator)"
         x.style.backdropFilter = 'blur(27px) saturate(1.8)'

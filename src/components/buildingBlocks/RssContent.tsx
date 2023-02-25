@@ -238,7 +238,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                         </div>
                         <div className="additional-infosLine">
                           <div className="r4 up">
-                            {author?.replace(" avec ", ", ").replace(" et ", ", ")}
+                            {author?.replace(" avec ", ", ").replace(" et ", ", ").replace(' and ',', ')}
                           </div>
                         </div>
                       </div>

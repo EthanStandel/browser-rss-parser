@@ -1,27 +1,28 @@
-import { ModalDisplay } from "./Modal_fct"
-import { sidebarDisplayInverted } from "../../buildingBlocks/sidebar_fct";
 import { scrollModalBackground } from "./Modal_fct";
+import ReactDOMServer from 'react-dom/server';
 
-export function ModalStructure(modalID: string) {
+export function ModalStructure(modalID: string, modalTitle: string, modalDescription: JSX.Element, modalBottomBarButtons: JSX.Element) {
     
     return (
        <aside id={"Modal" + modalID} className="modal">
-            <div className="modalContainer">
-            <div className="modalDialog blockwBorder" onScroll={() => scrollModalBackground(modalID)}>
-                <div className='modalToTop'>                
-                    <div className="modalHeader">
-                        <h4 className="bold">Bienvenue sur <em>nuntii</em>!</h4>
+            <div className="modalDialog blockwBorder">
+                <div className="modalForm">
+                    <div className="modalContent" onScroll={() => scrollModalBackground(modalID)}>               
+                        <div className="modalHeader">
+                            <h4 className="bold" dangerouslySetInnerHTML={{ __html: modalTitle}} />
+                        </div>
+                        <div className="modalDescription">
+                            {modalDescription}
+                        </div>
                     </div>
-                    <div className="modalContent">
-                        <p><em>nuntii</em> vous permet d'accéder aux meilleures sources d'informations dans le monde. <em>nuntii</em> est proposé pour la France mais vous pouvez suivre les actualités par les rédactions internationales. Avant d'accéder à <em>nuntii</em>, choisissez ci-dessous vos paramètres de navigation.</p>
+                    {(ReactDOMServer.renderToStaticMarkup(modalBottomBarButtons) !== "<div></div>") ? 
+                    <div className="modalBottomBar">
+                        {modalBottomBarButtons}
                     </div>
+                    : ""
+                    }
+                    
                 </div>
-                <div className="modalFooter">
-                    <button className="largeButtonInverted bold" onClick={() => {ModalDisplay(modalID); sidebarDisplayInverted()}}>
-                        <div className='r3 up bold'>Aller à <em>nuntii</em></div>
-                    </button>
-                </div>
-            </div>
             </div>
         </aside>
     )

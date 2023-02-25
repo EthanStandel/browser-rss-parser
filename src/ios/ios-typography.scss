@@ -255,13 +255,17 @@ p.bold {
 .r3 {
     font-family: var(--font-ui);
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 15px;
     line-height: 19px;
     letter-spacing: -0.0088px;
 
     &.up {
         text-transform: uppercase;
+    }
+
+    &.bold {
+        font-weight: 700;
     }
 }
 
@@ -297,11 +301,16 @@ button {
     cursor: pointer;
 
     &.largeButton {
-        background-color: var(--colorTheme);
-        color: var(--systemBackground);
-        padding: 10px;
+        color: var(--label);
+        background-color: var(--systemGray5);
+        padding: 8px 16px;
         width: -webkit-fill-available;
         border-radius: 8px;
+
+        &.color {
+            background-color: var(--colorTheme);
+            color: var(--systemBackground);
+        }
     }
 
     &.largeButtonInverted { // used for a var(--colorTheme) bg outside of the button
@@ -332,4 +341,39 @@ button {
 .blockwBorder {
     border: 1px solid var(--cardBorder);
     border-radius: var(--roundedBlockRadius);
+}
+
+form {
+    margin-bottom: 30px;
+
+    .mainLabel {
+        @extend .r2, .up;
+        margin-left: 10px;
+        margin-bottom: 2px;
+    }
+
+    ul.formParamaters {
+        background-color: var(--secondarySystemBackground);
+        border-radius: 8px;
+        padding-left: 10px;
+        &.groupedBg {
+            background-color: var(--secondarySystemGroupedBackground);
+        }
+
+        li {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 10px 8px 0;
+
+            &:not(:last-of-type()) {
+                border-bottom: 0.5px var(--separator) solid;
+            }
+
+            > *:not(:first-child) {
+                color: var(--secondaryLabel)
+            }
+        }
+    }
 }

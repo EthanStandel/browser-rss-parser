@@ -85,7 +85,73 @@ const App = () => {
       [""],
       "Top"
       )}
-      {ModalStructure("Splash")}
+      {ModalStructure(
+        "Splash",
+        "Bienvenue sur <em>nuntii</em>&nbsp;!", 
+        <div>
+          <p><em>nuntii</em> vous permet d'accéder aux meilleures sources d'informations dans le monde. <em>nuntii</em> est proposé pour la France mais vous pouvez suivre les actualités par les rédactions internationales. Avant d'accéder à <em>nuntii</em>, choisissez ci-dessous vos paramètres de navigation. (hors service pour le moment)</p>
+          <form action="/action_page.php">
+            <div className="mainLabel">Paramètres de navigation</div>
+              <ul className='formParamaters'>
+                <li>
+                  <label htmlFor="cars">Afficher les podcasts </label>
+                  <input type="checkbox" checked />
+                </li>
+                <li>
+                  <label htmlFor="cars">Afficher la presse étrangère</label>
+                  <input type="checkbox" checked />
+                </li>
+                <li>
+                  <label htmlFor="cars">Presse étrangère affichée </label>
+                  <select name="cars" id="cars">
+                    <option value="deu">Allemagne [DEU]</option>
+                    <option value="aus">Australie [AUS]</option>
+                    <option value="can">Canada [CAN]</option>
+                    <option value="gbr">Royaume-Uni [GBR]</option>
+                    <option value="usa">États-Unis [USA]</option>
+                  </select>
+                </li>
+                <li>
+                  <label htmlFor="cars">Afficher seulement les publications récentes</label>
+                  <select name="cars" id="cars">
+                    <option value="deu">Allemagne [DEU]</option>
+                    <option value="aus">Australie [AUS]</option>
+                    <option value="can">Canada [CAN]</option>
+                    <option value="gbr">Royaume-Uni [GBR]</option>
+                    <option value="usa">États-Unis [USA]</option>
+                  </select>
+                </li>
+                <li>
+                  <label htmlFor="cars">Essayer les fonctionnalités en phase de test (bêta)</label>
+                  <input type="checkbox" />
+                </li>
+              <br></br>
+              <input type="submit" value="Submit"/>
+            </ul>
+          </form>
+          <form action="/action_page.php">
+            <div className="mainLabel">Cookies</div>
+              <ul className='formParamaters'>
+                <li>
+                  <label htmlFor="cars">Accepter tous les cookies</label>
+                  <input type="checkbox" checked />
+                </li>
+                <li>
+                  <label htmlFor="cars">Supprimer les cookies après utilisation</label>
+                  <input type="checkbox" />
+                </li>
+            </ul>
+          </form>
+        </div>,
+        <div className="buttonAligned">
+          <button className="largeButton color" onClick={() => {ModalDisplay("Splash"); sidebarDisplayInverted()}}>
+              <div className='r3 bold'>Aller à <em>nuntii</em></div>
+          </button>
+          <a href="https://google.com/" target="_blank" rel="noreferrer"><button className="largeButton">
+              <div className='r3'>Quitter <em>nuntii</em></div>
+          </button></a> 
+        </div>
+      )}
       <div id="uiSplitContainer">
         <div id="uiSplit-sidebar">
           <div className='uiSplit-sidebar-sbContainer'>
