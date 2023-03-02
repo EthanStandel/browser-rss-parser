@@ -16,6 +16,7 @@
   --ethiqueColorTheme: #398bb3; // color from the Good Place palette in 'The Good Place'—#6db866;
   --autoColorTheme: #ea054d;
   --TEDColorTheme: #d91e17;
+  --dvlpColorTheme: #4caf50; // #009688, #8BC34A, #FFC107, #00BCD4, #673AB7, #FF9800, #607D8B -- suggested by ChatGPT
 }
 
 $topics: (
@@ -36,6 +37,7 @@ $topics: (
   'Éthique': var(--ethiqueColorTheme),
   'Auto-moto': var(--autoColorTheme),
   'TED': var(--TEDColorTheme),
+  'Développement': var(--dvlpColorTheme)
 );
 
 @each $topicName, $topicColor in $topics {

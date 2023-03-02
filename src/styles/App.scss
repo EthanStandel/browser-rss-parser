@@ -140,11 +140,7 @@ ul.rss li {
       }
 
       p {
-        /*/ Define as h8/*/
-        font-size: 14px !important;
-        line-height: 18px !important;
-        letter-spacing: -0.0062px !important;
-        font-weight: normal !important;
+        @extend .h8 ;
         margin: 0 !important;
         padding: 0 !important;
 
@@ -999,7 +995,6 @@ button.squareButton20 {
 input#searchBox {
   font-size: 15px;
   border: none;
-  font-family: 'Inter';
   background: none;
   width: 100%;
 

@@ -10,6 +10,10 @@
     --font-ui: 'Inter';
 }
 
+label, input, button, select {
+    font-family: var(--font-ui);
+}
+
 /* Huge Title */
 h1 {
     font-family: 'Bodoni Moda';
@@ -309,7 +313,7 @@ button {
 
         &.color {
             background-color: var(--colorTheme);
-            color: var(--systemBackground);
+            color: white;
         }
     }
 
@@ -350,6 +354,11 @@ form {
         @extend .r2, .up;
         margin-left: 10px;
         margin-bottom: 2px;
+        -webkit-line-clamp: 1 !important;
+        overflow: hidden;
+        text-overflow: ellipsis !important;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
     }
 
     ul.formParamaters {
@@ -374,6 +383,20 @@ form {
             > *:not(:first-child) {
                 color: var(--secondaryLabel)
             }
+
+            label {
+                -webkit-line-clamp: 3 !important;
+                min-width: 50%;
+                overflow: hidden;
+                text-overflow: ellipsis !important;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                word-break: break-word;
+            }
         }
     }
+}
+
+select {
+    background-color: var(--tertiarySystemBackground);
 }
