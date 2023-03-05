@@ -1,5 +1,5 @@
 export function ModalDisplay(modalID) {
-    const x = document.getElementById("Modal" + modalID);
+    const x = document.getElementById("modal" + modalID);
     x.classList.toggle("displayedModal")
 
     if (x.className.includes("displayedModal")) {
@@ -10,20 +10,20 @@ export function ModalDisplay(modalID) {
 }
 
 export function scrollModalBackground(modalID) {
-    const x = document.getElementById("Modal" + modalID).getElementsByClassName('modalHeader')[0];
-    if (document.getElementById("Modal" + modalID).getElementsByClassName('modalContent')[0].scrollTop > 0) {
-        x.style.backgroundColor = "var(--systemHeaderMaterial)"
-        x.style.borderBottom = "0.5px solid var(--separator)"
-        x.style.backdropFilter = 'blur(27px) saturate(1.8)'
-        x.getElementsByTagName('h4')[0].classList.add('scrolled')
+    const x = document.getElementById("modal" + modalID).getElementsByClassName('modalHeader')[0];
+    const y = document.getElementById("modal" + modalID).getElementsByClassName('modalDescription')[0].getElementsByClassName('modalTitle')[0].getBoundingClientRect().top;
+    const z= x.getBoundingClientRect().top;
+    if (document.getElementById("modal" + modalID).getElementsByClassName('modalContent')[0].scrollTop > 0) {
+        x.classList.add('scrolledHeader')
+        if (z > y - 30) {
+            x.classList.add('titleVisible')
+        }
+        else {
+            x.classList.remove('titleVisible')
+        }
     } else {
-        x.style.backgroundColor = "rgba(0,0,0,0)"
-        x.style.borderBottom = "0 solid rgba(0,0,0,0)"
-        x.style.backdropFilter = 'none'
-        x.getElementsByTagName('h4')[0].classList.remove('scrolled') 
+        x.classList.remove('scrolledHeader')
     }
-    
-    
 }
 
 // https://medium.com/tinyso/how-to-create-a-modal-component-in-react-from-basic-to-advanced-a3357a2a716a

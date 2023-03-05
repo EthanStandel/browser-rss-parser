@@ -14,40 +14,59 @@ label, input, button, select {
     font-family: var(--font-ui);
 }
 
+h1, h2, h3, h4, h5, h6, .h7, .h8, p, .footnote, .c1, .c2, .c3, .r1, .r2, .r3, .r4, .r5 {
+    font-style: normal;
+    
+    &.up {
+        text-transform: uppercase;
+    }
+}
+
+$boldStyles: (
+    'h1': 800,
+    'h2': 700,
+    'h3': 700,
+    'h4': 700,
+    'h5': 600,
+    '.h7': 600,
+    '.h8': 600,
+    'p': 600,
+    '.footnote': 600,
+    '.c1': 500,
+    '.c2': 600,
+    '.r1': 600,
+    '.r2': 600,
+    '.r3': 700,
+
+);
+
+@each $typoStyle, $boldTypoSyleWeight in $boldStyles {
+    #{$typoStyle}.bold {
+        font-weight: #{$boldTypoSyleWeight};
+    }
+}
+
 /* Huge Title */
 h1 {
     font-family: 'Bodoni Moda';
-    font-style: normal;
     font-weight: 400;
     font-size: 64px;
     line-height: 81px;
     letter-spacing: -0.0223px;
 }
 
-/* Bold style for Huge Title */
-h1.bold {
-    font-weight: 800;
-}
-
 /* Large Title */
 h2 {
     font-family: var(--font-ui);
-    font-style: normal;
     font-weight: 400;
     font-size: 48px;
     line-height: 61px;
     letter-spacing: -0.0223px;
 }
 
-/* Bold style for Large Title */
-h2.bold {
-    font-weight: 700;
-}
-
 /* Title 1 */
 h3 {
     font-family: var(--font-ui);
-    font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 46px;
@@ -55,15 +74,9 @@ h3 {
     padding: 22px 0;
 }
 
-/* Bold style for Title 1 */
-h3.bold {
-    font-weight: 700;
-}
-
 /* Title 2 */
 h4 {
     font-family: var(--font-ui);
-    font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 38px;
@@ -77,30 +90,18 @@ h4 {
     }
 }
 
-/* Bold style for Title 2 */
-h4.bold {
-    font-weight: 700;
-}
-
 /* Title 3 */
 h5 {
     font-family: var(--font-ui);
-    font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 31px;
     letter-spacing: -0.0195px;
 }
 
-/* Bold style for Title 3 */
-h5.bold {
-    font-weight: 600;
-}
-
 /* Headline */
 h6 {
     font-family: var(--font-ui);
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
@@ -110,7 +111,6 @@ h6 {
 /* Callout */
 .h7 {
     font-family: var(--font-ui);
-    font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 19px;
@@ -118,30 +118,18 @@ h6 {
     margin-bottom: 16px;
 }
 
-/* Bold style for Callout */
-.h7.bold {
-    font-weight: 600;
-}
-
 /* Subheadline */
 .h8 {
     font-family: var(--font-ui);
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: -0.0062px;
 }
 
-/* Bold style for Subheadline */
-.h8.bold {
-    font-weight: 600;
-}
-
 /* Body */
 p {
     font-family: var(--font-ui);
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -149,17 +137,15 @@ p {
     margin-bottom: 16px;
     color: var(--label);
     margin-top: 0.8em;
-}
 
-/* Bold style for Body */
-p.bold {
-    font-weight: 600;
+    .bold {
+        font-weight: 600;
+    }
 }
 
 /* Footnote */
 .footnote {
     font-family: var(--font-ui);
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
@@ -167,45 +153,27 @@ p.bold {
     color: var(--systemGray);
 }
 
-/* Bold style for Footnote */
-.footnote.bold {
-    font-weight: 600;
-}
-
 /* Caption 1 */
 .c1 {
     font-family: var(--font-ui);
-    font-style: normal;
     font-weight: 400;
     font-size: 11px;
     line-height: 14px;
     letter-spacing: 0.0048px;
 }
 
-/* Bold Style for Caption 1 */
-.c1.bold {
-    font-weight: 500;
-}
-
 /* Caption 2 */
 .c2 {
     font-family: var(--font-ui);
-    font-style: normal;
     font-weight: 400;
     font-size: 10px;
     line-height: 13px;
-    letter-spacing: 0.0100px;
-}
-
-/* Bold style for Caption 2 */
-.c2.bold {
-    font-weight: 600;
+    letter-spacing: 0.0100px; 
 }
 
 /* Caption 3 */
 .c3 {
     font-family: var(--font-ui);
-    font-style: normal;
     font-weight: 500;
     font-size: 9px;
     line-height: 11px;
@@ -215,82 +183,43 @@ p.bold {
 /* Rubric 1 */
 .r1 {
     font-family: var(--font-ui);
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: -0.0062px;
-
-    &.up {
-        text-transform: uppercase;
-    }
-}
-
-/* Bold style for Rubric 1 */
-.r1.bold  {
-    font-weight: 600;
 }
 
 /* Rubric 2 */
 .r2 {
     font-family: var(--font-ui);
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 0px;
     color: var(--secondaryLabel) !important;
-
-    &.up {
-        text-transform: uppercase;
-    }
-
-    &.bold {
-        font-weight: 700;
-    }
-}
-
-/* Bold style for Rubric 1 */
-.r2.bold {
-    font-weight: 600;
 }
 
 /* Rubric 3 */
 .r3 {
     font-family: var(--font-ui);
-    font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 19px;
     letter-spacing: -0.0088px;
-
-    &.up {
-        text-transform: uppercase;
-    }
-
-    &.bold {
-        font-weight: 700;
-    }
 }
 
 /* Rubric 4 */
 .r4 {
     font-family: var(--font-ui);
-    font-style: normal;
     font-weight: 700;
     font-size: 10px;
     line-height: 13px;
     letter-spacing: 0.0100px;
-
-    &.up {
-        text-transform: uppercase;
-    }
 }
 
 /* Rubric 5 */
 .r5 {
     font-family: var(--font-ui);
-    font-style: normal;
     font-weight: 700;
     font-size: 8px;
     line-height: 10px;
@@ -332,6 +261,7 @@ button {
     gap: 15px;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
   
     &.noGapSL {
       gap: 0;
@@ -339,6 +269,27 @@ button {
 
     &.centerItems {
         justify-content: center;
+    }
+
+    &.alwaysCenteredAligned {
+        width: 100%;
+
+        > * {
+          flex: 1;
+          justify-content: center;
+        }
+  
+        .spacingLineLeft {
+          justify-content: left;
+          gap: 3px;
+          display: flex;
+        }
+  
+        .spacingLineRight {
+          justify-content: right;
+          gap: 3px;
+          display: flex;
+        }
     }
 }
 
@@ -364,7 +315,7 @@ form {
     ul.formParamaters {
         background-color: var(--secondarySystemBackground);
         border-radius: 8px;
-        padding-left: 10px;
+        padding-left: 16px;
         &.groupedBg {
             background-color: var(--secondarySystemGroupedBackground);
         }
@@ -400,3 +351,27 @@ form {
 select {
     background-color: var(--tertiarySystemBackground);
 }
+
+ul {
+    list-style: none;
+  }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.clickVisible {
+  cursor: pointer;
+}
+
+.color {
+  color: var(--colorTheme);
+}
+
+.unselectable {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }

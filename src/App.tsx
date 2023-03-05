@@ -125,8 +125,6 @@ const App = () => {
                   <label htmlFor="cars">Essayer les fonctionnalités en phase de test (bêta)</label>
                   <input type="checkbox" />
                 </li>
-              <br></br>
-              <input type="submit" value="Submit"/>
             </ul>
           </form>
           <form action="/action_page.php">
@@ -147,7 +145,7 @@ const App = () => {
           <button className="largeButton color" onClick={() => {ModalDisplay("Splash"); sidebarDisplayInverted()}}>
               <div className='r3 bold'>Aller à <em>nuntii</em></div>
           </button>
-          <a href="https://google.com/" target="_blank" rel="noreferrer"><button className="largeButton">
+          <a href="https://google.com/" rel="noreferrer"><button className="largeButton">
               <div className='r3'>Quitter <em>nuntii</em></div>
           </button></a> 
         </div>
@@ -196,8 +194,11 @@ const App = () => {
             </section>
             <section id="sidebarPlus">
               <div id="sidebarTopics-header2">
-                <div className='sidebarSectionTitle'>
-                  <div className='r2 up bold sidebarSectionTitle'>Plus de <em>nuntii</em></div>
+                <div className='sidebarSectionTitle spacingLine'>
+                  <div className='r2 up bold'>Votre navigation sur <em>nuntii</em></div>
+                  <svg viewBox="0 0 100 100" /* ratio of the svg file*/ id="navigationParameters" className="clickVisible" height="13" fill="var(--secondaryLabel)">
+                    <use xlinkHref="./genIcons/cog.svg#path2"></use>
+                  </svg>
                 </div>
                 <ul>
                   <li>Presse étrangère selectionnée</li>

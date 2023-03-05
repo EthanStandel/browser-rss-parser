@@ -4,18 +4,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400..900');
 @import "./AppColorTopics.scss";
 @import "../topic-components/EthiqueComponent_styles.scss";
-@import "./defaultStyles.scss";
+@import "./newsBlockStyles.scss";
 @import "./footerStyles.scss";
+@import "./headerStyles.scss";
 @import "./modalStyles.scss";
 
 #App {
   --colorTheme: var(--headlinesColorTheme);
   --headlinesColorTheme: var(--systemPink);
-  -webkit-tap-highlight-color: transparent; // iOS
   color: var(--label);
   background-color: var(--systemGroupedBackground);
-  
-  min-width: 222px;
 }
 
 /*/ loading Spinner in RssFeeds /*/
@@ -23,31 +21,6 @@
   margin: auto;
   margin-top: 6rem;
   padding-bottom: 6rem;
-}
-
-/*/ elements to be not selectable /*/
-.headerTitle, main.Articles, .mini-links a, .modal {
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-header {
-  padding: 3px 0;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  width: 100%;
-  overflow: hidden;
-  background-color: var(--systemHeaderMaterial);
-  -webkit-backdrop-filter:saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-  border-bottom: 0.5px solid var(--separator);
-
-  @media only screen and (max-width: 1200px) {
-    padding: 8px 0;
-  }
 }
 
 .logo-text {
@@ -821,25 +794,6 @@ ul.nList, .nList ul {
 @media only screen and (min-width: 1200px) {
   #headerFirstLine {
     padding: 0 10px 0 15px;
-
-    > .spacingLine {
-      width: 100%;
-
-      > * {
-        flex: 1;
-        justify-content: center;
-      }
-
-      .spacingLineLeft {
-        justify-content: left;
-        gap: 3px;
-      }
-
-      .spacingLineRight {
-        justify-content: right;
-        gap: 3px;
-      }
-    }
 
     nav {
       display: none;
