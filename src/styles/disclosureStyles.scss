@@ -1,0 +1,128 @@
+// for component Disc
+.Disclosure {
+    margin-bottom: 15px;
+    overflow: hidden;
+
+    #discPlus {
+        transition: max-height 0.4s ease-in-out;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .discHeader {
+        max-width: 100%;
+        transition: border-color 0.4s ease-in-out;
+        align-items: center;
+        padding-bottom: 16px;
+
+        .chevron {
+            transition: all 0.35s ease;
+            fill: var(--colorTheme);
+            transform: rotate(-90deg);
+
+            svg {
+                height: 12px;
+                width: 12px;
+            }
+        }
+
+        &:not(.noDiscItem) {
+            // if the Disc is empty, do not show the pointer
+            cursor: pointer;
+        }
+    }
+
+    &.noSubtopic .discHeader {
+        //when displaying a Disc for a noSubtopic block, hide the Disc component (discPlus is always shown)
+        display: none;
+    }
+
+    &#discIDBlock {
+        // display the Disc with a background and a block
+        background-color: var(--secondarySystemGroupedBackground);
+        border-radius: var(--roundedBlockRadius);
+        box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+        border: 1px solid var(--cardBorder);
+        filter: drop-shadow(0 10px 10px var(--hardShadow));
+
+        .discHeader {
+            padding: 15px 16px;
+            border-bottom: 1.8px rgba(0, 0, 0, 0) solid;
+
+            .chevron {
+                fill: var(--separator);
+            }
+        }
+
+        &.largeDisplay .discHeader {
+            border-bottom: 1.8px solid var(--colorTheme);
+        }
+    }
+
+    &.largeDisplay {
+        #discPlus {
+            max-height: 10000px;
+        }
+
+        .chevron {
+            transform: none;
+        }
+    }
+}
+
+.DisclosureAdditional {
+    margin-bottom: 0;
+
+    .discHeader {
+        display: table;
+        margin-bottom: 5px;
+        padding: 5px 3px;
+        width: -webkit-fill-available;
+        height: 22px;
+
+        * {
+            fill: var(--headlinesColorTheme);
+        }
+
+        .chevron svg {
+            vertical-align: top;
+            padding: 5px;
+        }
+
+        >* {
+            display: table-cell;
+            vertical-align: middle;
+
+            &:last-of-type {
+                padding-left: 3px;
+                width: 100%;
+
+                button {
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    #discPlus {
+        padding-left: 15px;
+
+        button {
+            width: 100%;
+            text-align: left;
+            padding: 4px 10px;
+            margin-bottom: 2px;
+
+            &:hover,
+            &.selected {
+                background-color: var(--quaternarySystemFill);
+                border-radius: 5px;
+            }
+
+            &.selected {
+                font-weight: 600;
+            }
+        }
+    }
+}

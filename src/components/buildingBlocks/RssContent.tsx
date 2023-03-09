@@ -57,16 +57,16 @@ export interface RssContentProps {
 var NDaysBeforeWeekday = [""]
 var dateNDaysBefore = [""]
 function weekday(n: number) {
-  const daysIndex = ['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
-  if (n>0) {
-    for (let i of range(n+1)) {
+  const daysIndex = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+  if (n > 0) {
+    for (let i of range(n + 1)) {
       var minusDay = new Date();
       minusDay.setDate(minusDay.getDate() - i);
       var ddMinusDay = String(minusDay.getDate()).padStart(2, '0');
-      var DateMinusDay = ddMinusDay + '/' + String((minusDay.getMonth()+1)).padStart(2, '0');
-      
+      var DateMinusDay = ddMinusDay + '/' + String((minusDay.getMonth() + 1)).padStart(2, '0');
+
       // N-days-before Date
-      dateNDaysBefore[i]= String(DateMinusDay);
+      dateNDaysBefore[i] = String(DateMinusDay);
 
       // weekday for n-days-before day
       NDaysBeforeWeekday[i] = daysIndex[minusDay.getDay()];
@@ -80,37 +80,37 @@ const openCorsProxy = "https://api.codetabs.com/v1/proxy?quest=";
 export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
   const [{ status, result }] = useAsync(async (rssFeeds) => (
     (await Promise.all(rssFeeds.map(feed => axios(openCorsProxy + feed.url, { responseType: "text" }))))
-    .map(({ data }) => XmlParser.parse(data) as ParsedRssFeed)
-    .map((feed, index) => feed.rss.channel.item
-      .map(item => ({
-        source: rssFeeds[index],
-        item,
-        date: item.pubDate ? DateTime.fromRFC2822(item.pubDate) : undefined
-      }))
-    )
-    .reduce((all, curr, index) => all.concat(
-      typeof rssFeeds[index].articlesCount === "undefined"
-        ? curr
-        : curr.slice(0, rssFeeds[index].articlesCount)
-    ), [])
-    .sort((a, b) => {
-      // Sort items with subtopics at the bottom
-      if (!a.source.subtopic && b.source.subtopic) {
-        return -1;
-      } else if (!b.source.subtopic && a.source.subtopic) {
-        return 1;
-      } else if (a.source.subtopic && b.source.subtopic && a.source.subtopic !== b.source.subtopic) {
-        return a.source.subtopic.localeCompare(b.source.subtopic);
-      // If they both have no subtopic or the same subtopic, sort by date
-      } else if (a.date && b.date) {
-        const aTime = a.date.toJSDate().getTime();
-        const bTime = b.date.toJSDate().getTime();
-        return bTime - aTime;
-      } else {
-        // Sorts all undated items to the bottom of the list
-        return -1;
-      }
-    })
+      .map(({ data }) => XmlParser.parse(data) as ParsedRssFeed)
+      .map((feed, index) => feed.rss.channel.item
+        .map(item => ({
+          source: rssFeeds[index],
+          item,
+          date: item.pubDate ? DateTime.fromRFC2822(item.pubDate) : undefined
+        }))
+      )
+      .reduce((all, curr, index) => all.concat(
+        typeof rssFeeds[index].articlesCount === "undefined"
+          ? curr
+          : curr.slice(0, rssFeeds[index].articlesCount)
+      ), [])
+      .sort((a, b) => {
+        // Sort items with subtopics at the bottom
+        if (!a.source.subtopic && b.source.subtopic) {
+          return -1;
+        } else if (!b.source.subtopic && a.source.subtopic) {
+          return 1;
+        } else if (a.source.subtopic && b.source.subtopic && a.source.subtopic !== b.source.subtopic) {
+          return a.source.subtopic.localeCompare(b.source.subtopic);
+          // If they both have no subtopic or the same subtopic, sort by date
+        } else if (a.date && b.date) {
+          const aTime = a.date.toJSDate().getTime();
+          const bTime = b.date.toJSDate().getTime();
+          return bTime - aTime;
+        } else {
+          // Sorts all undated items to the bottom of the list
+          return -1;
+        }
+      })
   ), [rssFeeds]);
 
   if (status !== "success") {
@@ -124,7 +124,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
       <ul className="rss">
         {
           result!.map(({ item, source, date }) => {
-            
+
             // const titleSplitTitle = item.title?.split(", says ")[0] ?? item.title?.split(", blasts ")[0] ?? item.title?.split(", warns ")[0];
             // const titleSplit = item.title?.split(", says ")[1] ?? item.title?.split(", blasts ")[1] ?? item.title?.split(", warns ")[1];
 
@@ -132,26 +132,26 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             var str = String(item.title);
             var matches = str.match(/\b(\w)/g);
             var titleAcronym = matches?.join('');
-            /*/ 
-            
-            const imgHref = 
-            item.image
-            || item["media:content"]?.url
-            || item.enclosure?.url 
-            || source.backgroundImg 
-            || "./genIcons/applenews_bgIMG_alt.jpg";
+            /*/
+
+            const imgHref =
+              item.image
+              || item["media:content"]?.url
+              || item.enclosure?.url
+              || source.backgroundImg
+              || "./genIcons/applenews_bgIMG_alt.jpg";
 
             let author = item.author || item["dc:creator"];
-            author = (author?.includes(String(source.name)) ?? author?.includes(String(source.name?.toUpperCase)) ?? author?.includes(String(source.name?.toLowerCase)) ?? author?.includes("AFP") ?? author?.includes(String(_deburr(source.name)))) ? "": author;
+            author = (author?.includes(String(source.name)) ?? author?.includes(String(source.name?.toUpperCase)) ?? author?.includes(String(source.name?.toLowerCase)) ?? author?.includes("AFP") ?? author?.includes(String(_deburr(source.name)))) ? "" : author;
 
             // var splitTitleCategory = (item.title?.includes("|") ? item.title.split("| ")[0] : undefined)
-            
-            
-            
+
+
+
             /// FILTER FOR TOPICS 
             let concatListofCategories = [(item.category || source.category)].join(',').split(',').slice(0, 3)
-           
-            var filteredTopics = ['Content Type: Personal Profile','/style-beauty','/transportation','Vivre','/travel','/arts','Nos recommandations culturelles','Images','blog','Auto-News','has_diapo','Produits','Radio 1','all','News','Actu','Actus','Video','Vidéo','Diaporama','Not found','Fil Info','Magazine','Flash Actu']
+
+            var filteredTopics = ['Content Type: Personal Profile', '/style-beauty', '/transportation', 'Vivre', '/travel', '/arts', 'Nos recommandations culturelles', 'Images', 'blog', 'Auto-News', 'has_diapo', 'Produits', 'Radio 1', 'all', 'News', 'Actu', 'Actus', 'Video', 'Vidéo', 'Diaporama', 'Not found', 'Fil Info', 'Magazine', 'Flash Actu']
             for (var filteredTopicElement of filteredTopics) {
               // eslint-disable-next-line
               concatListofCategories = concatListofCategories.filter(arrayElement => !arrayElement.includes(filteredTopicElement))
@@ -166,14 +166,14 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                 .replace('Culture /', '')
                 .replace('World /', '')
                 .replace('&amp;', '&')
-                .replace('topics:things/','')
-                .replace('topics:places/','')
-                .replace('d&#039;',"'")
+                .replace('topics:things/', '')
+                .replace('topics:places/', '')
+                .replace('d&#039;', "'")
                 .replace('France - Monde', "Monde")
-                .replace('&#039;',"’")
+                .replace('&#039;', "’")
                 .replace('/ Motoring', '')
               );
-              
+
               if (correctedElement !== "") {
                 filteredTopicsArray.push(correctedElement)
               }
@@ -195,12 +195,12 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                     <div className="media">
                       <div className="iconContainer">
                         <div className="iconImgWrapper">
-                          <img 
+                          <img
                             src={source.iconImg}
                             alt=""
                             onError={({ currentTarget }) => {
                               currentTarget.onerror = null; // prevents looping
-                              currentTarget.src="./icons/WebsitesIcons/applenews.png";
+                              currentTarget.src = "./icons/WebsitesIcons/applenews.png";
                             }}
                           />
                         </div>
@@ -209,9 +209,9 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                             alt={"illustrative image for " + source.name}
                             onError={({ currentTarget }) => {
                               currentTarget.onerror = null; // prevents looping
-                              currentTarget.src="./genIcons/applenews_bgIMG_alt.jpg";
+                              currentTarget.src = "./genIcons/applenews_bgIMG_alt.jpg";
                             }}
-                          /> 
+                          />
                         </div>
                       </div>
                       <div className="itemContainer">
@@ -226,7 +226,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                         <div className="justifiedTitle spacingLine">
                           <h6 className="titleLine">
                             {(countryISO3Label !== "FRA") ? <div className={"LanguageLabel r4 " + countryISO3Label}>{countryISO3Label}</div> : null}
-                            <div className="itemTitle" dangerouslySetInnerHTML={{ __html: (item.title?.includes("|") ? _unescape(item.title.split("| ")[1] ?? "") : _unescape(item.title ?? "")).replace('*** BILDplus Inhalt *** ','').replace('[EN LIGNE]', '').replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;').replace(" - " + dateNDaysBefore[0],"")}} />
+                            <div className="itemTitle" dangerouslySetInnerHTML={{ __html: (item.title?.includes("|") ? _unescape(item.title.split("| ")[1] ?? "") : _unescape(item.title ?? "")).replace('*** BILDplus Inhalt *** ', '').replace('[EN LIGNE]', '').replace('<<', '«').replace('>>', '»').replace(' :', '&nbsp;:').replace(' ?', '&nbsp;?').replace(' »', '&nbsp;»').replace('« ', '«&nbsp;').replace(" - " + dateNDaysBefore[0], "") }} />
                           </h6>
                           <div className="r2 up articleDate">
                             {((displayedTopics === "") ?? (concatListofCategories === null)) ? String(displayedDate) : null}
@@ -234,11 +234,11 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
                         </div>
                         <div className="descriptionLine">
                           <div className="r2 up articleDate">{displayedDate}</div>
-                          {item.description && <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: _unescape(item.description).replace('<<','«').replace('>>','»').replace(' :','&nbsp;:').replace(' ?','&nbsp;?').replace(' »','&nbsp;»').replace('« ','«&nbsp;')}} />}
+                          {item.description && <div className="h8 item-description" dangerouslySetInnerHTML={{ __html: _unescape(item.description).replace('<<', '«').replace('>>', '»').replace(' :', '&nbsp;:').replace(' ?', '&nbsp;?').replace(' »', '&nbsp;»').replace('« ', '«&nbsp;') }} />}
                         </div>
                         <div className="additional-infosLine">
                           <div className="r4 up">
-                            {author?.replace(" avec ", ", ").replace(" et ", ", ").replace(' and ',', ')}
+                            {author?.replace(" avec ", ", ").replace(" et ", ", ").replace(' and ', ', ')}
                           </div>
                         </div>
                       </div>

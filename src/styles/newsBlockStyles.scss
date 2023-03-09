@@ -1,0 +1,537 @@
+/*/ list items contained in  a whole subtopic /*/
+ul.rss li {
+  margin-bottom: 15px;
+  border: 1px solid var(--cardBorder);
+  background-color: var(--secondarySystemGroupedBackground);
+  border-radius: var(--roundedBlockRadius);
+  transition-timing-function: ease-in-out;
+  transition-duration: .2s;
+  transition-property: box-shadow, border, transform;
+
+  @media only screen and (min-width: 1200px) {
+    &:hover {
+
+      /* transform: scale(1.01);
+      box-shadow: 0 100px 140px -50px rgba(0, 0, 0, 0.25), 0 0 20px 0 rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--cardBorder);
+      z-index: 100; */
+      .titleLine .itemTitle {
+        text-decoration: underline;
+      }
+
+      .background-image img {
+        transform: scale(1.1);
+        filter: brightness(70%);
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+
+    .justifiedTitle,
+    .firstLine {
+      .articleDate {
+        display: none !important;
+      }
+    }
+
+    .descriptionLine .articleDate {
+      display: inline !important;
+    }
+  }
+
+  .descriptionLine {
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    line-height: 0px;
+
+    .articleDate {
+      padding-left: 0;
+      text-align: left;
+      padding-right: 5px;
+      display: none;
+    }
+
+    .item-description {
+      display: inline;
+
+      * {
+        margin: 0 !important;
+        display: inline;
+      }
+
+      p img,
+      img,
+      br,
+      a,
+      ul,
+      li,
+      img {
+        display: none !important;
+        width: 100%;
+        height: auto;
+      }
+
+      b {
+        font-weight: normal !important;
+      }
+
+      p {
+        @extend .h8;
+        margin: 0 !important;
+        padding: 0 !important;
+
+        strong {
+          font-weight: normal !important;
+        }
+
+        /*/ used by some newsrooms as topic, so hidden here/*/
+        b:first-of-type {
+          display: none;
+        }
+      }
+
+      p:not(:first-of-type) {
+        display: none;
+      }
+    }
+  }
+
+  .additional-infosLine {
+    -webkit-line-clamp: 2 !important;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+
+  .titleLine {
+    -webkit-line-clamp: 4 !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+
+    .itemTitle {
+      display: inline;
+    }
+
+    .LanguageLabel {
+      color: white;
+      margin-right: 5px;
+      border-radius: 5px;
+      padding: 3px 5px;
+      display: inline;
+      text-transform: uppercase;
+      background-color: var(--systemFill);
+      line-height: 20px;
+      /*/ line height of TitleLine /*/
+      font-size: 10px;
+      vertical-align: bottom;
+    }
+  }
+
+  .background-image {
+    display: none;
+    overflow: hidden !important;
+    background-color: var(--colorTheme);
+
+    img {
+      object-fit: cover;
+      background-size: cover !important;
+      height: 100% !important;
+      width: 100% !important;
+      transition: filter .4s ease-in-out, transform 0.2s ease-in-out;
+    }
+  }
+
+  .justifiedTitle {
+    -webkit-box-pack: justify;
+    align-items: baseline;
+
+    .articleDate {
+      display: flex;
+      justify-content: flex-end;
+      line-height: 20px;
+      /* h6 line-height to align content */
+      text-align: right;
+      display: table-cell;
+    }
+  }
+
+  .itemContainer {
+    vertical-align: middle;
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    overflow: hidden;
+  }
+
+  .iconContainer {
+    padding: 10px 10px 10px 0;
+
+    .iconImgWrapper {
+      float: left;
+      object-fit: cover;
+      display: block;
+      height: 40px;
+      width: 40px;
+      position: relative;
+      border-radius: calc(9px + 1px); // inner border-radius from img + desired border
+      border: 0.5px solid var(--separator);
+
+      &.double-img {
+
+        img:not(:first-of-type) {
+          position: relative !important;
+          width: 20px;
+          z-index: 2;
+          height: 20px;
+          border-radius: 5px;
+          top: 25px;
+          left: 25px;
+        }
+
+        img:first-of-type {
+          position: absolute;
+        }
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        height: 40px;
+        width: 40px;
+        border-radius: 9px;
+        vertical-align: bottom;
+      }
+    }
+  }
+
+  .media {
+    align-items: center;
+    justify-content: left;
+    display: flex !important;
+    margin-left: 10px;
+  }
+
+  .articleCategory {
+    display: -webkit-box;
+    font-weight: 900 !important;
+    color: var(--systemGray);
+    -webkit-line-clamp: 1 !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    text-align: left;
+    word-break: break-all;
+    width: 100%;
+  }
+
+  .articleDate {
+    color: var(--secondaryLabel);
+    width: max-content;
+    white-space: nowrap;
+  }
+
+  .firstLine {
+    width: 100%;
+    display: table;
+
+    .articleDate {
+      display: table-cell;
+      padding-left: 10px;
+      text-align: right;
+    }
+  }
+
+  /*/ LIST STYLE FOR ITEMS hide item-description for items with weird descriptions /*/
+  &.nodesc .descriptionLine {
+    display: none !important;
+  }
+
+  /*/ LIST STYLE FOR LI ITEMS - big title + big image + small desc /*/
+  &.bigFocus,
+  &.firstFocus:first-of-type {
+    background-color: var(--colorTheme);
+
+    .descriptionLine {
+      -webkit-line-clamp: 3 !important;
+    }
+
+    .firstLine {
+      width: -webkit-fill-available // all width without padding
+    }
+
+    .LanguageLabel {
+      /*/ as titleLine /*/
+      line-height: 31px !important;
+    }
+
+    .titleLine {
+      /*/ define as h5 /*/
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 31px;
+      letter-spacing: -0.0195px;
+      -webkit-line-clamp: 4 !important;
+      overflow: hidden;
+      text-overflow: ellipsis !important;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      width: 100%;
+
+      >*:not(.LanguageLabel) {
+        text-shadow: 0 0 5px black;
+        color: white;
+      }
+    }
+
+    .itemContainer {
+      max-height: 75%;
+      display: block;
+      padding: 14px 0 14px 0;
+      width: 100% !important;
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
+      background-color: var(--systemThickMaterial);
+      border-radius: 0 0 var(--roundedBlockRadius) var(--roundedBlockRadius);
+
+      >*:not(.justifiedTitle) {
+        padding: 0 10px 0 16px // in order to keep the shadow for title 
+      }
+
+      .justifiedTitle {
+        .titleLine {
+          padding-left: 16px;
+        }
+
+        .articleDate {
+          padding-right: 10px;
+        }
+      }
+    }
+
+    .iconContainer {
+      padding: 0;
+      position: relative;
+
+      .background-image {
+        display: block !important;
+        height: 300px !important;
+        width: 100% !important;
+        border-radius: var(--roundedBlockRadius);
+      }
+
+      .iconImgWrapper {
+        border: none;
+        position: absolute;
+
+        img {
+          height: 35px;
+          width: 35px;
+          z-index: 2;
+          top: 10px;
+          left: 16px;
+          /*/ left-margin for titleLine /*/
+        }
+      }
+    }
+
+    .media {
+      position: relative;
+      margin: 0;
+      display: block !important;
+      height: 300px;
+    }
+  }
+
+  /*/ get big image for first-item /*/
+  &.firstHeadline:first-child,
+  &.bigHeadline {
+
+    .background-image,
+    .media,
+    .itemContainer {
+      display: block !important;
+    }
+
+    .descriptionLine {
+      -webkit-line-clamp: 3 !important;
+    }
+
+    .media {
+      position: relative !important;
+      margin: 0;
+    }
+
+    .titleLine {
+      font-weight: 700;
+      -webkit-line-clamp: 4;
+      /* number of lines to show */
+    }
+
+    .itemContainer {
+      padding: 14px 10px 14px 16px;
+      width: -webkit-fill-available;
+      border-radius: 0 0 var(--roundedBlockRadius) var(--roundedBlockRadius);
+    }
+
+    .iconContainer {
+      padding: 0;
+      position: relative;
+
+      .background-image {
+        height: 170px !important;
+        width: 100% !important;
+        margin-right: 0;
+        z-index: -1;
+        float: none !important;
+        border-radius: var(--roundedBlockRadius) var(--roundedBlockRadius) 0 0;
+      }
+
+      .iconImgWrapper {
+        border: none;
+        position: absolute;
+
+        img {
+          height: 35px !important;
+          width: 35px !important;
+          z-index: 2;
+          position: absolute;
+          top: 10px !important;
+          left: 16px !important;
+          /*/ left-margin for ItemContainer/*/
+        }
+      }
+    }
+  }
+}
+
+ul.nList,
+.nList ul {
+
+  &:not(.nListInblock) {
+    // for nList in discIDBlock
+    border: 1px solid var(--cardBorder);
+    background-color: var(--secondarySystemGroupedBackground);
+    border-radius: var(--roundedBlockRadius);
+    margin-bottom: 15px;
+    // filter: drop-shadow(0 10px 10px var(--hardShadow));
+  }
+
+  li {
+    margin-bottom: 0 !important;
+    background-color: none !important;
+    border: none !important;
+
+    &:not(li:last-child) .media {
+      border-bottom: 0.8px solid var(--separator);
+    }
+
+    .descriptionLine {
+      -webkit-line-clamp: 1 !important;
+
+      @media only screen and (min-width: 1200px) {
+        .articleDate {
+          display: none !important;
+        }
+      }
+    }
+
+    .titleLine {
+      -webkit-line-clamp: 3 !important;
+    }
+
+    &.nListFreeDesc .descriptionLine {
+      -webkit-line-clamp: 8 !important;
+    }
+
+    &.firstHeadline:first-child,
+    &.bigHeadline {
+      margin: 10px 10px 0 !important;
+
+      .itemContainer {
+        background-color: var(--tertiarySystemGroupedBackground);
+        padding: 14px 10px 16px 16px;
+
+        em {
+          // for emphasis in a RSS feed item, use italice since most of the time it's used for titles 
+          font-style: italic;
+        }
+      }
+
+      .iconContainer {
+        padding: 0;
+      }
+
+      .media {
+        border-bottom: 0 solid red;
+      }
+    }
+
+    &:first-of-type:not(.nListFreeDesc),
+    &.bigList:not(:first-of-type) {
+
+      .iconContainer {
+        position: relative;
+
+        .iconImgWrapper {
+          z-index: 1;
+          margin: 0;
+          position: absolute;
+          width: 70px;
+          height: 70px;
+          border: none;
+
+          img {
+            width: 18px;
+            height: 18px;
+            border-radius: 5px;
+            top: 5px;
+            left: 5px;
+          }
+        }
+
+        .background-image {
+          display: block;
+          float: left;
+          z-index: 0;
+          width: 70px;
+          height: 70px;
+
+          img {
+            width: 70px;
+            height: 70px;
+          }
+        }
+      }
+
+      .descriptionLine {
+        -webkit-line-clamp: 2 !important;
+
+        .articleDate {
+          display: none;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 1200px) {
+      .descriptionLine:not(.always) .articleDate {
+        display: none;
+      }
+
+      .descriptionLine {
+        -webkit-line-clamp: 2 !important;
+      }
+    }
+  }
+}

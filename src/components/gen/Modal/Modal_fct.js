@@ -10,19 +10,22 @@ export function ModalDisplay(modalID) {
 }
 
 export function scrollModalBackground(modalID) {
-    const x = document.getElementById("modal" + modalID).getElementsByClassName('modalHeader')[0];
-    const y = document.getElementById("modal" + modalID).getElementsByClassName('modalDescription')[0].getElementsByClassName('modalTitle')[0].getBoundingClientRect().top;
-    const z= x.getBoundingClientRect().top;
+    const modH = document.getElementById("modal" + modalID).getElementsByClassName('modalHeader')[0];
+    const modT = document.getElementById("modal" + modalID).getElementsByClassName('modalDescription')[0].getElementsByClassName('modalTitle')[0]
+    const modTPos = modT.getBoundingClientRect().top;
+    const modTHeight = modT.getBoundingClientRect().height;
+    const modHPos= modH.getBoundingClientRect().top;
+    const modHHeight = modH.getBoundingClientRect().height;
     if (document.getElementById("modal" + modalID).getElementsByClassName('modalContent')[0].scrollTop > 0) {
-        x.classList.add('scrolledHeader')
-        if (z > y - 30) {
-            x.classList.add('titleVisible')
+        modH.classList.add('scrolledHeader')
+        if (modHPos + modHHeight > modTPos + modTHeight - Number(window.getComputedStyle(modT).paddingBottom.replace('px',''))) { // modalTitle has a padding of 25px which is included in the height calculation
+            modH.classList.add('titleVisible')
         }
         else {
-            x.classList.remove('titleVisible')
+            modH.classList.remove('titleVisible')
         }
     } else {
-        x.classList.remove('scrolledHeader')
+        modH.classList.remove('scrolledHeader')
     }
 }
 

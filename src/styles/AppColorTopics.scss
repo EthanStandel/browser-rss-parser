@@ -12,7 +12,7 @@
   --techColorTheme: teal;
   --regionsColorTheme: cornflowerblue;
   --planeteColorTheme: limegreen;
-  --lifestyleColorTheme:  #6667ab;
+  --lifestyleColorTheme: #6667ab;
   --ethiqueColorTheme: #398bb3; // color from the Good Place palette in 'The Good Place'—#6db866;
   --autoColorTheme: #ea054d;
   --TEDColorTheme: #d91e17;
@@ -23,7 +23,7 @@ $topics: (
   'Culture': var(--cultureColorTheme),
   'Sport': var(--sportColorTheme),
   'Économie': var(--ecoColorTheme),
-  'Monde': var(--mondeColorTheme), 
+  'Monde': var(--mondeColorTheme),
   'Presse.étrangère': var(--peColorTheme),
   'Science': var(--scienceColorTheme),
   'Europe': var(--europeColorTheme),
@@ -40,24 +40,26 @@ $topics: (
   'Développement': var(--dvlpColorTheme)
 );
 
-@each $topicName, $topicColor in $topics {
+@each $topicName,
+$topicColor in $topics {
   #App {
-    &.#{$topicName} { // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
+    &.#{$topicName} {
+      // when the displayed topic is X, the accent color (--colorTheme) is the colorTheme of X
       --colorTheme: #{$topicColor};
     }
-  
+
     #uiSplit-sidebar ul.sidebarTopics li.#{$topicName} {
-  
+
       &.selected .discHeader {
         background-color: #{$topicColor} !important;
       }
-  
+
       &:not(.selected) .discHeader {
-      
+
         &:not(:hover) * {
           fill: #{$topicColor}; // for .chevron svg
         }
-  
+
         &:hover {
           background-color: #{$topicColor};
         }

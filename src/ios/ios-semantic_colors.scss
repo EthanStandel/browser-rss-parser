@@ -34,13 +34,13 @@
     --systemGray4: rgba(209.0, 209.0, 214.0, 1.0);
     --systemGray5: rgba(229.0, 229.0, 234.0, 1.0);
     --systemGray6: rgba(242.0, 242.0, 247.0, 1.0);
-    
+
     /* Labels Colors */
     --label: rgba(0.0, 0.0, 0.0, 1.0);
     --secondaryLabel: rgba(60.0, 60.0, 67.0, 0.6);
     --tertiaryLabel: rgba(60.0, 60.0, 67.0, 0.3);
     --quaternaryLabel: rgba(60.0, 60.0, 67.0, 0.18);
-    
+
     /* Text Colors */
     --placeholderText: rgba(60.0, 60.0, 67.0, 0.3);
 
@@ -72,7 +72,7 @@
       backdrop-filter: blur(27px) saturate(1.8);
     use with 
     /*/
-    --systemUltrathinMaterial: rgba(246, 246, 246, 0.36); 
+    --systemUltrathinMaterial: rgba(246, 246, 246, 0.36);
     --systemThinMaterial: rgba(246, 246, 246, 0.48); // backdrop-filter: blur(27px)
     --systemMediumMaterial: rgba(246, 246, 246, 0.6); // backdrop-filter: blur(27px) -- notifications 
     --systemThickMaterial: rgba(246, 246, 246, 0.72); // backdrop-filter: blur(15px)
@@ -84,11 +84,11 @@
     --cardBorder: rgba(209, 209, 214, 0.63);
 
     /*/ Addition by KL3W - dropdown shadows [use filter: drop-shadow(0 10px 10px var(--Shadow))] /*/
-    --lightShadow: rgba(76,76,109,0.03);
+    --lightShadow: rgba(76, 76, 109, 0.03);
     --hardShadow: rgba(76, 76, 109, 0.07);
-}
-    
-  &[data-color-scheme='dark']  {
+  }
+
+  &[data-color-scheme='dark'] {
     /* Adaptable Colors */
     --systemBlue: rgba(10.0, 132.0, 255.0, 1.0);
     --systemGreen: rgba(48.0, 209.0, 88.0, 1.0);
@@ -110,13 +110,13 @@
     --systemGray4: rgba(58.0, 58.0, 60.0, 1.0);
     --systemGray5: rgba(44.0, 44.0, 46.0, 1.0);
     --systemGray6: rgba(28.0, 28.0, 30.0, 1.0);
-    
+
     /* Labels Colors */
     --label: rgba(255.0, 255.0, 255.0, 1.0);
     --secondaryLabel: rgba(235.0, 235.0, 245.0, 0.6);
     --tertiaryLabel: rgba(235.0, 235.0, 245.0, 0.3);
     --quaternaryLabel: rgba(235.0, 235.0, 245.0, 0.18);
-    
+
     /* Text Colors */
     --placeholderText: rgba(235.0, 235.0, 245.0, 0.3);
 

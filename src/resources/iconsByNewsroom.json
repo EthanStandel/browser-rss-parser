@@ -22,7 +22,7 @@
             "iconImg": "./icons/WebsitesIcons/europe1-DCL.png"
         },
         "LesTendances": {
-            "name": "Les tendances", 
+            "name": "Les tendances",
             "iconImg": "./icons/WebsitesIcons/europe1-LesTendances.png"
         }
     },
@@ -89,7 +89,7 @@
         "name": "CBS News",
         "iconImg": "./icons/WebsitesIcons/cbsnews.png",
         "bgImg": "./icons/WebsitesIcons/cbsnews_bgIMG.jpg",
-        "Evening News":  {
+        "Evening News": {
             "iconImg": "./icons/WebsitesIcons/cbsnews-eveningNews.png"
         }
     },
