@@ -304,7 +304,7 @@ form {
     .mainLabel {
         @extend .r2, .up;
         margin-left: 10px;
-        margin-bottom: 2px;
+        margin-bottom: 4px;
         -webkit-line-clamp: 1 !important;
         overflow: hidden;
         text-overflow: ellipsis !important;
@@ -325,7 +325,7 @@ form {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            padding: 8px 10px 8px 0;
+            padding: 9px 10px 9px 0;
 
             &:not(:last-of-type()) {
                 border-bottom: 0.5px var(--separator) solid;

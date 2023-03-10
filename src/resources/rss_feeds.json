@@ -75,7 +75,7 @@
         "COVID-19": [
 
         ],
-        "Presse étrangère": [
+        "engForeignNewsrooms": [
           {
             "url": "https://www.express.co.uk/latest/france/rss",
             "name": "Express",
@@ -801,7 +801,7 @@
             "backgroundImg": "./icons/WebsitesIcons/capital_bgIMG.jpg"
           }
         ],
-        "Tourisme": [
+        "engForeignNewsrooms": [
           {
             "url": "https://www.lechotouristique.com/feed",
             "name": "L'écho touristique",
@@ -4435,7 +4435,7 @@
             "backgroundImg": "./icons/WebsitesIcons/humanite_bgIMG.jpg"
           }  
         ],
-        "ENGForeignNewsrooms": [
+        "engForeignNewsrooms": [
           {
             "url": "https://www.telegraph.co.uk/science/rss.xml",
             "name": "The Telegraph",
@@ -4506,7 +4506,7 @@
             "backgroundImg": "./icons/WebsitesIcons/vox_bgIMG.jpg"
           }
         ],
-        "DEUForeignNewsrooms": [
+        "deuForeignNewsrooms": [
           {
             "url": "https://rss.dw.com/xml/rss-de-wissenschaft",
             "name": "Deutsche Welle",
@@ -4849,7 +4849,7 @@
             "iconImg": "./icons/WebsitesIcons/recyclage-recuperation.png"
           }
         ],
-        "ENGForeignNewsrooms": [
+        "engForeignNewsrooms": [
           {
             "url": "http://www.vox.com/rss/energy-and-environment/index.xml",
             "name": "Vox",
@@ -4895,7 +4895,7 @@
             "iconImg": "./icons/WebsitesIcons/theverge.png"
           } 
         ],
-        "DEUForeignNewsrooms": [
+        "deuForeignNewsrooms": [
           {
             "url": "https://taz.de/feed/!p4624/rss.xml",
             "name": "Die Tageszeitung",
@@ -4940,7 +4940,7 @@
         "Urbanisation & architecture": [
 
         ],
-        "ENGForeignNewsrooms": [
+        "engForeignNewsrooms": [
 
         ]
       }
@@ -5221,7 +5221,7 @@
             "backgroundImg": "./icons/WebsitesIcons/bfmtv_bgIMG.jpg"
           }
         ],
-        "ENGForeignNewsrooms": [
+        "engForeignNewsrooms": [
           {
             "url": "https://www.newyorker.com/feed/tech",
             "name": "The New Yorker",
@@ -5275,7 +5275,7 @@
             "iconImg": "./icons/WebsitesIcons/theverge.png"
           }
         ],
-        "DEUForeignNewsrooms": [
+        "deuForeignNewsrooms": [
           {
             "url": "https://newsfeed.zeit.de/digital/index",
             "name": "Die Zeit",

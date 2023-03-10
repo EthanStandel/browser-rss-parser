@@ -18,7 +18,7 @@ export interface RssFeedSource {
   articlesCountryISO3?: string;
   category?: string;
   subtopic?: string;
-  ultraSubtopic?: string;
+  topic?: string;
 }
 
 interface ParsedRssItem {
@@ -189,7 +189,7 @@ export const RssContent: React.FC<RssContentProps> = ({ rssFeeds }) => {
             var displayedDate = date?.setLocale("fr").toFormat("dd/MM").replace('Invalid DateTime', '').replace(dateNDaysBefore[0], '' + date?.setLocale("fr").toFormat("HH:mm")).replace(dateNDaysBefore[1], 'hier, ' + date?.setLocale("fr").toFormat("HH:mm")).replace(dateNDaysBefore[2], 'avant-hier').replace(dateNDaysBefore[3], NDaysBeforeWeekday[3]).replace(dateNDaysBefore[4], NDaysBeforeWeekday[4]).replace(dateNDaysBefore[5], NDaysBeforeWeekday[5]).replace(dateNDaysBefore[6], NDaysBeforeWeekday[6]);
 
             return (
-              <li className={source.specification}>
+              <li className={source.specification} lang={countryISO3Label}>
                 <article>
                   <a href={item.link} target="_blank" rel="noreferrer">
                     <div className="media">

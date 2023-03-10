@@ -20,3 +20,13 @@ export function filterTopics() { // used for the searchbar in the sidebar to fil
 export function activeSVG(svgID, baseColor, activeColor) {
   document.getElementById(svgID).style.fill === String(activeColor) ? document.getElementById(svgID).style.fill = baseColor : document.getElementById(svgID).style.fill = String(activeColor)
 }
+
+export function changeDisplayedForeignLanguage() {
+  var selectedLanguageISO3Code = document.getElementById('DisplayedForeignLangageSelect').value;
+  const foreignLanguages = ['deu','eng','esp'].filter(item => item !== selectedLanguageISO3Code)
+  foreignLanguages.forEach(el => {
+    document.querySelectorAll(`[lang=` + el + `]`).forEach(elL => {
+      elL.style.display = 'none'
+    })
+  })
+}

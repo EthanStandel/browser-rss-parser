@@ -58,6 +58,7 @@ em:not(.itemContainer em) {
 // uiSplit hierarchy 
 #uiSplitContainer {
   display: flex;
+  overflow-x: clip;
 
   #uiSplit-sidebar {
     overflow-y: scroll;
@@ -67,17 +68,19 @@ em:not(.itemContainer em) {
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
     border: 0;
-    position: fixed;
+    position: sticky;
     z-index: 3;
     overflow-x: hidden;
+    min-width: 0;
     max-width: 0;
     height: 100%;
     transition: all 0.4s ease-in-out;
     top: 51.8px; // height of header
 
     &.displayed {
-      max-width: 250px; // width to change in ./sidebar_fct
+      min-width: 250px; // width to change in ./sidebar_fct
       border-right: 0.5px solid var(--separator);
+      max-width: 250px;
     }
 
     .uiSplit-sidebar-sbContainer {
@@ -137,10 +140,10 @@ em:not(.itemContainer em) {
     }
   }
 
-  #uiSplit-main {
+  main#uiSplit-main {
     width: 100%;
     margin-left: 0;
-    transition: margin-left 0.4s ease-in-out;
+    margin-bottom: 44px;
 
     min-width: 222px;
     padding: 0 83px;
@@ -157,6 +160,10 @@ em:not(.itemContainer em) {
       @media only screen and (min-width: 1200px) {
         margin-top: 20px;
       }
+    }
+
+    @media only screen and (max-width: 1200px) {
+      min-width: 0;
     }
 
     /*/ two colums displayed for large devices/*/
@@ -222,10 +229,6 @@ em:not(.itemContainer em) {
       display: none;
     }
   }
-
-  #headerSecondLine {
-    display: none;
-  }
 }
 
 button.squareButton20 {
@@ -261,12 +264,13 @@ button.squareButton20 {
 
   main.Articles {
     /*/ smaller vertical padding for small devices /*/
-    padding: 24px 15px !important;
+    padding: 0 !important;
     max-width: 555px;
 
     .grid {
       display: block !important;
       width: 100%;
+      padding: 24px 15px !important;
     }
   }
 
@@ -286,6 +290,7 @@ button.squareButton20 {
     width: 100% !important;
 
     &.displayed {
+      min-width: 100% !important;
       max-width: 100% !important;
     }
   }

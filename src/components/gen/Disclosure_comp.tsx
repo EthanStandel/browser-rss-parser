@@ -1,8 +1,8 @@
 import { disclosureDisplay } from './disc_fct';
 
-export function Disc(discHeader: JSX.Element, discPlus: JSX.Element, discID: string, nbOfItems = Number(1), discType?: "discIDBlock", addDiscClass?: string) {
+export function Disc(discHeader: JSX.Element, discPlus: JSX.Element, discID: string, nbOfItems = Number(1), discType?: "discIDBlock", addDiscClass?: string, DiscLang?: string) {
     return (
-        <div className={nbOfItems + " Disclosure " + (addDiscClass || "")} id={discType}>
+        <div className={nbOfItems + " Disclosure " + (addDiscClass || "")} id={discType} lang={DiscLang}>
             <div className={"discHeader spacingLine" + String((nbOfItems === 0) && " noDiscItem").replace('false', '')} id={"discHeader " + discID} onClick={() => (nbOfItems !== 0) && disclosureDisplay("discHeader", discID)}>
                 <div>
                     {discHeader}

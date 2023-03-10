@@ -14,6 +14,7 @@ import { defaultTheme } from "./ios/color-scheme-toggle";
 import { toggleElement, filterTopics, activeSVG } from './components/gen/fct';
 import { ModalStructure } from './components/gen/Modal/Modal_comp';
 import { ModalDisplay } from './components/gen/Modal/Modal_fct';
+import { changeDisplayedForeignLanguage } from './components/gen/fct';
 
 // eslint-disable-next-line
 function sum(array = Array(Number())) { // sum values in an array 
@@ -95,31 +96,23 @@ const App = () => {
             <ul className='formParamaters'>
               <li>
                 <label htmlFor="cars">Afficher les podcasts </label>
-                <input type="checkbox" checked />
+                <input type="checkbox" />
               </li>
               <li>
-                <label htmlFor="cars">Afficher la presse étrangère</label>
-                <input type="checkbox" checked />
+                <label>Afficher la presse étrangère</label>
+                <input type="checkbox" />
               </li>
               <li>
-                <label htmlFor="DisplayedForeignLangage">Presse étrangère affichée </label>
-                <select name="DisplayedForeignLangage">
-                  <option value="deu">Allemagne [DEU]</option>
-                  <option value="aus">Australie [AUS]</option>
-                  <option value="can">Canada [CAN]</option>
-                  <option value="gbr">Royaume-Uni [GBR]</option>
-                  <option value="usa">États-Unis [USA]</option>
+                <label>Presse étrangère affichée</label>
+                <select id="DisplayedForeignLangageSelect">
+                  <option value="deu">Germanophone</option>
+                  <option value="eng">Anglophone</option>
+                  <option value="esp">Hispanophone</option>
                 </select>
               </li>
               <li>
                 <label htmlFor="cars">Afficher uniquement les publications récentes</label>
-                <select name="cars">
-                  <option value="deu">Allemagne [DEU]</option>
-                  <option value="aus">Australie [AUS]</option>
-                  <option value="can">Canada [CAN]</option>
-                  <option value="gbr">Royaume-Uni [GBR]</option>
-                  <option value="usa">États-Unis [USA]</option>
-                </select>
+                <input type="checkbox" />
               </li>
               <li>
                 <label htmlFor="cars">Essayer les fonctionnalités en phase de test (bêta)</label>
@@ -132,7 +125,7 @@ const App = () => {
             <ul className='formParamaters'>
               <li>
                 <label htmlFor="cars">Accepter tous les cookies</label>
-                <input type="checkbox" checked />
+                <input type="checkbox" />
               </li>
               <li>
                 <label htmlFor="cars">Supprimer les cookies après utilisation</label>
@@ -142,7 +135,7 @@ const App = () => {
           </form>
         </div>,
         <div className="buttonAligned">
-          <button className="largeButton color" onClick={() => { ModalDisplay("Splash"); sidebarDisplayInverted() }}>
+          <button className="largeButton color" onClick={() => { ModalDisplay("Splash"); sidebarDisplayInverted(); changeDisplayedForeignLanguage() }}>
             <div className='r3 bold'>Aller à <em>nuntii</em></div>
           </button>
           <a href="https://google.com/" rel="noreferrer"><button className="largeButton">
@@ -179,8 +172,8 @@ const App = () => {
                         {Object.keys(topics[name].subtopics)
                           .filter(key => key !== "noSubtopic")
                           .map(key => (
-                            <div key={key} className={`${key}-subtopic`}>
-                              <button className={subtopicFilter === key ? `h8 selected ${key}` : 'h8'} onClick={() => { setTopicFilter(name); setSubtopicFilter(key); DiscAllDisplay("show") }}>{key}</button>
+                            <div key={key} className={`${key}-subtopic`} lang={(key.includes('ForeignNewsrooms')) ? key.replace('ForeignNewsrooms','') : undefined}>
+                              <button className={((topicFilter === name) && (subtopicFilter === key)) ? `h8 selected ${key}` : 'h8'} onClick={() => { setTopicFilter(name); setSubtopicFilter(key); DiscAllDisplay("show") }}>{key.replace('engForeignNewsrooms','Presse anglophone').replace('deuForeignNewsrooms','Presse germanophone')}</button>
                             </div>
                           ))
                         }
@@ -221,7 +214,7 @@ const App = () => {
                 .sort(([keyA], [keyB]) => keyA === "noSubtopic" ? -1 : keyB === "noSubtopic" ? 1 : 0)
                 .filter(([key]) => !subtopicFilter ? true : subtopicFilter === key)
                 .map(([key, feeds]) => (
-                  Disc(<h5 className="subtopic bold">{key !== "noSubtopic" && key}</h5>, <div> {(SubtopicComponents[key]) /* not working */} <RssContent rssFeeds={feeds} /></div>, key, sum(feeds.map(value => value.articlesCount)), undefined, key + " ArticleSection " + (((key === "noSubtopic") || (sum(feeds.map(value => value.articlesCount)) > 5)) ? " largeDisplay " : "") + (nListYS(key) ? " nList" : ""))
+                  Disc(<h5 className="subtopic bold">{key !== "noSubtopic" && key.replace('engForeignNewsrooms','Presse anglophone').replace('deuForeignNewsrooms','Presse germanophone')}</h5>, <div> {(SubtopicComponents[key]) /* not working */} <RssContent rssFeeds={feeds} /></div>, key, sum(feeds.map(value => value.articlesCount)), undefined, key + " ArticleSection " + (((key === "noSubtopic") || (sum(feeds.map(value => value.articlesCount)) > 5)) ? " largeDisplay " : "") + (nListYS(key) ? " nList" : ""), (key.includes('ForeignNewsrooms')) ? key.replace('ForeignNewsrooms',''): undefined)
                 ))
               }
             </section>
